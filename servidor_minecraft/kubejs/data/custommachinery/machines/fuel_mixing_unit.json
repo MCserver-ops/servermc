@@ -1,0 +1,182 @@
+{
+  "name": "Fuel Mixing Unit",
+  "appearance": {
+    "resistance": 9,
+    "idle": {
+      "block": "boss_tools:fuel_refinery"
+    },
+    "running": {
+      "block": "boss_tools:fuel_refinery[lit=true]",
+      "light": 13
+    },
+    "paused": {
+      "block": "boss_tools:fuel_refinery"
+    },
+    "errored": {
+      "block": "boss_tools:fuel_refinery"
+    }
+  },
+  "tooltips": [
+    {
+      "text": "Used to produce Rocket Fuel",
+      "color": "yellow",
+      "bold": true
+    },
+    {
+      "text": "Liquid Oxygen, Refined Fuel and Gasoline will be required",
+      "color": "yellow"
+    }
+  ],
+  "components": [
+    {
+      "capacity": 1000000,
+      "type": "custommachinery:energy",
+      "macInput": 50000,
+      "maxOutput": 0
+    },
+    {
+      "type": "custommachinery:fluid",
+      "capacity": 10000,
+      "id": "input1",
+      "mode": "input",
+      "filter": "mekanism:oxygen",
+      "whitelist": true
+    },
+    {
+      "type": "custommachinery:fluid",
+      "capacity": 10000,
+      "id": "input2",
+      "mode": "input",
+      "filter": "thermal:refined_fuel",
+      "whitelist": true
+    },
+    {
+      "type": "custommachinery:fluid",
+      "capacity": 10000,
+      "id": "input3",
+      "mode": "input",
+      "filter": "immersivepetroleum:gasoline",
+      "whitelist": true
+    },
+    {
+      "type": "custommachinery:fluid",
+      "capacity": 10000,
+      "id": "output1",
+      "mode": "output"
+    },
+    {
+      "type": "custommachinery:redstone",
+      "idlepoweroutput": 0,
+      "powertopause": 15,
+      "craftingpoweroutput": 7,
+      "erroredpoweroutput": 0,
+      "comparatorinputtype": "custommachinery:fluid",
+      "comparatorinputid": "output"
+    }
+  ],
+  "gui": [
+    {
+      "texture": "custommachinery:textures/gui/base_background.png",
+      "x": 0,
+      "y": 0,
+      "type": "custommachinery:texture"
+    },
+    {
+      "x": 47,
+      "y": 80,
+      "type": "custommachinery:player_inventory"
+    },
+    {
+      "x": 15,
+      "y": 30,
+      "type": "custommachinery:energy"
+    },
+    {
+      "id": "input1",
+      "x": 67,
+      "y": 30,
+      "type": "custommachinery:fluid"
+    },
+    {
+      "id": "input2",
+      "x": 87,
+      "y": 30,
+      "type": "custommachinery:fluid"
+    },
+    {
+      "id": "input3",
+      "x": 107,
+      "y": 30,
+      "type": "custommachinery:fluid"
+    },
+    {
+      "id": "output1",
+      "x": 167,
+      "y": 30,
+      "type": "custommachinery:fluid"
+    },
+    {
+      "x": 135,
+      "y": 30,
+      "type": "custommachinery:progress"
+    },
+    {
+      "x": 236,
+      "y": 5,
+      "type": "custommachinery:status"
+    },
+    {
+      "text": "Fuel Assembly Unit",
+      "x": 7,
+      "y": 5,
+      "type": "custommachinery:text"
+    },
+    {
+      "type": "custommachinery:dump",
+      "x": 9,
+      "y": 80,
+      "id": ["input1", "input2", "input3"]
+    },
+    {
+      "type": "custommachinery:reset",
+      "x": 7,
+      "y": 95
+    }
+  ],
+  "jei": [
+    {
+      "x": 15,
+      "y": 30,
+      "type": "custommachinery:energy"
+    },
+    {
+      "id": "input1",
+      "x": 67,
+      "y": 30,
+      "type": "custommachinery:fluid"
+    },
+    {
+      "id": "input2",
+      "x": 87,
+      "y": 30,
+      "type": "custommachinery:fluid"
+    },
+    {
+      "id": "input3",
+      "x": 107,
+      "y": 30,
+      "type": "custommachinery:fluid"
+    },
+    {
+      "id": "output1",
+      "x": 167,
+      "y": 30,
+      "type": "custommachinery:fluid"
+    },
+    {
+      "x": 135,
+      "y": 30,
+      "type": "custommachinery:progress"
+    }
+  ]
+}

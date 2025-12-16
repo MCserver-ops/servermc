@@ -1,0 +1,61 @@
+{
+	id: "484226D93DDE9A5B"
+	order_index: 0
+	title: "Common Loot Bag"
+	icon: "immersiveengineering:shader_bag_common"
+	loot_size: 1
+	rewards: [
+		{ item: "minecraft:smooth_stone", count: 64, weight: 10000 }
+		{ item: "minecraft:glass", count: 64, weight: 10000 }
+		{ item: "minecraft:ice", count: 64, weight: 10000 }
+		{ item: "minecraft:pumpkin", count: 32, weight: 10000 }
+		{ item: "farmersdelight:chocolate_pie_slice", count: 16, weight: 10000 }
+		{ item: "minecraft:diamond" }
+		{ item: "minecraft:emerald_block" }
+		{
+			item: {
+				id: "tconstruct:small_blade"
+				Count: 1b
+				tag: {
+					Material: "tconstruct:seared_stone"
+				}
+			}
+			weight: 1500
+		}
+		{
+			item: {
+				id: "tconstruct:small_blade"
+				Count: 1b
+				tag: {
+					Material: "tconstruct:bloodbone"
+				}
+			}
+			weight: 1500
+		}
+		{
+			item: {
+				id: "tconstruct:pickaxe_head"
+				Count: 1b
+				tag: {
+					Material: "tconstruct:bloodbone"
+				}
+			}
+			weight: 1500
+		}
+		{
+			item: {
+				id: "tconstruct:small_axe_head"
+				Count: 1b
+				tag: {
+					Material: "tconstruct:slimewood"
+				}
+			}
+			weight: 1500
+		}
+		{ item: "farmersdelight:sweet_berry_cheesecake_slice", count: 8, weight: 10000 }
+		{ item: "emendatusenigmatica:iron_chunk", count: 16, weight: 5000 }
+		{ item: "emendatusenigmatica:copper_chunk", count: 32, weight: 7000 }
+		{ item: "farmersdelight:smoked_ham", count: 6, weight: 10000 }
+		{ item: "minecraft:charcoal", count: 64, weight: 10000 }
+	]
+}

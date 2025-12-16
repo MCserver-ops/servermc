@@ -1,0 +1,287 @@
+{
+	id: "0FDA4AF364CAC4A3"
+	group: "70E732380FC79639"
+	order_index: 3
+	filename: "music"
+	title: "Music!"
+	icon: "xercamusic:guitar"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 4.5d
+			y: -5.0d
+			subtitle: "I'm not a saint, but I could be if I try"
+			dependencies: ["51915D42C15532E7"]
+			id: "12DAFC1D0FF672E9"
+			tasks: [{
+				id: "4A0DD85B04395506"
+				type: "item"
+				item: "xercamusic:guitar"
+			}]
+		}
+		{
+			x: 5.5d
+			y: -5.0d
+			subtitle: "Angels love the strings"
+			dependencies: ["51915D42C15532E7"]
+			id: "408B168D4C07D827"
+			tasks: [{
+				id: "1068AC5010ECD0E4"
+				type: "item"
+				item: "xercamusic:lyre"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -1.0d
+			subtitle: "Oh, brother, where art thou?"
+			dependencies: ["51915D42C15532E7"]
+			id: "30E02C0CE04689D7"
+			tasks: [{
+				id: "760827372A8951B3"
+				type: "item"
+				item: "xercamusic:banjo"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -3.0d
+			subtitle: "Daler Mehndi forever!"
+			dependencies: ["51915D42C15532E7"]
+			id: "0486619F6E07A9CE"
+			tasks: [{
+				id: "390EE2CC9B133B9A"
+				type: "item"
+				item: "xercamusic:drum"
+			}]
+		}
+		{
+			x: 3.5d
+			y: 0.5d
+			subtitle: "Donkey Kong"
+			dependencies: ["51915D42C15532E7"]
+			id: "5ED0E0855B41258E"
+			tasks: [{
+				id: "4404CEEFA8F70D52"
+				type: "item"
+				item: "xercamusic:cymbal"
+			}]
+		}
+		{
+			x: 6.5d
+			y: 0.5d
+			subtitle: "I'm in the band"
+			dependencies: ["51915D42C15532E7"]
+			id: "26F4F4D26387D93D"
+			tasks: [{
+				id: "36DAEA3AE2E74038"
+				type: "item"
+				item: "xercamusic:drum_kit"
+			}]
+		}
+		{
+			x: 6.5d
+			y: -4.5d
+			subtitle: "Now you're just somebody that I used to know!"
+			dependencies: ["51915D42C15532E7"]
+			id: "03E410F2394D7DFB"
+			tasks: [{
+				id: "0F915DB06762C177"
+				type: "item"
+				item: "xercamusic:xylophone"
+			}]
+		}
+		{
+			x: 5.5d
+			y: 1.0d
+			subtitle: "Wind starts singing"
+			dependencies: ["51915D42C15532E7"]
+			id: "2883913E8BA05712"
+			tasks: [{
+				id: "2F80F4D4F18B7AE9"
+				type: "item"
+				item: "xercamusic:tubular_bell"
+			}]
+		}
+		{
+			x: 8.0d
+			y: -3.0d
+			subtitle: "Meh, I'm no music expert, this mod is for my brother"
+			dependencies: ["51915D42C15532E7"]
+			id: "043432F300073E92"
+			tasks: [{
+				id: "55E460F1DF2C05F6"
+				type: "item"
+				item: "xercamusic:sansula"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -2.0d
+			subtitle: "\"Music is freedom.\" - Kaori Miyazono"
+			dependencies: ["51915D42C15532E7"]
+			id: "5BBEE49493B8B401"
+			tasks: [{
+				id: "224D6E86F0EF22E0"
+				type: "item"
+				item: "xercamusic:violin"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -4.5d
+			subtitle: "The Big Violin"
+			dependencies: ["51915D42C15532E7"]
+			id: "1619733A3A4C86E3"
+			tasks: [{
+				id: "427A11F16EE22A5B"
+				type: "item"
+				item: "xercamusic:cello"
+			}]
+		}
+		{
+			x: 8.0d
+			y: -1.0d
+			subtitle: "Mask Off, flute on"
+			dependencies: ["51915D42C15532E7"]
+			id: "7C0F4F7DB9E21E0B"
+			tasks: [{
+				id: "2AE43E84CE84D2BE"
+				type: "item"
+				item: "xercamusic:flute"
+			}]
+		}
+		{
+			title: "The Voice of God"
+			icon: "xercamusic:god"
+			x: 4.5d
+			y: 1.0d
+			subtitle: "That's actually neat!"
+			dependencies: ["51915D42C15532E7"]
+			id: "12E02641133067A4"
+			tasks: [{
+				id: "0B1FAD84908F687A"
+				type: "checkmark"
+				title: "Oh, you can't craft this one..WELL..."
+			}]
+			rewards: [{
+				id: "5E08EA03DF860C63"
+				type: "item"
+				item: "xercamusic:god"
+			}]
+		}
+		{
+			x: 8.0d
+			y: -2.0d
+			subtitle: "\"Music speaks louder then words.\" - Kousei Arima"
+			dependencies: ["51915D42C15532E7"]
+			id: "603A36DDD546C202"
+			tasks: [{
+				id: "6C06DFAC4F449DBF"
+				type: "item"
+				item: "xercamusic:piano"
+			}]
+		}
+		{
+			x: 5.0d
+			y: -2.0d
+			subtitle: "Writing my first song! Left click for more info"
+			description: [
+				"The music sheet can be used to right a song on portatives."
+				""
+				"Sounds follow the chromatic scale with 12 notes per octave and 4 octaves for a total of 48 notes."
+				""
+				"11 different tempo settings are available from 60 BPM to 1200 BPM."
+				""
+				"You can write music with the mouse or the keyboard, whichever you find comfortable. Keyboard functionality includes the following keys: space, delete, backspace. You can select, copy and paste notes with the 'CTRL + A, CTRL + C, CTRL + V' shortcuts."
+				""
+				"You can copy your portatives between different sheets and even outside Minecraft. You can copy them to a text file to back up or paste in another worlds/servers."
+				""
+				"You can put up to 5 sheets in the hotbar to see and preview multiple layers of music at the same time when editing. Neighboring sheets can easily be disabled with a button that appears."
+				""
+				"You can also prewiev sheets with an instrument in the off hand. Forward, you can lock the instrument per sheet to only preview with that instrument even when your off hand item changes. This can be used to mark which instrument a sheet is supposed to be played with and is also useful with neighboring sheets previews."
+			]
+			dependencies: ["0DDA2FB169318B04"]
+			id: "51915D42C15532E7"
+			tasks: [{
+				id: "60CB2FA18910260B"
+				type: "item"
+				item: "xercamusic:music_sheet"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -2.0d
+			subtitle: "The music box will require redstone, a music sheet and an instrument for it to operate. It will use the instrument to play the music sheet, the music sheet to play the specific notes and the redstone signal to actually start playing"
+			dependencies: ["0DDA2FB169318B04"]
+			id: "316E4D5C1869BB0D"
+			tasks: [{
+				id: "6B9757042E94A0B5"
+				type: "item"
+				item: "xercamusic:music_box"
+			}]
+		}
+		{
+			x: 9.5d
+			y: -2.0d
+			subtitle: "Exceptional measurements. Left click for more info"
+			description: ["A metronome is a device that produces an audible click or other sound at a regular interval, typically in beats per minute (BPM). Metronomes may include synchronized visual motion. Musicians use the device to practise playing to a regular pulse. Many metronomes are now digitized, however minecraft is a CLASSIC, and a classic (more or less) metronome is PERFECT!"]
+			dependencies: ["0DDA2FB169318B04"]
+			id: "0894CD1DE9CBE492"
+			tasks: [{
+				id: "49A4A015326ADF73"
+				type: "item"
+				item: "xercamusic:metronome"
+			}]
+		}
+		{
+			x: 2.5d
+			y: -4.0d
+			subtitle: "Very traditional"
+			dependencies: ["51915D42C15532E7"]
+			id: "60C553C31F23671E"
+			tasks: [{
+				id: "28516714701F93E8"
+				type: "item"
+				item: "xercamusic:oboe"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 0.0d
+			subtitle: "Mumbo, you there?"
+			dependencies: ["51915D42C15532E7"]
+			id: "725683B05B37E398"
+			tasks: [{
+				id: "27F444DF512BB21E"
+				type: "item"
+				item: "xercamusic:redstone_guitar"
+			}]
+		}
+		{
+			x: 7.5d
+			y: -4.0d
+			subtitle: "Pristine music on the go"
+			dependencies: ["51915D42C15532E7"]
+			id: "11C50D9B092ACC41"
+			tasks: [{
+				id: "27F19868DD2AA1CD"
+				type: "item"
+				item: "xercamusic:french_horn"
+			}]
+		}
+		{
+			x: 7.5d
+			y: 0.0d
+			subtitle: "Bussin' EVERYTHING!"
+			dependencies: ["51915D42C15532E7"]
+			id: "2B03F3C35F13FDD6"
+			tasks: [{
+				id: "4EBFB6614205B954"
+				type: "item"
+				item: "xercamusic:bass_guitar"
+			}]
+		}
+	]
+}

@@ -1,0 +1,38 @@
+{
+    "flower": "minecraft:spruce_log",
+    "creator": "Me_Ryan",
+    "lore": "Lonely Bee",
+    "hasHoneycomb": true,
+    "customCombDrop": "minecraft:honeycomb",
+    "customCombBlockDrop": "minecraft:honeycomb_block",
+    "baseLayerTexture": "resin/resin",
+    "traits": [],
+    "maxTimeInHive": 1200,
+    "ColorData": {
+      "modelType": "GELATINOUS",
+      "primaryColor": "#a48712",
+      "secondaryColor": "#a48712",
+      "honeycombColor": "#776106"
+    },
+    "SpawnData": {
+      "canSpawnInWorld": true,
+      "biomeWhitelist": "tag:FOREST",
+      "lightLevel": "DAY",
+      "biomeblacklist": "tag:ocean",
+      "spawnWeight": 8
+    },
+    "BreedData": {
+      "isBreedable": true,
+      "feedItem": "minecraft:spruce_log",
+      "feedAmount": 64
+    },
+    "CombatData": {  
+      "isPassive": false,  
+      "removeStingerOnAttack": false,
+      "inflictsPoison": true,
+      "attackDamage": 6
+      },
+    "TraitData": {
+      "hasTraits": true
+    }
+  }

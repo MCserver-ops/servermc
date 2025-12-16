@@ -1,0 +1,83 @@
+"Enable Debug Output" = false
+"Disable Ores" = ["betterendforge:ender_ore", "byg:budding_ametrine_ore", "byg:pendorite_ore", "byg:emeraldite_ore", "byg:ametrine_ore"]
+
+[["Custom Ore"]]
+	"Ore Name" = "emendatusenigmatica:certus_quartz_deepslate_ore"
+	"Max Vein Size" = 12
+	"Filler Name" = "boss_tools:moon_stone"
+	"Min Vein Level" = 8
+	"Max Vein Level" = 36
+	"Spawn Rate" = 9
+
+[["Custom Ore"]]
+	"Ore Name" = "emendatusenigmatica:charged_certus_quartz_deepslate_ore"
+	"Max Vein Size" = 6
+	"Filler Name" = "boss_tools:moon_stone"
+	"Min Vein Level" = 5
+	"Max Vein Level" = 25
+	"Spawn Rate" = 6
+
+[["Custom Ore"]]
+	"Ore Name" = "decursiomod:pure_skystone_block"
+	"Max Vein Size" = 3
+	"Filler Name" = "boss_tools:moon_stone"
+	"Min Vein Level" = 2
+	"Max Vein Level" = 50
+	"Spawn Rate" = 8
+
+[["Custom Ore"]]
+	"Ore Name" = "emendatusenigmatica:apatite_cryptic_stone_ore"
+	"Max Vein Size" = 14
+	"Filler Name" = "boss_tools:mars_stone"
+	"Min Vein Level" = 32
+	"Max Vein Level" = 64
+	"Spawn Rate" = 10
+
+[["Custom Ore"]]
+	"Ore Name" = "emendatusenigmatica:potassium_nitrate_cryptic_stone_ore"
+	"Max Vein Size" = 12
+	"Filler Name" = "boss_tools:mars_stone"
+	"Min Vein Level" = 32
+	"Max Vein Level" = 64
+	"Spawn Rate" = 8
+
+[["Custom Ore"]]
+	"Ore Name" = "powah:dry_ice"
+	"Max Vein Size" = 7
+	"Filler Name" = "boss_tools:mars_stone"
+	"Min Vein Level" = 5
+	"Max Vein Level" = 42
+	"Spawn Rate" = 20
+
+[["Custom Ore"]]
+	"Ore Name" = "emendatusenigmatica:arcane_deepslate_ore"
+	"Max Vein Size" = 4
+	"Filler Name" = "boss_tools:moon_stone"
+	"Min Vein Level" = 8
+	"Max Vein Level" = 42
+	"Spawn Rate" = 10
+
+[["Custom Ore"]]
+	"Ore Name" = "emendatusenigmatica:fluorite_cryptic_stone_ore"
+	"Max Vein Size" = 12
+	"Filler Name" = "boss_tools:venus_stone"
+	"Min Vein Level" = 1
+	"Max Vein Level" = 16
+	"Spawn Rate" = 25
+
+[["Custom Ore"]]
+	"Ore Name" = "draconicevolution:nether_draconium_ore"
+	"Max Vein Size" = 4
+	"Filler Name" = "boss_tools:mercury_stone"
+	"Min Vein Level" = 2
+	"Max Vein Level" = 18
+	"Spawn Rate" = 6
+
+[["Custom Ore"]]
+	"Ore Name" = "decursiomod:alfheim_flux_ore"
+	"Max Vein Size" = 2
+	"Filler Name" = "botania:livingrock"
+	"Min Vein Level" = 2
+	"Max Vein Level" = 38
+	"Spawn Rate" = 2
+

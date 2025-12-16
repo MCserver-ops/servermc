@@ -1,0 +1,1656 @@
+{
+	id: "6BEF64E7692FF688"
+	group: "1390A8D800379122"
+	order_index: 0
+	filename: "overworld"
+	title: "OverWorld"
+	icon: "minecraft:grass_block"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Pyramids, yes, but for what Pharaoh?"
+			icon: "minecraft:sand"
+			x: -8.5d
+			y: 2.0d
+			subtitle: "Is that a.. Ice Pyramid? Left Click for more info"
+			description: ["Repurposed Structures adds 10 new versions of the desert pyramid from vanilla Minecraft. Try to find all of them."]
+			hide_dependency_lines: true
+			dependencies: ["41C059524765B5A1"]
+			id: "4CEC993159B2DF68"
+			tasks: [{
+				id: "7525FE9C36E8068D"
+				type: "advancement"
+				title: "Find all the pyramids from Repurposed Structures"
+				advancement: "repurposed_structures:pyramids"
+				criterion: ""
+			}]
+			rewards: [
+				{
+					id: "149A76BF894A2FDF"
+					type: "item"
+					item: "minecraft:repeater"
+					count: 16
+				}
+				{
+					id: "4B38BC784415DA36"
+					type: "item"
+					item: "minecraft:tnt"
+					count: 64
+				}
+				{
+					id: "3EF4996D58A7647B"
+					type: "item"
+					item: "minecraft:redstone_block"
+					count: 32
+				}
+				{
+					id: "13B0D5F5F4EE2FB8"
+					type: "item"
+					item: "minecraft:piston"
+					count: 16
+				}
+				{
+					id: "65F5132B11525712"
+					type: "item"
+					item: "minecraft:sticky_piston"
+					count: 16
+				}
+				{
+					id: "35FE9C3FFD398039"
+					type: "item"
+					item: "minecraft:tripwire_hook"
+					count: 64
+				}
+				{
+					id: "0F0F1DD377E01B7C"
+					type: "item"
+					item: "minecraft:dispenser"
+					count: 16
+				}
+				{
+					id: "2900B441EF2F2623"
+					type: "item"
+					item: "minecraft:dropper"
+					count: 16
+				}
+				{
+					id: "7B4398927A999BE0"
+					type: "item"
+					item: "minecraft:comparator"
+					count: 16
+				}
+			]
+		}
+		{
+			title: "Repurposed Structures"
+			x: -5.5d
+			y: 0.5d
+			subtitle: "The vanilla-like structures that you'll find in your world are added by this mod"
+			dependencies: ["200C362FF0796376"]
+			size: 1.5d
+			id: "41C059524765B5A1"
+			tasks: [{
+				id: "39B6F2B6F2D03DA7"
+				type: "advancement"
+				title: "Ender a newly generated world and by gifted with the beauty of the new generated structures"
+				advancement: "repurposed_structures:root"
+				criterion: ""
+			}]
+		}
+		{
+			title: "Pillagers everywhere!"
+			x: -10.0d
+			y: 0.5d
+			subtitle: "The Pillager Outpost has now 14 versions. Try to find them all"
+			hide_dependency_lines: true
+			dependencies: ["41C059524765B5A1"]
+			id: "3BCC28FD4386284A"
+			tasks: [{
+				id: "10B55823F738DC50"
+				type: "advancement"
+				title: "Find all the Outposts"
+				advancement: "repurposed_structures:outposts"
+				criterion: ""
+			}]
+		}
+		{
+			title: "They're almost cities"
+			x: -8.5d
+			y: 0.5d
+			subtitle: "Trades, trades for everyone! Left Click for more info"
+			description: ["There are 10 types of villages. If you manage to encounter all of them, this gift shall be yours."]
+			hide_dependency_lines: true
+			dependencies: ["41C059524765B5A1"]
+			id: "71A927DE346A325F"
+			tasks: [{
+				id: "49B509040E1CB9A8"
+				type: "advancement"
+				title: "Find all the Villages added by Repurposed Structures"
+				advancement: "repurposed_structures:villages"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "116F4F1F60C2C587"
+				type: "item"
+				item: "minecraft:emerald"
+				count: 64
+			}]
+		}
+		{
+			title: "Hansel and Gretel"
+			x: -11.0d
+			y: 0.5d
+			subtitle: "The Witch Huts have now 4 versions. Left Click for more info"
+			description: [
+				"The reward for the quest is The Top Hat from Eidolon. This item is special because it is indeed craftable, but its recipe is a secret."
+				""
+				"The mod's author keeps this item's recipe a secret because it is merely an easter egg item, so, if you want this, but have no idea how to craft it, you can get it from this quest."
+			]
+			hide_dependency_lines: true
+			dependencies: ["41C059524765B5A1"]
+			id: "1647B24ABF53F636"
+			tasks: [{
+				id: "2FF76B4687B0E89D"
+				type: "advancement"
+				title: "Find all the Witch Huts added by Repurposed Structures"
+				advancement: "repurposed_structures:witch_huts"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "54CF6440D648D077"
+				type: "item"
+				item: {
+					id: "eidolon:top_hat"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Guess Captain Sparrow was around?"
+			icon: {
+				id: "artifacts:golden_hook"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -9.5d
+			y: 1.5d
+			subtitle: "4 versions of ShipWrecks"
+			hide_dependency_lines: true
+			dependencies: ["41C059524765B5A1"]
+			id: "135D2E7E0D273A64"
+			tasks: [{
+				id: "73661EEFAEEDC574"
+				type: "advancement"
+				title: "Find all the Shipwrecks from Repurposed Structures"
+				advancement: "repurposed_structures:shipwrecks"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "712C8EDEA18E2CC9"
+				type: "item"
+				item: "minecraft:conduit"
+			}]
+		}
+		{
+			title: "Oh, The Mineshafts You'll Go"
+			x: -9.5d
+			y: -0.5d
+			subtitle: "14 versions of the vanilla mineshafts"
+			hide_dependency_lines: true
+			dependencies: ["41C059524765B5A1"]
+			id: "08ECCD079EEFB167"
+			tasks: [{
+				id: "5F6CEBF2F1054A89"
+				type: "advancement"
+				title: "Find all the Mineshafts added by Repurposed Structures"
+				advancement: "repurposed_structures:mineshafts"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "1112144A0264E8DE"
+				type: "item"
+				item: {
+					id: "minecraft:iron_pickaxe"
+					Count: 1b
+					tag: {
+						AS_Amulet_Holder: [I;
+							-2094091943
+							-458931240
+							-1905311744
+							-792705749
+						]
+						Damage: 0
+						Enchantments: [
+							{
+								lvl: 10
+								id: "efficiency"
+							}
+							{
+								lvl: 3
+								id: "unbreaking"
+							}
+						]
+					}
+				}
+			}]
+		}
+		{
+			title: "All 7 mensions"
+			x: -8.5d
+			y: -1.0d
+			subtitle: "Resident Evi...a...Illagers..? Left Click for more info"
+			description: ["Yeah, mensions. There are 7 variants of that structure. If you find them all, you can have this gift. In 3 years I couldn't find even the vanilla one.. yeey.."]
+			hide_dependency_lines: true
+			dependencies: ["41C059524765B5A1"]
+			id: "1B7EDB179CA1CB28"
+			tasks: [{
+				id: "681BE73863409E7B"
+				type: "advancement"
+				title: "Find all the Mansions added by Repurposed Structures"
+				advancement: "repurposed_structures:mansions"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "19F240CD1A2E0A00"
+				type: "item"
+				item: "minecraft:nether_star"
+				count: 10
+			}]
+		}
+		{
+			title: "Elephant"
+			x: -4.0d
+			y: 4.0d
+			subtitle: "Tame an Elephant by feeding it Acacia Blossoms"
+			dependencies: ["0FDEF350247ECED5"]
+			id: "6BF217BE13BCDBAC"
+			tasks: [{
+				id: "62D28BA071BD1C07"
+				type: "advancement"
+				title: "Tame it"
+				advancement: "alexsmobs:alexsmobs/tame_elephant"
+				criterion: ""
+			}]
+		}
+		{
+			title: "Tarantula Hawk"
+			x: -3.0d
+			y: 3.5d
+			subtitle: "Tame a Tarantula Hawk with spider eyes"
+			dependencies: ["0FDEF350247ECED5"]
+			id: "39F63EE90A2CC87F"
+			tasks: [{
+				id: "6BE9115A25215C87"
+				type: "advancement"
+				title: "Tame it"
+				icon: {
+					id: "alexsmobs:tarantula_hawk_elytra"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				advancement: "alexsmobs:alexsmobs/tame_tarantula_hawk"
+				criterion: ""
+			}]
+		}
+		{
+			title: "Immoral Protection"
+			x: -2.0d
+			y: 3.5d
+			subtitle: "Obtain every single armor piece added by Alex's Mobs"
+			dependencies: ["0FDEF350247ECED5"]
+			id: "008CBEE435E3ABA9"
+			tasks: [
+				{
+					id: "4DAFBF94AB075B1F"
+					type: "item"
+					item: {
+						id: "alexsmobs:moose_headgear"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "41854B34F8764DAE"
+					type: "item"
+					item: {
+						id: "alexsmobs:spiked_turtle_shell"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "0222ED4C88F47C8B"
+					type: "item"
+					item: {
+						id: "alexsmobs:frontier_cap"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "6B8CE5E2E986845C"
+					type: "item"
+					item: {
+						id: "alexsmobs:crocodile_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "19ECBB092882A26C"
+					type: "item"
+					item: {
+						id: "alexsmobs:centipede_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "1F2F1244ABB3EE42"
+					type: "item"
+					item: {
+						id: "alexsmobs:emu_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "60B0763D4F97E811"
+					type: "item"
+					item: {
+						id: "alexsmobs:roadrunner_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Alex's Mobs"
+			icon: "alexsmobs:animal_dictionary"
+			x: -1.0d
+			y: 5.5d
+			subtitle: "There's a reason this mod is so popular. The mobs added by it, actually DO things"
+			hide_dependency_lines: true
+			dependencies: ["200C362FF0796376"]
+			size: 1.5d
+			id: "0FDEF350247ECED5"
+			tasks: [{
+				id: "556803C618922311"
+				type: "checkmark"
+				title: "Give me the dictionary!"
+			}]
+			rewards: [{
+				id: "7EF8F5AD9F0BDC20"
+				type: "item"
+				item: "alexsmobs:animal_dictionary"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 3.5d
+			subtitle: "Obtain a Rodrunner Feather is has many uses in the Alex's Mobs mod"
+			dependencies: ["0FDEF350247ECED5"]
+			id: "0EB5C5A46FEC3F46"
+			tasks: [{
+				id: "7CFEAA70E934675A"
+				type: "item"
+				item: "alexsmobs:roadrunner_feather"
+			}]
+		}
+		{
+			x: 0.5996598639455684d
+			y: 4.653061224489811d
+			subtitle: "Blob Fish can be used to make fish oil"
+			dependencies: ["0FDEF350247ECED5"]
+			id: "3BFD49D028616361"
+			tasks: [{
+				id: "085FA81D8F7C91E6"
+				type: "item"
+				item: "alexsmobs:blobfish"
+			}]
+		}
+		{
+			title: "The Grizzly Bear"
+			icon: "alexsmobs:dropbear_claw"
+			x: 1.5d
+			y: 5.5d
+			shape: "circle"
+			subtitle: "A Grizzly Bear can be tamed by feeding it with Honeycombs. After that, feed it with Salmon. If you are lucky, you'll get a new best friend"
+			dependencies: ["0FDEF350247ECED5"]
+			id: "66FCE1CC79A218DE"
+			tasks: [{
+				id: "43EB99A40FFFA001"
+				type: "advancement"
+				title: "Tame it"
+				icon: "alexsmobs:bear_fur"
+				advancement: "alexsmobs:alexsmobs/tame_grizzly_bear"
+				criterion: ""
+			}]
+		}
+		{
+			x: 2.0d
+			y: 7.0d
+			subtitle: "Tamed Grizzly Bears will occasionally drop hair. This hair can also be dropped by regular Grizzly Bears when killed"
+			dependencies: ["0FDEF350247ECED5"]
+			id: "5C5DCFAA277A0AC8"
+			tasks: [{
+				id: "6F738F28584F8E39"
+				type: "item"
+				item: "alexsmobs:bear_fur"
+			}]
+		}
+		{
+			title: "The Bald Eagle"
+			x: 2.0d
+			y: 4.0d
+			subtitle: "Tame a Bald Eagle with fish oil"
+			dependencies: ["3BFD49D028616361"]
+			id: "758EB212284034BC"
+			tasks: [{
+				id: "4B458FE2F94C0613"
+				type: "advancement"
+				title: "Tame it"
+				advancement: "alexsmobs:alexsmobs/tame_bald_eagle"
+				criterion: ""
+			}]
+		}
+		{
+			title: "Falconry Glove"
+			x: 3.0d
+			y: 5.5d
+			subtitle: "Use a Falconry Glove, made of leather and bear hair, to launch a tamed Bald Eagle"
+			dependencies: [
+				"758EB212284034BC"
+				"5C5DCFAA277A0AC8"
+			]
+			id: "1D8E6D5884B2F847"
+			tasks: [{
+				id: "68B30E8868E1BC21"
+				type: "advancement"
+				title: "Use it to launch a tamed Eagle"
+				advancement: "alexsmobs:alexsmobs/falconry_glove"
+				criterion: ""
+			}]
+		}
+		{
+			x: 1.0d
+			y: 3.5d
+			subtitle: "AC's eagle"
+			dependencies: [
+				"0EB5C5A46FEC3F46"
+				"758EB212284034BC"
+			]
+			id: "60D696DF1B8AC778"
+			tasks: [{
+				id: "084453384AE31ED3"
+				type: "item"
+				item: "alexsmobs:falconry_hood"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 7.5d
+			subtitle: "Apple of the jungle. Break jungle leaves to obtain bananas"
+			dependencies: ["0FDEF350247ECED5"]
+			id: "119DDEEB7C188840"
+			tasks: [{
+				id: "52FD01D3BC4763AD"
+				type: "item"
+				item: "alexsmobs:banana"
+			}]
+		}
+		{
+			title: "Gorilla"
+			x: -0.5d
+			y: 8.5d
+			subtitle: "Tame a Gorilla with bananas"
+			dependencies: ["119DDEEB7C188840"]
+			id: "23DD5B17B5955221"
+			tasks: [{
+				id: "2624BA0EA7CDCCC1"
+				type: "advancement"
+				title: "Tame it"
+				advancement: "alexsmobs:alexsmobs/tame_gorilla"
+				criterion: ""
+			}]
+		}
+		{
+			title: "Capuchin Monkey"
+			x: 0.5d
+			y: 8.5d
+			subtitle: "Tame a Capuchin Monkey with bananas"
+			dependencies: ["119DDEEB7C188840"]
+			id: "2848B09EFEEF9DA0"
+			tasks: [{
+				id: "2660FCA23B213D18"
+				type: "advancement"
+				title: "Tame it"
+				advancement: "alexsmobs:alexsmobs/tame_capuchin"
+				criterion: ""
+			}]
+		}
+		{
+			title: "Guster"
+			x: -2.0d
+			y: 7.5d
+			subtitle: "Find a Guster in the desert"
+			dependencies: ["0FDEF350247ECED5"]
+			id: "30D29EB560AEACBF"
+			tasks: [{
+				id: "3B15842470937EEF"
+				type: "advancement"
+				title: "Encounter it"
+				advancement: "alexsmobs:alexsmobs/guster"
+				criterion: ""
+			}]
+		}
+		{
+			x: -1.5d
+			y: 8.5d
+			subtitle: "A pocket with sand can be used as a ranged weapon. Sand will be require as ammo"
+			dependencies: ["30D29EB560AEACBF"]
+			id: "02784D173A7143DB"
+			tasks: [{
+				id: "0FF46FEAC36BB9A8"
+				type: "item"
+				item: {
+					id: "alexsmobs:pocket_sand"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -2.5d
+			y: 8.5d
+			subtitle: "When provided a redstone signal, this block can make Gusters"
+			dependencies: ["30D29EB560AEACBF"]
+			id: "6FFBAC1EA4BCFF32"
+			tasks: [{
+				id: "4D8573EC0D6D0679"
+				type: "item"
+				item: "alexsmobs:gustmaker"
+			}]
+		}
+		{
+			title: "Cockroach from Mexico"
+			x: -4.0d
+			y: 7.0d
+			subtitle: "Give a maraca to a Cockroach. If you're lucky, you might get a Sombrero!"
+			dependencies: ["0FDEF350247ECED5"]
+			id: "096478299CFBD88A"
+			tasks: [{
+				id: "658737AC78AE08AB"
+				type: "advancement"
+				title: "Let it dance"
+				advancement: "alexsmobs:alexsmobs/la_cucaracha"
+				criterion: ""
+			}]
+		}
+		{
+			title: "Mantis Shrimp"
+			x: -4.5d
+			y: 6.0d
+			subtitle: "Tame a Mantis Shrimp with tropical fish. After that, give the shrimp a bucket of water, so it can live on the land forever"
+			dependencies: ["0FDEF350247ECED5"]
+			id: "15B1277D96998DC9"
+			tasks: [{
+				id: "7C0358F22E73CCEF"
+				type: "advancement"
+				title: "Tame it"
+				advancement: "alexsmobs:alexsmobs/tame_mantis_shrimp"
+				criterion: ""
+			}]
+		}
+		{
+			title: "Cachalot Whale"
+			x: -4.5d
+			y: 5.0d
+			subtitle: "Cachalot Whales may spawn washed up on beaches. They are helpless in this form, and if pushed back into the water without being hurt, they may decide to reward their saviors. The reward for this task is in the form of Ambergris, a valuable product of the whale's stomach that is coughed up. Ambergris can be traded to fishermen villagers for a great deal of emeralds, or can be used to craft an Echolocator. It can also be used as a powerful fuel that can smelt 64 items"
+			dependencies: ["0FDEF350247ECED5"]
+			id: "32F2613C98E25C89"
+			tasks: [{
+				id: "4C1A7CA2D71978E4"
+				type: "advancement"
+				title: "Save it"
+				advancement: "alexsmobs:alexsmobs/save_cachalot_whale"
+				criterion: ""
+			}]
+		}
+		{
+			title: "When Dungeon Arise"
+			x: 3.5d
+			y: 0.5d
+			subtitle: "See those cool structures? Yeah, this mod adds them"
+			dependencies: ["200C362FF0796376"]
+			size: 1.5d
+			id: "1CFCBCB7E802DB22"
+			tasks: [{
+				id: "3C75D4D3E52BA11A"
+				type: "advancement"
+				title: "Enter a newly generated world and observe the beauty of the new structures"
+				advancement: "dungeons_arise:wda_root"
+				criterion: ""
+			}]
+		}
+		{
+			title: "Bandit Outpost"
+			x: 5.5d
+			y: 1.0d
+			subtitle: "American plan"
+			hide_dependency_lines: true
+			dependencies: ["1CFCBCB7E802DB22"]
+			id: "4191F6586041A4B9"
+			tasks: [
+				{
+					id: "3E4F177B9EF1DBB6"
+					type: "advancement"
+					title: "Bandit Camp"
+					advancement: "dungeons_arise:find_bandit_village"
+					criterion: ""
+				}
+				{
+					id: "32BF9E76AD698E9D"
+					type: "advancement"
+					title: "Bandit Towers"
+					advancement: "dungeons_arise:find_bandit_towers"
+					criterion: ""
+				}
+			]
+		}
+		{
+			title: "The Coliseum"
+			x: 5.5d
+			y: 2.0d
+			subtitle: "Now without Ceasar"
+			hide_dependency_lines: true
+			dependencies: ["1CFCBCB7E802DB22"]
+			id: "16A435F0C02EDDAA"
+			tasks: [{
+				id: "7AC4CADEDE6E9D41"
+				type: "advancement"
+				title: "Colliseum"
+				advancement: "dungeons_arise:find_coliseum"
+				criterion: ""
+			}]
+		}
+		{
+			title: "The Plague Asylum"
+			x: 6.5d
+			y: 2.0d
+			subtitle: "Similar to Arkham, I know"
+			hide_dependency_lines: true
+			dependencies: ["1CFCBCB7E802DB22"]
+			id: "562C07ACD75A8774"
+			tasks: [{
+				id: "5843FAF00EF11DB6"
+				type: "advancement"
+				title: "Find The Plague Asylum"
+				advancement: "dungeons_arise:find_plague_asylum"
+				criterion: ""
+			}]
+		}
+		{
+			title: "Shiraz Palace"
+			icon: {
+				id: "twilightforest:lamp_of_cinders"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 6.5d
+			y: 1.0d
+			subtitle: "Is that..? Taj Mahal?"
+			hide_dependency_lines: true
+			dependencies: ["1CFCBCB7E802DB22"]
+			id: "4409FB7E76DB4A2A"
+			tasks: [{
+				id: "2F4C3AE7BA0B0C44"
+				type: "advancement"
+				title: "Shiraz Palace"
+				advancement: "dungeons_arise:find_shiraz_palace"
+				criterion: ""
+			}]
+		}
+		{
+			title: "Merchant's campsite"
+			x: 7.5d
+			y: 1.5d
+			subtitle: "Word is, the wandering trader was once part of this camp"
+			hide_dependency_lines: true
+			dependencies: ["1CFCBCB7E802DB22"]
+			id: "1BF99F2A14321573"
+			tasks: [{
+				id: "23DF7C0E75C7FA66"
+				type: "advancement"
+				title: "Find a merchant's campsite"
+				advancement: "dungeons_arise:find_merchant_campsite"
+				criterion: ""
+			}]
+		}
+		{
+			title: "Could be your first house"
+			x: 7.5d
+			y: 0.5d
+			subtitle: "Starting"
+			hide_dependency_lines: true
+			dependencies: ["1CFCBCB7E802DB22"]
+			id: "334B6C1FB2797166"
+			tasks: [
+				{
+					id: "67B311C18656FFEB"
+					type: "advancement"
+					title: "Small Prairie House"
+					advancement: "dungeons_arise:find_small_prairie_house"
+					criterion: ""
+				}
+				{
+					id: "0ACD49982E0B8834"
+					type: "advancement"
+					title: "Fishing Hut"
+					advancement: "dungeons_arise:find_fishing_hut"
+					criterion: ""
+				}
+			]
+		}
+		{
+			title: "Fossils"
+			x: 8.5d
+			y: 1.0d
+			subtitle: "Who killed this thing? Really? WHAT KILLED THIS THING?!"
+			hide_dependency_lines: true
+			dependencies: ["1CFCBCB7E802DB22"]
+			id: "5326EC88CB47004E"
+			tasks: [
+				{
+					id: "7ABF4044DF4A36E7"
+					type: "advancement"
+					title: "Find a very large fossil"
+					advancement: "dungeons_arise:find_ceryneian_hind"
+					criterion: ""
+				}
+				{
+					id: "204C257D468DCE5D"
+					type: "advancement"
+					title: "Find a underwater fossil"
+					advancement: "dungeons_arise:find_typhon"
+					criterion: ""
+				}
+			]
+		}
+		{
+			title: "Beautiful"
+			x: 8.5d
+			y: 0.0d
+			subtitle: "The Thornborn Towers are - WOW"
+			hide_dependency_lines: true
+			dependencies: ["1CFCBCB7E802DB22"]
+			id: "11D7D15C0079330B"
+			tasks: [{
+				id: "65BBD38E87FCD4E5"
+				type: "advancement"
+				advancement: "dungeons_arise:find_thornborn_towers"
+				criterion: ""
+			}]
+		}
+		{
+			title: "Owned by Davy Jones?"
+			x: 9.5d
+			y: 0.5d
+			subtitle: "Evil on water"
+			hide_dependency_lines: true
+			dependencies: ["1CFCBCB7E802DB22"]
+			id: "766C282ED473EA1E"
+			tasks: [{
+				id: "23E63F4133ECAB5B"
+				type: "advancement"
+				title: "Find an Undead Pirate Ship"
+				advancement: "dungeons_arise:find_undead_pirate_ship"
+				criterion: ""
+			}]
+		}
+		{
+			title: "Illager outposts"
+			icon: "minecraft:totem_of_undying"
+			x: 5.5d
+			y: 0.0d
+			subtitle: "Enemy's line"
+			hide_dependency_lines: true
+			dependencies: ["1CFCBCB7E802DB22"]
+			id: "1267C13932B1CCC8"
+			tasks: [
+				{
+					id: "7E4CC9AE6A779F50"
+					type: "advancement"
+					title: "Fort"
+					advancement: "dungeons_arise:find_illager_fort"
+					criterion: ""
+				}
+				{
+					id: "48F4442718207C2A"
+					type: "advancement"
+					title: "Campsite"
+					advancement: "dungeons_arise:find_illager_campsite"
+					criterion: ""
+				}
+				{
+					id: "2EF5EA027D2FCC2A"
+					type: "advancement"
+					title: "Ships"
+					advancement: "dungeons_arise:find_illager_corsair_or_illager_galley"
+					criterion: ""
+				}
+			]
+		}
+		{
+			title: "Wishing well"
+			x: 6.5d
+			y: 0.0d
+			subtitle: "Yes, you could make a wish hear, but its main point is to give ceratin effects to players. Just jump in them"
+			hide_dependency_lines: true
+			dependencies: ["1CFCBCB7E802DB22"]
+			id: "6CE28B3D3F21DD70"
+			tasks: [{
+				id: "1ED55FCE7AE304F0"
+				type: "advancement"
+				title: "Jump in one of these wells"
+				advancement: "dungeons_arise:find_wishing_well"
+				criterion: ""
+			}]
+		}
+		{
+			title: "AirShips"
+			x: 7.5d
+			y: -0.5d
+			subtitle: "They don't move, do they?"
+			hide_dependency_lines: true
+			dependencies: ["1CFCBCB7E802DB22"]
+			id: "208AF3A10AEF7ED5"
+			tasks: [
+				{
+					id: "5D71D2C51E27890A"
+					type: "advancement"
+					title: "Find a Heavenly Rider"
+					advancement: "dungeons_arise:find_heavenly_rider"
+					criterion: ""
+				}
+				{
+					id: "49471E8810290622"
+					type: "advancement"
+					title: "Find The Heavenly Conqueror"
+					advancement: "dungeons_arise:find_heavenly_conqueror"
+					criterion: ""
+				}
+			]
+		}
+		{
+			title: "LightHouse"
+			x: 6.5d
+			y: -1.0d
+			subtitle: "That's tall"
+			hide_dependency_lines: true
+			dependencies: ["1CFCBCB7E802DB22"]
+			id: "26997B3C8A787826"
+			tasks: [{
+				id: "7283E598C999657A"
+				type: "advancement"
+				title: "Find a Lighthouse"
+				advancement: "dungeons_arise:find_lighthouse"
+				criterion: ""
+			}]
+		}
+		{
+			title: "Temples"
+			icon: "supplementaries:crimson_lantern"
+			x: 5.5d
+			y: -1.0d
+			subtitle: "What's their story?"
+			hide_dependency_lines: true
+			dependencies: ["1CFCBCB7E802DB22"]
+			id: "2B2D290D55BD2D72"
+			tasks: [
+				{
+					id: "6333616E2F6EF6FF"
+					type: "advancement"
+					title: "Abandoned Table"
+					advancement: "dungeons_arise:find_abandoned_temple"
+					criterion: ""
+				}
+				{
+					id: "320550E34E1B9C86"
+					type: "advancement"
+					title: "Infested Tample"
+					advancement: "dungeons_arise:find_infested_temple"
+					criterion: ""
+				}
+				{
+					id: "351E2044E3C39946"
+					type: "advancement"
+					title: "Monastery"
+					advancement: "dungeons_arise:find_monasteries"
+					criterion: ""
+				}
+			]
+		}
+		{
+			title: "N.Y.A.V.F.T. - Not Your Average Venus Fly Trap"
+			x: 2.5d
+			y: -6.0d
+			subtitle: "Now you're my plant. Defeating a Foliaath has a chance of rewarding you with a Foliaath Seed, with which you can grow your own Foliaath. However, this quest will give you the seed anyway"
+			dependencies: ["61A259D9B0130AFD"]
+			id: "058BAF3B1E6EEA41"
+			tasks: [{
+				id: "5C47D1CC053FA607"
+				type: "advancement"
+				title: "Defeat a Foliaath"
+				advancement: "mowziesmobs:kill_foliaath"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "43D7B74B57B7D476"
+				type: "item"
+				item: "mowziesmobs:foliaath_seed"
+			}]
+		}
+		{
+			title: "A true boss battle"
+			x: 1.5d
+			y: -5.5d
+			shape: "heart"
+			subtitle: "To defeat this ancient warrior, you'll have to dodge he's attacks. At a point he'll slamm he's battle axe in the ground, getting it stuck. This moment will be your chance to strike back. You'll have to go behind him and hit the sword stuck in he's back. Defeating The Ferrous Wroughtnaut will give you he's axe and helmet"
+			dependencies: ["61A259D9B0130AFD"]
+			id: "57D476D9588CD55B"
+			tasks: [{
+				id: "11DBFAD44A76D753"
+				type: "advancement"
+				title: "Defeat the Wroughtnaut"
+				advancement: "mowziesmobs:kill_ferrous_wroughtnaut"
+				criterion: ""
+			}]
+		}
+		{
+			title: "Mowzie's Mobs"
+			x: 1.5d
+			y: -7.0d
+			subtitle: "Only if this mod had more mobs.. :("
+			hide_dependency_lines: true
+			dependencies: ["200C362FF0796376"]
+			size: 1.5d
+			id: "61A259D9B0130AFD"
+			tasks: [{
+				id: "44473D4A495B0592"
+				type: "advancement"
+				title: "Start"
+				advancement: "mowziesmobs:root"
+				criterion: ""
+			}]
+		}
+		{
+			title: "The FrostMaw"
+			x: 0.5d
+			y: -6.0d
+			subtitle: "The FrostMaw is a cold and very dangerous beast. While adventuring, you might encounter this creature in icy biomes. Lucky for you, Frostmaws spend most of their time sleeping. If you manage to wake up one of them, you either are unlucky, or just a little crazy. However, battling a Frostmaw might prove itself a very rewarding challenge, as they often drop an Ice Crystal when killed"
+			dependencies: ["61A259D9B0130AFD"]
+			id: "20CFF6DC2710C2F4"
+			tasks: [{
+				id: "458D26B96039CC3F"
+				type: "advancement"
+				title: "Wake up a FrostMaw"
+				advancement: "mowziesmobs:kill_frostmaw"
+				criterion: ""
+			}]
+		}
+		{
+			title: "Crystal Thief"
+			x: 0.0d
+			y: -7.0d
+			subtitle: "Remember that Ice Crystal? Well.. you can steal it from a Frostmaw. Just try not to wake it up"
+			dependencies: ["61A259D9B0130AFD"]
+			id: "7749B7FD9CA85A18"
+			tasks: [{
+				id: "69F942A27E447973"
+				type: "advancement"
+				title: "Steal the Ice Crystal from a FrostMaw"
+				advancement: "mowziesmobs:steal_ice_crystal"
+				criterion: ""
+			}]
+		}
+		{
+			title: "Naga! - OverWorld"
+			x: 0.5d
+			y: -8.0d
+			shape: "gear"
+			subtitle: "It's not from Twilight and certainly its not Korra's friend. Nagas can be found throughout the Overworld. When defeated, they have a chance of dropping a Naga Fang which can be used to craft a dangerous dagger. This quest will give you the dagger regardless of the Naga dropping its fang or not"
+			dependencies: ["61A259D9B0130AFD"]
+			id: "524B766680D516A4"
+			tasks: [{
+				id: "5232D22A3B106BA0"
+				type: "advancement"
+				title: "Kill a Naga"
+				advancement: "mowziesmobs:kill_naga"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "42EDA14695E2F52E"
+				type: "item"
+				item: {
+					id: "mowziesmobs:naga_fang_dagger"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Becoming a hitman"
+			x: 1.5d
+			y: -8.5d
+			subtitle: "Oh, you're not bald? Enter a Barakoa Camp without being noticed"
+			dependencies: ["61A259D9B0130AFD"]
+			id: "12D7914E65574C95"
+			tasks: [{
+				id: "570193CD3A7C4D96"
+				type: "advancement"
+				title: "Enter a Barakoa Camp without being noticed"
+				advancement: "mowziesmobs:sneak_village"
+				criterion: ""
+			}]
+		}
+		{
+			title: "Barakoanas are funny"
+			x: 1.5d
+			y: -9.5d
+			subtitle: "Barakoanas will drop their masks. These will give you certain effects when worn"
+			hide_dependency_lines: true
+			dependencies: ["61A259D9B0130AFD"]
+			id: "2F2C2C8DD944A6BE"
+			tasks: [{
+				id: "061FE5CB9E023F76"
+				type: "advancement"
+				title: "Defeat a Barakoana"
+				advancement: "mowziesmobs:kill_barakoana"
+				criterion: ""
+			}]
+		}
+		{
+			x: 1.5d
+			y: -10.5d
+			shape: "heart"
+			subtitle: "Defeating the Sun Chief, will reward you with The Sol Visage. This mask will give you the ability to summon your own Barakoanas. You'll just need their masks to do so"
+			hide_dependency_lines: true
+			dependencies: ["61A259D9B0130AFD"]
+			id: "4963BA26A179356F"
+			tasks: [{
+				id: "72265198B4599593"
+				type: "advancement"
+				title: "Defeat Barako"
+				advancement: "mowziesmobs:kill_barako"
+				criterion: ""
+			}]
+			rewards: [
+				{
+					id: "18AAACADC37D4E98"
+					type: "item"
+					item: "mowziesmobs:dart"
+					count: 64
+				}
+				{
+					id: "51244F179C9A7FFD"
+					type: "item"
+					item: {
+						id: "mowziesmobs:blowgun"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "1A8ED1F59B3A0E24"
+					type: "item"
+					item: {
+						id: "mowziesmobs:spear"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Gift from..a.. Ra?"
+			x: 1.5d
+			y: -11.5d
+			subtitle: "Receive The Sun's Blessing"
+			hide_dependency_lines: true
+			dependencies: ["61A259D9B0130AFD"]
+			id: "63D9089ABCE25DB0"
+			tasks: [{
+				id: "363EDF54651E67BD"
+				type: "advancement"
+				title: "A trophy well deserved"
+				advancement: "mowziesmobs:suns_blessing"
+				criterion: ""
+			}]
+		}
+		{
+			title: "Grottol"
+			x: 2.5d
+			y: -8.0d
+			subtitle: "This tiny creatures can be found underground. However you'll quickly discover that they're quite shy, as they'll hide when a player approaches. These creatures can be defeated with a pickaxe. They'll drop some minerals"
+			dependencies: ["61A259D9B0130AFD"]
+			id: "55645A653A989FC8"
+			tasks: [{
+				id: "2D6CB2DB1876537F"
+				type: "advancement"
+				title: "Defeat the tiny bastard"
+				advancement: "mowziesmobs:kill_grottol"
+				criterion: ""
+			}]
+		}
+		{
+			title: "You're my frien' now. Here're having soft tacos later"
+			x: 3.5d
+			y: -8.0d
+			subtitle: "With a pickaxe with silk touch, you can pick up this tiny creature"
+			hide_dependency_lines: true
+			dependencies: ["61A259D9B0130AFD"]
+			id: "30BD4B162F8522CA"
+			tasks: [{
+				id: "763CE6A758C0A40C"
+				type: "advancement"
+				title: "Obtain a Grottol"
+				advancement: "mowziesmobs:kill_grottol_silk_touch"
+				criterion: ""
+			}]
+		}
+		{
+			title: "Double"
+			x: 3.0d
+			y: -7.0d
+			subtitle: "Using a fortune pickaxe on a Grottol will give you more drops"
+			dependencies: ["61A259D9B0130AFD"]
+			id: "7D01ABA71814A03F"
+			tasks: [{
+				id: "18B37770F0C446F1"
+				type: "advancement"
+				title: "Doubling the output"
+				advancement: "mowziesmobs:kill_grottol_fortune"
+				criterion: ""
+			}]
+		}
+		{
+			title: "OverWorld"
+			icon: "minecraft:grass_block"
+			x: -1.0d
+			y: 0.5d
+			shape: "square"
+			subtitle: "Where all begins"
+			description: [
+				"OverWorld - The place where all begins. As a dimensional adventurer you'll have to move towards the depths of The Nether."
+				""
+				"Also, the heights of space are available for you to conquare too."
+			]
+			dependencies: ["3073595C53701173"]
+			size: 2.0d
+			id: "200C362FF0796376"
+			tasks: [{
+				id: "3B2FAFC97FF6EAFB"
+				type: "dimension"
+				title: "The OverWorld"
+				icon: "minecraft:poppy"
+				dimension: "minecraft:overworld"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -1.0d
+			subtitle: "The trash can will act like a vanilla composter, but instead of bone meal, it will give you garbage blocks which you might find to be useful"
+			dependencies: [
+				"6F6302D94B7809B6"
+				"200C362FF0796376"
+			]
+			id: "1F56FE4F22FDBB34"
+			tasks: [{
+				id: "5A0D92147A6BA0AC"
+				type: "item"
+				item: "rats:trash_can"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -1.0d
+			subtitle: "When the Garbage Piles are placed in an area with a low light level, they'll have a random chance to spawn rats"
+			dependencies: ["1F56FE4F22FDBB34"]
+			id: "639914834A33EF8A"
+			tasks: [{
+				id: "4E3E6DE2C42439C9"
+				type: "item"
+				item: "rats:garbage_pile"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -2.5d
+			subtitle: "The Compressed Garbage has a higher chance to spawn rats"
+			dependencies: ["639914834A33EF8A"]
+			id: "450078591D3AA1BE"
+			tasks: [{
+				id: "4476BAC4BD4A3BBE"
+				type: "item"
+				item: "rats:compressed_garbage"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -2.5d
+			subtitle: "When used on a rat, it will turn that rat into The Rat King"
+			dependencies: ["450078591D3AA1BE"]
+			id: "523E30CEB6391BF4"
+			tasks: [{
+				id: "284AC8DBB31CCC99"
+				type: "item"
+				item: "rats:filth_corruption"
+			}]
+		}
+		{
+			title: "The Rat King"
+			x: 3.5d
+			y: -4.0d
+			shape: "heart"
+			subtitle: "Defeating The Rat King will give you some Tangled Rat Tails which can be used to make a Gilded Rat Flute. With it, you'll be able to launch rats at a target. Finishing this quest, will give you a Smile in a Bucket, as a reward. With it, you can find Slime Chunks. When you enter a Slime Chunk, the Slime in the Bucket will start to jump around"
+			dependencies: ["523E30CEB6391BF4"]
+			size: 1.5d
+			id: "042C707213E3D545"
+			tasks: [{
+				id: "30F0C91339791868"
+				type: "kill"
+				title: "Defeat The Rat King"
+				icon: "rats:tangled_rat_tails"
+				entity: "rats:rat_king"
+				value: 1L
+			}]
+			rewards: [{
+				id: "0C2165DCE5CC7C4C"
+				type: "item"
+				item: "quark:slime_in_a_bucket"
+			}]
+		}
+		{
+			x: -4.0d
+			y: -1.0d
+			subtitle: "Plague Essence can be considered the source of the plague itself. It can be used to obtain items which might be related with the plague's lore"
+			dependencies: [
+				"3172426CDD3F0147"
+				"39FF7B69E755AC45"
+			]
+			id: "5E6703DF14B455AE"
+			tasks: [{
+				id: "0B69C0110CAB9B2A"
+				type: "item"
+				item: "rats:plague_essence"
+			}]
+		}
+		{
+			x: -4.0d
+			y: -2.5d
+			subtitle: "When applied to a Villager, they'll will be transformed into a Plague Doctor which will sell valuable items. It can also be used to make the Plague Tome"
+			dependencies: ["5E6703DF14B455AE"]
+			id: "65C5EE4527621ADF"
+			tasks: [{
+				id: "34F82A799F9914C3"
+				type: "item"
+				item: "rats:plague_doctorate"
+			}]
+		}
+		{
+			x: -5.5d
+			y: -2.5d
+			subtitle: "This book can be obtained in two ways. First, you can craft it and secondly, you can obtaine it from a Plague Doctor. It can be used in some recipes, but it also has another use. When applied to a Plague Doctor, they'll turn into The Black Death, which will be a powerful Boss"
+			dependencies: ["65C5EE4527621ADF"]
+			id: "0616D9457ECE328A"
+			tasks: [{
+				id: "5F2181E21EF07590"
+				type: "item"
+				item: "rats:plague_tome"
+			}]
+		}
+		{
+			title: "The Black Death"
+			icon: {
+				id: "rats:black_death_mask"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -5.5d
+			y: -4.0d
+			shape: "heart"
+			subtitle: "Unlike a regular Rats experiance, The Black Death will NOT drop he's scythe. However, you can defeat him for his mask which is a nice trophy. Additionally, you'll receive a pretty unique item as a reward for defeating him. The Earthbore Gauntlet will allow you to become the Worm-Man. Now, unlike other superheroes out there, the Worm-Man doesn't have so many amazing abilities, but their main ability might prove to be useful in some critical situations. You'll be able to travel through dirt and stone just like a.. well... worm. Yep. That's it. Just that. There's nothing more. We mean it. Stop reading. No, seriously, what are you still doing here? Go finish the pack already! PS: The Gauntlet can be used for a limited amount of time, after that, you'll have to wait. It is also A M A Z I N G!"
+			dependencies: ["0616D9457ECE328A"]
+			size: 1.5d
+			id: "63D640B99378A27B"
+			tasks: [{
+				id: "56888E3EC6B720F8"
+				type: "kill"
+				title: "Defeat The Black Death"
+				icon: {
+					id: "rats:black_death_mask"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				entity: "rats:black_death"
+				value: 1L
+			}]
+			rewards: [{
+				id: "6601497D3EDFA1FF"
+				type: "item"
+				item: {
+					id: "mowziesmobs:earthbore_gauntlet"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -2.5d
+			y: -1.0d
+			subtitle: "Uncommon Eidolon dust. Serves as the base for multiple magic items"
+			dependencies: [
+				"2045087C068870F6"
+				"200C362FF0796376"
+			]
+			id: "3172426CDD3F0147"
+			tasks: [{
+				id: "6DF80409CE1308C0"
+				type: "item"
+				item: "eidolon:death_essence"
+			}]
+		}
+		{
+			x: -3.5d
+			y: -7.0d
+			shape: "gear"
+			subtitle: "Making some PowerPuff stuff. Left Click for more info"
+			description: [
+				"The Chemical X is a very dangerous and unstable compund which can be used to create some.. not so friendly creatures."
+				""
+				"When it is thrown at a variety of mobs, certain Mutant Creatures might be created. Let's see what these Creatures are:"
+				""
+				"- The Mutant Zombie"
+				"- The Mutant Skeleton"
+				"- The Mutant Creeper"
+				"- The Mutant Enderman"
+				"- The Mutant Snow Golem"
+				"- The Spider-Pig"
+				""
+				"Each of these Creatures have unique interactions with you. Some of them will be agressive, while some of them will be quite useful. Each of these hase special quests dedicated to them, so make sure to check those out to see more info about these."
+				""
+				"The Chemical X can be created by either using the recipe provided by JEI, or by making it in a brewing stand."
+				""
+				"You'll need to make slash water bottles. After that, add a piece of glowstone and finally, add any item dropped by a Mutant Creature. This way you can create 3 flasks for Chemical X at a time."
+			]
+			hide_dependency_lines: true
+			dependencies: [
+				"5E6703DF14B455AE"
+				"3172426CDD3F0147"
+				"450078591D3AA1BE"
+			]
+			size: 1.5d
+			id: "49E83D9D0C4FE6DC"
+			tasks: [{
+				id: "0C913D23E936C35F"
+				type: "item"
+				item: "mutantbeasts:chemical_x"
+			}]
+		}
+		{
+			title: "The Mutant Zombie"
+			icon: "minecraft:zombie_head"
+			x: -5.0d
+			y: -7.0d
+			shape: "heart"
+			subtitle: "The Dead Walking are buffed. Left Click for more info"
+			description: [
+				"The Mutant Zombie can be created by throwing a flask of Chemical X at a regular Zombie. There's a 60% chance for the Mutant varient to be created."
+				""
+				"The Mutant Zombie is a very large and intimidating creature which will be agressive towards you."
+				""
+				"This Mini-Boss (yeah, you can consider it a Mini-Boss) will give you a nice reward for defeating it. This will be the Hulk Hammer. You can use it as a powerful melee weapon as it will deal 9 attack damage. Additionally, it will allow you to create shock waves on the ground by simply right-clicking the ground with it."
+				""
+				"A thing that should be mentioned, is that fact that, unlike other mobs, or mini-bosses, The Mutant Zombie will be revived after you defeat it. While it's down, you can light it on fire with a Flint and Steel to defeat it. If no fire is provided, you'll have to defeat The Mutant Zombie three additional times."
+			]
+			dependencies: ["49E83D9D0C4FE6DC"]
+			id: "361C175974B16B3F"
+			tasks: [{
+				id: "18F4FB324F4316F3"
+				type: "kill"
+				entity: "mutantbeasts:mutant_zombie"
+				value: 1L
+			}]
+		}
+		{
+			title: "The Mutant Creeper"
+			icon: "minecraft:creeper_head"
+			x: -4.0d
+			y: -8.5d
+			shape: "heart"
+			subtitle: "The Living Dynamite. Left Click for more info"
+			description: [
+				"The Mutant Creeper will be created by throwing a flask of Chemical X at a regular Creeper. There will be, however, a 60% chance for the Mutant variant to be created."
+				""
+				"The Mutant Creeper will have a total amount if 120 health points. Additionally, we're advicing a set of armor enchanted with blast protection, as this creature has a total amount of five attack tactics. Let's see them:"
+				""
+				"- Jump Attack: The Mutant Creeper will jump in the air and, upon landing, a massive explosion will be created."
+				""
+				"- Minion Spawning: The Mutant Creeper will create Creeper Mininons that will target you and will unleash a tiny explosion after getting close enough to you."
+				""
+				"- Charge Attack: The Charge Attack can be considered a risk-reward period for you. In this state, The Mutant Creeper will flash for five times. In the meantime, you can attack the Creeper to inflict a great amount of damage, eventually breaking it out of this Charging Attack state. Howeve, if you fail to break it out of it, it'll gain some health back."
+				""
+				"- Lightning Attack: Each time The Mutant Crepeer charges itself, there's a small chance that a lightinin bolt will be summoned to turn it into a Charged Mutant Creeper. This version will create more powerful explosions. Its minions will actually be more stronger too."
+				""
+				"- Healing: DO NOT try under any circumstances to defeat The Mutant Creeper by using explosions. These will only heal it."
+				""
+				"Finally, after you manage to drain all the life out of The Mutant Creeper, you should start running, as it will prepare to unleash the last explosion which will be very powerful. After the explosion was unleashed, The Mutant Crepeer will be finally, dead."
+				""
+				"Upon defeating it, you'll be rewarded with a Creeper Minion Egg. This thing will hatch in 5 days. Additionally you can speed up this process by exploding the Egg."
+				""
+				"If you break the Egg before it hatches, there's a chance you might get a Creeper Shard which can be used to create explosions at you possition. Also it can be used to make a Creeper Minion Tracker."
+			]
+			dependencies: ["49E83D9D0C4FE6DC"]
+			id: "1701662F80888D8B"
+			tasks: [{
+				id: "4B1D3B08CBC1B857"
+				type: "kill"
+				entity: "mutantbeasts:mutant_creeper"
+				value: 1L
+			}]
+		}
+		{
+			title: "The Mutant Enderman"
+			icon: "tconstruct:enderman_head"
+			x: -2.0d
+			y: -7.0d
+			shape: "heart"
+			subtitle: "Nightmares of the End. Left Click for more info"
+			description: [
+				"The Mutant Enderman can be created by throwing a flask of Chemical X at a regular Enderman."
+				""
+				"Be ready because this Creature might be your demise. It has 200 health and does a lot of damage and has a lot of attacks involving teleportation of itself and even you."
+				""
+				"Upon defeating this creature, it will create some Endersoul Fragments which you can collect by right-clicking them before they explode. After that, you'll have to shift right-click them. Lastly, just throw and eye of ender (which can be dropped by the Mutant Enderman) to obtain an Endersoul Hand."
+				""
+				"This legendary item can be used to pick up and throw block at your enemies. Additionally, you can shift right-click with it to teleport at the location you're looking at."
+			]
+			dependencies: ["49E83D9D0C4FE6DC"]
+			id: "1DC52DC084BE12FF"
+			tasks: [{
+				id: "1AA0A09752430621"
+				type: "kill"
+				entity: "mutantbeasts:mutant_enderman"
+				value: 1L
+			}]
+		}
+		{
+			title: "The Mutant Skeleton"
+			icon: {
+				id: "mutantbeasts:mutant_skeleton_skull"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -4.0d
+			y: -5.5d
+			shape: "heart"
+			subtitle: "Is it really a Mutant, or is it a Worrior? Left Click for more info"
+			description: [
+				"The Mutant Skeleton can be created by throwing a flask of Chemical X at a regualr Skeleton. There's a 60% chance for the Mutant varient to be created."
+				""
+				"The Mutant Skeleton will be agressive towards you, so be ready to face it, at it has very powerful attacks (including ranged and melee) which can inflict negative potion effects and a total amount of 150 health."
+				""
+				"Fighting this Mini-Boss and winning will reward you with the required components to build a Mutant Skeleton set of Armor. This set will provide Speed/SpeedII and Jump Bosst II and iron-level of protection."
+			]
+			dependencies: ["49E83D9D0C4FE6DC"]
+			id: "1B5CD5130C2E5AF3"
+			tasks: [{
+				id: "2E8C6A3A210F64A7"
+				type: "kill"
+				entity: "mutantbeasts:mutant_skeleton"
+				value: 1L
+			}]
+		}
+		{
+			title: "The Spider-Pig"
+			icon: "minecraft:porkchop"
+			x: -3.0d
+			y: -8.5d
+			shape: "heart"
+			subtitle: "The Spider-Pig thing. No Spider-Ham, unfortunately. Left Click for more info"
+			description: [
+				"The Spider-Pig is a strange abomination which can be created by throwing a flask of Chemical X on a Pig which was recently fed with a Fermented Spider Eye."
+				""
+				"This Creature will not be agressive towards you. It can actually be tamed. By blowing it with your Creeper Minion, it will be tamed and will allow you to place a saddle on it and ride it. While riding it, you can make a speed dash by using space and you can climb up walls."
+			]
+			dependencies: ["49E83D9D0C4FE6DC"]
+			id: "4D4C9A94674A7C53"
+			tasks: [{
+				id: "6AD114211EF5095E"
+				type: "advancement"
+				title: "Make a Spider-Pig"
+				advancement: "mutantbeasts:spider_pig_spider_pig"
+				criterion: ""
+			}]
+		}
+		{
+			title: "The Mutant Snow Golem"
+			x: -3.0d
+			y: -5.5d
+			shape: "gear"
+			subtitle: "Do you want to build a Mutant Snowman? Left Click for more info"
+			description: [
+				"The Mutant Snow Golem, just like with all the other Mutant Creatures, can be created by throwing a flask of Chemical X on a regular Snow Golem."
+				""
+				"This Creature will assist you in combat, just like the regular Snow Golem would do. You can right-click on it to make it follow you. It will attack all the nearby hostile mobs and will freeze any water blocks present and will create snow paths. If it's health goes low, you can throw snow balls at it to heal it."
+			]
+			dependencies: ["49E83D9D0C4FE6DC"]
+			id: "6EC3185236A95E72"
+			tasks: [{
+				id: "297A5A56E9854C8B"
+				type: "advancement"
+				advancement: "mutantbeasts:frosty_the_snow_golem"
+				criterion: ""
+			}]
+		}
+		{
+			x: -4.0d
+			y: -11.5d
+			subtitle: "Commands upon commands. Left Click for more info"
+			description: [
+				"This handy device can be used to control your Creeper Minion more intensively. By right-clicking a Creeper Minion with this tool, a nice interface will be made visible. From here, you can select if your Minion can destroy blocks, if it has its name shown above its head, or if it can stand on you or not."
+				""
+				"If the later option is enabled, you can carry your Minion by getting very close to it. Shift will bring it down."
+				""
+				"This tool can also be used to track the Minion's explosive charge. When your minion it's in \"one-time\" mode, it will be able to unleash just one explosion before dying. Feed it with TNT to place it into \"Continuos\" mode."
+				""
+				"If a Spider-Pig gets blown by your Creeper Minion, it might become tamed."
+			]
+			dependencies: ["1701662F80888D8B"]
+			id: "144BB78D73681EE2"
+			tasks: [{
+				id: "7441D6C9B9A320E7"
+				type: "item"
+				item: "mutantbeasts:creeper_minion_tracker"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -4.0d
+			shape: "heart"
+			subtitle: "Gift from Poseidon. Left Click for more info"
+			description: [
+				"The Neptun's Bounty can be obtained by Fishing. A highly enchanted Diamond Fishing Rod is adviced for this, as this tresure is a very rare drop."
+				""
+				"You can find the follwing items in the Bounty:"
+				""
+				"- Neptunium Ingots"
+				"- Neptunium Tools"
+				"- Neptunium Armor"
+				"- Algae"
+			]
+			dependencies: ["0DDA2FB169318B04"]
+			size: 1.5d
+			id: "42AF545672802A08"
+			tasks: [{
+				id: "38B24752954C6FF8"
+				type: "item"
+				item: "aquaculture:neptunes_bounty"
+			}]
+			rewards: [
+				{
+					id: "55A3E12F538297B9"
+					type: "loot"
+					table_id: 5206766833681472091L
+				}
+				{
+					id: "04EC0171F855B4EF"
+					type: "item"
+					item: "aquaculture:neptunium_block"
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,38 @@
+{
+    "flower": "tag:minecraft:sand",
+    "creator": "Me_Ryan",
+    "lore": "Hive Bee",
+    "hasHoneycomb": true,
+    "traits": [],
+    "maxTimeInHive": 1800,
+    "baseLayerTexture": "glass/glass",
+    "ColorData": {
+    "honeycombColor": "#c3fff2",
+    "primaryColor": "#88d8d9",
+    "secondaryColor": "#c3fff2"
+  },
+    "CentrifugeData": {
+      "hasCentrifugeOutput": true,
+      "mainOutput": "minecraft:glass",
+      "bottleOutput": "minecraft:honey_bottle",
+      "bottleOutputWeight": 0.10,
+      "mainOutputWeight": 0.40,
+      "mainOutputCount": 32
+    },
+    "SpawnData": {
+      "canSpawnInWorld": false
+    },
+    "BreedData": {
+      "isBreedable": true,
+      "parent1": "Sand",
+      "parent2": "Lava",
+      "feedItem": "minecraft:glass",
+      "feedAmount": 64
+    },
+    "CombatData": {
+      "isPassive": true
+    },
+    "TraitData": {
+      "hasTraits": true
+    }
+}

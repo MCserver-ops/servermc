@@ -1,0 +1,54 @@
+{
+    "flower": "all",
+    "creator": "Me_Ryan",
+    "lore": "Lonely Bee",
+    "hasHoneycomb": false,
+    "traits": [],
+    "maxTimeInHive": 1800,
+    "baseLayerTexture": "grass/grass",
+    "ColorData": {
+      "modelType": "GELATINOUS",
+      "primaryColor": "#28a453",
+      "secondaryColor": "#0c8115"
+    },
+    "MutationData": {
+        "hasMutation": true,
+        "mutations" : [
+          {
+            "type": "BLOCK",
+            "inputID": "minecraft:stone",
+            "chance": 1,
+            "outputs": [
+              {"outputID": "minecraft:grass_block", "weight": 100}
+            ]
+          },
+          {
+            "type": "BLOCK",
+            "inputID": "minecraft:cobblestone",
+            "chance": 0.75,
+            "outputs": [
+              {"outputID": "minecraft:mossy_cobblestone", "weight": 10}
+            ]
+          }
+        ]
+      },
+    "SpawnData": {
+        "canSpawnInWorld": true,
+        "biomeWhitelist": "tag:overworld",
+        "biomeBlacklist": "tag:ocean",
+        "spawnWeight": 8,
+        "lightLevel": "DAY"
+      },
+    "BreedData": {
+        "isBreedable": true,
+        "feedItem": "minecraft:grass",
+        "feedAmount": 16
+      },
+    "CombatData": {
+        "isPassive": true
+      },
+    "TraitData": {
+        "hasTraits": true
+      }
+  }
+  

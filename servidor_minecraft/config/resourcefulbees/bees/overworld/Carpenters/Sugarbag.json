@@ -1,0 +1,37 @@
+{
+    "flower": "minecraft:cocoa",
+    "creator": "Me_Ryan",
+    "lore": "Lonely Bee",
+    "sizeModifier": 0.4,
+    "hasHoneycomb": true,
+    "customCombDrop": "minecraft:honeycomb",
+    "customCombBlockDrop": "minecraft:honeycomb_block",
+    "traits": [],
+    "maxTimeInHive": 1200,
+    "ColorData": {
+      "isBeeColored": true,
+      "primaryColor": "#283649",
+      "secondaryColor": "#426e77",
+      "honeycombColor": "#b24800"
+    },
+    "SpawnData": {
+      "canSpawnInWorld": true,
+      "biomeWhitelist": "tag:JUNGLE",
+      "lightLevel": "ANY",
+      "spawnWeight": 6
+    },
+    "BreedData": {
+      "isBreedable": true,
+      "feedItem": "minecraft:jungle_leaves",
+      "feedAmount": 64
+    },
+    "CombatData": {  
+      "isPassive": false,  
+      "removeStingerOnAttack": true,
+      "inflictsPoison": true,
+      "attackDamage": 3
+      },
+    "TraitData": {
+      "hasTraits": true
+    }
+  }

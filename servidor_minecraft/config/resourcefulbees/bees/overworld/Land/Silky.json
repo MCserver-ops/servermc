@@ -1,0 +1,53 @@
+{
+    "flower": "tag:minecraft:wool",
+    "creator": "Me_Ryan",
+    "lore": "Hive Bee",
+    "hasHoneycomb": true,
+    "traits": [],
+    "maxTimeInHive": 1200,
+    "baseLayerTexture": "silky/silky",
+    "ColorData": {
+      "modelType": "GELATINOUS",
+      "primaryColor": "#dfdfdf",
+      "secondaryColor": "#dfdfdf",
+      "honeycombColor": "#c5c5c5"
+    },
+    "MutationData": {
+      "hasMutation": true,
+      "mutations" : [
+        {
+          "type": "BLOCK",
+          "inputID": "tag:minecraft:leaves",
+          "chance": 1,
+          "outputs": [
+            {"outputID": "minecraft:cobweb", "weight": 80}
+          ]
+        }
+      ]
+    },
+    "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+        "mainOutput": "minecraft:string",
+        "mainOutputWeight": 0.60,
+        "mainOutputCount": 4
+    },
+    "SpawnData": {
+      "canSpawnInWorld": false
+    },
+    "BreedData": {
+      "isBreedable": true,
+      "parent1": "Resin",
+      "parent2": "Reed",
+      "feedItem": "minecraft:string",
+      "feedAmount": 64
+    },
+    "CombatData": {  
+      "isPassive": false,  
+      "removeStingerOnAttack": false,
+      "inflictsPoison": true,
+      "attackDamage": 3
+    },
+    "TraitData": {
+      "hasTraits": true
+    }
+  }

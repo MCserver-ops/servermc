@@ -1,0 +1,7 @@
+{"potionDamageEffects": [
+    {
+      "effectID": "minecraft:glowing",
+      "strength": 5
+    }
+  ]
+}

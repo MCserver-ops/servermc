@@ -1,0 +1,685 @@
+{
+	id: "222293B1B23BA988"
+	group: "1390A8D800379122"
+	order_index: 3
+	filename: "atum_2"
+	title: "Atum"
+	icon: "minecraft:sandstone"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Desert Adept"
+			icon: "atum:scarab"
+			x: -4.0d
+			y: 1.0d
+			shape: "square"
+			subtitle: "Ok, so you wanna go to Atum? You'll need a Scarab to light up the Portal. Left Click for more info"
+			description: [
+				"Since you're here, it must mean that you're ready to enter Atum. If you're not, we have no idea why you're here. Go play with Create or something :/ "
+				""
+				"Now, considering that you're ready, let's see how you make the portal for this dimension. Things are not too complicated. Just 49 piesces of Sandstone and a pool of Water will be required for this task."
+				""
+				"Below, you can see how the portal frame should look like:"
+				""
+				"{image:kubejs:textures/atum2/portal_example.png width:100 height:100 align:1}"
+				""
+				"Fill it with water, then throw the Scarab in it. The Portal will light up and this quest will allow you to enter Atum. Isn't that great? ☻"
+			]
+			hide_dependency_lines: true
+			dependencies: ["4A3AF0119A31CFF3"]
+			size: 2.0d
+			id: "347EFD1D11627798"
+			tasks: [{
+				id: "5523ED7C19A0C660"
+				type: "checkmark"
+				title: "I have the Scarab!"
+			}]
+			rewards: [{
+				id: "3C38E63A232BAD03"
+				type: "command"
+				title: "Adapt To Enter Atum"
+				icon: "atum:idol_of_labor"
+				command: "/thitemstages add @p atum_2"
+				player_command: false
+			}]
+		}
+		{
+			title: "Atum"
+			icon: "minecraft:sand"
+			x: -1.0d
+			y: 1.0d
+			shape: "square"
+			subtitle: "Where the winds rule"
+			dependencies: ["347EFD1D11627798"]
+			id: "212AEE831223DB8A"
+			tasks: [{
+				id: "3DCE4111844F0721"
+				type: "dimension"
+				title: "Visit Atum"
+				icon: "atum:scarab"
+				dimension: "atum:atum"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -0.5d
+			shape: "gear"
+			subtitle: "Can be used to obtain Godshards that can be further used in multiple ways. Just place an Artifact in, add some fuel in the form of Lava, and you shall obtain your precious GodShards which can be crafted into Godforged Blocks"
+			dependencies: [
+				"5929690A5286D4C0"
+				"76755DBE7F614234"
+			]
+			id: "4F15C680328EB263"
+			tasks: [{
+				id: "1F97667D45C4D1D8"
+				type: "item"
+				item: "atum:godforge"
+			}]
+		}
+		{
+			title: "You'll probably need more then just one"
+			x: 1.5d
+			y: 1.0d
+			shape: "square"
+			subtitle: "Nebu Torches will be required to open a Pyramid's entrance and, also, to wake up a Pharaoh"
+			dependencies: ["76755DBE7F614234"]
+			id: "51FDCBFC2D9B52F3"
+			tasks: [{
+				id: "3464B0E81284531B"
+				type: "item"
+				item: "atum:nebu_torch"
+			}]
+		}
+		{
+			title: "Pyramid"
+			x: 2.5d
+			y: 1.0d
+			shape: "square"
+			subtitle: "The place where you can find a Pharaoh"
+			dependencies: ["51FDCBFC2D9B52F3"]
+			id: "20B04A3B19552E09"
+			tasks: [{
+				id: "0A2C8E376D1D88F2"
+				type: "advancement"
+				title: "Enter a Pyramid"
+				advancement: "atum:core/pyramidscheme"
+				criterion: ""
+			}]
+		}
+		{
+			title: "Desert Master"
+			icon: {
+				id: "atum:eyes_of_atem"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 5.0d
+			y: 1.0d
+			shape: "diamond"
+			subtitle: "Mastering Atum. Left Click for more info"
+			description: [
+				"The Pharaoh is boss added by Atum 2. He comes with 13 variants and you can find him in a Pyramid structure, inside the boss room."
+				""
+				"To spawn him you must go to the boss room and place 4 Nebu Torches around the sarcophagus on the Carved Limestone."
+				""
+				"Pharaoh is temporary spawning Mummys and regenerating his life. Each variant of Pharaoh has different attacks, textures and loot."
+				""
+				"You may also specify which Pharaoh you wish to summon through special pharaoh torches that can be crafted with the associated Godshard."
+				""
+				"To obtain Godshards you need to smelt the relics dropped by Pharaohs upon their death, in a GodForge."
+				""
+				"Assuming that you've defeated a Pharaoh after the Twilight Ghast, we'll see you in the next Age."
+			]
+			dependencies: ["20B04A3B19552E09"]
+			size: 2.0d
+			id: "3A5628BD9FC57446"
+			tasks: [{
+				id: "41EE5CC178CE1181"
+				type: "kill"
+				title: "Defeat a Pharaoh"
+				icon: {
+					id: "atum:eyes_of_atem"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				entity: "atum:pharaoh"
+				value: 1L
+			}]
+			rewards: [
+				{
+					id: "21E21048307CE5E7"
+					type: "item"
+					item: {
+						id: "endrem:witch_eye"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "049B3EF19861D527"
+					type: "item"
+					item: {
+						id: "endrem:rogue_eye"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "46754E0E322CB90F"
+					type: "loot"
+					table_id: 8587500481418189075L
+				}
+			]
+		}
+		{
+			title: "Ra Armor"
+			icon: {
+				id: "atum:body_of_ra"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 7.0d
+			y: -0.5d
+			shape: "heart"
+			subtitle: "Ra's Radiance: The Armor of Ra is one of the Godforged Armor sets. It is based on one of Atum's deities, Ra. Each piece of armor individually grants the same bonuses, but when worn as a full set grants an additional bonus particular to Atem; You're immune to fire and lava damage"
+			dependencies: ["6E4696FF5806D411"]
+			id: "7330B845370EC8E4"
+			tasks: [
+				{
+					id: "0D3A5FF98E61051B"
+					type: "item"
+					item: {
+						id: "atum:halo_of_ra"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "0D9CC55EFD09043F"
+					type: "item"
+					item: {
+						id: "atum:body_of_ra"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "496E1B3F96B384E9"
+					type: "item"
+					item: {
+						id: "atum:legs_of_ra"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "72CD568F8E1CE634"
+					type: "item"
+					item: {
+						id: "atum:feet_of_ra"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Atem Armor"
+			icon: {
+				id: "atum:body_of_atem"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 7.0d
+			y: 2.5d
+			shape: "heart"
+			subtitle: "Atem's Divinity: The Armor of Atem is one of the Godforged Armor sets. It is based on one of Atum's deities, Atem. Each piece of armor individually grants the same bonuses, but when worn as a full set grants an additional bonus particular to Atem; You gain protection against Death once per day"
+			dependencies: ["6E4696FF5806D411"]
+			id: "68833CF96D677BA3"
+			tasks: [
+				{
+					id: "5F6FEBD58BBAD975"
+					type: "item"
+					item: {
+						id: "atum:eyes_of_atem"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "0ED68907549E134F"
+					type: "item"
+					item: {
+						id: "atum:body_of_atem"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "288BAD9EC6ED6026"
+					type: "item"
+					item: {
+						id: "atum:legs_of_atem"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "48A0E9DB7DC858B9"
+					type: "item"
+					item: {
+						id: "atum:feet_of_atem"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			x: -2.0d
+			y: 2.5d
+			shape: "gear"
+			subtitle: "2x2 smelting. Left Click for more info"
+			description: [
+				"The Kiln can smelt 4 items at a time."
+				""
+				"This smelting contraption will require a multiblock to work. Block list:"
+				"- 2x Kiln"
+				"- 6x Small Limestone Bricks"
+				""
+				"Below you can see an example of how the Kiln should look like:"
+				""
+				"{image:kubejs:textures/atum2/kiln_example.png width:100 height:100 align:1}"
+			]
+			dependencies: ["212AEE831223DB8A"]
+			id: "2713F7BBF8FB0612"
+			tasks: [{
+				id: "7B6A0841229B050C"
+				type: "item"
+				item: "atum:kiln"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 2.5d
+			shape: "gear"
+			subtitle: "The Limestone Furnace will be very similar to the Vanilla Furnace, however, it will be much cheaper to craft"
+			dependencies: ["212AEE831223DB8A"]
+			id: "10220D96C4505A8B"
+			tasks: [{
+				id: "06D0A7A0F68790C9"
+				type: "item"
+				item: "atum:limestone_furnace"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 3.0d
+			shape: "gear"
+			subtitle: "The Spinning Wheel is a nice station which can be used to obtain String related Items, such as the Linen Thread. It can also be used to recycle some items back into String. To use it, Right-Click the top of the block until the middle of it is filled with your material. Simply Right-Click the middle of the block to take out the output"
+			dependencies: ["212AEE831223DB8A"]
+			id: "6FB742CE0D72E094"
+			tasks: [{
+				id: "000F26C10FDB6EFF"
+				type: "item"
+				item: "atum:spinning_wheel"
+			}]
+		}
+		{
+			title: "Deity Torches"
+			x: -1.0d
+			y: -2.0d
+			shape: "gear"
+			subtitle: "Deity Torches are used to summon a specific Pharaoh from their sargophagus. Just place 4 of these special torches next to their sarcophagus, on the marked spots and the chance of them being summoned, will be increased"
+			dependencies: ["4F15C680328EB263"]
+			id: "2C370C387AD15F2F"
+			tasks: [{
+				id: "4CCD912B6C2B2D8D"
+				type: "item"
+				title: "Any Deity Torch"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:atum_god_torches"
+					}
+				}
+			}]
+		}
+		{
+			title: "Godforged Blocks"
+			x: 1.0d
+			y: -2.0d
+			shape: "gear"
+			subtitle: "Godforged Blocks are used to obtain Artifacts from a certain Deity added by Atum. Just place them down and break them with a Nebu Hammer to obtain an Artifact. You can also craft Godforged Blocks specific to a Deity to increase the chances of obtaining a certain Artifact"
+			dependencies: ["4F15C680328EB263"]
+			id: "588FE9FDFE81BF57"
+			tasks: [{
+				id: "3F63B0121AC6ECBF"
+				type: "item"
+				title: "Any Godforged Block"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:godforged_blocks"
+					}
+				}
+			}]
+		}
+		{
+			x: 0.5d
+			y: 1.0d
+			shape: "square"
+			subtitle: "The Nebu Ore is a mystical metal which can be found only in the Atum Dimension"
+			dependencies: ["212AEE831223DB8A"]
+			id: "76755DBE7F614234"
+			tasks: [{
+				id: "32A2CBC31A6735BA"
+				type: "item"
+				item: "atum:nebu_ore"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -0.5d
+			subtitle: "Used to obtain GodShards from Godforged blocks"
+			dependencies: ["76755DBE7F614234"]
+			id: "43AC794F4E0F8ADD"
+			tasks: [{
+				id: "37F785C77F14FA5B"
+				type: "item"
+				item: "atum:nebu_hammer"
+			}]
+		}
+		{
+			title: "Obtaining Artifacts"
+			icon: {
+				id: "botania:cosmetic_questgiver_mark"
+				Count: 1b
+				tag: { }
+			}
+			x: 7.0d
+			y: 1.0d
+			subtitle: "Atum Artifacts are rare items which have unique abilities. They can be obtained as rare items in loot chests, as drops from Pharaohs, or as drops from breaking Godforged Blocks with a Nebu Hammer"
+			hide_dependency_lines: true
+			dependencies: ["212AEE831223DB8A"]
+			id: "6E4696FF5806D411"
+			tasks: [{
+				id: "1C771EBDE6E7A640"
+				type: "checkmark"
+				title: "Got it!"
+			}]
+		}
+		{
+			title: "Wanderer Outfit"
+			icon: {
+				id: "atum:wanderer_chest"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -1.0d
+			y: 4.5d
+			subtitle: "These clothes can be used to upgrade your vanilla sets of Armor. By combining it with Iron, Gold, or Diamond Armor Pieaces, you can obtain versions of the regular sets of Armor, but with higher durability"
+			dependencies: ["6FB742CE0D72E094"]
+			id: "7BD8E13BD4BAD04B"
+			tasks: [
+				{
+					id: "1D5BB256C03CD840"
+					type: "item"
+					item: {
+						id: "atum:wanderer_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "60812570CF0967DD"
+					type: "item"
+					item: {
+						id: "atum:wanderer_chest"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "027D69E619D73DF9"
+					type: "item"
+					item: {
+						id: "atum:wanderer_legs"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "2C8B31D732556EFF"
+					type: "item"
+					item: {
+						id: "atum:wanderer_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			icon: {
+				id: "atum:desert_chest_iron"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -1.0d
+			y: 5.5d
+			subtitle: "Approximately +20 durability points for each Armor Piece"
+			dependencies: ["7BD8E13BD4BAD04B"]
+			id: "5B25FFAF5D0A14FE"
+			tasks: [
+				{
+					id: "1C30F5300B0B058F"
+					type: "item"
+					item: {
+						id: "atum:desert_helmet_iron"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "3E5E084E93CBF675"
+					type: "item"
+					item: {
+						id: "atum:desert_chest_iron"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "50E650101812A3F4"
+					type: "item"
+					item: {
+						id: "atum:desert_legs_iron"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "730BE3EF3DD8059B"
+					type: "item"
+					item: {
+						id: "atum:desert_boots_iron"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			icon: {
+				id: "atum:desert_chest_gold"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -2.0d
+			y: 4.5d
+			subtitle: "Approximately +17 durability points for each Armor Piece"
+			dependencies: ["7BD8E13BD4BAD04B"]
+			id: "7959AC7445BBD06D"
+			tasks: [
+				{
+					id: "0F7C7119DB70CB90"
+					type: "item"
+					item: {
+						id: "atum:desert_helmet_gold"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "35685EBD0F0F5A81"
+					type: "item"
+					item: {
+						id: "atum:desert_chest_gold"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "06ABAB0233E24F2F"
+					type: "item"
+					item: {
+						id: "atum:desert_legs_gold"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "1F19A56C2C62AFE3"
+					type: "item"
+					item: {
+						id: "atum:desert_boots_gold"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			icon: {
+				id: "atum:desert_chest_diamond"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 0.0d
+			y: 4.5d
+			subtitle: "Approximately +50 durability points for each Armor Piece"
+			dependencies: ["7BD8E13BD4BAD04B"]
+			id: "3352326AAF361DD7"
+			tasks: [
+				{
+					id: "7873E5ECBAC8A060"
+					type: "item"
+					item: {
+						id: "atum:desert_helmet_diamond"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "54F19D9320FA1AE5"
+					type: "item"
+					item: {
+						id: "atum:desert_chest_diamond"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "13E0AF2CB5F00E9A"
+					type: "item"
+					item: {
+						id: "atum:desert_legs_diamond"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "30114DECF18E150F"
+					type: "item"
+					item: {
+						id: "atum:desert_boots_diamond"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+	]
+}

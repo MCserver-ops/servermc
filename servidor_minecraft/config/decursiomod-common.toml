@@ -1,0 +1,14 @@
+
+["Decursio Essentials - Config"]
+	#When this value is 'true' if the player has the Dolphin's Grace effect while trying to use a slime sling, the effect will be removed.
+	dolphinSling = true
+	#When this value is 'true' the Nether Portal will open only by right clicking a valid portal frame with the 'Scythe' item from the Eidolon mod.
+	scytheNetherPortal = true
+	#When this value is 'true' the item stages advanced tooltips will be always shown.
+	showItemStagesAdvancedTooltips = true
+	#When this value is 'true' the player won't die from temperature.
+	coldSweatNoDeath = true
+	#The required amount of RF to charge an Unstable ME Core in it's last phase.
+	#Range: 0 ~ 1000000000
+	chargingPylonCapacity = 10000
+

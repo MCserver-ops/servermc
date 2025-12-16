@@ -1,0 +1,1231 @@
+{
+	id: "5E5692406AEE545D"
+	group: "1390A8D800379122"
+	order_index: 2
+	filename: "twilight_forest"
+	title: "Twilight Forest"
+	icon: "twilightforest:twilight_portal_miniature_structure"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Attempt at life II"
+			x: -6.0d
+			y: -3.5d
+			subtitle: "Alternate totem of undying"
+			dependencies: ["4BF6D5E543984AA7"]
+			id: "26487E80ACB3B6C7"
+			tasks: [{
+				id: "2911E67FD4A2F4B2"
+				type: "item"
+				item: "twilightforest:charm_of_life_2"
+			}]
+		}
+		{
+			title: "Attempt at life"
+			x: -7.0d
+			y: -3.5d
+			subtitle: "Can be found in loot chests in the forest"
+			hide_dependency_lines: true
+			dependencies: ["0B2882BF279259E9"]
+			id: "4BF6D5E543984AA7"
+			tasks: [{
+				id: "459E449A1F9202D3"
+				type: "item"
+				item: "twilightforest:charm_of_life_1"
+			}]
+		}
+		{
+			x: -12.0d
+			y: -3.5d
+			subtitle: "Strange \"torch\" launcher. Can be found in loot chests in Hollow Hills"
+			hide_dependency_lines: true
+			dependencies: ["0B2882BF279259E9"]
+			id: "0200EFE9F38B67D7"
+			tasks: [{
+				id: "11DDD3C0DEA4374B"
+				type: "item"
+				item: {
+					id: "twilightforest:moonworm_queen"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -10.0d
+			y: -3.5d
+			subtitle: "This magnet can bring ores to the surface. This can be found in Hollow Hills"
+			hide_dependency_lines: true
+			dependencies: ["0B2882BF279259E9"]
+			id: "1FD8EF58D2CFA944"
+			tasks: [{
+				id: "3491B85F985A7E58"
+				type: "item"
+				item: {
+					id: "twilightforest:ore_magnet"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -11.0d
+			y: -3.5d
+			subtitle: "This item can be used as an elytra booster or just for achieving some distance between you and other mobs. Can be found in loot chests in the forest"
+			hide_dependency_lines: true
+			dependencies: ["0B2882BF279259E9"]
+			id: "02B71411EDE3F484"
+			tasks: [{
+				id: "6D8378ABEF950145"
+				type: "item"
+				item: {
+					id: "twilightforest:peacock_fan"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Fiery Tools"
+			x: -5.0d
+			y: -4.5d
+			shape: "gear"
+			subtitle: "While the sword will act like an enchanted sword with fire aspect, the pickaxe will melt mined blocks"
+			dependencies: ["47BA4A9A1FEDEAEE"]
+			id: "1B6852CD8C0BE4E9"
+			tasks: [
+				{
+					id: "723B6873FD26300E"
+					type: "item"
+					item: {
+						id: "twilightforest:fiery_sword"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "53FC12FC62665318"
+					type: "item"
+					item: {
+						id: "twilightforest:fiery_pickaxe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			x: -6.0d
+			y: -4.5d
+			subtitle: "Shiny"
+			hide_dependency_lines: true
+			dependencies: ["3A347D130E00309C"]
+			dependency_requirement: "one_completed"
+			id: "47BA4A9A1FEDEAEE"
+			tasks: [{
+				id: "3C0366CCD16A2FEB"
+				type: "item"
+				item: "twilightforest:fiery_ingot"
+			}]
+		}
+		{
+			title: "Fiery Armor"
+			icon: {
+				id: "twilightforest:fiery_chestplate"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -7.0d
+			y: -4.5d
+			shape: "gear"
+			subtitle: "Molten Man: Will light attackers on fire while providing Diamond level of protection"
+			dependencies: ["47BA4A9A1FEDEAEE"]
+			id: "4D0E2A2D99795B83"
+			tasks: [
+				{
+					id: "5514F5D536EA0862"
+					type: "item"
+					item: {
+						id: "twilightforest:fiery_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "600609FC5856F3C7"
+					type: "item"
+					item: {
+						id: "twilightforest:fiery_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "5CAC73D899B80B59"
+					type: "item"
+					item: {
+						id: "twilightforest:fiery_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "423BCE28F8E13091"
+					type: "item"
+					item: {
+						id: "twilightforest:fiery_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			x: -5.0d
+			y: -3.5d
+			subtitle: "With this focus, you can clearly see the maze"
+			hide_dependency_lines: true
+			dependencies: ["0B2882BF279259E9"]
+			id: "406009C9FE695D51"
+			tasks: [{
+				id: "07DA5D4E1C949EFE"
+				type: "item"
+				item: "twilightforest:maze_map_focus"
+				consume_items: true
+			}]
+			rewards: [{
+				id: "218FA3E0E9DD399D"
+				type: "item"
+				item: "twilightforest:maze_map"
+			}]
+		}
+		{
+			x: -10.0d
+			y: -4.5d
+			subtitle: "This charm will attempt to preserve your inventory"
+			dependencies: ["50EF88477EBA2733"]
+			id: "3F8AC524C910549C"
+			tasks: [{
+				id: "6AB932DA7BB441A7"
+				type: "item"
+				item: "twilightforest:charm_of_keeping_3"
+			}]
+		}
+		{
+			x: -11.0d
+			y: -4.5d
+			subtitle: "This Charm will attempt to preverse your armor and your hotbar"
+			dependencies: ["1D504874A62210D9"]
+			id: "50EF88477EBA2733"
+			tasks: [{
+				id: "2CB2EE75F76208A9"
+				type: "item"
+				item: "twilightforest:charm_of_keeping_2"
+			}]
+		}
+		{
+			x: -12.0d
+			y: -4.5d
+			subtitle: "The Charm of Keeping will try to preserve your armor and the currently held item. It can be found in Hollow Hills or Labyrinths"
+			hide_dependency_lines: true
+			dependencies: ["0B2882BF279259E9"]
+			id: "1D504874A62210D9"
+			tasks: [{
+				id: "5582516AB9DF75AB"
+				type: "item"
+				item: "twilightforest:charm_of_keeping_1"
+			}]
+		}
+		{
+			title: "Naga Armor"
+			icon: {
+				id: "twilightforest:naga_chestplate"
+				Count: 1b
+				tag: {
+					Damage: 0
+					Enchantments: [{
+						lvl: 3s
+						id: "minecraft:fire_protection"
+					}]
+				}
+			}
+			x: -2.0d
+			y: -1.5d
+			subtitle: "The Naga Armor has only two pieces. Wierd, right? However, these two pieces come enchanted, so that should compensate, right?"
+			dependencies: ["1E06D31706A0A25A"]
+			id: "5CAD6D9F909D3BF2"
+			tasks: [
+				{
+					id: "6A2624CD3BB27D3D"
+					type: "item"
+					item: {
+						id: "twilightforest:naga_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+							Enchantments: [{
+								lvl: 3s
+								id: "minecraft:fire_protection"
+							}]
+						}
+					}
+				}
+				{
+					id: "645F46F52FA551E2"
+					type: "item"
+					item: {
+						id: "twilightforest:naga_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+							Enchantments: [{
+								lvl: 3s
+								id: "minecraft:protection"
+							}]
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Naga! - Twilight"
+			x: -4.0d
+			y: 0.0d
+			shape: "square"
+			subtitle: "The Snake. Left Click for more info"
+			description: ["It can be found in the Naga Courtyard. The Naga is a large snake-like creature, and deals 9 (Heart.svgHeart.svgHeart.svgHeart.svgHalf Heart.svg) points of damage when attacking and has 250 (Heart.svg × 125) health points. As the Naga sustains damage it will lose its large segments and move faster. If it is not attacked for a while it will begin to heal itself. The Naga is bound to its Courtyard and will lose interest if its targets move out of it."]
+			dependencies: ["0B2882BF279259E9"]
+			id: "1E06D31706A0A25A"
+			tasks: [{
+				id: "5BAB8BC2BF9BFAE2"
+				type: "advancement"
+				title: "Defeat The Naga"
+				advancement: "twilightforest:progress_naga"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "1B778D593B2A317B"
+				type: "loot"
+				table_id: 8587500481418189075L
+			}]
+		}
+		{
+			title: "Questing Ram"
+			x: -5.5d
+			y: 1.0d
+			subtitle: "Give the ram all the vanilla colored wool types"
+			dependencies: ["0B2882BF279259E9"]
+			id: "5B825E16B58CC81C"
+			tasks: [{
+				id: "107C07DC71E5C8AA"
+				type: "advancement"
+				title: "16 colored wools"
+				advancement: "twilightforest:quest_ram"
+				criterion: ""
+			}]
+		}
+		{
+			title: "The Boots Are Mine!"
+			x: -6.5d
+			y: 1.0d
+			subtitle: "Defeat a RedCap Goblin in a small Hollow Hill"
+			dependencies: ["0B2882BF279259E9"]
+			id: "4BA1AA8A84E2D556"
+			tasks: [{
+				id: "7B6A8F707709C491"
+				type: "advancement"
+				title: "Defeat that Goblin"
+				advancement: "twilightforest:hill1"
+				criterion: ""
+			}]
+		}
+		{
+			title: "It was a RedCap Sapper"
+			x: -6.5d
+			y: 2.0d
+			subtitle: "Defeat a RedCap Sapper in a medium Hallow Hill"
+			dependencies: ["4BA1AA8A84E2D556"]
+			id: "7525DECDDEA6C37D"
+			tasks: [{
+				id: "0C50F9240EEB0565"
+				type: "advancement"
+				title: "What was that noise?"
+				advancement: "twilightforest:hill2"
+				criterion: ""
+			}]
+		}
+		{
+			x: -5.5d
+			y: 2.0d
+			subtitle: "This will be a reward for helping the Questing Ram"
+			dependencies: ["5B825E16B58CC81C"]
+			id: "38560DCCB21CFC09"
+			tasks: [{
+				id: "624C789E5B5D2223"
+				type: "item"
+				item: {
+					id: "twilightforest:crumble_horn"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Navigating the forest"
+			icon: "twilightforest:magic_map"
+			x: -6.0d
+			y: 0.0d
+			shape: "square"
+			subtitle: "A magic map will show you every location of the nearby bosses/creatures/dungeons"
+			dependencies: ["17D1DB4EDC0782C6"]
+			id: "0B2882BF279259E9"
+			tasks: [{
+				id: "382E07AA63696C2A"
+				type: "checkmark"
+				title: "Give it to me"
+			}]
+			rewards: [{
+				id: "4A33B1F2869B1179"
+				type: "item"
+				item: "twilightforest:magic_map_empty"
+			}]
+		}
+		{
+			title: "The Twilight Forest"
+			icon: "twilightforest:twilight_portal_miniature_structure"
+			x: -8.0d
+			y: 0.0d
+			shape: "square"
+			subtitle: "Where all is magic"
+			description: ["Reach the Twilight Forest and start searching for the main bosses found in there. You're main objective will be to defeat the Ur-Ghast, but for now, you'll have to look for the Naga."]
+			dependencies: ["6CF649233B2D6036"]
+			id: "17D1DB4EDC0782C6"
+			tasks: [{
+				id: "5488883F4313BEED"
+				type: "dimension"
+				title: "Visit The Twilight Forest"
+				icon: "twilightforest:twilight_portal_miniature_structure"
+				dimension: "twilightforest:twilightforest"
+			}]
+			rewards: [{
+				id: "0BA18F6DCE0630EB"
+				type: "item"
+				item: "twilightforest:charm_of_life_2"
+			}]
+		}
+		{
+			title: "Understanding The Fear"
+			icon: "astralsorcery:shifting_star"
+			x: -11.0d
+			y: 0.0d
+			shape: "square"
+			subtitle: "Aquiring a Looking Glass might open your vision towards the bright stars of The Twilight Forest. Left Click for more info"
+			description: [
+				"Look who's entering the Twilight Forest! Congrats! That's only.. if you're actually entering Twilight Forest.. if you're not, then.. yeah, we cheered you for nothing. But we DON'T REGRET IT!"
+				""
+				"Now, considering the fact that you're ready for the Twilight Forest, let's see how to build the portal, of course, if you're not familiar with it. Just a 2x2 pool of water surrounded by flowers. Throw a Sanguine Crystal in it and voilà! You've got a very strange and expensive soup. Well, not really. "
+				""
+				"After throwing that Sanguine Crystal into the Pool, a lighting should strike and the Portal to Twilight should be ready."
+			]
+			hide_dependency_lines: true
+			dependencies: ["47FA4A7BD534DE6C"]
+			size: 2.0d
+			id: "6CF649233B2D6036"
+			tasks: [{
+				id: "58D8ECB625808A62"
+				type: "item"
+				item: "sanguinearsenal:sanguine_crystal"
+			}]
+			rewards: [{
+				id: "5E4AD7020CCDA536"
+				type: "command"
+				title: "Star Observer"
+				icon: "astralsorcery:shifting_star"
+				auto: "disabled"
+				command: "/thitemstages add @p twilight_forest"
+				player_command: false
+			}]
+		}
+		{
+			title: "Bug Stomper"
+			x: -6.0d
+			y: -1.5d
+			subtitle: "Defeat a spider in a hedge maze"
+			dependencies: ["0B2882BF279259E9"]
+			id: "56B36E938CDAB294"
+			tasks: [{
+				id: "1F56DA81BE6FAC09"
+				type: "advancement"
+				advancement: "twilightforest:hedge"
+				criterion: ""
+			}]
+		}
+		{
+			title: "Scepters of Power"
+			x: -2.0d
+			y: 1.5d
+			subtitle: "These scepters are dropped by the Twilight Lich. These have special abilities and one is tronger then the other, but they have a random chance to be dropped by the Lich King after you defeat him, so to obtain all of them, you'll need to defeat multiple Lich Kings"
+			dependencies: ["6D3B2FD287453A1A"]
+			id: "0F2A653ED1A1206F"
+			tasks: [
+				{
+					id: "4073B6D2FFB7181A"
+					type: "item"
+					item: {
+						id: "twilightforest:twilight_scepter"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "5E35F79897EFBD4D"
+					type: "item"
+					item: {
+						id: "twilightforest:lifedrain_scepter"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "535C872942C07D05"
+					type: "item"
+					item: {
+						id: "twilightforest:zombie_scepter"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "522417E08946BC4E"
+					type: "item"
+					item: {
+						id: "twilightforest:shield_scepter"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "The Twilight Lich"
+			x: 0.0d
+			y: 0.0d
+			shape: "square"
+			subtitle: "He's like...a wizard? Left Click for more info"
+			description: ["The Twilight Lich can be found at the top of the Lich Tower, and will spawn as soon as the player reaches the top floor. During the first stage the Lich is surrounded by damage-immune shields and wields a Scepter of Twilight and will shoot Ender Pearl projectiles, as well as Fireball projectiles. The Ender Pearl projectiles can be reflected back at the Lich, removing a shield for every pearl the Lich is hit. In the second stage the Lich wields a Zombie Scepter and will summon Lich Minions or Zombies until there is no charge remaining in the Scepter. Once this stage begins both of the Twilight Lich Shadows will disappear for the rest of the fight. At this stage the Lich becomes vulnerable to attacks, but it is not recommended due to the Lich Minions that are constantly spawning. Once the Zombie Scepter is depleted, the fight progresses to its third or final stage and the Lich will wield a Golden Sword, fighting the player in hand-to-hand combat."]
+			dependencies: ["1E06D31706A0A25A"]
+			id: "6D3B2FD287453A1A"
+			tasks: [{
+				id: "5C73B351862314B8"
+				type: "advancement"
+				title: "Defeat The Lich"
+				advancement: "twilightforest:progress_lich"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "2F6A19F0A7D57D48"
+				type: "loot"
+				table_id: 8587500481418189075L
+			}]
+		}
+		{
+			title: "MinoShroom's Maze"
+			x: 1.5d
+			y: 0.0d
+			subtitle: "To finish this quest, you'll have to defeat the MinoShroom in his maze and then, eat the Meef Stroganoff dropped by him"
+			dependencies: ["6D3B2FD287453A1A"]
+			id: "314CA0D441A530E5"
+			tasks: [{
+				id: "5D7A0970F9FEBD1C"
+				type: "advancement"
+				title: "Meal for a worthy warrior"
+				advancement: "twilightforest:progress_labyrinth"
+				criterion: ""
+			}]
+		}
+		{
+			x: 2.5d
+			y: -1.0d
+			subtitle: "With this legendary pickaxe, you are allowed to cheat through the Maze"
+			dependencies: ["314CA0D441A530E5"]
+			id: "3E97F0AE9568AE6B"
+			tasks: [{
+				id: "431D38A130CD6491"
+				type: "item"
+				item: {
+					id: "twilightforest:mazebreaker_pickaxe"
+					Count: 1b
+					tag: {
+						Damage: 0
+						Enchantments: [
+							{
+								lvl: 4s
+								id: "minecraft:efficiency"
+							}
+							{
+								lvl: 3s
+								id: "minecraft:unbreaking"
+							}
+							{
+								lvl: 2s
+								id: "minecraft:fortune"
+							}
+						]
+					}
+				}
+			}]
+		}
+		{
+			title: "Hydra gives upgrades"
+			x: 2.5d
+			y: 1.0d
+			subtitle: "Hydra's drops include Fiery Blood and Hydra Chops. While the blood can be used to upgrade regular iron, thus creating a powerful ingot, the Chop will fill your stomach like no other food ever did"
+			dependencies: ["0360D88FDFAEC790"]
+			id: "3A347D130E00309C"
+			tasks: [
+				{
+					id: "2DFB29A7B39C2A4D"
+					type: "item"
+					item: "twilightforest:hydra_chop"
+				}
+				{
+					id: "55705F5E104FCE9A"
+					type: "item"
+					item: "twilightforest:fiery_blood"
+				}
+			]
+		}
+		{
+			title: "Alpha Yeti"
+			x: 2.5d
+			y: 2.5d
+			subtitle: "But he's adorable :( Left Click for more info"
+			description: [
+				"The Alpha Yeti appears like a large Yeti but with six blue horns and red eyes. It has 200 health and is represented by a white boss bar. The Alpha Yeti resides in the Yeti Lair in the Snowy Forest."
+				""
+				"Defeating the Yeti will reward you with alpha fur and, also, with the possibility of further progressing towards the Aurora Palace."
+			]
+			dependencies: ["17D1D0D20F58A33A"]
+			id: "45E0A031AA2FE5A4"
+			tasks: [{
+				id: "43B94195A48C2009"
+				type: "advancement"
+				title: "Defeat The Alpha Yeti"
+				advancement: "twilightforest:progress_yeti"
+				criterion: ""
+			}]
+		}
+		{
+			title: "Yeti"
+			icon: "twilightforest:arctic_fur"
+			x: 1.5d
+			y: 2.5d
+			subtitle: "It's an Yeti, duh"
+			dependencies: ["6D3B2FD287453A1A"]
+			id: "17D1D0D20F58A33A"
+			tasks: [{
+				id: "3EF2A01784D4646F"
+				type: "kill"
+				title: "Defeat 1 Yeti"
+				icon: "twilightforest:arctic_fur"
+				entity: "twilightforest:yeti"
+				value: 1L
+			}]
+		}
+		{
+			title: "Arctic Clothes"
+			icon: {
+				id: "twilightforest:arctic_chestplate"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 1.5d
+			y: 4.5d
+			subtitle: "Eskimo"
+			dependencies: ["17D1D0D20F58A33A"]
+			id: "40500F4A31F5CE79"
+			tasks: [
+				{
+					id: "206FB4B8B881898C"
+					type: "item"
+					item: {
+						id: "twilightforest:arctic_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "06CA1CE1F6BFD8C3"
+					type: "item"
+					item: {
+						id: "twilightforest:arctic_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "71B7843EA370FD9A"
+					type: "item"
+					item: {
+						id: "twilightforest:arctic_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "7120A0BABACDD9CE"
+					type: "item"
+					item: {
+						id: "twilightforest:arctic_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Yeti Clothes"
+			icon: {
+				id: "twilightforest:yeti_chestplate"
+				Count: 1b
+				tag: {
+					Damage: 0
+					Enchantments: [{
+						lvl: 2s
+						id: "minecraft:protection"
+					}]
+				}
+			}
+			x: 2.5d
+			y: 6.0d
+			subtitle: "Yeti coating: Attackers will be chilled"
+			dependencies: ["45E0A031AA2FE5A4"]
+			id: "45069DFFE36B0525"
+			tasks: [
+				{
+					id: "51A5D6D004775EA7"
+					type: "item"
+					item: {
+						id: "twilightforest:yeti_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+							Enchantments: [{
+								lvl: 2s
+								id: "minecraft:protection"
+							}]
+						}
+					}
+				}
+				{
+					id: "56D6C850B6DEFACF"
+					type: "item"
+					item: {
+						id: "twilightforest:yeti_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+							Enchantments: [{
+								lvl: 2s
+								id: "minecraft:protection"
+							}]
+						}
+					}
+				}
+				{
+					id: "466230FEE82978C4"
+					type: "item"
+					item: {
+						id: "twilightforest:yeti_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+							Enchantments: [{
+								lvl: 2s
+								id: "minecraft:protection"
+							}]
+						}
+					}
+				}
+				{
+					id: "1856A6B76CC0D11C"
+					type: "item"
+					item: {
+						id: "twilightforest:yeti_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+							Enchantments: [
+								{
+									lvl: 2s
+									id: "minecraft:protection"
+								}
+								{
+									lvl: 4s
+									id: "minecraft:feather_falling"
+								}
+							]
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 3.5d
+			y: 4.5d
+			subtitle: "Infrared homing. Left Click for more info"
+			description: [
+				"Arrows shot with this bow will scan their surrounding areas for potential entities to target, and home in on them."
+				""
+				"It has a 50% chance to drop when the Snow Queen is slain, otherwise, the Tri-bow will be dropped."
+			]
+			dependencies: ["2026B5F0128304CB"]
+			id: "56033745BFA45D5B"
+			tasks: [{
+				id: "3DE0A67171FB25FE"
+				type: "item"
+				item: {
+					id: "twilightforest:seeker_bow"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Snow Queen"
+			x: 3.5d
+			y: 2.5d
+			shape: "heart"
+			subtitle: "She's gorgeous. Left Click for more info"
+			description: ["The Snow Queen spawns at the top of one of the towers in the Aurora Palace. The tower she inhabits has ice over rooms. She has two battle phases. In her first phase, she summons Ice Crystals. These mobs distract the player and allow her to regenerate her health. When her health drops to 125 health points, she will enter her second phase. In this phase, she extends her arms and shoots snow from her hands. She can also fly to the top of the chamber, then quickly fall to the ground, potentially crushing the player with her ice cloud."]
+			dependencies: ["45E0A031AA2FE5A4"]
+			id: "2026B5F0128304CB"
+			tasks: [{
+				id: "176A5A340CBF1E2B"
+				type: "advancement"
+				advancement: "twilightforest:progress_glacier"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "75F1AF4326863ECE"
+				type: "loot"
+				table_id: 8587500481418189075L
+			}]
+		}
+		{
+			x: 5.0d
+			y: 2.5d
+			subtitle: "Where did the other two come from? Left Click for more info"
+			description: [
+				"The Tri-bow is a weapon added by Twilight Forest. It functions similarly to a Bow, except that when fired, it will shoot 3 arrows while consuming 1 Arrow from the player's inventory. The three arrows it shoots are vertically aligned. When using modded or tipped arrows, only one of the arrows shot will hold the effect."
+				""
+				"It has a 50% chance to drop when the Snow Queen is slain, otherwise, the Seeker Bow will be dropped."
+			]
+			dependencies: ["2026B5F0128304CB"]
+			id: "31AE04DFF37137DB"
+			tasks: [{
+				id: "24E1BF92193354A3"
+				type: "item"
+				item: {
+					id: "twilightforest:triple_bow"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Hydra - Hail Hydra"
+			x: 3.5d
+			y: 0.0d
+			shape: "heart"
+			subtitle: "The Hydra is an immobile boss monster added by Twilight Forest. The Hydra is a serpent-dragon that spawns with 3 heads. Hydras can be found in a Hydra Lair, which are only found in Twilight Swamps, and Fire Swamps. The main body has 360 health points"
+			dependencies: ["314CA0D441A530E5"]
+			id: "0360D88FDFAEC790"
+			tasks: [{
+				id: "4FA45CA5A274830A"
+				type: "advancement"
+				title: "Slay the Hydra"
+				advancement: "twilightforest:progress_hydra"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "3C0ECBB56F93E1AC"
+				type: "loot"
+				table_id: 8587500481418189075L
+			}]
+		}
+		{
+			title: "The Highlands"
+			x: 5.0d
+			y: 0.0d
+			shape: "circle"
+			subtitle: "To reach the HighLands, you'll have to defeat The Ur Ghast, The Hydra and The Snow Queen"
+			dependencies: [
+				"0360D88FDFAEC790"
+				"2026B5F0128304CB"
+				"37239ADFDD7A7A86"
+			]
+			id: "338588A7791241DB"
+			tasks: [{
+				id: "0D6EEAF751D13138"
+				type: "advancement"
+				title: "Defeat Twilight's 3 main bosses"
+				advancement: "twilightforest:progress_merge"
+				criterion: ""
+			}]
+		}
+		{
+			title: "The 'little' pick"
+			x: 6.5d
+			y: 0.0d
+			subtitle: "Obtain the giant pickaxe from a giant located in the clouds. With the piackaxe, go to the troll caves"
+			dependencies: ["338588A7791241DB"]
+			id: "3748D602B76C22C2"
+			tasks: [{
+				id: "0DBFAF460DEF0605"
+				type: "advancement"
+				title: "Defeat a Giant Miner in the clouds"
+				advancement: "twilightforest:giants"
+				criterion: ""
+			}]
+		}
+		{
+			title: "The Lamp of Cinders"
+			x: 7.5d
+			y: 0.0d
+			subtitle: "With the giant pickaxe, break the Giant obsidian Vault in the Mushroom Vault of a Troll Cave. With the lamp acquired, you can now move towards the Castle"
+			dependencies: ["3748D602B76C22C2"]
+			id: "211035352B304A68"
+			tasks: [{
+				id: "5E5AC16367360A61"
+				type: "advancement"
+				title: "Obtain the lamp"
+				advancement: "twilightforest:progress_troll"
+				criterion: ""
+			}]
+		}
+		{
+			title: "The Castle"
+			x: 8.5d
+			y: 0.0d
+			shape: "gear"
+			subtitle: "Reaching the Castle will give you a nice reward. While holding the Earth Talisman in your inventory, it will give you the Geomancy effect, which will allow you to basically become Toph Beifong. If you have no idea who that is, too bad. Well, not really. It will allow you to throw and manipulate dirt blocks in a very cool way. Right-click to pick up blocks and shift right-click to pick up entire boulders. Left-click to push them forward"
+			dependencies: ["211035352B304A68"]
+			id: "166972E0CEAB4042"
+			tasks: [
+				{
+					id: "4AEFD8EF4E988AF5"
+					type: "advancement"
+					title: "Go past the thorns"
+					advancement: "twilightforest:progress_thorns"
+					criterion: ""
+				}
+				{
+					id: "5458CE545EBD5509"
+					type: "advancement"
+					title: "Open the Castle's door"
+					advancement: "twilightforest:progress_castle"
+					criterion: ""
+				}
+			]
+			rewards: [{
+				id: "00F9F40FB2BBFF7A"
+				type: "item"
+				item: "mowziesmobs:earth_talisman"
+			}]
+		}
+		{
+			title: "Healing That Fear"
+			icon: "twilightforest:ur_ghast_trophy"
+			x: 5.0d
+			y: -2.5d
+			shape: "diamond"
+			subtitle: "Mastering The Twilight Forest. Left Click for more info"
+			description: [
+				"The Ur-Ghast is a boss monster added by Twilight Forest. It can be found at the top of a Dark Tower, and appears as a gigantic Ghast with many tentacles. "
+				""
+				"The Ur-Ghast has 250 health points. It can attack in three different ways:"
+				""
+				"- Fireball which does 16 damage"
+				"- Ghast Tear which does 3 damage"
+				"- Carminite Ghastlings which are minions that will assist the boss"
+				""
+				"There are multiple ways to damage the Ur-Ghast. One option is to use Ghast Traps scattered in the rooms connecting to the top of the Dark Tower. You can charge these traps by killing Ghastlings. After fully charging a trap, you can activate it with a redstone signal to critically damage the Ur-Ghast with a red beam."
+				""
+				"Ranged weapons can also be used to damage the Ur-Ghast. A Twilight Scepter with a couple of Ender Pearls to recharge can destroy the Ur-Ghast quickly."
+				""
+				"When the Ur-Ghast is defeated, a chest will appear where the boss originally spawned. This chest contains an Ur-Ghast Trophy, some Fiery Blood, and some Carminite."
+				""
+				"Ok, assuming that you haven't defeated a Pharaoh yet, we'll see you in Atum next."
+			]
+			dependencies: ["4A77E9B9DAFB1407"]
+			size: 2.0d
+			id: "37239ADFDD7A7A86"
+			tasks: [{
+				id: "428D51C1C8A91239"
+				type: "advancement"
+				title: "Defeat the Ur-Ghast and obtain its Fiery Tears"
+				advancement: "twilightforest:progress_ur_ghast"
+				criterion: ""
+			}]
+			rewards: [
+				{
+					id: "19EC3F2AF6FD8789"
+					type: "item"
+					item: {
+						id: "endrem:cold_eye"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "0BD9FB238F28B92F"
+					type: "item"
+					item: {
+						id: "endrem:corrupted_eye"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "57850D80BBB8DCC7"
+					type: "loot"
+					table_id: 8587500481418189075L
+				}
+			]
+		}
+		{
+			title: "Knight's Tomb"
+			x: 2.5d
+			y: -2.5d
+			shape: "square"
+			subtitle: "Wait, it was just one all this time? Left Click for more info"
+			description: ["The Knight Phantom is a floating boss monster added by Twilight Forest. This boss is found in a large room inside of the Goblin Knight Stronghold in groups of 6. They have 35 health points apiece. Each wears Phantom Helms, and Phantom Plates. They all move in the exact same way, dancing around the room and spinning in circles to confuse the player. Only one of these dancing figures is the real Knight Phantom: the real Knight Phantom can be determined by which one has a physical body—that is, more opaque than the others."]
+			dependencies: ["0EED11232A110778"]
+			id: "4A77E9B9DAFB1407"
+			tasks: [{
+				id: "21F75C705B512AD6"
+				type: "advancement"
+				title: "Slay at least one Knight Phantom"
+				advancement: "twilightforest:progress_knights"
+				criterion: ""
+			}]
+		}
+		{
+			title: "Open The Stronghold"
+			x: 1.5d
+			y: -2.5d
+			shape: "square"
+			subtitle: "To advance further, you'll have to defeat the Knight Phantoms in The Goblin Knight Stronghold. To open this structure you'll have to place a thropy previously acquired from The Naga or The Lich King"
+			dependencies: ["6D3B2FD287453A1A"]
+			id: "0EED11232A110778"
+			tasks: [{
+				id: "48A8E573F62511FC"
+				type: "advancement"
+				title: "Successfully unlock the Goblin Knight Stronghold"
+				advancement: "twilightforest:progress_trophy_pedestal"
+				criterion: ""
+			}]
+		}
+		{
+			title: "Knightmetal arsenal"
+			x: 1.5d
+			y: -4.5d
+			subtitle: "This strong arsenal might prove useful through Twilight"
+			dependencies: ["4A77E9B9DAFB1407"]
+			id: "7C03E95196A114B9"
+			tasks: [
+				{
+					id: "1CFF34C6A5FBB415"
+					type: "item"
+					item: {
+						id: "twilightforest:knightmetal_sword"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "7096E04CD2A1FFA8"
+					type: "item"
+					item: {
+						id: "twilightforest:knightmetal_pickaxe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "51D66C1A515E1A99"
+					type: "item"
+					item: {
+						id: "twilightforest:knightmetal_axe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "01A0D80D40D5EFE0"
+					type: "item"
+					item: {
+						id: "twilightforest:knightmetal_shield"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "697AC09D06B96A95"
+					type: "item"
+					item: {
+						id: "twilightforest:block_and_chain"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Phantom Armor"
+			x: 3.5d
+			y: -4.5d
+			subtitle: "Ghostlike"
+			dependencies: ["4A77E9B9DAFB1407"]
+			id: "7CE6CDF66B5537DE"
+			tasks: [
+				{
+					id: "6872B41FD9A8AEBE"
+					type: "item"
+					item: {
+						id: "twilightforest:phantom_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "49B8D7346B618589"
+					type: "item"
+					item: {
+						id: "twilightforest:phantom_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Knightmetal Armor"
+			x: 2.5d
+			y: -6.0d
+			subtitle: "Its armor, take it"
+			dependencies: ["4A77E9B9DAFB1407"]
+			id: "5F1E6328786FA5D6"
+			tasks: [
+				{
+					id: "6EAD7B8EEBF53362"
+					type: "item"
+					item: {
+						id: "twilightforest:knightmetal_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "105001B17B1ED0C1"
+					type: "item"
+					item: {
+						id: "twilightforest:knightmetal_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "55646714D7A0F1B5"
+					type: "item"
+					item: {
+						id: "twilightforest:knightmetal_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "25860FDB93224C53"
+					type: "item"
+					item: {
+						id: "twilightforest:knightmetal_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+	]
+}

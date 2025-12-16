@@ -1,0 +1,35 @@
+{
+  "flower": "tconstruct:pig_iron_block",
+  "lore": "Hive Bee",
+  "maxTimeInHive": 600,
+  "hasHoneycomb": true,
+  "baseLayerTexture": "zombie/zombie_bee",
+  "traits": ["zombie"],
+  "ColorData": {
+    "isBeeColored": false,
+    "honeycombColor": "#2F4E32"
+  },
+  "CentrifugeData": {
+    "hasCentrifugeOutput": true,
+    "mainOutput": "minecraft:rotten_flesh"
+  },
+  "SpawnData": {
+    "canSpawnInWorld": false
+  },
+  "BreedData": {
+    "isBreedable": true,
+    "parent1": "Soul",
+    "parent2": "Green_Carpenter",
+    "feedItem": "minecraft:porkchop",
+    "feedAmount": 32
+  },
+  "CombatData": {  
+    "isPassive": false,  
+    "removeStingerOnAttack": true,
+    "inflictsPoison": false,
+    "attackDamage": 4
+},
+  "TraitData": {
+    "hasTraits": true
+  }
+}

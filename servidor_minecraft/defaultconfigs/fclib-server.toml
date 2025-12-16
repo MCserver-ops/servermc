@@ -1,0 +1,5 @@
+#Should fclib mods generate json config example (if there is any)?
+generateExample = true
+#Should fclib show script errors in chat?
+showErrorsInChat = false
+

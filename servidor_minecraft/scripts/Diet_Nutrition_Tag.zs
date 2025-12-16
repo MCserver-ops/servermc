@@ -1,0 +1,3 @@
+<tag:items:diet:dairy>.remove(<item:pamhc2foodextended:silkentofuitem>, <item:pamhc2foodextended:firmtofuitem>, <item:pamhc2foodextended:rawtofabbititem>, <item:pamhc2foodextended:rawtofeakitem>, <item:pamhc2foodextended:rawtofickenitem>, <item:pamhc2foodextended:rawtofuttonitem>, <item:pamhc2foodextended:cookedtofabbititem>, <item:pamhc2foodextended:cookedtofeakitem>);
+
+<tag:items:diet:proteins>.remove(<item:artifacts:everlasting_beef>, <item:artifacts:eternal_steak>);

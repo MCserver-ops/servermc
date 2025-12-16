@@ -1,0 +1,16 @@
+{
+  "ingredients": [
+    "minecraft:redstone",
+    "minecraft:comparator",
+    "minecraft:redstone_lamp",
+    "minecraft:redstone_torch",
+    "minecraft:repeater",
+    "minecraft:dispenser",
+    "minecraft:dropper"
+  ],
+  "loot": {
+    "table": [
+    ],
+    "chance": 0
+  }
+}

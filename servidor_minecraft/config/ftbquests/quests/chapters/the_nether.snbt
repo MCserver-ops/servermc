@@ -1,0 +1,352 @@
+{
+	id: "7D2BBE833EA6ED13"
+	group: "1390A8D800379122"
+	order_index: 1
+	filename: "the_nether"
+	title: "The Nether"
+	icon: "minecraft:warped_nylium"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -8.0d
+			y: -2.0d
+			shape: "gear"
+			subtitle: "Blood is ammo"
+			dependencies: ["68F089D45356347C"]
+			id: "1BF15773438741A0"
+			tasks: [{
+				id: "6F4E008D19AD82A5"
+				type: "item"
+				item: {
+					id: "alexsmobs:blood_sprayer"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -8.0d
+			y: -5.0d
+			shape: "gear"
+			subtitle: "The Blue thing is ammo"
+			dependencies: [
+				"48E8DE059685D957"
+				"1BF15773438741A0"
+			]
+			id: "5CAB7AA525FB15C1"
+			tasks: [{
+				id: "47CBFE875AA1DAAD"
+				type: "item"
+				item: {
+					id: "alexsmobs:hemolymph_blaster"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Warped Mosco"
+			x: -5.5d
+			y: -5.0d
+			shape: "heart"
+			subtitle: "Defeat The Warped Mosco"
+			hide_dependency_lines: true
+			dependencies: [
+				"6AA23A5FB3C37C90"
+				"68F089D45356347C"
+			]
+			id: "48E8DE059685D957"
+			tasks: [{
+				id: "052F2B4D01649A27"
+				type: "advancement"
+				title: "Defeat it"
+				advancement: "alexsmobs:alexsmobs/warped_mosco_kill"
+				criterion: ""
+			}]
+		}
+		{
+			x: -5.5d
+			y: 1.0d
+			subtitle: "This Larva might prove to be useful later"
+			dependencies: ["68F089D45356347C"]
+			id: "39BF9C9C54C4E41A"
+			tasks: [{
+				id: "4FE59CA41540CAE5"
+				type: "item"
+				item: "alexsmobs:mosquito_larva"
+			}]
+		}
+		{
+			title: "Crimson Mosquito"
+			x: -8.0d
+			y: 1.0d
+			subtitle: "Encounter this gross creature in the depths of The Nether"
+			hide_dependency_lines: true
+			dependencies: ["6AA23A5FB3C37C90"]
+			id: "68F089D45356347C"
+			tasks: [{
+				id: "6D949B7A718F56BC"
+				type: "advancement"
+				title: "Encounter it"
+				advancement: "alexsmobs:alexsmobs/crimson_mosquito"
+				criterion: ""
+			}]
+		}
+		{
+			title: "Soul Rider"
+			icon: "quark:soul_bead"
+			x: -5.5d
+			y: -2.0d
+			shape: "square"
+			subtitle: "Well, what do you know? You can't open the portal. And even if you could, there's no way you're entering the Nether until this quest is finished. So yeah. Get to work. Left Click for more info"
+			description: [
+				"If you're reading this, it means that you must probably be at the point where you want to enter the Nether, or where you're just wondering \"Hmm, how do I enter the Nether?\". Well, unfortunately for you, things are a little complicated here."
+				""
+				"Long story-short, a Nether Portal can be lit only with a Reaper's Scythe from Eidolon. Now we can start going around, trying to add some lore to this whole thing, but you know what? We're lazy."
+				""
+				"So, here's what you have to do. If you haven't already, start working with the Eidolon mod. When you get the Reaper's Scythe, come back here and finish this quest. After that you'll receive the ability to go into the Nether, because yeah, right now, even if you manage to find a lit Nether Portal, you'll not be able to go into the Nether cuz yeah, we're mean. So start praying to The Dark Lord and you might get some help from them ☻."
+			]
+			hide_dependency_lines: true
+			dependencies: ["35A42F33FE263878"]
+			size: 2.0d
+			id: "13389BB26EC98AFD"
+			tasks: [{
+				id: "586364C3790DE41F"
+				type: "checkmark"
+				title: "Use The Reaper's Scythe to light The Nether Portal"
+				icon: {
+					id: "eidolon:reaper_scythe"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "643BA67EBA9994F8"
+				type: "command"
+				title: "Spiritual fullfillement"
+				icon: "quark:soul_bead"
+				auto: "disabled"
+				command: "/thitemstages add @p nether"
+				player_command: false
+			}]
+		}
+		{
+			icon: "minecraft:crimson_nylium"
+			x: -3.0d
+			y: -2.0d
+			shape: "square"
+			subtitle: "Where all souls wither"
+			dependencies: ["13389BB26EC98AFD"]
+			id: "6AA23A5FB3C37C90"
+			tasks: [{
+				id: "5A9EEDB4AFB44A47"
+				type: "dimension"
+				title: "Visit The Nether"
+				icon: "minecraft:crimson_fungus"
+				dimension: "minecraft:the_nether"
+			}]
+			rewards: [{
+				id: "1EE2D6745A7E910C"
+				type: "loot"
+				table_id: 5206766833681472091L
+			}]
+		}
+		{
+			x: -4.0d
+			y: -4.0d
+			shape: "square"
+			subtitle: "Obtain Ancient Debris to start making Netherite which is a very strong material, even better then Diamond"
+			dependencies: ["6AA23A5FB3C37C90"]
+			id: "2FD041FC05D4737B"
+			tasks: [{
+				id: "64192226767A2893"
+				type: "advancement"
+				title: "Obtain Ancient Debris"
+				advancement: "minecraft:nether/obtain_ancient_debris"
+				criterion: ""
+			}]
+		}
+		{
+			title: "Into fire"
+			x: -3.0d
+			y: -1.0d
+			shape: "square"
+			subtitle: "Acquire blaze rods"
+			dependencies: ["6AA23A5FB3C37C90"]
+			id: "258774FD4B560646"
+			tasks: [{
+				id: "4BFF74AB6E88C6E0"
+				type: "advancement"
+				advancement: "minecraft:nether/obtain_blaze_rod"
+				criterion: ""
+			}]
+		}
+		{
+			title: "Wither Skeleton Skull"
+			x: -1.0d
+			y: -2.0d
+			shape: "square"
+			subtitle: "Obtain three Wither Skeleton Skulls to summon the Wither and basically doom yourself. Left Click for more info"
+			description: [
+				"There are many ways in which you can get these Skulls faster."
+				""
+				"- For starters, you can use a Wither Bee, but you'll have to obtain one"
+				"- You can kill Wither Skeletons with a weapon enchanted with Vorpal (this enchantment can only be found in dungeons)"
+				"- You can kill Wither Skeletons with the Axe of Cleaving. This will bost the drop chance, but not a lot"
+				"- You can craft them, however, that will be quite expensive"
+				""
+				"Note that you can summon Wither Skeletons using a ritual from Eidolon."
+			]
+			dependencies: ["6AA23A5FB3C37C90"]
+			id: "207082BC2A41473F"
+			tasks: [{
+				id: "59BE0828F229788F"
+				type: "item"
+				item: "minecraft:wither_skeleton_skull"
+				count: 3L
+			}]
+		}
+		{
+			x: -3.0d
+			y: 0.0d
+			shape: "square"
+			subtitle: "Is it power, or is it fire?"
+			dependencies: ["258774FD4B560646"]
+			id: "1C0C610A966A08EC"
+			tasks: [{
+				id: "121F174F3D8244C4"
+				type: "item"
+				item: "minecraft:blaze_powder"
+			}]
+		}
+		{
+			title: "Soul Beacon"
+			icon: "minecraft:nether_star"
+			x: 1.0d
+			y: -2.0d
+			shape: "diamond"
+			subtitle: "Mastering The Nether. Left Click for more info"
+			description: [
+				"You've got the Skulls? Great. Now, before summoning the Wither (yeah, of course you have to defeat the Wither, what do you expect from this pack?) we want to take a brief moment to give you some tips on how to defeat this thing easier."
+				""
+				"We recommend to get your hands on the Sanguine Praetor Armor from Sanguine Arsenal. This thing was designed with the Wither boss fight in mind. Look in the 'Protection - 1' tab to see more info about it. Apart from this armor, you can also obtain the Sanguine Amulet from Eidolon, which will store some health for you to use later. Apart from this, make sure you have a very strong weapon. This might be obtained either through Tinker's Construct, or the Hexblades mod. "
+				""
+				""
+				""
+				"With that being said, good luck! We'll see you on the next Age."
+			]
+			dependencies: ["207082BC2A41473F"]
+			size: 2.0d
+			id: "1BD61910AB0290E3"
+			tasks: [{
+				id: "5ACED7FF3F0F18AE"
+				type: "kill"
+				title: "Defeat The Wither"
+				icon: "minecraft:wither_rose"
+				entity: "minecraft:wither"
+				value: 1L
+			}]
+			rewards: [
+				{
+					id: "0A67B335A7129090"
+					type: "item"
+					item: {
+						id: "endrem:wither_eye"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "110804DB24B04D0E"
+					type: "item"
+					item: {
+						id: "endrem:black_eye"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "0E742F8D6EACA626"
+					type: "item"
+					item: {
+						id: "endrem:nether_eye"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "542025480736108F"
+					type: "item"
+					item: {
+						id: "endrem:end_crystal_eye"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			x: -3.0d
+			y: 1.0d
+			shape: "square"
+			subtitle: "You may use them to find and even light the End Portal. However, these will not help you reach The End. Anyway, this can only be obtained at a runic altar"
+			dependencies: [
+				"663E35409B5EA827"
+				"1C0C610A966A08EC"
+			]
+			id: "49E378CCBB43F16B"
+			tasks: [{
+				id: "628136EAAC31C3B5"
+				type: "item"
+				item: "minecraft:ender_eye"
+			}]
+		}
+		{
+			x: -3.0d
+			y: -5.0d
+			shape: "diamond"
+			subtitle: "Magma Cream will be one of the ingredients required for the Nether Grout recipe. It can either be found through the Nether's Dungeons, or it can be crafted with Blaze Powder and some SlimeBalls"
+			dependencies: ["6AA23A5FB3C37C90"]
+			id: "754A702F2CA77E02"
+			tasks: [{
+				id: "21443F4C7FEB0D2E"
+				type: "item"
+				item: "minecraft:magma_cream"
+			}]
+			rewards: [{
+				id: "2748F9F33B845432"
+				type: "loot"
+				table_id: 5206766833681472091L
+			}]
+		}
+		{
+			title: "Souls do metallurgy!"
+			x: -2.0d
+			y: -4.0d
+			shape: "square"
+			subtitle: "Obtain Soul Sand to make Nether Grout"
+			dependencies: ["6AA23A5FB3C37C90"]
+			id: "079148BF286C8D56"
+			tasks: [{
+				id: "1FAFE4608A113257"
+				type: "item"
+				item: "minecraft:soul_sand"
+			}]
+		}
+	]
+}

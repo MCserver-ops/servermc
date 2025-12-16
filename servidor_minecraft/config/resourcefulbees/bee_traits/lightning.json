@@ -1,0 +1,8 @@
+{"damageTypes": [
+    {
+        "damageTypeName": "lightningBolt",
+        "amplifier": 6
+    }
+  ],
+  "particleName": "minecraft:end_rod"
+}

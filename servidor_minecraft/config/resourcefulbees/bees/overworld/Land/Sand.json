@@ -1,0 +1,44 @@
+{
+    "flower": "minecraft:sandstone",
+    "creator": "Me_Ryan",
+    "lore": "Hive Bee",
+    "hasHoneycomb": true,
+    "traits": ["desert"],
+    "maxTimeInHive": 1800,
+    "baseLayerTexture": "sand/sand",
+    "ColorData": {
+      "isBeeColored": false,
+      "honeycombColor": "#f5df9a",
+      "primaryColor": "#f5df9a",
+      "secondaryColor": "#e7ac36"
+    },
+    "MutationData": {
+      "hasMutation": false
+    },
+    "CentrifugeData": {
+      "hasCentrifugeOutput": true,
+      "mainOutput": "minecraft:sand",
+      "mainOutputCount": 16,
+      "bottleOutput" : "minecraft:honey_bottle",
+      "mainOutputWeight": 0.30
+    },
+    "SpawnData": {
+      "canSpawnInWorld": false
+    },
+    "BreedData": {
+      "isBreedable": true,
+      "parent1": "Ashy_Digging",
+      "parent2": "Mason",
+      "feedItem": "minecraft:sand",
+      "feedAmount": 64
+    },
+    "CombatData": {  
+        "isPassive": false,  
+        "removeStingerOnAttack": false,
+        "inflictsPoison": false,
+        "attackDamage": 1
+    },
+    "TraitData": {
+      "hasTraits": true
+    }
+  }

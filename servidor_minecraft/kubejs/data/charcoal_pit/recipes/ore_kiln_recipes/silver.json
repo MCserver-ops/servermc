@@ -1,0 +1,14 @@
+{
+  "type": "charcoal_pit:orekiln",
+  "ingredients": [
+    [
+        {
+          "tag": "forge:ores/silver"
+        }
+    ]
+  ],
+  "result": {
+    "tag": "forge:ingots/silver"
+  },
+  "amount": 1
+}

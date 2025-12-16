@@ -1,0 +1,10 @@
+{
+	"type":"createaddition:rolling",
+	"input": {
+      	"tag": "forge:ingots/invar"
+	},
+	"result": {
+		"item": "emendatusenigmatica:invar_rod",
+		"count": 2
+	}
+}

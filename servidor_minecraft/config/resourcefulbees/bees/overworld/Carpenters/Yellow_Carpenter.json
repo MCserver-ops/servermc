@@ -1,0 +1,36 @@
+{
+    "flower": "all",
+    "creator": "Me_Ryan",
+    "lore": "Lonely Bee",
+    "hasHoneycomb": true,
+    "customCombDrop": "minecraft:honeycomb",
+    "customCombBlockDrop": "minecraft:honeycomb_block",
+    "traits": [],
+    "maxTimeInHive": 1200,
+    "ColorData": {
+      "isBeeColored": true,
+      "primaryColor": "#e2c800",
+      "secondaryColor": "#c9a900"
+    },
+    "SpawnData": {
+      "canSpawnInWorld": true,
+      "biomeWhitelist": "tag:overworld",
+      "lightLevel": "DAY",
+      "biomeblacklist": "tag:ocean",
+      "spawnWeight": 5
+    },
+    "BreedData": {
+      "isBreedable": true,
+      "feedItem": "tag:forge:dyes/yellow",
+      "feedAmount": 32
+    },
+    "CombatData": {  
+      "isPassive": false,  
+      "removeStingerOnAttack": true,
+      "inflictsPoison": true,
+      "attackDamage": 2
+      },
+    "TraitData": {
+      "hasTraits": true
+    }
+  }

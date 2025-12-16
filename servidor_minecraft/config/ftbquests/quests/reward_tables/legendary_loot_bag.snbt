@@ -1,0 +1,19 @@
+{
+	id: "370CF3524D969C90"
+	order_index: 2
+	title: "Legendary Loot Bag"
+	icon: "immersiveengineering:shader_bag_ie_masterwork"
+	loot_size: 1
+	rewards: [
+		{ item: "mekanism:pellet_antimatter", count: 16, weight: 5 }
+		{ item: "create:shadow_steel", count: 32, weight: 5 }
+		{ item: "emendatusenigmatica:steel_block", count: 32, weight: 5 }
+		{ item: "emendatusenigmatica:bitumen_block", count: 64, weight: 5 }
+		{ item: "mekanism:hdpe_pellet", count: 64, weight: 5 }
+		{ item: "pamhc2foodextended:meatfeastpizzaitem", count: 16, weight: 5 }
+		{ item: "farmersdelight:shepherds_pie", count: 16, weight: 5 }
+		{ item: "powah:uraninite", count: 16 }
+		{ item: "powah:dielectric_paste", count: 16 }
+		{ item: "pamhc2foodextended:chimichangaitem", count: 16, weight: 5 }
+	]
+}

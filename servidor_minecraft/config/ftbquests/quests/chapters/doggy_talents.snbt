@@ -1,0 +1,444 @@
+{
+	id: "160EE21F96F55995"
+	group: "70E732380FC79639"
+	order_index: 2
+	filename: "doggy_talents"
+	title: "Doggy Talents"
+	icon: "doggytalents:doggy_charm"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Each training process has a start"
+			x: -1.0d
+			y: -0.5d
+			shape: "gear"
+			subtitle: "Level up! Left Click for more info"
+			description: [
+				"Ok, so we've talked about levels, skill points and how you spent them, but we haven't talked about how you get more points. Well, this is it."
+				""
+				"Training Treats can be given to your dog to raise their level. There are multiple tiers of treats and each tier will raise your dog's level to a falt amount. The current tier, will make your dog go to a maximum level of 20."
+			]
+			dependencies: ["7693167DFEA81405"]
+			id: "098B4B2535A1317F"
+			tasks: [{
+				id: "3B175663846CD04E"
+				type: "item"
+				item: "doggytalents:training_treat"
+				count: 20L
+			}]
+			rewards: [{
+				id: "70DDBF31D7BEC5DE"
+				type: "loot"
+				table_id: 5206766833681472091L
+			}]
+		}
+		{
+			title: "Getting into some puppy action"
+			x: 0.0d
+			y: -0.5d
+			shape: "gear"
+			subtitle: "Goes to 40 levels!"
+			dependencies: ["098B4B2535A1317F"]
+			id: "24CB1CB8424D285F"
+			tasks: [{
+				id: "6376DFBAE79B2F09"
+				type: "item"
+				item: "doggytalents:super_treat"
+				count: 20L
+			}]
+		}
+		{
+			title: "Now we're barking!"
+			x: 1.0d
+			y: -0.5d
+			shape: "gear"
+			subtitle: "Goes to 60 levels!!!"
+			dependencies: ["24CB1CB8424D285F"]
+			id: "3FA2799FA592AD16"
+			tasks: [{
+				id: "4704E180C2FC5B6F"
+				type: "item"
+				item: "doggytalents:master_treat"
+				count: 20L
+			}]
+		}
+		{
+			title: "The Dire Wolf"
+			x: 3.5d
+			y: -0.5d
+			shape: "heart"
+			subtitle: "Goes to 80 LEVELS!!!!!!!"
+			dependencies: [
+				"3FA2799FA592AD16"
+				"7EF155944458998F"
+			]
+			size: 1.5d
+			id: "0EB19D787B5A00AD"
+			tasks: [{
+				id: "3C17A6DDA7B6DED3"
+				type: "item"
+				item: "doggytalents:dire_treat"
+				count: 20L
+			}]
+			rewards: [{
+				id: "0960125EC206D8E4"
+				type: "loot"
+				table_id: 7176426831663151036L
+			}]
+		}
+		{
+			title: "Dog Bed"
+			icon: {
+				id: "doggytalents:dog_bed"
+				Count: 1b
+				tag: {
+					doggytalents: {
+						casingId: "minecraft:oak_planks"
+						beddingId: "minecraft:white_wool"
+					}
+				}
+			}
+			x: -1.5d
+			y: -2.0d
+			shape: "gear"
+			subtitle: "By shift right-clicking the bed while your dog is nearby, you'll make your dog claim the bed. If your dog dies, you'll be able to respawn them at their bed. Just right click the bed <3"
+			hide_dependency_lines: true
+			dependencies: ["7693167DFEA81405"]
+			id: "420701F3B0BD4459"
+			tasks: [{
+				id: "355FD7C4B4BDC5D1"
+				type: "checkmark"
+				title: "Obtain a DogBed out of 32523523 versions xD"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -2.0d
+			shape: "gear"
+			subtitle: "If your dog is in Wandering mode, this bowl will keep feeding them, of course, if you place some food in it. If your dog is sitting, its hunger will not drop"
+			hide_dependency_lines: true
+			dependencies: ["7693167DFEA81405"]
+			id: "03DB67258C93231C"
+			tasks: [{
+				id: "69E65E0D453736C1"
+				type: "item"
+				item: "doggytalents:food_bowl"
+			}]
+		}
+		{
+			title: "Radio Localization"
+			x: 0.0d
+			y: 1.0d
+			shape: "gear"
+			subtitle: "\"Hey Guugle! Where's Penny?!\" Left Click for more info"
+			description: [
+				"By now you might've observed that you dogs don't have a collar. Well, that's because you can place them custom collars."
+				""
+				"This one right here, will allow you to track your dog's position, so it is easier to find it."
+				""
+				"You'll need a radar to see where your dog is."
+				""
+				"To get a collar down, you'll need a set of Collar Shears."
+			]
+			hide_dependency_lines: true
+			dependencies: [
+				"40205D351BE13B77"
+				"7693167DFEA81405"
+			]
+			id: "523B02E7ABA3FCFA"
+			tasks: [
+				{
+					id: "05308F1DD8A23E4B"
+					type: "item"
+					item: "doggytalents:radio_collar"
+				}
+				{
+					id: "7352D406E8785F34"
+					type: "item"
+					item: "doggytalents:radar"
+				}
+			]
+		}
+		{
+			title: "Starting the adventure as a Doggy Trainer!"
+			icon: "doggytalents:doggy_charm"
+			x: -4.0d
+			y: -0.5d
+			shape: "gear"
+			subtitle: "Welcome to Doggy Talents! Left Click for more info"
+			description: [
+				"Doggy Talents is a mod that turns the vanilla Wolves into trained dogs and adds new talents and training systems. Keep in mind that this mod, will NOT replace the vanilla wolves. These ones still spawn and you'll have to turn them into Doggy Talents dogs."
+				""
+				"In The Decursio Project, there are two ways to get a puppy from Doggy Talents. The first one is to finish this quest and obtain the Doggy Charm. It will act like a spawn egg which will give you a dog from Doggy Talents. The second way is to tame a regular Wolf using bones, and then, feed it with a Training Treat. This will turn it into a dog from this mod."
+				""
+				"Now that you've got a smarted dog, let's see what's so special about it. If you right-click it with a stick (yes, a stick), you'll open the training interface."
+				""
+				"Example of the Training Interface:"
+				""
+				"{image:kubejs:textures/doggytalents/training_interface_example.png width:150 height:100 align:1 fit:true}"
+				""
+				"There are multiple thing right here which we need to talk about:"
+				""
+				"Pink - Here you can type a name for your Dog. After a name was selected, it will be displayed above your dog's head alongside other information. Bellow the name box, you can see your dog's current level and dire level."
+				""
+				"Orange - Here you can see some general information about your dog, including its current speed, curretn owner, age and more."
+				""
+				"Red - With every level, your dog will receive upgrade points which can be applied on the left side of the interface, for different skills. These skills can be mastered when they reach level 5. By default, you'll receive 15 points to spend, but be careful with how you spend them, as you won't be able to remove any upgrades. We'll talk more about how you can raise your dog's level and get more upgrade points, later."
+				""
+				"Yellow - There are multiple skill pages."
+				""
+				"Green - Usually, you'd be able to select if friendly fire is turned on/off, but in our pack, friend fire is always set to false, so don't worry about hitting your puppy by accident. Here you can also select the texture you want you dog to have, and if it should obey other players or not."
+				""
+				"Light Blue - Here, you'll be able to select the mode in which you want your dog to be. The modes available are:"
+				""
+				"* Docile: The dog will follow you, not attacking anything, just follow. It will wait for you to throw the bone."
+				""
+				"* Wandering: The dog will wander around the area, staying close to its food bowl until you command it to do something. You have to be sure that your dog is \"set\" to the food bowl by bringing it within one block of the bowl."
+				""
+				"* Aggressive: The dog will follow you and attack anything that you attack, or anything that you get hurt by, any mob. Good for farming sheep and stuff."
+				""
+				"* Berserker: The dog will follow you, but will immediately attack any mob that gets too close."
+				""
+				"* Tactical: The dog will follow you, but only attack a mob when you use the command emblem on it."
+				""
+				"* Patrol: The dog will patrol certain areas you mark with the command whistle and attack any sort of entity."
+				""
+				"Lastly, let's talk about the information presented above your dog's head after you gave it a name. Here's an example:"
+				""
+				"{image:kubejs:textures/doggytalents/dog_stats_example.png width:100 height:130 align:1}"
+				""
+				"The first bracket (red) will show the mode in which your dog is currently in. The second bracket (orange), will show your dog's current hunger level. Dogs need food just like players do. However, if your dog sits down, its hunger won't drop. The final backet shows the dog's gender."
+				""
+				"One thing you should keep in mind is that, if your dog doesn't receive any food and its hunger drops too low, the first bracket (red) will state as \"I\" which comes from \"Incapacitated\". In this mode, your dog won't be able to help you with anything and you'll have to take care of it until it recovers. Just give them planty of food and, of course, love, through a cake, and they should be back on track without any problems."
+			]
+			dependencies: ["0DDA2FB169318B04"]
+			size: 1.5d
+			id: "7693167DFEA81405"
+			tasks: [{
+				id: "4B7736AF7C7731C5"
+				type: "checkmark"
+			}]
+			rewards: [{
+				id: "66D0571DACB54ABD"
+				type: "item"
+				item: "doggytalents:doggy_charm"
+			}]
+		}
+		{
+			title: "Commands give discipline"
+			icon: "doggytalents:whistle"
+			x: 0.0d
+			y: -2.0d
+			shape: "gear"
+			subtitle: "Let's learn some things about commands. Left Click for more info"
+			description: [
+				"The Whistle can be used to give your dog, commands, from a distance. The commands are the following:"
+				""
+				"Stand - Will make your dog stand and will change its current mode to Docile."
+				""
+				"Heel - Will teleport your dog to your right side."
+				""
+				"Stay - Will make your dog sit down."
+				""
+				"Okey - Will make you dog stand retaining its mode."
+				""
+				"Shepard - This mode will work only of the Shepard Dog skill has points into it. This mode will make your dog, given it is in Docile mode, rustle up some nearby livestock, so that you can transport them more easier on long distances."
+				""
+				"Tactical - This mode will shoot a snowball which will act as a beam for you dog. If that snowball hits a mob, your dog will attack it."
+				""
+				"Roaring - This mode will work only if the Roaring Gale skill has some points spent into it. It will make your dog howl to stun the nearby enemies for a few seconds."
+			]
+			hide_dependency_lines: true
+			dependencies: ["7693167DFEA81405"]
+			id: "372BA983504B3FAE"
+			tasks: [{
+				id: "66756190E4A34444"
+				type: "checkmark"
+				title: "Got it!"
+			}]
+			rewards: [{
+				id: "7A31332B07C6506F"
+				type: "item"
+				item: "doggytalents:whistle"
+			}]
+		}
+		{
+			title: "Let's play catch!"
+			icon: "doggytalents:throw_stick_wet"
+			x: -1.0d
+			y: 1.0d
+			subtitle: "With the Throw Bone and Throw Stick, you can play with your dog. Things are pretty straight forward. Just throw one of them and your dog will rush to bring them back to you. They might be a little droolly, so just wipe them using right-click"
+			hide_dependency_lines: true
+			dependencies: ["7693167DFEA81405"]
+			id: "375A49EE096EE229"
+			tasks: [{
+				id: "022E966EB3ECF87E"
+				type: "checkmark"
+				title: "Got it!"
+			}]
+			rewards: [
+				{
+					id: "65728BBBB3D01CBB"
+					type: "item"
+					item: "doggytalents:throw_bone"
+				}
+				{
+					id: "483DE085E3BA2D49"
+					type: "item"
+					item: "doggytalents:throw_stick"
+				}
+			]
+		}
+		{
+			x: 1.0d
+			y: 1.0d
+			shape: "gear"
+			subtitle: "This bone can be used to..well.. breed your dogs. 101 puppies INCOMMIIIIIING, YEAAAAH!!!!"
+			hide_dependency_lines: true
+			dependencies: ["3FA2799FA592AD16"]
+			id: "5D55C108CD0E7AB4"
+			tasks: [{
+				id: "39FD479347C60A64"
+				type: "item"
+				item: "doggytalents:breeding_bone"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 2.0d
+			subtitle: "This set of sheers can be used to get collars and jackets off of dogs"
+			hide_dependency_lines: true
+			dependencies: ["7693167DFEA81405"]
+			id: "6AE2A7CEC86169C3"
+			tasks: [{
+				id: "39F21A15AF9D8D5F"
+				type: "item"
+				item: "doggytalents:collar_shears"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 2.0d
+			subtitle: "More or less, the vanilla collar. Can be dyed however you like. Note that you'll need lots of dyes to make it saturated"
+			hide_dependency_lines: true
+			dependencies: ["7693167DFEA81405"]
+			id: "2121ED888F605A21"
+			tasks: [{
+				id: "7D052C2DCE428B92"
+				type: "item"
+				item: {
+					id: "doggytalents:wool_collar"
+					Count: 1b
+					tag: {
+						display: {
+							color: 16777215
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: 0.0d
+			y: 3.0d
+			shape: "gear"
+			subtitle: "ChewSticks will give your dog a huge speed boost for a very short amount of time. Finishing this quest, will reward you with a Treat Bag which can be used to store foods for your puppy!"
+			hide_dependency_lines: true
+			dependencies: ["7693167DFEA81405"]
+			id: "5198E676E19A537C"
+			tasks: [{
+				id: "78AABB3740F8A8BC"
+				type: "item"
+				item: "doggytalents:chew_stick"
+			}]
+			rewards: [{
+				id: "3B7B4424A0133190"
+				type: "item"
+				item: "doggytalents:treat_bag"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 2.0d
+			subtitle: "Big Smoke/Tiny Smoke: These bones can be used to either increase, or decrease your dog's size. Ever wanted a large puppy in minecraft? Well, now that's possible!"
+			hide_dependency_lines: true
+			dependencies: [
+				"7693167DFEA81405"
+				"69B40A754150E09F"
+			]
+			id: "3742E9575195CE37"
+			tasks: [
+				{
+					id: "47DC265B270888FE"
+					type: "item"
+					item: "doggytalents:tiny_bone"
+				}
+				{
+					id: "153686200E0D5657"
+					type: "item"
+					item: "doggytalents:big_bone"
+				}
+			]
+		}
+		{
+			x: -0.5d
+			y: 4.0d
+			subtitle: "It's Bond. Dog Bond: This suit can be placed on your dog to make it look like a secred agent from the movies "
+			hide_dependency_lines: true
+			dependencies: ["7693167DFEA81405"]
+			id: "12D0974896B9EBB5"
+			tasks: [{
+				id: "63893512343B4073"
+				type: "item"
+				item: "doggytalents:guard_suit"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 4.0d
+			subtitle: "Squares on a Cubic Dog, Great!: Can be placed on your dog to give it a warm look and feel"
+			hide_dependency_lines: true
+			dependencies: ["7693167DFEA81405"]
+			id: "59F511913CF01566"
+			tasks: [{
+				id: "1993439D7C77DB28"
+				type: "item"
+				item: "doggytalents:cape"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 4.0d
+			subtitle: "Eveery color in your Heart: This cape, can be dyed with any color you like. Just make sure to match your dog's beautiful eyes <3"
+			hide_dependency_lines: true
+			dependencies: ["7693167DFEA81405"]
+			id: "2C6AF41FCAD07C54"
+			tasks: [{
+				id: "100BE8F2D9CFC208"
+				type: "item"
+				item: {
+					id: "doggytalents:cape_coloured"
+					Count: 1b
+					tag: {
+						display: {
+							color: 16777215
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: 1.5d
+			y: 4.0d
+			subtitle: "GTD - The Lost and the barked: This jacket will have your dog prepared for a ride with the bikers"
+			hide_dependency_lines: true
+			dependencies: ["7693167DFEA81405"]
+			id: "336EFDDC4788B197"
+			tasks: [{
+				id: "4BECDC41B877B9E4"
+				type: "item"
+				item: "doggytalents:leather_jacket"
+			}]
+		}
+	]
+}

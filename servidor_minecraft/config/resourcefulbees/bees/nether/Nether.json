@@ -1,0 +1,37 @@
+{
+    "flower": "minecraft:netherrack",
+    "creator": "Me_Ryan",
+    "lore": "Lonely Bee",
+    "maxTimeInHive": 1000,
+    "hasHoneycomb": true,
+    "customCombDrop": "minecraft:honeycomb",
+    "customCombBlockDrop": "minecraft:honeycomb_block",
+    "baseLayerTexture": "netherrack/netherrack",
+    "traits": ["nether"],
+    "ColorData": {
+      "modelType": "ORE",
+      "isBeeColored": false,
+      "primaryColor": "#710808",
+      "secondaryColor": "#b93a3a"
+    },
+    "SpawnData": {
+      "canSpawnInWorld": true,
+      "biomeWhitelist": "tag:nether",
+      "lightLevel": "NIGHT",
+      "spawnWeight": 4
+    },
+    "BreedData": {
+      "isBreedable": true,
+      "feedItem": "minecraft:netherrack",
+      "feedAmount": 64
+    },
+      "CombatData": {  
+        "isPassive": false,  
+        "removeStingerOnAttack": true,
+        "inflictsPoison": false,
+        "attackDamage": 4
+    },
+    "TraitData": {
+      "hasTraits": true
+    }
+  }

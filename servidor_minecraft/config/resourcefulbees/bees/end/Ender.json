@@ -1,0 +1,49 @@
+{
+  "flower": "minecraft:crying_obsidian",
+  "creator": "Me_Ryan",
+  "lore": "Hive Bee",
+  "hasHoneycomb": true,
+  "traits": ["ender"],
+  "maxTimeInHive": 1800,
+  "baseLayerTexture": "ender/ender",
+  "ColorData": {
+    "modelType": "ORE",
+    "isBeeColored": false,
+    "honeycombColor": "#339786"
+  },
+  "MutationData": {
+    "hasMutation": true,
+    "mutations" : [
+      {
+        "type": "BLOCK",
+        "inputID": "minecraft:obsidian",
+        "chance": 5,
+        "outputs": [
+          {"outputID": "minecraft:end_stone", "weight": 10}
+        ]
+      }
+    ]
+  },
+  "CentrifugeData": {
+    "hasCentrifugeOutput": true,
+    "mainOutput": "minecraft:ender_pearl",
+    "bottleOutput" : "minecraft:dragon_breath",
+    "mainOutputWeight": 0.30
+  },
+  "SpawnData": {
+    "canSpawnInWorld": false
+  },
+  "BreedData": {
+    "isBreedable": true,
+    "parent1": "Chorus",
+    "parent2": "Obsidian",
+    "feedItem": "minecraft:crying_obsidian",
+    "feedAmount": 64
+  },
+  "CombatData": {
+    "isPassive": true
+  },
+  "TraitData": {
+    "hasTraits": true
+  }
+}

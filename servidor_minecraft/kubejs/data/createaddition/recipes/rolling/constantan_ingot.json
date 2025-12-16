@@ -1,0 +1,10 @@
+{
+	"type":"createaddition:rolling",
+	"input": {
+      	"tag": "forge:ingots/constantan"
+	},
+	"result": {
+		"item": "emendatusenigmatica:constantan_rod",
+		"count": 2
+	}
+}

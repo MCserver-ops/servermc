@@ -1,0 +1,46 @@
+{
+    "flower": "minecraft:obsidian",
+    "creator": "Me_Ryan",
+    "lore": "Hive Bee",
+    "hasHoneycomb": true,
+    "traits": ["nether"],
+    "maxTimeInHive": 1800,
+    "baseLayerTexture": "obsidian/obsidian",
+    "ColorData": {
+      "modelType": "ORE",  
+      "isBeeColored": false,
+      "honeycombColor": "#320063",
+      "primaryColor": "#320063",
+      "secondaryColor": "#9f2bff"
+    },
+    "CentrifugeData": {
+      "hasCentrifugeOutput": true,
+      "mainOutput": "minecraft:obsidian",
+      "secondaryOutput": "minecraft:crying_obsidian",
+      "bottleOutput": "minecraft:honey_bottle",
+      "mainOutputCount": 10,
+      "secondaryOutputCount": 3,
+      "bottleOutputWeight": 0.40,
+      "mainOutputWeight": 0.25,
+      "secondaryOutputWeight": 0.10
+    },
+    "SpawnData": {
+      "canSpawnInWorld": false
+    },
+    "BreedData": {
+        "isBreedable": true,
+        "parent1": "Lava",
+        "parent2": "Water",
+        "feedItem": "minecraft:obsidian",
+        "feedAmount": 32
+      },
+    "CombatData": {  
+        "isPassive": false,  
+        "removeStingerOnAttack": true,
+        "inflictsPoison": false,
+        "attackDamage": 7
+    },
+    "TraitData": {
+      "hasTraits": true
+    }
+  }

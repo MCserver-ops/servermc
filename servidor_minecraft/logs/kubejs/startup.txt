@@ -1,0 +1,4 @@
+[04:39:43] [INFO ] Loaded script startup_scripts:no_more_chisel_blocks.js in 0.474 s
+[04:39:43] [INFO ] Loaded script startup_scripts:greenhouse_glass.js in 0.001 s
+[04:39:43] [INFO ] Loaded script startup_scripts:AVSP/worldgen_remove.js in 0.014 s
+[04:39:43] [INFO ] Loaded 3/3 KubeJS startup scripts in 1.05 s

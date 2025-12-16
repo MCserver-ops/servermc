@@ -1,0 +1,281 @@
+{
+   "block.resourcefulbees.dye_honeycomb_block": "Dye Honeycomb Block",
+   "item.resourcefulbees.dye_honeycomb": "Dye Honeycomb",
+   "item.resourcefulbees.dye_bee_spawn_egg": "Dye Bee Spawn Egg",
+   "entity.resourcefulbees.dye_bee": "Dye Bee",
+
+// Dye
+   "block.resourcefulbees.aquamarine_honeycomb_block": "Aquamarine Honeycomb Block",
+   "item.resourcefulbees.aquamarine_honeycomb": "Aquamarine Honeycomb",
+   "item.resourcefulbees.aquamarine_bee_spawn_egg": "Aqumarine Bee Spawn Egg",
+   "entity.resourcefulbees.aquamarine_bee": "Aquamarine Bee",
+
+// Aquamarine
+   "block.resourcefulbees.glowstone_honeycomb_block": "Glowing Honeycomb Block",
+   "item.resourcefulbees.glowstone_honeycomb": "Glowing Honeycomb",
+   "item.resourcefulbees.glowstone_bee_spawn_egg": "Glowstone Bee Spawn Egg",
+   "entity.resourcefulbees.glowstone_bee": "Glowstone Bee",
+
+// Glowstone
+   "block.resourcefulbees.slimy_honeycomb_block": "Slimy Honeycomb Block",
+   "item.resourcefulbees.slimy_honeycomb": "Slimy Honeycomb",
+   "item.resourcefulbees.slimy_bee_spawn_egg": "Slimy Bee Spawn Egg",
+
+// Chorus
+   "block.resourcefulbees.chorus_honeycomb_block": "Chorus Honeycomb Block",
+   "item.resourcefulbees.chorus_honeycomb": "Chorus Honeycomb",
+   "item.resourcefulbees.chorus_bee_spawn_egg": "Chorus Bee Spawn Egg",
+   "entity.resourcefulbees.chorus_bee": "Chorus Bee",
+
+// Obsidian
+   "block.resourcefulbees.obsidian_honeycomb_block": "Obsidian Honeycomb Block",
+   "item.resourcefulbees.obsidian_honeycomb": "Obsidian Honeycomb",
+   "item.resourcefulbees.obsidian_bee_spawn_egg": "Obsidian Bee Spawn Egg",
+   "entity.resourcefulbees.obsidian_bee": "Obsidian Bee",
+
+// Prismarine
+   "block.resourcefulbees.prismarine_honeycomb_block": "Prismarine Honeycomb Block",
+   "item.resourcefulbees.prismarine_honeycomb": "Prismarine Honeycomb",
+   "item.resourcefulbees.prismarine_bee_spawn_egg": "Prismarine Bee Spawn Egg",
+   "entity.resourcefulbees.prismarine_bee": "Prismarine Bee",
+
+// Coral
+   "block.resourcefulbees.coral_honeycomb_block": "Coral Honeycomb Block",
+   "item.resourcefulbees.coral_honeycomb": "Coral Honeycomb",
+   "item.resourcefulbees.coral_bee_spawn_egg": "Coral Bee Spawn Egg",
+   "entity.resourcefulbees.coral_bee": "Coral Bee",
+
+// Sand
+   "block.resourcefulbees.water_honeycomb_block": "Water Honeycomb Block",
+   "item.resourcefulbees.water_honeycomb": "Water Honeycomb",
+   "item.resourcefulbees.water_bee_spawn_egg": "Water Bee Spawn Egg",
+   "entity.resourcefulbees.water_bee": "Water Bee",
+
+// Sand
+   "block.resourcefulbees.sand_honeycomb_block": "Sand Honeycomb Block",
+   "item.resourcefulbees.sand_honeycomb": "Sand Honeycomb",
+   "item.resourcefulbees.sand_bee_spawn_egg": "Sand Bee Spawn Egg",
+   "entity.resourcefulbees.sand_bee": "Sand Bee",
+
+// Lava (thx you lexx <3)
+   "block.resourcefulbees.lava_honeycomb_block": "Lava Honeycomb Block",
+   "item.resourcefulbees.lava_honeycomb": "Lava Honeycomb",
+   "item.resourcefulbees.lava_bee_spawn_egg": "Lava Bee Spawn Egg",
+   "entity.resourcefulbees.lava_bee": "Lava Bee",
+
+// Ashy Mining
+   "item.resourcefulbees.ashy_digging_bee_spawn_egg": "Ashy Digging Bee Spawn Egg",
+   "entity.resourcefulbees.ashy_digging_bee": "Ashy Digging Bee",
+
+// Mason
+"item.resourcefulbees.mason_bee_spawn_egg": "Mason Bee Spawn Egg",
+"entity.resourcefulbees.mason_bee": "Mason Bee",
+
+// Magmatic
+"block.resourcefulbees.magmatic_honeycomb_block": "Magmatic Honeycomb Block",
+"item.resourcefulbees.magmatic_honeycomb": "Magmatic Honeycomb",
+"item.resourcefulbees.magmatic_bee_spawn_egg": "Magmatic Bee Spawn Egg",
+"entity.resourcefulbees.magmatic_bee": "Magmatic Bee",
+
+// Basalz
+"block.resourcefulbees.basalz_honeycomb_block": "Basalz Honeycomb Block",
+"item.resourcefulbees.basalz_honeycomb": "Basalz Honeycomb",
+"item.resourcefulbees.basalz_bee_spawn_egg": "Basalz Bee Spawn Egg",
+"entity.resourcefulbees.basalz_bee": "Basalz Bee",
+
+// Blazing
+"block.resourcefulbees.blazing_honeycomb_block": "Blazing Honeycomb Block",
+"item.resourcefulbees.blazing_honeycomb": "Blazing Honeycomb",
+"item.resourcefulbees.blazing_bee_spawn_egg": "Blazing Bee Spawn Egg",
+"entity.resourcefulbees.blazing_bee": "Blazing Bee",
+
+// Soul
+"item.resourcefulbees.soul_bee_spawn_egg": "Soul Bee Spawn Egg",
+"entity.resourcefulbees.soul_bee": "Soul Bee",
+
+// Blitz
+"block.resourcefulbees.blitz_honeycomb_block": "Blitz Honeycomb Block",
+"item.resourcefulbees.blitz_honeycomb": "Blitz Honeycomb",
+"item.resourcefulbees.blitz_bee_spawn_egg": "Blitz Bee Spawn Egg",
+"entity.resourcefulbees.blitz_bee": "Blitz Bee",
+
+// Blizz
+"block.resourcefulbees.blizz_honeycomb_block": "Blizz Honeycomb Block",
+"item.resourcefulbees.blizz_honeycomb": "Blizz Honeycomb",
+"item.resourcefulbees.blizz_bee_spawn_egg": "Blizz Bee Spawn Egg",
+"entity.resourcefulbees.blizz_bee": "Blizz Bee",
+
+// Reed
+"item.resourcefulbees.reed_bee_spawn_egg": "Reed Bee Spawn Egg",
+"entity.resourcefulbees.reed_bee": "Reed Bee",
+
+// Sugarbag
+"item.resourcefulbees.sugarbag_bee_spawn_egg": "Sugarbag Bee Spawn Egg",
+"entity.resourcefulbees.sugarbag_bee": "Sugarbag Bee",
+
+// Chocolate
+"block.resourcefulbees.chocolate_honeycomb_block": "Chocolate Honeycomb Block",
+"item.resourcefulbees.chocolate_honeycomb": "Chocolate Honeycomb",
+"item.resourcefulbees.chocolate_bee_spawn_egg": "Chocolate Bee Spawn Egg",
+"entity.resourcefulbees.chocolate_bee": "Chocolate Bee",
+
+// Nether
+"item.resourcefulbees.nether_bee_spawn_egg": "NetherRack Bee Spawn Egg",
+"entity.resourcefulbees.nether_bee": "NetherRack Bee",
+
+// Cinnabar
+"block.resourcefulbees.cinnabar_honeycomb_block": "Cinnabar Honeycomb Block",
+"item.resourcefulbees.cinnabar_honeycomb": "Cinnabar Honeycomb",
+"item.resourcefulbees.cinnabar_bee_spawn_egg": "Cinnabar Bee Spawn Egg",
+"entity.resourcefulbees.cinnabar_bee": "Cinnabar Bee",
+
+// Red Carpenter
+"item.resourcefulbees.red_carpenter_bee_spawn_egg": "Red Carpenter Bee Spawn Egg",
+"entity.resourcefulbees.red_carpenter_bee": "Red Carpenter Bee",
+
+// Grass
+"item.resourcefulbees.grass_bee_spawn_egg": "Grass Bee Spawn Egg",
+"entity.resourcefulbees.grass_bee": "Grass Bee",
+
+// Glass
+"block.resourcefulbees.glass_honeycomb_block": "Glass Honeycomb Block",
+"item.resourcefulbees.glass_honeycomb": "Glass Honeycomb",
+"item.resourcefulbees.glass_bee_spawn_egg": "Glass Bee Spawn Egg",
+"entity.resourcefulbees.glass_bee": "Glass Bee",
+
+// Green Carpenter
+"item.resourcefulbees.green_carpenter_bee_spawn_egg": "Green Carpenter Bee Spawn Egg",
+"entity.resourcefulbees.green_carpenter_bee": "Green Carpenter Bee",
+
+// Yellow Carpenter
+"item.resourcefulbees.yellow_carpenter_bee_spawn_egg": "Yellow Carpenter Bee Spawn Egg",
+"entity.resourcefulbees.yellow_carpenter_bee": "Yellow Carpenter Bee",
+
+// White Carpenter
+"item.resourcefulbees.white_carpenter_bee_spawn_egg": "White Carpenter Bee Spawn Egg",
+"entity.resourcefulbees.white_carpenter_bee": "White Carpenter Bee",
+
+// Black Carpenter
+"item.resourcefulbees.black_carpenter_bee_spawn_egg": "Black Carpenter Bee Spawn Egg",
+"entity.resourcefulbees.black_carpenter_bee": "Black Carpenter Bee",
+
+// Mechanical
+"block.resourcefulbees.alexandr_honeycomb_block": "Mechanical Honeycomb Block",
+"item.resourcefulbees.alexandr_honeycomb": "Mechanical Honeycomb",
+"item.resourcefulbees.alexandr_bee_spawn_egg": "Mechanical Bee Spawn Egg",
+"entity.resourcefulbees.alexandr_bee": "Mechanical Bee",
+
+// Ghostly
+"block.resourcefulbees.ghostly_honeycomb_block": "Ghostly Honeycomb Block",
+"item.resourcefulbees.ghostly_honeycomb": "Ghostly Honeycomb",
+"item.resourcefulbees.ghostly_bee_spawn_egg": "Ghostly Bee Spawn Egg",
+"entity.resourcefulbees.ghostly_bee": "Ghostly Bee",
+
+// Ichor Slime
+"block.resourcefulbees.ichor_honeycomb_block": "Ichor Honeycomb Block",
+"item.resourcefulbees.ichor_honeycomb": "Ichor Honeycomb",
+"item.resourcefulbees.ichor_bee_spawn_egg": "Ichor Bee Spawn Egg",
+"entity.resourcefulbees.ichor_bee": "Ichor Bee",
+
+// Sky Slime
+"block.resourcefulbees.skyslime_honeycomb_block": "Skyslime Honeycomb Block",
+"item.resourcefulbees.skyslime_honeycomb": "Skyslime Honeycomb",
+"item.resourcefulbees.skyslime_bee_spawn_egg": "Skyslime Bee Spawn Egg",
+"entity.resourcefulbees.skyslime_bee": "Skyslime Bee",
+
+// Ender Slime
+"block.resourcefulbees.enderslime_honeycomb_block": "Enderslime Honeycomb Block",
+"item.resourcefulbees.enderslime_honeycomb": "Enderslime Honeycomb",
+"item.resourcefulbees.enderslime_bee_spawn_egg": "Enderslime Bee Spawn Egg",
+"entity.resourcefulbees.enderslime_bee": "Enderslime Bee",
+
+// Bricky
+"block.resourcefulbees.bricky_honeycomb_block": "Bricky Honeycomb Block",
+"item.resourcefulbees.bricky_honeycomb": "Bricky Honeycomb",
+"item.resourcefulbees.bricky_bee_spawn_egg": "Bricky Bee Spawn Egg",
+"entity.resourcefulbees.bricky_bee": "Bricky Bee",
+
+// Nether Bricky
+"block.resourcefulbees.nether_bricky_honeycomb_block": "Nether Bricky Honeycomb Block",
+"item.resourcefulbees.nether_bricky_honeycomb": "Nether Bricky Honeycomb",
+"item.resourcefulbees.nether_bricky_bee_spawn_egg": "Nether Bricky Bee Spawn Egg",
+"entity.resourcefulbees.nether_bricky_bee": "Nether Bricky Bee",
+
+// Resin
+"item.resourcefulbees.resin_bee_spawn_egg": "Resin Bee Spawn Egg",
+"entity.resourcefulbees.resin_bee": "Resin Bee",
+
+// Silky
+"block.resourcefulbees.silky_honeycomb_block": "Silky Honeycomb Block",
+"item.resourcefulbees.silky_honeycomb": "Silky Honeycomb",
+"item.resourcefulbees.silky_bee_spawn_egg": "Silky Bee Spawn Egg",
+"entity.resourcefulbees.silky_bee": "Silky Bee",
+
+// leafcutter
+"item.resourcefulbees.leafcutter_bee_spawn_egg": "Leafcutter Bee Spawn Egg",
+"entity.resourcefulbees.leafcutter_bee": "Leafcutter Bee",
+
+// tea
+"block.resourcefulbees.tea_honeycomb_block": "Tea Honeycomb Block",
+"item.resourcefulbees.tea_honeycomb": "Tea Honeycomb",
+"item.resourcefulbees.tea_bee_spawn_egg": "Tea Bee Spawn Egg",
+"entity.resourcefulbees.tea_bee": "Tea Bee",
+
+// xp drone
+"item.resourcefulbees.xp_drone_bee_spawn_egg": "XP Drone Bee Spawn Egg",
+"entity.resourcefulbees.xp_drone_bee": "XP Drone Bee",
+
+// XP
+"block.resourcefulbees.xp_honeycomb_block": "XP Honeycomb Block",
+"item.resourcefulbees.xp_honeycomb": "XP Honeycomb",
+"item.resourcefulbees.xp_bee_spawn_egg": "XP Bee Spawn Egg",
+"entity.resourcefulbees.xp_bee": "XP Bee",
+
+// Drowned
+"block.resourcefulbees.drowned_honeycomb_block": "Drowned Honeycomb Block",
+"item.resourcefulbees.drowned_honeycomb": "Drowned Honeycomb",
+"item.resourcefulbees.drowned_bee_spawn_egg": "Drowned Bee Spawn Egg",
+"entity.resourcefulbees.drowned_bee": "Drowned Bee",
+
+// Phantom
+"block.resourcefulbees.phantom_honeycomb_block": "Phantom Honeycomb Block",
+"item.resourcefulbees.phantom_honeycomb": "Phantom Honeycomb",
+"item.resourcefulbees.phantom_bee_spawn_egg": "Phantom Bee Spawn Egg",
+"entity.resourcefulbees.phantom_bee": "Phantom Bee",
+
+// RF
+"block.resourcefulbees.ryan_honeycomb_block": "Redstone Flux Honeycomb Block",
+"item.resourcefulbees.ryan_honeycomb": "Redstone Flux Honeycomb",
+"item.resourcefulbees.ryan_bee_spawn_egg": "Redstone Flux Bee Spawn Egg",
+"entity.resourcefulbees.ryan_bee": "Redstone Flux Bee",
+
+// azure
+"block.resourcefulbees.lady_lexxie_honeycomb_block": "Azure Honeycomb Block",
+"item.resourcefulbees.lady_lexxie_honeycomb": "Azure Honeycomb",
+"item.resourcefulbees.lady_lexxie_bee_spawn_egg": "Azure Bee Spawn Egg",
+"entity.resourcefulbees.lady_lexxie_bee": "Azure Bee",
+
+// Cobblestone
+"block.resourcefulbees.cobblestone_honeycomb_block": "Cobblestone Honeycomb Block",
+"item.resourcefulbees.cobblestone_honeycomb": "Cobblestone Honeycomb",
+"item.resourcefulbees.cobblestone_bee_spawn_egg": "Cobblestone Bee Spawn Egg",
+"entity.resourcefulbees.cobblestone_bee": "Cobblestone Bee",
+
+// Cotton Candy
+"block.resourcefulbees.cotton_candy_honeycomb_block": "Cotton Candy Honeycomb Block",
+"item.resourcefulbees.cotton_candy_honeycomb": "Cotton Candy Honeycomb",
+"item.resourcefulbees.cotton_candy_bee_spawn_egg": "Cotton Candy Spawn Egg",
+"entity.resourcefulbees.cotton_candy_bee": "Cotton Candy Bee",
+
+// Papa Beemeritus
+"block.resourcefulbees.papa_beemeritus_honeycomb_block": "Papa Beemeritus Honeycomb Block",
+"item.resourcefulbees.papa_beemeritus_honeycomb": "Papa Beemeritus Honeycomb",
+"item.resourcefulbees.papa_beemeritus_bee_spawn_egg": "Papa Beemeritus Spawn Egg",
+"entity.resourcefulbees.papa_beemeritus_bee": "Papa Beemeritus",
+
+// Zinc
+"block.resourcefulbees.zinc_honeycomb_block": "Zinc Honeycomb Block",
+"item.resourcefulbees.zinc_honeycomb": "Zinc Honeycomb",
+"item.resourcefulbees.zinc_bee_spawn_egg": "Zinc Bee Spawn Egg",
+"entity.resourcefulbees.zinc_bee": "Zinc Bee"
+}

@@ -1,0 +1,44 @@
+{
+    "flower": "minecraft:seagrass",
+    "creator": "Me_Ryan",
+    "lore": "Hive Bee",
+    "hasHoneycomb": true,
+    "traits": ["can_swim"],
+    "maxTimeInHive": 1800,
+    "baseLayerTexture": "drowned/drowned",
+    "ColorData": {
+      "modelType": "ARMORED",
+      "honeycombColor": "#04bebf",
+      "primaryColor": "#04bebf",
+      "secondaryColor": "#10da9d"
+    },
+    "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+        "mainOutput": "minecraft:heart_of_the_sea",
+        "secondaryOutput": "minecraft:nautilus_shell",
+        "bottleOutput" : "minecraft:honey_bottle",
+        "secondaryOutputWeight": 0.10,
+        "mainOutputWeight": 0.05,
+        "bottleOutputWeight": 0.70
+      },
+    "SpawnData": {
+        "canSpawnInWorld": false
+      },
+    "BreedData": {
+        "isBreedable": true,
+        "parent1": "Prismarine",
+        "parent2": "Zombie",
+        "feedItem": "minecraft:seagrass",
+        "feedAmount": 64
+      },
+      "CombatData": {  
+        "isPassive": false,  
+        "removeStingerOnAttack": true,
+        "inflictsPoison": false,
+        "attackDamage": 4
+    },
+    "TraitData": {
+        "hasTraits": true
+      }
+  }
+  

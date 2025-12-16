@@ -1,0 +1,37 @@
+{
+    "flower": "astralsorcery:aquamarine_sand_ore",
+    "creator": "Me_Ryan",
+    "lore": "Hive Bee",
+    "traits": ["can_swim"],
+    "maxTimeInHive": 600,
+    "hasHoneycomb": true,
+    "baseLayerTexture": "aquamarine/aquamarine",
+    "ColorData": {
+      "modelType": "ORE",
+      "isBeeColored": false,
+      "honeycombColor": "#05c7ff",
+      "primaryColor": "#f4e595",
+      "secondaryColor": "#05c7ff"
+    },
+    "MutationData": {},
+    "CentrifugeData": {
+      "hasCentrifugeOutput": true,
+      "mainOutput": "astralsorcery:aquamarine",
+      "bottleOutput": "minecraft:honey_bottle",
+      "bottleOutputWeight": 0.04
+    },
+    "SpawnData": {
+      "canSpawnInWorld": false
+    },
+    "BreedData": {
+      "isBreedable": true,
+      "parent1": "Prismarine",
+      "parent2": "Sand",
+      "feedItem": "astralsorcery:aquamarine",
+      "feedAmount": 32
+    },
+    "CombatData": {
+      "isPassive": true
+    },
+    "TraitData": {}
+  }

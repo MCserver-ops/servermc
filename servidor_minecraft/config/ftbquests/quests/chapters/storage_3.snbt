@@ -1,0 +1,1728 @@
+{
+	id: "537C170433C25745"
+	group: "11592D5C828EEDBF"
+	order_index: 2
+	filename: "storage_3"
+	title: "Storage - 3"
+	icon: "appliedenergistics2:controller"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Basic Matter-Energy System"
+			x: 0.0d
+			y: -5.5d
+			shape: "gear"
+			subtitle: "These are some of the key components for constructing an ME System. Left Click for more info"
+			description: [
+				"The Matter Energy Network is the main feature of the Applied Energistics 2 mod and it will allow you to store and manage the most majority of your resources in one place. The ME System requires power in order to allow you to store your resources on Disk Drives. This thing is basically a huge server room, but for items/liquids. The ME System will also allow you to perform advanced autocrafting operations, but we'll get to the later."
+				""
+				"Now, let's see how you can set up the most basic ME System."
+				""
+				"An Energy Acceptor will be required to provide power to your ME System. The Energy Acceptor converts energy from external systems into AE and stores it in the network. Energy Cells, or Dense Energy Cells can be added to the System to create an Energy Storage which can be used as a backup for your System."
+				""
+				"Now, the ME Drive. It is a block designed to do one thing, store Storage Cells. This block holds 10 storage cells so you can tightly pack your storage into a very small space. Me Drives show their contents and the storage cell status on the front of the drive face."
+				""
+				"Red - Indicates the Storage Cell is Full."
+				""
+				"Orange - Indicates the Storage Cell cannot hold any more types, but it can store more items."
+				""
+				"Green - Indicates the cell can hold more types, or more items."
+				""
+				"Black - Indicates there is no channel, or power is offline."
+				""
+				"Its important to note, that without a ME Network this block does nothing. Its only useful when combined with a way to input, and output items, and requires 2 AE/t power to function, and additional power for each Storage Cell stored inside it. The ME Drive requires a channel to function."
+				""
+				"Now, you'll need a way to see and manage your items. This is where Terminal comes into play. The ME Terminal is a HID which gives you access to items stored in your ME Network. This will also include items accessible through ME Storage Bus. It has the ability to sort and search, as well as filter by using View Cell. It requires a channel to function."
+				""
+				"Speaking of these ChEnNeLs o_0.. what exactly are these? Let's talk a bit about them."
+				""
+				"Applied Energistics 2's ME Networks require Channels to support devices which use networked storage, or other network services. Most devices such as standard cables, and machines can only support up to 8 channels. However ME Dense Cable can support up to 32 channels, the only other devices capable of transmitting 32 are P2P Tunnel and the Quantum Network Bridge."
+				""
+				"A Network without an ME Controller is considered to be Ad-Hoc, and can support up to 8 channel using devices. Once you exceed 8 devices the networks channel using devices will shutdown, you can either remove devices, or add an ME Controller, which is considered to be the heart of the system and which is also very cool <3"
+				""
+				"While using Ad-Hoc networks each device will use 1 channel network wide, this is very different from how ME Controllers allocate channels based on shortest route."
+				""
+				"Channels will consume 1/128 RF/t per node they transverse, this means that by adding an ME Controller to a network with 8 devices and over 96 nodes, your power usage might actually decrease power consumption because it changes how the channels are allocated."
+				""
+				"When using an ME Controller Channels must route via the shortest path from the ME Controller to the device. If the path is already maxed out, some devices may not get their required channels, use colored cables, cable anchors and tunnels to your advantage to make sure your channels go in the path you desire."
+			]
+			hide_dependency_lines: true
+			dependencies: [
+				"02FD2E2781CA26DB"
+				"0D7DBCD095AA1D88"
+				"5C299C68318424BC"
+			]
+			size: 1.5d
+			id: "667CBD6FED09CA55"
+			tasks: [
+				{
+					id: "66E521B78242913C"
+					type: "item"
+					item: "appliedenergistics2:drive"
+				}
+				{
+					id: "0C83F6A2AB7F611D"
+					type: "item"
+					item: "appliedenergistics2:terminal"
+				}
+				{
+					id: "2BB91018A2501F8A"
+					type: "item"
+					item: "appliedenergistics2:energy_acceptor"
+				}
+			]
+			rewards: [
+				{
+					id: "46AAC5E77F6D7EC0"
+					type: "item"
+					item: {
+						id: "appliedenergistics2:1k_storage_cell"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "09E819D9C889DF67"
+					type: "item"
+					item: "appliedenergistics2:network_tool"
+				}
+			]
+		}
+		{
+			title: "The ME Controller"
+			x: 5.0d
+			y: -5.5d
+			shape: "gear"
+			subtitle: "The heart of the System, in the palm of your hand. Left Click for more info"
+			description: [
+				"You've got our respect for reaching this point. The ME Controller is truly a beautiful sight. It's like the Universe stands inside of it.."
+				""
+				"Skipping the chit chat, let's learn how this masterpiece works."
+				""
+				"The ME Controller is the routing hub of a ME Network. Without it, only up to 8 devices can interact, any more and everything stops working. It is not possible to have 2 ME Controller in one ME Network. Unlike most ME Network devices, the ME Controller does not require channels, rather it emits them 8 or 32 per side, depending how many channels the device supports."
+				""
+				"The ME Controller requires 6 AE/t per controller block to function. Each ME Controller block can store 8000 AE, so larger networks might require additional energy storage. "
+				""
+				"Multiblock Controllers can be build in a fairly free form, however there are a few rules that must be followed:"
+				""
+				"1. All ME Controller blocks on a ME Network must be connected; else the blocks will turn red."
+				""
+				"2. The size of the ME Controller must be within 7x7x7; else it will turn red."
+				""
+				"3. A ME Controller can have 2 adjacent blocks in at most 1 axis; if a block violates this rule, it will disable and turn white."
+				""
+				"As long as all rules are followed and powered, the controller should glow and cycle colors, thus becoming one of the most beautiful blocks ever made."
+			]
+			dependencies: ["667CBD6FED09CA55"]
+			size: 1.5d
+			id: "5B4679EF52E8F2E8"
+			tasks: [{
+				id: "3C6A6552FA1A0FAB"
+				type: "item"
+				item: "appliedenergistics2:controller"
+			}]
+		}
+		{
+			title: "Wireless Management!"
+			icon: {
+				id: "ae2wtlib:wireless_crafting_terminal"
+				Count: 1b
+				tag: { }
+			}
+			x: 1.5d
+			y: 7.5d
+			shape: "gear"
+			subtitle: "Make the default Wireless Terminal to instantly obtain the Wireless Crafting Terminal. Left Click for more info"
+			description: [
+				"The Wireless Terminal is a device that will give you remote access to your ME System. The Terminal has to be linked to your System through an ME Security Terminal."
+				""
+				"After you linked up the Wireless Terminal in the ME Security Terminal, it grants portable access to the ME Network. It requires RF in order to access the System. Holds 1.6m AE in its battery and drains 1 AE/t for each block you are away from the nearest ME Wireless Access Point."
+				""
+				"To finish this quest, you have to submit the Wireless Terminal. In return, you'll receive an Wireless Crafting Terminal which is essencially a Wireless Terminal, but with a Crafting Grid added to it."
+			]
+			dependencies: ["2254E4908C5F62EC"]
+			id: "5D7CE22FCD18F716"
+			tasks: [{
+				id: "28310F396AEA89B3"
+				type: "item"
+				item: {
+					id: "appliedenergistics2:wireless_terminal"
+					Count: 1b
+					tag: { }
+				}
+				consume_items: true
+			}]
+			rewards: [{
+				id: "04314FB68A0CD9E6"
+				type: "item"
+				item: {
+					id: "ae2wtlib:wireless_crafting_terminal"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 2.5d
+			y: 7.5d
+			shape: "gear"
+			subtitle: "This is the Wireless version of the Pattern Terminal. It will allow you to design recipe Patterns on the go"
+			dependencies: ["2254E4908C5F62EC"]
+			id: "72352DB66F92947E"
+			tasks: [{
+				id: "78A77AF6D821A50F"
+				type: "item"
+				item: {
+					id: "ae2wtlib:wireless_pattern_terminal"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			icon: {
+				id: "appliedenergistics2:1k_storage_cell"
+				Count: 1b
+				tag: { }
+			}
+			x: -1.5d
+			y: -1.0d
+			subtitle: "1024 bytes, 63 types"
+			hide_dependency_lines: true
+			dependencies: [
+				"5C299C68318424BC"
+				"5356432BFBD260EC"
+			]
+			id: "76C8ADD18F1BC57D"
+			tasks: [{
+				id: "48DAFF9171917F71"
+				type: "item"
+				item: "appliedenergistics2:1k_cell_component"
+			}]
+		}
+		{
+			icon: {
+				id: "appliedenergistics2:4k_storage_cell"
+				Count: 1b
+				tag: { }
+			}
+			x: -0.5d
+			y: -1.0d
+			subtitle: "4096 bytes, 63 types"
+			hide_dependency_lines: true
+			dependencies: ["76C8ADD18F1BC57D"]
+			id: "58FECCAD4A6649B4"
+			tasks: [{
+				id: "3DCB2A17CAD2C7DE"
+				type: "item"
+				item: "appliedenergistics2:4k_cell_component"
+			}]
+		}
+		{
+			icon: {
+				id: "appliedenergistics2:16k_storage_cell"
+				Count: 1b
+				tag: { }
+			}
+			x: 0.5d
+			y: -1.0d
+			subtitle: "16384 bytes, 63 types"
+			hide_dependency_lines: true
+			dependencies: ["58FECCAD4A6649B4"]
+			id: "055F95363620C6AC"
+			tasks: [{
+				id: "2F299A5FB7B58B4B"
+				type: "item"
+				item: "appliedenergistics2:16k_cell_component"
+			}]
+		}
+		{
+			icon: {
+				id: "appliedenergistics2:64k_storage_cell"
+				Count: 1b
+				tag: { }
+			}
+			x: 1.5d
+			y: -1.0d
+			subtitle: "65536 bytes, 63 types"
+			hide_dependency_lines: true
+			dependencies: ["055F95363620C6AC"]
+			id: "507073E406B6567C"
+			tasks: [{
+				id: "5BBD27E63FE3BD6E"
+				type: "item"
+				item: "appliedenergistics2:64k_cell_component"
+			}]
+		}
+		{
+			icon: {
+				id: "appliedenergistics2:1k_fluid_storage_cell"
+				Count: 1b
+				tag: { }
+			}
+			x: -1.5d
+			y: 1.0d
+			subtitle: "1024 bytes, 5 types"
+			hide_dependency_lines: true
+			dependencies: [
+				"7085ED71734DBE6C"
+				"5356432BFBD260EC"
+			]
+			id: "33ADFBAB2DD592A3"
+			tasks: [{
+				id: "446BE2D8E0B205F8"
+				type: "item"
+				item: "appliedenergistics2:1k_fluid_cell_component"
+			}]
+		}
+		{
+			icon: {
+				id: "appliedenergistics2:4k_fluid_storage_cell"
+				Count: 1b
+				tag: { }
+			}
+			x: -0.5d
+			y: 1.0d
+			subtitle: "4096 bytes, 5 types"
+			hide_dependency_lines: true
+			dependencies: ["33ADFBAB2DD592A3"]
+			id: "192D610740549635"
+			tasks: [{
+				id: "1D0C5EA3BD712CFB"
+				type: "item"
+				item: "appliedenergistics2:4k_fluid_cell_component"
+			}]
+		}
+		{
+			icon: {
+				id: "appliedenergistics2:16k_fluid_storage_cell"
+				Count: 1b
+				tag: { }
+			}
+			x: 0.5d
+			y: 1.0d
+			subtitle: "16384 bytes, 5 types"
+			hide_dependency_lines: true
+			dependencies: ["192D610740549635"]
+			id: "005127241B02F28F"
+			tasks: [{
+				id: "173AE5A6C53E51AC"
+				type: "item"
+				item: "appliedenergistics2:16k_fluid_cell_component"
+			}]
+		}
+		{
+			icon: {
+				id: "appliedenergistics2:64k_fluid_storage_cell"
+				Count: 1b
+				tag: { }
+			}
+			x: 1.5d
+			y: 1.0d
+			subtitle: "65536 bytes, 5 types"
+			hide_dependency_lines: true
+			dependencies: ["005127241B02F28F"]
+			id: "31CA74FB8BDC8548"
+			tasks: [{
+				id: "5E4FE246E3180DA7"
+				type: "item"
+				item: "appliedenergistics2:64k_fluid_cell_component"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 0.0d
+			subtitle: "Has a capacity of 2x2x2"
+			hide_dependency_lines: true
+			dependencies: [
+				"7085ED71734DBE6C"
+				"5356432BFBD260EC"
+			]
+			id: "3EE593E366B80860"
+			tasks: [{
+				id: "7E4563AAFA7AE2BF"
+				type: "item"
+				item: "appliedenergistics2:2_cubed_spatial_storage_cell"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 0.0d
+			subtitle: "Has a capacity of 16x16x16"
+			hide_dependency_lines: true
+			dependencies: [
+				"3EE593E366B80860"
+				"5356432BFBD260EC"
+			]
+			id: "26A6205823A689D3"
+			tasks: [{
+				id: "2A1CD78D7EA76945"
+				type: "item"
+				item: "appliedenergistics2:16_cubed_spatial_storage_cell"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 0.0d
+			subtitle: "Has a capacity of 128x128x128"
+			hide_dependency_lines: true
+			dependencies: [
+				"26A6205823A689D3"
+				"5356432BFBD260EC"
+			]
+			id: "64FCE38F09B0BFF7"
+			tasks: [{
+				id: "0618EFB578355311"
+				type: "item"
+				item: "appliedenergistics2:128_cubed_spatial_storage_cell"
+			}]
+		}
+		{
+			title: "The \"Useful in Multiplayer\" Terminal"
+			x: 2.5d
+			y: 6.5d
+			subtitle: "My Server. My Rules. Left Click for more info"
+			description: [
+				"The Security Terminal will unlock the ability to use Wireless Terminals with your ME System. These will allow for long range access to the system."
+				""
+				"It will also allow you to configure which users, and what permissions the users have with the ME System. By existing it enforces permissions on the usage of the system."
+				""
+				"By default, the Security Terminal does not prevent tampering with your system. Destructive, removing cables/machines or breaking of drives is not directly provided by the Terminal. If you need to protect your system from physical vandalism you will need another form of physical security. This block provides Network level security."
+				""
+				"The player who places the ME Security Terminal has full control over the network and cannot exclude himself any rights. By adding a blank Biometric Card you define a default behavior for every player who has no own Biometric Card registered."
+				""
+				"{image:kubejs:textures/ae2/security_terminal_example.png width:110 height:100 align:1 fit:true}"
+			]
+			hide_dependency_lines: false
+			dependencies: ["041F7FE086B9E43D"]
+			id: "2254E4908C5F62EC"
+			tasks: [{
+				id: "7EF553D0B2FEAD89"
+				type: "item"
+				item: "appliedenergistics2:security_station"
+			}]
+			rewards: [{
+				id: "305D7506F3E63564"
+				type: "item"
+				item: {
+					id: "appliedenergistics2:biometric_card"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 0.0d
+			y: -7.0d
+			shape: "gear"
+			subtitle: "Can hold 9 different types of items with a stack limit of 256. Left Click for more info"
+			description: [
+				"If you're in need of a massive portable storage option, the Dank Storage might be just what you were looking for."
+				""
+				"This beauty has 7 tiers with only 6 being available at the moment. Each tier will allow you to store more and more items. Now, let's see how this thing works."
+				""
+				"Since this is the 1st tier, it will provide 9 item types and a stack limit of 256. This means that you can store 9 stacks of 256 Cobblestone if you want, but, of course, you can store other things then Cobblestone."
+				""
+				"Each Dank Storage has two modes. A Construction mode and a Bag mode. The Bag Mode will allow the Dank's Inventory to be accessed just like a regular backpack. However, the Construction mode will allow you to place blocks from the Dank Storage. While in Constructuin mode, just shift scroll to cycle between the items in the Dank Storage. Right Click to place blocks in the world."
+				""
+				"You should always clear the contents of the Dank Storage before upgrading to the next tier."
+			]
+			hide_dependency_lines: true
+			dependencies: ["06F6D673E86907A6"]
+			id: "6E9456D989D686B7"
+			tasks: [{
+				id: "0AF8037774C03673"
+				type: "item"
+				item: {
+					id: "dankstorage:dank_1"
+					Count: 1b
+					tag: {
+						inv: { }
+					}
+				}
+			}]
+		}
+		{
+			x: 1.0d
+			y: -7.0d
+			shape: "gear"
+			subtitle: "Can hold 18 different types of items with a stack limit of 1,024. You should always clear the contents of the Dank Storage before upgrading to the next tier"
+			dependencies: ["6E9456D989D686B7"]
+			id: "54ADDC60A61C0451"
+			tasks: [{
+				id: "5590D14AEEA4FF6A"
+				type: "item"
+				item: {
+					id: "dankstorage:dank_2"
+					Count: 1b
+					tag: {
+						inv: { }
+					}
+				}
+			}]
+		}
+		{
+			x: 2.0d
+			y: -7.0d
+			shape: "gear"
+			subtitle: "Can hold 27 different types of items with a stack limit of 4,096. You should always clear the contents of the Dank Storage before upgrading to the next tier"
+			dependencies: ["54ADDC60A61C0451"]
+			id: "51E0CC778E98B1B7"
+			tasks: [{
+				id: "71F4BA064DA1EB62"
+				type: "item"
+				item: "dankstorage:dank_3"
+			}]
+		}
+		{
+			x: 3.0d
+			y: -7.0d
+			shape: "gear"
+			subtitle: "Can hold 36 different types of items with a stack limit of 16,384. You should always clear the contents of the Dank Storage before upgrading to the next tier"
+			dependencies: ["51E0CC778E98B1B7"]
+			id: "6BF6A32DE72D1E08"
+			tasks: [{
+				id: "2D5F9AA3846D1840"
+				type: "item"
+				item: "dankstorage:dank_4"
+			}]
+		}
+		{
+			x: 4.0d
+			y: -7.0d
+			shape: "gear"
+			subtitle: "Can hold 45 different types of items with a stack limit of 65,536. You should always clear the contents of the Dank Storage before upgrading to the next tier"
+			dependencies: ["6BF6A32DE72D1E08"]
+			id: "4537389794C4D548"
+			tasks: [{
+				id: "66FD39CBECDBA864"
+				type: "item"
+				item: {
+					id: "dankstorage:dank_5"
+					Count: 1b
+					tag: {
+						inv: { }
+					}
+				}
+			}]
+		}
+		{
+			x: 5.0d
+			y: -7.0d
+			shape: "gear"
+			subtitle: "Can hold 54 different types of items with a stack limit of 262,144. You should always clear the contents of the Dank Storage before upgrading to the next tier"
+			dependencies: ["4537389794C4D548"]
+			id: "49B7C450D75604AD"
+			tasks: [{
+				id: "47414B7EE4F695FE"
+				type: "item"
+				item: {
+					id: "dankstorage:dank_6"
+					Count: 1b
+					tag: {
+						inv: { }
+					}
+				}
+			}]
+		}
+		{
+			x: 2.5d
+			y: -11.5d
+			shape: "gear"
+			subtitle: "Shulker+ Left Click for more info"
+			description: [
+				"The Personal Chest is a form of storage added by Mekanism. Once you obtain it, you'll have to right-click with it in your hand to assign it to yourself."
+				""
+				"After that, you can simply access its inventory (which is as large as one vanilla double chest) by right-clicking the air. To place it down, just shift right-click a block. You can configure its security settings to allow certain players to access it or not."
+			]
+			dependencies: ["776A12466E8A6EFA"]
+			id: "1F1385686C54AC2E"
+			tasks: [{
+				id: "58443CB07B2B28F9"
+				type: "item"
+				item: "mekanism:personal_chest"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 3.5d
+			subtitle: "Quartz Fiber for the win! Left Click for more info"
+			description: [
+				"ME Glass Cable is the simplest cable to make, transfers power and up to 8 Channels. It comes in 17 diffrent colors, the default being Fluix, and can be dyed any color using any of the 16 dyes."
+				""
+				"To craft colored cables surround a dye of any type with 8 cables of the same type ( color of the cables dosn't matter). You can also paint cables with any forge compatible paint brush in world."
+				""
+				"You can cover the cable with wool to create ME Covered Cable, and craft ME Smart Cable to get a better idea of what is going on with your Channels."
+			]
+			hide_dependency_lines: true
+			dependencies: ["631FBD2CC11F4972"]
+			id: "28FDE6645072876F"
+			tasks: [{
+				id: "3E57DBEFD0AF2A18"
+				type: "item"
+				item: "appliedenergistics2:fluix_glass_cable"
+			}]
+			rewards: [{
+				id: "7E2DC373248854D5"
+				type: "item"
+				item: "appliedenergistics2:fluix_glass_cable"
+				count: 29
+			}]
+		}
+		{
+			x: 2.5d
+			y: 3.5d
+			subtitle: "Visual Help 101. Left Click for more info"
+			description: [
+				"These Cables  provide diagnostic function by visualizing the channel usage on the cables, the channels appear as lit colored lines that run along the black stripe on the cables giving you an understanding of how your channels are being used on your network."
+				""
+				"These Cables  provide diagnostic function by visualizing the channel usage on the cables, the channels appear as lit colored lines that run along the black stripe on the cables giving you an understanding of how your channels are being used on your network."
+			]
+			dependencies: ["28FDE6645072876F"]
+			id: "6A1D5E5A7EB1F570"
+			tasks: [{
+				id: "08E9B8CF7935A878"
+				type: "item"
+				item: "appliedenergistics2:fluix_smart_cable"
+			}]
+			rewards: [{
+				id: "07C5DC93867C3782"
+				type: "item"
+				item: "appliedenergistics2:fluix_smart_cable"
+				count: 29
+			}]
+		}
+		{
+			x: 3.5d
+			y: 3.5d
+			subtitle: "Glass Fiber at its Finest. Left Click for more info"
+			description: [
+				"The Dense Smart Cable can carry 32 channels unlike standard cable which can only carry 8, however it doesn't support buses so you must first step down from dense to a smaller cable (such as Fluix ME Glass Cable or Fluix ME Smart Cable) before using buses or panels."
+				""
+				"Shows load similarly to Fluix ME Smart Cable, with each line lit representing four channels in use."
+			]
+			dependencies: ["6A1D5E5A7EB1F570"]
+			id: "3D919F1F9FA991F7"
+			tasks: [{
+				id: "65208C6318BB1AA5"
+				type: "item"
+				item: "appliedenergistics2:fluix_smart_dense_cable"
+			}]
+			rewards: [{
+				id: "63406857DD021FBF"
+				type: "item"
+				item: "appliedenergistics2:fluix_smart_dense_cable"
+				count: 13
+			}]
+		}
+		{
+			x: 0.0d
+			y: -14.0d
+			subtitle: "The Fluid Cell can hold, by default, 32 buckets of liquid. If it's supplied with the appropriate upgrades, it can hold 512 buckets. It is also a portable tank, which means that it will retail all of its contents when picked up"
+			dependencies: ["559CB0401212A28C"]
+			id: "6659BEB6D3AFA0F7"
+			tasks: [{
+				id: "7FDFAC4759B000E1"
+				type: "item"
+				item: {
+					id: "thermal:fluid_cell"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							TankInv: [{
+								FluidName: "minecraft:empty"
+								Capacity: 32000
+								Tank: 0b
+								Amount: 0
+							}]
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: 1.0d
+			y: -13.0d
+			shape: "gear"
+			subtitle: "The Basic Fluid Tank is a portable fluid container that can hold up to 64 buckets of liquid"
+			dependencies: ["09812AE1E82D15C5"]
+			id: "395BFE1DD5729FE7"
+			tasks: [{
+				id: "0BEA50227FF068B8"
+				type: "item"
+				item: "mekanism:basic_fluid_tank"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -12.0d
+			shape: "gear"
+			subtitle: "The Advanced Fluid Tank can hold up to 128 buckets of liquid"
+			dependencies: [
+				"395BFE1DD5729FE7"
+				"41B717C98381E7DC"
+			]
+			id: "001E9E06A8A75BB0"
+			tasks: [{
+				id: "5DD551CA17554EAC"
+				type: "item"
+				item: "mekanism:advanced_fluid_tank"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -11.0d
+			shape: "gear"
+			subtitle: "The Elite Fluid Tank can hold up to 512 buckets of liquid"
+			dependencies: ["001E9E06A8A75BB0"]
+			id: "3ADF8F136ECABB72"
+			tasks: [{
+				id: "1B52E18959366010"
+				type: "item"
+				item: "mekanism:elite_fluid_tank"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -10.0d
+			shape: "gear"
+			subtitle: "The Advanced Fluid Tank can hold up to 1024 buckets of liquid"
+			dependencies: ["3ADF8F136ECABB72"]
+			id: "39E77051089F65A3"
+			tasks: [{
+				id: "105B40260D2A252E"
+				type: "item"
+				item: "mekanism:ultimate_fluid_tank"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -13.0d
+			shape: "gear"
+			subtitle: "The Basic Energy Cube is a battery which can hold 1.60 MFE. Has a max output of 1.60kFE/tick and can be used to charge items without a dedicated charger"
+			dependencies: ["09812AE1E82D15C5"]
+			id: "7A24E7289D1743B1"
+			tasks: [{
+				id: "4B29AE84ACFFC902"
+				type: "item"
+				item: "mekanism:basic_energy_cube"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -12.0d
+			shape: "gear"
+			subtitle: "The Advanced Energy Cube can hold 6.40 MFE. It has a max output of 6.40kFE/tick"
+			dependencies: ["7A24E7289D1743B1"]
+			id: "41DDC482353F2375"
+			tasks: [{
+				id: "323A3AD7DFC196F8"
+				type: "item"
+				item: "mekanism:advanced_energy_cube"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -11.0d
+			shape: "gear"
+			subtitle: "The Elite Energy Cube can hold 25.60 MFE. It has a max output of 25.60kFE/tick"
+			dependencies: ["41DDC482353F2375"]
+			id: "4264CA3940704EC1"
+			tasks: [{
+				id: "0DEA0CB107505296"
+				type: "item"
+				item: "mekanism:elite_energy_cube"
+			}]
+		}
+		{
+			x: 0.0d
+			y: -10.0d
+			shape: "gear"
+			subtitle: "The Advanced Energy Cube can hold 102.40 MFE. It has a max output of 102.40kFE/tick"
+			dependencies: ["4264CA3940704EC1"]
+			id: "4887E201974AC700"
+			tasks: [{
+				id: "32B64913FC91ADA8"
+				type: "item"
+				item: "mekanism:ultimate_energy_cube"
+			}]
+		}
+		{
+			title: "The ME Stabilization Assembly"
+			icon: "decursiomod:charging_pylon"
+			x: 3.0d
+			y: -5.5d
+			subtitle: "Controller Assembly Line. Left Click for more info"
+			description: [
+				"If you're reading this, you're most probably wondering how the ME Controller is made, since there's no recipe present in JEI. Now we can waste your time by saying that it is disabled and we're crazy and mean and blah blah blah, but we're not going to do that, at least, not now, not here."
+				""
+				"So, how do you get your beloved Controller? It's quite easy. You'll need the Stabilization Pylons required to finish this quest and an Unstable ME Core. The Pylons will be used to stabilize the Core and obtain the ME Controller."
+				""
+				"Let's see how to use these Pylons. First, these have to work together in order for them to function properly, so, if one is missing, all of them are useless. They have to be placed in this exact way to work:"
+				""
+				"{image:kubejs:textures/ae2/stabilization_pylons_example.png width:400 height:100 align:1 fit:true}"
+				""
+				"All of them require RF to work. The first 4 of them also require AE2 Processors. The last one requires just a healthy amount of RF. Items/RF can be inserted from all sides."
+				""
+				"Now, to begin the Core Stabilization Process, just place an ME Unstable Core in the Logic Pylon, followed by a Logic Processor. After the Processor was added, the Core will move to the next Pylon which will require a Calculation Processor. After that, an Engineering Processor will be required and, lastly, a Master Processor will be needed. When the Core reaches the last Pylon, it will consume a total amount of 1M RF. When the process is finished, an ME Controller will be dropped nearby."
+				""
+				"One final note; when each Pylon starts modifying the Unstable Core, some purple particles will appear above the Charging Coil, to show you that a process is taking place."
+			]
+			dependencies: [
+				"02FD2E2781CA26DB"
+				"243A3D2C8DDAED57"
+				"5C299C68318424BC"
+				"0D7DBCD095AA1D88"
+				"40BDAF21862D3FCA"
+			]
+			id: "3CBC6E89F79A0DF5"
+			tasks: [
+				{
+					id: "38C157B9A07FBA22"
+					type: "item"
+					item: "decursiomod:logic_pylon"
+				}
+				{
+					id: "4415288B689E388C"
+					type: "item"
+					item: "decursiomod:calculation_pylon"
+				}
+				{
+					id: "37E1C90F2F99BE6B"
+					type: "item"
+					item: "decursiomod:engineering_pylon"
+				}
+				{
+					id: "06E53E9BE12D5EE8"
+					type: "item"
+					item: "decursiomod:master_pylon"
+				}
+				{
+					id: "1D6B3F9F2DB7A0D0"
+					type: "item"
+					item: "decursiomod:charging_pylon"
+				}
+				{
+					id: "432FBEC8AE218AC7"
+					type: "item"
+					item: "decursiomod:me_unstable_core"
+				}
+			]
+		}
+		{
+			x: 0.5d
+			y: 5.0d
+			shape: "gear"
+			subtitle: "Formating properly. Left Click for more info"
+			description: ["The Cell Workbench lets you configure how View Cell and1k ME Item Storage Cell as well as other similar items and Storage Cells store their items, they allow you to insert upgrade cards such as Inverter Card and Fuzzy Card into the devices, and select what items are accepted or rejected based on the settings from the Upgrades."]
+			dependencies: [
+				"46B7A05259CC0513"
+				"5984E05C451F1AF2"
+				"06F6D673E86907A6"
+			]
+			id: "1732EF40FE9C2AC6"
+			tasks: [{
+				id: "1D46EC88DE295CE5"
+				type: "item"
+				item: "appliedenergistics2:cell_workbench"
+			}]
+		}
+		{
+			title: "Multi-Dimensional ME System!"
+			x: 4.5d
+			y: 5.0d
+			shape: "gear"
+			subtitle: "The Quantum Ring will allow you to expand your system to any point in existance. Left Click for more info"
+			description: [
+				"Are you interested in accessing your beautiful ME System from another dimension? Well, great! This is your lucky day. Eight of these blocks placed around an ME Quantum Link Chamber will create a Quantum Network Bridge."
+				""
+				"{image:kubejs:textures/ae2/quantum_network_bridge.png width:100 height:100 align:1}"
+				""
+				"By right-clicking the Quantum Link Chamber present in the middle of the structure, you'll be able to access the Bridge's internal inventory which can only accept an Quantum Entangled Singularity. "
+				""
+				"When a Singularity is placed in a small explosion with some Ender Dust, two Quantum Entangled Singularities will be created. Keep in mind that these two Singularities are connected to each other and they're ment to be used together in two different Quantum Network Bridges to create a connection."
+				""
+				"There are some things you should also know. Only the 4 ME Quantum Ring blocks adjcent to the ME Quantum Link Chamber will accept network connections, the 4 corner blocks cannot connect to cables. Additionally, you'll have to provide an external power source (an Energy Acceptor will be required for that) to the seconds Quantum Nethwork Bridge, so it can start operating and provide a proper connection to the main ME System."
+				""
+				"Finally, these structures can also be used to make a connection to the ME System in the same dimension, but at huge distances."
+				""
+				"PS: You might wanna chunk load the area in which your ME System is located."
+			]
+			hide_dependency_lines: true
+			dependencies: [
+				"7DA6847CD760EB34"
+				"3D919F1F9FA991F7"
+				"398B882BA973C054"
+				"05CEE4626B22EF16"
+			]
+			id: "61A55CDECD837D29"
+			tasks: [
+				{
+					id: "68C08C281018B64D"
+					type: "item"
+					item: "appliedenergistics2:quantum_ring"
+					count: 16L
+				}
+				{
+					id: "14C74A31E15EE50C"
+					type: "item"
+					item: "appliedenergistics2:quantum_link"
+					count: 2L
+				}
+				{
+					id: "700E74CC13997295"
+					type: "item"
+					item: "appliedenergistics2:quantum_entangled_singularity"
+				}
+			]
+		}
+		{
+			x: 2.5d
+			y: 5.0d
+			shape: "gear"
+			subtitle: "Wireless Router, now in the land of the Blockheads! Left Click for more info"
+			description: [
+				"The ME Wireless Access Point transmits ME Network data remotely to the synchronised Wireless Terminal (a Security Terminal will be required to link the terminal), allowing remote access to the Network storage."
+				""
+				"The default range of a wireless signal is 16 blocks, which can be increased by 2 blocks with a Wireless Booster. Up to 64 Boosters may be installed in the Access Point."
+			]
+			hide_dependency_lines: true
+			dependencies: [
+				"40BDAF21862D3FCA"
+				"659D2B02958C2781"
+				"28FDE6645072876F"
+			]
+			id: "041F7FE086B9E43D"
+			tasks: [{
+				id: "4F5A3FE2CB72A8A2"
+				type: "item"
+				item: "appliedenergistics2:wireless_access_point"
+			}]
+			rewards: [{
+				id: "55054C0E86AEFCC1"
+				type: "item"
+				item: "appliedenergistics2:wireless_booster"
+				count: 8
+			}]
+		}
+		{
+			x: 3.5d
+			y: 7.5d
+			shape: "gear"
+			subtitle: "This is the Wireless version of the Interface Terminal. It will allow you to access all of your Interfaces and interface patterns slots on the go"
+			dependencies: ["2254E4908C5F62EC"]
+			id: "24F01756CD7DE841"
+			tasks: [{
+				id: "7A78D08BE6BEAE6D"
+				type: "item"
+				item: {
+					id: "ae2wtlib:wireless_interface_terminal"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 1.5d
+			y: -3.0d
+			subtitle: "Making Patters - Making Recipes. Left Click for more info"
+			description: [
+				"The Pettern Terminal is a specialized version of the ME Crafting Terminal designed to encode Blank Pattern into Crafting Pattern or Processing Pattern."
+				""
+				"Lets you browse the contents of your network like other terminals, but also contains an area for designing patterns. There are two modes for pattern encoding. Crafting Patterns, and Processing Patterns. Processing patterns are designed for use with machines that do not use standard crafting recipes; such as furnaces, or other machines. To select between modes, click the button to the right of the interface; when it shows a standard crafting table, it will create Crafting Patterns, and when it shows a furnace, it will create Processing Patterns."
+				""
+				"For Crafting Patterns, you specify the input crafting materials on a standard 3x3 crafting grid, and the output materials are determined automatically."
+				""
+				"For Processing Patterns, you specify the input materials and output materials, including quantity, by placing stacks of items in the interface. If a processing operation is not guaranteed to succeed (such as secondary products from some machines), it will not work correctly as a Processing Pattern."
+				""
+				"When designing crafting patterns you can click the output to extract a crafted item as long as you have the materials required to craft the item."
+			]
+			dependencies: ["0C83F6A2AB7F611D"]
+			id: "0899501249AFA7E5"
+			tasks: [{
+				id: "370B20466003DC7D"
+				type: "item"
+				item: "appliedenergistics2:pattern_terminal"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -4.0d
+			subtitle: "The ME Crafting Terminal is the upgraded version of the ME Terminal which has an integrated crafting grid with access to a ME Network's Networked Storage.Like the ME Terminal it also requires a channel to function"
+			dependencies: ["0C83F6A2AB7F611D"]
+			id: "074E1AA8666A0B22"
+			tasks: [{
+				id: "620D8F5C375C076A"
+				type: "item"
+				item: "appliedenergistics2:crafting_terminal"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -3.0d
+			subtitle: "The ME Interface Terminal gives remote access to all interface pattern slots on your network separated by which type of machine they are on. It will show the type of machine in the terminal, however you can name the ME Interface in the Inscriber or an Anvil to alter the name displayed in the ME Pattern Access Terminal.Combined with the fact that you can toggle if the interface shows up at all this gets you control over your itnerface terminal's display"
+			dependencies: ["0C83F6A2AB7F611D"]
+			id: "03124013500C12DC"
+			tasks: [{
+				id: "3FA882E36E57CA96"
+				type: "item"
+				item: "appliedenergistics2:interface_terminal"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -4.0d
+			subtitle: "The ME Fluid Terminal is the Liquid version of the regular ME Terminal. It will allow you to see all of the liquids stored in your ME System on your Fluid Storage Cells"
+			dependencies: ["0C83F6A2AB7F611D"]
+			id: "73EEEC78A116DF68"
+			tasks: [{
+				id: "04BD5BF62A322AC6"
+				type: "item"
+				item: "appliedenergistics2:fluid_terminal"
+			}]
+		}
+		{
+			title: "Interaction Monitors"
+			x: 2.5d
+			y: -3.5d
+			shape: "gear"
+			subtitle: "The Storage and Conversion Monitors are two very useful component of an ME System. Left Click for more info"
+			description: [
+				"The ME Storage Monitor is a simple way to see the current amount of a specified item, present in your system. There are several interactions to modify it:"
+				""
+				"- Right-clicking with an items, will select that item's amount to be displayed. To clear the monitor, just right-click it with an empty hand"
+				""
+				"- Right-clicking the monitor with a Quartz Wrench will lock the item in place, so that you won't change it by accident. To unlock the monitor, just right-click it with the quartz wrench again"
+				""
+				"The ME Conversion Monitor is the upgraded version of the ME Storage Monitor. It has a few great additions:"
+				""
+				"- It adds the ability to directly withdraw from or store items into the ME Network just like you would do with a drawer"
+				""
+				"- The ME Conversion Monitor can be locked (or unlocked) by right-clicking it with a wrench or network tool"
+				""
+				"- When unlocked, it will display any item it's right-clicked with. Shift-right-clicking attempts to insert the item into the network. Shift-double-right-clicking attempts to insert all items of the type displayed into the network"
+				""
+				"- If the monitor is locked, right-clicking attempts to pull out a stack of the item displayed. You cannot insert wrenches or network tools, because shift-right-click will collect the monitor"
+			]
+			dependencies: ["7085ED71734DBE6C"]
+			id: "351FC4904F5A162F"
+			tasks: [
+				{
+					id: "669AE0F5E3180E71"
+					type: "item"
+					item: "appliedenergistics2:storage_monitor"
+				}
+				{
+					id: "55B573CC0C85F9F9"
+					type: "item"
+					item: "appliedenergistics2:conversion_monitor"
+				}
+			]
+		}
+		{
+			title: "1k Crafting CPU"
+			x: 3.5d
+			y: -1.0d
+			shape: "gear"
+			subtitle: "Provides 1024 bytes of storage for crafting. Finishing this quest will reward you with a Crafting Monitor which can be integrated into the Crafting CPU to obtain a nice way of seeing what crafting process is being handeld by the CPU"
+			hide_dependency_lines: true
+			dependencies: [
+				"76C8ADD18F1BC57D"
+				"3C7E35709686AEF3"
+			]
+			id: "5ED8145D15E3C01E"
+			tasks: [{
+				id: "29F68F32F3DB714F"
+				type: "item"
+				item: "appliedenergistics2:1k_crafting_storage"
+			}]
+			rewards: [{
+				id: "56B393242BF957D0"
+				type: "item"
+				item: "appliedenergistics2:crafting_monitor"
+			}]
+		}
+		{
+			title: "4k Crafting CPU"
+			x: 4.5d
+			y: -1.0d
+			shape: "gear"
+			subtitle: "Provides 4,096 bytes of storage for crafting"
+			hide_dependency_lines: true
+			dependencies: ["58FECCAD4A6649B4"]
+			id: "4F6610BB559EBBF0"
+			tasks: [{
+				id: "50B4490F485EF5C9"
+				type: "item"
+				item: "appliedenergistics2:4k_crafting_storage"
+			}]
+		}
+		{
+			title: "16k Crafting CPU"
+			x: 5.5d
+			y: -1.0d
+			shape: "gear"
+			subtitle: "Provides 16,384 bytes of storage for crafting"
+			hide_dependency_lines: true
+			dependencies: ["055F95363620C6AC"]
+			id: "0F886AC267BBDADE"
+			tasks: [{
+				id: "77B41F29662F9E94"
+				type: "item"
+				item: "appliedenergistics2:16k_crafting_storage"
+			}]
+		}
+		{
+			title: "64k Crafting CPU"
+			x: 6.5d
+			y: -1.0d
+			shape: "gear"
+			subtitle: "Provides 65,536 bytes of storage for crafting"
+			hide_dependency_lines: true
+			dependencies: ["507073E406B6567C"]
+			id: "3EB380ECA5C5ADFF"
+			tasks: [{
+				id: "0167270931CAB6F7"
+				type: "item"
+				item: "appliedenergistics2:64k_crafting_storage"
+			}]
+		}
+		{
+			title: "The Assembler and The Pattern"
+			x: 4.5d
+			y: 1.0d
+			subtitle: "The Machine and the Instructions. Left Click for more info"
+			description: [
+				"The Molecular Assembler is a powered machine which crafts items, it can be upgraded by inserting Acceleration Card into it. Once upgraded it is very fast."
+				""
+				"Functions in one of two modes, single pattern mode or automatic crafting mode."
+				""
+				"In single pattern mode, it uses a single Crafting Pattern inserted into the assembler to craft an item without a crafting network.This makes it useful in stand alone setups or in configurations where it can be fed by other mods and even chained together to to craft a final output. Items will be accepted from any side and exported into any available inventories."
+				""
+				"In automatic crafting mode, it uses the Crafting Pattern from attached ME Interface to craft items when they are requested by the Crafting CPU. This mode requires that the assembler's pattern slot is empty."
+				""
+				"Now, let's talk about the Pattern. This puppy can be encoded as either a Crafting Pattern or as a  Processing Pattern. The Crafting Patterns is used to control crafting by inserting them either directly into a Molecular Assembler (which has its own quest where you can find more info about it), or into an ME Interface which is connected to a Molecular Assembler (this will allow you to add up to 9 Patterns into one Assembler). The Processing Pattern is used to control crafting by inserting them into an ME Interface that is connected to a Modded Machine, or to a Furnace and other \"Devices\"."
+			]
+			hide_dependency_lines: true
+			dependencies: [
+				"5C299C68318424BC"
+				"3C7E35709686AEF3"
+			]
+			id: "4F34B0DFD9BDF4AF"
+			tasks: [
+				{
+					id: "6C7F1E6D74AD7BA9"
+					type: "item"
+					item: "appliedenergistics2:molecular_assembler"
+				}
+				{
+					id: "0A158899FF356DA0"
+					type: "item"
+					item: "appliedenergistics2:blank_pattern"
+				}
+			]
+		}
+		{
+			x: 3.5d
+			y: 1.0d
+			subtitle: "Managing Recipes and general inventory. Left Click for more info"
+			description: [
+				"The ME Interface is the only component which can be used as a part, or as a Block. Crafting an ME interface in either form by itself produces the other form. The thin form is useful if you want to provide several different interfaces in a single block of physical space, but each will need its own channel. The block form lets multiple other blocks connect to a single ME interface, using only one channel for the interface."
+				""
+				"The ME Interface acts as an in between when working with pipes, tubes, networks, or machines from other mods."
+				""
+				"You can configure certain items to be exported from the ME Network into the ME Interface for use with other mods. Or use other mods to insert into any ME Interface. as long as it isn't full of exported materials it will add any added items into the ME Network."
+				""
+				"The interface normally functions like a chest, however with one exception, if you place a storage bus on an interface, you essentially include the entire network instead, this allows networks to share huge sets of contents and to be chained together in a very effective manner. In addition to this mode, if you you configure your interface to explicilty provide specific materials, the storage bus will behave as if the interface was a standard chest, disabling this advanced feature."
+				""
+				"The ME Interface require a channel to function."
+			]
+			hide_dependency_lines: true
+			dependencies: ["5C299C68318424BC"]
+			id: "2B6B57AC28CC7943"
+			tasks: [{
+				id: "7B462D05B4832DF9"
+				type: "item"
+				item: "appliedenergistics2:interface"
+			}]
+		}
+		{
+			x: 6.5d
+			y: 1.0d
+			subtitle: "The ME Fluid Interface will interface between the ME Network and fluid storage and transport systems. Each side may be independently configured to a different fluid. The fluid to be exported is set by placing a bucket of that fluid in one of the empty slots provided by the Interface"
+			hide_dependency_lines: true
+			dependencies: ["5C299C68318424BC"]
+			id: "7DAF6389FBFD48A3"
+			tasks: [{
+				id: "52D1C435E7C0AA82"
+				type: "item"
+				item: "appliedenergistics2:fluid_interface"
+			}]
+		}
+		{
+			x: 5.5d
+			y: 1.0d
+			subtitle: "The Co-Processing Unit provides additional item delivery from the CPU to the ME Interface for crafting. This can be used to make more assemblers active in parallel for the job, and thus increase overall crafting speed. These only help if your setup has steps properly separated so the system can run multiple tasks in parallel, or even split the same pattern across multiple interfaces"
+			hide_dependency_lines: true
+			dependencies: [
+				"0D7DBCD095AA1D88"
+				"3C7E35709686AEF3"
+			]
+			id: "5ADFE76F2B44C4D7"
+			tasks: [{
+				id: "38355A074BA51115"
+				type: "item"
+				item: "appliedenergistics2:crafting_accelerator"
+			}]
+		}
+		{
+			title: "Storage Disk 101"
+			icon: {
+				id: "botania:cosmetic_questgiver_mark"
+				Count: 1b
+				tag: { }
+			}
+			x: 0.0d
+			y: -2.0d
+			shape: "gear"
+			subtitle: "Partitions and Bytes. How do these work? Left Click for more info"
+			description: [
+				"Let's learn a bit about Bytes and Types. Storage Cells, are one of the core mechanics of storage in Applied Energistics 2, there are three kinds: one for items, one for fluids, and one for regions of space."
+				""
+				"Item storage cells can hold up to 63 distinct types of items; the number of items they can store depends in part on how many types they're holding, and their storage capacity."
+				""
+				"Storage cells have limits of size, and limits of types, plus you need to consider the resource usage of your cells, to decide what your best options are. Each storage cell can store a fixed amount of data. Each type consumes a number of bytes (which varies with the cell size), and each item consumes one bit of storage, so eight items consume one byte, and a full stack of 64 consumes 8 bytes, regardless of how the item would stack outside an ME network. For instance, 64 identical saddles don't take up more space than 64 stone."
+				""
+				"Gunning straight for top tier storage cells, is not generally the best idea, since you use more resources, but don't get any extra type storage."
+			]
+			dependencies: ["7085ED71734DBE6C"]
+			id: "5356432BFBD260EC"
+			tasks: [{
+				id: "3724735D8630BAA2"
+				type: "checkmark"
+				title: "Got it!"
+			}]
+		}
+		{
+			title: "Auto-Crafting 101"
+			icon: {
+				id: "botania:cosmetic_questgiver_mark"
+				Count: 1b
+				tag: { }
+			}
+			x: 5.0d
+			y: -2.0d
+			shape: "gear"
+			subtitle: "Cores and Threads? You've got them, just press \"Export\" already! Left Click for more info"
+			description: [
+				"Welcome to, probably, AE2's most powerful feature. Autocrafting. The ME System can perform very complex crafting operations, however, the proper conditions must be met first."
+				""
+				"Autocrafting requires a Crafting CPU. It can either be a single block, or a multiblock structure. It manages a single auto crafting task from start to finish and it can be built of various crafting units."
+				""
+				"To be a valid crafting CPU, two rules must be met:"
+				""
+				"1. The CPU must be a cuboid, completely composed of the parts listed above; air or other blocks are not valid."
+				""
+				"2. The CPU must contain at least 1 storage component. If you're not making a multiblock structure, use just one Crafting Storage Component, but keep in mind that this will not allow you to achieve much in terms in processing power."
+				""
+				"The crafting CPU as a multi-block only requires a single channel for the entire structure."
+				""
+				"Besides Crafting Storage Blocks, Crafting Co-Processors can be added to the multiblock structure to increase the number of tasks the crafting CPU can perform at once. With no co-processors, the crafting CPU can perform a single task at a time. Storage requirements are moderately complicated, and do not follow the usual ME storage math, but for a first approximation, you will need a little over one byte per input item, output item, or operation. Or simly put, the more Crafting Storage Blocks you have, and the bigger they are, the better."
+				""
+				"You can name your Crafting CPUs by naming any of the crafting units it is made up of with an Anvil."
+				""
+				"Ok, you've got the CPU, now you'll need a way to teach your System what recipes you want it to autocraft. That's where the Patterns and the Pattern Terminal come in."
+				""
+				"The Pettern Terminal has its own quest where you can find more information about it. Same thing works for the Molecular Assembler and the Pattern."
+				""
+				"After a Pattern was provided to an ME Interface, the output of your encoded recipes will be visible on your Terminals. To start the autocrafting process just click on the output icon. This will bring you to a menu which will ask you about the amount of items you want to craft. The Crafting Status of your requests can be accessed from the button present on the top right corner of a Terminal/Crafting Terminal, etc."
+			]
+			dependencies: ["7085ED71734DBE6C"]
+			id: "3C7E35709686AEF3"
+			tasks: [{
+				id: "632C1BE5DA576BD3"
+				type: "checkmark"
+				title: "Got it!"
+			}]
+		}
+		{
+			title: "5x5 Auto-Crafting: Part 2"
+			x: 6.5d
+			y: 0.0d
+			shape: "heart"
+			subtitle: "Advanced Autocrafting. Left Click for more info"
+			description: [
+				"Let's cover the part of the autocrafting process that takes grids larger then 3x3."
+				""
+				"When dealing with recipes that take 5x5 crafting grids, or larger, you'll need Package Crafters instead of Molecular Assemblers. Note that each tier of Autocrafting Table has its own version of Package Crafter. Also, the Crafting Core has its own version of Package Crafter which can be used with the ME System to automate the combination recipes with ease."
+				""
+				"Also, instead of regular Patterns, you'll need Package Recipe Holders. These are advanced Patterns that can retain up to 19 recipes. You'll always need two of them (with the same recipes listed on them) in order to use them properly. One has to be placed in a Packager, and the other, in a Unpackager."
+				""
+				"Package Recipe Holders can also hold multiple types of recipes. On one of these, you can have, for example, 3 crafting recipes, 5 combination recipes and more."
+			]
+			hide_dependency_lines: true
+			dependencies: [
+				"3C7E35709686AEF3"
+				"4CF1DAD5B1DD93B0"
+			]
+			id: "365DB5E9684F8489"
+			tasks: [
+				{
+					id: "4B4EAD71B69452E0"
+					type: "item"
+					item: "packagedexcrafting:advanced_crafter"
+				}
+				{
+					id: "2160195A35FE7E88"
+					type: "item"
+					item: "packagedauto:recipe_holder"
+					count: 2L
+				}
+			]
+		}
+		{
+			title: "5x5 Auto-Crafting: Part 1"
+			x: 3.5d
+			y: 0.0d
+			shape: "heart"
+			subtitle: "Managing large recipes. Left Click for more info"
+			description: [
+				"Although very powerful and versatile, the ME System has problemns managing recipes larger then 3x3. That's where the PackagedAuto mod comes in. It will povide three machines that will allow you to access autocrafting on grids larger then 3x3 and beyond."
+				""
+				"Let's talk about the Package Recipe Encoder. Think of this one as a Pattern Terminal. It takes Package Recipe Holders and writes recipes on them. It has JEI support, so you don't have to make each recipe by hand."
+				""
+				"Here's what you have to do in order to add recipes to the Package Recipe Holders. Two Holders have to provided at once to the Encoder. One of the 19 slots has to be selected. After that, select the Crafting Station for you recipe. For example, if you want to autocraft a Multiservo Press, the Advanced Auto Crafting Table has to be selected. After that, you can just select the recipe from JEI. A \"plus\" button should be available for any 5x5 recipe. Hit the \"Save\" save button and you're done."
+				""
+				"Now, let's talk about the Unpackager and the Packager. "
+				""
+				"The First one has to be connecter to the ME System and has to be right next to the crafting station you're going to use. You can also have multiple stations next to it. One of the two Package Recipe Holders has to be placed in the Unpackager. This adds a recipe that will manage the final product."
+				""
+				"The seconds one has to be connected to your ME System and it has to have te other Package Recipe Holder in it. This adds recipes to the ME System for autocrafting."
+				""
+				"After the conditions mentioned before are met, up to 19 (depending on how many you've made) recipes should be available in your Terminals for autocrafting."
+			]
+			hide_dependency_lines: true
+			dependencies: [
+				"3C7E35709686AEF3"
+				"365DB5E9684F8489"
+			]
+			id: "00A391C5D42E4144"
+			tasks: [
+				{
+					id: "42E820A3B3FA2F40"
+					type: "item"
+					item: "packagedauto:encoder"
+				}
+				{
+					id: "6F4F99DE2289D79E"
+					type: "item"
+					item: "packagedauto:packager"
+				}
+				{
+					id: "711A6F4F5014E64B"
+					type: "item"
+					item: "packagedauto:unpackager"
+				}
+			]
+		}
+		{
+			title: "The Induction Matrix"
+			x: 5.0d
+			y: -14.0d
+			subtitle: "An Induction Matrix is essentially a massive battery, capable of storing trillions of FE. Left Click for more info"
+			description: [
+				"The Induction Matrix is a highly configurable multi-block energy storage structure. It is built using Induction Casing and Induction Port for the casing, and any combination of Air, Induction Providers and Induction Cells."
+				""
+				"A correctly formed Induction Matrix will spark once with Redstone Particles when you place down the last block, and will also have an interface when right-clicking the block. Note: To make the Induction Matrix function properly, you will want to have one Induction Port configured to input and one Induction Port to output, using a Configurator."
+				""
+				"The Induction Matrix will only form if the cell structure is a rectangular prism 16x16x16 or smaller and the casing structure is a rectangular prism 18x18x18 or smaller."
+				""
+				"All edges of the block must be made using Induction Casing. You can use Structural Glass for the faces."
+				""
+				"All faces (other than edges) can be filled using either Induction Casing or Induction Port in any configuration (regardless of how the inside is set up)."
+				""
+				"The inside of the cube can be filled with either Induction Providers, Induction Cells or air blocks. However, you need at least 1 Induction Cell and 1 Induction Provider. Without at least 1 Induction Provider, the Induction Matrix cannot send or receive power."
+				""
+				"The inside of the cube components do not need to have matching tiers."
+			]
+			dependencies: ["02502B52A16346C0"]
+			id: "193203BEECAB4478"
+			tasks: [
+				{
+					id: "03320163CB512BA9"
+					type: "item"
+					item: "mekanism:induction_casing"
+				}
+				{
+					id: "3C42964ABF46D47C"
+					type: "item"
+					item: "mekanism:induction_port"
+				}
+			]
+		}
+		{
+			title: "i9"
+			x: 2.0d
+			y: -5.5d
+			subtitle: "DO NOT bend the PINS. Left Click for more info"
+			description: [
+				"Unlike the other processors you've been working on until this point, this one is quite unique."
+				""
+				"Its main use is to stabilize an Me Core. Eventually, this Core will be turned into an ME Controller which will allow you to fully unlock the potential of your ME System."
+			]
+			dependencies: [
+				"221ECEF99F9C4AA8"
+				"7085ED71734DBE6C"
+			]
+			id: "243A3D2C8DDAED57"
+			tasks: [{
+				id: "7885C1EFB7D5D8B4"
+				type: "item"
+				item: "decursiomod:master_processor"
+			}]
+		}
+		{
+			title: "ME Input/Export Bus"
+			x: 4.5d
+			y: 0.0d
+			subtitle: "Ins and outs forever. Left Click for more info"
+			description: [
+				"The ME Import Bus will pull items from the inventory it is pointed at and places them into the ME Network's Networked Storage. You can specify which items it will pull out via the UI, else it tries to pull out any item in the adjacent inventory. The ME Import Bus will attempt to import any possible options, even if 1 or more of the configured items cannot be stored. The ME Import Bus requires a channel to function."
+				""
+				"The ME Export Bus extracts items from the ME Network's Networked Storage and places them into the inventory it faces. You must configure which items it will insert, leaving the configuration blank will result in nothing.The ME Export Bus will try to export any of the items on its list skipping over those it cannot fit into the destination.The ME Export Bus requires a channel to function."
+			]
+			dependencies: ["5C299C68318424BC"]
+			id: "14640BF1CD88E692"
+			tasks: [
+				{
+					id: "764709A240166A56"
+					type: "item"
+					item: "appliedenergistics2:import_bus"
+				}
+				{
+					id: "3860004AD292D3F0"
+					type: "item"
+					item: "appliedenergistics2:export_bus"
+				}
+			]
+		}
+		{
+			title: "ME Fluid Input/Export Bus"
+			x: 5.5d
+			y: 0.0d
+			subtitle: "The Fluid version of the ME Import and Export Buses. Instead of interacting with items, these ones will interact with fluids"
+			dependencies: ["5C299C68318424BC"]
+			id: "1668AEFC7D48DB42"
+			tasks: [
+				{
+					id: "669F2B0007FE5582"
+					type: "item"
+					item: "appliedenergistics2:fluid_import_bus"
+				}
+				{
+					id: "5D45BFCC0F1535D5"
+					type: "item"
+					item: "appliedenergistics2:fluid_export_bus"
+				}
+			]
+		}
+		{
+			x: 4.0d
+			y: -13.0d
+			shape: "gear"
+			subtitle: "The Basic Chemical Tank is a portable gas container that can hold up to 64 buckets of gases. However, keep in mind that this Tank and all the other Chemical Tanks will NOT be able to hold radioactive gases/slurries"
+			dependencies: ["1A870097D55C3137"]
+			id: "77407B54D3696E59"
+			tasks: [{
+				id: "724895E01B81CD8E"
+				type: "item"
+				item: "mekanism:basic_chemical_tank"
+			}]
+		}
+		{
+			x: 4.0d
+			y: -12.0d
+			shape: "gear"
+			subtitle: "The Advanced Chemical Tank can hold up to 128 buckets of gases/slurries"
+			dependencies: [
+				"77407B54D3696E59"
+				"41B717C98381E7DC"
+			]
+			id: "0A295CAC03787171"
+			tasks: [{
+				id: "4E9E996940C71DC2"
+				type: "item"
+				item: "mekanism:advanced_chemical_tank"
+			}]
+		}
+		{
+			x: 4.0d
+			y: -11.0d
+			shape: "gear"
+			subtitle: "The Advanced Chemical Tank can hold up to 256 buckets of gases/slurries"
+			dependencies: ["0A295CAC03787171"]
+			id: "67EAA638B97D1DA9"
+			tasks: [{
+				id: "542E2A11C846ABC5"
+				type: "item"
+				item: "mekanism:elite_chemical_tank"
+			}]
+		}
+		{
+			x: 4.0d
+			y: -10.0d
+			shape: "gear"
+			subtitle: "The Advanced Chemical Tank can hold up to 512 buckets of gases/slurries"
+			dependencies: ["67EAA638B97D1DA9"]
+			id: "4370B7822D3AB927"
+			tasks: [{
+				id: "3B0628BE6442EFED"
+				type: "item"
+				item: "mekanism:ultimate_chemical_tank"
+			}]
+		}
+		{
+			title: "Basic Induction"
+			x: 5.0d
+			y: -13.0d
+			shape: "gear"
+			subtitle: "Can hold 3.20 GFE and has an in/out rate of 102.40 kFE"
+			dependencies: ["193203BEECAB4478"]
+			id: "24FC57150EA5EC64"
+			tasks: [
+				{
+					id: "1F0A2146EA5F99EB"
+					type: "item"
+					item: "mekanism:basic_induction_cell"
+				}
+				{
+					id: "2B3CFF2D3A12E69E"
+					type: "item"
+					item: "mekanism:basic_induction_provider"
+				}
+			]
+		}
+		{
+			title: "Advanced Induction"
+			x: 5.0d
+			y: -12.0d
+			shape: "gear"
+			subtitle: "Can hold 25.60 GFE and has an in/out rate of 819.20 kFE"
+			dependencies: ["24FC57150EA5EC64"]
+			id: "3F7EBB82B508164D"
+			tasks: [
+				{
+					id: "5CFD8FDDB13B0320"
+					type: "item"
+					item: "mekanism:advanced_induction_cell"
+				}
+				{
+					id: "64E5CA431DF1D113"
+					type: "item"
+					item: "mekanism:advanced_induction_provider"
+				}
+			]
+		}
+		{
+			title: "Elite Induction"
+			x: 5.0d
+			y: -11.0d
+			shape: "gear"
+			subtitle: "Can hold 204.80 GFE and has an in/out rate of 6.55 MFE"
+			dependencies: ["3F7EBB82B508164D"]
+			id: "5EAB9EBC5F18C9A7"
+			tasks: [
+				{
+					id: "3B7AAB4F1608C5B0"
+					type: "item"
+					item: "mekanism:elite_induction_cell"
+				}
+				{
+					id: "5BF4E5B9346ABB59"
+					type: "item"
+					item: "mekanism:elite_induction_provider"
+				}
+			]
+		}
+		{
+			title: "Ultimate Induction"
+			x: 5.0d
+			y: -10.0d
+			shape: "gear"
+			subtitle: "Can hold 1.60 TFE and has an in/out rate of 52.42 MFE"
+			dependencies: ["5EAB9EBC5F18C9A7"]
+			id: "7AC325294C461C23"
+			tasks: [
+				{
+					id: "27AB12203AD11C5C"
+					type: "item"
+					item: "mekanism:ultimate_induction_cell"
+				}
+				{
+					id: "621FC5D17B6D40D0"
+					type: "item"
+					item: "mekanism:ultimate_induction_provider"
+				}
+			]
+		}
+		{
+			x: 3.0d
+			y: -8.5d
+			shape: "gear"
+			subtitle: "More RF on the go! Left Click for more info"
+			description: [
+				"The Flux Capacitor will act as a portable battery for all the electric items from your inventory."
+				""
+				"By default, it can hold a maximum amount of 500k RF, but this can be upgraded at a Tinker's Workbench with certain augments. Additionally, the Flux Capacitor can be enchanted with the Holding enchantments which will allow it to store a maximum amount of 36M RF."
+			]
+			dependencies: ["7EF155944458998F"]
+			id: "0ECD6345576469F9"
+			tasks: [{
+				id: "04887E90D3B162B4"
+				type: "item"
+				item: {
+					id: "thermal:flux_capacitor"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 2.0d
+			y: -8.5d
+			shape: "gear"
+			subtitle: "XP storage on the go! Left Click for more info"
+			description: [
+				"The Insightful Crystal will be used to store your current xp levels so you don't have to 100% loose them when you die. Additionally, the Crystal can be used to transfer your xp levels to a Fluid Cell which has the Knowledge Concentrator Augment."
+				""
+				"By default, the Crystal can hold around 63 levels of xp. However, it can be enchanted with the Holding Enchantment to increase this amount to a maximum of 129 xp levels."
+				""
+				"Finally, it has an \"Auto Collect\" mode which will allow the Crystal to take all the XP into its inventory."
+			]
+			dependencies: [
+				"1FED40C0BDD7E015"
+				"3FEB394895131E7C"
+			]
+			id: "6ACF30B2CE835291"
+			tasks: [{
+				id: "18250D5300CCCF2C"
+				type: "item"
+				item: {
+					id: "thermal:xp_crystal"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 2.5d
+			y: 9.0d
+			shape: "gear"
+			subtitle: "Portable Mana Battery MkIII - This Band will store 4.000.000 units on Mana"
+			dependencies: ["01C35754A9AEF761"]
+			id: "2DF54E8165664C5C"
+			tasks: [{
+				id: "6C1584F684BF8998"
+				type: "item"
+				item: {
+					id: "mythicbotany:mana_ring_greatest"
+					Count: 1b
+					tag: {
+						mana: 4000000
+					}
+				}
+			}]
+		}
+		{
+			x: 2.5d
+			y: -2.0d
+			subtitle: "The View Cell is a way of configuring a Terminal to show only the items of your choise. Let's say you have a Cooking area with a Terminal connected to your network and you want only the cooking ingredients to be visible on that Terminal. The View Cell is what you'll need. When it is placed in a Cell Workbench, 63 slots will be provided. Items can be added to these slots in order to configure the Cell. When placed in a Terminal, the View Cell will allow only the items listed on it to be shown by the Terminal"
+			dependencies: ["06F6D673E86907A6"]
+			id: "1B3EBD313F042672"
+			tasks: [{
+				id: "5AB678032229B701"
+				type: "item"
+				item: "appliedenergistics2:view_cell"
+			}]
+		}
+		{
+			title: "Spatial IO Management"
+			x: 3.0d
+			y: 2.0d
+			shape: "gear"
+			subtitle: "Copy/Paste my land. Left Click for more info"
+			description: [
+				"The Spatial IO Port is used to capture and deploy regions of space that are defiend by Spatial Pylon. "
+				""
+				"To Capture/Deploy a region of space you must first construct a Spatial Containtment Structure, once constructed and ready your Spatial IO Port will show your required power, and current power, the next step would be to adjust your SCS design, or to build and power your required Energy Cell or Dense Energy Cell to meet the demands of the Spatial IO Port."
+				""
+				"Once power is available and your SCS is valid, you need to insert a 2³ Spatial Storage Cell, 16³ Spatial Storage Cell, or128³ Spatial Storage Cell, depending on the required size you may need a larger or small storage cell.When everything is ready, and the storage cell is placed inside the Spatial IO Port applying a redstone signal to the Spatial IO Port will trigger the capture/deployment of the cell into the SCS."
+				""
+				"Requires a channel to function."
+				""
+				"The Spatial Pylon is the main block used to construct a Spatial Containment Structure, they must be built in straight lines, with a minium length of 2. When powered and on a network they will either glow a light purple, or a light red, if the color is light red, that indicates design has an issue and needs to be adjusted. They emitt a small amount of light when powered."
+				""
+				"All Spatial Pylon in an ME Network are part of the same SCS."
+			]
+			dependencies: ["658A7224D988CF2E"]
+			id: "242A83794C5BCB10"
+			tasks: [
+				{
+					id: "0BE470E0508C56E1"
+					type: "item"
+					item: "appliedenergistics2:spatial_io_port"
+				}
+				{
+					id: "46DEA52B4B997CE6"
+					type: "item"
+					item: "appliedenergistics2:spatial_pylon"
+					count: 16L
+				}
+			]
+		}
+		{
+			x: 2.0d
+			y: 2.0d
+			shape: "gear"
+			subtitle: "What if I want to move my items to another Cell? Left Click for more info"
+			description: [
+				"The ME IO Port allows you to transfer items between your ME Network and your Storage Cells. Unlike other forms of automation the ME IO Port can send items without any configuration of which items to send."
+				""
+				"The top of the UI indicates which direction you wish to move the data, into the cell, or into the networks."
+				""
+				"The ME IO Port requires a channel to function. When used with automation, the input is the top or bottom, and the output is any of the sides.If you're storing data onto cells it's usually a good idea to pre-format them, that way you can get just the items you're interested in, and not get tons of extra items."
+			]
+			dependencies: ["66E521B78242913C"]
+			id: "658A7224D988CF2E"
+			tasks: [{
+				id: "525CD253F586CDA4"
+				type: "item"
+				item: "appliedenergistics2:io_port"
+			}]
+		}
+		{
+			x: 2.5d
+			y: -13.5d
+			shape: "gear"
+			subtitle: "Mark V - No, it does not come in a suitcase. The Fifth Tier Backpack is made with 1 Netherite Ingot and it will provide 96 Slots. It will also have 4 Upgrade Slots"
+			dependencies: [
+				"61640A55E9877F54"
+				"6AA23A5FB3C37C90"
+				"7EF155944458998F"
+				"02396D546396B926"
+			]
+			id: "74DDB8C6F6995D3C"
+			tasks: [{
+				id: "05BCDBA1F4B066D7"
+				type: "item"
+				item: "sophisticatedbackpacks:netherite_backpack"
+			}]
+			rewards: [{
+				id: "64548D3A6413D2AC"
+				type: "loot"
+				table_id: 5206766833681472091L
+			}]
+		}
+	]
+}

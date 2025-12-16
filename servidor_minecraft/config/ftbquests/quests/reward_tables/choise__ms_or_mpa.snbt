@@ -1,0 +1,38 @@
+{
+	id: "500F54F9519B0F67"
+	order_index: 5
+	title: "Choise - MS or MPA"
+	icon: {
+		id: "botania:cosmetic_questgiver_mark"
+		Count: 1b
+		tag: { }
+	}
+	loot_size: 1
+	use_title: true
+	rewards: [
+		{
+			title: "I want the Modular Power Armor!"
+			icon: {
+				id: "powersuits:powerarmor_torso"
+				Count: 1b
+				tag: { }
+			}
+			command: "/gamestage add @p modular_power_suit"
+			player_command: false
+			type: "command"
+		}
+		{
+			title: "I want the MekaSuit!"
+			icon: {
+				id: "mekanism:mekasuit_bodyarmor"
+				Count: 1b
+				tag: {
+					HideFlags: 2
+				}
+			}
+			command: "/gamestage add @p mekasuit"
+			player_command: false
+			type: "command"
+		}
+	]
+}

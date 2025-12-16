@@ -1,0 +1,41 @@
+{
+    "flower": "minecraft:honeycomb_block",
+    "creator": "Me_Ryan",
+    "lore": "Hive Bee",
+    "maxTimeInHive": 600,
+    "hasHoneycomb": true,
+    "baseLayerTexture": "tea/tea",
+    "modelType": "ARMORED",
+    "ColorData": {
+      "modelType": "GELATINOUS",
+      "honeycombColor": "#ffaa65",
+      "primaryColor": "#ffaa65",
+      "secondaryColor": "#cf7c3a"
+    },
+    "CentrifugeData": {
+      "hasCentrifugeOutput": true,
+      "mainOutput": "simplytea:tea_leaf",
+      "mainOutputWeight": 0.30,
+      "mainOutputCount": 2,
+      "secondaryOutput": "simplytea:tea_stick",
+      "secondaryOutputWeight": 0.10,
+      "secondaryOutputCount": 4,
+      "bottleOutput": "create:builders_tea",
+      "bottleOutputWeight": 0.10
+    },
+    "SpawnData": {
+      "canSpawnInWorld": false
+    },
+    "BreedData": {
+      "isBreedable": true,
+      "parent1": "Leafcutter",
+      "parent2": "Water",
+      "breedChance": 0.15,
+      "feedItem": "simplytea:tea_leaf",
+      "feedAmount": 32
+    },
+    "CombatData": {
+      "isPassive": true
+    },
+    "TraitData": {}
+  }

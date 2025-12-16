@@ -1,0 +1,1 @@
+<tag:blocks:sereneseasons:greenhouse_glass>.remove(<tag:blocks:forge:glass>);

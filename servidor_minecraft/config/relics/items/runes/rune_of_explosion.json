@@ -1,0 +1,12 @@
+{
+  "ingredients": [
+    "minecraft:tnt",
+    "minecraft:tnt_minecart",
+    "minecraft:gunpowder"
+  ],
+  "loot": {
+    "table": [
+    ],
+    "chance": 0
+  }
+}

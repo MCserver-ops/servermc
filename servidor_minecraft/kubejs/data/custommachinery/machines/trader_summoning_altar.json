@@ -1,0 +1,168 @@
+{
+  "name": "Trader Summoning Altar",
+  "appearance": {
+    "resistance": 9,
+    "idle": {
+      "block": "kubejs:machine/trader_summoning_altar_model"
+    },
+    "running": {
+      "block": "kubejs:machine/trader_summoning_altar_model",
+      "light": 7
+    },
+    "paused": {
+      "block": "kubejs:machine/trader_summoning_altar_model"
+    },
+    "errored": {
+      "block": "kubejs:machine/trader_summoning_altar_model"
+    }
+  },
+  "tooltips": [
+    {
+      "text": "Used to summon a Wandering Trader",
+      "color": "yellow",
+      "bold": true
+    },
+    {
+      "text": "This Altar will require a structure to work properly",
+      "color": "yellow"
+    },
+    {
+      "text": "Place it down and check the Altar's uses in JEI to see the structure",
+      "color": "yellow"
+    }
+  ],
+  "components": [
+    {
+      "type": "custommachinery:item",
+      "id": "input1",
+      "mode": "input",
+      "filter": "twilightforest:carminite_block",
+      "whitelist": true
+    },
+    {
+      "type": "custommachinery:item",
+      "id": "input2",
+      "mode": "input",
+      "filter": ["astralsorcery:starmetal", "botania:elf_quartz"],
+      "whitelist": true
+    },
+    {
+      "type": "custommachinery:item",
+      "id": "input3",
+      "mode": "input",
+      "filter": ["eidolon:arcane_gold_block", "botania:elf_quartz"],
+      "whitelist": true
+    },
+    {
+      "type": "custommachinery:item",
+      "id": "input4",
+      "mode": "input",
+      "filter": ["eidolon:lesser_soul_gem", "create:refined_radiance"],
+      "whitelist": true
+    },
+    {
+      "type": "custommachinery:item",
+      "id": "input5",
+      "mode": "input",
+      "filter": "botania:fel_pumpkin",
+      "whitelist": true
+    }
+  ],
+  "gui": [
+    {
+      "texture": "kubejs:textures/gui/trader_summoning_altar.png",
+      "x": 28,
+      "y": 1,
+      "width": 200,
+      "height": 220,
+      "type": "custommachinery:texture"
+    },
+    {
+      "x": 47,
+      "y": 139,
+      "type": "custommachinery:player_inventory"
+    },
+    {
+      "id": "input1",
+      "x": 88,
+      "y": 31,
+      "type": "custommachinery:slot",
+      "texture": "kubejs:textures/gui/trader_summoning_altar_slot.png"
+    },
+    {
+      "id": "input2",
+      "x": 148,
+      "y": 31,
+      "type": "custommachinery:slot",
+      "texture": "kubejs:textures/gui/trader_summoning_altar_slot.png"
+    },
+    {
+      "id": "input3",
+      "x": 148,
+      "y": 93,
+      "type": "custommachinery:slot",
+      "texture": "kubejs:textures/gui/trader_summoning_altar_slot.png"
+    },
+    {
+      "id": "input4",
+      "x": 88,
+      "y": 93,
+      "type": "custommachinery:slot",
+      "texture": "kubejs:textures/gui/trader_summoning_altar_slot.png"
+    },
+    {
+      "id": "input5",
+      "x": 119,
+      "y": 63,
+      "type": "custommachinery:slot",
+      "texture": "kubejs:textures/gui/trader_summoning_altar_slot.png"
+    },
+    {
+      "text": "Trader Summoning Altar",
+      "x": 70,
+      "y": 6,
+      "type": "custommachinery:text",
+      "color": 16777215
+    }
+  ],
+  "jei":[
+    {
+      "texture": "kubejs:textures/gui/trader_summoning_altar.png",
+      "x": 28,
+      "y": 1,
+      "width": 200,
+      "height": 220,
+      "type": "custommachinery:texture"
+    },
+    {
+      "id": "input1",
+      "x": 88,
+      "y": 31,
+      "type": "custommachinery:slot"
+    },
+    {
+      "id": "input2",
+      "x": 148,
+      "y": 31,
+      "type": "custommachinery:slot"
+    },
+    {
+      "id": "input3",
+      "x": 148,
+      "y": 93,
+      "type": "custommachinery:slot"
+    },
+    {
+      "id": "input4",
+      "x": 88,
+      "y": 93,
+      "type": "custommachinery:slot"
+    },
+    {
+      "id": "input5",
+      "x": 119,
+      "y": 64,
+      "type": "custommachinery:slot"
+    }
+  ]
+}

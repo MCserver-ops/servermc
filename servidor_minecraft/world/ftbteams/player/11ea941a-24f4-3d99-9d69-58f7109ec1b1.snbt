@@ -1,0 +1,20 @@
+{
+	id: "11ea941a-24f4-3d99-9d69-58f7109ec1b1"
+	type: "player"
+	player_name: "NxzTap"
+	ranks: {
+		11ea941a-24f4-3d99-9d69-58f7109ec1b1: "owner"
+	}
+	properties: {
+		"ftbchunks:allow_explosions": 0b
+		"ftbteams:display_name": "NxzTap"
+		"ftbteams:color": "#59FFA2"
+		"ftbchunks:block_edit_mode": "allies"
+		"ftbchunks:block_interact_mode": "allies"
+		"ftbteams:description": ""
+		"ftbteams:free_to_join": 0b
+		"ftbchunks:allow_fake_players": 1b
+	}
+	message_history: [ ]
+	extra: { }
+}

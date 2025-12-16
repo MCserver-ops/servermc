@@ -1,0 +1,74 @@
+{
+    "flower": "minecraft:weeping_vines",
+    "creator": "Lady Lexxie & Me_Ryan",
+    "lore": "Put the bee in a jar and you have a lava lamp - Lady Lexxie\nLonely Bee",
+    "hasHoneycomb": true,
+    "traits": ["blaze", "fire"],
+    "maxTimeInHive": 1800,
+    "baseLayerTexture": "lava/lava",
+    "ColorData": {
+    "modelType": "ORE",
+    "honeycombColor": "#ff5b00",
+    "primaryColor": "#ff5b00",
+    "secondaryColor": "#ffec86"
+  },
+    "CentrifugeData": {
+      "hasCentrifugeOutput": true,
+      "mainOutput": "minecraft:sugar",
+      "bottleOutput": "alexsmobs:lava_bottle",
+      "bottleOutputWeight": 0.10,
+      "mainOutputWeight": 0.30
+    },
+    "MutationData": {
+      "hasMutation": true,
+      "mutationCount": 10,
+      "mutations": [{
+          "type": "BLOCK",
+          "inputID": "minecraft:cobblestone",
+          "chance": 1,
+          "outputs": [{
+            "outputID": "minecraft:lava",
+            "weight": 10
+          }]
+        },
+        {
+          "type": "BLOCK",
+          "inputID": "minecraft:netherrack",
+          "chance": 1,
+          "outputs": [{
+            "outputID": "minecraft:lava",
+            "weight": 30
+          }]
+        },
+        {
+          "type": "BLOCK",
+          "inputID": "minecraft:magma_block",
+          "chance": 1,
+          "outputs": [{
+            "outputID": "minecraft:lava",
+            "weight": 60
+          }]
+        }
+      ]
+    },
+    "SpawnData": {
+      "canSpawnInWorld": true,
+      "biomeWhitelist": "tag:nether",
+      "lightLevel": "NIGHT",
+      "spawnWeight": 6
+    },
+    "BreedData": {
+      "isBreedable": true,
+      "feedItem": "minecraft:crimson_fungus",
+      "feedAmount": 16
+    },
+    "CombatData": {
+      "isPassive": false,
+      "removeStingerOnAttack": false,
+      "inflictsPoison": false,
+      "attackDamage": 4
+    },
+    "TraitData": {
+      "hasTraits": true
+    }
+}

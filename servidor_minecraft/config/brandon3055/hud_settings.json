@@ -1,0 +1,6 @@
+{
+    "brandonscore:item_hud": "{pos_y:0.7919606489675514d,pos_x:0.0d,enabled:1b}",
+    "draconicevolution:shield_hud": "{pos_y:0.9728002949852508d,pos_x:0.0d,show_undying:1b,scale:1.0f,show_numeric:1b,enabled:1b}",
+    "brandonscore:block_hud": "{pos_y:0.8895878171091449d,pos_x:0.0d,enabled:1b}",
+    "brandonscore:block_item_hud": "{pos_y:0.6978313274336282d,pos_x:0.0d,enabled:1b}"
+}

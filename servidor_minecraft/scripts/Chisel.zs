@@ -1,0 +1,2 @@
+craftingTable.removeRecipe(<item:chisel:charcoal/raw>);
+craftingTable.addShapeless("raw_charcoal_block", <item:chisel:charcoal/raw> * 4, [<item:minecraft:charcoal>, <item:minecraft:charcoal>, <item:minecraft:charcoal>, <item:minecraft:charcoal>]);

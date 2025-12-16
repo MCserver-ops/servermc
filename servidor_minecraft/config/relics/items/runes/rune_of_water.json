@@ -1,0 +1,19 @@
+{
+  "ingredients": [
+    "minecraft:lily_pad",
+    "minecraft:fishing_rod",
+    "minecraft:water_bucket",
+    "minecraft:cod",
+    "minecraft:salmon",
+    "minecraft:pufferfish",
+    "minecraft:tropical_fish",
+    "minecraft:sponge",
+    "minecraft:kelp",
+    "minecraft:ink_sac"
+  ],
+  "loot": {
+    "table": [
+    ],
+    "chance": 0
+  }
+}

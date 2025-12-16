@@ -1,0 +1,57 @@
+{
+    "flower": "minecraft:chorus_flower",
+    "creator": "Me_Ryan",
+    "lore": "Lonely Bee",
+    "hasHoneycomb": true,
+    "traits": ["ender"],
+    "maxTimeInHive": 1800,
+    "baseLayerTexture": "chorus/chorus",
+    "ColorData": {
+      "modelType": "GELATINOUS",
+      "honeycombColor": "#c181ff",
+      "primaryColor": "#c181ff",
+      "secondaryColor": "#ffd4ff"
+    },
+    "MutationData": {
+      "hasMutation": true,
+      "mutations" : [
+        {
+          "type": "BLOCK",
+          "inputID": "minecraft:end_stone",
+          "chance": 0.5,
+          "outputs": [
+            {"outputID": "minecraft:chorus_flower", "weight": 10}
+          ]
+        }
+      ]
+    },
+    "CentrifugeData": {
+      "hasCentrifugeOutput": true,
+      "mainOutput": "minecraft:chorus_fruit",
+      "secondaryOutput": "minecraft:shulker_shell",
+      "bottleOutput" : "minecraft:honey_bottle",
+      "mainOutputWeight": 0.30,
+      "mainOutputCount": 4,
+      "secondaryOutputWeight": 0.05
+    },
+    "SpawnData": {
+      "canSpawnInWorld": true,
+      "biomeWhitelist": "tag:end",
+      "lightLevel": "NIGHT",
+      "spawnWeight": 8
+    },
+    "BreedData": {
+      "isBreedable": true,
+      "feedItem": "minecraft:chorus_fruit",
+      "feedAmount": 64
+    },
+    "CombatData": {  
+        "isPassive": false,  
+        "removeStingerOnAttack": true,
+        "inflictsPoison": false,
+        "attackDamage": 7
+    },
+    "TraitData": {
+      "hasTraits": true
+    }
+  }

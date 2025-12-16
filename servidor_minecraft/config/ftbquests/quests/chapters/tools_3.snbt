@@ -1,0 +1,811 @@
+{
+	id: "71DD8DB3F8F134A1"
+	group: "11592D5C828EEDBF"
+	order_index: 4
+	filename: "tools_3"
+	title: "Tools - 3"
+	icon: {
+		id: "mythicbotany:alfsteel_sword"
+		Count: 1b
+		tag: {
+			Damage: 0
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 6.0d
+			y: -2.0d
+			shape: "gear"
+			subtitle: "This sword can be infosed with Spells. It will apply a touch Spell before damaging its target. It will also add an Amplify Augment on the last effect included on a Spell"
+			dependencies: ["47C92313B4A81B87"]
+			id: "25FB10B9BF931FCA"
+			tasks: [{
+				id: "35B1DD8203B21446"
+				type: "item"
+				item: {
+					id: "ars_nouveau:enchanters_sword"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 4.5d
+			y: -2.0d
+			shape: "gear"
+			subtitle: "Can be bound to a Spell at a Scribe's Table. After that, it can shoot arrows that, upon impact, will unleash the Spell bound to the bow. It can shoot with and without arrows in your inventory. If no arrow is present, a Mana Arrow with 0 damage will be shot. If an arrow is present and you have enough mana, that arrow will become a Mana arrow which will damage damage on impact. If you don't have enough mana, a regular arrow will be shot. If a Spell is not applied to the Bow, it will not shoot without regular arrows. This Bow can also use Augment Arrows to achieve unique spell effects"
+			hide_dependency_lines: true
+			dependencies: [
+				"47C92313B4A81B87"
+				"03870D07204DCFC6"
+			]
+			id: "6CD0FE40B4F18769"
+			tasks: [{
+				id: "08FC05CA04C0B0CA"
+				type: "item"
+				item: "ars_nouveau:spell_bow"
+			}]
+		}
+		{
+			x: 7.5d
+			y: -2.0d
+			shape: "gear"
+			subtitle: "After blocking a hit, you'll receive Mana Regeneration and spell damage for a short amount of time"
+			dependencies: ["47C92313B4A81B87"]
+			id: "3167D3EF9F216610"
+			tasks: [{
+				id: "57B24D27125FEFAA"
+				type: "item"
+				item: {
+					id: "ars_nouveau:enchanters_shield"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 6.0d
+			y: -1.0d
+			shape: "heart"
+			subtitle: "An upgraded version of the TerraShatterer. It will mine blocks on larger areas and it will also allow you to mine multiple blocks in the direction you're looking. This will not work while you're looking downwards"
+			dependencies: ["01C35754A9AEF761"]
+			id: "3AB030FBEDE0CC0B"
+			tasks: [{
+				id: "25D84FFD6BFB0D68"
+				type: "item"
+				item: {
+					id: "mythicbotany:alfsteel_pick"
+					Count: 1b
+					tag: {
+						mana: 9999
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 5.0d
+			y: -1.0d
+			shape: "heart"
+			subtitle: "The Alfblade is an upgraded version of the original Terrablade. It does more damage and it is also capable of faster swings, thus launching mana bursts much faster then before"
+			dependencies: ["01C35754A9AEF761"]
+			id: "5042E10875CC7872"
+			tasks: [{
+				id: "1CE8C7659E0DE00F"
+				type: "item"
+				item: {
+					id: "mythicbotany:alfsteel_sword"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 7.0d
+			y: -1.0d
+			shape: "heart"
+			subtitle: "In addition to it being able to chop down trees in just one swing, it will also allow you to attract nearby dropped items by just shift right-clicking with it"
+			dependencies: ["01C35754A9AEF761"]
+			id: "322F045F7E32D794"
+			tasks: [{
+				id: "612334EC265456EB"
+				type: "item"
+				item: {
+					id: "mythicbotany:alfsteel_axe"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 6.0d
+			y: 1.0d
+			shape: "gear"
+			subtitle: "These tools have special abilities. Left click for more info"
+			description: [
+				"Pickaxe: Will void stone, dirt, netherack, picking only valuable resources, such as ores."
+				""
+				"Shovel: Will void blocks such as gravel, sand."
+				""
+				"Axe: Will decapitate mobs."
+				""
+				"Hoe: Will moisten farmland regardless of proximity to water."
+				""
+				"Shears: When holding right click, will shear all nearby sheep."
+				""
+				"Sword: Has a chance to spawn pixies. The spawned pixies are much more stronger then the ones spawn by The Elementium Armor."
+			]
+			dependencies: ["12BEA0308056A4B6"]
+			id: "649A71EA2DAD5081"
+			tasks: [
+				{
+					id: "45327DA51B2B43E5"
+					type: "item"
+					item: {
+						id: "botania:elementium_pickaxe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "211728EE1D0E2786"
+					type: "item"
+					item: {
+						id: "botania:elementium_sword"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "79A48142FF215BCB"
+					type: "item"
+					item: {
+						id: "botania:elementium_axe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "5E7E0EA8F80A490D"
+					type: "item"
+					item: {
+						id: "botania:elementium_shovel"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "375768B29426B0AC"
+					type: "item"
+					item: {
+						id: "botania:elementium_shears"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "0A3EAF3952A66CE9"
+					type: "item"
+					item: {
+						id: "botania:elementium_hoe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 5.5d
+			y: -3.5d
+			shape: "gear"
+			subtitle: "Electric Drill. Left Click for more info"
+			description: [
+				"The Fluxbore is an upgradeable electric tool which is mainly used to break dirt and stone-like blocks."
+				""
+				"Like with other items added by the Thermal Series, the Fluxbore can also be augmented at a Tinker's Workbench with different augments and integral components to enhance its abilities."
+				""
+				"At least a Reinforced Integral Component has to be installed on this tool in order for it to be able to mine Obsidian. Aditionally, you can enchant the Fluxbore with Efficiency to make it mine faster, or with Holding to increase its energy storage capacity."
+			]
+			dependencies: ["4CF1DAD5B1DD93B0"]
+			id: "76F28246854204E2"
+			tasks: [{
+				id: "7A6BAC97F47D84C1"
+				type: "item"
+				item: {
+					id: "thermal:flux_drill"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 6.5d
+			y: -3.5d
+			shape: "gear"
+			subtitle: "Electric Not-Chainsaw. Left Click for more info"
+			description: [
+				"The Flux Saw is an upgradable electric tool which is mainly used to break leaves and wood-like blocks."
+				""
+				"Like with other items added by the Thermal Series, the Fluxsaw can also be augmented at a Tinker's Workbench with different augments and integral components to enhance its abilities."
+				""
+				"You can enchant the Fluxsaw with Efficiency to make it mine faster, or with Holding to increase its energy storage capacity."
+			]
+			dependencies: ["4CF1DAD5B1DD93B0"]
+			id: "6B7476DC29D11BD6"
+			tasks: [{
+				id: "58B4B12F9D2154D9"
+				type: "item"
+				item: {
+					id: "thermal:flux_saw"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 6.0d
+			y: 0.0d
+			shape: "heart"
+			subtitle: "\"Whosoever holds this hammer, if they be worthy, they shall possess the power of Thor.\" Left Click for more info"
+			description: [
+				"After obtaining this legendary weapon, you'll quickly find out that, although you have Thor's hammer, you're neither as strong, or as special as him."
+				""
+				"Yeah, that's right, you're not worthy, so you can't pick up the hammer."
+				""
+				"However, there might be a way of tricking the hammer into thinking that you ARE in fact worthy."
+				""
+				"I think you'll be quite happy to hear that, through our experimentations, we've found out that the Absorption effect triggers the hammer's enchant. Wait until Odin hears about this.. 0_o. Anyway, long story short, the Absorption effect will allow you to use Mjöllnir's powers for short amounts of time. Make 'em count!"
+				""
+				"\"Wait, wait, wait.. what are those <abilities> again?\""
+				""
+				"Well, you can hit bad guys with it. Also, you can throw it at your enemies and upon hitting them, Mjöllnir will summon a lightning bolt at them. You can also enchant it to make it deal more damage, return faster at you, or attack faster."
+				""
+				"Ps: If you manage to obtain the Ring of Thor, you shall possess the power of Mjöllnir without any restrictions whatsoever."
+			]
+			dependencies: [
+				"4946B5DA53086A8F"
+				"01454647A04025DA"
+			]
+			id: "024AFA522F2660DE"
+			tasks: [{
+				id: "49F6C6F5D514FD77"
+				type: "item"
+				item: "mythicbotany:mjoellnir"
+			}]
+			rewards: [{
+				id: "1537F6AFFF70D59A"
+				type: "item"
+				item: {
+					id: "botania:brew_flask"
+					Count: 1b
+					tag: {
+						brewKey: "botania:absorption"
+					}
+				}
+				count: 2
+			}]
+		}
+		{
+			x: 5.5d
+			y: 2.0d
+			shape: "gear"
+			subtitle: "The Crystal Bow will allow you to use mana as arrows, efficiently working as the Infinity Enchantment"
+			dependencies: ["45285038CC70D511"]
+			id: "03870D07204DCFC6"
+			tasks: [{
+				id: "4B975BB31572203B"
+				type: "item"
+				item: {
+					id: "botania:crystal_bow"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 6.0d
+			y: -6.0d
+			shape: "gear"
+			subtitle: "Now that's Pyro! Left Click form more info"
+			description: [
+				"The Flamethrower is a ranged weapon which uses Hydrogen gas as its fuel. It is fairly effective against mobs as it deals damage when they are directly hit with the stream and sets them on fire. It is most effective on large groups of mobs, where the user can hose down the entire group with fuel at a short distance."
+				""
+				"The Flamethrower has multiple modes. You can switch between them by using shift scrol. The modes are:"
+				""
+				"- Combat: Damages mobs and sets them on fire. Destroys any items on the ground. Does not set fire to blocks nor damage them."
+				""
+				"- Heat: Same as combat, but blocks/items that have a smelter recipe will be instantly converted into it. For example you can fire a short burst at iron ore block and a single ingot of iron will be dropped."
+				""
+				"- Inferno: Same as combat, but blocks that the stream hits will be hit with blast damage and will usually be destroyed. Nearby blocks will be set on fire."
+			]
+			dependencies: ["77407B54D3696E59"]
+			id: "0ACB135EE44B6CFE"
+			tasks: [{
+				id: "0D7D3EA1AE3740EC"
+				type: "item"
+				item: "mekanism:flamethrower"
+			}]
+		}
+		{
+			x: 6.0d
+			y: -7.0d
+			shape: "gear"
+			subtitle: "The Atomic Disassembler is a powerful mining tool, capable of Veinmining just about anything. Left Click for more info"
+			description: [
+				"The Atomic Disassembler is Mekanism's an all-in-one tool, essentially the ultimate, electronic version of a paxel.  The Disassembler will replace your Pickaxe, Axe, Sword and Shovel. It will not replace your Shears."
+				""
+				"This tool has more operating modes:"
+				""
+				"- Normal: Works as a diamond tool with efficiency II."
+				""
+				"- Slow: Works as a diamond tool."
+				""
+				"- Fast: Works as a diamond tool with effciency V."
+				""
+				"- Vein: Mines an entire vein of ores, or can chop down a tree with a single swing."
+				""
+				"- Off: Will not interact with the nearby blocks."
+			]
+			dependencies: ["20066A1C19E42D20"]
+			id: "014A94BFD6243468"
+			tasks: [{
+				id: "1D5C7D64C3DCFE8A"
+				type: "item"
+				item: {
+					id: "mekanism:atomic_disassembler"
+					Count: 1b
+					tag: {
+						HideFlags: 2
+					}
+				}
+			}]
+		}
+		{
+			x: 6.0d
+			y: -9.25d
+			shape: "gear"
+			subtitle: "By default, the Meka-Tool will be almost useless. However, it can receive a variety of modules to enable a wide range of functions. Like with the MekaSuit, you can configure the Meka-Tool's modules from the Configuration Menu which can be accessed with the \"\\\" key"
+			dependencies: [
+				"36367A18678E09A3"
+				"014A94BFD6243468"
+			]
+			size: 1.5d
+			id: "0958185A0E88E09D"
+			tasks: [{
+				id: "6B6DEFDC8A966FDD"
+				type: "item"
+				item: {
+					id: "mekanism:meka_tool"
+					Count: 1b
+					tag: {
+						HideFlags: 2
+					}
+				}
+			}]
+			rewards: [{
+				id: "70F0560D35E6E9DB"
+				type: "loot"
+				table_id: 7176426831663151036L
+			}]
+		}
+		{
+			title: "Flux-Infused Tools"
+			x: 8.0d
+			y: -4.5d
+			shape: "gear"
+			subtitle: "Electrum +++ Left Click for more info"
+			description: [
+				"Like with the other tools you've been using until this point, these ones will have special abilities too. Note that some of them have special abilities only when their Empowered Mode is enabled, while some of them also have some special abilities when they're not Empowered. So. Let's see what these beauties can do:"
+				""
+				"- Sword: When it's not Empowered will be just a regular, very powerful sword. When it is Empowered however, it will be able to launch piercing projectiles made of RedstoneFlux. Similar to how the Terrablade can launch mana projectiles when swung."
+				""
+				"- Pickaxe: When it's not Empowered it will be able to place down light sources by just right-clicking with it. When it is Empowered, those light sources will be placed automatically when you're in a dark environment."
+				""
+				"- Axe: When it's not Empowered it will be just a regular, very powerful axe. When it is Empowered however, it will receive a double critical damage which will be dealt as armor-piercing damage to your enemies. It can be extremely useful against armored enemies."
+				""
+				"- Shovel: When it's not Empowered it will allow you to revert farmland or grass path, back into dirt. When it is Empowered will allow you to turn grass blocks into flux-infused path blocks which are faster to walk on."
+				""
+				"- Shield: When it is not Empowered, will mainly be just a regular Shield which has the added ability to block incomming flux damage. When it is Empowered however, will release, upon blocking damage, a dispersion shield that will knock back all the nearby mobs."
+				""
+				"- Fishing Rod: When it's not Empowered, it will be just a regular electric Fishing Rod, but when it is Empowered, it can be used to reel in hooked mobs with much greater control. The mob is unhooked if you attack it, or use the Rod again, while crouching."
+			]
+			dependencies: [
+				"1FED40C0BDD7E015"
+				"2EB2C0CB138E095B"
+			]
+			id: "4638A89769FF60AB"
+			tasks: [
+				{
+					id: "0B3685F420FBB501"
+					type: "item"
+					item: {
+						id: "redstone_arsenal:flux_pickaxe"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "376EA87B78CA6F61"
+					type: "item"
+					item: {
+						id: "redstone_arsenal:flux_sword"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "4089DDC4D345C738"
+					type: "item"
+					item: {
+						id: "redstone_arsenal:flux_axe"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "7C9DE5E8CC05B027"
+					type: "item"
+					item: {
+						id: "redstone_arsenal:flux_shovel"
+						Count: 1b
+						tag: { }
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "59754DA9B5E305B4"
+					type: "item"
+					item: {
+						id: "redstone_arsenal:flux_fishing_rod"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "12883D948EDDBC82"
+					type: "item"
+					item: {
+						id: "redstone_arsenal:flux_shield"
+						Count: 1b
+						tag: { }
+					}
+				}
+			]
+		}
+		{
+			x: 5.0d
+			y: -4.5d
+			shape: "gear"
+			subtitle: "Electric Bow? Never heard of it. Left Click for more info"
+			description: [
+				"You're dealing with Redstone Arsenal. Of course there is a Bow in here. Ok, let's not waste any more time. What does this thing do?"
+				""
+				"When it is not Empowered, it will be just be a regular, very powerful bow, but when it is Empowered, it will shoot arrows at speeds soo high that, often, the arrows will reach their destination almost instantly."
+				""
+				"Finishing the quest, will give you a Flux-Infused Quiver which will work perfectly with the Flux-Infused Bow. Let's see what it does exactly."
+				""
+				"When it's not Empowered, it will produce flux arrows that will deal armor piercing damage. This essentially means that you're literally shooting RF/FE. When it is Empowered, it will produce flux arrows that defy gravity. This means that these arrows will not interract with any type of friction. For example, you'll be able to shoot them underwater without having to worry about them loosing their velocity."
+			]
+			dependencies: [
+				"1FED40C0BDD7E015"
+				"2EB2C0CB138E095B"
+			]
+			id: "57D880A9D903E8DC"
+			tasks: [{
+				id: "084650C04E4B8D81"
+				type: "item"
+				item: {
+					id: "redstone_arsenal:flux_bow"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "7ED8752A4730A27F"
+				type: "item"
+				item: {
+					id: "redstone_arsenal:flux_quiver"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 7.5d
+			y: -9.0d
+			shape: "gear"
+			subtitle: "Will allow the Meka-Tool to make grass paths and farm lands"
+			dependencies: ["20066A1C19E42D20"]
+			id: "3C0532E613F54763"
+			tasks: [{
+				id: "52DCB7DC84AFCBC0"
+				type: "item"
+				item: "mekanism:module_farming_unit"
+			}]
+		}
+		{
+			x: 6.0d
+			y: -10.5d
+			shape: "heart"
+			subtitle: "Allows the Meka-Tool to assemble your atoms at different points in spacetime. Yeah, this is just a fancy way of saying that this module will allow you to teleport around with ease"
+			dependencies: ["36367A18678E09A3"]
+			id: "78F857427CDD9EC3"
+			tasks: [{
+				id: "77E2665DC0D74D0D"
+				type: "item"
+				item: "mekanism:module_teleportation_unit"
+			}]
+		}
+		{
+			x: 5.0d
+			y: -8.0d
+			shape: "gear"
+			subtitle: "Will increase the mining speed of the Meke-Tool on each type of block"
+			dependencies: ["20066A1C19E42D20"]
+			id: "4A91AD249BAFA70C"
+			tasks: [{
+				id: "228A7356ED97CFD8"
+				type: "item"
+				item: "mekanism:module_excavation_escalation_unit"
+			}]
+		}
+		{
+			x: 7.0d
+			y: -8.0d
+			shape: "gear"
+			subtitle: "Will increase the attack damage of the Meka-Tool"
+			dependencies: ["20066A1C19E42D20"]
+			id: "007F5F37087158FB"
+			tasks: [{
+				id: "4D772AF4B5D92F99"
+				type: "item"
+				item: "mekanism:module_attack_amplification_unit"
+			}]
+		}
+		{
+			x: 5.0d
+			y: -10.0d
+			shape: "gear"
+			subtitle: "Will allow the Meka-Tool to use SilkTouch on all the mined blocks"
+			dependencies: ["20066A1C19E42D20"]
+			id: "79E4FC56E6FBDEF2"
+			tasks: [{
+				id: "58892EE9CBDB8BC8"
+				type: "item"
+				item: "mekanism:module_silk_touch_unit"
+			}]
+		}
+		{
+			x: 7.0d
+			y: -10.0d
+			shape: "gear"
+			subtitle: "Will allow the Meka-Tool to easily harvest ore veins and chop down trees"
+			dependencies: ["20066A1C19E42D20"]
+			id: "028B868F78F81289"
+			tasks: [{
+				id: "3D03522B2F1FDFC7"
+				type: "item"
+				item: "mekanism:module_vein_mining_unit"
+			}]
+		}
+		{
+			x: 4.5d
+			y: -9.0d
+			shape: "gear"
+			subtitle: "Will allow the Meka-Tool to cut leaves and harvest wool from sheeps"
+			dependencies: ["20066A1C19E42D20"]
+			id: "6AA0CE3454DA7E2F"
+			tasks: [{
+				id: "074A4741DA89178A"
+				type: "item"
+				item: "mekanism:module_shearing_unit"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 3.0d
+			shape: "gear"
+			subtitle: "Angel Dirt Block: The Rod of the Highlands is very similar to the Rod of the Lands, however, this one will allow you to place dirt blocks anywhere without requiring any block as a base"
+			dependencies: [
+				"47C92313B4A81B87"
+				"16AA0D0FD3075CB9"
+			]
+			id: "3CD9417B53DCCF45"
+			tasks: [{
+				id: "21212A076F291131"
+				type: "item"
+				item: "botania:skydirt_rod"
+			}]
+		}
+		{
+			x: 5.0d
+			y: 3.0d
+			shape: "gear"
+			subtitle: "Magic Gravity Gun: The Rod of the Shaded Mesa will allow you to pickup mobs and move them as you please. Just hold right-click on a mob to pick it up. By pressing left-click, you can throw the mobs in a distance"
+			dependencies: ["51C8A2EC12659993"]
+			id: "689E39E1A65BAE71"
+			tasks: [{
+				id: "5967AC46EFB15FAE"
+				type: "item"
+				item: "botania:gravity_rod"
+			}]
+		}
+		{
+			x: 7.0d
+			y: 3.0d
+			shape: "gear"
+			subtitle: "Precision Missile Launcher: The Rod of the Unstable Reservoir will launch mana missiles at all the nearby hostile mobs at the cost of some mana"
+			dependencies: ["3367D3C501792C05"]
+			id: "322FC7315CD389F4"
+			tasks: [{
+				id: "5B8352742DFB5B47"
+				type: "item"
+				item: "botania:missile_rod"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 3.0d
+			shape: "heart"
+			subtitle: "The Starfury?: The Starcaller is a legendary sword that has a random chance to summon a rain of star particles at the location where a mob was hit"
+			dependencies: [
+				"0FC87F7225551D24"
+				"45285038CC70D511"
+				"12BEA0308056A4B6"
+			]
+			id: "309E13F0B0119698"
+			tasks: [{
+				id: "4185E2ED18B5BBEA"
+				type: "item"
+				item: {
+					id: "botania:star_sword"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 8.0d
+			y: 3.0d
+			shape: "heart"
+			subtitle: "Sherpened Lightning Rod: The Thundercaller is a powerful sword which will attack multiple mobs at once using a bolt of electricity"
+			dependencies: ["12BEA0308056A4B6"]
+			id: "4F67E004107C67AA"
+			tasks: [{
+				id: "7023018AC345BAB4"
+				type: "item"
+				item: {
+					id: "botania:thunder_sword"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 7.0d
+			y: -4.5d
+			shape: "gear"
+			subtitle: "Unlike a regular Crossbow, the Flux-Infused Crossbow can be charged up to three times. Left Click has to be used in order to fire. When it's Empowered, the Crossbow will fire all of its projectile at once in a vertical line"
+			dependencies: [
+				"1FED40C0BDD7E015"
+				"2EB2C0CB138E095B"
+			]
+			id: "5B8926BB81227600"
+			tasks: [{
+				id: "53F4E29B5D856966"
+				type: "item"
+				item: {
+					id: "redstone_arsenal:flux_crossbow"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 6.0d
+			y: -4.5d
+			shape: "gear"
+			subtitle: "The Flux-Infused Trident is basically just a regular Trident which works on electricity. However, when it is Empowered, it will allow you to execute a strong ground pound when you're falling and using the Left Click. Upon landing, the kinetic energy is used to deal armor piercing damage to nearby mobs. Synergizes with the riptide enchantment"
+			dependencies: [
+				"1FED40C0BDD7E015"
+				"2EB2C0CB138E095B"
+			]
+			id: "220DB9AB1E95661B"
+			tasks: [{
+				id: "5A1392DA50E7D467"
+				type: "item"
+				item: {
+					id: "redstone_arsenal:flux_trident"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			title: "Flux-Infused Excavators"
+			x: 4.0d
+			y: -4.5d
+			shape: "gear"
+			subtitle: "Both of these tools will be able to dig stone/dirt in a 3x3 area, but the similarities kinda ender here. First, the Hammer can also be used as a weapon. When it's Empowered, its attack speed will be increased along with its damage. Now, the Excavator will always allow you to place matching earth-type blocks in its area of effect. However, when it's Empowered, its area of effect will be increased to 5x5"
+			dependencies: [
+				"1FED40C0BDD7E015"
+				"2EB2C0CB138E095B"
+			]
+			id: "5FDD4630F9C8F30B"
+			tasks: [
+				{
+					id: "1BDC501FF310CC61"
+					type: "item"
+					item: {
+						id: "redstone_arsenal:flux_hammer"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "7BF506992C926012"
+					type: "item"
+					item: {
+						id: "redstone_arsenal:flux_excavator"
+						Count: 1b
+						tag: { }
+					}
+				}
+			]
+		}
+		{
+			x: 6.5d
+			y: 2.0d
+			shape: "gear"
+			subtitle: "The Terra Bow is an upgraded version of the Crystal Bow. It will consume mana to shoot arrows. It has an increased drawing speed. Finally, it will shoot 9 arrows at a time"
+			dependencies: [
+				"03870D07204DCFC6"
+				"398B882BA973C054"
+				"47C92313B4A81B87"
+			]
+			id: "6B1B28DD5A248A08"
+			tasks: [{
+				id: "2B4E8E9B086FA6CD"
+				type: "item"
+				item: {
+					id: "botaniaadditions:terra_bow"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+	]
+}

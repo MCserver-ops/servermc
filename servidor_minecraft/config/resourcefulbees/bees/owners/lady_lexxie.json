@@ -1,0 +1,72 @@
+{
+  "flower": "botania:elementium_block",
+  "creator": "Lady Lexxie & Me_Ryan",
+  "lore": "§fLonely Bee\nFifty shades of purple §5<3 - Only spawns in The End",
+  "loreColor": "#F477FE",
+  "sizeModifier": 0.7,
+  "hasHoneycomb": true,
+  "baseLayerTexture": "azure/azure",
+  "traits": ["lightning"],
+  "maxTimeInHive": 1800,
+  "ColorData": {
+    "modelLocation": "resourcefulbees:geo/azure.geo.json",
+    "honeycombColor": "#6a0d96",
+    "primaryColor": "#6a0d96",
+    "secondaryColor": "#de5dfc"
+  },
+  "CentrifugeData": {
+    "hasCentrifugeOutput": true,
+    "mainOutput": "botania:black_lotus",
+    "secondaryOutput": "botania:blacker_lotus",
+    "bottleOutput": "minecraft:honey_bottle",
+    "mainOutputCount": 32,
+    "secondaryOutputCount": 16,
+    "bottleOutputWeight": 0.95,
+    "mainOutputWeight": 0.30,
+    "secondaryOutputWeight": 0.10
+  },
+  "MutationData": {
+    "hasMutation": true,
+    "mutationCount": 10,
+    "mutations": [{
+        "type": "BLOCK",
+        "inputID": "tag:minecraft:logs",
+        "chance": 1,
+        "outputs": [{
+          "outputID": "botania:livingwood",
+          "weight": 30
+        }]
+      },
+      {
+        "type": "BLOCK",
+        "inputID": "tag:forge:stone",
+        "chance": 1,
+        "outputs": [{
+          "outputID": "botania:livingrock",
+          "weight": 30
+        }]
+      }
+    ]
+  },
+  "SpawnData": {
+    "canSpawnInWorld": true,
+    "biomeWhitelist": "tag:END",
+    "lightLevel": "ANY",
+    "spawnWeight": 2,
+    "maxGroupSize": 1
+  },
+  "BreedData": {
+    "isBreedable": true,
+    "feedItem": "botania:life_essence",
+    "feedAmount": 1
+  },
+  "CombatData": {
+    "isPassive": false,
+    "removeStingerOnAttack": false,
+    "inflictsPoison": false,
+    "attackDamage": 10
+  },
+  "TraitData": {
+    "hasTraits": true
+  }
+}

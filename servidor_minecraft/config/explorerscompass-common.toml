@@ -1,0 +1,15 @@
+
+[General]
+	#Allows a player to teleport to a located structure when in creative mode, opped, or in cheat mode.
+	allowTeleport = true
+	#Allows players to view the precise coordinates and distance of a located structure on the HUD, rather than relying on the direction the compass is pointing.
+	displayCoordinates = true
+	#The maximum radius that will be searched for a structure. Raising this value will increase search accuracy but will potentially make the process more resource intensive.
+	#Range: 0 ~ 1000000
+	maxRadius = 5000
+	#A list of structures that the compass will not be able to search for, specified by resource location. The wildcard character * can be used to match any number of characters, and ? can be used to match one character. Ex: ["minecraft:stronghold", "minecraft:endcity", "minecraft:*village*"]
+	structureBlacklist = ["appliedenergistics2:meteorite", "minecraft:desert_pyramid", "minecraft:jungle_pyramid", "minecraft:buried_treasure", "minecraft:endcity", "minecraft:ruined_portal", "minecraft:stronghold", "minecraft:shipwreck", "minecraft:igloo", "minecraft:mansion", "endrem:ancient_witch_hut", "endrem:end_castle", "endrem:end_gate", "twilightforest:aurorapalace", "twilightforest:courtyard", "twilightforest:darktower", "twilightforest:finalcastle", "twilightforest:hedgemaze", "twilightforest:hollowhilllarge", "twilightforest:hollowhillmedium", "twilightforest:hollowhillsmall", "twilightforest:hydralair", "twilightforest:knightstronghold", "twilightforest:labyrinth", "twilightforest:lichtower", "twilightforest:mushroomtower", "twilightforest:questgrove", "twilightforest:trollcave", "twilightforest:yeticave", "boss_tools:alien_village", "boss_tools:crimson_village", "boss_tools:meteor", "boss_tools:oil_well", "boss_tools:venus_bullet", "boss_tools:venus_tower", "atum:gatehouse", "atum:girafi_tomb", "atum:mineshaft", "atum:ruin", "atum:tomb"]
+	#The maximum number of samples to be taken when searching for a structure.
+	#Range: 0 ~ 1000000
+	maxSamples = 50000
+

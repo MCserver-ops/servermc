@@ -1,0 +1,29 @@
+{
+    "flower": "all",
+    "creator": "Me_Ryan",
+    "lore": "Hive Bee",
+    "maxTimeInHive": 600,
+    "hasHoneycomb": false,
+    "ColorData": {
+      "isBeeColored": true,
+      "isRainbowBee": true,
+      "isGlowing": true
+    },
+    "SpawnData": {
+      "canSpawnInWorld": false
+    },
+    "BreedData": {
+      "isBreedable": true,
+      "parent1": "Dye",
+      "parent2": "Wither",
+      "feedItem": "sanguinearsenal:sanguine_crystal",
+      "feedAmount": 4
+    },
+    "CombatData": {  
+        "isPassive": false,  
+        "removeStingerOnAttack": false,
+        "inflictsPoison": false,
+        "attackDamage": 20
+        },
+    "TraitData": {}
+  }

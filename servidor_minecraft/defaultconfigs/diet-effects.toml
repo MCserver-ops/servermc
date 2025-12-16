@@ -1,0 +1,111 @@
+
+#List of diet effects
+[[effects]]
+
+	[[effects.attributes]]
+		amount = 2.0
+		name = "minecraft:generic.max_health"
+		operation = "add"
+
+	[[effects.conditions]]
+		below = 1.0
+		match = "every"
+		above = 0.9
+		groups = ["proteins", "fruits", "vegetables", "grains"]
+
+[[effects]]
+
+	[[effects.attributes]]
+		amount = 2.0
+		name = "minecraft:generic.max_health"
+		operation = "add"
+
+	[[effects.conditions]]
+		below = 0.9
+		match = "all"
+		above = 0.1
+		groups = ["dairy"]
+
+[[effects]]
+
+	[[effects.status_effects]]
+		name = "minecraft:strength"
+		power = 3
+
+	[[effects.conditions]]
+		below = 0.9
+		match = "all"
+		above = 0.5
+		groups = ["proteins", "dairy"]
+
+[[effects]]
+
+	[[effects.status_effects]]
+		name = "minecraft:haste"
+		power = 0
+
+	[[effects.conditions]]
+		below = 1.0
+		match = "all"
+		above = 0.8
+		groups = ["vegetables", "fruits"]
+
+[[effects]]
+
+	[[effects.attributes]]
+		amount = 0.2
+		name = "minecraft:generic.knockback_resistance"
+		operation = "add"
+
+	[[effects.attributes]]
+		amount = 6.0
+		name = "minecraft:generic.armor_toughness"
+		operation = "add"
+
+	[[effects.conditions]]
+		below = 1.0
+		match = "all"
+		above = 0.8
+		groups = ["grains", "proteins"]
+
+[[effects]]
+
+	[[effects.attributes]]
+		amount = 0.10
+		name = "minecraft:generic.movement_speed"
+		operation = "multiply_base"
+
+	[[effects.conditions]]
+		below = 0.8
+		match = "every"
+		above = 0.4
+		groups = ["sugars", "fruits"]
+
+[[effects]]
+
+	[[effects.status_effects]]
+		name = "minecraft:weakness"
+		power = 3
+
+	[[effects.status_effects]]
+		name = "minecraft:mining_fatigue"
+		power = 0
+
+	[[effects.conditions]]
+		below = 1.0
+		match = "all"
+		above = 0.9
+		groups = ["dairy"]
+
+[[effects]]
+
+	[[effects.status_effects]]
+		name = "minecraft:hunger"
+		power = 4
+
+	[[effects.conditions]]
+		below = 1.0
+		match = "all"
+		above = 0.8
+		groups = ["sugars"]
+

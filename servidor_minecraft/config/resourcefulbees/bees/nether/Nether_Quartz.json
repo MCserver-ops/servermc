@@ -1,0 +1,57 @@
+{
+  "flower": "minecraft:quartz_block",
+  "creator": "Me_Ryan",
+  "lore": "Hive Bee",
+  "maxTimeInHive": 1000,
+  "hasHoneycomb": true,
+  "baseLayerTexture": "netherquartz/netherquartz",
+  "traits": ["nether"],
+  "ColorData": {
+    "modelType": "ORE",
+    "isBeeColored": false,
+    "honeycombColor": "#D4CABA",
+    "primaryColor": "#7c1c00",
+    "secondaryColor": "#D4CABA"
+  },
+  "MutationData": {
+    "hasMutation": true,
+    "mutations" : [
+      {
+        "type": "BLOCK",
+        "inputID": "minecraft:netherrack",
+        "outputs": [
+          {"outputID": "minecraft:nether_quartz_ore", "weight": 10},
+          {"outputID": "minecraft:cobblestone", "weight": 10}
+        ]
+      }
+    ]
+  },
+  "CentrifugeData": {
+    "hasCentrifugeOutput": true,
+    "mainOutput": "minecraft:quartz",
+    "secondaryOutput": "minecraft:quartz_block",
+    "mainOutputCount": 8,
+    "secondaryOutputCount": 4,
+    "mainOutputWeight": 0.60,
+    "secondaryOutputWeight": 0.40
+  },
+  "SpawnData": {
+    "canSpawnInWorld": false
+  },
+  "BreedData": {
+    "isBreedable": true,
+    "parent1": "Nether",
+    "parent2": "Aquamarine",
+    "feedItem": "minecraft:quartz_block",
+    "feedAmount": 32
+  },
+    "CombatData": {  
+      "isPassive": false,  
+      "removeStingerOnAttack": false,
+      "inflictsPoison": false,
+      "attackDamage": 4
+  },
+  "TraitData": {
+    "hasTraits": true
+  }
+}

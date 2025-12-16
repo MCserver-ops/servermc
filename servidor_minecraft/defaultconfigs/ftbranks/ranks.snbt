@@ -1,0 +1,38 @@
+{
+    member: {
+        name: "Member"
+        power: 1
+        condition: "always_active"
+        ftbranks.name_format: "&f<&cCaveBrain {name}&f>&r"
+        ftbchunks.max_claimed: 300
+        ftbchunks.max_force_loaded: 0
+    }
+	age_1: {
+        name: "Age1"
+        power: 2
+        ftbranks.name_format: "&f<&2Age1 {name}&f>&r"
+        ftbchunks.max_claimed: 300
+        ftbchunks.max_force_loaded: 1
+    }
+	age_2: {
+        name: "Age2"
+        power: 3
+        ftbranks.name_format: "&f<&2Age2 {name}&f>&r"
+        ftbchunks.max_claimed: 300
+        ftbchunks.max_force_loaded: 5
+    }
+	age_3: {
+        name: "Age3"
+        power: 4
+        ftbranks.name_format: "&f<&2Age3 {name}&f>&r"
+        ftbchunks.max_claimed: 300
+        ftbchunks.max_force_loaded: 16
+    }
+    age_4: {
+        name: "Age4"
+        power: 5
+        ftbranks.name_format: "&f<&2Age4 {name}&f>&r"
+        ftbchunks.max_claimed: 300
+        ftbchunks.max_force_loaded: 100
+    }
+}

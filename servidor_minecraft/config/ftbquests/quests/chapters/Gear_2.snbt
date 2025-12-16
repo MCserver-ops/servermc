@@ -1,0 +1,2383 @@
+{
+	id: "421163DA91971115"
+	group: "532DAB84AB301350"
+	order_index: 0
+	filename: "Gear_2"
+	title: "Gear - 2"
+	icon: "create:mechanical_crafter"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -5.5d
+			y: 0.5d
+			shape: "square"
+			subtitle: "Great, you're still with us. Congrats for reaching the 2nd Age. Just four more to go. This Age's tech phase will start with the Andeside Alloy, which will be used throughout the Create mod to make amazing contraptions"
+			dependencies: ["40205D351BE13B77"]
+			size: 2.0d
+			id: "4B00B60DE355C08C"
+			tasks: [{
+				id: "6F3C9BABD832940C"
+				type: "item"
+				item: "create:andesite_alloy"
+			}]
+		}
+		{
+			title: "WaterPower"
+			x: -2.5d
+			y: 0.0d
+			shape: "square"
+			subtitle: "A Water Wheel can provide a maximum amount of 144 SU. That amount can be used when SoulSand is used to make the Water flow faster on the Wheel"
+			dependencies: ["2945E1C3ECC37B04"]
+			id: "29AEE691E6EC0A34"
+			tasks: [{
+				id: "287FA798C4EE326F"
+				type: "item"
+				item: "create:water_wheel"
+			}]
+		}
+		{
+			title: "Fire-Power..?"
+			x: -2.5d
+			y: 1.0d
+			shape: "square"
+			subtitle: "An Encased Fan placed above a heat source such as a camp fire, can provide 64 SU. Use that wisely"
+			dependencies: ["2945E1C3ECC37B04"]
+			id: "4BAB2F240B771EDB"
+			tasks: [{
+				id: "517602DDCE55A10D"
+				type: "item"
+				item: "create:encased_fan"
+			}]
+		}
+		{
+			title: "Working with Rotational Force"
+			x: -1.0d
+			y: 0.5d
+			shape: "square"
+			subtitle: "These items are used to transfer and manipulate Rotational Force for powering contraptions. Ps: You'll need lots of gearboxes"
+			dependencies: [
+				"4BAB2F240B771EDB"
+				"29AEE691E6EC0A34"
+			]
+			dependency_requirement: "one_completed"
+			id: "696CC33BB96232F5"
+			tasks: [
+				{
+					id: "50B19B0BA2DB1297"
+					type: "item"
+					item: "create:cogwheel"
+				}
+				{
+					id: "6C43E007F5EA5B5E"
+					type: "item"
+					item: "create:large_cogwheel"
+				}
+				{
+					id: "13A4548E22533CF2"
+					type: "item"
+					item: "create:shaft"
+				}
+				{
+					id: "478305DDBFC0DE71"
+					type: "item"
+					item: "create:gearbox"
+				}
+			]
+			rewards: [{
+				id: "50D73E2093DD4946"
+				type: "item"
+				item: "create:gearbox"
+				count: 8
+			}]
+		}
+		{
+			icon: "create:mechanical_mixer"
+			x: 1.5d
+			y: 0.5d
+			shape: "square"
+			subtitle: "A Mechanical Mixer placed 2 blocks above a Basin allows for blending a variety of items together. Some recipes may require heat"
+			dependencies: ["59DF5370DD2EAE51"]
+			id: "4D36622ECF38295D"
+			tasks: [{
+				id: "6810C65EA6D8517D"
+				type: "item"
+				item: "create:mechanical_mixer"
+			}]
+		}
+		{
+			title: "Depots are useful too!"
+			x: 0.0d
+			y: -4.0d
+			shape: "gear"
+			subtitle: "Depots can be used for general automation. For example, it can be used for automating processes like crafting Polished Rose Quartz"
+			dependencies: ["59DF5370DD2EAE51"]
+			id: "338596C4B0C1A8E5"
+			tasks: [{
+				id: "71D680B583570783"
+				type: "item"
+				item: "create:depot"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 1.5d
+			shape: "square"
+			subtitle: "A Blaze Burner can act as a perfect heat source for a Basin. It has 2 modes: Heated and Super-Heated. When it is fed with Coal or any other regular fuel, it will become Heated and will allow a Basin to smelt Ores and perform other processes. In the Super-Heated state, which can be achieved by feeding the Blaze Burner with a Blaze Cake, you'll be able to make more advanced recipes, such as the one for the Chromatic Compound"
+			hide_dependency_lines: true
+			dependencies: [
+				"6AA23A5FB3C37C90"
+				"40205D351BE13B77"
+				"59DF5370DD2EAE51"
+			]
+			id: "1D2EB9C9A8910914"
+			tasks: [{
+				id: "6809C94A13E1370C"
+				type: "item"
+				item: "create:blaze_burner"
+			}]
+			rewards: [{
+				id: "197778CA6EE345A8"
+				type: "loot"
+				table_id: 5206766833681472091L
+			}]
+		}
+		{
+			title: "The Golden Alloy"
+			x: 5.0d
+			y: 0.5d
+			shape: "square"
+			subtitle: "Brass is an essential alloy in any adventurer's journey. Initially, you'll have to make it in a basin using copper, zinc and the heat of a Blaze Burner, but you'll have faster ways of obtaining it later down the road"
+			dependencies: ["46E3C1F4DB3AA8ED"]
+			id: "5F68C4D92EF20E09"
+			tasks: [{
+				id: "4EDBEE150B45885C"
+				type: "item"
+				item: "emendatusenigmatica:brass_ingot"
+			}]
+		}
+		{
+			x: 6.5d
+			y: -6.5d
+			shape: "square"
+			subtitle: "A Rolling Mill can be used to create metal rods and wires using Rotational Force"
+			dependencies: ["59DF5370DD2EAE51"]
+			size: 1.5d
+			id: "69DA94D714E296AC"
+			tasks: [{
+				id: "573C71B5414898AB"
+				type: "item"
+				item: "createaddition:rolling_mill"
+			}]
+			rewards: [{
+				id: "189B41F9B2553CC7"
+				type: "item"
+				item: "emendatusenigmatica:coke_gem"
+				count: 8
+			}]
+		}
+		{
+			x: 8.5d
+			y: -2.0d
+			shape: "square"
+			subtitle: "The fun begins here. Left Click for more info"
+			description: [
+				"Besides their usege for autocrafting, an array of Mechanical Crafters will allow for crafting recipes that are not available in a standard 3x3 grid."
+				""
+				"Until starting to use Mechanical Crafters, you should know two things:"
+				""
+				"First: If there are empty Crafters in your Array, the recipe won't be created. You'll have to provide a redstone pulse to the array. If providing a pulse is impossible, you can use Crafter Slot Covers for the empty slots, instead."
+				""
+				"Second: For the array to operate, the crafter's paths will have to meet in one point. You can change the orentation of your crafters, using a wrench from Create. You can see an example of this below. The cyan square represents the crafter which will output the recipe's result:"
+				""
+				"{image:kubejs:textures/create/mechanical_crafter_example.png width:100 height:100 align:1}"
+				""
+				"If the information provided here is not clear, you can always hold \"W\" on a Mechanical Crafter in JEI to learn more."
+			]
+			dependencies: ["275FE11C673E522D"]
+			id: "2BA7183800B331E0"
+			tasks: [{
+				id: "7AFC5E7A39F1EEF2"
+				type: "item"
+				item: "create:mechanical_crafter"
+			}]
+		}
+		{
+			title: "The Alternating Dynamo"
+			x: 8.5d
+			y: -3.5d
+			shape: "diamond"
+			subtitle: "This is a major milestone! You've discovered a way to convert Rotational Energy into electricity! However, the Alternating Dynamo is a pretty primitive way of obtaining electricity, so it might be necessary to make more then one of these to power your machines, as it has a maximum output of 128 RF/tick and that will be achieved by constantly consuming 4,096 SU"
+			dependencies: [
+				"1F1994D8C11FAB3D"
+				"2BA7183800B331E0"
+				"11E05934BA64A768"
+			]
+			dependency_requirement: "one_completed"
+			size: 1.5d
+			id: "0EF94371D99AC9BA"
+			tasks: [{
+				id: "78D850DF5C183263"
+				type: "item"
+				item: "steampowered:alternator"
+			}]
+			rewards: [{
+				id: "182EB87836AF8A10"
+				type: "loot"
+				table_id: 8587500481418189075L
+			}]
+		}
+		{
+			title: "Multiplying Ores - Part 2"
+			x: 7.5d
+			y: -2.0d
+			shape: "gear"
+			subtitle: "Crushing Wheels can be used to crush ores, allowing for a even larger output"
+			dependencies: ["2BA7183800B331E0"]
+			id: "4F4EA5E52336BC7B"
+			tasks: [{
+				id: "0471E3B0C7E4FA4E"
+				type: "item"
+				item: "create:crushing_wheel"
+			}]
+			rewards: [{
+				id: "4BC3A3EB3D0E3646"
+				type: "loot"
+				table_id: 5206766833681472091L
+			}]
+		}
+		{
+			title: "Alloying!"
+			x: 3.5d
+			y: -2.0d
+			shape: "square"
+			subtitle: "Mechanical Alloys. Left Click for more Info"
+			description: [
+				"While the Smeltery, the Alloyer and a Heated Basin are not capable of producing alloys such as Invar or Electrum, the Kiln is."
+				""
+				"Create it by right clicking a 2x2x2 cube of Kiln Bricks with an Engineer's Hammer."
+			]
+			dependencies: [
+				"5F68C4D92EF20E09"
+				"59DF5370DD2EAE51"
+			]
+			dependency_requirement: "one_completed"
+			id: "2E3880C1F6D082FA"
+			tasks: [{
+				id: "3836154FED8CB897"
+				type: "item"
+				item: "immersiveengineering:alloybrick"
+				count: 8L
+			}]
+			rewards: [
+				{
+					id: "63393D0E191A88BC"
+					type: "item"
+					item: "emendatusenigmatica:brass_ingot"
+					count: 16
+				}
+				{
+					id: "536341C4CF63F364"
+					type: "item"
+					item: "emendatusenigmatica:bronze_ingot"
+					count: 16
+				}
+				{
+					id: "1E7884E00DC204DC"
+					type: "item"
+					item: "emendatusenigmatica:coke_gem"
+					count: 16
+				}
+			]
+		}
+		{
+			title: "Capacitors"
+			x: 9.5d
+			y: -8.5d
+			shape: "gear"
+			subtitle: "Energy currently generates far too slowly to just be wasted. A Capacitor will allow you to store excess energy. These capacitors can hold 100k, 1M and 4M RF and are entirely made in a Crafting Table. Additionally, they're kinda cheaper"
+			dependencies: ["1F1994D8C11FAB3D"]
+			id: "10CAC510498E8582"
+			tasks: [
+				{
+					id: "3F2B399F6E3190E4"
+					type: "item"
+					item: "immersiveengineering:capacitor_lv"
+				}
+				{
+					id: "4778F16D138F82C9"
+					type: "item"
+					item: "immersiveengineering:capacitor_mv"
+				}
+				{
+					id: "79CD250CE08D8C5A"
+					type: "item"
+					item: "immersiveengineering:capacitor_hv"
+				}
+			]
+			rewards: [{
+				id: "7A77234EE35AE499"
+				type: "loot"
+				table_id: 5206766833681472091L
+			}]
+		}
+		{
+			title: "Manipulating Electricity"
+			x: 8.5d
+			y: -6.5d
+			shape: "diamond"
+			subtitle: "Electricity needs a way to be transferred. These should get the job done. Left Click for more info"
+			description: [
+				"If you're reading this, then, CONGRATS! You're about to start working with electricity."
+				""
+				"In the future, there will be more ways to transfer power between your machines, but for now, you'll be using Immersive's power transfer system."
+				""
+				"This system has, mainly, three items:"
+				""
+				"- The Connector"
+				"- The Relay"
+				"- The Wire"
+				""
+				"Connectors are placed either on a machine's imput/output and they're used to insert/extract power. Connectors CANNOT be used to connect multiple cables."
+				""
+				"Relays are used to connect multiple wires. Let's say you want to connect multiple power sources to one concentrated point. You'll have to use Connectors to extract your power, connect them to a relay and only after that, use another Connector to power a machine. Relays are useful for concentrating power into some form of storage, such as a Capacitor. Keep in mind that a Relay CANNOT insert/extract power, tho."
+				""
+				"Wires are used to connect relays and connectors. They'll basically transfer your power."
+				""
+				"Now, that we've talked about Immersive power systems basics, let's talk about some advanced mechanics. This power system has three power tiers:"
+				""
+				"- LV: Low Voltage"
+				"- MV: Medium Voltage"
+				"- HV: High Voltage"
+				""
+				"This quest requires the elements for the LV tier. This tier's Connectors can input only 256 RF/tick and its wires can transfter only 512 RF/tick. Higher tiers will output more power."
+				""
+				"However, making more power will come at a cost, tho. You'll have to convert your power, so that you don't burn your wires. A HV Transformer will be required to convert the HV tier into a MV tier. Further, you can use a regular Transformer to convert the MV tier into an LV one."
+				""
+				"Lastly, note that wires can be isolated. A wire without isolation, will give you damage based on its tier, so be careful."
+			]
+			dependencies: [
+				"518464A2828AA8AE"
+				"69DA94D714E296AC"
+				"3B76411C75920227"
+			]
+			dependency_requirement: "one_completed"
+			size: 1.5d
+			id: "1F1994D8C11FAB3D"
+			tasks: [
+				{
+					id: "662E2DF8D92B8F19"
+					type: "item"
+					item: "immersiveengineering:connector_lv"
+				}
+				{
+					id: "4C581A3A2238264C"
+					type: "item"
+					item: "immersiveengineering:connector_lv_relay"
+				}
+				{
+					id: "4FC51C4F31DE02F7"
+					type: "item"
+					item: "immersiveengineering:wirecoil_copper"
+				}
+			]
+		}
+		{
+			x: 7.5d
+			y: -8.5d
+			shape: "gear"
+			subtitle: "While electricity is good and all, sometimes you need Rotational Force. This Electric Motor acts as a way to convery FE to Rotational Force"
+			dependencies: ["1F1994D8C11FAB3D"]
+			id: "263BA2874CB8F6DC"
+			tasks: [{
+				id: "50ACD8F7779DD7FD"
+				type: "item"
+				item: "createaddition:electric_motor"
+			}]
+			rewards: [{
+				id: "7DF29B2C580AF8B1"
+				type: "loot"
+				table_id: 5206766833681472091L
+			}]
+		}
+		{
+			x: 8.5d
+			y: 0.5d
+			shape: "diamond"
+			subtitle: "Precision Mechanisms are a common ingredient in the creation of more powerful electronics and computing devices. Left Click for more info"
+			description: [
+				"The Precision Mechanism is a component added by Create. It is used in lots of recipes and it is important to obtain a fair number of them, so let's see how you can get it."
+				""
+				"This thing is made through Create's Sequenced Assembly which is a very complex, interesting and fun crafting process."
+				""
+				"You'll basically have to build a production line with Mechanical Belts and the machines requested by JEI. In the case of the Precision Mecanism, you'll need 3 Deployers."
+				""
+				"To start the Sequenced Assembly, you'll have to place the Deployers along side the Mechanical Belt, they can be placed pretty much anywhere as long as they can interract with the Mechanical Belt. Drop a Gold Plate on the Belt and make sure that the Deployers have the requested items ready. After the plate passes through all the Deployers, you can pick it up and place it back to the start of the line, for 5 times, until you get the Precision Mechanism. You can also build your system in a way which would allow for total automation."
+				""
+				"Here's a lame example of a Sequenced Assembly Line:"
+				""
+				"{image:kubejs:textures/create/sequenced_assembly_line_example.png width:210 height:100 align:1 fit:true}"
+				""
+				"Notice that the example shown above is soo lame that it is not capable of producing Precision Mechanisms fully automatically."
+			]
+			dependencies: ["10D3BBDC4C911B81"]
+			size: 1.5d
+			id: "275FE11C673E522D"
+			tasks: [{
+				id: "1BE5020FC0466674"
+				type: "item"
+				item: "create:precision_mechanism"
+			}]
+			rewards: [{
+				id: "1A40084040882A8B"
+				type: "loot"
+				table_id: 8587500481418189075L
+			}]
+		}
+		{
+			x: 1.5d
+			y: -8.0d
+			shape: "gear"
+			subtitle: "Computers can be programmed to suit your needs. While an explanation is outside the scope of this book, try doing some research on \"ComputerCraft\""
+			dependencies: ["15CD1782F17EF2BC"]
+			id: "2CBD58CB08491491"
+			tasks: [{
+				id: "08775984F02ABF38"
+				type: "item"
+				item: "computercraft:computer_normal"
+			}]
+		}
+		{
+			title: "Becoming a Basic Engineer"
+			icon: {
+				id: "supplementaries:wrench"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 14.0d
+			y: 0.5d
+			shape: "square"
+			subtitle: "The Engineering Blocks you've just obtained, will allow you to build massive multiblock machines which are capable of executing complex tasks at the cost of some RF"
+			dependencies: [
+				"6B4D6FD11DFC8011"
+				"2E420B464AC031B6"
+			]
+			id: "4AADFD307A5BCF37"
+			tasks: [{
+				id: "27E77B91AC2340EC"
+				type: "checkmark"
+				title: "I'm Ready!"
+			}]
+			rewards: [
+				{
+					id: "6173E2E9079014EA"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 2
+				}
+				{
+					id: "7ABD266CF61D118A"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 10
+				}
+				{
+					id: "6631A9059F881D14"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+			]
+		}
+		{
+			title: "When tech meets magic!"
+			x: 9.5d
+			y: 4.5d
+			shape: "gear"
+			subtitle: "Unlocking PSI. Left Click for more info"
+			description: [
+				"Psi is a mod focused on spells and how you're gonna cast them."
+				""
+				"Psi allows you to make your own spells and the limits are represented only by your imagination and, of course, ingenuity."
+				""
+				"Firstly, keep in mind that this pack uses Magical Psi to make this mod look and feel a little more mystically, rather then technically."
+				""
+				"The Rod Constructor will be the place where you can assemble your wands. Wands are able to cast spells based on their components. A wand with powerful parts will be able to cast, pretty much, any spell, but a wand with weak parts, will be limited in terms of what spells it can cast."
+				""
+				"To start making spells, check the \"Spell Casting: Part 1\" quest in the \"Arcane - 2\" tab."
+			]
+			dependencies: [
+				"275FE11C673E522D"
+				"48148EE28276AB64"
+				"1744D1F736052F09"
+			]
+			size: 1.5d
+			id: "70E368152DD258AA"
+			tasks: [{
+				id: "7C488F4AFC386402"
+				type: "item"
+				item: "psi:cad_assembler"
+			}]
+			rewards: [{
+				id: "0F3320B7E14E03DE"
+				type: "loot"
+				table_id: 8587500481418189075L
+			}]
+		}
+		{
+			title: "Hello, Bitumen!"
+			icon: "emendatusenigmatica:bitumen_gem"
+			x: 18.5d
+			y: 3.5d
+			shape: "square"
+			subtitle: "Bitumen can be obtained by feeding Crude Oil (obtainted from a Pumpjack) into a Distillation Tower"
+			dependencies: ["4261B19707343F3D"]
+			id: "2F64EED1F5172A81"
+			tasks: [{
+				id: "7F394AE7460992AA"
+				type: "item"
+				item: "emendatusenigmatica:bitumen_gem"
+			}]
+		}
+		{
+			title: "The Lightning Rod"
+			icon: "immersiveengineering:lightning_rod"
+			x: 8.5d
+			y: -9.0d
+			shape: "heart"
+			subtitle: "A Lightning Rod will, during a thunderstorm, produce large amounts of FE. However, it is inconsistent, so make sure you have a large array of Capacitors for it to feed into"
+			hide_dependency_lines: true
+			dependencies: [
+				"4AADFD307A5BCF37"
+				"10CAC510498E8582"
+			]
+			id: "518464A2828AA8AE"
+			tasks: [
+				{
+					id: "2F7DF3D29383519D"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 4L
+				}
+				{
+					id: "49153D12C34BBB02"
+					type: "item"
+					item: "immersiveengineering:coil_hv"
+					count: 3L
+				}
+				{
+					id: "013F175186351824"
+					type: "item"
+					item: "immersiveengineering:treated_fence"
+					count: 4L
+				}
+				{
+					id: "67451E501C3BBF17"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 4L
+				}
+				{
+					id: "6CA871731955DA8D"
+					type: "item"
+					item: "immersiveengineering:coil_lv"
+					count: 8L
+				}
+				{
+					id: "32FD29CA8FAA27DE"
+					type: "item"
+					item: "immersiveengineering:capacitor_hv"
+					count: 4L
+				}
+				{
+					id: "496E85EA56E4E3DC"
+					type: "item"
+					item: "immersiveengineering:steel_fence"
+					count: 12L
+				}
+			]
+			rewards: [{
+				id: "36F8C2EA93023893"
+				type: "loot"
+				table_id: 8587500481418189075L
+			}]
+		}
+		{
+			title: "Multiplying Ores - Part 3"
+			icon: "immersiveengineering:crusher"
+			x: 15.0d
+			y: 1.0d
+			shape: "square"
+			subtitle: "Crushing, now with RF. Left Click for more info"
+			description: [
+				"The Crusher can turn ores into a fine powder, better than a pair of Crushing Wheels can, of course, at the cost of some RF. This can be a valuable ingredient in later recipes."
+				""
+				"To build this structure, use the guide provided in the Engineer's Manual. You can also use a projector to see the structure in the world."
+			]
+			dependencies: ["4AADFD307A5BCF37"]
+			dependency_requirement: "one_completed"
+			id: "48BBC2E819A1B6A5"
+			tasks: [
+				{
+					id: "3F9A9E897D243B56"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 10L
+				}
+				{
+					id: "662D6519941737C8"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 10L
+				}
+				{
+					id: "7279BF9C4A8BB904"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "68FFD28DDBDA910B"
+					type: "item"
+					item: "immersiveengineering:steel_fence"
+					count: 8L
+				}
+				{
+					id: "7F269C25487E85B3"
+					type: "item"
+					item: "minecraft:hopper"
+					count: 9L
+				}
+			]
+			rewards: [{
+				id: "57A7792078004412"
+				type: "item"
+				item: "emendatusenigmatica:iron_dust"
+				count: 64
+			}]
+		}
+		{
+			title: "Heavy Engineering Block"
+			x: 16.0d
+			y: 1.0d
+			shape: "square"
+			subtitle: "Heavy Engineering Blocks are used to construct even larger machines"
+			dependencies: [
+				"48BBC2E819A1B6A5"
+				"79BB64427280F8AE"
+			]
+			id: "31A4F73AF44D70B1"
+			tasks: [{
+				id: "60C7C16A05223C9A"
+				type: "item"
+				item: "immersiveengineering:heavy_engineering"
+			}]
+		}
+		{
+			x: -0.5d
+			y: -3.0d
+			shape: "gear"
+			subtitle: "A Harvester can be attached to a contraption to automatically harvest crops as it runs over them. A good start would be attaching these to blocks rotated around a Radial Chassis"
+			dependencies: ["59DF5370DD2EAE51"]
+			id: "2AE34BAFE2B23647"
+			tasks: [{
+				id: "2512EB2FE81C4798"
+				type: "item"
+				item: "create:mechanical_harvester"
+			}]
+		}
+		{
+			title: "Understanding Create a bit"
+			icon: "create:wrench"
+			x: -4.0d
+			y: 0.5d
+			shape: "square"
+			subtitle: "Create is, truly, an amazing mod. Let's tell you a thing, or two about it. Left Click for more info"
+			description: [
+				"Create can be praised for a lot of reasons, starting from its beautiful animations and  its overall unique vibe and premise, but one of the best features it has it's the way it teaches you how to use it."
+				""
+				"Unlike other mods which are trying to give you an explanation of how to use them through a book (there's nothing wrong with this, of course), Create tries to make things more simpler, fun and easier to understand through an animated in-game guide."
+				""
+				"Almost every element/machine added by the Create mod has an animated guide which can be accessed by hovering over an item with your cursor and holding the \"w\" key."
+				""
+				"Given the fact that this feature is present here, we'll try to spend less time explaining what the mod can do. So yeah, have fun playing with, and discovering, Create."
+			]
+			dependencies: ["4B00B60DE355C08C"]
+			id: "2945E1C3ECC37B04"
+			tasks: [{
+				id: "3028DFC108C81EDF"
+				type: "checkmark"
+				title: "Understood!"
+			}]
+			rewards: [{
+				id: "604ED568492B9003"
+				type: "item"
+				item: "create:wrench"
+			}]
+		}
+		{
+			x: -0.5d
+			y: -2.0d
+			shape: "gear"
+			subtitle: "The Machanical Saw can be used for automatization in wood farms, processing factories and mob farms (for items)"
+			dependencies: ["59DF5370DD2EAE51"]
+			id: "563A75C4E098C626"
+			tasks: [{
+				id: "6CDCF9F7341999DB"
+				type: "item"
+				item: "create:mechanical_saw"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -4.5d
+			shape: "gear"
+			subtitle: "The Plough can be used to harvest blocks which don't have a solid collision hitbox (block which you can go through, such as the torch). It will create farmland. It is also great for launching entities without damaging them!"
+			dependencies: ["59DF5370DD2EAE51"]
+			id: "7A8A0F0639A0AEF6"
+			tasks: [{
+				id: "74CF2D22926FCA02"
+				type: "item"
+				item: "create:mechanical_plough"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -4.5d
+			shape: "gear"
+			subtitle: "The Mechanical Drill will break blocks placed infront of them. Maybe combining them with some deployers and a minecart might serve as a great mining rig"
+			dependencies: ["59DF5370DD2EAE51"]
+			id: "5DC733E060CE22F4"
+			tasks: [{
+				id: "57E739E3455A4387"
+				type: "item"
+				item: "create:mechanical_drill"
+			}]
+		}
+		{
+			x: 6.5d
+			y: 0.5d
+			shape: "square"
+			subtitle: "The Deployer will be required in the process of Sequenced Assembly, which will give you the precision mechanism"
+			dependencies: [
+				"5F68C4D92EF20E09"
+				"69DA94D714E296AC"
+			]
+			id: "10D3BBDC4C911B81"
+			tasks: [{
+				id: "3B76411C75920227"
+				type: "item"
+				item: "create:deployer"
+			}]
+		}
+		{
+			title: "Multiplying Ores - Part 1"
+			x: -1.0d
+			y: -0.5d
+			shape: "square"
+			subtitle: "The millstone can be used to crush ores in order to increase their output"
+			dependencies: ["696CC33BB96232F5"]
+			id: "21DEF23BCFEC771E"
+			tasks: [{
+				id: "258FAA8EF0BEFD1D"
+				type: "item"
+				item: "create:millstone"
+			}]
+			rewards: [{
+				id: "442D1F22A1039E69"
+				type: "loot"
+				table_id: 5206766833681472091L
+			}]
+		}
+		{
+			x: 6.5d
+			y: -8.0d
+			shape: "square"
+			subtitle: "The Charging Station can be used to transfer power to your precious items. You may use it to power the Railgun"
+			dependencies: ["1F1994D8C11FAB3D"]
+			id: "001EA2F1F0A28848"
+			tasks: [{
+				id: "004EC4D684B95AB8"
+				type: "item"
+				item: "immersiveengineering:charging_station"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 4.5d
+			shape: "gear"
+			subtitle: "Belts can be used to transport items and transfer rotational force"
+			dependencies: ["696CC33BB96232F5"]
+			size: 1.3d
+			id: "02CFC3F8682DE852"
+			tasks: [{
+				id: "15E5F8E773F978D8"
+				type: "item"
+				item: "create:belt_connector"
+				count: 8L
+			}]
+			rewards: [{
+				id: "372C366FE3398CE3"
+				type: "loot"
+				table_id: 8587500481418189075L
+			}]
+		}
+		{
+			title: "Fluid Transportation"
+			x: 6.5d
+			y: 2.0d
+			shape: "square"
+			subtitle: "Pipes can be used to transport liquids. However, to force output a liquid, you'll need a pump"
+			dependencies: ["5F68C4D92EF20E09"]
+			id: "7B959027BE4234D8"
+			tasks: [{
+				id: "23F08651F45512C4"
+				type: "item"
+				item: "create:mechanical_pump"
+			}]
+			rewards: [{
+				id: "01182E97BB3E1A23"
+				type: "item"
+				item: "create:fluid_pipe"
+				count: 16
+			}]
+		}
+		{
+			x: 2.5d
+			y: 3.5d
+			shape: "square"
+			subtitle: "Hot and tasty: The Blaze Cake can be fed to a Blaze Burner to make it Super-Heated"
+			dependencies: [
+				"660D24689B100167"
+				"45DF3698615734B8"
+				"5BCDBA72A5350DAA"
+			]
+			id: "5B819A05F3D7E1BE"
+			tasks: [{
+				id: "244EC523F1BDAEA6"
+				type: "item"
+				item: "create:blaze_cake"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 4.5d
+			shape: "diamond"
+			subtitle: "You can almost see The Big Bang in it. Left Click for more info"
+			description: [
+				"A Refined Radiance can be obtained by exposing the Chromatic Compound to large amounts of light. There are multiple ways to do this."
+				""
+				"One is by throwing the compound into the beam of a Beacon. However, this is not possible right now, so we're moving on to the next way."
+				""
+				"So. The next way involves light source blocks (torches, lanters, glowstone, jack o' lanters and so on). Throw the Compound on the ground and then, place a light source next to it. The Compound will start to absorb the light and eventually, it will break the light source. Picking up the Compound before it was transformed, will NOT interrupt the transmutation process."
+				""
+				"You'll need a lot of Torches or Glowstone."
+			]
+			dependencies: ["5B819A05F3D7E1BE"]
+			id: "56017FCF2D7819F8"
+			tasks: [{
+				id: "6FD18289D04B38A2"
+				type: "item"
+				item: "create:refined_radiance"
+			}]
+			rewards: [{
+				id: "2EEF60D2487EBAEC"
+				type: "loot"
+				table_id: 8587500481418189075L
+			}]
+		}
+		{
+			x: -6.5d
+			y: 4.5d
+			shape: "gear"
+			subtitle: "Trains in Minecraft? Never! Left Click for more info"
+			description: [
+				"The Cart Assambler can be used to make contraptions with a minecart. For example, you can attach to a minecart a mechanical saw, a deployer and a chest, to make a contraption for an automated wood farm."
+				""
+				"This Assembler will allow you to attach structures to passign minecarts. The Assembler has to be placed on a rails and has to be powered with redstone to work properly. When a minecart passes throw it, any structure you've built above the assembler will be connected to the minecart. If the cart passes through the Assembler again, but no redstone signal is provided, the structure will be dettached from the minecart."
+				""
+				"Keep in mind that The Cart Assembler will NOT allow you to move spawners."
+				""
+				"Finally, after building a minecart contraption, you can use a wrench from Create to move the contraption without any problems."
+			]
+			dependencies: ["4B00B60DE355C08C"]
+			size: 1.3d
+			id: "5545D2B127A2E922"
+			tasks: [{
+				id: "058D9C706790BA12"
+				type: "item"
+				item: "create:cart_assembler"
+			}]
+			rewards: [{
+				id: "3D486C9687E4B980"
+				type: "item"
+				item: {
+					id: "create:super_glue"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 0.5d
+			y: 0.5d
+			shape: "square"
+			subtitle: "A Mechanical Press placed 2 blocks above a Depot allows you to turn Ingots into Plates. You'll use them in lots of things"
+			dependencies: ["696CC33BB96232F5"]
+			id: "2FB71FA74353158B"
+			tasks: [{
+				id: "612D036A2D008238"
+				type: "item"
+				item: "create:mechanical_press"
+			}]
+			rewards: [{
+				id: "503A25E8D3609C7B"
+				type: "item"
+				item: "decursiomod:unfinished_mechanical_press"
+			}]
+		}
+		{
+			title: "Basins are useful!"
+			x: 2.5d
+			y: 0.5d
+			shape: "square"
+			subtitle: "A Basin can either be used for crafting blocks or for mixing alloys such as Brass"
+			dependencies: ["59DF5370DD2EAE51"]
+			dependency_requirement: "one_completed"
+			id: "46E3C1F4DB3AA8ED"
+			tasks: [{
+				id: "75B02E797430BD1C"
+				type: "item"
+				item: "create:basin"
+			}]
+		}
+		{
+			title: "Blazing Blood"
+			icon: "tconstruct:blazing_blood_bucket"
+			x: 2.0d
+			y: 1.5d
+			shape: "square"
+			subtitle: "Blazing Blood can be made by smelting, either a blaze mesh or a blaze head. You'll need this hot fuel to further upgrade your tinker tools"
+			description: ["Special thanks to Reiki133 for suggesting this idea for the pack."]
+			dependencies: ["46E3C1F4DB3AA8ED"]
+			id: "5BCDBA72A5350DAA"
+			tasks: [{
+				id: "5E081732B36A8D8A"
+				type: "item"
+				item: "botania:blaze_block"
+			}]
+			rewards: [{
+				id: "3D537A3095B3A145"
+				type: "loot"
+				table_id: 8587500481418189075L
+			}]
+		}
+		{
+			title: "The Coker"
+			icon: "immersivepetroleum:cokerunit"
+			x: 18.5d
+			y: 2.5d
+			shape: "square"
+			subtitle: "Great, you've got Bitumen, now you have to process it further. To do so, you'll have to make The Coker. A projector is adviced for building this structure. Left Click for more info"
+			description: [
+				"The Coker is a HUGE multiblock structure which is used to process Bitumen, further into PetCoke."
+				""
+				"The Coker will have to be provided with RF. Water and Bitumen must be inserted into the tower. PetCoke will be made after the cracking temperature for Bitumen, has been reached."
+				""
+				"Water can be automatically inserted through the back of the structure. Same goes with the Bitumen. The Petcoke will have its output in the structure's middle chutes."
+				""
+				"1024 RF/tick will need to be provided to the tower through the three back slots."
+			]
+			dependencies: ["2F64EED1F5172A81"]
+			id: "23380816BDBD50BA"
+			tasks: [
+				{
+					id: "6A53D5D7296E838E"
+					type: "item"
+					item: "immersiveengineering:concrete"
+					count: 12L
+				}
+				{
+					id: "4460E0EB6F9F3946"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 64L
+				}
+				{
+					id: "11F71A6B9D6E9BCC"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 34L
+				}
+				{
+					id: "0D30DBC5B72AA23A"
+					type: "item"
+					item: "immersiveengineering:heavy_engineering"
+					count: 5L
+				}
+				{
+					id: "54CE8CFC6B08FA0D"
+					type: "item"
+					item: "immersiveengineering:sheetmetal_steel"
+				}
+				{
+					id: "312EE504A43695AF"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 5L
+				}
+				{
+					id: "19087CE9A69B8A23"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "59D3E4C37455F3BF"
+					type: "item"
+					item: "immersiveengineering:concrete_tile"
+					count: 45L
+				}
+				{
+					id: "5BE56C85A49DF3DF"
+					type: "item"
+					item: "immersiveengineering:steel_fence"
+					count: 64L
+				}
+				{
+					id: "19357D7C6B5F1D71"
+					type: "item"
+					item: "immersiveengineering:steel_fence"
+					count: 24L
+				}
+				{
+					id: "56541AD250D25787"
+					type: "item"
+					item: "immersiveengineering:sheetmetal_iron"
+					count: 64L
+				}
+				{
+					id: "36D92C1075142D2E"
+					type: "item"
+					item: "immersiveengineering:sheetmetal_iron"
+					count: 64L
+				}
+				{
+					id: "4CA577613911A6C0"
+					type: "item"
+					item: "immersiveengineering:sheetmetal_iron"
+					count: 34L
+				}
+				{
+					id: "6F6CE37A5E6FC922"
+					type: "item"
+					item: "immersiveengineering:fluid_pipe"
+					count: 47L
+				}
+				{
+					id: "07AB2F931FCAA3EF"
+					type: "item"
+					item: "immersiveengineering:steel_slope"
+					count: 3L
+				}
+				{
+					id: "1667DF1FDFCB2D84"
+					type: "item"
+					item: "immersiveengineering:slab_steel_scaffolding_grate_top"
+					count: 46L
+				}
+			]
+			rewards: [{
+				id: "127F85B88AB2DD17"
+				type: "loot"
+				table_id: 5206766833681472091L
+			}]
+		}
+		{
+			title: "Welcome, Petcoke!"
+			x: 18.5d
+			y: -4.0d
+			shape: "diamond"
+			subtitle: "Petcoke can be obtained by refining Bitumen in a Coker. Required to unlock the 3rd Age"
+			dependencies: ["23380816BDBD50BA"]
+			size: 2.0d
+			id: "19636F8D83618C41"
+			tasks: [{
+				id: "41D6976DDC315FD6"
+				type: "item"
+				item: "immersivepetroleum:petcoke"
+			}]
+			rewards: [{
+				id: "1D253D298851F2FE"
+				type: "loot"
+				table_id: 8587500481418189075L
+			}]
+		}
+		{
+			title: "May Valve Have Mercy On You!"
+			x: 9.5d
+			y: -2.0d
+			shape: "gear"
+			subtitle: "Well, reaching this point was inevitable. As an advanced tinkerer, you can't make amazing contraptions with just 144 SU. So that's where this new setup comes in. Left Click for more info"
+			description: [
+				"Let's get straight into the root of the problem. What are these machines and how do you use them? Long story short, these machines will allow you to make an SU generator that uses the power of Steam."
+				""
+				"Let's see what each machine does here:"
+				""
+				"- The Cast Iron Burning Chamber will take items such as Wood/Coal/Kelp Blocks and it will use them as fuel to generate Heat (HU)."
+				""
+				"- The Cast Iron Boiler will be placed above the Burning Chamber and it has to be provided with Water. It will take the HU generated by the Burning Chamber and it will produce a total amount of 138mb of Steam/tick."
+				""
+				"- The Cast Iron Steam Engine will take the Steam produced by the Boiler and it will turn it into SU."
+				""
+				"- The Cast Iron Flywheel will take the SU generated by the Steam Engine and it will turn it into Rotational Force which you can use in Create."
+				""
+				"This setup will generate 138mb of Steam/t. It will consume 32mb of Steam/t (per Engine+Flywheel). A Flywheel will generate 8,192 SU. This means you'll be able power 4 Engines with 1 Boiler and, eventually, get around 32,000 SU with 4 Steam Engines and 4 Flywheels."
+			]
+			dependencies: ["2BA7183800B331E0"]
+			id: "5B123ED7380C9E43"
+			tasks: [
+				{
+					id: "2B97ABA98989597B"
+					type: "item"
+					item: "steampowered:cast_iron_steam_engine"
+				}
+				{
+					id: "5C6B9008B222DEB6"
+					type: "item"
+					item: "steampowered:cast_iron_flywheel"
+				}
+				{
+					id: "441DB4A742BA076B"
+					type: "item"
+					item: "steampowered:cast_iron_burner"
+				}
+				{
+					id: "3A3FE6DD807DD9C9"
+					type: "item"
+					item: "steampowered:cast_iron_boiler"
+				}
+			]
+		}
+		{
+			title: "PumpJack"
+			icon: "immersivepetroleum:pumpjack"
+			x: 16.0d
+			y: 3.5d
+			shape: "square"
+			subtitle: "Old mcJack had a PUMP! Left Click for more info"
+			description: [
+				"The Pumpjack is a multiblock structure that extracts Crude Oil from deposits situated undeground. As always, you'll need the engineers hammer to finalize this structure."
+				""
+				"The Structure uses 512 RF/tick to pump oil at the rate of 15 mb/tick. The produced oil is automatically ejected throught the two side ports with orange dots."
+				""
+				"Like the other machines, applying a redstone signal to the machine's redstone control panel, you can halt the machine's process. Using a screwdriver, you can invert this behavior."
+			]
+			dependencies: [
+				"31A4F73AF44D70B1"
+				"463ED9A80DD9D74E"
+			]
+			dependency_requirement: "one_completed"
+			id: "0365486E5D53E231"
+			tasks: [
+				{
+					id: "309A65D3F2910B82"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 11L
+				}
+				{
+					id: "7186EA245AB51A3C"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 2L
+				}
+				{
+					id: "49E797DEAFE02DBC"
+					type: "item"
+					item: "immersiveengineering:treated_fence"
+					count: 6L
+				}
+				{
+					id: "2ED761E9B2E51E7A"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "67462171372A8FB2"
+					type: "item"
+					item: "immersiveengineering:heavy_engineering"
+					count: 2L
+				}
+				{
+					id: "0A05B323A97CA7F1"
+					type: "item"
+					item: "emendatusenigmatica:steel_block"
+					count: 2L
+				}
+				{
+					id: "5B08FBDFDE0A4151"
+					type: "item"
+					item: "immersiveengineering:sheetmetal_steel"
+					count: 4L
+				}
+				{
+					id: "17B42BE07E74612A"
+					type: "item"
+					item: "immersiveengineering:fluid_pipe"
+					count: 4L
+				}
+			]
+		}
+		{
+			title: "Distillation Tower"
+			icon: "immersivepetroleum:distillationtower"
+			x: 17.0d
+			y: 3.5d
+			shape: "square"
+			subtitle: "Long, pointy and of course, INDUSTRIAL! Left Click for more info"
+			description: [
+				"The Distillation Tower is a large multiblock structure that will be used to obtain Bitument and other resourcers through refining Crude Oil."
+				""
+				"The tower will produce Gasoline, Sulfurised Diesel and Lubricant."
+				""
+				"Power will have to be supplied to the tower in order to work."
+				""
+				"To build this structure, use the guide provided in the Engineer's Manual. You can also use a projector to see the structure in the world."
+			]
+			dependencies: ["0365486E5D53E231"]
+			id: "4261B19707343F3D"
+			tasks: [
+				{
+					id: "1DCE4E89AE570A9A"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 25L
+				}
+				{
+					id: "1F9BE1979CD9282C"
+					type: "item"
+					item: "immersiveengineering:heavy_engineering"
+					count: 4L
+				}
+				{
+					id: "0BD81FA9B0171B18"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "400021CCC14AE797"
+					type: "item"
+					item: "immersiveengineering:sheetmetal_iron"
+					count: 60L
+				}
+				{
+					id: "6354197E187DF04C"
+					type: "item"
+					item: "immersiveengineering:fluid_pipe"
+					count: 17L
+				}
+				{
+					id: "434D5722949BA77A"
+					type: "item"
+					item: "immersiveengineering:slab_steel_scaffolding_grate_top"
+					count: 30L
+				}
+			]
+		}
+		{
+			title: "Improved Steel Production"
+			icon: "immersiveengineering:advanced_blast_furnace"
+			x: 10.5d
+			y: -6.5d
+			shape: "gear"
+			subtitle: "The Man of Steel. Left Click for more info"
+			description: [
+				"To start producing steel faster, you'll have to build a new multiblock structure, call The Improved Blast Furnace."
+				""
+				"A projector can be used to see how the structure should be built, but just in case you don't have one, here's an example of how the structure should look:"
+				""
+				"{image:kubejs:textures/immersive/example_improved_blast_furnace.png width:120 height:130 align:1}"
+				""
+				"After right-clicking it with an Engineer's Hammer, the structure will be finished and you can start producing steel. Additionally, two preheaters can be installed on the furnace's sides to speed up the process. These preheaters will require RF in order to work."
+				""
+				"If the preheaters are not installed, the furnace will work just like a default blast furnace. You can install only one preheater, but two will do a better job."
+			]
+			dependencies: ["1F1994D8C11FAB3D"]
+			id: "0A2B72AC92617BE7"
+			tasks: [
+				{
+					id: "174E6D9F39E35907"
+					type: "item"
+					item: "immersiveengineering:blastbrick_reinforced"
+					count: 27L
+				}
+				{
+					id: "4AFB79FCA73B7862"
+					type: "item"
+					item: "minecraft:hopper"
+				}
+				{
+					id: "7ACF9E66A8A752F5"
+					type: "item"
+					item: "immersiveengineering:blastfurnace_preheater"
+					count: 2L
+				}
+			]
+			rewards: [{
+				id: "1A25C1EBCA4CADC4"
+				type: "loot"
+				table_id: 5206766833681472091L
+			}]
+		}
+		{
+			x: 10.5d
+			y: -1.0d
+			shape: "square"
+			subtitle: "Highly conductive Ghast material. Left Click for more info"
+			description: [
+				"Carminite will be required in the process of obtaining Redstone Engineering Blocks."
+				""
+				"There are two ways of obtaining Carminite. One is by looting the Dark Forest Tower in the Twilight Forest. The other one is by crafting it."
+				""
+				"However, to be able to craft Carminite, you'll need a powerful relic which can be obtained only from the twilight's Ur-Ghast. This relic is so powerful that it will NOT be used in the crafting recipes."
+				""
+				"So, with that being said, you're heading to Twilight to get the Ghast Blood Tear. Have fun!"
+			]
+			dependencies: ["37239ADFDD7A7A86"]
+			id: "48FE312CD0271DA4"
+			tasks: [
+				{
+					id: "05B661E994E0AD2C"
+					type: "item"
+					item: "twilightforest:carminite"
+				}
+				{
+					id: "274D87B8F610E70F"
+					type: "item"
+					item: "decursiomod:ghast_blood_tear"
+				}
+			]
+		}
+		{
+			x: 10.5d
+			y: 2.0d
+			shape: "square"
+			subtitle: "Desert Conductivity. Left Click for more info"
+			description: [
+				"Nebu will be required in the process of obtaining Light Engineering Blocks."
+				""
+				"Nebu Ingot is obtained from nebu ore which can be found in Atum. Check the \"OreGen Info\" tab to learn more about the height at which it can spawn. Aditionally, you can make a Scanner to help you find the ore much easier, as it can be quite rare."
+				""
+				"Well, great. This means you're heading towards Atum. Good luck!"
+			]
+			dependencies: ["212AEE831223DB8A"]
+			id: "5929690A5286D4C0"
+			tasks: [{
+				id: "3D0DE279C2887856"
+				type: "item"
+				item: "atum:nebu_ingot"
+			}]
+		}
+		{
+			x: 11.5d
+			y: 3.5d
+			shape: "square"
+			subtitle: "Fair X-ray. Left Click for more info"
+			description: [
+				"Throughout the world, there can be some invisible resource deposits in each chunk."
+				""
+				"These deposits can either contain liquid fuels, or solid ores."
+				""
+				"A Core Sample Drill powered with RF will help you find if, and what type of resource, a chunks has. "
+				""
+				"Just place the sample drill in a chunk, provide it with power and right-click on it (either with an empty hand, or with an engineers hammer, depending on the info you wanna obtain). After taking a sample from the chunk it is placed in, the drill can be right-clicked again to take the sample out. It can be listed as \"No Fluid Reservoir\", \"No mineral\". It can also be listed with the type of fluid or mineral resource that was found."
+				""
+				"If a chunk presents one type of reservoir, you'll need a different machine based on your found resource. If it is a fluid, you'll need a PumpJack to extract it. If it is a mineral, you'll need an Excavator to extract it."
+				""
+				"Keep in mind that reservoirs are not infinite. They eventually run out of resources."
+			]
+			dependencies: ["2E420B464AC031B6"]
+			id: "463ED9A80DD9D74E"
+			tasks: [{
+				id: "3F64C8582ECBC3AF"
+				type: "item"
+				item: "immersiveengineering:sample_drill"
+			}]
+		}
+		{
+			title: "Advanced Engineering Blocks"
+			x: 12.5d
+			y: 0.5d
+			shape: "gear"
+			subtitle: "These blocks will be used to construct powerful multiblock machines, such as the Excavator or Diesel Generator"
+			dependencies: ["5A40BDBC56A4844F"]
+			id: "7D4AA3C434A30047"
+			tasks: [
+				{
+					id: "220AAAB4F955E74A"
+					type: "item"
+					item: "immersiveengineering:radiator"
+				}
+				{
+					id: "251538FCBAEC2A4F"
+					type: "item"
+					item: "immersiveengineering:generator"
+				}
+			]
+		}
+		{
+			title: "Fermenter"
+			icon: "immersiveengineering:fermenter"
+			x: 13.5d
+			y: -2.0d
+			shape: "gear"
+			subtitle: "Obtaining Ethanol. Left Click for more info"
+			description: [
+				"The Fermenter is a multiblock structure that extracts Ethanol from certain vegetables, at the cost of some RF. Ethanol can be later used to produce BioDiesel which can be used as fuel in a Diesel Generator or in tools like the Mining Drill. The Ethanol can also be used to produce Herbicide which can be loaded into a Chemical Thrower to remove the leaves and grass from the word."
+				""
+				"To build this structure, use the guide provided in the Engineer's Manual. You can also use a projector to see the structure in the world."
+			]
+			dependencies: ["4AADFD307A5BCF37"]
+			id: "374E54B7E5B16819"
+			tasks: [
+				{
+					id: "1B91CEF20FE110DC"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 6L
+				}
+				{
+					id: "6664AF7AC2FE8C5F"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 2L
+				}
+				{
+					id: "4E9DBD73AF49933D"
+					type: "item"
+					item: "minecraft:cauldron"
+					count: 4L
+				}
+				{
+					id: "560B3935F7A754E7"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "7F1047388E95E3EC"
+					type: "item"
+					item: "immersiveengineering:sheetmetal_iron"
+					count: 4L
+				}
+				{
+					id: "7FF2251EA7AE39A8"
+					type: "item"
+					item: "immersiveengineering:fluid_pipe"
+					count: 2L
+				}
+			]
+		}
+		{
+			title: "Squeezer"
+			icon: "immersiveengineering:squeezer"
+			x: 14.5d
+			y: -2.0d
+			shape: "square"
+			subtitle: "Obtaining Seed Oil. Left Click for more info"
+			description: [
+				"The Squeezer is a multiblock structure which can be used to extract oil from certain seeds and vegetables. It can also be used to obtain Graphite. The oil will be later used in the proccess of making Biodiesel which is fuild for either a Diesel Generator or tools such as the Mining Drill. The Graphite will be used to obtain Black Iron."
+				""
+				"To build this structure, use the guide provided in the Engineer's Manual. You can also use a projector to see the structure in the world."
+			]
+			dependencies: ["4AADFD307A5BCF37"]
+			id: "4B750F660C0D5E6E"
+			tasks: [
+				{
+					id: "4E17B1A1EDB50DCF"
+					type: "item"
+					item: "minecraft:piston"
+				}
+				{
+					id: "6A53DFFE3494F364"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 6L
+				}
+				{
+					id: "7328BE17BEBE10A0"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 2L
+				}
+				{
+					id: "61B47868DC39D921"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "7D98ECF11669290D"
+					type: "item"
+					item: "immersiveengineering:steel_fence"
+					count: 3L
+				}
+				{
+					id: "545EAD8D50BB8D51"
+					type: "item"
+					item: "immersiveengineering:fluid_pipe"
+					count: 2L
+				}
+				{
+					id: "2D476CE0037154B8"
+					type: "item"
+					item: "immersiveengineering:wooden_barrel"
+					count: 4L
+				}
+			]
+		}
+		{
+			title: "Refinery"
+			icon: "immersiveengineering:refinery"
+			x: 14.0d
+			y: -4.0d
+			shape: "gear"
+			subtitle: "Making Biodiesel. Left Click for more info"
+			description: [
+				"The Refinery's only purpose is to produce BioDiesel. This liquid fuel can be used to power a Diesel Generator or tools such as the Mining Drill."
+				""
+				"To build this structure, use the guide provided in the Engineer's Manual. You can also use a projector to see the structure in the world."
+			]
+			hide_dependency_lines: false
+			dependencies: [
+				"374E54B7E5B16819"
+				"4B750F660C0D5E6E"
+			]
+			dependency_requirement: "one_started"
+			size: 1.5d
+			id: "4FCDAB81DB37FDF1"
+			tasks: [
+				{
+					id: "6CFBC3138BE963F8"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 8L
+				}
+				{
+					id: "1F8C75EF30D1A480"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 2L
+				}
+				{
+					id: "64960E5C877A14C0"
+					type: "item"
+					item: "immersiveengineering:heavy_engineering"
+					count: 2L
+				}
+				{
+					id: "51582715C4D7799B"
+					type: "item"
+					item: "immersiveengineering:sheetmetal_iron"
+					count: 16L
+				}
+				{
+					id: "066B9E3AA4B61867"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "499A91322E2BE911"
+					type: "item"
+					item: "immersiveengineering:fluid_pipe"
+					count: 5L
+				}
+			]
+		}
+		{
+			title: "Diesel for days!"
+			icon: "immersivepetroleum:hydrotreater"
+			x: 17.0d
+			y: 2.5d
+			shape: "gear"
+			subtitle: "By feeding Sulfurized Diesel, obtained either from a Distillation Tower or a Coker, in a Sulfur Recovery Unit, you can obtain Diesel which can be used to power the Diesel Generator"
+			dependencies: [
+				"4261B19707343F3D"
+				"23380816BDBD50BA"
+			]
+			dependency_requirement: "one_completed"
+			id: "21E6FAC33080031F"
+			tasks: [
+				{
+					id: "484836C7E9C0D404"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 10L
+				}
+				{
+					id: "042BB0217C4186B1"
+					type: "item"
+					item: "immersiveengineering:heavy_engineering"
+					count: 4L
+				}
+				{
+					id: "285AC92715024D50"
+					type: "item"
+					item: "immersiveengineering:sheetmetal_iron"
+					count: 15L
+				}
+				{
+					id: "771EB316927D32C3"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "34D56C2278C6C456"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 2L
+				}
+			]
+		}
+		{
+			title: "Gasoline"
+			icon: {
+				id: "immersivepetroleum:gasoline_bucket"
+				Count: 1b
+				tag: { }
+			}
+			x: 17.0d
+			y: 4.5d
+			shape: "diamond"
+			subtitle: "Gasoline is a major milestone and it will be used later to produce Rocket Fuel. It will also be used later as a possible fuel for the Compression Dynamo. For now, it can be used as fuel in the Portable Generator"
+			dependencies: ["4261B19707343F3D"]
+			id: "39C1D97967AE69D5"
+			tasks: [{
+				id: "4E0F32E5A8568890"
+				type: "item"
+				item: "immersivepetroleum:gasoline_bucket"
+			}]
+		}
+		{
+			title: "Arc Furnace"
+			icon: "immersiveengineering:arc_furnace"
+			x: 17.0d
+			y: 0.5d
+			shape: "gear"
+			subtitle: "This powerful furnace will use RF to smelt all of your precious ores and double them. Additionaly, you may be able to alloy some metals in it. Speeding up the Steel making process will also be a thing. A projector is adviced for building this structure. Three Graphite Rods have to be added to the Furnace in order for it to work properly"
+			dependencies: ["31A4F73AF44D70B1"]
+			dependency_requirement: "one_completed"
+			id: "316EEFCBBD0493A9"
+			tasks: [
+				{
+					id: "5E4CA209D94E586D"
+					type: "item"
+					item: "immersiveengineering:sheetmetal_steel"
+					count: 8L
+				}
+				{
+					id: "676B4A81BCDE6587"
+					type: "item"
+					item: "emendatusenigmatica:steel_block"
+					count: 6L
+				}
+				{
+					id: "3BB5EF92FDDDF753"
+					type: "item"
+					item: "immersiveengineering:slab_sheetmetal_steel"
+					count: 14L
+				}
+				{
+					id: "70F2BF18D881AD99"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 5L
+				}
+				{
+					id: "15AB40DFDAC99342"
+					type: "item"
+					item: "immersiveengineering:heavy_engineering"
+					count: 5L
+				}
+				{
+					id: "1F6BED640B198236"
+					type: "item"
+					item: "minecraft:cauldron"
+				}
+				{
+					id: "7C8DA97C0D7E88C2"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "779BDA9C0929A738"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 10L
+				}
+				{
+					id: "3148275A17327DC0"
+					type: "item"
+					item: "immersiveengineering:blastbrick_reinforced"
+					count: 27L
+				}
+			]
+			rewards: [{
+				id: "63847878132132A7"
+				type: "item"
+				item: {
+					id: "immersiveengineering:graphite_electrode"
+					Count: 1b
+					tag: {
+						graphDmg: 0
+					}
+				}
+				count: 3
+			}]
+		}
+		{
+			title: "Metal Press"
+			icon: "immersiveengineering:metal_press"
+			x: 17.0d
+			y: 1.5d
+			shape: "gear"
+			subtitle: "Electric pressing. Left Click for more info"
+			description: [
+				"The Metal Press is a tiny multiblock structure which, at the cost of some RF, to obtain plates, rods, large plates and gears."
+				""
+				"Molds will need to be provided in order for the press to work."
+				""
+				"To build this structure, use the guide provided in the Engineer's Manual. You can also use a projector to see the structure in the world."
+			]
+			dependencies: ["31A4F73AF44D70B1"]
+			id: "29CE6254CDB920DA"
+			tasks: [
+				{
+					id: "7980623E42AD1BAC"
+					type: "item"
+					item: "minecraft:piston"
+				}
+				{
+					id: "0DFCC4A11FC4A2BA"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 2L
+				}
+				{
+					id: "2ADA49DCDC528775"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "072493EB40E91C1A"
+					type: "item"
+					item: "immersiveengineering:heavy_engineering"
+				}
+				{
+					id: "302138B1DE057E38"
+					type: "item"
+					item: "immersiveengineering:conveyor_basic"
+					count: 2L
+				}
+			]
+		}
+		{
+			title: "Circuits forever"
+			x: 10.5d
+			y: -8.0d
+			shape: "square"
+			subtitle: "My company's name will be Melon! Left Click for more info"
+			description: [
+				"Using an Engineer's Circuit Table you can start producing your own Logical Circuits."
+				""
+				"The table must be provided with power, Circuit Backplanes, some Metal Wires and some Vacuum Tubes. Lastly, just choose your pattern, color and your circuit will be ready."
+				""
+				"Circuits have plenty of uses, but their main use in this pack, will be for electronics. A great first example for this, will be the Scanner."
+			]
+			dependencies: [
+				"1F1994D8C11FAB3D"
+				"7EEACE7A945184EC"
+			]
+			id: "2BF07F660D1559DE"
+			tasks: [
+				{
+					id: "0C7B15CDE1EAF269"
+					type: "item"
+					item: "immersiveengineering:circuit_table"
+				}
+				{
+					id: "4F614027017B7DD8"
+					type: "item"
+					item: "immersiveengineering:circuit_board"
+				}
+				{
+					id: "14857AD5E94DFC3B"
+					type: "item"
+					item: "immersiveengineering:logic_circuit"
+				}
+			]
+		}
+		{
+			x: 4.0d
+			y: -8.0d
+			shape: "diamond"
+			subtitle: "The Electrolyzed Alloy is a highly conductive material which can be charged up with electricity. It CANNOT be used as a battery, but when it's Overcharged, it becomes a material used in lots of recipes. It needs 19200 RF in order to become Overcharged. Also, the process takes around 30 seconds. This amount of time CANNOT be reduced by any means"
+			dependencies: ["001EA2F1F0A28848"]
+			id: "15CD1782F17EF2BC"
+			tasks: [{
+				id: "54F78E7904D04B92"
+				type: "item"
+				item: {
+					id: "decursiomod:electrolysed_alloy"
+					Count: 1b
+					tag: {
+						chargedItemData: { }
+					}
+				}
+			}]
+		}
+		{
+			x: -5.5d
+			y: -2.5d
+			shape: "gear"
+			subtitle: "A turtle can be upgraded with certain tools to create a mini-robot. Turtles can be programmed through the lua language to do lots of things, such as, mob grinders, quarrys and more. You can take a look at the \"Useful Items\" tab to see more about the turtles you can use"
+			dependencies: ["2CBD58CB08491491"]
+			size: 1.5d
+			id: "0D3846475EDA5957"
+			tasks: [{
+				id: "3535A59AF5577C53"
+				type: "item"
+				item: "computercraft:turtle_normal"
+			}]
+		}
+		{
+			icon: "immersiveengineering:workbench"
+			x: 10.5d
+			y: 0.5d
+			shape: "square"
+			subtitle: "Craft and Upgrade. Left Click for more info"
+			description: [
+				"The Engineer's Workbench is used both for crafting special items and for modifying IE's unique tools. It takes up two blocks."
+				""
+				"The Workbench's GUI is fairly simple. The left slot accepts either an Engineer's Blueprint (for crafting) or a modifiable IE tool. Without a blueprint or a tool to modify, the Workbench doesn't do anything."
+				""
+				"With a blueprint in place, 6 slots appear in the center to accept shapeless crafting inputs, and a number of recipe outputs appear on the right. Each blueprint comes with its own set of recipes; for example, with the \"Crafting Components\" blueprint, the player can craft Iron Mechanical Components, Steel Mechanical Components, Vaccuum Tubes, and Circuit Backplanes."
+				""
+				"Tool, weapon, and shield modifications can be installed or removed at the Engineer's Workbench. The player sets their upgradable tool in the left slot, then its available slots for modifications appear in the middle. An extra slot appears on the right for installing a Shader, an aesthetic choice.On removing the upgradable tool, the newly added modifications stay with it."
+			]
+			dependencies: ["275FE11C673E522D"]
+			id: "360B0A95C0A30AF6"
+			tasks: [{
+				id: "6860C843D91EAB89"
+				type: "item"
+				item: "immersiveengineering:workbench"
+			}]
+			rewards: [{
+				id: "57C942CD48693A19"
+				type: "item"
+				item: {
+					id: "immersiveengineering:blueprint"
+					Count: 1b
+					tag: {
+						blueprint: "components"
+					}
+				}
+			}]
+		}
+		{
+			title: "Industrial Electrolyzer"
+			icon: "immersiveindustry:industrial_electrolyzer"
+			x: 15.0d
+			y: 0.0d
+			shape: "square"
+			subtitle: "The Industrial Electrolyzer is a multiblock structure that will allow you to start producing Aluminum. The process requires a constant supply of 144 RF/t in order to produce Aluminum, otherwise nothing will happen. Water and Graphite Electrodes will also be required. You'll need a Blueprint for them. It can be obtained from a Master Machinist Villager. These Villagers are using the Vanilla Anvil as a Working Station. Now, if you're not familiar, you have to trade with Villagers in order to get them to the Master Level"
+			description: [
+				"In order for the Electrolyser to work properly, you'll need to supply water to the structure."
+				""
+				"In order to avoid any confusion, know that the Elecrolyzer, has two input slots (blue), on each side. However, one of them is for liquids, while the other one, is for items. Same thing goes with the output slots (orange). Before getting confused about \"why can't I add water to this machine?\", make sure you're adding the water through the right input slot."
+				""
+				"Now, the water that's extracted from the liquid output slot, can either be voided, or added back into the machine, to create a closed loop system, however, note that there will be some leaks and you'll probably need a constant supply of water for this."
+			]
+			dependencies: ["4AADFD307A5BCF37"]
+			id: "300C86B792A57B17"
+			tasks: [
+				{
+					id: "4D3339A21CE4CC6D"
+					type: "item"
+					item: "immersiveengineering:sheetmetal_steel"
+					count: 10L
+				}
+				{
+					id: "0C50B97A2038AD38"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 13L
+				}
+				{
+					id: "07A930A72A797978"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 2L
+				}
+				{
+					id: "3E04F425DB7F4413"
+					type: "item"
+					item: "immersiveengineering:sheetmetal_iron"
+					count: 9L
+				}
+				{
+					id: "3ECB5AC2A32BEA19"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "24019CD9ABC100B1"
+					type: "item"
+					item: {
+						id: "immersiveengineering:blueprint"
+						Count: 1b
+						tag: {
+							blueprint: "electrode"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Obtaining Aluminum"
+			icon: "emendatusenigmatica:aluminum_ingot"
+			x: 16.0d
+			y: -2.0d
+			shape: "diamond"
+			subtitle: "Aluminum is the latest advance in the life of an Engineer. Obtain it through the Electrolysis process which requires Graphite Electrodes and an adequate machine"
+			dependencies: [
+				"4B750F660C0D5E6E"
+				"300C86B792A57B17"
+			]
+			size: 1.5d
+			id: "79BB64427280F8AE"
+			tasks: [{
+				id: "7DC4BEE335A184A6"
+				type: "item"
+				item: "emendatusenigmatica:aluminum_dust"
+			}]
+		}
+		{
+			title: "Crucible"
+			icon: "immersiveindustry:crucible"
+			x: 18.5d
+			y: 4.5d
+			shape: "heart"
+			subtitle: "The Process of making Steel just got somehow easier. The Crucible is a multiblock structure which is more efficient when it comes to the production of Steel. While being slower then the Improved Blast Furnace, it is capable of doubling your output. Yes, that's right, this puppy can turn one Iron Ingot into two Steel Ingots. It needs Coal Coke as fuel, a Blast Furnace Preheater connected to the small opening and small amounts of carbon. These can be provided through Mini Coals, or Mini Charcoals. A projector is recommended for building this structure"
+			dependencies: ["2F64EED1F5172A81"]
+			id: "24B5E7187C38E7C3"
+			tasks: [
+				{
+					id: "234DEDE89A9D57C7"
+					type: "item"
+					item: "minecraft:bricks"
+					count: 16L
+				}
+				{
+					id: "70E9A52F4353A20B"
+					type: "item"
+					item: "immersiveindustry:burning_chamber"
+					count: 18L
+				}
+			]
+		}
+		{
+			x: 5.0d
+			y: 4.5d
+			shape: "square"
+			subtitle: "The Roze Quartz is a conductive crystal perfect for producing Electron Tubes. These can be later integrated into certain frames to make useful machines. The Rose Quartz has to be polished with Sand Paper in order to fit the frame of a tube"
+			dependencies: ["40205D351BE13B77"]
+			id: "66B9290869F9CBD2"
+			tasks: [{
+				id: "11D326398C74B8A6"
+				type: "item"
+				item: "create:polished_rose_quartz"
+			}]
+		}
+		{
+			x: 5.0d
+			y: 3.5d
+			shape: "square"
+			subtitle: "The Spout is a mechanical machine which is mainly used to pour liquids intro certain items/containers"
+			dependencies: [
+				"66B9290869F9CBD2"
+				"5F68C4D92EF20E09"
+			]
+			id: "660D24689B100167"
+			tasks: [{
+				id: "3CE0DAE63E31DB71"
+				type: "item"
+				item: "create:spout"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 1.5d
+			shape: "square"
+			subtitle: "The Blaze Cake base will be filled with Blazing Blood using a Spout, to obtain a Blaze Cake"
+			dependencies: ["46E3C1F4DB3AA8ED"]
+			id: "45DF3698615734B8"
+			tasks: [{
+				id: "4DF4DEB4314C61D8"
+				type: "item"
+				item: "create:blaze_cake_base"
+			}]
+		}
+		{
+			title: "Making Plates"
+			x: 1.5d
+			y: -2.0d
+			shape: "square"
+			subtitle: "Iron Plates and Plates, in general, can be obtained by placing ingots below a Mechanical Press, on a solid block, like Dirt/Grass/Stone"
+			dependencies: ["2FB71FA74353158B"]
+			size: 1.5d
+			id: "59DF5370DD2EAE51"
+			tasks: [{
+				id: "4891C489E13A6CDC"
+				type: "item"
+				item: "emendatusenigmatica:iron_plate"
+			}]
+		}
+		{
+			title: "The Redstone Engineering Blocks"
+			x: 11.5d
+			y: -1.0d
+			shape: "square"
+			subtitle: "These blocks will serve as Redstone Control Panels for most of the machines added by Immersive Enginering"
+			dependencies: [
+				"48FE312CD0271DA4"
+				"5A40BDBC56A4844F"
+			]
+			id: "6B4D6FD11DFC8011"
+			tasks: [{
+				id: "729B55EAFB2FFCD6"
+				type: "item"
+				item: "immersiveengineering:rs_engineering"
+				count: 4L
+			}]
+		}
+		{
+			title: "The Light Engineering Blocks"
+			x: 11.5d
+			y: 2.0d
+			shape: "square"
+			subtitle: "These blocks will serve as Energy Access Points for the machines added by Immersive Engineering"
+			dependencies: [
+				"5929690A5286D4C0"
+				"5A40BDBC56A4844F"
+			]
+			id: "2E420B464AC031B6"
+			tasks: [{
+				id: "7EEACE7A945184EC"
+				type: "item"
+				item: "immersiveengineering:light_engineering"
+				count: 4L
+			}]
+		}
+		{
+			title: "Mechanical Components"
+			x: 11.5d
+			y: 0.5d
+			shape: "square"
+			subtitle: "Mechanical Components are crafting ingredients which have plenty of uses, from Engineering Blocks, to nifty Gadgets. You'll need a lot of these"
+			dependencies: ["360B0A95C0A30AF6"]
+			id: "5A40BDBC56A4844F"
+			tasks: [
+				{
+					id: "40BDFB0978974930"
+					type: "item"
+					item: "immersiveengineering:component_iron"
+				}
+				{
+					id: "52F52A7EA2092294"
+					type: "item"
+					item: "immersiveengineering:component_steel"
+				}
+			]
+			rewards: [
+				{
+					id: "4865573C7E8D3381"
+					type: "item"
+					item: "immersiveengineering:component_iron"
+					count: 7
+				}
+				{
+					id: "0D32C36CCD9704F1"
+					type: "item"
+					item: "immersiveengineering:component_steel"
+					count: 7
+				}
+			]
+		}
+		{
+			x: 7.5d
+			y: 4.5d
+			shape: "gear"
+			subtitle: "The Rotational Speed Controller is a machine added by Create. When it's place below a Large Cogwheel, it will allow you increase/decrease the Rotational Speed that comes out of it"
+			dependencies: ["275FE11C673E522D"]
+			size: 1.5d
+			id: "6254ECCECABC32FE"
+			tasks: [{
+				id: "4D401D0F1AC7FD73"
+				type: "item"
+				item: "create:rotation_speed_controller"
+			}]
+			rewards: [{
+				id: "30A67AE5262FD73C"
+				type: "loot"
+				table_id: 8587500481418189075L
+			}]
+		}
+		{
+			title: "Compact Circuits"
+			x: -2.5d
+			y: 3.0d
+			shape: "gear"
+			subtitle: "These utility mechanism can be used to make advanced contraptions using well timed redstone signals. With these, you'll be able to stop the rotation of certain sections, invert it, distribute it and increase it. Use them well"
+			dependencies: ["696CC33BB96232F5"]
+			id: "3A7C009D9F8ADAAF"
+			tasks: [
+				{
+					id: "6FB8D451AE76C949"
+					type: "item"
+					item: "create:clutch"
+				}
+				{
+					id: "498EE3C22C9B5CC8"
+					type: "item"
+					item: "create:gearshift"
+				}
+				{
+					id: "0F3682FC2A310332"
+					type: "item"
+					item: "create:encased_chain_drive"
+				}
+				{
+					id: "590CC4CA21ADB9B4"
+					type: "item"
+					item: "create:adjustable_chain_gearshift"
+				}
+			]
+			rewards: [{
+				id: "77DA05C214714688"
+				type: "item"
+				item: "create:andesite_alloy"
+				count: 32
+			}]
+		}
+		{
+			title: "Measuring the Numbers"
+			x: 0.5d
+			y: 3.0d
+			shape: "gear"
+			subtitle: "The Speedometer and the Stressometer are two information panels added by Create. You'll be able to see the information displayer by then with some Engineer's Goggles. These blocks can also output redstone signals with different intensities, based on the networks they're connected to"
+			dependencies: ["696CC33BB96232F5"]
+			id: "09E5215A91BCB203"
+			tasks: [
+				{
+					id: "72CA65F965E3DBF5"
+					type: "item"
+					item: "create:speedometer"
+				}
+				{
+					id: "1F84123FC672E2B2"
+					type: "item"
+					item: "create:stressometer"
+				}
+			]
+			rewards: [{
+				id: "26C92018B58B3153"
+				type: "item"
+				item: "create:andesite_alloy"
+				count: 32
+			}]
+		}
+		{
+			title: "Making Elevators"
+			x: 0.0d
+			y: 4.0d
+			shape: "gear"
+			subtitle: "The Rope Pulley can be used to transport contraptions, vertically. This can be useful for making Elevators and other amazing transportation mechanisms"
+			dependencies: ["696CC33BB96232F5"]
+			id: "7250325D5F584C73"
+			tasks: [{
+				id: "1EEEB5ED619E8A80"
+				type: "item"
+				item: "create:rope_pulley"
+			}]
+			rewards: [{
+				id: "0B8A8F78CF6B47FC"
+				type: "item"
+				item: "create:andesite_alloy"
+				count: 16
+			}]
+		}
+		{
+			title: "Making Cable Cars"
+			x: -2.0d
+			y: 4.0d
+			shape: "gear"
+			subtitle: "The Gantry Carriage can be used to transport contraptions over long distances. If you use this to your advantage, you can make amazing Cable Cars for item transportation, or for your own transportation"
+			dependencies: ["696CC33BB96232F5"]
+			id: "291EE76725A67938"
+			tasks: [
+				{
+					id: "265A7E99B586453F"
+					type: "item"
+					item: "create:gantry_carriage"
+				}
+				{
+					id: "0253FCA25365DF4E"
+					type: "item"
+					item: "create:gantry_shaft"
+					count: 16L
+				}
+			]
+			rewards: [{
+				id: "30492E36DCDB7745"
+				type: "item"
+				item: "create:andesite_alloy"
+				count: 32
+			}]
+		}
+		{
+			title: "Not Enough Glue?"
+			x: -4.5d
+			y: 4.5d
+			shape: "gear"
+			subtitle: "If you're running low on SlimeBalls, you might wanna look into these two blocks. They're able to create very efficient connections between each other and between other blocks without using tons of Glue"
+			dependencies: ["4B00B60DE355C08C"]
+			size: 1.3d
+			id: "3170F77405785D9E"
+			tasks: [
+				{
+					id: "1FAB429B4FAECB33"
+					type: "item"
+					item: "create:linear_chassis"
+				}
+				{
+					id: "1F09951FA78405A1"
+					type: "item"
+					item: "create:radial_chassis"
+				}
+			]
+			rewards: [{
+				id: "78544125898C35B7"
+				type: "item"
+				item: "create:andesite_alloy"
+				count: 16
+			}]
+		}
+		{
+			x: 5.0d
+			y: -2.0d
+			shape: "diamond"
+			subtitle: "The Capacitor is a common electrical component. It's recommened you automate their production when you have the chance"
+			dependencies: ["5F68C4D92EF20E09"]
+			id: "5563405ECC0EF6B3"
+			tasks: [{
+				id: "11E05934BA64A768"
+				type: "item"
+				item: "createaddition:capacitor"
+			}]
+		}
+		{
+			x: 5.0d
+			y: -3.5d
+			shape: "gear"
+			subtitle: "The Pipe Wrench will be used to manage complex storage and transportation systems. Quite simply, it will unlock the Pretty Pipes mod which will give you access to a primitive storage system"
+			dependencies: ["2E3880C1F6D082FA"]
+			id: "606DD326CCAB7FB2"
+			tasks: [{
+				id: "47627C7421C12D2D"
+				type: "item"
+				item: "prettypipes:wrench"
+			}]
+		}
+		{
+			title: "The Coke Oven - Mk II"
+			icon: "immersiveindustry:rotary_kiln"
+			x: 15.0d
+			y: 2.5d
+			shape: "gear"
+			subtitle: "The Rotary Kiln is a multiblock structure added by Immersive Industry. It can be considered an upgrade to the Coke Oven, as it can produce large amounts of Charcoal and Coal Coke at a high speed. When a process is started, you'll have to wait for the Kiln to warm up. After that happens, it will process the inputs faster, as the Kiln will lose just a tiny amount of heat for every crafted item. Using a Projector is adviced for building this structure"
+			dependencies: ["48BBC2E819A1B6A5"]
+			id: "36F63E8F2ED3348B"
+			tasks: [
+				{
+					id: "1CFEFE893C4E7939"
+					type: "item"
+					item: "minecraft:cauldron"
+				}
+				{
+					id: "5274DC8226860225"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 14L
+				}
+				{
+					id: "004BDE6449F2667B"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "266D3DE8B28B8B19"
+					type: "item"
+					item: "immersiveengineering:sheetmetal_steel"
+					count: 11L
+				}
+				{
+					id: "2BA762484B234982"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 8L
+				}
+				{
+					id: "6C34E88F7E7D5FE6"
+					type: "item"
+					item: "immersiveengineering:sheetmetal_iron"
+					count: 11L
+				}
+				{
+					id: "68EFF705CABD9560"
+					type: "item"
+					item: "immersiveindustry:rotary_kiln_cylinder"
+					count: 11L
+				}
+			]
+		}
+		{
+			x: 4.0d
+			y: 2.5d
+			shape: "gear"
+			subtitle: "Because this pack is eXpERt sTyLe. Left Click for more info"
+			description: ["When placed directly above a crop, within a 16 blocks area, this block will allow that said crop to grow year-round."]
+			dependencies: ["1D2EB9C9A8910914"]
+			id: "4841866E6C35BB32"
+			tasks: [{
+				id: "004D8F5DA753B190"
+				type: "item"
+				item: "decursiomod:greenhouse_glass"
+			}]
+			rewards: [
+				{
+					id: "3EBCF595CE3BA35D"
+					type: "item"
+					item: "decursiomod:greenhouse_glass"
+					count: 62
+				}
+				{
+					id: "4A6039CBCE1472E2"
+					type: "item"
+					item: "minecraft:green_dye"
+					count: 64
+				}
+			]
+		}
+	]
+}

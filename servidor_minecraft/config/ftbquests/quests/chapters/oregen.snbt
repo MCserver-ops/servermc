@@ -1,0 +1,605 @@
+{
+	id: "027EA4D69219845A"
+	group: "38E0BE3B64EF67A2"
+	order_index: 2
+	filename: "oregen"
+	title: "OreGen info"
+	icon: "emendatusenigmatica:diamond_ore"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Copper Ore"
+			icon: "emendatusenigmatica:copper_ingot"
+			x: -5.0d
+			y: -1.0d
+			subtitle: "Spawns in OverWorld = Min Y:44 - Max Y:60"
+			hide_dependency_lines: true
+			dependencies: ["1F24ED9459EB8A8E"]
+			optional: true
+			id: "14D7A6E1FBF95F4E"
+			tasks: [{
+				id: "3D00E5961504E8E2"
+				type: "checkmark"
+				title: "Ok!"
+			}]
+		}
+		{
+			title: "Tin Ore"
+			icon: "emendatusenigmatica:tin_ingot"
+			x: -4.0d
+			y: -1.0d
+			subtitle: "Spawns in OverWorld = Min Y:40 - Max Y:54"
+			hide_dependency_lines: true
+			dependencies: ["1F24ED9459EB8A8E"]
+			optional: true
+			id: "3B90AB7106E60A23"
+			tasks: [{
+				id: "64BB4F80D7439373"
+				type: "checkmark"
+				title: "Ok!"
+			}]
+		}
+		{
+			title: "Aluminum Ore"
+			icon: "emendatusenigmatica:aluminum_ingot"
+			x: -3.0d
+			y: -1.0d
+			subtitle: "Spawns in OverWorld = Min Y:50 - Max Y:70"
+			hide_dependency_lines: true
+			dependencies: ["1F24ED9459EB8A8E"]
+			optional: true
+			id: "38A3388F9DAAF566"
+			tasks: [{
+				id: "0D1CA5C5BAC27ADF"
+				type: "checkmark"
+				title: "Ok!"
+			}]
+		}
+		{
+			title: "Coal Ore"
+			icon: "minecraft:coal"
+			x: -3.0d
+			y: 0.0d
+			subtitle: "Spawns in OverWorld = Min Y:0 - Max Y:120"
+			hide_dependency_lines: true
+			dependencies: ["1F24ED9459EB8A8E"]
+			optional: true
+			id: "540F086227DE07BF"
+			tasks: [{
+				id: "33E1CB69D0F19A20"
+				type: "checkmark"
+				title: "Ok!"
+			}]
+		}
+		{
+			title: "Zinc Ore"
+			icon: "emendatusenigmatica:zinc_ingot"
+			x: -2.0d
+			y: -1.0d
+			subtitle: "Spawns in OverWorld = Min Y:34 - Max Y:50"
+			hide_dependency_lines: true
+			dependencies: ["1F24ED9459EB8A8E"]
+			optional: true
+			id: "5F5BA2D54E7809B0"
+			tasks: [{
+				id: "1FF74B4CFAF45893"
+				type: "checkmark"
+				title: "Ok!"
+			}]
+		}
+		{
+			title: "Cinnabar Ore"
+			icon: "emendatusenigmatica:cinnabar_gem"
+			x: -2.0d
+			y: 0.0d
+			subtitle: "Spawns in OverWorld = Min Y:4 - Max Y:16"
+			hide_dependency_lines: true
+			dependencies: ["1F24ED9459EB8A8E"]
+			optional: true
+			id: "0634FE431F9874E2"
+			tasks: [{
+				id: "2B4D8950200D0E8F"
+				type: "checkmark"
+				title: "Ok!"
+			}]
+		}
+		{
+			title: "Lead Ore"
+			icon: "emendatusenigmatica:lead_ingot"
+			x: -1.0d
+			y: -1.0d
+			subtitle: "Spawns in OverWorld = Min Y:32 - Max Y:40"
+			hide_dependency_lines: true
+			dependencies: ["1F24ED9459EB8A8E"]
+			optional: true
+			id: "76C6EB6D4C86E3FA"
+			tasks: [{
+				id: "1683AF7E40E6127C"
+				type: "checkmark"
+				title: "Ok!"
+			}]
+		}
+		{
+			title: "Lapis Ore"
+			icon: "minecraft:lapis_lazuli"
+			x: 0.0d
+			y: 0.0d
+			subtitle: "Spawns in OverWorld = Min Y:0 - Max Y:16"
+			hide_dependency_lines: true
+			dependencies: ["1F24ED9459EB8A8E"]
+			optional: true
+			id: "654FFD9197E8E222"
+			tasks: [{
+				id: "0BAFE7B8D9A2C13D"
+				type: "checkmark"
+				title: "Ok!"
+			}]
+		}
+		{
+			title: "Iron Ore"
+			icon: "minecraft:iron_ingot"
+			x: 0.0d
+			y: -1.0d
+			subtitle: "Spawns in OverWorld = Min Y:0 - Max Y:64"
+			hide_dependency_lines: true
+			dependencies: ["1F24ED9459EB8A8E"]
+			optional: true
+			id: "14576AA6FEB9F723"
+			tasks: [{
+				id: "1D6C9F9112599BB2"
+				type: "checkmark"
+				title: "Ok!"
+			}]
+		}
+		{
+			title: "Redstone Ore"
+			icon: "minecraft:redstone"
+			x: 1.0d
+			y: 0.0d
+			subtitle: "Spawns in OverWorld = Min Y:0 - Max Y:16"
+			hide_dependency_lines: true
+			dependencies: ["1F24ED9459EB8A8E"]
+			optional: true
+			id: "0C2062FB5022EA86"
+			tasks: [{
+				id: "659F643FC5E8A7AF"
+				type: "checkmark"
+				title: "Ok!"
+			}]
+		}
+		{
+			title: "Nickel Ore"
+			icon: "emendatusenigmatica:nickel_ingot"
+			x: 1.0d
+			y: -1.0d
+			subtitle: "Spawns in OverWorld = Min Y:24 - Max Y:40"
+			hide_dependency_lines: true
+			dependencies: ["1F24ED9459EB8A8E"]
+			optional: true
+			id: "2BDF4B071EE7E522"
+			tasks: [{
+				id: "3B9CEE1FF4941340"
+				type: "checkmark"
+				title: "Ok!"
+			}]
+		}
+		{
+			title: "Emerald Ore"
+			icon: "minecraft:emerald"
+			x: 2.0d
+			y: 0.0d
+			subtitle: "Spawns in OverWorld = Min Y:100 - Max Y:212"
+			hide_dependency_lines: true
+			dependencies: ["1F24ED9459EB8A8E"]
+			optional: true
+			id: "264AAC8438CEB214"
+			tasks: [{
+				id: "48F3DF03052ACF16"
+				type: "checkmark"
+				title: "Ok!"
+			}]
+		}
+		{
+			title: "Silver Ore"
+			icon: "emendatusenigmatica:silver_ingot"
+			x: 2.0d
+			y: -1.0d
+			subtitle: "Spawns in OverWorld = Min Y:30 - Max Y:38"
+			hide_dependency_lines: true
+			dependencies: ["1F24ED9459EB8A8E"]
+			optional: true
+			id: "495634F9BD04BB91"
+			tasks: [{
+				id: "668FE26EABC5C84E"
+				type: "checkmark"
+				title: "Ok!"
+			}]
+		}
+		{
+			title: "Diamond Ore"
+			icon: "minecraft:diamond"
+			x: 3.0d
+			y: 0.0d
+			subtitle: "Spawns in OverWorld = Min Y:0 - Max Y:16"
+			hide_dependency_lines: true
+			dependencies: ["1F24ED9459EB8A8E"]
+			optional: true
+			id: "05A9463B4492E9F8"
+			tasks: [{
+				id: "0C6B2C2FF6AA50CD"
+				type: "checkmark"
+				title: "Ok!"
+			}]
+		}
+		{
+			title: "Gold Ore"
+			icon: "minecraft:gold_ingot"
+			x: 3.0d
+			y: -1.0d
+			subtitle: "Spawns in OverWorld = Min Y:0 - Max Y:32"
+			hide_dependency_lines: true
+			dependencies: ["1F24ED9459EB8A8E"]
+			optional: true
+			id: "64FACBA386088E6E"
+			tasks: [{
+				id: "7D8EDF3746D61F5C"
+				type: "checkmark"
+				title: "Ok!"
+			}]
+		}
+		{
+			title: "Osmium Ore"
+			icon: "emendatusenigmatica:osmium_ingot"
+			x: 4.0d
+			y: -1.0d
+			subtitle: "Spawns in OverWorld = Min Y:20 - Max Y:44"
+			hide_dependency_lines: true
+			dependencies: ["1F24ED9459EB8A8E"]
+			optional: true
+			id: "126332CDA4DEE8C7"
+			tasks: [{
+				id: "50C46C676EAEBFE3"
+				type: "checkmark"
+				title: "Ok!"
+			}]
+		}
+		{
+			title: "Uranium Ore"
+			icon: "emendatusenigmatica:uranium_ingot"
+			x: 5.0d
+			y: -1.0d
+			subtitle: "Spawns in OverWorld = Min Y:4 - Max Y:20"
+			hide_dependency_lines: true
+			dependencies: ["1F24ED9459EB8A8E"]
+			optional: true
+			id: "3CB09B884EE82FC5"
+			tasks: [{
+				id: "17F96B9792410B65"
+				type: "checkmark"
+				title: "Ok!"
+			}]
+		}
+		{
+			title: "Cobalt Ore"
+			icon: "emendatusenigmatica:cobalt_ingot"
+			x: 0.0d
+			y: 1.0d
+			subtitle: "Spawns in The Nether = Min Y:46 - Max Y:78"
+			hide_dependency_lines: true
+			dependencies: ["1F24ED9459EB8A8E"]
+			optional: true
+			id: "1605ACE22336559E"
+			tasks: [{
+				id: "44B6FAB06BDEFD25"
+				type: "checkmark"
+				title: "Ok!"
+			}]
+		}
+		{
+			title: "Quartz Ore"
+			icon: "minecraft:quartz"
+			x: -1.0d
+			y: 1.0d
+			subtitle: "Spawns in The Nether = Min Y:40 - Max Y:140"
+			hide_dependency_lines: true
+			dependencies: ["1F24ED9459EB8A8E"]
+			optional: true
+			id: "6F33FD5D75B99548"
+			tasks: [{
+				id: "236401EDF9072142"
+				type: "checkmark"
+				title: "Ok!"
+			}]
+		}
+		{
+			title: "OreGen Info"
+			icon: "emendatusenigmatica:diamond_ore"
+			x: 0.0d
+			y: -3.0d
+			shape: "gear"
+			subtitle: "Below, you can see where ores/minerals can be found. These quests are optional, they're purpose is only for giving info"
+			dependencies: ["3073595C53701173"]
+			size: 2.0d
+			optional: true
+			id: "1F24ED9459EB8A8E"
+			tasks: [{
+				id: "2E962D67E65E7444"
+				type: "checkmark"
+				title: "Ok!"
+			}]
+		}
+		{
+			title: "Certus Quartz Ore"
+			icon: "appliedenergistics2:certus_quartz_crystal"
+			x: -2.0d
+			y: 4.0d
+			subtitle: "Spawns on The Moon = Min Y:8 - Max Y:36"
+			hide_dependency_lines: true
+			dependencies: ["1F24ED9459EB8A8E"]
+			optional: true
+			id: "2C7A65F70106CB8E"
+			tasks: [{
+				id: "2EA134F5D9C72A94"
+				type: "checkmark"
+				title: "Ok!"
+			}]
+		}
+		{
+			title: "Charged Certus Quartz Ore"
+			icon: "appliedenergistics2:charged_certus_quartz_crystal"
+			x: -1.0d
+			y: 4.0d
+			subtitle: "Spawns on The Moon = Min Y:5 - Max Y:25"
+			hide_dependency_lines: true
+			dependencies: ["1F24ED9459EB8A8E"]
+			optional: true
+			id: "187455C7DA8F74D8"
+			tasks: [{
+				id: "1DDEED4B748E0084"
+				type: "checkmark"
+				title: "Ok!"
+			}]
+		}
+		{
+			title: "Apatite Ore"
+			icon: "emendatusenigmatica:apatite_gem"
+			x: 0.5d
+			y: 5.0d
+			subtitle: "Spawns on Mars = Min Y:32 - Max Y:64"
+			hide_dependency_lines: true
+			dependencies: ["1F24ED9459EB8A8E"]
+			optional: true
+			id: "29186272D3F9B527"
+			tasks: [{
+				id: "11C8C0ABA82DF341"
+				type: "checkmark"
+				title: "Ok!"
+			}]
+		}
+		{
+			title: "Arcane Ore"
+			icon: "emendatusenigmatica:arcane_gem"
+			x: 1.0d
+			y: 4.0d
+			subtitle: "Spawns on The Moon = Min Y:8 - Max Y:42"
+			hide_dependency_lines: true
+			dependencies: ["1F24ED9459EB8A8E"]
+			optional: true
+			id: "6423E6C295E967EF"
+			tasks: [{
+				id: "78303B73A326306A"
+				type: "checkmark"
+				title: "Ok!"
+			}]
+		}
+		{
+			title: "Potassium Nitrate Ore"
+			icon: "emendatusenigmatica:potassium_nitrate_gem"
+			x: 1.5d
+			y: 5.0d
+			subtitle: "Spawns on Mars = Min Y:0 - Max Y:16"
+			hide_dependency_lines: true
+			dependencies: ["1F24ED9459EB8A8E"]
+			optional: true
+			id: "36FBF5CC2187EEFE"
+			tasks: [{
+				id: "4B44D79927AD2CA8"
+				type: "checkmark"
+				title: "Ok!"
+			}]
+		}
+		{
+			title: "Fluorite Ore"
+			icon: "emendatusenigmatica:fluorite_gem"
+			x: 0.0d
+			y: 6.0d
+			subtitle: "Spawns on Venus = Min Y:0 - Max Y:16"
+			hide_dependency_lines: true
+			dependencies: ["1F24ED9459EB8A8E"]
+			optional: true
+			id: "0BC12B2091D03E9A"
+			tasks: [{
+				id: "511FE46255343819"
+				type: "checkmark"
+				title: "Ok!"
+			}]
+		}
+		{
+			title: "Draconic Ore"
+			icon: "draconicevolution:draconium_dust"
+			x: 0.0d
+			y: 7.0d
+			subtitle: "Spawns on Mercury = Min Y:2 - Max Y:18"
+			hide_dependency_lines: true
+			dependencies: ["1F24ED9459EB8A8E"]
+			optional: true
+			id: "0A89D23421532B09"
+			tasks: [{
+				id: "4B1097C7C36636F3"
+				type: "checkmark"
+				title: "Ok!"
+			}]
+		}
+		{
+			title: "Dry Ice"
+			icon: "powah:dry_ice"
+			x: -0.5d
+			y: 5.0d
+			subtitle: "Spawns on Mars = Min Y:5 - Max Y:42"
+			hide_dependency_lines: true
+			dependencies: ["1F24ED9459EB8A8E"]
+			optional: true
+			id: "056BB2229E9421D3"
+			tasks: [{
+				id: "5A8C10DB0C1645F9"
+				type: "checkmark"
+				title: "Ok!"
+			}]
+		}
+		{
+			title: "Dimensional Shard"
+			icon: "rftoolsbase:dimensionalshard"
+			x: -0.5d
+			y: 3.0d
+			subtitle: "Spawns in The End"
+			hide_dependency_lines: true
+			dependencies: ["1F24ED9459EB8A8E"]
+			optional: true
+			id: "590909E368B87D26"
+			tasks: [{
+				id: "397DDE2F4C456123"
+				type: "checkmark"
+				title: "Ok!"
+			}]
+		}
+		{
+			title: "Nebu Ore"
+			icon: "atum:nebu_ingot"
+			x: 0.0d
+			y: 2.0d
+			subtitle: "Spawns in Atum = Min Y:0 - Max Y:64"
+			hide_dependency_lines: true
+			dependencies: ["1F24ED9459EB8A8E"]
+			optional: true
+			id: "2637C63FBFC9B362"
+			tasks: [{
+				id: "3BD9434A1EF3C2CB"
+				type: "checkmark"
+				title: "Ok!"
+			}]
+		}
+		{
+			title: "Ancient Debris"
+			icon: "minecraft:ancient_debris"
+			x: 1.0d
+			y: 1.0d
+			subtitle: "Spawns in The Nether = Min Y:12 - Max Y:17"
+			hide_dependency_lines: true
+			dependencies: ["1F24ED9459EB8A8E"]
+			optional: true
+			id: "06DA106F46EF0375"
+			tasks: [{
+				id: "11A7E1376E107C2E"
+				type: "checkmark"
+				title: "Ok!"
+			}]
+		}
+		{
+			title: "Desh Ore"
+			icon: "boss_tools:desh_ingot"
+			x: 2.0d
+			y: 4.0d
+			subtitle: "Spawns on The Moon = Min Y:0 - Max Y:23"
+			hide_dependency_lines: true
+			dependencies: ["1F24ED9459EB8A8E"]
+			optional: true
+			id: "70BAC6E5DF9D1D4B"
+			tasks: [{
+				id: "18F939B71E639ECE"
+				type: "checkmark"
+				title: "Ok!"
+			}]
+		}
+		{
+			title: "Silicone Ore"
+			icon: "boss_tools:silicon_ingot"
+			x: -1.5d
+			y: 5.0d
+			subtitle: "Spawns on Mars = Min Y:0 - Max Y:17"
+			hide_dependency_lines: true
+			dependencies: ["1F24ED9459EB8A8E"]
+			optional: true
+			id: "0BA440FB2C453417"
+			tasks: [{
+				id: "3C58731E34459685"
+				type: "checkmark"
+				title: "Ok!"
+			}]
+		}
+		{
+			title: "Thallasium Ore"
+			icon: "betterendforge:thallasium_ingot"
+			x: 0.5d
+			y: 3.0d
+			subtitle: "Spawns in The End"
+			hide_dependency_lines: true
+			dependencies: ["1F24ED9459EB8A8E"]
+			optional: true
+			id: "0E52C6D3DED010FE"
+			tasks: [{
+				id: "00722560E51D7794"
+				type: "checkmark"
+				title: "Ok!"
+			}]
+		}
+		{
+			title: "Pure Skystone Block"
+			icon: "decursiomod:pure_skystone_block"
+			x: 0.0d
+			y: 4.0d
+			subtitle: "Spawns on The Moon = Min Y:2 - Max Y:50"
+			hide_dependency_lines: true
+			dependencies: ["1F24ED9459EB8A8E"]
+			optional: true
+			id: "648E5F709CE0A969"
+			tasks: [{
+				id: "4716DF7BB264BF9F"
+				type: "checkmark"
+				title: "Ok!"
+			}]
+		}
+		{
+			title: "Sulfur Ore"
+			icon: "emendatusenigmatica:sulfur_gem"
+			x: -1.0d
+			y: 0.0d
+			subtitle: "Spawns in OverWorld = Min Y:0 - Max Y:16"
+			hide_dependency_lines: true
+			dependencies: ["1F24ED9459EB8A8E"]
+			optional: true
+			id: "4109A20125CFABF7"
+			tasks: [{
+				id: "1BCFF667D19F3229"
+				type: "checkmark"
+				title: "Ok!"
+			}]
+		}
+		{
+			title: "Alfheim Flux Ore"
+			icon: "decursiomod:alfheim_flux"
+			x: 0.0d
+			y: 8.0d
+			subtitle: "Spawns in Alfheim = Min Y:2 - Max Y:35"
+			hide_dependency_lines: true
+			dependencies: ["1F24ED9459EB8A8E"]
+			optional: true
+			id: "7B4527C23582240D"
+			tasks: [{
+				id: "020BFCE2AE2962A5"
+				type: "checkmark"
+				title: "Ok!"
+			}]
+		}
+	]
+}

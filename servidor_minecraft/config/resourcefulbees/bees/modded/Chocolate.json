@@ -1,0 +1,35 @@
+{
+    "flower": "minecraft:cocoa",
+    "creator": "Me_Ryan",
+    "lore": "Hive Bee",
+    "maxTimeInHive": 600,
+    "hasHoneycomb": true,
+    "baseLayerTexture": "chocolate/chocolate",
+    "ColorData": {
+      "modelType": "GELATINOUS",
+      "isBeeColored": false,
+      "honeycombColor": "#773500",
+      "primaryColor": "#773500",
+      "secondaryColor": "#aa3b09"
+    },
+    "CentrifugeData": {
+      "hasCentrifugeOutput": true,
+      "mainOutput": "create:chocolate",
+      "bottleOutput": "minecraft:honey_bottle",
+      "hasFluidOutput": true
+    },
+    "SpawnData": {
+      "canSpawnInWorld": false
+    },
+    "BreedData": {
+      "isBreedable": true,
+      "parent1": "Sugarbag",
+      "parent2": "Reed",
+      "feedItem": "minecraft:barrier",
+      "breedWeight": 0.50
+    },
+    "CombatData": {
+      "isPassive": true
+    },
+    "TraitData": {}
+  }

@@ -1,0 +1,676 @@
+{
+	id: "40063CF3A9BB593A"
+	group: "11592D5C828EEDBF"
+	order_index: 3
+	filename: "protection_3"
+	title: "Protection - 3"
+	icon: {
+		id: "redstone_arsenal:flux_chestplate"
+		Count: 1b
+		tag: { }
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	images: [
+		{
+			x: 4.0d
+			y: 3.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "structurize:textures/gui/buildtool/plus_red.png"
+			hover: ["Sustaining Units"]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: -2.0d
+			y: 3.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "minecraft:textures/mob_effect/speed.png"
+			hover: ["Locomotion Units"]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 1.0d
+			y: 6.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "cofh_core:textures/mob_effect/wrenched.png"
+			hover: ["Assistive Units"]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 1.0d
+			y: 8.5d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "thermal:textures/item/lightning_charge.png"
+			hover: ["Energy Units"]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 6.5d
+			y: 3.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "minecraft:textures/particle/bubble.png"
+			hover: ["Breathing Units"]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: -4.5d
+			y: 3.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "ftblibrary:textures/icons/shield.png"
+			hover: ["Shielding Units"]
+			click: ""
+			dev: false
+			corner: false
+		}
+	]
+	quests: [
+		{
+			title: "The Elementium Armor"
+			icon: {
+				id: "botania:elementium_chestplate"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 0.0d
+			y: -2.5d
+			shape: "gear"
+			subtitle: "Not your Barbie Girl - Part 1: The Elementium armor will spawn pixies to assist you in battle"
+			dependencies: ["12BEA0308056A4B6"]
+			id: "6E5C6826C4367E69"
+			tasks: [
+				{
+					id: "39702E23FC3CE22F"
+					type: "item"
+					item: {
+						id: "botania:elementium_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "24AAF33C2DB451CE"
+					type: "item"
+					item: {
+						id: "botania:elementium_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "5C6311934884ACA5"
+					type: "item"
+					item: {
+						id: "botania:elementium_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "203763F539180BC0"
+					type: "item"
+					item: {
+						id: "botania:elementium_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "The Archmage Robe"
+			icon: {
+				id: "ars_nouveau:archmage_robes"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 2.0d
+			y: -2.5d
+			shape: "gear"
+			subtitle: "Not Your Barbie Girl - Part 2: The Archmage robe will maximize your mana level, allowing you to cast more powerful spells"
+			dependencies: [
+				"6E5C6826C4367E69"
+				"02396D546396B926"
+			]
+			id: "3EA0036627D6866B"
+			tasks: [
+				{
+					id: "35B57EFE447A98DB"
+					type: "item"
+					item: {
+						id: "ars_nouveau:archmage_hood"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "0C0B8D334CDD2E0C"
+					type: "item"
+					item: {
+						id: "ars_nouveau:archmage_robes"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "1E8DA59F0E3CD545"
+					type: "item"
+					item: {
+						id: "ars_nouveau:archmage_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "4A1F62DFA4F3C24E"
+					type: "item"
+					item: {
+						id: "ars_nouveau:archmage_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "The AlfSteel Armor"
+			icon: {
+				id: "mythicbotany:alfsteel_chestplate"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 1.0d
+			y: -1.5d
+			shape: "gear"
+			subtitle: "Alfheim Explorer: Upgraded version of The TerraSteel Armor. Unlike its TerraSteel counterpart, this armor will provide speed, higher reach, jump boost and more"
+			dependencies: ["01C35754A9AEF761"]
+			id: "40E06CD2FC84DD80"
+			tasks: [
+				{
+					id: "2BF2DD1536D6A164"
+					type: "item"
+					item: {
+						id: "mythicbotany:alfsteel_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "1B0B38D0FB74BC98"
+					type: "item"
+					item: {
+						id: "mythicbotany:alfsteel_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "4BCEE2781B4532EE"
+					type: "item"
+					item: {
+						id: "mythicbotany:alfsteel_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "1523448BCCFC0765"
+					type: "item"
+					item: {
+						id: "mythicbotany:alfsteel_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "31F75C4C4736AB0B"
+				type: "loot"
+				table_id: 7176426831663151036L
+			}]
+		}
+		{
+			title: "The MekaSuit"
+			icon: {
+				id: "mekanism:mekasuit_bodyarmor"
+				Count: 1b
+				tag: {
+					HideFlags: 2
+				}
+			}
+			x: 1.0d
+			y: 3.0d
+			shape: "gear"
+			subtitle: "The Mark 86: A modular Power-Suit. Fully working on electricity and highly costomizable. Has a menu which can be accessed from the \"\\\" key. There you'll be able to configure the suit's modules and more"
+			dependencies: [
+				"40623128C431038D"
+				"0FE34F737BC52F81"
+			]
+			size: 1.5d
+			id: "360726A08FAD24CA"
+			tasks: [
+				{
+					id: "697508F3BF5BDD50"
+					type: "item"
+					item: {
+						id: "mekanism:mekasuit_helmet"
+						Count: 1b
+						tag: {
+							HideFlags: 2
+						}
+					}
+				}
+				{
+					id: "0E22B0BAF03CE622"
+					type: "item"
+					item: {
+						id: "mekanism:mekasuit_bodyarmor"
+						Count: 1b
+						tag: {
+							HideFlags: 2
+						}
+					}
+				}
+				{
+					id: "4098086606553921"
+					type: "item"
+					item: {
+						id: "mekanism:mekasuit_pants"
+						Count: 1b
+						tag: {
+							HideFlags: 2
+						}
+					}
+				}
+				{
+					id: "1D13065D38EF5204"
+					type: "item"
+					item: {
+						id: "mekanism:mekasuit_boots"
+						Count: 1b
+						tag: {
+							HideFlags: 2
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "072C3C1D52F80479"
+				type: "loot"
+				table_id: 7176426831663151036L
+			}]
+		}
+		{
+			title: "The Flux-Infused Armor"
+			icon: {
+				id: "redstone_arsenal:flux_chestplate"
+				Count: 1b
+				tag: { }
+			}
+			x: 1.0d
+			y: 1.0d
+			shape: "gear"
+			subtitle: "The Electric Knight: The Flux-Infused Armor will provide great protection when it's charged with RF. Additionally, each piece will give a charge of flux shielding. A charge can block any instance of damage up to 500 damage points. Charges regenerate after 30 seconds"
+			dependencies: [
+				"1FED40C0BDD7E015"
+				"2EB2C0CB138E095B"
+			]
+			id: "0FE34F737BC52F81"
+			tasks: [
+				{
+					id: "7AC9EDD963094A2B"
+					type: "item"
+					item: {
+						id: "redstone_arsenal:flux_helmet"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "378C5F2758DEC655"
+					type: "item"
+					item: {
+						id: "redstone_arsenal:flux_chestplate"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "592134AF69975AE1"
+					type: "item"
+					item: {
+						id: "redstone_arsenal:flux_leggings"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "13028973F1265C22"
+					type: "item"
+					item: {
+						id: "redstone_arsenal:flux_boots"
+						Count: 1b
+						tag: { }
+					}
+				}
+			]
+			rewards: [{
+				id: "77835B5EAE724CFC"
+				type: "loot"
+				table_id: 7176426831663151036L
+			}]
+		}
+		{
+			x: 3.0d
+			y: 3.0d
+			shape: "heart"
+			subtitle: "Will allow the Helmet of the MekaSuit to be filled with Nutritional Paste. While wearing the Helmet, you'll be fed with nutritional paste. Effectively removing the need of eating"
+			dependencies: ["20066A1C19E42D20"]
+			id: "32487003AE77BD7F"
+			tasks: [{
+				id: "72694F8CB5BA7507"
+				type: "item"
+				item: "mekanism:module_nutritional_injection_unit"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 5.0d
+			shape: "gear"
+			subtitle: "Will provide a night vision feature to the Helmet of the MekaSuit. Multiple of these will enhance the night vision feature further"
+			dependencies: ["20066A1C19E42D20"]
+			id: "5AA9F1A9612B9900"
+			tasks: [{
+				id: "2FAFE3CB7D90C9BA"
+				type: "item"
+				item: "mekanism:module_vision_enhancement_unit"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 7.5d
+			shape: "gear"
+			subtitle: "Will charge the Helmet of the MekaSuit while it's daytime and no solid blocks are above your head"
+			dependencies: ["20066A1C19E42D20"]
+			id: "5E01AE177953C0B3"
+			tasks: [{
+				id: "642C03D4AD1751E3"
+				type: "item"
+				item: "mekanism:module_solar_recharging_unit"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 4.0d
+			shape: "gear"
+			subtitle: "Will provide step asist to the MekaSuit. Additionally, will make you jump higher"
+			dependencies: ["20066A1C19E42D20"]
+			id: "7979B183ADE1669E"
+			tasks: [{
+				id: "29305838301A74E2"
+				type: "item"
+				item: "mekanism:module_hydraulic_propulsion_unit"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 2.0d
+			shape: "gear"
+			subtitle: "Will allow you to run faster and jump for longer distances"
+			dependencies: ["20066A1C19E42D20"]
+			id: "207610BFFC460B22"
+			tasks: [{
+				id: "2A288B8FBC575F80"
+				type: "item"
+				item: "mekanism:module_locomotive_boosting_unit"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 4.0d
+			shape: "gear"
+			subtitle: "Will show the amount of radiation you've been exposed to"
+			dependencies: ["20066A1C19E42D20"]
+			id: "458042FF669840D4"
+			tasks: [{
+				id: "661F524A16CC75EA"
+				type: "item"
+				item: "mekanism:module_dosimeter_unit"
+			}]
+		}
+		{
+			x: 5.5d
+			y: 3.5d
+			shape: "gear"
+			subtitle: "Will make the Helmet of the MekaSuit release small pulses of electricity to turn the nearby water into oxygen which you can breathe. Shortly, this allows you to breathe underwater"
+			dependencies: ["20066A1C19E42D20"]
+			id: "2CD21A1B3E0FDA3A"
+			tasks: [{
+				id: "67F53B3F3052C0E9"
+				type: "item"
+				item: "mekanism:module_electrolytic_breathing_unit"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 3.0d
+			shape: "heart"
+			subtitle: "Will allow you to defy gravity. And yeah. This is just a fancy way of saying that this thing will allow the MekaSuit to perform Creative Flight"
+			dependencies: ["36367A18678E09A3"]
+			id: "3E19FCB680E818E7"
+			tasks: [{
+				id: "2DBBD318829E4773"
+				type: "item"
+				item: "mekanism:module_gravitational_modulating_unit"
+			}]
+			rewards: [{
+				id: "5E499B7031EF5EB5"
+				type: "loot"
+				table_id: 7176426831663151036L
+			}]
+		}
+		{
+			x: 2.5d
+			y: 7.5d
+			shape: "gear"
+			subtitle: "Will equally distribute the energy through the whole MekaSuit"
+			dependencies: ["20066A1C19E42D20"]
+			id: "7B2C682EB22C930F"
+			tasks: [{
+				id: "781AF6B276D4E965"
+				type: "item"
+				item: "mekanism:module_charge_distribution_unit"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 7.5d
+			shape: "gear"
+			subtitle: "Will increase the energy storage capacity of any piece of Meka-Equipment "
+			dependencies: ["20066A1C19E42D20"]
+			id: "4A77B2459F346D6C"
+			tasks: [{
+				id: "69BDB6B68B411248"
+				type: "item"
+				item: "mekanism:module_energy_unit"
+			}]
+		}
+		{
+			x: -3.5d
+			y: 3.5d
+			shape: "gear"
+			subtitle: "Will essentially integrate the features of the Hazmat Suit, into the MekaSuit, effectively allowing the Mekasuit to protect you against radiation"
+			dependencies: ["20066A1C19E42D20"]
+			id: "4D8B7E867AE8FA09"
+			tasks: [{
+				id: "6B329528C1BC6F2F"
+				type: "item"
+				item: "mekanism:module_radiation_shielding_unit"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 5.0d
+			shape: "gear"
+			subtitle: "Will attract nearby dropped items to you. Use the configuration menu of the MekaSuit to adjust the strenght of the modules"
+			dependencies: ["20066A1C19E42D20"]
+			id: "550C59DD937B6C70"
+			tasks: [{
+				id: "4EA0289C7D7A0D0D"
+				type: "item"
+				item: "mekanism:module_magnetic_attraction_unit"
+			}]
+		}
+		{
+			x: 5.5d
+			y: 2.5d
+			shape: "gear"
+			subtitle: "Will negate potion effects. In the Configuration Menu of the MekaSuit you can select if good potion effects should also be negated or not"
+			dependencies: ["20066A1C19E42D20"]
+			id: "2A425C7E77B92D50"
+			tasks: [{
+				id: "7B93434D13853640"
+				type: "item"
+				item: "mekanism:module_inhalation_purification_unit"
+			}]
+		}
+		{
+			x: -3.5d
+			y: 2.5d
+			shape: "gear"
+			subtitle: "Will enhance the ability of the MekaSuit to withstand direct hits from Laser beams"
+			dependencies: ["20066A1C19E42D20"]
+			id: "775F25A88BFF1F4F"
+			tasks: [{
+				id: "68A6B13E08B3C148"
+				type: "item"
+				item: "mekanism:module_laser_dissipation_unit"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 2.0d
+			shape: "gear"
+			subtitle: "Will show the amount of radiation present in the nearby environment"
+			dependencies: ["20066A1C19E42D20"]
+			id: "05F086FA4F9F2EED"
+			tasks: [{
+				id: "321459D83FD38963"
+				type: "item"
+				item: "mekanism:module_geiger_unit"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 5.0d
+			shape: "gear"
+			subtitle: "By dispersing hydrogen, this module will freeze the water underneath you. Use the Configuration Menu of the MekaSuit to disable this module of the field"
+			dependencies: ["20066A1C19E42D20"]
+			id: "0E64933E18990331"
+			tasks: [{
+				id: "61BC44A87A62176C"
+				type: "item"
+				item: "mekanism:module_frost_walker_unit"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 7.5d
+			shape: "gear"
+			subtitle: "Will give power to the Pants from the MekaSuit while you're on fier. Additionally it will reduce the damage you receive from heat sources"
+			dependencies: ["20066A1C19E42D20"]
+			id: "0C5550FDF66EF90D"
+			tasks: [{
+				id: "45E9C2F5FAB1AA97"
+				type: "item"
+				item: "mekanismgenerators:module_geothermal_generator_unit"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 0.0d
+			shape: "gear"
+			subtitle: "Gliding Forever. Left Click for more info"
+			description: [
+				"The Flux-Infused Elytra may be the best randition of an upgraded Elytra until this point. It is ment ot be used with a Flux-Infused Elytra Controller. Without it, it will be just a regualar Elytra, but powered by RF."
+				""
+				"While gliding, a Right-Click with the Controller will boost you forwards, just like a regular Firework would. This action will consume some additional power."
+				""
+				"When the Elytra is Empowered (Empowering the Controller will also Empower the Elytra for conveniance) you'll receive a constant boost forward. This will consume more power at a constant rate, but you'll basically become Iron Man, so we'd say it's worth it."
+				""
+				"Oh, one last thing. The Flux-Infused Elytra provides 5 points of protection. A regular Elytra has no protection, and a Flux-Infused Chestplate has 8 protection points."
+			]
+			dependencies: [
+				"1FED40C0BDD7E015"
+				"2EB2C0CB138E095B"
+				"420F4418F0553A1B"
+			]
+			id: "32D1A3181A903103"
+			tasks: [{
+				id: "71C4231107CD8F48"
+				type: "item"
+				item: {
+					id: "redstone_arsenal:flux_elytra"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "7698C4B3B600D18B"
+				type: "item"
+				item: "redstone_arsenal:flux_controller"
+			}]
+		}
+	]
+}

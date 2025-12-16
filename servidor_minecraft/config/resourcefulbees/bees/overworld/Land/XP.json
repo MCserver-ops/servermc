@@ -1,0 +1,31 @@
+{
+    "flower": "atum:nebu_block",
+    "creator": "Me_Ryan",
+    "lore": "Hive Bee",
+    "maxTimeInHive": 600,
+    "hasHoneycomb": true,
+    "baseLayerTexture": "xp/xp",
+    "ColorData": {
+      "honeycombColor":"#00ff1f"
+    },
+    "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+        "mainOutput": "minecraft:sugar",
+        "bottleOutput": "minecraft:experience_bottle",
+        "bottleOutputWeight": 0.70,
+        "mainOutputWeight": 0.25
+    },
+    "SpawnData": {
+      "canSpawnInWorld": false
+    },
+    "BreedData": {
+      "isBreedable": true,
+      "parent1": "XP_Drone",
+      "parent2": "Wither",
+      "feedItem": "minecraft:barrier"
+    },
+    "CombatData": {
+      "isPassive": true
+    },
+    "TraitData": {}
+  }

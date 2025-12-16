@@ -1,0 +1,444 @@
+{
+  "entries": [
+    {
+      "item": "projecte:red_matter",
+      "emc": 33619968
+    },
+    {
+      "item": "projecte:dark_matter",
+      "emc": 16809984
+    },
+    {
+      "item": "projecte:alchemical_coal",
+      "emc": 0
+    },
+    {
+      "item": "projecte:mobius_fuel",
+      "emc": 0
+    },
+    {
+      "item": "projecte:aeternalis_fuel",
+      "emc": 0
+    },
+    {
+      "item": "minecraft:chainmail_helmet",
+      "emc": 0
+    },
+    {
+      "item": "minecraft:chainmail_chestplate",
+      "emc": 0
+    },
+    {
+      "item": "minecraft:chainmail_leggings",
+      "emc": 0
+    },
+    {
+      "item": "minecraft:chainmail_boots",
+      "emc": 0
+    },
+    {
+      "item": "minecraft:golden_helmet",
+      "emc": 0
+    },
+    {
+      "item": "minecraft:golden_chestplate",
+      "emc": 0
+    },
+    {
+      "item": "minecraft:golden_leggings",
+      "emc": 0
+    },
+    {
+      "item": "minecraft:golden_boots",
+      "emc": 0
+    },
+    {
+      "item": "thermal:saw_blade",
+      "emc": 0
+    },
+    {
+      "item": "thermal:drill_head",
+      "emc": 0
+    },
+    {
+      "item": "thermal:basalz_rod",
+      "emc": 1536
+    },
+    {
+      "item": "thermal:blitz_rod",
+      "emc": 1536
+    },
+    {
+      "item": "thermal:blizz_rod",
+      "emc": 1536
+    },
+    {
+      "item": "appliedenergistics2:certus_quartz_crystal",
+      "emc": 512
+    },
+    {
+      "item": "appliedenergistics2:purified_certus_quartz_crystal",
+      "emc": 640
+    },
+    {
+      "item": "appliedenergistics2:purified_nether_quartz_crystal",
+      "emc": 384
+    },
+    {
+      "item": "appliedenergistics2:charged_certus_quartz_crystal",
+      "emc": 1024
+    },
+    {
+      "item": "mekanism:pellet_antimatter",
+      "emc": 466944
+    },
+    {
+      "item": "emendatusenigmatica:electrum_ingot",
+      "emc": 2560
+    },
+    {
+      "item": "emendatusenigmatica:invar_ingot",
+      "emc": 1280
+    },
+    {
+      "item": "astralsorcery:starmetal_ingot",
+      "emc": 1024
+    },
+    {
+      "item": "eidolon:soul_shard",
+      "emc": 6144
+    },
+    {
+      "item": "ars_nouveau:mana_bloom_crop",
+      "emc": 256
+    },
+    {
+      "item": "appliedenergistics2:sky_stone_block",
+      "emc": 2048
+    },
+    {
+      "item": "appliedenergistics2:smooth_sky_stone_block",
+      "emc": 2176
+    },
+    {
+      "item": "eidolon:shadow_gem",
+      "emc": 8192
+    },
+    {
+      "item": "psi:psigem",
+      "emc": 8192
+    },
+    {
+      "item": "draconicevolution:large_chaos_frag",
+      "emc": 2101248
+    },
+    {
+      "item": "emendatusenigmatica:cobalt_ingot",
+      "emc": 512
+    },
+    {
+      "item": "powah:dry_ice",
+      "emc": 8192
+    },
+    {
+      "item": "boss_tools:silicon_ingot",
+      "emc": 256
+    },
+    {
+      "item": "boss_tools:desh_ingot",
+      "emc": 256
+    },
+    {
+      "item": "emendatusenigmatica:arcane_gem",
+      "emc": 8192
+    },
+    {
+      "item": "betterendforge:thallasium_ingot",
+      "emc": 1024
+    },
+    {
+      "item": "emendatusenigmatica:apatite_gem",
+      "emc": 512
+    },
+    {
+      "item": "emendatusenigmatica:potassium_nitrate_gem",
+      "emc": 512
+    },
+    {
+      "item": "emendatusenigmatica:fluorite_gem",
+      "emc": 4096
+    },
+    {
+      "item": "draconicevolution:draconium_dust",
+      "emc": 16384
+    },
+    {
+      "item": "decursiomod:alfheim_flux",
+      "emc": 64
+    },
+    {
+      "item": "emendatusenigmatica:cinnabar_gem",
+      "emc": 128
+    },
+    {
+      "item": "emendatusenigmatica:sulfur_gem",
+      "emc": 256
+    },
+    {
+      "item": "atum:nebu_ingot",
+      "emc": 512
+    },
+    {
+      "item": "emendatusenigmatica:constantan_ingot",
+      "emc": 1152
+    },
+    {
+      "item": "mekanism:crystal_uranium",
+      "emc": 8192
+    },
+    {
+      "item": "mekanism:crystal_lead",
+      "emc": 8192
+    },
+    {
+      "item": "mekanism:crystal_tin",
+      "emc": 8192
+    },
+    {
+      "item": "mekanism:crystal_copper",
+      "emc": 8192
+    },
+    {
+      "item": "mekanism:crystal_osmium",
+      "emc": 8192
+    },
+    {
+      "item": "mekanism:crystal_gold",
+      "emc": 8192
+    },
+    {
+      "item": "mekanism:crystal_iron",
+      "emc": 8192
+    },
+    {
+      "item": "emendatusenigmatica:arcane_crystal",
+      "emc": 8192
+    },
+    {
+      "item": "emendatusenigmatica:potassium_nitrate_crystal",
+      "emc": 8192
+    },
+    {
+      "item": "emendatusenigmatica:sulfur_crystal",
+      "emc": 8192
+    },
+    {
+      "item": "emendatusenigmatica:apatite_crystal",
+      "emc": 8192
+    },
+    {
+      "item": "emendatusenigmatica:cinnabar_crystal",
+      "emc": 8192
+    },
+    {
+      "item": "emendatusenigmatica:bitumen_crystal",
+      "emc": 8192
+    },
+    {
+      "item": "emendatusenigmatica:fluorite_crystal",
+      "emc": 8192
+    },
+    {
+      "item": "emendatusenigmatica:charged_certus_quartz_crystal",
+      "emc": 8192
+    },
+    {
+      "item": "emendatusenigmatica:certus_quartz_crystal",
+      "emc": 8192
+    },
+    {
+      "item": "emendatusenigmatica:cobalt_crystal",
+      "emc": 8192
+    },
+    {
+      "item": "emendatusenigmatica:zinc_crystal",
+      "emc": 8192
+    },
+    {
+      "item": "emendatusenigmatica:nickel_crystal",
+      "emc": 8192
+    },
+    {
+      "item": "emendatusenigmatica:silver_crystal",
+      "emc": 8192
+    },
+    {
+      "item": "emendatusenigmatica:aluminum_crystal",
+      "emc": 8192
+    },
+    {
+      "item": "emendatusenigmatica:quartz_crystal",
+      "emc": 8192
+    },
+    {
+      "item": "emendatusenigmatica:redstone_crystal",
+      "emc": 8192
+    },
+    {
+      "item": "emendatusenigmatica:lapis_crystal",
+      "emc": 8192
+    },
+    {
+      "item": "emendatusenigmatica:emerald_crystal",
+      "emc": 8192
+    },
+    {
+      "item": "emendatusenigmatica:diamond_crystal",
+      "emc": 8192
+    },
+    {
+      "item": "emendatusenigmatica:coal_crystal",
+      "emc": 8192
+    },
+    {
+      "item": "mysticalagriculture:inferium_essence",
+      "emc": 200704
+    },
+    {
+      "item": "mysticalagriculture:prudentium_essence",
+      "emc": 262656
+    },
+    {
+      "item": "mysticalagriculture:tertium_essence",
+      "emc": 525312
+    },
+    {
+      "item": "powah:uraninite",
+      "emc": 935936
+    },
+    {
+      "item": "mysticalagriculture:imperium_essence",
+      "emc": 1050624
+    },
+    {
+      "item": "mysticalagriculture:supremium_essence",
+      "emc": 2101248
+    },
+    {
+      "item": "mysticalagradditions:insanium_essence",
+      "emc": 4202496
+    },
+    {
+      "item": "astralsorcery:rock_crystal",
+      "emc": 2048
+    },
+    {
+      "item": "powah:dielectric_paste",
+      "emc": 313343
+    },
+    {
+      "item": "decursiomod:energized_iron",
+      "emc": 9216
+    },
+    {
+      "item": "powah:steel_energized",
+      "emc": 36864
+    },
+    {
+      "item": "powah:crystal_blazing",
+      "emc": 73728
+    },
+    {
+      "item": "powah:crystal_niotic",
+      "emc": 147456
+    },
+    {
+      "item": "powah:crystal_spirited",
+      "emc": 294912
+    },
+    {
+      "item": "powah:crystal_nitro",
+      "emc": 589824
+    },
+    {
+      "item": "draconicevolution:draconium_ingot",
+      "emc": 0
+    },
+    {
+      "item": "mekanism:pellet_polonium",
+      "emc": 36864
+    },
+    {
+      "item": "emendatusenigmatica:lumium_ingot",
+      "emc": 12288
+    },
+    {
+      "item": "emendatusenigmatica:signalum_ingot",
+      "emc": 12800
+    },
+    {
+      "item": "emendatusenigmatica:enderium_ingot",
+      "emc": 13824
+    },
+    {
+      "item": "betterendforge:terminite_ingot",
+      "emc": 50688
+    },
+    {
+      "item": "mysticalagriculture:prosperity_ingot",
+      "emc": 103936
+    },
+    {
+      "item": "mysticalagriculture:prosperity_gemstone",
+      "emc": 25984
+    },
+    {
+      "item": "betterendforge:aeternium_ingot",
+      "emc": 112128
+    },
+    {
+      "item": "immersiveengineering:hemp_fabric",
+      "emc": 512
+    },
+    {
+      "item": "minecraft:chest",
+      "emc": 64
+    },
+    {
+      "item": "industrialforegoing:pink_slime",
+      "emc": 4202496
+    },
+    {
+      "item": "industrialforegoing:pink_slime_ingot",
+      "emc": 4202624
+    },
+    {
+      "item": "create:refined_radiance",
+      "emc": 8192
+    },
+    {
+      "item": "create:shadow_steel",
+      "emc": 8192
+    },
+    {
+      "item": "endless:infinity_catalyst",
+      "emc": 134479872
+    },
+    {
+      "item": "minecraft:clay",
+      "emc": 64
+    },
+    {
+      "item": "mekanism:pellet_plutonium",
+      "emc": 36864
+    },
+    {
+      "item": "draconicevolution:draconium_nugget",
+      "emc": 0
+    },
+    {
+      "item": "draconicevolution:draconium_block",
+      "emc": 0
+    }
+  ]
+}

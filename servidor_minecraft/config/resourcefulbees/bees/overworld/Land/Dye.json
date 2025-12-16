@@ -1,0 +1,30 @@
+{
+  "flower": "ALL",
+  "creator": "Me_Ryan",
+  "lore": "Hive Bee",
+  "maxTimeInHive": 600,
+  "hasHoneycomb": true,
+  "baseLayerTexture": "dye/dyebee",
+  "ColorData": {
+    "isBeeColored": false,
+    "honeycombColor": "#68ff00",
+    "primaryColor": "#68ff00",
+    "secondaryColor": "#ff0000"
+  },
+  "MutationData": {
+  },
+  "SpawnData": {
+    "canSpawnInWorld": false
+  },
+  "BreedData": {
+    "isBreedable": true,
+    "parent1": "Red_Carpenter",
+    "parent2": "Green_Carpenter",
+    "feedItem": "small",
+    "feedAmount": 32
+  },
+  "CombatData": {  
+    "isPassive": true  
+    },
+  "TraitData": {}
+}

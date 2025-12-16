@@ -1,0 +1,2990 @@
+{
+	id: "28AB4CEFBE88E987"
+	group: "11592D5C828EEDBF"
+	order_index: 0
+	filename: "Gear_3"
+	title: "Gear - 3"
+	icon: "thermal:machine_furnace"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 8.0d
+			y: 5.0d
+			shape: "square"
+			subtitle: "Steel Casings are used as a base to create powerful machines added by Mekanism"
+			dependencies: [
+				"19636F8D83618C41"
+				"1FED40C0BDD7E015"
+			]
+			dependency_requirement: "all_started"
+			id: "7837C14C3F27ED88"
+			tasks: [{
+				id: "0E7322B387668A5A"
+				type: "item"
+				item: "mekanism:steel_casing"
+			}]
+		}
+		{
+			x: 15.0d
+			y: 5.0d
+			shape: "square"
+			subtitle: "Entering Mekanism. Left Click for more info"
+			description: [
+				"Well, you reached another milestone. Making this machine will officially introduce you to Mekanism. You'll be working a lot of this mod in the future, so get used to it's interface. Speaking of, let's see how it looks:"
+				""
+				"{image:kubejs:textures/mekanism/mekanism_machine_gui_example.png width:130 height:100 align:1 fit:true}"
+				""
+				"Don't panic. Might look a little complicated, but in fact, it isn't. Let's take the side buttons first:"
+				""
+				"- Orage: This is the Side Configuration panel. Here you can choose on which side you want this machine to export or import items. Oh, might be great to know. Mekanism's machines, unlike Thermal's machines, DO NOT have an auto-input feature. You'll have to input items with a pipe or something."
+				""
+				"- Aqua: This panel will be used for sorting."
+				""
+				"- Yellow: This is the Energy Information panel and it will show info about the energy used and needed by the machine in order to operate."
+				""
+				"- Violet: This is the Machine Upgrade panel and it will allow you to see the upgrades which can be received by a machine and the currently installed upgrades. It will also allow you to place upgrades in the machine."
+				""
+				"- White: This is the Security Panel. This will be used with a Security Desk to allow only certain individuals to access your machines. Yeah, this might be useful on multiplayer servers."
+				""
+				"- Pink: This is the Redstone Control panel where you'll be able to configure the machine's behaviour to redstone signals."
+				""
+				"Now that we've covered the side button, let's move to the main interface:"
+				""
+				"- Red: In Mekanism, Red means Input, so that's the slot where you'll place your main input ingredient."
+				""
+				"- Dark Yellow: In Mekanism, Dark Yellow means Extra, so that's where you'll place an extra ingredient in order to make a recipe."
+				""
+				"- Blue: In Mekanism, Blue means Output, so that's the slot where you'll get the resulting product of any recipe."
+				""
+				"- Neon Green: That's the power slot. So there you'll be able to place items such as energy tablets in order to power your machine if for some reason, you don't want to use a cable and a direct power source."
+				""
+				"Now, the Metallurgic Infuser has many uses, including the production of Basic Control Circuits, but until you'll be able to make those, it will serve as a perfect upgrade to your Steel factory."
+				""
+				"PS: This machine also has a \"Dump\" button to remove the Extra materials located in its internal tank."
+			]
+			dependencies: ["4CF1DAD5B1DD93B0"]
+			id: "09812AE1E82D15C5"
+			tasks: [{
+				id: "6568C18319153187"
+				type: "item"
+				item: "mekanism:metallurgic_infuser"
+			}]
+		}
+		{
+			title: "Fission Reactor"
+			x: 20.0d
+			y: 12.0d
+			shape: "square"
+			subtitle: "The Follout Machine. Left Click for more info"
+			description: [
+				"Welcome to the world of Nuclear Power. Here, you'll start to generate huge amounts of energy with no risks whatsoever. HAHAHA, jokes aside, this is serious. Making power with a Fission Reactor will be more dangerous then you might think, so we'll walk you through all the steps required to perform this job, as safely as possible. "
+				""
+				"Before starting, we also suggest you to make your own research on the Fission Reactor if you feel like you want to know more about this subject."
+				""
+				"Ok, first of all. Since you have access to teleportation, it might be a good idea to build the whole nuclear plant far away from your base, as a very tiny mistake could ruin everything."
+				""
+				"Second of all, let's see how the Fission Reactor works. This thingg will NOT produce power on its own. However, it will produce heat which can be used to either turn water into steam, or sodium into superheated sodium. Yes, there are two ways of producing power with a Fission reactor and we'll walk you through both of them."
+				""
+				"Steam - The Reactor has to be constantly fed with water both to keep it cooled down, and to produce steam. The resulting steam can be transfered to a Turbine to produce power. Simple, right? If you want to know more about the Turbine, we have a quest dedicated to it."
+				""
+				"Superheated Sodium - The Reactor ahs to be constantly fed with Sodium both to keep it cool and to produce Superheated Sodium. This resulting gas will be taken from the Reactor and will be fed into a water filled Boiler. The Superheated Sodium will heat up the Boiler, which will produce Steam. Of course, after that, the Steam will be used in a Turbine to make power."
+				""
+				"Since using Sodium as a coolant, will be a harder thing to achieve, we have to tell you that it is also rewarding. Sodium is better for producing high amounts of heat which will result in higher fuel burning rates."
+				""
+				"Ok, we've covered cooling methods. Now, let's see how to build this thing and how to actually use it."
+				""
+				"The Fission Reactor is a modular multiblock structure. This means that you can build it however you want (of course, there are some limits, but you get it). The Reactor structure has two components. The External Casing and the Internal Components."
+				""
+				"Internal Components - these consist in Fission Control Rods. A Control Rod is formed by a 1x1 block wide column made wof 1 to 15 Fission Fuel Assembly and a Single Control Rod Assembly at the top. These Control Rods must NOT touch each other. Maximum control rod density can be achieved by placing them in a checkerboard pattern."
+				""
+				"External Casing - this has to be a cuboid of minimum outside size 3x4x3, up to 18x18x18. The edges of the outer shell must be made of Fission Reactor Casings and the faces of the outer shell can be either Fission Reactor Casing, Reactor Glass, Fission Reactor Port or Fission Reactor Logic Adapter."
+				""
+				"Now, let's cover each of these blocks:"
+				""
+				"Reactor Casing - makes the edges of the external reactor casing."
+				""
+				"Reactor Glass - makes the faces of the reactor casing. It allows you to see what's inside the reactor."
+				""
+				"Fission Reactor Port - you should have at least 4 of these. You can configure them to input Coolent and Fuel to the Reactor and output Heated Coolent and Nuclear Waste from the Reactor by using a Configurator."
+				""
+				"Fission Reactor Logic Adapter - this one is optional. It will allow you to remotely control the Reactor. With one installed, you can use various events or conditions to control the reactor automatically with no manual input. This is useful for prevention of meltdowns. It can be accessed by right-clicking it."
+				""
+				"Here's a picture of the absolute smallest Fission Reactor:"
+				""
+				"{image:kubejs:textures/mekanism/fission_reactor_example.png width:100 height:100 align:1}"
+				""
+				"Again, the ports have to be configured properly with a Configurator by shift right-clicking them. After that, you should be ready to add the Coolent and the Fuel to the Reactor. Coolent has to constantly be provived in very large quantities, otherwise the unthinkable might happen."
+				""
+				"We recommend to always wear a Hazmat Suit while working with the radioactive side of Makenism, so that you don't die randomly. Ok, now let's see how radiation can leak into the environment:"
+				""
+				"- Fission reactor overheating which leads to a core meltdown (actually blowing up). Just supply your reactor with enough Coolent before starting it. Keep supplying Coolent to the Reactor at all times."
+				""
+				"- Fission reactor running with its Waste tank full. The Nuclear Waste and all the other Radioactive materials should be stored only in Radioactive Waste Barrels. When these Barrels are filled with Nuclear Waste, they'll delete their contents at a rate of 1 mB per minute. Keep in mind that these Barrels CANNOT be moved by any means once they store radioactive material. "
+				""
+				"- Breaking any block containing radioactive materials. Most notably Pressurized Tubes and Radioactive Waste Barrels. This also applies to machines, like a Pressurized Reaction Chamber containing polonium for example. These can still be broken safely if they are somehow drained of their radioactive contents beforehand."
+				""
+				"Now, let's talk a bit about what happens if you screw up and irradiate an entire area. If you have your particles turned on in your video settings, you'll be able to spot neon green particles in the air. These will try to indicate the area which has high amounts of radiation. For more accurate measurements of the radiation present in the environment, you can use a Geiger Counter (which is one of the rewards of this quests)."
+				""
+				"To see what's the amount of radiation you've been exposed to, you can use a Dosimeter (which is the other reward for this quest)."
+				""
+				"An irradiated area will clear itself over time. There are no options to shorten this amount of time. If you get radiation poisoning, unfortunately, that's a 99% sentence to death. Why 99% and not 100%? Well, you will not die if you can survive the amount of damage you'll receive until your radiation dose lowers. So yeah, that's that."
+			]
+			dependencies: ["40623128C431038D"]
+			id: "375AE1646F859207"
+			tasks: [
+				{
+					id: "2F427A022992030D"
+					type: "item"
+					item: "mekanismgenerators:fission_reactor_casing"
+				}
+				{
+					id: "05AC6540864F2B93"
+					type: "item"
+					item: "mekanismgenerators:reactor_glass"
+				}
+				{
+					id: "73C2AEFB3E964EDE"
+					type: "item"
+					item: "mekanismgenerators:fission_reactor_port"
+					count: 4L
+				}
+				{
+					id: "0FE8FFD1C560EE5E"
+					type: "item"
+					item: "mekanismgenerators:fission_fuel_assembly"
+				}
+				{
+					id: "24690AEF7CEB3711"
+					type: "item"
+					item: "mekanismgenerators:control_rod_assembly"
+				}
+			]
+			rewards: [
+				{
+					id: "1D1800991A824A09"
+					type: "item"
+					item: "mekanism:dosimeter"
+				}
+				{
+					id: "072B435671818EEA"
+					type: "item"
+					item: "mekanism:geiger_counter"
+				}
+				{
+					id: "5DB221134E1FAF2C"
+					type: "loot"
+					table_id: 7176426831663151036L
+				}
+			]
+		}
+		{
+			title: "The Industrial Turbine"
+			x: 21.0d
+			y: 12.0d
+			shape: "gear"
+			subtitle: "Steam is Power, duh. Left Click for more info"
+			description: [
+				"We'll be straight. You want RF? You need steam. Unfortunately, the Steam produced by the Create Boilers, won't cut it. You'll need Steam from Mekanism. "
+				""
+				"There are multiple ways of obtaining Steam:"
+				""
+				"- The Fission Reactor"
+				"- Mekanism's Boiler"
+				"- The Fusion Reactor"
+				""
+				"Each of these ways of obtaining Steam, has its own quest where their functionality is explained more cleary, so check those out if you want to learn more. Now let's get back to the Industrial Turbine and see how to build it."
+				""
+				"There are a few rules which have to be followed. The structure must be vertical. Its length and width have to be equal. Maximum size is 17x17x18. Each edge of the cuboid must only consist of Turbine Casings. Let's build this thing:"
+				""
+				"- Placa a 5x5 base layer of Turbine Casings down."
+				""
+				"- Place one Turbine Rotor in the center of this base."
+				""
+				"- Form a Rotor layer by placing a 5x5 ring of Turbine Casings and Strucutral Glass untop of the first 5x5 layer."
+				""
+				"- Repeat this process 3 more times to achieve a 5 blocks tall structure. Add Turbine Blades to the Turbine Rotor by right-clicking the Rotor with the Blades. For each Rotor block, you'll need 2 Blades."
+				""
+				"- On top of the last Turbine Rotor, place a Rotational Complex and surround it with Pressure Dispersers and a ring of Turbine Casings and Structural Glass to create a disparser layer."
+				""
+				"- On top of the Rotational Complex place 1 Electromagnetic Coil. Connect another Electromagnetic Coil to the one that's sitting above the Rotational Complex. The way in which you connect the two Electromagnetic Coils, does not matter, but one of them has to be on top of the Rotational Complex. Add another ring of Turbine Casings and Structural Glass. If you're making a bigger Turbine, note that 1 Electromagnetic Coil will be needed for 2 Turbine Rotors."
+				""
+				"- The Turbine can turn the Steam it receives, back into water, but for that to happen, you must add Saturating Condensers which are optional. These Condensers can be placed next to the Electromagnetic Coils. You can add just one. The more you have, the higher the steam conversion rate will be (if Water output is above the max Steam Rate, it's useless to add more Saturating Condensers)."
+				""
+				"- Cap off the Turbine with a layer made out of Turbine Casings (these will go on the edge) and Turbine Vents. Turbine Vents are added to create a good airflow through the Turbine. These Vent can also be added on the sides of the Turbine Structure, but you'll have to place them only above the layer which has the Rotational Complex. If your Turbine has Saturating Condensers, you can get your Water back from the Turbine with a liquid pipe, through the Turbine's Vents."
+				""
+				"- Lastly, you can add Turbine Valves at the base of the structure, or anywhere you like. Turbine Valves are used to pump Steam into the Turbine and to also extract the RF/FE generated by it."
+			]
+			dependencies: [
+				"375AE1646F859207"
+				"0B366DB7342041DA"
+			]
+			dependency_requirement: "one_completed"
+			id: "338DFFCE0AF30239"
+			tasks: [
+				{
+					id: "5E6A036FAF9A7CB0"
+					type: "item"
+					item: "mekanismgenerators:turbine_casing"
+				}
+				{
+					id: "507099265A531F3B"
+					type: "item"
+					item: "mekanismgenerators:turbine_valve"
+				}
+				{
+					id: "640A1141943AB148"
+					type: "item"
+					item: "mekanismgenerators:turbine_vent"
+				}
+				{
+					id: "0262F6802B6A0DA8"
+					type: "item"
+					item: "mekanismgenerators:turbine_rotor"
+				}
+				{
+					id: "642794BA837E394A"
+					type: "item"
+					item: "mekanismgenerators:turbine_blade"
+				}
+				{
+					id: "4310FD7E81D51483"
+					type: "item"
+					item: "mekanismgenerators:rotational_complex"
+				}
+				{
+					id: "6B54D55D06C91708"
+					type: "item"
+					item: "mekanismgenerators:electromagnetic_coil"
+				}
+				{
+					id: "2A2B98B26084A92B"
+					type: "item"
+					item: "mekanism:structural_glass"
+				}
+				{
+					id: "60E80471FA0CB5E5"
+					type: "item"
+					item: "mekanism:pressure_disperser"
+				}
+			]
+		}
+		{
+			x: 22.0d
+			y: 13.0d
+			shape: "square"
+			subtitle: "By feeding Polonium and Fluorite Dust into a Pressurized Reaction Chamber, you can make Polonium Pallets which have many uses"
+			dependencies: [
+				"4400AF2FD075FCFF"
+				"645EB3E6BEDF6250"
+				"2860A143350A5A76"
+			]
+			id: "20066A1C19E42D20"
+			tasks: [{
+				id: "5E4A16FA7F034647"
+				type: "item"
+				item: "mekanism:pellet_polonium"
+			}]
+			rewards: [{
+				id: "488D210654B1CF7F"
+				type: "loot"
+				table_id: 7176426831663151036L
+			}]
+		}
+		{
+			x: 15.5d
+			y: 8.0d
+			shape: "gear"
+			subtitle: "Gases provide POWAH!!! Left Click for more info"
+			description: [
+				"Do you hear that? It's time to upgrade your power generation. How's that gonna happen? Through this beauty. This is the Gas-Burning Generator."
+				""
+				"Like its name might suggest, this machine will burn certain gases to produce RF/FE. This Generator has a higher RF/tick production then the Stirling and the Compression Dynamos, however, this higher RF/tick rate can be achieved only if the Generator's internal gas tank is full. It can consume just Hydrongen and Ethylene as fuels. Each one of them will produce different quantities of power, so let's see what numbers we're dealing with are."
+				""
+				"Just as a spoiler, we DO NOT recommend to use Hydrogen as a fuel due to the fact that it will be ineficient. Basically, the power required to produce the Hydrogen, is higher then the power produced by it, but we'll tell you what the numbers are anyways."
+				""
+				"1 bucket of Hydrogen will produce 3kRF. When the internal tank of the Gas-Burning Generator is full (18 buckets), it will output that power at a rate of 900RF/tick. If you manage to create a setup that will produce enough Hydrogen to power this thing, then you might actually find it useful."
+				""
+				"Now, let's cover the Ethylene. This one will be a major upgrade to the power production rates provided by the Stirling and the Compression Dynamos, so let's see what the numbers are."
+				""
+				"1 bucket of Ethylene will produce 313kRF. When the internal gas tank of the Generator is full (18 buckets), it will output that amount of power at a rate of 2kRF/tick, which is far more then what the previous Dynamos could achieve."
+				""
+				"Keep in mind that the Gas-Burning Generator will be more useful for producing more RF/tick, and NOT more RF overall. Using the Compression Dynamo and 1 bucket of Refined Fuel, you can obtain 1.5M RF, while with the Gas-Burning Generator and 1 bucket of Ethylene, you can obtain only 313k RF. The advantage, however, comes with the higher RF/tick production rate. At its best, the Compression Dynamo will make 640RF/tick, while the Gas-Burning Generator, will make 2k RF/tick. See the differance?"
+				""
+				"Also note that the Gas-Burning Generator will NOT produce 2k RF/tick if its internal gas tank is not full. So you'll need a setup that will produce enough Ethylene to keep that tank full. Don't worry, this will not be hard to achieve."
+			]
+			dependencies: ["19E54C1EDF2E274C"]
+			id: "63E82FCB50EE3961"
+			tasks: [{
+				id: "5B8DAAEAF793C7EE"
+				type: "item"
+				item: "mekanismgenerators:gas_burning_generator"
+			}]
+		}
+		{
+			title: "The High Density PolyEhtylene Pellets"
+			x: 20.0d
+			y: 5.0d
+			shape: "diamond"
+			subtitle: "The HDPE Pellets are used to craft a variety of items that will be useful from here on out"
+			dependencies: [
+				"795428271AEEEAAF"
+				"5670EC4C474E238A"
+			]
+			size: 1.5d
+			id: "40623128C431038D"
+			tasks: [{
+				id: "5F4E614A68873FDD"
+				type: "item"
+				item: "mekanism:hdpe_pellet"
+			}]
+			rewards: [{
+				id: "7AF7E5FEF4911E5D"
+				type: "loot"
+				table_id: 7176426831663151036L
+			}]
+		}
+		{
+			x: 23.0d
+			y: 15.0d
+			shape: "square"
+			subtitle: "Antimatter can be created in a Supercritical Phase Shifter, at the expense of large amounts of 100mB of Polonium and very large amounts of RF/FE. The pellet can simply be obtained in a Chemical Crystallizer"
+			dependencies: ["4BDD1C64E9761830"]
+			id: "36367A18678E09A3"
+			tasks: [{
+				id: "210A8527A0F955BF"
+				type: "item"
+				item: "mekanism:pellet_antimatter"
+			}]
+			rewards: [{
+				id: "22261E7790DE9628"
+				type: "loot"
+				table_id: 7176426831663151036L
+			}]
+		}
+		{
+			x: 17.0d
+			y: 9.0d
+			shape: "gear"
+			subtitle: "But you've got the Celestial Gateway, right? Nope, this one's better. Left Click for more info"
+			description: [
+				"Until this point you had no issues using the Celestial Gateway from Astral Sorcery. It did the job and it got you to wherever you needed to be. Well, now why would you use this teleporter?"
+				""
+				"There are multiple reasons to switch to this beauty:"
+				""
+				"The first one is the fact that it is much more easier to set up. You'll just need the Teleporter and at least 9 frames. It requires less space and it is faster then the Gateway provided by Astral."
+				""
+				"The second one is the fact that it also allows you to teleport to a location from anywhere. Yes, that's right. However, you'll a Portable Teleporter in order to achieve this feat adn you'll get that portable version later."
+				""
+				"Ok, so we've convinced you to switch to Mekanism's Teleporter. Now, let's teach you how to use it. In order to teleport between two points, just like with the Celestial Gateway, you'll need two locations to teleport from back and forth."
+				""
+				"After that, you'll have to build a portal frame with at least 9 Teleporter Frames (and you get 18 by finishing this quest, so yeah, great deal, we know). The Teleporter itself has to be located either at the top, or ar the bottom of your frame. Here's how the thing should look:"
+				""
+				"{image:kubejs:textures/mekanism/mekanism_teleporter_example.png width:100 height:100 align:1}"
+				""
+				"After making the structure, you'll need to supply the teleporter with RF/FE. Finally, just set up a frequency at which the Teleporter should run. The frequency can have any name you'd like. To link two, or more Teleporters together, just make sure all of them have the same frequency selected. Easy job, right? :D"
+				""
+				"PS: It is not recommended to use more then two Portals on the same frequency, as this might result in strange behaviours."
+			]
+			dependencies: [
+				"19E54C1EDF2E274C"
+				"5000BE1C387FA8A3"
+			]
+			id: "629BD6917BCD2089"
+			tasks: [{
+				id: "03ADA51B128A6BF7"
+				type: "item"
+				item: "mekanism:teleporter"
+			}]
+			rewards: [
+				{
+					id: "0014C0820B88F3E7"
+					type: "item"
+					item: "mekanism:teleporter"
+				}
+				{
+					id: "1FD566A9444D2EE6"
+					type: "item"
+					item: "mekanism:teleporter_frame"
+					count: 18
+				}
+				{
+					id: "45FFA420014FFEF9"
+					type: "loot"
+					table_id: 7176426831663151036L
+				}
+			]
+		}
+		{
+			x: 14.0d
+			y: 11.0d
+			shape: "square"
+			subtitle: "The actually usefull Trashcan. Left Click for more info"
+			description: [
+				"Well, it might be a little too late to tell you not to void any useless items you get, because they'll have a use later, but there's no problem, right?"
+				""
+				"Moving forward, we want to show you the Matter Condenser. This beauty will accomplish two things."
+				""
+				"First, it will be a trash can."
+				""
+				"Second, when it's provided with at least a 4k Storage Component, this machine will store the items you're trying to delete, will condense them (duh) and then, it will give you either Matter Balls, or Singularities, depending on your choise."
+				""
+				"Now, what do you need the two items for? Don't worry, you'll see. "
+				""
+				"Spoiler: Start automating this thing with cobblestone or whatever you can mass produce. You'll need a lot of those two items."
+			]
+			dependencies: ["02FD2E2781CA26DB"]
+			id: "6DA0CD7B32F110C1"
+			tasks: [{
+				id: "10D19953B2DA1A86"
+				type: "item"
+				item: "appliedenergistics2:condenser"
+			}]
+		}
+		{
+			x: 14.0d
+			y: 12.0d
+			shape: "square"
+			subtitle: "By dumping 100.000 items into a Matter Condenser, a Singularity can be obtained"
+			dependencies: ["6DA0CD7B32F110C1"]
+			id: "7DA6847CD760EB34"
+			tasks: [{
+				id: "7C11F72106FC3152"
+				type: "item"
+				item: "appliedenergistics2:singularity"
+			}]
+			rewards: [{
+				id: "26E9E1D8910A797B"
+				type: "loot"
+				table_id: 7176426831663151036L
+			}]
+		}
+		{
+			title: "Arc Reactor, no Palladium!"
+			x: 23.0d
+			y: 13.0d
+			shape: "heart"
+			subtitle: "A Fusion Reactor can be used to produce immense quantities of FE. Left Click for more info"
+			description: [
+				"This is another great milestone. The Fusion Reactor is not only much more efficient then the Fission Reactor, but it is also much more safer. Yeah, that's right. This thing WILL NOT explode. There are a lot of reasons to use this thing to produce power and we'll walk you through the steps required to set this thing up."
+				""
+				"Unlike previous Mekanism multi-block structures, this one is \"less modular\". By that, we mean it cannot be smaller/larger in size and it has to be a sphere. \"Ok, but then, why it is <less modular>?\". Well, you can still place the Reactor ports where you want and you can also use Reactor Glass for the sides, instead of Fusion Reactor Frames."
+				""
+				"With that being said, let's see how this thing looks:"
+				""
+				"{image:kubejs:textures/mekanism/fusion_reactor_example.png width:100 height:100 align:1}"
+				""
+				"The Reactor Controller has to be placed at the top of the structure. The faces can be exchanged with Reactor Glass to minimize the amount of Fusion Reactor Frames needed."
+				""
+				"Now, how do you use this thing? First, as with the Fission Reactor, this Reactor has also two versions, the air cooled one and the water cooled one. The water cooled Fusion Reactor is simply an upgraded version of the regular, air cooled Fusion Reactor."
+				""
+				"Before starting the Reactor, let's learn about what it will use as fuel. Through one of the Reactor Ports, you'll pump in Deuterium, and through the other Port, you'll pump in Tritium. To start the Reactor, you'll have to place inside of its inventory, an Antimatter Filled Hohlraum. After that, you'll have to start a reaction to allow for heat to built up, and ultimately, to allow the Reactor to use its fuel and sustain itself."
+				""
+				"To start this reaction, you'll have to use at least one Laser and a Laser Amplifier. The Laser has to be fired into the Amplifier. The Amplifier has to be set in a way which would not allow a laser beam to go through it. This way, the Amplifier will store the power coming from the Laser. When around 1.5G RF is reached, you can fire the Amplifier at the reactor through its Laser Focus Matrix. This will make the Reactor reach its Ignition Temperature, which will start the reaction inside. After the reaction starts, the Reactor will start to produce more heat and power, based on the Fuel Injection rate which you can set in one of the menus available in the Reactor."
+				""
+				"We suggest you to take the things slow with this Reactor and esspecially, with its Fuel Injection Rate. If not enough fuel is provided to sustain the Injection Rate, all the fuel will be used, resulting in the Reactor to shut down. You don't want a Fusion Reactor to shut down because it takes a lot of time and energy to turn it on. Even if you're using the maximum amount of Lasers (5) to start this thing, it will take a long time to reach the 1.5G RF required for this thing to start running."
+				""
+				"Power can be extracted from the Reactor through a 3rd Reactor Port. If you want to get more power out of this thing, you can upgrade it to a water cooled Reactor. Just add two more Fusion Reactor ports to this thing. Through one of them, add water to the Reactor. Through the other one, pump out Steam and send it to a Turbine to make more power. The Port which pumps out Steam has to be configured to \"output Steam\" with a Configurator. We suggest you to use a large Turbine with this thing as it can easily reach a production rate of around 300.000 mB/tick of Steam."
+			]
+			dependencies: [
+				"20066A1C19E42D20"
+				"36367A18678E09A3"
+			]
+			id: "037FF843580DC12D"
+			tasks: [
+				{
+					id: "30D7418CDD8E65FF"
+					type: "item"
+					item: "mekanismgenerators:fusion_reactor_controller"
+				}
+				{
+					id: "5092FC4849C3769F"
+					type: "item"
+					item: "mekanismgenerators:fusion_reactor_frame"
+					count: 64L
+				}
+				{
+					id: "62F51C125397D70C"
+					type: "item"
+					item: "mekanismgenerators:fusion_reactor_frame"
+					count: 11L
+				}
+				{
+					id: "75B86631CD1BB5AA"
+					type: "item"
+					item: "mekanismgenerators:hohlraum"
+				}
+				{
+					id: "0B87F6A1515D666A"
+					type: "item"
+					item: "mekanismgenerators:fusion_reactor_port"
+					count: 2L
+				}
+				{
+					id: "364A6D06D868850A"
+					type: "item"
+					item: "mekanismgenerators:laser_focus_matrix"
+				}
+				{
+					id: "3E88BAEBB341E788"
+					type: "item"
+					item: "mekanismgenerators:reactor_glass"
+					count: 8L
+				}
+			]
+			rewards: [{
+				id: "2B8A6D038D96204B"
+				type: "loot"
+				table_id: 7176426831663151036L
+			}]
+		}
+		{
+			title: "Thermal Framing"
+			x: 1.5d
+			y: 9.5d
+			shape: "square"
+			subtitle: "These two frames will allow you to officially enter into the Thermal Series"
+			dependencies: [
+				"559CB0401212A28C"
+				"6697085DBFFEB685"
+			]
+			id: "36C54C80039A1A15"
+			tasks: [
+				{
+					id: "5843264C6B3F53F3"
+					type: "item"
+					item: "thermal:machine_frame"
+				}
+				{
+					id: "5525776E67F3D490"
+					type: "item"
+					item: "thermal:energy_cell_frame"
+				}
+			]
+		}
+		{
+			x: 6.5d
+			y: 11.0d
+			shape: "square"
+			subtitle: "Phin's Workbench. Left Click for more info"
+			description: [
+				"The Tinker's Workbench is a block that can charge, fill, and apply augments to tools/blocks."
+				""
+				"It has mainly two modes, charge/refill and augment, which you can toggle between, by using the button bellow the item slot in the GUI."
+				""
+				"Keep in mind that you'll need this Workbench esspecially if you want to install augments on tools. Blocks such as machines can also accept augments from their inventory. Also, after installing an augment in a tool, you'll need to toggle between the Workbench's mods or take the tool out to update its stats."
+			]
+			dependencies: ["28D8BBB1B9D53830"]
+			id: "46B7A05259CC0513"
+			tasks: [{
+				id: "3F4AAE43843B2BAE"
+				type: "item"
+				item: "thermal:tinker_bench"
+			}]
+		}
+		{
+			x: 5.0d
+			y: 7.0d
+			shape: "square"
+			subtitle: "Alloy, no Horizon. Left Click for more info"
+			description: [
+				"Alright, this might not be the best way of processing ores, but it surely it isn't the worst either."
+				""
+				"The Induction Smelter's main use is to produce alloys by combining multiple items together, however it can also smelt regular ores into ingots or gems, effectively producing more resources depending on the Catalyst that was used."
+				""
+				"Catalysts are optional resources which are used to improve the yield/ production speed of certain recipes. Here's the valid Catalysts for the Induction Smelter:"
+				""
+				"- Rich Slag"
+				"- Cinnabar"
+				"- Sand"
+				"- Blaze Powder"
+			]
+			dependencies: ["06F6D673E86907A6"]
+			id: "24CB73B29CB08300"
+			tasks: [{
+				id: "4F75C4E672BAA750"
+				type: "item"
+				item: "thermal:machine_smelter"
+			}]
+		}
+		{
+			title: "Pressing Matters, duh"
+			x: 3.5d
+			y: 9.5d
+			shape: "square"
+			subtitle: "Making plates just got much more easier. Left Click for more info"
+			description: [
+				"What do you know? Making plates/gears just got easier. How's that? Well, now you can make the Multiservo Press."
+				""
+				"This machine will accept a variety of dies in order to shape a variety of metals into different parts. It can also pack/unpack blocks."
+			]
+			dependencies: ["28D8BBB1B9D53830"]
+			id: "29D5FFF01A4256DF"
+			tasks: [{
+				id: "54BE78A288EEE8FD"
+				type: "item"
+				item: "thermal:machine_press"
+			}]
+			rewards: [
+				{
+					id: "2A663C8128E9FA33"
+					type: "item"
+					item: "thermal:press_coin_die"
+				}
+				{
+					id: "44A1ECB12ED3BD67"
+					type: "item"
+					item: "thermal:press_gear_die"
+				}
+				{
+					id: "5FCA400144158F3E"
+					type: "item"
+					item: "thermal:press_packing_2x2_die"
+				}
+				{
+					id: "7B3A623208E1FC4A"
+					type: "item"
+					item: "thermal:press_packing_3x3_die"
+				}
+				{
+					id: "14D48F1795747557"
+					type: "item"
+					item: "thermal:press_unpacking_die"
+				}
+			]
+		}
+		{
+			x: 5.0d
+			y: 9.0d
+			shape: "square"
+			subtitle: "The Fuel Factory. Left Click for more info"
+			description: [
+				"The Fractionating Still is a machines which refines fluids such as Crude Oil, into Light Oil which can further be used to obtain Refined Fuel. "
+				""
+				"However, the Still's main use here will be to produce Rosin which will be used to make Signalum."
+			]
+			dependencies: ["06F6D673E86907A6"]
+			id: "2C9792A752869F5A"
+			tasks: [{
+				id: "64EC6606D4085DF5"
+				type: "item"
+				item: "thermal:machine_refinery"
+			}]
+		}
+		{
+			x: 5.0d
+			y: 8.0d
+			shape: "square"
+			subtitle: "Well. Easier Coal Coke. Left Click for more info"
+			description: [
+				"The Pyrolizer is a machine that decomposes substances in a low-oxygen environment using heat."
+				""
+				"While you can use it to obtain Coal Coke and Creosote Oil much more easier, its main use here will be to produce Tar. This dense and oily substance will be used to make Enderium."
+			]
+			dependencies: ["06F6D673E86907A6"]
+			id: "59512A45F7D5AF23"
+			tasks: [{
+				id: "7EBF9E5E5BEAEA9B"
+				type: "item"
+				item: "thermal:machine_pyrolyzer"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 4.0d
+			shape: "gear"
+			subtitle: "Will use burnable items to produce RF/FE. Basically a Furnace Generator. It can receive certain Integral Components and Auguments to produce more RF overall"
+			dependencies: ["29771342B7D46B9F"]
+			size: 1.5d
+			id: "6088F9656DAB2CF6"
+			tasks: [{
+				id: "6BBEA9F7DA4C628F"
+				type: "item"
+				item: "thermal:dynamo_stirling"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 4.0d
+			shape: "gear"
+			subtitle: "Will use liquid fuels to produce RF/FE. Basically a Liquid Burning Generator. It can receive certain Integral Components and Auguments to produce more RF overall. We highly recommend you to use JEI to see what fuel options you've got"
+			dependencies: ["29771342B7D46B9F"]
+			size: 1.5d
+			id: "78CC4A765CF51F4B"
+			tasks: [{
+				id: "5744FED1696DE978"
+				type: "item"
+				item: "thermal:dynamo_compression"
+			}]
+		}
+		{
+			x: 17.0d
+			y: 3.0d
+			shape: "square"
+			subtitle: "Crushing is essential. Left Click for more info"
+			description: [
+				"The Crusher is somehow similar to the Thermal's Pulverizer, but at the same time, quite different."
+				""
+				"Its main use is represented by the production of BioFuel which will later be turned into HDPE Pallets."
+				""
+				"It also plays a very important role in the future Ore Tripling/Quadrupling/Quintupling setups."
+				""
+				"All you need to know, is that the Crusher will take Clump varients of your ores and will process them into Dirty verions of their dusts which can later be processed into regular versions, that, of course, will turn into ingots."
+			]
+			dependencies: ["41B717C98381E7DC"]
+			id: "7B77C01EB99F2106"
+			tasks: [{
+				id: "4A7A358B8BCCDA09"
+				type: "item"
+				item: "mekanism:crusher"
+			}]
+		}
+		{
+			x: 17.0d
+			y: 5.5d
+			shape: "square"
+			subtitle: "Clean, clean and enhance. Left Click for more info"
+			description: [
+				"You thought Mekanism didn't have an ore doubling system? Well, you were wrong. Unlike Thermal, where you need to pulverize your ores in orther to crush them, here you have to enrich them. Let's see how you'll do that."
+				""
+				"The Enrichment Chamber can be used by itself or as a part of the Mekanism ore processing system. It is also used as a component to craft other machines, such as The Pressurized Reaction Chamber."
+				""
+				"Its main use is to either double an ore, or to bring a Dirty piece of Ore Dust to it's regular form, so it can be later processed into an ingot."
+			]
+			dependencies: ["41B717C98381E7DC"]
+			id: "1561DC38E61ECFCE"
+			tasks: [{
+				id: "09D495969F34FC35"
+				type: "item"
+				item: "mekanism:enrichment_chamber"
+			}]
+		}
+		{
+			x: 18.0d
+			y: 3.0d
+			shape: "square"
+			subtitle: "The Biofuel can be turned into Ethylene in a Pressurized Reaction Chamber, producing Substrate as a byproduct"
+			dependencies: [
+				"7B77C01EB99F2106"
+				"69465F5A196B8397"
+			]
+			id: "5FD44971B2593EA3"
+			tasks: [{
+				id: "7F8AE2E61DECAF93"
+				type: "item"
+				item: "mekanism:bio_fuel"
+			}]
+		}
+		{
+			x: 18.0d
+			y: 5.5d
+			shape: "square"
+			subtitle: "No PneumaticCraft, here we go. Left Click for more info"
+			description: [
+				"Doesn't matter if you're here for the Ethylene, the HDPE pellets, the Hydrogen, or anything else. You're building this thing."
+				""
+				"The Pressurized Reaction Chamber will be used primarily to create Substrate, HDPE Pellets and Ethylene. It will also make the production of certain substances, such as Hydrogen and Sulfur, much easier."
+				""
+				"Note that it has a variable speed and energy usage dependent on the materials/gasses it is creating."
+			]
+			dependencies: [
+				"1561DC38E61ECFCE"
+				"776A12466E8A6EFA"
+			]
+			id: "795428271AEEEAAF"
+			tasks: [{
+				id: "3EA7308BDA423468"
+				type: "item"
+				item: "mekanism:pressurized_reaction_chamber"
+			}]
+		}
+		{
+			x: 17.0d
+			y: 4.5d
+			shape: "square"
+			subtitle: "Splitting the coin's two halves. Left Click for more info"
+			description: [
+				"A true scientist will use lots of elements to synthesize lots of amazing substances. Unfortunately, you'll have to obtain your own elements, as probably there's no place you can buy them from. Since Hydrogen and Oxygen are two essential elements, you'll be starting with them. Probably."
+				""
+				"Say \"hello\" to the Electrolytic Separator. This machine will take certain substances and will split them into their base components."
+				""
+				"The Electrolytic Separator is used to separate Heavy Water into Deuterium and Oxygen, Brine into Sodium and Chlorine, and Water into Hydrogen and Oxygen. The products will be used in other Mekanism machines/contraptions."
+			]
+			dependencies: ["41B717C98381E7DC"]
+			id: "58DD6C98572C1FCB"
+			tasks: [{
+				id: "3CF6B33E08A0AEF5"
+				type: "item"
+				item: "mekanism:electrolytic_separator"
+			}]
+		}
+		{
+			x: 18.0d
+			y: 4.5d
+			shape: "square"
+			subtitle: "When combined with Oxygen in the Pressurized Reaction Chamber, the Substrate will turn into a very strong product"
+			hide_dependency_lines: false
+			dependencies: [
+				"795428271AEEEAAF"
+				"5FD44971B2593EA3"
+				"58DD6C98572C1FCB"
+			]
+			id: "5670EC4C474E238A"
+			tasks: [{
+				id: "0459CE703A343049"
+				type: "item"
+				item: "mekanism:substrate"
+			}]
+		}
+		{
+			x: 22.0d
+			y: 5.0d
+			shape: "square"
+			subtitle: "The Solar Neutron Activator will turn Lithium into Tritium and Nuclear Waste into Polonium"
+			dependencies: ["40623128C431038D"]
+			id: "4400AF2FD075FCFF"
+			tasks: [{
+				id: "7CCF9DF2CDB7E30F"
+				type: "item"
+				item: "mekanism:solar_neutron_activator"
+			}]
+		}
+		{
+			x: 20.0d
+			y: 2.0d
+			shape: "square"
+			subtitle: "Beauty and the Slurry. Left Click for more info"
+			description: [
+				"Slurries can be quite tricky to handle, especially considering the fact that they're not much of a use to you in their current form. Let's change that, shall we?"
+				""
+				"Meet the Chemical Crystallizer. This machine will be used in the ore processing system. Each operation requires 200 mB of clean ore slurry gas and produces one crystal. This machine is used in Tier 4 Ore Processing. It produces 5 crystals from 1 ore."
+				""
+				"One of its other issues is involved around the production of Lithium dust. When given power and 100mb of Lithium in its gas form, this machine will give you Lithium Dust."
+			]
+			dependencies: ["40623128C431038D"]
+			id: "02502B52A16346C0"
+			tasks: [{
+				id: "6A0BAF773E578982"
+				type: "item"
+				item: "mekanism:chemical_crystallizer"
+			}]
+		}
+		{
+			x: 21.0d
+			y: 2.5d
+			shape: "diamond"
+			subtitle: "Refined Uranium. A main ingredient in the Uraninite recipe. Required to unlock the 4th Age"
+			dependencies: [
+				"02502B52A16346C0"
+				"141647BC0058E0D5"
+				"2E83341A5C81DF78"
+			]
+			dependency_requirement: "one_completed"
+			id: "7C04B7C2DDAB717B"
+			tasks: [{
+				id: "4D8FF6FF36C618F5"
+				type: "item"
+				item: "mekanism:crystal_uranium"
+			}]
+			rewards: [{
+				id: "15C3024F3C1CD760"
+				type: "loot"
+				table_id: 7176426831663151036L
+			}]
+		}
+		{
+			x: 20.0d
+			y: 3.0d
+			shape: "square"
+			subtitle: "Cleaning things up. Left Click for more info"
+			description: [
+				"Dealing with a fair amount of Dirty Slurries? Want to throw them away 'cause they're useless? Have no way of cleaning them? Worry no more. The Chemical Washer is for you."
+				""
+				"This machine will be mainly used as part of the ore processing system. It will turn dirty slurries, into clean slurries which will later be processed in a Chemical Crystallizer."
+				""
+				"The most important role of this machine, will be played in the production of Uranium Crystals, which will be used to synthesize advanced fuels."
+			]
+			dependencies: ["40623128C431038D"]
+			id: "141647BC0058E0D5"
+			tasks: [{
+				id: "38CF1696DA5375AD"
+				type: "item"
+				item: "mekanism:chemical_washer"
+			}]
+		}
+		{
+			x: 21.0d
+			y: 7.0d
+			shape: "square"
+			subtitle: "Yes, Mekanism has one, too. Left Click for more info"
+			description: [
+				"Unlike Industrial Foregoing's Dissolution Chamber, this one will only be used with Sulfuric Acid. It will be used to obtain base chemicals and dirty slurries for the ore quintupling process."
+				""
+				"It will use 100 mB of sulfuric acid for every ore dissolved and it will output 1000 mb of dirty slurry. This slurry needs washing in the Chemical Washer."
+			]
+			dependencies: ["40623128C431038D"]
+			id: "2E83341A5C81DF78"
+			tasks: [{
+				id: "45A5E26321BDE39F"
+				type: "item"
+				item: "mekanism:chemical_dissolution_chamber"
+			}]
+		}
+		{
+			x: 19.0d
+			y: 7.0d
+			shape: "square"
+			subtitle: "A chemical situation. Left Click for more info"
+			description: [
+				"Forward, you'll mainly be interested into two things. These will be Sulfuric Acid and Uranium Hexafluoride. While the Acid will be used for ore quintupling, the Hexafluoride will be used as fuel. You'll need this machine in order to obtain these two gases."
+				""
+				"The Chemical Oxidizer accepts incoming materials to produce a variety of gases from them. It uses 80 RF/tick. It is a crucial machine needed for Mekanism's 5x ore production system."
+			]
+			dependencies: ["40623128C431038D"]
+			id: "33040FC0EB0A4FD8"
+			tasks: [{
+				id: "131974808C0A7858"
+				type: "item"
+				item: "mekanism:chemical_oxidizer"
+			}]
+		}
+		{
+			x: 17.0d
+			y: 7.0d
+			shape: "square"
+			subtitle: "Enhancing that Osmium. Left Click for more info"
+			description: [
+				"Osmium is a very dense material, which is great, but it would be better if it was a little stronger. Maybe some obsidian could provide that missing strenght. Only if you had a way to combine the two.. Oh.. WAIT!"
+				""
+				"Yup, that's right, there it is. The Osmium Compressor. It is used to create Refined Obsidian Ingots from Refined Obsidian Dust and Glowstone Ingots from Glowstone Dust."
+				""
+				"It fuses liquid Osmium with the originating materials to create their corresponding ingots."
+			]
+			dependencies: ["41B717C98381E7DC"]
+			id: "4E3C384D72C1DCAB"
+			tasks: [{
+				id: "214F8F3DDA55C4F0"
+				type: "item"
+				item: "mekanism:osmium_compressor"
+			}]
+		}
+		{
+			x: 9.5d
+			y: 8.0d
+			shape: "square"
+			subtitle: "Dense steel keeps you alive in Space. Left Click for more info"
+			description: [
+				"This will be one of the first quests regaring your journey into Space. Yes, you heard that right, you're going to Space. Since the environment there will constantly try to kill you, a strong, very dense verison of your regular steel will be required there."
+				""
+				"Fortunately, this machine is exactly what you need. The Metal Compressor will take certain metals and compress them until they're dense enough to withstand the vacuum of Space."
+				""
+				"This machine can accept up to 4 AE2 Acceleration Cards as upgrades."
+			]
+			dependencies: ["5984E05C451F1AF2"]
+			dependency_requirement: "all_started"
+			id: "1A870097D55C3137"
+			tasks: [{
+				id: "5C95AA830CC32CBA"
+				type: "item"
+				item: {
+					id: "custommachinery:custom_machine_item"
+					Count: 1b
+					tag: {
+						machine: "custommachinery:metal_compressor"
+					}
+				}
+				match_nbt: true
+			}]
+		}
+		{
+			title: "Building Rockets"
+			x: 8.0d
+			y: 11.0d
+			shape: "square"
+			subtitle: "To the realms of space. Left Click for more info"
+			description: [
+				"This will be one of the first quests regaring Space exploration. Why do you need to go into Space, you're asking? That's quite simple. There are a few needed materials which you'll only find on other planets. To reach those planets, you'll need a rocket. How do you get that? Well, that's where the Nasa Workbench comes in."
+				""
+				"This machine will take multiple rocket pieces and assemble them into mighty rockets."
+			]
+			dependencies: [
+				"46B7A05259CC0513"
+				"5984E05C451F1AF2"
+			]
+			dependency_requirement: "all_started"
+			id: "6F2C27F85D2F46AD"
+			tasks: [{
+				id: "36FE9875CEAA986D"
+				type: "item"
+				item: "boss_tools:nasa_workbench"
+			}]
+		}
+		{
+			title: "Making Rocket Fuel"
+			icon: {
+				id: "custommachinery:custom_machine_item"
+				Count: 1b
+				tag: {
+					machine: "custommachinery:fuel_mixing_unit"
+				}
+			}
+			x: 9.0d
+			y: 11.0d
+			shape: "square"
+			subtitle: "Kerosene? Neh, doesn't exist in this universe. Left Click for more info"
+			description: [
+				"The Fuel Assembly Unit will allow you to combine Refined Fuel, Gasoline and Liquid Oxygen into a potent substance which can be used to power Rockets."
+				""
+				"After you have the fuel, you'll need to Shift Right-Click the Rocket to open its fuel tank. Place a bucket of fuel and wait for the tank to fill up. When it's full, you can start your journey into space."
+			]
+			dependencies: ["777E04BC1BCAF88C"]
+			id: "04E3DF536DF6DDB5"
+			tasks: [
+				{
+					id: "72D60588AE25B5F2"
+					type: "item"
+					item: {
+						id: "custommachinery:custom_machine_item"
+						Count: 1b
+						tag: {
+							machine: "custommachinery:fuel_mixing_unit"
+						}
+					}
+					match_nbt: true
+				}
+				{
+					id: "4A09660D61F991E8"
+					type: "item"
+					item: "boss_tools:fuel_bucket"
+				}
+			]
+		}
+		{
+			x: 9.5d
+			y: 6.0d
+			shape: "gear"
+			subtitle: "Wanna live in Space? Left Click for more info"
+			description: [
+				"While some of the planets you'll encounter will be inhabitable, you might find one of them to be just right for colonizing. Yeah, that's right, we're talking about Mars."
+				""
+				"While the entire planet is covered with toxic sand and it does not have oxygen in its atmosphere, the temperatures there are just in the right spot for making it a liveable environment."
+				""
+				"So.. great. You won't freeze or heat up to death, but what about that oxygen? You're not going to breath toxic sand, right? Well, no. That's where the Oxygen Bubble Distributor comes in. This machine will consume RF/FE and Oxygen to make a breathable area. Inside of its interface you can select the area of effect, but note that larger areas will consume more RF/FE and more Oxygen. The largest area will be 31x31x31."
+			]
+			dependencies: ["1A870097D55C3137"]
+			id: "696623D96D55F009"
+			tasks: [{
+				id: "1CDE12B1EABCED3C"
+				type: "item"
+				item: "boss_tools:oxygen_bubble_distributor"
+			}]
+		}
+		{
+			x: 8.5d
+			y: 12.0d
+			shape: "square"
+			subtitle: "Towards The Moon! Left Click for more info"
+			description: [
+				"If you're reading this, it means that you're going to The Moon. There are some things you'll have to prepare first."
+				""
+				"Going in outer space is a dangerous task, merely because there's no Oxygen there, so a SpaceSuit charged with Oxygen will be required. Additionally, you can bring with you a setup to produce Oxygen there, but that's your choise."
+				""
+				"Lastly, you might wanna bring some rocket fuel with you. The Rocket will require fuel in order to get you back home. Thats if you're not setting up a Celestial Gateway on The Moon, of course."
+				""
+				"PS: When you land on The Moon, you'll do that inside of a Landing Pod. Don't worry, that's normal. Your Rocket will be inside of that Pod. Just shift right-click it."
+			]
+			dependencies: [
+				"7332938D73275FBC"
+				"6F2C27F85D2F46AD"
+				"04E3DF536DF6DDB5"
+			]
+			id: "56420D0E795ABCEB"
+			tasks: [{
+				id: "7F682BACBEA9CB0B"
+				type: "item"
+				item: {
+					id: "boss_tools:rocket_t1"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "0961BDA473E2243E"
+				type: "item"
+				item: "boss_tools:rocket_launch_pad"
+				count: 9
+			}]
+		}
+		{
+			x: 12.5d
+			y: 13.0d
+			shape: "square"
+			subtitle: "Towards Mars! The Tier 2 Rocket will allow you to reach one more planet, and that's Mars"
+			dependencies: [
+				"075DB9818A4FBC6C"
+				"4CF1DAD5B1DD93B0"
+			]
+			id: "3A596BF869851998"
+			tasks: [{
+				id: "04F79E82F1C30415"
+				type: "item"
+				item: {
+					id: "boss_tools:rocket_t2"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 16.0d
+			y: 13.0d
+			shape: "square"
+			subtitle: "Towards Venus and Mercury! The Tier 3 Rocket will be your best spaceship available for traveling space as it will unlock all the destinations available for our Planet"
+			dependencies: ["425F538C82937DAC"]
+			dependency_requirement: "one_completed"
+			id: "53E8F8A659F5AED8"
+			tasks: [{
+				id: "640BAE1A71C04B38"
+				type: "item"
+				item: {
+					id: "boss_tools:rocket_t3"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 18.0d
+			y: 12.0d
+			shape: "gear"
+			subtitle: "The Tesseract of the 21st century. Left Click for more info"
+			description: [
+				"Ever wanted to transport things on long range, even across dimensions? Well, the Entangloporter is for you!"
+				""
+				"Let's say you want to transport items/liquids/gases/electricity from point A to point B without cables or anything, all wirelessly. Here's what you need to do. Place one of these in point A, one of them in point B, give them the same frequancy, configure their sides and you're good to go."
+				""
+				"Not that clear? Ok, let's see how does this thing works:"
+				""
+				"{image:kubejs:textures/mekanism/entangloporter_interface_example.png width:120 height:100 align:1 fit:true}"
+				""
+				"Public \\& Private - These two will swith between the public and private lists of frequencies. This might be more useful on multiplayer where you'll want to limit the access of other players to your Entangloporter."
+				""
+				"The Black Area - that's the list where you'll see all the available frequencies once you'll create them."
+				""
+				"Frequency, Owner \\& Security - this field will show you basic information about the currently selected frequency."
+				""
+				"Set - finally, this is where you'll create your frequencies. Just give them a name and then, press the check mark to add them to your list."
+				""
+				"After setting up a frequency, just make sure that the side configuration of the Entangloporter is adequate to what you want to achieve. The Entangloporter has different panels for each type of resource you're trying to transport, so make sure they're properly configured to suit your needs."
+				""
+				"PS: The Entangloporter CANNOT transfer Polonium or Plutonium."
+			]
+			dependencies: [
+				"776A12466E8A6EFA"
+				"5000BE1C387FA8A3"
+			]
+			id: "05CEE4626B22EF16"
+			tasks: [{
+				id: "0F67CE54C64B0BA9"
+				type: "item"
+				item: "mekanism:quantum_entangloporter"
+			}]
+			rewards: [{
+				id: "2F089CB1C90A8525"
+				type: "loot"
+				table_id: 7176426831663151036L
+			}]
+		}
+		{
+			x: 2.5d
+			y: 9.5d
+			shape: "square"
+			subtitle: "This Machine Frame will be the base for the RF Tools machines. It will also be used to make some MobGrindingUtilities contraptions"
+			dependencies: ["36C54C80039A1A15"]
+			id: "5B3C80318977A04B"
+			tasks: [{
+				id: "5D7CF788B243ED5D"
+				type: "item"
+				item: "rftoolsbase:machine_frame"
+			}]
+		}
+		{
+			x: 25.75d
+			y: 15.0d
+			shape: "diamond"
+			subtitle: "You've reached another milestone. This unstable construct might prove useful into the creation of powerful fuels. Required to unlock the 4th Age"
+			dependencies: ["7DFF67D50DADC624"]
+			size: 2.0d
+			id: "6987496DAC648CAC"
+			tasks: [{
+				id: "4BA85516007B10AF"
+				type: "item"
+				item: "decursiomod:shattered_singularity"
+			}]
+			rewards: [{
+				id: "4E85DD1F9FCB1A64"
+				type: "loot"
+				table_id: 7176426831663151036L
+			}]
+		}
+		{
+			title: "Getting into the 21st century"
+			x: -0.5d
+			y: 15.0d
+			shape: "square"
+			subtitle: "The Pity Machine Frame will be the base for your first machines"
+			dependencies: ["7EF155944458998F"]
+			size: 1.5d
+			id: "69E5A9A8C842E66C"
+			tasks: [{
+				id: "48E008912620FC56"
+				type: "item"
+				item: "industrialforegoing:machine_frame_pity"
+			}]
+		}
+		{
+			title: "Latex, not that complex"
+			x: -0.5d
+			y: 13.0d
+			shape: "square"
+			subtitle: "The Tree Fluid Extractor will be used to make Latex. Left Click for more info"
+			description: [
+				"If you read this it mean you're about to enter into The Amazing World of Plastic™. To obtain this material, you'll need a great substance called Latex. Let's learn some things about it."
+				""
+				"The Tree Fluid Extractor is a machine added by Industrial Foregoing. When a wood log is placed in front of the black side of the Tree Fluid Extractor, the Tree Fluid Extractor will slowly break the log and generate Latex in its internal tank. For every 5 ticks 1 mB of Latex will be generated and there will be a 0.5% chance of the log's breaking progress being increased by 1."
+				""
+				"We recommend you to make more then one of these machines as having just one, can slow you down quite a lot. Keep in mind that the Fluid Extractor does NOT require RF/FE in order to function. However, providing a healthy amount of power to it will make the machine run faster."
+			]
+			dependencies: ["69E5A9A8C842E66C"]
+			id: "69AFCE252309ACAF"
+			tasks: [{
+				id: "75E9797215F8842F"
+				type: "item"
+				item: "industrialforegoing:fluid_extractor"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 8.0d
+			shape: "square"
+			subtitle: "Destroying the Environment. Left Click for more info"
+			description: [
+				"By combining 9 pieaces of Tiny Dry Rubber in a crafting table, you cna obtain a chunk of Dry Rubber."
+				""
+				"By smelting this chunk in a furnace, you can obtain Plastic. This material will be used in lots of machines, so you better automate the production of this."
+				""
+				"The Reward for finishing this quest, will be a Configurator. This tiny item, can be used as a multi-use Wrench. Just make sure it has power and use Shift Scroll to change its modes. For now, you'll be able to use it to remove/rotate certain machines with ease."
+			]
+			dependencies: ["1AAAA5A2F8DD94CA"]
+			id: "29771342B7D46B9F"
+			tasks: [{
+				id: "0D1D45E714DC4D9A"
+				type: "item"
+				item: "industrialforegoing:plastic"
+			}]
+		}
+		{
+			title: "Advanced Machinery are EVIL!"
+			x: 1.5d
+			y: 8.0d
+			shape: "square"
+			subtitle: "This machine will allow you to make advanced machines, far superior to what you've been using until this point. Left Click for more info"
+			description: [
+				"The Dissolution Chamber will be used to craft materials using up to eight items and one type of fluid. This machine can produce components, upgrades, circuits, alloys and more."
+				""
+				"All the recipes are shapeless meaning that the ingredients can be in any slot."
+				""
+				"When a recipe is present the machine will lock all of the slots to prevent more items from being inserted."
+			]
+			dependencies: ["29771342B7D46B9F"]
+			id: "559CB0401212A28C"
+			tasks: [{
+				id: "4D725E0330D2A77C"
+				type: "item"
+				item: "industrialforegoing:dissolution_chamber"
+			}]
+			rewards: [{
+				id: "2DD46D1365131994"
+				type: "loot"
+				table_id: 7176426831663151036L
+			}]
+		}
+		{
+			x: 6.5d
+			y: 9.0d
+			shape: "square"
+			subtitle: "Rosin is used in the process of obtaining Signalum. The Resin used to make the Rosin will give you Tree Oil as a byproduct. The Oil can be used as a fuel in a Compression Dynamo"
+			dependencies: [
+				"2C9792A752869F5A"
+				"0A65C084A61AB174"
+			]
+			id: "71A48B4902BB40FE"
+			tasks: [{
+				id: "79DB0283B4F87FDE"
+				type: "item"
+				item: "thermal:rosin"
+			}]
+		}
+		{
+			x: 6.5d
+			y: 7.0d
+			shape: "square"
+			subtitle: "Lumium is a very bright alloy which has many uses, the most important being the production of Signalum and Enderium"
+			dependencies: ["24CB73B29CB08300"]
+			id: "0AAF3A1925404692"
+			tasks: [{
+				id: "79481EF642A7D4A5"
+				type: "item"
+				item: "emendatusenigmatica:lumium_ingot"
+			}]
+		}
+		{
+			title: "Signalum to the Space"
+			x: 8.0d
+			y: 8.0d
+			shape: "diamond"
+			subtitle: "Signalum can be described as a better version of Silver in terms of conductivity. In this pack, it has a lot of uses, so make sure you have lots of this material"
+			dependencies: [
+				"0AAF3A1925404692"
+				"71A48B4902BB40FE"
+			]
+			dependency_requirement: "one_completed"
+			id: "5984E05C451F1AF2"
+			tasks: [{
+				id: "1D2B8C95DB0C57C1"
+				type: "item"
+				item: "emendatusenigmatica:signalum_ingot"
+			}]
+			rewards: [{
+				id: "37CD14981089C2C7"
+				type: "loot"
+				table_id: 7176426831663151036L
+			}]
+		}
+		{
+			x: 12.5d
+			y: 5.0d
+			shape: "diamond"
+			subtitle: "Bye 3x3, welcome 5x5. Left Click for more info"
+			description: [
+				"As you progress further, you'll need more complex machines, and to build those machines, some puny Mechanical Crafters, just won't do the job anymore. You'll need something with more character. So, with that being said, welcome to the Advanced Crafting Table!"
+				""
+				"Unlike a regular Crafting Table, this one has a 5x5 crafting grid available for all of your favorite crafting recipes. Now, don't rush and throw away your precious 3x3 crafting table, as you'll quickly find out that this 5x5 crafting masterpiece won't be able to process 3x3 recipes, so yeah, sadge, but that's how life is."
+				""
+				"Now, let's learn a bit about how this thing works. You'll quickly notice that it has a power buffer. Don't worry, this table DOES NOT consume RF/FE for manual crafting. However, this table can do auto-crafting with one pattern at a time and it WILL require RF/FE for that job."
+				""
+				"When performing auto-crafting with this table, you'll first have to provide the recipe for it, then save it by shift right-clicking on the buttons in the top right corner. You'll notice that you can save up to 3 recipes in one of this tables. You can select which one you want to use after you've saved multiple of them."
+				""
+				"After a recipe has been saved in the table, you can place a chest untop of it. You'll have to supply this chest with the items required for the recipe you want to auto-craft. The table will auto input from this chest, of course."
+			]
+			dependencies: [
+				"7837C14C3F27ED88"
+				"353C47A081885EE9"
+			]
+			dependency_requirement: "one_completed"
+			size: 1.5d
+			id: "4CF1DAD5B1DD93B0"
+			tasks: [{
+				id: "78379465A33A2174"
+				type: "item"
+				item: "extendedcrafting:advanced_auto_table"
+			}]
+			rewards: [{
+				id: "1904F2BBF8C07B37"
+				type: "loot"
+				table_id: 7176426831663151036L
+			}]
+		}
+		{
+			x: 6.5d
+			y: 10.0d
+			shape: "square"
+			subtitle: "The closest thing to IC2. Left Click for more info"
+			description: [
+				"This machine can extrat sap/or resin from certain tree types. "
+				""
+				"While Sap can be turned into Syrup, the Resine can be turned into a Tree Oil, which can be burned as fuel in a Compression Dynamo."
+				""
+				"Sap can be obtained from either Dark Oak or Maple."
+				""
+				"Resin can be obtained from a wide variety of trees, but the best would be Spruce and Aspen."
+			]
+			hide_dependency_lines: true
+			dependencies: ["36C54C80039A1A15"]
+			id: "0A65C084A61AB174"
+			tasks: [{
+				id: "2F17EECEDB9FFD7A"
+				type: "item"
+				item: "thermal:device_tree_extractor"
+			}]
+		}
+		{
+			title: "The Moon"
+			x: 8.5d
+			y: 13.0d
+			shape: "diamond"
+			subtitle: "Isn't it a big cheese wheel? Left Click for more info"
+			description: [
+				"The only place you can find Certus Quartz. It is also the place where the meteorites from the Overworld came from."
+				""
+				"Keep in mind that here you'll find Desh Ore, which will be required to build a better rocket."
+				""
+				"The Moon's ore list also includes Source Gems. These bright crystals will be used in Ars Nouveau to channel the magical energies around the world. "
+			]
+			dependencies: ["56420D0E795ABCEB"]
+			id: "1809F9F777ED8329"
+			tasks: [{
+				id: "6C2AC57194C0225B"
+				type: "dimension"
+				title: "Visit The Moon"
+				icon: {
+					id: "botania:tiny_planet"
+					Count: 1b
+					tag: { }
+				}
+				dimension: "boss_tools:moon"
+			}]
+			rewards: [{
+				id: "4EA64A7DA7CF3D0D"
+				type: "loot"
+				table_id: 7176426831663151036L
+			}]
+		}
+		{
+			title: "Mars"
+			x: 14.0d
+			y: 13.0d
+			shape: "diamond"
+			subtitle: "Earth 2.0? Left Click for more info"
+			description: [
+				"Mars is full of ice. So full that beneath the planet's layers you should be able to find a unique type of ice, Dry Ice. "
+				""
+				"One ore you can also discover on Mars is Silicone. This one will be required to build a better rocket."
+				""
+				"Mars also houses a strange, bright blue mineral, called Apatite. You might find a great use for this one later."
+				""
+				"Lastly, you'll be able to find Potassium Nitrate. Combine this one with the Apatite found on The Moon and you might be able to obtain something useful."
+			]
+			dependencies: ["3A596BF869851998"]
+			id: "0A9D2EEB90024B43"
+			tasks: [{
+				id: "17937AF0ED30AA90"
+				type: "dimension"
+				title: "Visit Mars"
+				icon: "alexsmobs:guster_eye"
+				dimension: "boss_tools:mars"
+			}]
+			rewards: [{
+				id: "5C92AC71AE2383EF"
+				type: "loot"
+				table_id: 7176426831663151036L
+			}]
+		}
+		{
+			title: "Venus and Mercury"
+			x: 17.0d
+			y: 13.0d
+			shape: "diamond"
+			subtitle: "Venus is before Mercury, but you can go to either of them. Left Click for more info"
+			description: [
+				"In order for you to survive Venus's and Mercury's harsh environments, you'll need a Netherite Space Suit."
+				""
+				"Venus will be the only place you'll find Fluorite in its natural form."
+				""
+				"Mercury will be the home planet of Draconium Ore."
+			]
+			dependencies: [
+				"53E8F8A659F5AED8"
+				"1AA5B1FB3A566EF1"
+			]
+			id: "05CF918AA2416058"
+			tasks: [
+				{
+					id: "743BD42A0786F98F"
+					type: "dimension"
+					title: "Visit Venus"
+					icon: "tconstruct:glow_ball"
+					dimension: "boss_tools:venus"
+				}
+				{
+					id: "6F6E36B08E270F29"
+					type: "dimension"
+					title: "Visit Mercury"
+					icon: "minecraft:magma_cream"
+					dimension: "boss_tools:mercury"
+				}
+			]
+			rewards: [{
+				id: "2AB57A884EB59DBC"
+				type: "loot"
+				table_id: 7176426831663151036L
+			}]
+		}
+		{
+			x: 2.5d
+			y: 11.0d
+			shape: "square"
+			subtitle: "Can hold 1M RF by default. It can hold a maximum amount of 24M RF if supplied with the appropriate upgrades. Its RF transfer rate can also be modified/upgraded. These will be used as an internal energy buffer for a lot of machines. Left Click for more info"
+			description: [
+				"Ok, if you didn't break anything this must be your first Thermal \"Machine\". So yeah, congrats! Before blowing anything up, let's learn some things about Thermal's machine interfaces."
+				""
+				"{image:kubejs:textures/thermal/thermal_interface_example.png width:160 height:100 align:1 fit:true}"
+				""
+				"In the above picture you can see the main tabs which will be present in almost every interface added by the Thermal Series. As presented above, the most majority of the machine added by this mod will come with those tabs. Let's look at each one of them in particular."
+				""
+				"The Information Screen will try to explain as clear and simple as possible what the current machine does."
+				""
+				"{image:kubejs:textures/thermal/information_screen_example.png width:100 height:100 align:1}"
+				""
+				"The Augment Screen will allow you to insert Integral Components and Augments into your machines, manually. Keep in mind that some machines might have different amounts of augmentation slots available. The number of available slots cannot be changed by any means."
+				""
+				"{image:kubejs:textures/thermal/augmentation_screen_example.png width:100 height:100 align:1}"
+				""
+				"The Redstone Control screen will allow you to change how/if your machine will interact with a redstone signal. You can set up a machine to ignore a signal, turn on to a signal, or turn off to a signal. Your choise."
+				""
+				"{image:kubejs:textures/thermal/redstone_control_example.png width:100 height:100 align:1}"
+				""
+				"The Configuration Screen is the place where you can see all the sides of your machine. Here you can choose if your want your machine to outo import/export and on which side you want this action to take place. To better understand how importing/exporting works, we have to talk about colors. Blue means Import, Orange means Export and Yellow means that there's no interaction overall."
+				""
+				"{image:kubejs:textures/thermal/side_configuration_example.png width:100 height:100 align:1}"
+				""
+				"Lastly, we wanna talk about a Screen which is not present on a Redstone Flux Cell, and that is the Energy Screen. This one will show you information about the power produced/consumed by your dynamo/machine. Since a cell does not produce/consume power, this block does not have an Energy Screen."
+				""
+				"{image:kubejs:textures/thermal/energy_production_screen_example.png width:100 height:100 align:1}"
+				""
+				"{image:kubejs:textures/thermal/energy_consumption_screen_example.png width:100 height:100 align:1}"
+			]
+			dependencies: ["36C54C80039A1A15"]
+			id: "28D8BBB1B9D53830"
+			tasks: [{
+				id: "5000D25FC686477D"
+				type: "item"
+				item: {
+					id: "thermal:energy_cell"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							EnergyMax: 1000000
+							EnergySend: 1000
+							Energy: 0
+							EnergyRecv: 1000
+						}
+					}
+				}
+			}]
+		}
+		{
+			title: "Making the Space Suit"
+			icon: {
+				id: "boss_tools:space_suit"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 10.0d
+			y: 12.0d
+			shape: "square"
+			subtitle: "Neil Armstrong: This suit is required to survive against the harsh conditions outside of our atmosphere. You'll have to charge the chestplate with oxygen in a Basic Chemical Tank filled with Oxygen Gas"
+			dependencies: [
+				"27E31F1465D69D06"
+				"77407B54D3696E59"
+			]
+			id: "7332938D73275FBC"
+			tasks: [
+				{
+					id: "40D8EC9C202DED83"
+					type: "item"
+					item: {
+						id: "boss_tools:oxygen_mask"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "61F5416245F6510C"
+					type: "item"
+					item: {
+						id: "boss_tools:space_suit"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "101F0B8E1CD1C15D"
+					type: "item"
+					item: {
+						id: "boss_tools:space_pants"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "5CEDE1FCAE510F18"
+					type: "item"
+					item: {
+						id: "boss_tools:space_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Mars ores are kinda frozen"
+			icon: "emendatusenigmatica:apatite_gem"
+			x: 15.0d
+			y: 13.0d
+			shape: "square"
+			subtitle: "Obtain all the ore types present on Mars"
+			dependencies: ["0A9D2EEB90024B43"]
+			id: "425F538C82937DAC"
+			tasks: [
+				{
+					id: "3C50065C27E85AEE"
+					type: "item"
+					item: "boss_tools:mars_silicon_ore"
+				}
+				{
+					id: "6214B12708E40E1F"
+					type: "item"
+					item: "powah:dry_ice"
+				}
+				{
+					id: "3388657E94789E9B"
+					type: "item"
+					item: "emendatusenigmatica:potassium_nitrate_gem"
+				}
+				{
+					id: "51BF607144919B5F"
+					type: "item"
+					item: "emendatusenigmatica:apatite_gem"
+				}
+			]
+		}
+		{
+			title: "These ores are kinda smokey"
+			icon: "emendatusenigmatica:fluorite_gem"
+			x: 18.0d
+			y: 13.0d
+			shape: "square"
+			subtitle: "Obtain all the ore types present on Venus and Mercury"
+			dependencies: ["05CF918AA2416058"]
+			id: "645EB3E6BEDF6250"
+			tasks: [
+				{
+					id: "4746D10413B62868"
+					type: "item"
+					item: "emendatusenigmatica:fluorite_gem"
+				}
+				{
+					id: "5F7780E7E4D63BBF"
+					type: "item"
+					item: "draconicevolution:draconium_dust"
+				}
+			]
+		}
+		{
+			title: "The Netherite SpaceSuit"
+			icon: {
+				id: "boss_tools:netherite_space_suit"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 17.0d
+			y: 15.0d
+			shape: "square"
+			subtitle: "Buzz Aldrin: The Netherite SpaceSuit is required in order to survive in harsh environments such as the ones provided by Venus and Mercury"
+			hide_dependency_lines: true
+			dependencies: ["41B717C98381E7DC"]
+			id: "1AA5B1FB3A566EF1"
+			tasks: [
+				{
+					id: "3CD679864EE330AD"
+					type: "item"
+					item: {
+						id: "boss_tools:netherite_oxygen_mask"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "0D69B9FB45BA4D07"
+					type: "item"
+					item: {
+						id: "boss_tools:netherite_space_suit"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "428718782978FFF5"
+					type: "item"
+					item: {
+						id: "boss_tools:netherite_space_pants"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "45B01FCE8C3F38B9"
+					type: "item"
+					item: {
+						id: "boss_tools:netherite_space_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 6.5d
+			y: 8.0d
+			shape: "square"
+			subtitle: "Used in the process of making Enderium"
+			dependencies: ["59512A45F7D5AF23"]
+			id: "570A86025A50F706"
+			tasks: [{
+				id: "243AE053298C0BA4"
+				type: "item"
+				item: "thermal:tar"
+			}]
+		}
+		{
+			x: 6.5d
+			y: 5.0d
+			shape: "square"
+			subtitle: "This component can be installed inside of any machine or tool added by the Thermal Series. It will upgrade the base attributes of your tool/machine by a Scale Factor of 2x"
+			dependencies: ["0AAF3A1925404692"]
+			id: "2166A8D18DC09163"
+			tasks: [{
+				id: "2E5D2B49E05ACD5D"
+				type: "item"
+				item: "thermal:upgrade_augment_1"
+			}]
+			rewards: [{
+				id: "2C6B46B4447F11B5"
+				type: "item"
+				item: "thermal:upgrade_augment_1"
+				count: 3
+			}]
+		}
+		{
+			x: 6.5d
+			y: 3.0d
+			shape: "square"
+			subtitle: "This component can be installed inside of any machine or tool added by the Thermal Series. It will upgrade the base attributes of your tool/machine by a Scale Factor of 4x"
+			hide_dependency_lines: true
+			dependencies: [
+				"44715555C85649A7"
+				"41B717C98381E7DC"
+			]
+			id: "273ACCA8D51C9C48"
+			tasks: [{
+				id: "2FEAACED8A096A87"
+				type: "item"
+				item: "thermal:upgrade_augment_3"
+			}]
+			rewards: [{
+				id: "00DD061303F00D43"
+				type: "loot"
+				table_id: 7176426831663151036L
+			}]
+		}
+		{
+			x: 18.0d
+			y: 7.0d
+			shape: "square"
+			subtitle: "Some of the machines you're going to work with will be exposed to high pressures. The Refined Obsidian will make sure that you're machines will be sturdy enough so they can resist to those high pressures"
+			dependencies: ["4E3C384D72C1DCAB"]
+			id: "776A12466E8A6EFA"
+			tasks: [{
+				id: "2FF1CE3EF2A9539B"
+				type: "item"
+				item: "mekanism:ingot_refined_obsidian"
+			}]
+		}
+		{
+			title: "Advanced Resource Transportation"
+			icon: "mekanism:basic_universal_cable"
+			x: -0.5d
+			y: 2.0d
+			shape: "gear"
+			subtitle: "Yes. You can now make Cables/Pipes/Tubes/Ducts/ItemPipes from Mekanism <3 Left Click for more info"
+			description: [
+				"Finishing this quest will give you a Configurator and a Network reader."
+				""
+				"While the Configurator can be used in Mekanism for many different things. By using shift-scroll, or by holding the \"n\" key, you can cycle through the Configurator's many modes."
+				""
+				"The Network Reader is a tool that can be used to debug Mekanism networks like Universal Cables, Logistical Transporters, Mechanical Pipes and Pressurized Tubes. It can store up to 24,000 RF and uses 160 RF per use. When is it held in hand and you right-click on a network it will provide the following information:"
+				""
+				"- Number of transmitters"
+				"- Number of acceptors"
+				"- How much of the resource is needed"
+				"- How much is there in the buffer"
+				"- What is the throughput"
+				"- What is the capacity per tick"
+			]
+			dependencies: ["7EF155944458998F"]
+			id: "610186C49D2339AE"
+			tasks: [{
+				id: "6F4DB7E6B6613CE5"
+				type: "checkmark"
+				title: "Got it!"
+			}]
+			rewards: [
+				{
+					id: "117B041CA7BAD95D"
+					type: "item"
+					item: {
+						id: "mekanism:configurator"
+						Count: 1b
+						tag: {
+							mekData: {
+								EnergyContainers: [{
+									Container: 0b
+									stored: "60000"
+								}]
+							}
+						}
+					}
+				}
+				{
+					id: "74A59275FCF6C2E9"
+					type: "item"
+					item: {
+						id: "mekanism:network_reader"
+						Count: 1b
+						tag: {
+							mekData: {
+								EnergyContainers: [{
+									Container: 0b
+									stored: "60000"
+								}]
+							}
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Making Steel Easier"
+			x: 15.0d
+			y: 3.0d
+			shape: "square"
+			subtitle: "By processing some Enriched Iron with 10 mb of Carbon, you can obtain Steel much more easier then before"
+			dependencies: ["09812AE1E82D15C5"]
+			id: "250C73AC03453CF1"
+			tasks: [{
+				id: "12BB594EC3628DDB"
+				type: "item"
+				item: "mekanism:enriched_iron"
+			}]
+		}
+		{
+			title: "Ores make The Moon shiny!"
+			icon: "appliedenergistics2:charged_certus_quartz_crystal"
+			x: 11.0d
+			y: 13.0d
+			shape: "square"
+			subtitle: "Obtain all the ore types present on The Moon"
+			dependencies: ["1809F9F777ED8329"]
+			id: "075DB9818A4FBC6C"
+			tasks: [
+				{
+					id: "02203DCA5A9FB4CA"
+					type: "item"
+					item: "appliedenergistics2:charged_certus_quartz_crystal"
+				}
+				{
+					id: "69B9243F0FB1736C"
+					type: "item"
+					item: "appliedenergistics2:certus_quartz_crystal"
+				}
+				{
+					id: "5C4A8C319287A5C9"
+					type: "item"
+					item: "boss_tools:moon_desh_ore"
+				}
+				{
+					id: "659D2B02958C2781"
+					type: "item"
+					item: "decursiomod:pure_skystone_block"
+				}
+				{
+					id: "07178ACF4AFD3148"
+					type: "item"
+					item: "emendatusenigmatica:arcane_gem"
+				}
+			]
+		}
+		{
+			x: 11.0d
+			y: 12.0d
+			shape: "square"
+			subtitle: "Fluix Crystals will be used as a base material in Applied Energistics 2. This mod will be very similar to Pretty Pipes, but better in every way/shape/form. Meanwhile, these crystals can be obtained by dropping Charged Certus Quartz, Nether Quartz, and Redstone Dust into a pool of Water"
+			dependencies: ["075DB9818A4FBC6C"]
+			id: "631FBD2CC11F4972"
+			tasks: [{
+				id: "6B384C8BF06BA418"
+				type: "item"
+				item: "appliedenergistics2:fluix_crystal"
+			}]
+		}
+		{
+			x: 11.0d
+			y: 11.0d
+			shape: "square"
+			subtitle: "Say \"hi\" to the Fluix Seed. These seeds can be tossed in water to start growing (don't worry, they won't despawn). When they're fully grown, you'll receive some Pure Fluix Crystals which will be used in other recipes. Make sure you use them in a Crystal Growth Unit, so you don't have to wait that much for them to grow"
+			dependencies: ["631FBD2CC11F4972"]
+			dependency_requirement: "all_started"
+			id: "17036C35C69172CC"
+			tasks: [{
+				id: "5ED3816F0F4E9FAC"
+				type: "item"
+				item: "appliedenergistics2:fluix_crystal_seed"
+			}]
+		}
+		{
+			title: "Crystal Growth Accelerator"
+			icon: "appliedenergistics2:quartz_growth_accelerator"
+			x: 15.5d
+			y: 7.0d
+			shape: "gear"
+			subtitle: "Make em grow faster already! Left Click for more info"
+			description: [
+				"Growing those damn crystals usually takes around 20 minutes. Since you cannot go around wasting so much time, here's a way of growing them faster. We are pleased to present to you The Crystal Growth Accelerator."
+				""
+				"Things are simple. The more of these you use, the faster the growing process will be. You can use a maximum amount of 5 for one setup and each one of them will speed up the growing process."
+				""
+				"Each one of them has to be provided with power (they can accept it only through the top/buttom) and here's an example of how a basic setup looks like:"
+				""
+				"{image:kubejs:textures/ae2/crystal_growth_accelerator_example.png width:100 height:100 align:1}"
+				""
+				"Keep in mind that you'll have to supply the power for the Accelerators through the Energy Acceptor, otherwise things will not work!"
+				""
+				"Lastly, here's a chart of how each added Accelerator affects the growth time:"
+				""
+				"- None: 20 minutes"
+				"- 1: 2 minutes"
+				"- 2: 1 minute"
+				"- 3: 40 seconds"
+				"- 4: 30 seconds"
+				"- 5: 24 seconds"
+			]
+			dependencies: ["02FD2E2781CA26DB"]
+			id: "7B59D3A24CC98569"
+			tasks: [{
+				id: "3F0FFBE48AD2E10A"
+				type: "item"
+				item: "appliedenergistics2:quartz_growth_accelerator"
+			}]
+			rewards: [{
+				id: "2EC206C12BA221B5"
+				type: "item"
+				item: "appliedenergistics2:fluix_glass_cable"
+				count: 32
+			}]
+		}
+		{
+			title: "Making Pure Quartz Crystals"
+			x: 11.0d
+			y: 9.5d
+			shape: "square"
+			subtitle: "Well, you can't just use regular Fluix Crystals in these machines, right? You have to use Pure ones, of course <3 Left Click for more info"
+			description: [
+				"The Machines you're about the make are added by Applied Energistics 2 and, in this pack, they require Pure Fluix Crystals. If you're familiar with AE2 you know that there are two ways you can get Pure Fluix Crystals."
+				""
+				"One is to just throw them in a pond of Water, have them sorrounded by powered Crystal Growth Accelerators and wait a few minutes for them to grow. Well, this is the advanced way and you'll have access to it later, but not right now."
+				""
+				"Ok, then what's the 2nd way? You can just throw them in a regular Water pond and wait. It takes 12 IRL hours for them to grow so make sur-"
+				""
+				"\"You guys are ok, right?\""
+				""
+				"Alright, alright, there's a 3rd way. By placing one seed in a Crystal Growth Unit, you'll be able to get 8 Pure Crystals in about 20 IRL minutes. While you can get a lot of Crystals this way, it takes a lot of time to obtain them and it also requires some power. So, you'll most probably be interested in some Crystal Growth Accelerators as they're much more faster and they require less power."
+				""
+				"Oh, also the Growth Unit cannot be upgraded."
+			]
+			dependencies: ["17036C35C69172CC"]
+			dependency_requirement: "all_started"
+			id: "620CBC910FEB2996"
+			tasks: [
+				{
+					id: "0C8166477EE9FB74"
+					type: "item"
+					item: {
+						id: "custommachinery:custom_machine_item"
+						Count: 1b
+						tag: {
+							machine: "custommachinery:crystal_growth_unit"
+						}
+					}
+				}
+				{
+					id: "4470F9D193C5095E"
+					type: "item"
+					item: "appliedenergistics2:purified_fluix_crystal"
+				}
+			]
+			rewards: [{
+				id: "11A3100E49755E49"
+				type: "item"
+				item: "appliedenergistics2:purified_nether_quartz_crystal"
+				count: 64
+			}]
+		}
+		{
+			title: "The Inscriber"
+			x: 11.0d
+			y: 8.5d
+			shape: "square"
+			subtitle: "The \"I hate automation\" Machine. Left Click for more info"
+			description: [
+				"The inscriber is used to press items using various Inscriber Plates. Each operation requires 1k RF/FE/AE charged up."
+				""
+				"Its main use will be for crafting advanced processors which will later be used in many recipes around Ae2 and beyond."
+				""
+				"It will be quite unfortunate to tell you that automating this machine will be quite hard. It can be fully automated using storage buses and various other means, but for now you'll be able to semi-automate it using hoppers. Use the fact that specific sides of the inscriber insert into specific slots to your advantage."
+				""
+				"Here's how specific sides of the machine interact with its slots:"
+				""
+				"- Top Input: Top Side"
+				"- Center Input: Middle Sides"
+				"- Bottom Input: Bottom Side"
+				"- Output: Middle Sides"
+				""
+				"Note that the inscribers can (and should) be rotated 90 degrees with a wrench to fully take advantage of this feature."
+			]
+			dependencies: [
+				"620CBC910FEB2996"
+				"707659BED60BED08"
+			]
+			id: "7085ED71734DBE6C"
+			tasks: [{
+				id: "0F3B9863688B0645"
+				type: "item"
+				item: "appliedenergistics2:inscriber"
+			}]
+			rewards: [
+				{
+					id: "4CF7D18E72F15F98"
+					type: "item"
+					item: "appliedenergistics2:certus_quartz_wrench"
+				}
+				{
+					id: "5FB4AF10F3B0F5AE"
+					type: "item"
+					item: "appliedenergistics2:purified_certus_quartz_crystal"
+					count: 64
+				}
+			]
+		}
+		{
+			title: "i3 i5 and i7"
+			x: 11.0d
+			y: 7.0d
+			shape: "square"
+			subtitle: "These processors will be used a lot in Ae2's machines, so you better automate their production as fast as possible"
+			dependencies: ["7085ED71734DBE6C"]
+			dependency_requirement: "all_started"
+			id: "353C47A081885EE9"
+			tasks: [
+				{
+					id: "40BDAF21862D3FCA"
+					type: "item"
+					item: "appliedenergistics2:calculation_processor"
+				}
+				{
+					id: "5C299C68318424BC"
+					type: "item"
+					item: "appliedenergistics2:logic_processor"
+				}
+				{
+					id: "0D7DBCD095AA1D88"
+					type: "item"
+					item: "appliedenergistics2:engineering_processor"
+				}
+			]
+			rewards: [{
+				id: "0F2557AC8BA4EA90"
+				type: "item"
+				item: "appliedenergistics2:purified_fluix_crystal"
+				count: 64
+			}]
+		}
+		{
+			x: 14.0d
+			y: 7.0d
+			shape: "square"
+			subtitle: "Because Applied Energistics 2 uses AE instead of RF! Left Click for more info"
+			description: [
+				"Just like any other tech mod, Ae2 needs power, too. While the most majority of tech mods use RF/FE, Ae2 uses AE. Oh, wait.. you're making only RF/FE right now. Well, no problem, you can convert this type of electricity into AE with ease through the use of an Energy Acceptor."
+				""
+				"This Transformer converts energy from external systems into AE and stores it in the ME Network. What's the ME Network? Glad you asked. That's what's comming next in the \"Storage - 3\" tab."
+				""
+				"Oh, forgot to tell you. 2 RF/FE = 1 AE. Do what you want with this information."
+			]
+			dependencies: ["4CF1DAD5B1DD93B0"]
+			id: "02FD2E2781CA26DB"
+			tasks: [{
+				id: "04A7118BD9E3C2F4"
+				type: "item"
+				item: "appliedenergistics2:energy_acceptor"
+			}]
+			rewards: [{
+				id: "1C7AE436E45BC30B"
+				type: "item"
+				item: "appliedenergistics2:fluix_glass_cable"
+				count: 32
+			}]
+		}
+		{
+			x: 3.5d
+			y: 8.0d
+			shape: "square"
+			subtitle: "We had no budget for Titanium :D Left Click for more info"
+			description: [
+				"The Black Iron is a very malleable, yet very strong alloy, capable of making various shapes and withstand large amount of stress."
+				""
+				"You'll be able to use this material in lots of recipes, so make sure you have plenty of it in your stock."
+			]
+			dependencies: [
+				"559CB0401212A28C"
+				"29D5FFF01A4256DF"
+			]
+			dependency_requirement: "one_completed"
+			id: "06F6D673E86907A6"
+			tasks: [{
+				id: "28E4FA572F186172"
+				type: "item"
+				item: "extendedcrafting:black_iron_ingot"
+			}]
+			rewards: [{
+				id: "59F8C6A39C393546"
+				type: "item"
+				item: "extendedcrafting:black_iron_slate"
+				count: 14
+			}]
+		}
+		{
+			x: 8.0d
+			y: 6.0d
+			shape: "square"
+			subtitle: "Electric melting. Left Click for more info"
+			description: [
+				"Long story short, you're here for Molten Signalum. And sorry, but no. You can't obtain it through Tinker's Construct. So, let's see how you can make it. Dear Player, meet the Magma Crucible."
+				""
+				"The Crucible is a machine that uses power to melt items into fluids. It does this by heating up two large electum coils inside of it. When a high enough temperature is reached, the item inside will be melted. Note that each melting operation does cool down the coils, so you'll not be able to melt an entire stack of items at once. You'll have to melt each item one by one, thing which you can consider to be something good."
+			]
+			dependencies: ["5984E05C451F1AF2"]
+			id: "1FED40C0BDD7E015"
+			tasks: [{
+				id: "6840699D2E3D649D"
+				type: "item"
+				item: "thermal:machine_crucible"
+			}]
+		}
+		{
+			title: "The Supercritical Phase Shifter"
+			x: 22.0d
+			y: 15.0d
+			shape: "square"
+			subtitle: "Reaching the lands of antimatter. Left Click for more info"
+			description: [
+				"Well, well, well, look who wants to reach the realms of the Gods. Considering your very high efforts, you might actually succeed in your quest. But let's see what you have to achieve next."
+				""
+				"Meet The Supercritical Phase Shifter. This is another multiblock structure that consumes large amount of energy and 100 mB of polonium gas to create antimatter gas, which can be crystallized into antimatter pellets. Antimatter pellets are used in a number of recipes."
+				""
+				"The structure is expensive to build, as each SPS Casing block requires 50,000 mB of processed nuclear waste (4 polonium pellets, 1 plutonium pellet) to craft. As such, the cheapest structure will maximize the amount of reactor glass used and minimize the amount of SPS Casing used. The optimal minimal build consists of:"
+				""
+				"- 60 SPS Casings (+12 crafting material for 3 SPS Ports)"
+				""
+				"- 123 Reactor Glass or Structural Glass"
+				""
+				"- 3 SPS Ports, one to input power, one to input Polonium and one to export Antimatter"
+				""
+				"- 1 Supercharged Coil"
+				""
+				"Building this structure will be a little tricky due to the fact that is is basically, a sphere. The frame of the Supercritical Phase Shifter must consist of SPS Casings. The sides, bottom and top can consist of either SPS Casings, Reactor Glass or SPS Ports. In order to insert energy through a port a Supercharged Coil has to be attached to the SPS Port on the inside of the construct."
+				""
+				"Here's how it should look:"
+				""
+				"{image:kubejs:textures/mekanism/sps_example.png width:100 height:100 align:1}"
+				""
+				"The structure will need 100mB of Polonium and a constant supply of 40M RF/t in order to produce 1mB/tick of Anti-matter. Note that, if less RF/tick is provided, The Supercritical Phase Shifter will simply just give you less mB/tick of Antimatter, so don't worry if you don't have the infrastructure to give this thing 40M RF/tick."
+			]
+			dependencies: [
+				"20066A1C19E42D20"
+				"413C02D770E75720"
+			]
+			id: "4BDD1C64E9761830"
+			tasks: [
+				{
+					id: "5ED67BAE37F6FB4D"
+					type: "item"
+					item: "mekanism:sps_casing"
+					count: 60L
+				}
+				{
+					id: "63F416B3FB2838FD"
+					type: "item"
+					item: "mekanism:sps_port"
+					count: 3L
+				}
+				{
+					id: "7D2F3782BE3D6FC5"
+					type: "item"
+					item: "mekanism:supercharged_coil"
+				}
+			]
+		}
+		{
+			title: "Alloys of The End"
+			x: 16.0d
+			y: 5.0d
+			shape: "diamond"
+			subtitle: "While Enderium will finally allow you to enter Mekanism and iradiate yourself in a great fashion way, the Shadow Steel will allow you to make top tier Circuits. To make ShadowSteel, just throw some Chromatic Compound into the Void in The End"
+			hide_dependency_lines: true
+			dependencies: [
+				"570A86025A50F706"
+				"0AAF3A1925404692"
+				"1FED40C0BDD7E015"
+				"4808E688ABD2122B"
+			]
+			id: "41B717C98381E7DC"
+			tasks: [
+				{
+					id: "3C47B60DC30821C5"
+					type: "item"
+					item: "emendatusenigmatica:enderium_ingot"
+				}
+				{
+					id: "24C48846D6F751BF"
+					type: "item"
+					item: "create:shadow_steel"
+				}
+			]
+			rewards: [{
+				id: "69F4BF2F6E3A8F58"
+				type: "loot"
+				table_id: 7176426831663151036L
+			}]
+		}
+		{
+			title: "Alien Trading 101"
+			x: 8.5d
+			y: 15.0d
+			shape: "square"
+			subtitle: "Obtain the Inscriber Master Press from one of the Alien Villagers found in the Alien Villages present on the Moon. To get the Press, just Shift Right-Click one of the Villagers with 64 Emerald Blocks in your main hand"
+			dependencies: ["4A24C03686CFADBA"]
+			id: "221ECEF99F9C4AA8"
+			tasks: [{
+				id: "5F153734C011F1DE"
+				type: "item"
+				item: "decursiomod:inscriber_master_press"
+			}]
+		}
+		{
+			title: "Alien Village for the Win"
+			icon: "supplementaries:present_blue"
+			x: 8.5d
+			y: 14.0d
+			shape: "square"
+			subtitle: "Just like the Overworld, The Moon has Villages, too. While you can go and visit them just for a nice experience, you might quickly find out that visiting them, will get you a quite unique item. Left Click for an example of the Alien Village entrance"
+			description: ["{image:kubejs:textures/spaceboss_tools/alien_village_entrace_example.png width:100 height:100 align:1}"]
+			dependencies: ["1809F9F777ED8329"]
+			id: "4A24C03686CFADBA"
+			tasks: [{
+				id: "0AA6D83280F9DB0B"
+				type: "checkmark"
+				title: "Reach an Alien Village on the Moon"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 9.5d
+			shape: "square"
+			subtitle: "Explosion proof glass. It will be used in lots of recipes. Use a Smeltery to make it. Eventually you'll be able to produce it with more ease"
+			dependencies: ["7EF155944458998F"]
+			id: "6697085DBFFEB685"
+			tasks: [{
+				id: "3F2CC416108A61D3"
+				type: "item"
+				item: "thermal:obsidian_glass"
+			}]
+		}
+		{
+			x: 20.0d
+			y: 7.0d
+			shape: "square"
+			subtitle: "The gas alloyer. Left Click for more info"
+			description: [
+				"Certain gases cannot be found in nature, or cannot be produced from base materials, so you'll have to make them yourself. This machine will be your best tool in this matter."
+				""
+				"Meet the Chemical Infuser. It combines or reacts two gases to create another gas. The recipes shown by JEI do not require the gas to be in a certain tank. For example you can have Hydrogen in the right tank and Chlorine in the left tank and still get Hydrogen Chloride out."
+			]
+			dependencies: ["40623128C431038D"]
+			id: "313BD719919BFEA6"
+			tasks: [{
+				id: "23A2B022B1BEE6A4"
+				type: "item"
+				item: "mekanism:chemical_infuser"
+			}]
+		}
+		{
+			x: 20.0d
+			y: 9.5d
+			shape: "square"
+			subtitle: "Realining the atoms. Left Click for more info"
+			description: [
+				"Making Fissile Fuel requires only one more step. That's gonna be the Isotopic Centrifuge."
+				""
+				"This machine will be used with a Fission Reactor, whether processing Uranium Hexafluoride into Fissile Fuel, OR processing Nuclear Waste into Plutonium."
+			]
+			dependencies: ["40623128C431038D"]
+			id: "53064288639F6305"
+			tasks: [{
+				id: "47DB8BD5F662C5CE"
+				type: "item"
+				item: "mekanism:isotopic_centrifuge"
+			}]
+		}
+		{
+			x: 6.5d
+			y: 4.0d
+			shape: "square"
+			subtitle: "This component can be installed inside of any machine or tool added by the Thermal Series. It will upgrade the base attributes of your tool/machine by a Scale Factor of 3x"
+			dependencies: ["2166A8D18DC09163"]
+			id: "44715555C85649A7"
+			tasks: [{
+				id: "7A8AF0FBE500D8B6"
+				type: "item"
+				item: "thermal:upgrade_augment_2"
+			}]
+			rewards: [{
+				id: "1C5B7078F38182C6"
+				type: "loot"
+				table_id: 7176426831663151036L
+			}]
+		}
+		{
+			x: 17.0d
+			y: 8.0d
+			shape: "square"
+			subtitle: "Bright, tough and conductive. The Refined Glowstone ingot can be used to turn RF/FE into pure light. This behaviour can be used to create a Teleporter (*yes, this is just a fancy way of saying \"you need this to craft a Teleporter\"*)"
+			dependencies: ["4E3C384D72C1DCAB"]
+			id: "19E54C1EDF2E274C"
+			tasks: [{
+				id: "15F9E867A6869F03"
+				type: "item"
+				item: "mekanism:ingot_refined_glowstone"
+			}]
+		}
+		{
+			x: 17.0d
+			y: 11.0d
+			shape: "gear"
+			subtitle: "The Teleportation Core will allow you to create very powerful and useful machines that can manipulate the time and space around them to teleport resources with ease"
+			dependencies: [
+				"0FC87F7225551D24"
+				"3E7A55F6C13CD779"
+			]
+			id: "5000BE1C387FA8A3"
+			tasks: [{
+				id: "3970721EEAEA7A6C"
+				type: "item"
+				item: "mekanism:teleportation_core"
+			}]
+		}
+		{
+			x: 18.0d
+			y: 2.0d
+			shape: "square"
+			subtitle: "The Phyto-Gro is a compound abundant in base nutrients which make it as great as Bone Meal. However, unlike Bonemeal, it can be turned into Biofuel"
+			dependencies: ["3388657E94789E9B"]
+			id: "69465F5A196B8397"
+			tasks: [{
+				id: "605CBDAEA1CB5294"
+				type: "item"
+				item: "thermal:phytogro"
+			}]
+		}
+		{
+			title: "Fissile Fuel"
+			icon: "industrialforegoing:laser_lens15"
+			x: 20.0d
+			y: 10.5d
+			shape: "square"
+			subtitle: "Radioactive Fuel. Left Click for more info"
+			description: ["Fissile Fuel will be burned inside of a Fission reactor. This process will produce heat and Nuclear Waste. Since you'll need A LOT of that Waste, we suggest to make a lot of this Fuel."]
+			dependencies: ["53064288639F6305"]
+			id: "3C989392F3AFBAA5"
+			tasks: [{
+				id: "04813A76263F9095"
+				type: "checkmark"
+				title: "I have the fuel!"
+			}]
+		}
+		{
+			title: "Nuclear Storage 101"
+			x: 19.0d
+			y: 12.0d
+			shape: "gear"
+			subtitle: "Getting rid of radioactive material. Left Click for more info"
+			description: [
+				"Radioactive Waste Barrels are used to store (or as buffer for) radioactive materials. They delete their contents at a rate of 1 mB per minute."
+				""
+				"You can check the storage status of Radioactive Waste Barrels by shift right-clicking it with an empty hand. Green radiation particles start to appear as a barrel fills up (these are just a rough visual indicator of a barrel's fill ratio, not actual radiations)."
+				""
+				"Radioactive Waste barrels cannot be moved by any means (pistons, cardboard box, etc.). Also because barrels containing any radioactive waste cannot be broken safely, the only way to safely move a non empty barrel is to transfer its contents to another barrel before breaking it. This can be done by connecting a Pressurized Tube to its top or bottom side in pull mode."
+				""
+				"Even if Radioactive Waste Barrels are somewhat blast resistant, pressurized tubes carrying waste to them are not. As a rule of thumb, do not allow creepers wandering around a fission reactor or waste transformation or disposal units."
+			]
+			dependencies: ["375AE1646F859207"]
+			id: "4525304D819CFAF5"
+			tasks: [{
+				id: "208F6C1476054313"
+				type: "item"
+				item: "mekanism:radioactive_waste_barrel"
+			}]
+		}
+		{
+			icon: "eidolon:death_essence"
+			x: 20.0d
+			y: 13.0d
+			shape: "gear"
+			subtitle: "Nuclear Waste is generated by burning Fissile Fuel inside in a Fission Reactor. This will be the first radioactive material you'll encounter in Mekanism and you can get rid of it through Radioactive Waste Barrels. Additionally, you can use the Waste to obtain other materials, which is, in fact, what you'll have to do to progress further"
+			dependencies: ["375AE1646F859207"]
+			id: "2860A143350A5A76"
+			tasks: [{
+				id: "0C6ECE4D6AC9EA8F"
+				type: "checkmark"
+				title: "Waste Forever"
+			}]
+		}
+		{
+			title: "Uranium Hexafluoride"
+			icon: "industrialforegoing:laser_lens5"
+			x: 20.0d
+			y: 8.5d
+			shape: "square"
+			subtitle: "We wouldn't touch this, but this is Minecraft, so yeah. Left Click for more info"
+			description: [
+				"By combining Uranium Oxide with Hydrofluoric Acid in a Chemical Infuser, you can obtain the Uranium Hexafluoride which will be the base for your future fuel. "
+				""
+				"To make two buckets (2,000 mb) of Haxafluoride, you'll need 2 Uranium Ingots and 1 Fluorite Gem."
+				""
+				"Note that finishing this quest, DOES NOT mean you did what you had to."
+			]
+			dependencies: [
+				"33040FC0EB0A4FD8"
+				"2E83341A5C81DF78"
+				"313BD719919BFEA6"
+			]
+			id: "44243F58BF9053A1"
+			tasks: [{
+				id: "69821252053429C2"
+				type: "checkmark"
+				title: "I have the Hexafluoride!"
+			}]
+		}
+		{
+			x: 20.0d
+			y: 15.0d
+			shape: "square"
+			subtitle: "By feeding Plutonium and Fluorite Dust into a Pressurized Reaction Chamber, you can make Polonium Pallets which will be used to build The Supercritical Phase Shifter"
+			dependencies: [
+				"53064288639F6305"
+				"2860A143350A5A76"
+			]
+			id: "413C02D770E75720"
+			tasks: [{
+				id: "6FCD4F4CB574B3C5"
+				type: "item"
+				item: "mekanism:pellet_plutonium"
+			}]
+		}
+		{
+			title: "Atomic Soldering"
+			x: 24.0d
+			y: 15.0d
+			shape: "square"
+			subtitle: "Fusing some atoms together. Left Click for more info"
+			description: [
+				"The things you'll craft in the future will literally need to have their atoms fuse together and to achieve such feats, you'll need the Crafting Core."
+				""
+				"Each recipe made in this machine will require a certain amount of RF/FE to be provided and, also a different number of Pedestals present around the Core (more Pedestals don't hurt)."
+				""
+				"To initiate a recipe, all the items must be provided to the Core and to the nearby Pedestals. For example, to make the Shattered Singularity, one Quantum Entangled Singularity has to be placed on the Core and the other items, on the Pedestals."
+				""
+				"If the items and power are present, the recipe will start crafting. The outputs will be dropped near the Core."
+				""
+				"Keep in mind that each recipe will require a different amount of power. Also, some recipes will have a different power consumption rate which cannot be changed."
+			]
+			dependencies: ["36367A18678E09A3"]
+			id: "7DFF67D50DADC624"
+			tasks: [
+				{
+					id: "04B363F8D60FEE75"
+					type: "item"
+					item: "extendedcrafting:crafting_core"
+				}
+				{
+					id: "3113F58ED80FE6C7"
+					type: "item"
+					item: "extendedcrafting:pedestal"
+				}
+			]
+		}
+		{
+			x: 18.0d
+			y: 10.0d
+			shape: "gear"
+			subtitle: "The Quantum Entangled Quarry. Left Click for more info"
+			description: [
+				"Mining can get quite exhausting sometimes, even with a Scanner. Well, for those of you who got sick of exploring caves just to find iron and other resources, we have the Digital Miner."
+				""
+				"This machine is used to extract ore blocks automatically. With it, you can select which ore/block you want to be extracted from the ground, the Y level at which you want it to mine, if you want to apply Silk Touch to the extracted ores/blocks, and much more."
+				""
+				"The Digital Miner has 4 ports. The 2 green ports located on its sides will be used to power the machine. The slot present at the top will be used to pipe blocks INTO the machine. \"Wait. Into?\". Yeah, after collecting ores/blocks, the Digital Miner can replace them with other blocks of your choise. Lastly, the slot on the machine's back will be used to output the collected resources/ores."
+				""
+				"Let's see how this machine's interface looks like:"
+				""
+				"{image:kubejs:textures/mekanism/digital_miner_example.png width:100 height:100 align:1 fit:true}"
+				""
+				"Some of the button present here, were already covered in the quest dedicated to the Metallurgic Infuser, so check that one if you want to know what some of these buttons do, as we'll cover only the \"new\" buttons present here."
+				""
+				"Let's start with the button located in the top left corner. That's the Visuals button which will toggle a hologram which will represent the area in which the Digital Miner will work in."
+				""
+				"The buttons present in the blacked out area, will be used to toggle the machine's auto-eject feature (all the materials collected by the miner, will be auto-ejected to the inventory connected to port present on the Miner's back - if no inventory is available, the machine will keep all the items in its inventory), the auto-pull feature (will auto-pull items from the inventory connected to the port present on the top of the Miner), and the Silk Touch feature (will apply the Silk Touch effect on the mined blocks - this will require more RF)."
+				""
+				"The Start button will start the Miner."
+				""
+				"The Stop button will stop the Miner from extracting ores whith its current configuration."
+				""
+				"The Reset button will delete the current configuration applied to the Miner, allowing you to make a new one."
+				""
+				"Finally, let's talk about the Config button. This one will open the Configuration Panel. Let's see how that one looks:"
+				""
+				"{image:kubejs:textures/mekanism/digital_miner_config_example.png width:120 height:100 align:1 fit:true}"
+				""
+				"We'll cover all the elements of this panel, based on the colored sections:"
+				""
+				"Red - here you can select the area in which you want the Miner to operate in. A maximum of 32 can be selected and this area cannot be exceeded."
+				""
+				"Yellow - Here you can select the minimum and maximum Y level at which you want the Miner to search for ores/blocks."
+				""
+				"Orange - Here you can apply filters for the Miner to follow. Pressing \"New Filter\" will allow you to select a variety of ores/blocks based on their ItemStack/Tag/Material/ModID."
+				""
+				"Green - Here you can select if you want the previously mentioned filter to be inverted or not. Being inverted means that the Miner will try to dig everything, but not what's on that filter. Additionally, here you can also select if the inversed mode will try to replace the mined blocks with something else, and also with what it should replace."
+			]
+			dependencies: [
+				"5000BE1C387FA8A3"
+				"776A12466E8A6EFA"
+			]
+			id: "30AD0B3339968A8D"
+			tasks: [{
+				id: "53DE947FA2185231"
+				type: "item"
+				item: "mekanism:digital_miner"
+			}]
+			rewards: [{
+				id: "0A13F8080EF5B0D4"
+				type: "loot"
+				table_id: 7176426831663151036L
+			}]
+		}
+		{
+			title: "Welcome to The Plastic Factory!"
+			x: -0.5d
+			y: 11.0d
+			shape: "square"
+			subtitle: "Got the Latex? Perfect! Now to the Plastic. Left Click for more info"
+			description: [
+				"Congrats! You maanged to obtain a great amount of Latex. Now what? Well, we're moving to the next step on the assembly line. To the Latex Processing Unit!"
+				""
+				"This amazing machine will use 100mb of Latex, 500mb of Water and a healty amount of RF/FE to produce 1 piece of Tiny Dry Rubber."
+			]
+			dependencies: ["69AFCE252309ACAF"]
+			id: "1AAAA5A2F8DD94CA"
+			tasks: [{
+				id: "232564B8659A0ADE"
+				type: "item"
+				item: "industrialforegoing:latex_processing_unit"
+			}]
+		}
+		{
+			x: 15.5d
+			y: 11.0d
+			shape: "gear"
+			subtitle: "By dumping 25.000 items, the Matter Condenser will give you one matter ball"
+			dependencies: ["6DA0CD7B32F110C1"]
+			id: "3E7A55F6C13CD779"
+			tasks: [{
+				id: "73756B3C523195AD"
+				type: "item"
+				item: "appliedenergistics2:matter_ball"
+			}]
+		}
+		{
+			x: 15.5d
+			y: 9.0d
+			shape: "gear"
+			subtitle: "Mekanism for the win! Left Click for more info"
+			description: [
+				"Ok, most probably you're comming from the previous quest. If that's the case, great! If not, idk what you're doing here, but hi :)"
+				""
+				"Ok, now, getting back to the subject here. You want to teleport between multiple points from anywhere. How do you do that? Well, the Portable Teleporter has a similar interface to the one of the Teleporter. To go to a certain location, you'll just have to set the proper frequency and then just hit \"Teleport\". Yes, it's that easy."
+				""
+				"More then that, you might be glad to hear that, with the Portable Teleporter, you'll not need a Portal Frame around your Teleporter in order to make the things work. Just place down a Teleporter, give it a frequency and you're good to go. And yeah, it doesn't even require power anymore. However, do keep in mind that the Portable Teleporter will need power."
+			]
+			dependencies: ["629BD6917BCD2089"]
+			id: "4E9EEE7AB9428B86"
+			tasks: [{
+				id: "5522AFA6819FBFD6"
+				type: "item"
+				item: "mekanism:portable_teleporter"
+			}]
+		}
+		{
+			title: "Mekanism's Boiler"
+			x: 21.0d
+			y: 11.0d
+			shape: "gear"
+			subtitle: "Industrial quantities of Steam. Left Click for more info"
+			description: [
+				"If you're building this thing, you must needed a lot of steam."
+				""
+				"The Thermoelectric Boiler is a multi-block structure used to generate steam from an external heater. Its minimum dimensions are 3x3x4 (3 long, 3 wide, 4 tall) and its maximum dimensions are 18x18x18, as with Mekanism's other multi-block structures. "
+				""
+				"The Heat can be supplied through different ways. One of them is through a Resistive Heater which will make heat by using RF/FE."
+				""
+				"However, another way which you might find to be better, is with Superheated Sodium. This gas can be obtained from a Sodium Cooled Fission Reactor."
+				""
+				"When cooling a Fission Reactor with Sodium, the later one will be turned into Superheated Sodium. You can use this Superheated Sodium to heat up a boiler to extreme temperatures. In result, this will produce extreme amounts of steam and will also cool down the Sodium which you can bring back to the Fission Reactor, thus creating a cooling cycle and generating power."
+				""
+				"Ok, now let's see how to build this thing. We'll cover the process of building the smallest boiler. Note that this structure is also modular, so you can build it in any way you'd consider to be more efficient."
+				""
+				"- Place a 3x3 base layer of Boiler Casings down."
+				""
+				"- Place the Superheating Element in the center of the base."
+				""
+				"- Form a heater layer by placing a 3x3 ring of Boiler Casings around the Superheating Element. You may place Structural Glass on the sides, but not the corners."
+				""
+				"- Form a steam catch layer by placing Pressure Disperser blocks in the center and Boiler Casings or Structural Glass around the outside. The entire center of this layer must be filled with Dispersers in order for the Boiler to form."
+				""
+				"- You may form steam cavity layers above the steam catch layer by leaving the center empty. This will increase the steam capacity of the boiler."
+				""
+				"- Cap off the the boiler by placing a solid layer of Boiler Casings. You may use Structural Glass in the center. Red particles should emit once this layer is formed, signaling that the inside of the boiler is properly constructed."
+				""
+				"- Finally, you'll have to add at least 2 Boiler Valves on the sides of the structure (corners will not work), so you can insert water and extract steam. 4 Valves will be required if you want to heat the Boiler with Superheated Sodium."
+			]
+			hide_dependency_lines: true
+			dependencies: ["40623128C431038D"]
+			id: "0B366DB7342041DA"
+			tasks: [
+				{
+					id: "53FD0C4F06FBCD06"
+					type: "item"
+					item: "mekanism:boiler_casing"
+				}
+				{
+					id: "4B6EE604DF7890DD"
+					type: "item"
+					item: "mekanism:boiler_valve"
+					count: 2L
+				}
+				{
+					id: "2E373A70C27D2BC6"
+					type: "item"
+					item: "mekanism:pressure_disperser"
+				}
+				{
+					id: "5DEF8225DBA78CE5"
+					type: "item"
+					item: "mekanism:superheating_element"
+				}
+				{
+					id: "0363EB46E4B431E6"
+					type: "item"
+					item: "mekanism:structural_glass"
+				}
+			]
+		}
+		{
+			x: 10.0d
+			y: 11.0d
+			shape: "square"
+			subtitle: "Use the Rotary Condensentrator to turn the Liquid Oxygen into Oxygen Gas! Left Click for more info"
+			description: [
+				"Through your journey, you'll synthesize certain substances in the form of a liquid and you might find yourself in a situation where you'll need the gas version of that liquid. Things can also be the other way around, but that doesn't matter. Now, what do you do?"
+				""
+				"Easy. You obtain the Rotary Condensentrator. This machine's purpose is to process various liquids into gasses, and vice versa. Later, this machine will be a part of the Lithium production process."
+				""
+				"The Rotary Condensentrator has two operating modes: Condensentrating, and Decondensentrating. The former turns gasses into liquids, and the latter does the opposite. One side of the machine always accepts fluids, and the other side, gasses."
+			]
+			dependencies: ["777E04BC1BCAF88C"]
+			id: "27E31F1465D69D06"
+			tasks: [{
+				id: "7EB2FD5AA271A828"
+				type: "item"
+				item: "mekanism:rotary_condensentrator"
+			}]
+		}
+		{
+			x: 19.0d
+			y: 2.0d
+			shape: "gear"
+			subtitle: "Lithium dust can be considered the heart and soul of a true battery. Use this fine dust to make the elements required for an Induction Matrix, which essencially, is a very large, modular battery"
+			dependencies: [
+				"02502B52A16346C0"
+				"58CC54E4F597E420"
+			]
+			id: "7DC1C8C5F2C6043A"
+			tasks: [{
+				id: "7AF88DCAA7643363"
+				type: "item"
+				item: "emendatusenigmatica:lithium_dust"
+			}]
+		}
+		{
+			x: 19.0d
+			y: 3.0d
+			subtitle: "Brine and Lithium. Left Click for more info"
+			description: [
+				"If you're reading this, it means that you're here either for Lithium, or Sodium. Or both actually. Let's go and find out what The Thermal Evaporation Plant is and what you can do with it."
+				""
+				"This is a multiblock structure added by Mekanism. It is used for the production of Brine which can be turned either into Sodium or Lithium."
+				""
+				"Sodium can be used as a Coolent in a Fission Reactor."
+				""
+				"Lithium can be turned into Lithium Dust which can further be used to build very large batteries."
+				""
+				"Now let's see how you can build this structure. The Thermal Evaporation Plant is a 4x4 structure which has a minimum height of 3 blocks. This can be extended to 18 blocks for a larger internal tank. Here's how the smallest structure looks like:"
+				""
+				"{image:kubejs:textures/mekanism/evaporation_plant_example.png width:100 height:110 align:1}"
+				""
+				"One of the sides has to include the Thermal Evaporation Controller. The rest of the structure has to be made out of Thermal Evaporation Blocks. You can add Valves depending on your needs. These Valves are used to input/output liquids in/from the strucuture and you can have as many as you want, as long as they're on the sides of the structure, and not on its edges."
+				""
+				"Ok, now how do you use this thing? Water has to be pumped into the Evaporation Plant through one of its Valves. After that, heat has to be provided to the structure through one of its vents, or through direct contact with one of its sides. \"Wait... heat?\" Yeah. "
+				""
+				"Mekanism has a temperature system. Certain multiblocks/machines will produce a certain amount of heat. This heat can be transfered around with some Thermodynamic Conductors. Think of this heat as of RF/FE. You can generate it with a Resistive Heater (uses RF/FE to produce heat). Heat is, then, used to power the Evaporation Plant. Heat can also be transfered from other sources, but we're keeping this explaination as simple as possible. You can always do your own research on Mekanism's heat system, if you want to find more information about it."
+				""
+				"Ps: The biome you're in, also affects the temperatures added by Mekanism."
+			]
+			dependencies: ["40623128C431038D"]
+			dependency_requirement: "one_completed"
+			id: "58CC54E4F597E420"
+			tasks: [
+				{
+					id: "361E99DBEE36E60C"
+					type: "item"
+					item: "mekanism:thermal_evaporation_controller"
+				}
+				{
+					id: "461911971F144148"
+					type: "item"
+					item: "mekanism:thermal_evaporation_block"
+				}
+				{
+					id: "7A563A7EDD5855FC"
+					type: "item"
+					item: "mekanism:thermal_evaporation_valve"
+				}
+			]
+		}
+		{
+			title: "He's so ugly! I love him!!! <3"
+			x: 3.5d
+			y: 6.0d
+			shape: "heart"
+			subtitle: "A Robit will be your best friend, we promise. Left Click for more info"
+			description: [
+				"Do you feel like your dog needs a friend? You have too much power? Too much free time? Then the Robit is for you."
+				""
+				"Robit is Mekanism's mechanical companion. He can act as a crafting grid, a furnace, an anvil, a chest, or simply a cute little buddy."
+				""
+				"Once you've obtained your Robit, you'll have to right click a Chargepad with him in hand. This will spawn Robit and assign that pad as his home point. After power is provided to Robit through the Chargepad, he'll be able to follow you."
+				""
+				"Now, a bit off topic, but let's talk about the Chargepad (which is the reward for finishing this quest). When it is given power, it will recharge all the items from your inventory that support it. Power can be provided to the Pad through its back, or from underneath."
+				""
+				"Now, back to our star, the Robit. Once you've placed him down, right click on him. This will bring up he's interface. Let's see how that looks:"
+				""
+				"{image:kubejs:textures/mekanism/robit_interface_example.png width:120 height:100 align:1 fit:true}"
+				""
+				"Red - Home button. Will teleport Robit back to he's home."
+				""
+				"Yellow - Name button. Will allow you to change your Robit's name."
+				""
+				"Greed - Appearance button. Will allow you to change your Robit's appearance. Spoiler: LGBTQ+ Community memebers will love this <3"
+				""
+				"White - Information Screen. Will show basic info about your Robit."
+				""
+				"Aqua - Charging Slot. Here you can place charged capacitors/energy cubes in order to keep your Robit charged up."
+				""
+				"Blue - Pickup Mode button. Will allow you to turn on/off Robit's item pickup feature. While he's following you, Robit will try to pickup all the nearby items, and store them in he's inventory."
+				""
+				"Orange - Follow button. Will allow you to control if your Robit is following you, or not."
+				""
+				"Pink - Utility buttons. These buttons will allow you to access Robit's utility features. These include a Crafting Grid, a Chest, a Furnace and an Anvil."
+				""
+				"Purple - Security button. This one will allow you to control which category of players are allowed to access your Robit."
+			]
+			dependencies: ["06F6D673E86907A6"]
+			id: "3B0D7363C6F887CD"
+			tasks: [{
+				id: "32841BDE87CB2950"
+				type: "item"
+				item: "mekanism:robit"
+			}]
+			rewards: [{
+				id: "639CC8C671657C29"
+				type: "item"
+				item: "mekanism:chargepad"
+			}]
+		}
+		{
+			title: "The Mekanism Hazmat Suit"
+			icon: {
+				id: "mekanism:hazmat_gown"
+				Count: 1b
+				tag: {
+					HideFlags: 2
+				}
+			}
+			x: 19.0d
+			y: 11.0d
+			shape: "gear"
+			subtitle: "Chernobyl Worker: Offers protection against radiation. This can be later integrated into The Meka Suit"
+			dependencies: ["7EF155944458998F"]
+			id: "6B4A1F7D442D21C2"
+			tasks: [
+				{
+					id: "7B59136BC4E1CCC2"
+					type: "item"
+					item: {
+						id: "mekanism:hazmat_mask"
+						Count: 1b
+						tag: {
+							HideFlags: 2
+						}
+					}
+				}
+				{
+					id: "49817D08F62C51C5"
+					type: "item"
+					item: {
+						id: "mekanism:hazmat_gown"
+						Count: 1b
+						tag: {
+							HideFlags: 2
+						}
+					}
+				}
+				{
+					id: "71BB2353B1E28618"
+					type: "item"
+					item: {
+						id: "mekanism:hazmat_pants"
+						Count: 1b
+						tag: {
+							HideFlags: 2
+						}
+					}
+				}
+				{
+					id: "0D9C5C83491FF629"
+					type: "item"
+					item: {
+						id: "mekanism:hazmat_boots"
+						Count: 1b
+						tag: {
+							HideFlags: 2
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 1.5d
+			y: 11.0d
+			shape: "gear"
+			subtitle: "The Rover can be used as a transport method on other planets"
+			dependencies: ["36C54C80039A1A15"]
+			id: "2DF54A16E4F0173F"
+			tasks: [{
+				id: "387985FD26D44140"
+				type: "item"
+				item: {
+					id: "boss_tools:rover"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 9.5d
+			y: 9.5d
+			shape: "square"
+			subtitle: "Oxygen not included! Actually yeah, cuz it's liquid. Left Click for more info"
+			description: [
+				"Due to your current technological advancement - which is not that great, duh - you're not capable of using a clean and classic elecrolysis process, so you'll have to cheat the physics a bit."
+				""
+				"By combining an electrolytic core with the capabilities of an amazing Fridge and an Ice Unit, you can make a Cryo-Electrolyzer. This machine will use Water and Blizz Powder to create Liquid Oxigen. You should be able to turn it into regular Oxygen quite easily with another machine."
+			]
+			dependencies: ["1A870097D55C3137"]
+			id: "777E04BC1BCAF88C"
+			tasks: [{
+				id: "3C5DE9C166F77EBE"
+				type: "item"
+				item: {
+					id: "custommachinery:custom_machine_item"
+					Count: 1b
+					tag: {
+						machine: "custommachinery:cryo_electrolyzer"
+					}
+				}
+				match_nbt: true
+			}]
+		}
+		{
+			title: "Luminos Package Crafters"
+			x: 11.0d
+			y: 6.0d
+			shape: "gear"
+			subtitle: "This Altar will allow you to automate all the recipes present in Astral Sorcery, and beyond, by using the ME system. Unfortunately, you won't be able to automate recipes that have ingredients with special NBT data. This is a limitation of the ME System itself"
+			dependencies: ["353C47A081885EE9"]
+			id: "1A346A3AE0D8EC13"
+			tasks: [
+				{
+					id: "6F81C1C49890A6DB"
+					type: "item"
+					item: "packagedastral:trait_crafter"
+				}
+				{
+					id: "4BF3BFCCEE282703"
+					type: "item"
+					item: "packagedastral:marked_relay"
+				}
+			]
+		}
+	]
+}

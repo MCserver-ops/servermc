@@ -1,0 +1,3156 @@
+{
+	id: "6878CF8EB87FCA98"
+	group: "532DAB84AB301350"
+	order_index: 5
+	filename: "useful_items_2"
+	title: "Useful Items - 2"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 7.5d
+			y: 0.0d
+			shape: "gear"
+			subtitle: "Mana Traveller MkI: When worn in the Curio Belt slot, it will increase the wearer's speed by about 1.3 m/s, their jump height by 1 block, and grant them step assist if not sneaking. In addition the player will take 1 less point of fall damage. The Mana cost of these abilities is 2 Mana per second"
+			dependencies: ["663E35409B5EA827"]
+			id: "26E1E4B00A28CFA1"
+			tasks: [{
+				id: "28043F74E619EEDB"
+				type: "item"
+				item: {
+					id: "botania:travel_belt"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 7.5d
+			y: 1.0d
+			shape: "gear"
+			subtitle: "Mana Magnet MkI: Any items in a 13x13 area around the player will be pulled towards them if they are not sneaking. Up to 200 items can be pulled at once. Items dropped by a player wearing this ring will not be pulled towards them for 5 seconds after dropping.Solegnolia flowers will prevent this ring from pulling items inside its range, as well as blocking the rings of players in its range.The ring will not pull relics, Mana-containing items like Mana Tablets, as well as Applied Energistics 2 crystal seeds like the Certus Quartz Seed"
+			dependencies: ["48148EE28276AB64"]
+			id: "39089495BEB4B66A"
+			tasks: [{
+				id: "5DA1C2390D7E0665"
+				type: "item"
+				item: {
+					id: "botania:magnet_ring"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 8.5d
+			y: 0.0d
+			shape: "gear"
+			subtitle: "Mana Traveller MkII: It will slowly increase the wearer's speed as long as they are moving, up to 11 m/s speed. If the wearer stops moving, the speed boost will be lost. In addition the player is granted step assist and a 1.5 block jump height increase. The Mana cost of these abilities is 2 Mana per second"
+			dependencies: ["26E1E4B00A28CFA1"]
+			id: "79E685CA951E62B4"
+			tasks: [{
+				id: "631695D3CCA21F28"
+				type: "item"
+				item: {
+					id: "botania:speed_up_belt"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "56DF71BDB6792921"
+				type: "loot"
+				table_id: 8587500481418189075L
+			}]
+		}
+		{
+			x: 8.5d
+			y: 1.0d
+			shape: "heart"
+			subtitle: "Mana Magnet MkII: It is an upgrade of the Ring of Magnetization, increasing the affected range from 13x13 to a 33x33 area around the player. Up to 200 items can be pulled at once. Items dropped by a player wearing this ring will not be pulled towards them for 5 seconds after dropping"
+			dependencies: ["39089495BEB4B66A"]
+			id: "05C2C42B92CAF714"
+			tasks: [{
+				id: "3EE394C4047D6C90"
+				type: "item"
+				item: {
+					id: "botania:magnet_ring_greater"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "3D2B378376D6D129"
+				type: "loot"
+				table_id: 8587500481418189075L
+			}]
+		}
+		{
+			x: 10.5d
+			y: 1.0d
+			shape: "gear"
+			subtitle: "Portable Mana Generator MkI: When worn, it slowly generates Mana and stores it in a Mana Tablet in the player's inventory at a rate of 2 mana per second[1]. It can be upgraded into the Greater Band of Aura, which generates Mana significantly faster"
+			dependencies: [
+				"2914918CED2A5233"
+				"48148EE28276AB64"
+				"6E6272D607C825A5"
+			]
+			id: "06548D3C67022989"
+			tasks: [{
+				id: "55F4CAB682F4B619"
+				type: "item"
+				item: {
+					id: "botania:aura_ring"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 9.5d
+			y: 1.0d
+			shape: "heart"
+			subtitle: "Portable Mana Generator MkII: It is an upgrade to the Band of Aura and generates Mana at a significantly faster rate (10 mana per second compared to the Band of Aura's 2 mana per second)"
+			dependencies: ["06548D3C67022989"]
+			id: "385CDCBBD32650C2"
+			tasks: [{
+				id: "7384392798AE88BF"
+				type: "item"
+				item: {
+					id: "botania:aura_ring_greater"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 11.5d
+			y: -4.5d
+			shape: "gear"
+			subtitle: "The Trinket Case is a storage item that can hold up to 24 Curios or Mana storing items like the Mana Tablet"
+			dependencies: ["48148EE28276AB64"]
+			id: "70128E5F9526DC6D"
+			tasks: [{
+				id: "47EB52261BA2B85E"
+				type: "item"
+				item: "botania:bauble_box"
+			}]
+		}
+		{
+			x: 8.5d
+			y: 2.0d
+			shape: "gear"
+			subtitle: "When worn, the player will be able to swim like a fish. When in water, the player will receive the Dolphin's Grace and Conduit Power status effects indefinitely at the cost of Mana, allowing them to swim much faster and giving them improved vision, infinite oxygen, and faster mining speed. The ring drains Mana from a Mana Tablet in the player's inventory while in water, at a rate of approximately 70 Mana per second"
+			dependencies: [
+				"1FAA3F48DAAE770A"
+				"48148EE28276AB64"
+			]
+			id: "5FC259B61815DD89"
+			tasks: [{
+				id: "7CDE24C2D88DFB7A"
+				type: "item"
+				item: {
+					id: "botania:water_ring"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 9.5d
+			y: 0.0d
+			shape: "gear"
+			subtitle: "It will switch the tool in the player's hand with the correct tool from their inventory if the one they are using is not used to mine the block effectively. It only works on Mana-using pickaxes, shovels and axes"
+			dependencies: ["48148EE28276AB64"]
+			id: "30B5B6786FF2BFDA"
+			tasks: [{
+				id: "29F29D42DDAEAEA4"
+				type: "item"
+				item: {
+					id: "botania:swap_ring"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 9.5d
+			y: 2.0d
+			shape: "gear"
+			subtitle: "When worn in the Baubles Ring slot, the player will be able to dodge left or right. To dodge, either double tap the left or right key (default: A/D), or double tap the forwards/backwards key (W/S) while holding left/right. Dodging moves the player 4 blocks left/right, each dodge will increase the player's exhaustion level by 0.3"
+			dependencies: [
+				"20FAA4078A7CB9A1"
+				"48148EE28276AB64"
+			]
+			id: "7F1A6799BBC236D3"
+			tasks: [{
+				id: "4E9E6AD449636D92"
+				type: "item"
+				item: {
+					id: "botania:dodge_ring"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 10.5d
+			y: 0.0d
+			shape: "gear"
+			subtitle: "When worn, the player acquires the Haste and will be able to mine faster, at the cost of using Mana from a carried Mana Tablet whenever the player swings their arm while wearing the Ring"
+			dependencies: [
+				"0F4E331615DD558C"
+				"48148EE28276AB64"
+			]
+			id: "0742F8109AC7B9EB"
+			tasks: [{
+				id: "0F54990E70ADBA70"
+				type: "item"
+				item: {
+					id: "botania:mining_ring"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 12.5d
+			y: -4.5d
+			shape: "heart"
+			subtitle: "The Invisibility Cloak when worn in the Curio Body slot, will turn the player invisible at the cost of 2 Mana/tick"
+			dependencies: ["6E6272D607C825A5"]
+			id: "69B21BD23BBD39FF"
+			tasks: [{
+				id: "21E61FE1AAC7D2DF"
+				type: "item"
+				item: {
+					id: "botania:invisibility_cloak"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 10.5d
+			y: -4.5d
+			shape: "gear"
+			subtitle: "The Tectonic Girdle will stop the player from receiving any knockback when they're attacked"
+			dependencies: [
+				"0F4E331615DD558C"
+				"204E4CC598F248A6"
+			]
+			id: "765FA62DA3853819"
+			tasks: [{
+				id: "25621E0656A69823"
+				type: "item"
+				item: {
+					id: "botania:knockback_belt"
+					Count: 1b
+					tag: {
+						baubleUUIDMost: 2167400703727455910L
+						baubleUUIDLeast: -6824381040575601095L
+					}
+				}
+			}]
+		}
+		{
+			x: 9.0d
+			y: -3.0d
+			shape: "heart"
+			subtitle: "Terrari-oh..again..DAMNIT! Left Click for more info"
+			description: [
+				"The Thorn Chakram is a weapon made with Terrasteel. "
+				""
+				"When thrown, it will fly at a high speed, unaffected by gravity, bounces off blocks, dealing 12 points of damage to creatures it comes in contact with."
+				""
+				"It has a 33% chance to poison the hit creature for 2 points of poison damage per second for 3 seconds. After 16 bounces or 3 seconds the Chakram will fly back to its thrower, ignoring all blocks and mobs."
+			]
+			dependencies: ["111B86AE41B02D70"]
+			id: "6A5222307B2449EA"
+			tasks: [{
+				id: "29F46D5E30709B97"
+				type: "item"
+				item: "botania:thorn_chakram"
+			}]
+		}
+		{
+			x: 9.0d
+			y: -2.0d
+			shape: "gear"
+			subtitle: "Grass Cleaner 3000: The Horn of the Wild will break grass, flowers and crops in a 25x25x7 area around the player when the right-click is held down"
+			dependencies: ["5BC44F27B24D5624"]
+			id: "439C938602D50956"
+			tasks: [{
+				id: "02190078E34CA4F9"
+				type: "item"
+				item: "botania:horn_grass"
+			}]
+		}
+		{
+			x: 8.0d
+			y: -2.0d
+			shape: "gear"
+			subtitle: "Leaves Cleaner 100000: The Horn of the Canopy is a variation to The Horn of the Wild. This one will allow the player to break the leaves around them in a 19x19x15"
+			dependencies: ["439C938602D50956"]
+			id: "74A5DE2188498DBA"
+			tasks: [{
+				id: "2CC93A56B79A4ACD"
+				type: "item"
+				item: "botania:horn_leaves"
+			}]
+		}
+		{
+			x: 10.0d
+			y: -2.0d
+			shape: "gear"
+			subtitle: "Snow Cleaner 15000: The Horn of the Covering is a variation to The Horn of the Wild. This one will allow the player to break the snow around them in a 13x13x23"
+			dependencies: ["439C938602D50956"]
+			id: "14B25E5235A67BF0"
+			tasks: [{
+				id: "14B17AF30CD2E646"
+				type: "item"
+				item: "botania:horn_snow"
+			}]
+		}
+		{
+			x: 5.5d
+			y: -4.5d
+			shape: "heart"
+			subtitle: "Pocket Ender Access: I will open the player's Ender Chest inventory at the cost of 250 Mana. If a Hand of Ender is present in the player's inventory, the Rod of the Shifting Crust will be able to use contents of their Ender inventory, using an additional 5 Mana per block swapped"
+			dependencies: ["6E6272D607C825A5"]
+			id: "06428DE9E7B3FC83"
+			tasks: [{
+				id: "19AD588EE213A959"
+				type: "item"
+				item: "botania:ender_hand"
+			}]
+		}
+		{
+			x: 8.0d
+			y: -1.0d
+			shape: "gear"
+			subtitle: "The Fire Extinguisher: When worn by the player in the Curio amulet slot, it will extinguish the fire from them if they're not standing in a block that causes burns"
+			dependencies: [
+				"204E4CC598F248A6"
+				"1F81661C224DD904"
+			]
+			id: "5359762ABAD18190"
+			tasks: [{
+				id: "5C41830B6DBB479F"
+				type: "item"
+				item: {
+					id: "botania:lava_pendant"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 9.0d
+			y: -1.0d
+			shape: "gear"
+			subtitle: "Budget Frost Walker: Wearing it allows player to turn Water they walk over into Ice. When a player walks over Water, all Water blocks in a 7x7 square centered on the player will turn to Ice"
+			dependencies: [
+				"6968CEF7894C9EE2"
+				"5A3C93AB3A6C17DA"
+			]
+			id: "7D9EC41CD1F0FD8A"
+			tasks: [{
+				id: "48598E1754BF843F"
+				type: "item"
+				item: {
+					id: "botania:ice_pendant"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 10.0d
+			y: -1.0d
+			shape: "gear"
+			subtitle: "Double Jump: When worn by the player in the Curio Amulet slot, the player will be able to double jump. Jumping in mid-air will nullify all fall damage and downwards momentum"
+			dependencies: [
+				"09882C8C36391E71"
+				"20FAA4078A7CB9A1"
+			]
+			id: "336899A4795EED9B"
+			tasks: [{
+				id: "1F0E1CE7528578C4"
+				type: "item"
+				item: {
+					id: "botania:cloud_pendant"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			title: "Simple Planes"
+			icon: {
+				id: "simpleplanes:plane"
+				Count: 1b
+				tag: {
+					EntityTag: {
+						material: "minecraft:oak_planks"
+					}
+				}
+			}
+			x: 3.75d
+			y: -7.5d
+			shape: "gear"
+			subtitle: "You wanna fly? Well.. Left click for more info"
+			description: [
+				"Simple Planes allows you to craft airships such as planes and helicopters which will run on solid fuel."
+				""
+				"The Plane Workbench is where you'll build your Plane/Helicopter. Each one of these will need a Furnace Engine in order to work."
+				""
+				"After placing your airship into the world, you'll have to install the engine into it. To do that, just right click the airship with the engine."
+				""
+				"Entering the airship and pressing the \"Open Plane Engine Screen\" key (you'll have to bind it in the controles menu) will allow you to use fuel to start your airship. Coal or other burning items can be used as fuel."
+			]
+			dependencies: [
+				"2E420B464AC031B6"
+				"2E3880C1F6D082FA"
+			]
+			size: 1.5d
+			id: "323B035DF1DF8BB9"
+			tasks: [
+				{
+					id: "49E2C311146A78CC"
+					type: "item"
+					item: "simpleplanes:plane_workbench"
+				}
+				{
+					id: "312FE78256FF00D2"
+					type: "item"
+					item: "simpleplanes:furnace_engine"
+				}
+			]
+			rewards: [{
+				id: "1679372BD52895E2"
+				type: "loot"
+				table_id: 8587500481418189075L
+			}]
+		}
+		{
+			title: "Transport"
+			icon: "transport:steam_locomotive"
+			x: 14.25d
+			y: -7.5d
+			shape: "gear"
+			subtitle: "RailCraft is not here. However, Transport is a great alternative. Left Click for more info"
+			description: [
+				"Transport is a mod which adds the posibility of making modular carts, boats, new rails and steam locomotives."
+				""
+				"To configure the rails added by this mod, you can use a Rail Breaker."
+				""
+				"To find more about this mod, you can take a look at the Advanced Transport Manual."
+			]
+			dependencies: ["2E420B464AC031B6"]
+			size: 1.5d
+			id: "0AB4943DA5567C46"
+			tasks: [{
+				id: "1DE035E4248ABE56"
+				type: "item"
+				item: "transport:solid_fuel_engine"
+			}]
+			rewards: [
+				{
+					id: "5DA11113EAAC4907"
+					type: "item"
+					item: "transport:rail_breaker"
+				}
+				{
+					id: "340332EB939E0D01"
+					type: "loot"
+					table_id: 8587500481418189075L
+				}
+			]
+		}
+		{
+			x: 9.0d
+			y: -6.0d
+			shape: "gear"
+			subtitle: "The Tinker's Anvil is an upgraded version of the Tinker Station. Left Click for more info"
+			description: [
+				"Similar to its counterpart, the tinker station, the anvil will allow you to assamble tool parts into tools."
+				""
+				"However, the similarities end here, as the anvil is much more capable then the station. The anvil will allow you to assamble new types of tools, and upgrade them with more powerful modifiers."
+				""
+				"Two more things. In The Decuriso Project, the anvil is craftable only with Brass Blocks. Also, to finish this quest, you'll have to make the Seared Brass Anvil, NOT the Scorched one."
+			]
+			hide_dependency_lines: true
+			dependencies: ["5F68C4D92EF20E09"]
+			id: "4F47DBA8B82E7DFB"
+			tasks: [{
+				id: "6E00E683B47FA760"
+				type: "item"
+				item: {
+					id: "tconstruct:tinkers_anvil"
+					Count: 1b
+					tag: {
+						texture: "emendatusenigmatica:brass_block"
+					}
+				}
+			}]
+			rewards: [{
+				id: "4AD22AE66C024B39"
+				type: "loot"
+				table_id: 8587500481418189075L
+			}]
+		}
+		{
+			x: 11.0d
+			y: -6.0d
+			shape: "gear"
+			subtitle: "X-ray is allowed here. Left Click for more info"
+			description: [
+				"Scanners have to be charged in order to be used. Further, they need at least one module in order to operate. Once the power and the modul is provided, just hold down right click to use the scanner. After a scan has been performed, results for your search will be provided in the world, based on what you've searched for."
+				""
+				"The scanner can search for ores, blocks, mobs, entities and fluids."
+				""
+				"A specific module will have to be installed for a certain search type. Let's say you want to find diamonds. The rare ores module will have to be installed in order for the scanner to search for that. To install modules, just shift right-click with the scanner in your hand."
+			]
+			dependencies: [
+				"2BF07F660D1559DE"
+				"59DF5370DD2EAE51"
+				"69DA94D714E296AC"
+				"3F2B399F6E3190E4"
+			]
+			id: "291B87F001771AD9"
+			tasks: [{
+				id: "105E9AF012347C46"
+				type: "item"
+				item: "scannable:scanner"
+			}]
+		}
+		{
+			x: 8.0d
+			y: -7.0d
+			shape: "gear"
+			subtitle: "Can be used to visualiza Immersive Engineering multiblock structures. Extremely helpful for building structures like The Coker, or for new players in general"
+			dependencies: ["59DF5370DD2EAE51"]
+			id: "1FD98FCCD2E262AF"
+			tasks: [{
+				id: "31A5CFC1AD21BEE6"
+				type: "item"
+				item: "immersivepetroleum:projector"
+			}]
+			rewards: [{
+				id: "52620E1CE124817E"
+				type: "loot"
+				table_id: 8587500481418189075L
+			}]
+		}
+		{
+			x: 7.0d
+			y: -7.0d
+			shape: "gear"
+			subtitle: "Metal protects your base. These wires can be used to protect your base against mobs. These DO NOT count as a player kill. An Lv wire can be connected to electrify the created fence"
+			dependencies: [
+				"69DA94D714E296AC"
+				"59DF5370DD2EAE51"
+			]
+			id: "682C7EEE2EB51ED4"
+			tasks: [{
+				id: "5625A6579E7CC10D"
+				type: "item"
+				item: "immersiveengineering:razor_wire"
+			}]
+		}
+		{
+			x: 11.0d
+			y: -7.0d
+			shape: "gear"
+			subtitle: "Power protects your base. Left Click for more info"
+			description: [
+				"The Tesla Coil can be used to damage mobs at a maximum range of six blocks, using electricity."
+				""
+				"It will use 256 RF/tick passively. When it gives damage to a mob, it will use and additional 512 RF."
+				""
+				"A redstone signal is required for the coil to work. This behaviour can be reverted through the use of a screwdriver."
+				""
+				"The Coil has to modes. The high-power mode, and the low-power mode. You can switch between these two by shift right-clicking the coil when it's turned off. "
+				""
+				"The low-energy mode, will reduce the coil's working area. Additionally, it will use half of the required power."
+			]
+			dependencies: ["10CAC510498E8582"]
+			id: "41EC59E652DB37C8"
+			tasks: [{
+				id: "0FEF4C9C33C7FD92"
+				type: "item"
+				item: "immersiveengineering:tesla_coil"
+			}]
+		}
+		{
+			x: 6.0d
+			y: -8.0d
+			shape: "gear"
+			subtitle: "Oh, the old TF2 days. Left Click for more info"
+			description: [
+				"The Gun Turret is a stationary sentry that shoots bullets at any hostile mobs in its detection range and can be further configured by right-clicking to attack neutral mobs, animals, and even other players. A blacklist is toggled by default with the player's name already added. Other player names can be added so they would not be hit if the player wishes to use the target players option. Be warned, as turning off the blacklist will cause the turret to shoot any player within range."
+				""
+				"The Turret must be supplied with cartridges and a constant Redstone Flux (RF) supply in order to function properly. RF is inputted through the sides marked with an orange dot. Finally, a Redstone signal is needed to activate the turret. When turned on, the turret will constantly consume RF, meaning unless the player has a reliable source of RF, it is recommended to turn the turret off until needed. The turret can store up to 1 stack of cartridges at any given moment and does not need a constant supply of ammo, only needing refills once in a while."
+			]
+			hide_dependency_lines: true
+			dependencies: [
+				"750F3FC54E2BD45A"
+				"381D90346C07CA3B"
+				"4F614027017B7DD8"
+				"22276E89F7907877"
+				"6B4D6FD11DFC8011"
+			]
+			id: "1A07AD69FDDEBB4B"
+			tasks: [{
+				id: "1F4C122BE67928C7"
+				type: "item"
+				item: "immersiveengineering:turret_gun"
+			}]
+		}
+		{
+			x: 12.0d
+			y: -8.0d
+			shape: "gear"
+			subtitle: "Oh, the old TF2 days, now with chemicals. Left Click for more info"
+			description: [
+				"The Chemthrower Turret is a stationary sentry that sprays liquid at any hostile mobs in its detection range and can be further configured by right-clicking to attack neutral mobs, animals, and even other players. Similar to the Chemical Thrower, a pilot light can be turned on to ignite the fluid sprayed by the turret. A blacklist is toggled by default with the player's name already added. Other player names can be added so they would not be hit if the player wishes to use the target players option. Be warned, as turning off the blacklist will cause the turret to shoot any player within range."
+				""
+				"The Chemthrower Turret must be supplied with a liquid and a constant Redstone Flux (RF) supply in order to function properly. The liquid is pumped in through the back of the turret and RF is inputted through the sides marked with an orange dot. Finally, a Redstone signal is needed to activate the turret. When turned on, the turret will constantly consume RF, meaning unless the player has a reliable source of RF, it is recommended to turn the turret off until needed. The turret can store up to 4000 mb of liquid at any given moment and does not need a constant supply of liquid, only needing refills once in a while."
+			]
+			hide_dependency_lines: true
+			dependencies: [
+				"71FE3F57FEB74F76"
+				"381D90346C07CA3B"
+				"6B4D6FD11DFC8011"
+				"2BF07F660D1559DE"
+			]
+			id: "2CA078D95F2BB952"
+			tasks: [{
+				id: "0F5113051BAFF04C"
+				type: "item"
+				item: "immersiveengineering:turret_chem"
+			}]
+		}
+		{
+			x: 8.0d
+			y: 3.5d
+			shape: "gear"
+			subtitle: "With this piece of paper, you can transfer your knowledge from Astral Sorcery, to other players. Effective only in multiplayer,duh"
+			dependencies: ["0CA03557153003A7"]
+			id: "06DC22FFF2799F28"
+			tasks: [{
+				id: "1AE201FBE6C23B7D"
+				type: "item"
+				item: {
+					id: "astralsorcery:knowledge_share"
+					Count: 1b
+					tag: {
+						astralsorcery: { }
+					}
+				}
+			}]
+		}
+		{
+			title: "Garden Cloche"
+			x: 11.0d
+			y: -8.0d
+			shape: "gear"
+			subtitle: "Auto-GreenHouse. Left Click for more info"
+			description: [
+				"The Garden Cloche is a machine added by Immersive Engineering. It is used to grow crops placed in it."
+				""
+				"In order to grow, Water and Redstone Flux (RF) are required; Water can be input through the lower front, back, or bottom ports, and RF can be input through the top, or through the lower left and right sides (anywhere with an orange dot, except through the front center block). Water, despite being strictly required, acts as a small Fertilizer boost when refilled by your fluid input systems. This boost dies down until the next time it receives water."
+				""
+				"When it has all its requirements, it will grow the crop, generating a product and its seeds, consuming 8 RF per tick. Items can be output through the front center side with the orange dot on it.Possible output configuration. IE conveyors also workVarious Fertilizers can be added to increase the growth modifier (production speed), including Bone Meal. The growth modifier is listed on the left side of the GUI, along with the amount of Fertilizer. It can be added through the lower front, back, or bottom ports. Using Fertilizer does not increase energy consumption."
+			]
+			dependencies: ["0EF94371D99AC9BA"]
+			id: "344DB8844F2FB625"
+			tasks: [{
+				id: "495E0B2C883338DA"
+				type: "item"
+				item: "immersiveengineering:cloche"
+			}]
+		}
+		{
+			x: 8.0d
+			y: 4.5d
+			shape: "gear"
+			subtitle: "Can be used to break the bond between you and the constellation you're attuned to. Just hold right click with it and you'll no longet be connected with the constellation that you chose to attune to. Keep in mind that this will remove all of your perks and points and you'll have to start from scratch (the other irradiant stars are disabled)"
+			dependencies: ["0CA03557153003A7"]
+			id: "4932852900AF18D8"
+			tasks: [{
+				id: "719BB7F1C979954D"
+				type: "item"
+				item: "astralsorcery:shifting_star"
+			}]
+		}
+		{
+			x: 8.0d
+			y: -6.0d
+			shape: "gear"
+			subtitle: "This tank can be worn like a chestplate and will allow you to breath underwater. To power the copper back tank, you'll have to place the tank on a powered shaft and wait for the tanks built-in vacuum system to grab all the required air from the atmosphere"
+			dependencies: ["4B00B60DE355C08C"]
+			id: "0DFF3CF510C42F99"
+			tasks: [{
+				id: "237ED1C715344E92"
+				type: "item"
+				item: {
+					id: "create:copper_backtank"
+					Count: 1b
+					tag: {
+						Air: 900
+					}
+				}
+			}]
+		}
+		{
+			title: "Mark II - Test Flight"
+			x: 10.0d
+			y: -6.0d
+			shape: "gear"
+			subtitle: "Sometimes you gotta run, before you can walk. Left Click for more info"
+			description: [
+				"The Brass Encased Jet is an upgrade to the Brass Exoskeleton."
+				""
+				"While loosing some of the previously gained, protection and, also the haste and strenght effects, you gain the ability to fly."
+				""
+				"To power the JetPlate, hold fuel (coal, planks) in your main hand, and the plate in the secondary hand and just throw the fuel."
+				""
+				"You can hover in the air by holding down shift and space at the same time."
+			]
+			dependencies: [
+				"1D296B6D31E20219"
+				"2BA7183800B331E0"
+			]
+			id: "44DFAC284C5DFB86"
+			tasks: [{
+				id: "713DB6CE434EDB1D"
+				type: "item"
+				item: {
+					id: "create_stuff_additions:encased_jet_chestplate"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Dynamism Gems"
+			icon: "astralsorcery:perk_gem_day"
+			x: 10.0d
+			y: 3.5d
+			shape: "gear"
+			subtitle: "The dawn, the day and the night. Left Click for more info"
+			description: [
+				"There are three versions of these Dynamism Gems:"
+				""
+				"- Ourium Gem"
+				"- Ilium Gem"
+				"- Fengarum Gem"
+				""
+				"These can be obtained by throwing a Rock Crystal and a piece of Illumination Powder in a pool of Liquid Starlight. "
+				""
+				"After some time passes, a Gem Crystal Cluster will appear. You'll have to wait for this one to grow in order to harvest it. This crystal has three stages of growth. The third one will be the one at which you can harvest the crystal. You know your crystal is done growing when it reaches an Orange, Blue, or Light Gray color."
+				""
+				"The final crystal's color will be determined by the time is reaches its final stage:"
+				""
+				"- If it grows during the day, it will be Orange."
+				"- If it grows during sunrise or sunfall, it will be Blue."
+				"- If it grows during night time, it will be a Light Gray."
+				""
+				"They type of crystal you get, will influence the stats it will provide."
+				""
+				"And now, what's teh deal with these crystals? Well, remember the fact that you just attuned yourself to a Constellation and that you have perks? Well, some of these perks will allow you to \"equit\" these crystals for better stats. To equip the cystals, you need to have them in your inventory and selectem them in the perks tree in the Astral Tome."
+				""
+				"Keep in mind that this quest is here jsut to give you some information. Finishing it, doesn't actually mean you did what you had to."
+			]
+			dependencies: ["4483446C4DA06FCE"]
+			id: "4BBEC6E6649CAF9E"
+			tasks: [{
+				id: "0CD05007C92FA2A9"
+				type: "checkmark"
+				title: "Got it"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 3.5d
+			shape: "gear"
+			subtitle: "Constellation Hunter. Left Click for more info"
+			description: [
+				"The Telescope will make your star-hunter life, so much easier."
+				""
+				"Instead of holding the Looking Glass in your hand, now, you'll be able to place down the telescope and have a stable point from which you can look for the stars. Instead of dragging your mouse on the screen to searh the entire sky, now you'll have 'pages'. Just scroll through them to see different quadrants of the sky."
+				""
+				"Also, holding down Shift, will not be required anymore."
+			]
+			dependencies: ["0CA03557153003A7"]
+			id: "77EFB71BE677B1D3"
+			tasks: [{
+				id: "7DB3897151CB1F92"
+				type: "item"
+				item: "astralsorcery:telescope"
+			}]
+		}
+		{
+			x: 11.0d
+			y: 3.5d
+			shape: "gear"
+			subtitle: "The Mirror room. Left Click for more info"
+			description: [
+				"The Lens is used to redirect Starlight in the Starlight network."
+				""
+				" It can be linked to and linked from by the Linking Tool. It can accept Starlight from multiple sources, but it can only emit one ray."
+				""
+				"The size of the Rock Crystal or Celestial Crystal is proportional to the amount of Lenses created, with the size being divided by 80 and rounded down to get the amount of Lenses, with one Lens being the minimum."
+				""
+				"The purity and cutting of the Crystal used affect the amount of Starlight lost when transferring through the Lens."
+			]
+			dependencies: ["1744D1F736052F09"]
+			id: "7639C9CD352CF21E"
+			tasks: [{
+				id: "293684826D5B419F"
+				type: "item"
+				item: {
+					id: "astralsorcery:lens"
+					Count: 1b
+					tag: {
+						astralsorcery: {
+							crystalProperties: {
+								attributes: [
+									{
+										property: "astralsorcery:purity"
+										pLevel: 2
+										discovered: 1b
+									}
+									{
+										property: "astralsorcery:shape"
+										pLevel: 3
+										discovered: 1b
+									}
+								]
+							}
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: 10.0d
+			y: 4.5d
+			shape: "gear"
+			subtitle: "+ Bonus, no enchanting? 0_o Left Click for more info"
+			description: [
+				"The Resplandent Prism is a curios which will give you certain bonuses with or without enchantments. "
+				""
+				"When you make the prism for the first time, some bonuses will be granted randomly. If you don't like what you get, you can re-roll the bonuses by making a new recipe. You can see this new recipe by pressing \"u\" on the Prism."
+				""
+				"The bonuses granted by the prism can either be used as they are, or they can require an enchantment in order to boost it. For exampe, a prism might require you having a tool with Efficiency in order to boost it to Efficiency II."
+			]
+			dependencies: ["05B9DF27F7AD850D"]
+			id: "600A4F2721153A57"
+			tasks: [{
+				id: "1608B7DF75703E0C"
+				type: "item"
+				item: {
+					id: "astralsorcery:enchantment_amulet"
+					Count: 1b
+					tag: {
+						astralsorcery: { }
+					}
+				}
+			}]
+		}
+		{
+			x: 7.0d
+			y: 4.5d
+			shape: "gear"
+			subtitle: "Sigil can be used in the perks tree in the Astral Tome to stop certain perks from being used. Why would you want that? Well, some perks involve 3x3 mining"
+			dependencies: ["0CA03557153003A7"]
+			id: "766FB69966B07525"
+			tasks: [{
+				id: "32A5FDCF47804408"
+				type: "item"
+				item: "astralsorcery:perk_seal"
+			}]
+		}
+		{
+			x: 11.0d
+			y: 4.5d
+			shape: "gear"
+			subtitle: "Can be used to see the area of effect given by a Ritual"
+			dependencies: [
+				"0CA03557153003A7"
+				"4E4B8F0BE0F28D14"
+			]
+			id: "371F468896760F2B"
+			tasks: [{
+				id: "0CACBD0BF2563C55"
+				type: "item"
+				item: {
+					id: "astralsorcery:resonator"
+					Count: 1b
+					tag: {
+						astralsorcery: {
+							upgrades: [
+								0
+								2
+							]
+							selected_upgrade: 2
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: 6.0d
+			y: 4.5d
+			shape: "gear"
+			subtitle: "The Starlight that passes through this lens, will accelerate the growth rate of the crops that it touches, based on its intensity"
+			dependencies: ["05B9DF27F7AD850D"]
+			id: "42C9859BE477A1BD"
+			tasks: [{
+				id: "21775D238F286E19"
+				type: "item"
+				item: "astralsorcery:colored_lens_growth"
+			}]
+		}
+		{
+			x: 12.0d
+			y: 4.5d
+			shape: "gear"
+			subtitle: "Will allow Starlight to pass through blocks"
+			dependencies: ["1A99C6281674DE7C"]
+			id: "5A20A208D4A67099"
+			tasks: [{
+				id: "6E9479DDBDC32CFA"
+				type: "item"
+				item: "astralsorcery:colored_lens_spectral"
+			}]
+		}
+		{
+			x: 9.0d
+			y: 3.5d
+			shape: "gear"
+			subtitle: "The Observatory will allow you to discover the faint constellations in the sky"
+			dependencies: ["73A248C448C4C47D"]
+			id: "254D1C85B38FBDCC"
+			tasks: [{
+				id: "00C3540449783800"
+				type: "item"
+				item: "astralsorcery:observatory"
+			}]
+		}
+		{
+			x: 7.0d
+			y: 3.5d
+			shape: "gear"
+			subtitle: "A web of lights. Left Click for more info"
+			description: [
+				"The PrismLens is similar in function to the Lens, but can redirect multiple beams from one prism."
+				""
+				"The amount of Starlight is divided between all outgoing beams."
+				""
+				"The only crystal property that affects the effectiveness of a PrismLens is Purity. Size does not increase the number of PrismLenses crafted, unlike Lenses."
+			]
+			dependencies: ["1A99C6281674DE7C"]
+			id: "56C60B44559328CA"
+			tasks: [{
+				id: "601DBF5FB855DBB7"
+				type: "item"
+				item: {
+					id: "astralsorcery:prism"
+					Count: 1b
+					tag: {
+						astralsorcery: {
+							crystalProperties: {
+								attributes: [
+									{
+										property: "astralsorcery:purity"
+										pLevel: 2
+										discovered: 1b
+									}
+									{
+										property: "astralsorcery:shape"
+										pLevel: 3
+										discovered: 1b
+									}
+								]
+							}
+						}
+					}
+				}
+			}]
+		}
+		{
+			icon: "astralsorcery:ritual_pedestal"
+			x: 9.0d
+			y: 4.5d
+			shape: "heart"
+			subtitle: "Beacon with no bacon! Left Click for more info"
+			description: [
+				"The Ritual Pedestal is used to affect the area around it with the attuned Rock Crystal or Celestial Crystal, similar to a Beacon, but, well... better. A list of constellations and their given effects is listed below."
+				""
+				"Virgo - Nearby living entities receive Regeneration. Plants experience accelerated growth"
+				""
+				"Capricornus - Hostile mobs and projectiles are repelled away from the Pedestal"
+				""
+				"Sagittarius - Hostile mobs near the Pedestal take damage over time"
+				""
+				"Aries - Breaks solid blocks near the Pedestal"
+				""
+				"Gemini - Entities near the Pedestal receive CREATIVE FLIGHT"
+				""
+				"Aquarius - Nearby animals \"shed\" their drops as if they were slain"
+				""
+				"Leo - Nearby blocks become their burnt or smelted counterparts"
+				""
+				"Scorpius - Machines experience bonus ticks and work faster"
+				""
+				"Libra - Hostile mobs do not spawn around the Pedestal"
+				""
+				"Taurus - Nearby Stone has a chance of becoming ore blocks (this includes coal, iron, gold, lapis, redstone, copper, aluminum, silver, nickel, uranium, tin and zinc)"
+				""
+				"Pisces - Nearby Water blocks become easier to fish"
+				""
+				"Cancer - Entities experience a higher chance of spawning, including hostile mobs"
+			]
+			dependencies: ["73A248C448C4C47D"]
+			id: "27BA224D61C9973E"
+			tasks: [
+				{
+					id: "2F6C22F80A66E7F8"
+					type: "item"
+					item: "astralsorcery:ritual_pedestal"
+				}
+				{
+					id: "6B9E82A7397E9E83"
+					type: "item"
+					item: "astralsorcery:marble_arch"
+					count: 20L
+				}
+				{
+					id: "7D608602AB654A14"
+					type: "item"
+					item: "astralsorcery:marble_bricks"
+					count: 24L
+				}
+				{
+					id: "4F3F61C393415088"
+					type: "item"
+					item: "astralsorcery:marble_chiseled"
+				}
+				{
+					id: "177AAA28F1048C6D"
+					type: "item"
+					item: "astralsorcery:marble_raw"
+					count: 12L
+				}
+			]
+			rewards: [{
+				id: "21F37A387058C2B9"
+				type: "loot"
+				table_id: 8587500481418189075L
+			}]
+		}
+		{
+			x: 8.0d
+			y: -17.5d
+			shape: "gear"
+			subtitle: "SniperCraft Elite. Left Click for more info"
+			description: [
+				"The Precision Scope is an upgrade for the Railgun. Like all upgrades, it's applied to the Railgun in the Engineer's Workbench."
+				""
+				"The Precision Scope gives the Railgun a scope for increased accuracy. Pressing the mouse wheel (middle mouse button) will activate it. When it's turned on, you can scroll up and down to zoom in, or zoom out. A maximum amount of 10x zoom is possible."
+			]
+			dependencies: [
+				"4D374953FF0E2430"
+				"360B0A95C0A30AF6"
+			]
+			id: "381D90346C07CA3B"
+			tasks: [{
+				id: "567B0AA398CE4275"
+				type: "item"
+				item: "immersiveengineering:toolupgrade_railgun_scope"
+			}]
+		}
+		{
+			x: 8.0d
+			y: -16.5d
+			shape: "gear"
+			subtitle: "The Multitank is an upgrade for The Chemical Thrower. Crouch-scrolling when the Multitank modification is installed, will switch between the 3 possible tanks (each holds 2 buckets of fluid, making it higher total capacity than the Large Tank modification, which makes the original internal tank hold 4 buckets instead of 2). Must be applied in the Engineer's Workbench"
+			dependencies: ["71FE3F57FEB74F76"]
+			id: "3EB0C01A88AEFFE9"
+			tasks: [{
+				id: "36D00B510D3B5473"
+				type: "item"
+				item: "immersiveengineering:toolupgrade_chemthrower_multitank"
+			}]
+		}
+		{
+			x: 10.0d
+			y: -16.5d
+			shape: "gear"
+			subtitle: "The Focused Nozzle is an upgrade for the Chemical Thrower. It will decreases the spread and improves the range of the Chemical Thrower. This allows for increased precision. Must be applied in the Engineer's Workbench"
+			dependencies: ["71FE3F57FEB74F76"]
+			id: "59534B53FBA9F4A5"
+			tasks: [{
+				id: "65B54ED885A21E89"
+				type: "item"
+				item: "immersiveengineering:toolupgrade_chemthrower_focus"
+			}]
+		}
+		{
+			x: 10.0d
+			y: -17.5d
+			shape: "gear"
+			subtitle: "No heat, more power. Left Click for more info"
+			description: [
+				"The Advanced Heat Sinks  is an upgrade for the Railgun. Like all upgrades, it's applied in the Engineer's Workbench."
+				""
+				"The Additional Capacitors cuts the recharge time of the Railgun in half."
+			]
+			dependencies: [
+				"4D374953FF0E2430"
+				"360B0A95C0A30AF6"
+			]
+			id: "7BB11ECB93DED711"
+			tasks: [{
+				id: "60E066519C7FFD41"
+				type: "item"
+				item: "immersiveengineering:toolupgrade_railgun_capacitors"
+			}]
+		}
+		{
+			x: 8.0d
+			y: -18.5d
+			shape: "gear"
+			subtitle: "Can be applied to The Mining Drill, The Buzzsaw and The Chemical Thrower. It will increase the internal fuel tank by 2000 mb. Must be applied in the Engineer's Workbench"
+			dependencies: ["360B0A95C0A30AF6"]
+			id: "5C56938B828AD372"
+			tasks: [{
+				id: "4B8C37B7D05E2A72"
+				type: "item"
+				item: "immersiveengineering:toolupgrade_drill_capacity"
+			}]
+		}
+		{
+			x: 8.0d
+			y: -15.5d
+			shape: "gear"
+			subtitle: "The Bayonet is an upgrade for the Revolver. It makes the Revolver gain the function of an Iron Sword; hitting a mob with it equipped inflicts 7 damage to the mob. Must be applied in the Engineer's Workbench"
+			dependencies: [
+				"750F3FC54E2BD45A"
+				"360B0A95C0A30AF6"
+			]
+			id: "52F2BFA92251627C"
+			tasks: [{
+				id: "45E29E0C7DC6500D"
+				type: "item"
+				item: "immersiveengineering:toolupgrade_revolver_bayonet"
+			}]
+		}
+		{
+			x: 8.0d
+			y: -14.0d
+			shape: "gear"
+			subtitle: "The Rockcutter Blade is one the heads available for the Buzzsaw. This Blade will turn your Buzzsaw into a pickaxe enchanted with Silk Touch at the cost of losing its wood chopping abilities. Must be applied in the Engineer's Workbench"
+			dependencies: [
+				"274D93C9A38BC38E"
+				"59DF5370DD2EAE51"
+				"360B0A95C0A30AF6"
+			]
+			id: "557C38D4E3190F41"
+			tasks: [{
+				id: "5BABF9847F1FFF9B"
+				type: "item"
+				item: {
+					id: "immersiveengineering:rockcutter"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 10.0d
+			y: -14.0d
+			shape: "gear"
+			subtitle: "The SawBlade is one the heads available for the Buzzsaw. This Blade will allow the Buzzsaw to chop entire trees from one fell swoop. Must be applied in the Engineer's Workbench"
+			dependencies: [
+				"274D93C9A38BC38E"
+				"360B0A95C0A30AF6"
+				"59DF5370DD2EAE51"
+			]
+			id: "4F243AB7FC759DE2"
+			tasks: [{
+				id: "6D67404728441EEA"
+				type: "item"
+				item: {
+					id: "immersiveengineering:sawblade"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 10.0d
+			y: -15.5d
+			shape: "gear"
+			subtitle: "The Amplifier Electron Tubes is an upgrade for the Revolver. It makes the Revolver apply an electrical charge to any fired Cartridges. If it hits a mob, the mob will be shocked and become unable to move for about a second (or suffer severe speed reduction). Must be applied in the Engineer's Workbench"
+			dependencies: [
+				"750F3FC54E2BD45A"
+				"69DA94D714E296AC"
+				"360B0A95C0A30AF6"
+			]
+			id: "4C66822085552D52"
+			tasks: [{
+				id: "611B283D372E8C2B"
+				type: "item"
+				item: "immersiveengineering:toolupgrade_revolver_electro"
+			}]
+		}
+		{
+			x: 9.0d
+			y: -14.0d
+			shape: "gear"
+			subtitle: "The Blade Quiver is an upgrade for the Buzzsaw. It will allow you to carry two more blades with you Buzzsaw. Just scroll while holding down shift to cycle between the blades. Must be applied in the Engineer's Workbench"
+			dependencies: ["274D93C9A38BC38E"]
+			id: "512CE272BB5C178B"
+			tasks: [{
+				id: "65CC80FCB14979FB"
+				type: "item"
+				item: "immersiveengineering:toolupgrade_buzzsaw_spareblades"
+			}]
+		}
+		{
+			x: 9.0d
+			y: -15.5d
+			shape: "gear"
+			subtitle: "The Extended Magazine is an upgrade for the Revolver. It makes the Revolver gain six more slots, for additional Cartridges. Must be applied in the Engineer's Workbench"
+			dependencies: [
+				"750F3FC54E2BD45A"
+				"360B0A95C0A30AF6"
+			]
+			id: "22276E89F7907877"
+			tasks: [{
+				id: "67E17946DF20AD3F"
+				type: "item"
+				item: "immersiveengineering:toolupgrade_revolver_magazine"
+			}]
+		}
+		{
+			x: 9.5d
+			y: -13.0d
+			shape: "gear"
+			subtitle: "This Drill Head will allow the Mining Drill to dig an area of 3x3x1. Must be applied in the Engineer's Workbench"
+			dependencies: ["105C88D5D3F6D2DC"]
+			id: "70BC11100F52F252"
+			tasks: [{
+				id: "44A0033501F7E279"
+				type: "item"
+				item: "immersiveengineering:drillhead_steel"
+			}]
+		}
+		{
+			x: 8.5d
+			y: -13.0d
+			shape: "gear"
+			subtitle: "This Drill Head will allow the Mining Drill to dig an area of 2x2x1. Must be applied in the Engineer's Workbench"
+			dependencies: ["105C88D5D3F6D2DC"]
+			id: "10B1AA0105E2621E"
+			tasks: [{
+				id: "1EF612D7EAAA8C40"
+				type: "item"
+				item: "immersiveengineering:drillhead_iron"
+			}]
+		}
+		{
+			x: 7.5d
+			y: -13.0d
+			shape: "gear"
+			subtitle: "The Pressurized Air Tank is an upgrade added by Immersive Engineering for the Mining Drill. The Pressurized Air Tank allows the Mining Drill to work underwater. More than that, it allows the Mining Drill to mine without the slowdown that usually occurs when mining in water. Must be applied in the Engineer's Workbench"
+			dependencies: [
+				"105C88D5D3F6D2DC"
+				"360B0A95C0A30AF6"
+			]
+			id: "556136A3ABB8C5E5"
+			tasks: [{
+				id: "4C7A5A172CFA207B"
+				type: "item"
+				item: "immersiveengineering:toolupgrade_drill_waterproof"
+			}]
+		}
+		{
+			x: 10.5d
+			y: -13.0d
+			shape: "gear"
+			subtitle: "The Additional Augers is an upgrade for the Mining Drill. The Additional Augers increase the attack damage of the Mining Drill. Each add one point. Unlike most upgrades, it is stackable, to three. It will also increase the mining speed of the Drill. Must be applied in the Engineer's Workbench"
+			dependencies: [
+				"105C88D5D3F6D2DC"
+				"360B0A95C0A30AF6"
+			]
+			id: "1EB152427FBA6ACA"
+			tasks: [{
+				id: "3F8A6E90BEAAB40E"
+				type: "item"
+				item: "immersiveengineering:toolupgrade_drill_damage"
+			}]
+		}
+		{
+			x: 10.0d
+			y: -18.5d
+			shape: "gear"
+			subtitle: "The Advanced Lubrication System is an upgrade for the Mining Drill and the Buzzsaw. Originally, the Advanced Lubrication System allowed the Mining Drill and the Buzzsaw to work slightly faster. In more recent versions, the upgrade has been changed, and reduces wear to the drill head and the saw blade, instead of increasing mining speed. Must be applied in the Engineer's Workbench"
+			dependencies: ["105C88D5D3F6D2DC"]
+			id: "51099166641C3412"
+			tasks: [{
+				id: "6A07E2062BDC528A"
+				type: "item"
+				item: "immersiveengineering:toolupgrade_drill_lube"
+			}]
+		}
+		{
+			x: 6.5d
+			y: -4.5d
+			shape: "gear"
+			subtitle: "Golemancy, no Thaumcraft and no Golem. Left Click for more info"
+			description: [
+				"The Livingwood Avatar can use certain rods, When provided Mana with a Mana Spreader."
+				""
+				"- Rod of the Lands/Rod of Hightlands: Creates Dirt on the block in front of the avatar on random intervals"
+				""
+				"- Rod of the Skies: Launches nearby jumping players 35 blocks up"
+				""
+				"- Rod of the Hells: Creates a flame ring around the avatar, damaging and setting any creatures inside on fire"
+				""
+				"- Rod of the Bifrost: Creates a small platform under players in a 3x20 area in front of the avatar"
+				""
+				"- Rod of the Plentiful Mantle: Reveals ores in a 18 block radius around the avatar"
+				""
+				"- Rod of the Unstable Reservoir: Spawns homing missiles to deal damage to nearby monsters"
+			]
+			dependencies: ["3D75721DA9392AA5"]
+			id: "29ACF05F4127FD6D"
+			tasks: [{
+				id: "0E7E1BB480639E3B"
+				type: "item"
+				item: "botania:avatar"
+			}]
+		}
+		{
+			x: 6.0d
+			y: -2.5d
+			subtitle: "Can be dyed to change the color of the bursts shot by a Mana Spreader. Also, just like all the other lenses, it can be combined in the crafting grid with another Lens and a Slimeball to obtain Lenses with unique effects"
+			dependencies: [
+				"6833FFB6AB33C9D6"
+				"48148EE28276AB64"
+			]
+			id: "0AADF62ADF6430C2"
+			tasks: [{
+				id: "1EC130466F070115"
+				type: "item"
+				item: {
+					id: "botania:lens_normal"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 6.0d
+			y: -1.5d
+			shape: "gear"
+			subtitle: "When placed on a Mana Spreader, it doubles the speed of Mana bursts it fires but each burst holds 25% less Mana and starts to decay after 8 blocks, losing Mana twice as fast"
+			hide_dependency_lines: true
+			dependencies: [
+				"20FAA4078A7CB9A1"
+				"0AADF62ADF6430C2"
+			]
+			id: "602A2D47F620A5C6"
+			tasks: [{
+				id: "43E766B929E68EB7"
+				type: "item"
+				item: {
+					id: "botania:lens_speed"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 6.0d
+			y: -0.5d
+			shape: "gear"
+			subtitle: "When placed on a Mana Spreader, it doubles the amount of Mana a Mana burst can carry, but the burst's speed is slightly lowered and when it starts to decay it will lose Mana twice as fast"
+			hide_dependency_lines: true
+			dependencies: [
+				"204E4CC598F248A6"
+				"0AADF62ADF6430C2"
+			]
+			id: "482E1939CD53A034"
+			tasks: [{
+				id: "5B2A793DFCC3B8FC"
+				type: "item"
+				item: {
+					id: "botania:lens_power"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 6.0d
+			y: 0.5d
+			shape: "gear"
+			subtitle: "When placed on a Mana Spreader, it will make the fired Mana bursts begin decaying twice as long as it usually does, however the burst will be 20% slower"
+			hide_dependency_lines: true
+			dependencies: [
+				"0F4E331615DD558C"
+				"0AADF62ADF6430C2"
+			]
+			id: "0F18C00ABC6981CF"
+			tasks: [{
+				id: "648BDAAE2A0E895D"
+				type: "item"
+				item: {
+					id: "botania:lens_time"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 6.0d
+			y: 1.5d
+			shape: "gear"
+			subtitle: "When placed on a Mana Spreader, it increases the time before the fired Mana bursts start to decay by 10%, and makes the decay 5 times slower"
+			hide_dependency_lines: true
+			dependencies: [
+				"5A3C93AB3A6C17DA"
+				"0AADF62ADF6430C2"
+			]
+			id: "0877E8865A56D581"
+			tasks: [{
+				id: "78DCE285CE8A3E13"
+				type: "item"
+				item: {
+					id: "botania:lens_efficiency"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 5.0d
+			y: -2.0d
+			shape: "gear"
+			subtitle: "When placed on a Mana Spreader, the Mana bursts it fires will be able to bounce off walls instead of dissipating on collision"
+			hide_dependency_lines: true
+			dependencies: [
+				"1F81661C224DD904"
+				"0AADF62ADF6430C2"
+			]
+			id: "6A9FB7B8AE5BC85E"
+			tasks: [{
+				id: "25AAF36E766F5986"
+				type: "item"
+				item: {
+					id: "botania:lens_bounce"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 5.0d
+			y: -1.0d
+			shape: "gear"
+			subtitle: "When placed on a Mana Spreader, the fired Mana bursts will be affected by gravity and last 20% longer before starting to decay"
+			hide_dependency_lines: true
+			dependencies: [
+				"6968CEF7894C9EE2"
+				"0AADF62ADF6430C2"
+			]
+			id: "7F3FB41861185E20"
+			tasks: [{
+				id: "343245ADA6090F6E"
+				type: "item"
+				item: {
+					id: "botania:lens_gravity"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 5.0d
+			y: 0.0d
+			shape: "gear"
+			subtitle: "Mana breaks blocks. Left Click for more info"
+			description: [
+				"When placed on a Mana Spreader, the Mana bursts it fires will be able to break blocks they collide with, using 24 Mana from the burst."
+				""
+				"When combined with the Warp lens into a Composite Mana Lens: Bore Warp, Force Relays and Pistons will not be broken and all mined blocks will be teleported to the spreader's location. A Warp Bore lens will not have those effects."
+				""
+				"Spreaders equipped with this lens will ignore blocks in path to Mana accepting blocks like Mana Pools."
+			]
+			hide_dependency_lines: true
+			dependencies: ["0AADF62ADF6430C2"]
+			id: "2492F59FC4C3D1BC"
+			tasks: [{
+				id: "5CE104C8C3610703"
+				type: "item"
+				item: {
+					id: "botania:lens_mine"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 5.0d
+			y: 1.0d
+			shape: "gear"
+			subtitle: "When placed on a Mana Spreader, the Mana bursts it fires will deal 8 points of damage to mobs they come in contact with, using 16 Mana from the burst"
+			hide_dependency_lines: true
+			dependencies: [
+				"2C933A7C6A9DB055"
+				"0AADF62ADF6430C2"
+			]
+			id: "33263EFD53484DAD"
+			tasks: [{
+				id: "2E5A34BF7F9C4A8F"
+				type: "item"
+				item: {
+					id: "botania:lens_damage"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 13.0d
+			y: 1.0d
+			shape: "gear"
+			subtitle: "When placed on a Mana Spreader, the Mana bursts it fires will be able to go through blocks without dissipating, though the time before the burst starts to decay is reduced by 4 ticks for every tick spent inside a block"
+			hide_dependency_lines: true
+			dependencies: ["0AADF62ADF6430C2"]
+			id: "02FC459EBD226D93"
+			tasks: [{
+				id: "7A07F706FBD50620"
+				type: "item"
+				item: {
+					id: "botania:lens_phantom"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 12.0d
+			y: -2.5d
+			shape: "gear"
+			subtitle: "When placed on a Mana Spreader, the Mana bursts it fires will be attracted by Mana Pools and Spreaders in a 3 block range that can accept more Mana. The burst will be slowed near those blocks"
+			hide_dependency_lines: true
+			dependencies: ["0AADF62ADF6430C2"]
+			id: "65BB2F0C58B29330"
+			tasks: [{
+				id: "3F87B1B9BE69E0B9"
+				type: "item"
+				item: {
+					id: "botania:lens_magnet"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 12.0d
+			y: -1.5d
+			shape: "gear"
+			subtitle: "When placed on a Mana Spreader, the fired Mana burst will explode if it collides with a block that cannot accept Mana. The explosion's power is proportional to the amount of Mana stored in the burst"
+			hide_dependency_lines: true
+			dependencies: [
+				"435E7FD40389E555"
+				"0AADF62ADF6430C2"
+			]
+			dependency_requirement: "one_completed"
+			id: "03898407263F65A9"
+			tasks: [{
+				id: "69B5808D5705466E"
+				type: "item"
+				item: {
+					id: "botania:lens_explosive"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 12.0d
+			y: -0.5d
+			shape: "gear"
+			subtitle: "When placed on a Mana Spreader, the Mana bursts it fires will cause nearby items, experience orbs, falling blocks and other Mana bursts to move in the same vector as the burst. It doesn't affect other Influence Mana bursts"
+			hide_dependency_lines: true
+			dependencies: [
+				"20FAA4078A7CB9A1"
+				"0AADF62ADF6430C2"
+			]
+			id: "208F042EB0851EC5"
+			tasks: [{
+				id: "72D250427929CF96"
+				type: "item"
+				item: {
+					id: "botania:lens_influence"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 12.0d
+			y: 0.5d
+			shape: "gear"
+			subtitle: "When placed on a Mana Spreader, the Mana bursts it fires will turn the block they collide with into a falling block. The block must be able to be mined by an Iron Pickaxe, be affected by Silk Touch, directly above an air block, and cannot be a tile entity. The falling block behaves like falling Sand, dropping itself as an item when after it falls on a Torch or slabs"
+			hide_dependency_lines: true
+			dependencies: [
+				"5A3C93AB3A6C17DA"
+				"0AADF62ADF6430C2"
+			]
+			id: "0C8A2C86B194210D"
+			tasks: [{
+				id: "2038E934A77546FE"
+				type: "item"
+				item: {
+					id: "botania:lens_weight"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 13.0d
+			y: -2.0d
+			shape: "gear"
+			subtitle: "When placed on a Mana Spreader, the Mana bursts it fires will set the hit block on fire. If a Nether Portal would block the fire, the portal will be closed. If the burst hits an Incense Plate with an Incense Stick, it will ignite it"
+			hide_dependency_lines: true
+			dependencies: ["0AADF62ADF6430C2"]
+			id: "3A705E1826DC710C"
+			tasks: [{
+				id: "43D0DB6445CAD353"
+				type: "item"
+				item: {
+					id: "botania:lens_fire"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 13.0d
+			y: -1.0d
+			shape: "gear"
+			subtitle: "When placed on a Mana Spreader, the Mana bursts it fires will push the hit block, as long as the block can be pushed by a Piston. Unlike Pistons this lens can only move one block at the time"
+			hide_dependency_lines: true
+			dependencies: [
+				"0AADF62ADF6430C2"
+				"12A0A63582B463D1"
+			]
+			id: "3081812135D4FD05"
+			tasks: [{
+				id: "3BAE350549253CFB"
+				type: "item"
+				item: {
+					id: "botania:lens_piston"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 12.0d
+			y: 1.5d
+			shape: "gear"
+			subtitle: "When placed on a Mana Spreader, the Mana bursts it fires will create a decorative Mana Flash of the same color as the burst. This block emits a light level of 15. If a burst from this lens hits one of these blocks, it will put it out"
+			hide_dependency_lines: true
+			dependencies: ["0AADF62ADF6430C2"]
+			id: "41FF9DAEBBEE1341"
+			tasks: [{
+				id: "12D21ED1721EFB28"
+				type: "item"
+				item: {
+					id: "botania:lens_light"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 13.0d
+			y: 0.0d
+			shape: "gear"
+			subtitle: "When placed on a Mana Spreader, the Mana bursts it fires will travel 3 times as fast and last 3 times as long before decaying, but have only 1/5 of the standard capacity"
+			hide_dependency_lines: true
+			dependencies: ["0AADF62ADF6430C2"]
+			id: "4F2923D4E89FF629"
+			tasks: [{
+				id: "40F100C66E42C0FD"
+				type: "item"
+				item: {
+					id: "botania:lens_messenger"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 7.5d
+			y: -4.5d
+			shape: "gear"
+			subtitle: "It can be bound to other blocks, and when a piston's force is applied to the Force Relay, that exact same force is applied to the bound block. Sticky Pistons DO NOT work with the Force Relay"
+			dependencies: ["655AB81DE00B783B"]
+			id: "12A0A63582B463D1"
+			tasks: [{
+				id: "584FB4CA6FD73A8B"
+				type: "item"
+				item: "botania:piston_relay"
+			}]
+		}
+		{
+			title: "Routing Everything"
+			x: 6.0d
+			y: -7.0d
+			shape: "gear"
+			subtitle: "Somehow cheap filters. Left Click for more info"
+			description: [
+				"Item Router:"
+				""
+				"Unlike most machines, it does not consume any energy. The Item Router is used to organize and distribute items, used together with Conveyor Belts."
+				""
+				"The Item Router has a GUI. It has a collection of slots for each side of the Item Router. Clicking an item into one of these slots will not put the item into the slot, but it will configure the Item Router to output that item through that specific side into an inventory when it enters the Item Router. If the Item Router doesn't have configuration for a specific item, it will output that item through a random side. The Item Router will only output items if it can output to an inventory (or Conveyor Belt), and if it cannot route an item, that item will not be accepted into the Item Router. Lastly, items cannot be outputted from where they entered."
+				""
+				"The Item Router be configured to filter based on the Ore Dictionary, NBT values and damage values inside the GUI, per side."
+				""
+				"Liquid Router:"
+				""
+				"Unlike most machines, it does not consume any energy. The Fluid Router is used to organize and distribute fluids."
+				""
+				"The Fluid Router has a GUI. It has a collection of slots for each side of the Fluid Router. Clicking a liquid container (like a Bucket) into one of these slots will not put the fluid into the slot, but it will configure the Fluid Router to output that fluid through that specific side into a tank when it enters the Fluid Router. If the Fluid Router doesn't have configuration for a specific fluid, it will output that fluid through a random side. The Fluid Router will only output a fluid if it can output to a tank, and if it cannot route a fluid, that fluid will not be accepted into the Fluid Router. Lastly, fluids cannot be outputted from where they entered."
+				""
+				"The Fluid Router be configured to filter based on NBT values inside the GUI on each side."
+			]
+			dependencies: ["360B0A95C0A30AF6"]
+			id: "623B713AACAFEDAC"
+			tasks: [
+				{
+					id: "6C9E25892DEE9A37"
+					type: "item"
+					item: "immersiveengineering:sorter"
+				}
+				{
+					id: "3F3180EB9CAC0E38"
+					type: "item"
+					item: "immersiveengineering:fluid_sorter"
+				}
+			]
+		}
+		{
+			x: 12.0d
+			y: -7.0d
+			shape: "gear"
+			subtitle: "Advanced Routing. Left Click for more info"
+			description: [
+				"The Item Batcher is designed to collect a set of items from an inputting conveyor before sending them onwards, in order to transfer optimized batch sizes to machinery."
+				""
+				"Place the block and open its interface to set a variety of filters. Any incoming items will be accepted into the slots directly below the filters, and the collected batch will only be output when all filters are satisfied. This behavior can be adjusted with the button labeled \"Output Mode\". The default behavior noted above is known as batched mode. In single mode, any item that satisfies its filtered quantity will be output instead."
+				""
+				"Using the 9 buttons below the buffer, you can toggle through the colours of redstone wires. By attaching a Redstone Interface Connector, the Item Batcherwill send signals along the redstone wires when a filter is satisfied. This allows you to disable any extracting conveyors or producing machinery when your required amount of items is reached. Note that if multiple filters use the same colour, they all need to be satisfied for a signal to be sent."
+			]
+			dependencies: [
+				"4F614027017B7DD8"
+				"360B0A95C0A30AF6"
+			]
+			id: "0504A28E677763FE"
+			tasks: [{
+				id: "45B7A51DEC45E138"
+				type: "item"
+				item: "immersiveengineering:item_batcher"
+			}]
+		}
+		{
+			x: 16.0d
+			y: -2.5d
+			shape: "gear"
+			subtitle: "Vegetal Demagnetizer: The Solegnolia will prevent the Ring of Magnetization from pulling items inside its range. Even though it can be linked to a Mana Pool, it does not use Mana"
+			dependencies: ["44A732EE455674E8"]
+			id: "7181A431C533BCB3"
+			tasks: [{
+				id: "0E51971D9D98362E"
+				type: "item"
+				item: "botania:solegnolia"
+			}]
+		}
+		{
+			x: 16.0d
+			y: -1.5d
+			shape: "gear"
+			subtitle: "Decorative Blocks Generator: When supplied with Mana, it will convert all nearby Stone into a random type of decorative Metamorphic Stone The flower will convert all Stone at a speed of 10 blocks per second into a random type of Metamorphic Stone using 12 Mana per block. The affected area is a 17x17x11 cuboid centered on the flower. The Petite variant of the flower converts Stone in a 5x5x3 area instead Each type of Metamorphic Stone has an associated biome type— it will be 12 times more likely to generate if the biome where the Marimorphosis is placed has that type"
+			dependencies: [
+				"204E4CC598F248A6"
+				"0F4E331615DD558C"
+				"44A732EE455674E8"
+			]
+			id: "2335B7E9A66EB0BF"
+			tasks: [
+				{
+					id: "63F5C212BB8CD223"
+					type: "item"
+					item: "botania:marimorphosis"
+				}
+				{
+					id: "3680446E6BEC7506"
+					type: "item"
+					item: "botania:marimorphosis_chibi"
+				}
+			]
+		}
+		{
+			x: 16.0d
+			y: -0.5d
+			shape: "gear"
+			subtitle: "Mob Slower: When supplied with Mana, it will apply Slowness 101 to all living entities (except players) in a 13×13×13 area around the flower (effectively stopping them in place), using 1 Mana per affected entity per tick"
+			dependencies: [
+				"0F4E331615DD558C"
+				"44A732EE455674E8"
+			]
+			id: "12C15EF730C29C05"
+			tasks: [{
+				id: "2C4976E0675B3AEE"
+				type: "item"
+				item: "botania:medumone"
+			}]
+		}
+		{
+			x: 16.0d
+			y: 0.5d
+			shape: "gear"
+			subtitle: "Enderman Catcher: If a Vinculotus is supplied with Mana, any Enderman in its functional range attempting to teleport will teleport to the flower. This can be useful to prevent enderman troubles"
+			dependencies: [
+				"4C2601C7292D8237"
+				"1FAA3F48DAAE770A"
+				"5A3C93AB3A6C17DA"
+				"44A732EE455674E8"
+			]
+			id: "4C9816EBFACA6213"
+			tasks: [{
+				id: "2FAEC8DCAA3EA2D9"
+				type: "item"
+				item: "botania:vinculotus"
+			}]
+		}
+		{
+			x: 16.0d
+			y: 1.5d
+			shape: "gear"
+			subtitle: "The Vegetal Fan: When supplied with Mana, it pushes away any items in front of it. The Daffomill can push items that are 3 blocks higher than the block it is placed on, 2 blocks lower and 2 blocks on each of its sides to the way it's facing. It will push blocks a maximum of 16 blocks. When the Daffomill is placed, faint smoke particles indicate the direction that it is facing. The Daffomill can be orientated by shift-clicking with the Wand of the Forest in function mode"
+			dependencies: [
+				"20FAA4078A7CB9A1"
+				"44A732EE455674E8"
+			]
+			id: "1AA31993054E8A6D"
+			tasks: [{
+				id: "4ED949810CB881EF"
+				type: "item"
+				item: "botania:daffomill"
+			}]
+		}
+		{
+			x: 15.0d
+			y: -2.5d
+			shape: "gear"
+			subtitle: "The Clay Factory: When a Clayconia is supplied with Mana it will cause Sand to turn into Clay around it"
+			dependencies: [
+				"0F4E331615DD558C"
+				"44A732EE455674E8"
+			]
+			id: "260B8DC7FB879CF9"
+			tasks: [{
+				id: "5912730D3417BB16"
+				type: "item"
+				item: "botania:clayconia"
+			}]
+		}
+		{
+			x: 15.0d
+			y: -1.5d
+			shape: "gear"
+			subtitle: "Vegetal Animal Breeder: It will take any appropriate nearby food items on the ground and feed them to animals nearby for a small cost of Mana. According to the Lexica Botania this will \"put them in a better mood\""
+			dependencies: [
+				"4C2601C7292D8237"
+				"204E4CC598F248A6"
+				"44A732EE455674E8"
+			]
+			id: "1F34DE691EEAD2B5"
+			tasks: [{
+				id: "12FBC23A54785ED6"
+				type: "item"
+				item: "botania:pollidisiac"
+			}]
+		}
+		{
+			x: 15.0d
+			y: -0.5d
+			shape: "gear"
+			subtitle: "Mob Poisoner: The Hyacidus will, when supplied with Mana, inflict nearby mobs with the Poison status effect and bring them down to 1 health point. Undead mobs, such as zombies and skeletons, are immune to poison, and are therefore unaffected"
+			dependencies: [
+				"09882C8C36391E71"
+				"204E4CC598F248A6"
+				"44A732EE455674E8"
+			]
+			id: "44DBFFF9349F35DF"
+			tasks: [{
+				id: "3F2DB8120E120C7F"
+				type: "item"
+				item: "botania:hyacidus"
+			}]
+		}
+		{
+			x: 15.0d
+			y: 0.5d
+			shape: "gear"
+			subtitle: "Vegetal Block Placer: The Rannuncarpus will place items in the world. However, it will only place blocks on top of a block of the same type as the one directly below the soil the flower is planted on. Supplying a Rannuncarpus with Mana will increase its range"
+			dependencies: [
+				"0F4E331615DD558C"
+				"44A732EE455674E8"
+			]
+			id: "7D075D7958D86CC9"
+			tasks: [{
+				id: "71F53BF08DBBA669"
+				type: "item"
+				item: "botania:rannuncarpus"
+			}]
+		}
+		{
+			x: 15.0d
+			y: 1.5d
+			shape: "gear"
+			subtitle: "Circular Repealer: The Jiyuulia will, when supplied with a small amount of Mana, keep any nearby mobs or animals out of a circular area"
+			dependencies: [
+				"5A3C93AB3A6C17DA"
+				"20FAA4078A7CB9A1"
+				"44A732EE455674E8"
+			]
+			id: "378419A4BEE1D96F"
+			tasks: [{
+				id: "1BFF2189C5CDD0D2"
+				type: "item"
+				item: "botania:jiyuulia"
+			}]
+		}
+		{
+			x: 3.0d
+			y: -2.5d
+			shape: "gear"
+			subtitle: "The Mana Fence: The Tangleberrie will, when supplied with a small amount of Mana, keep mobs and animals within a circle"
+			dependencies: [
+				"44A732EE455674E8"
+				"20FAA4078A7CB9A1"
+				"0F4E331615DD558C"
+			]
+			id: "568C0559E8D03826"
+			tasks: [{
+				id: "45A2D5683583BA0C"
+				type: "item"
+				item: "botania:tangleberrie"
+			}]
+		}
+		{
+			x: 3.0d
+			y: -1.5d
+			shape: "gear"
+			subtitle: "Hopper ++: The Hopperhock will pick up items around it. Supplying it with Mana is optional, though doing so will increase its range. The default range of a Hopperhock is 6 blocks and can be increased to 10 when supplied with Mana"
+			dependencies: [
+				"44A732EE455674E8"
+				"20FAA4078A7CB9A1"
+			]
+			id: "643E47F18C0EB2B8"
+			tasks: [{
+				id: "394EEA3A1675193D"
+				type: "item"
+				item: "botania:hopperhock"
+			}]
+		}
+		{
+			x: 3.0d
+			y: -0.5d
+			shape: "gear"
+			subtitle: "Growth Accelerator: When an Agricarnation is supplied with Mana it will cause growth ticks in an area of 5 blocks around it"
+			dependencies: [
+				"09D34E577A4AD24B"
+				"44A732EE455674E8"
+			]
+			id: "4E2EDF69BD6C5CD2"
+			tasks: [{
+				id: "47D41736DDB0766B"
+				type: "item"
+				item: "botania:agricarnation"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 0.5d
+			shape: "gear"
+			subtitle: "External Heater: When supplied with a source of Mana this flower will do the opposite of its generating counterpart, the Endoflame, and use Mana to generate heat. Any Furnaces nearby the flower will be fueled and given an efficiency boost when it is supplied with Mana. Multiple Exoflames will have a stacking effect on efficiency of all Furnaces within their radius, and will allow more Furnaces to be fueled at once"
+			dependencies: [
+				"1F81661C224DD904"
+				"204E4CC598F248A6"
+				"44A732EE455674E8"
+			]
+			id: "681CFF361EDC9F1E"
+			tasks: [{
+				id: "52407AD3E355171B"
+				type: "item"
+				item: "botania:exoflame"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 1.5d
+			shape: "gear"
+			subtitle: "The \"Gaia Boss Battle\" Help Unit: When supplied with Mana, it gives players around it the Regeneration status effect"
+			dependencies: [
+				"09D34E577A4AD24B"
+				"44A732EE455674E8"
+			]
+			id: "51914EB8B3139449"
+			tasks: [{
+				id: "62B15EE1D64E3212"
+				type: "item"
+				item: "botania:fallen_kanade"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -2.5d
+			shape: "gear"
+			subtitle: "Mystical Flowers Generator: When supplied with Mana by a Mana Pool within a 10 block radius, it will quickly grow mystical flowers in a 9x9 space around it on grass and dirt blocks"
+			dependencies: [
+				"44A732EE455674E8"
+				"09D34E577A4AD24B"
+			]
+			id: "51661E3A86C8A68D"
+			tasks: [{
+				id: "2445B495BDEDAEE5"
+				type: "item"
+				item: "botania:jaded_amaranthus"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 1.5d
+			shape: "gear"
+			subtitle: "Vegetal Creeper Repealer 3000: The Tigerseye, when supplied with Mana, will cause Creepers to be unable to explode and run away from players"
+			dependencies: [
+				"44A732EE455674E8"
+				"09882C8C36391E71"
+			]
+			id: "76FD303EB67A50DB"
+			tasks: [{
+				id: "1DEBB2D7C8919794"
+				type: "item"
+				item: "botania:tigerseye"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -0.5d
+			shape: "gear"
+			subtitle: "Vegetal Butcher: It is similar to the Bellethorne, but it only damages adult animals and requires 30 Mana per hit instead of 24. Its range and damage are otherwise identical"
+			dependencies: ["44A732EE455674E8"]
+			id: "145741C1FECC1D40"
+			tasks: [{
+				id: "1357802C80D0A9E4"
+				type: "item"
+				item: "botania:dreadthorn"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 0.5d
+			shape: "gear"
+			subtitle: "The Mana Sound Muffler: It reduces the volume of all sounds in a radius of 4 blocks by 85%. Even though it can be linked to a Mana Pool, it does not use Mana"
+			dependencies: ["44A732EE455674E8"]
+			id: "7E6FB615EEABCFE8"
+			tasks: [{
+				id: "38DF5BB4FB81D2E7"
+				type: "item"
+				item: "botania:bergamute"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -1.5d
+			shape: "gear"
+			subtitle: "Vegetal Mob Grinder: When a Bellethorne is supplied with Mana, it will attempt to damage a random nearby mob every 5 ticks, dealing 4 damage to it (increased to 20 against Witches) at the cost of 24 Mana. It will not attempt to damage mobs under Damage Immunity and will not consume mana if there are no valid targets in its area"
+			dependencies: ["44A732EE455674E8"]
+			id: "22890809CB45613B"
+			tasks: [{
+				id: "3A513A23EFE2CE0C"
+				type: "item"
+				item: "botania:bellethorn"
+			}]
+		}
+		{
+			x: 12.0d
+			y: 3.5d
+			shape: "gear"
+			subtitle: "Can be used to make the effects of a Ritual take place somewhere else from the Pedestal"
+			dependencies: ["05B9DF27F7AD850D"]
+			id: "434FE99A917808A1"
+			tasks: [{
+				id: "031298BABF745189"
+				type: "item"
+				item: "astralsorcery:ritual_link"
+			}]
+		}
+		{
+			x: 10.0d
+			y: -7.0d
+			shape: "gear"
+			subtitle: "All the power on the go! Left click for more info"
+			description: [
+				"The Portable Generator is a basic, portable RF generating block that can use Gasoline as fuel."
+				""
+				"The Portable Generator can store 8,000 mB of a valid fuel. It also has an internal buffer of 100,000 RF. If there is space in this internal buffer, the generator will automatically consume fuel at a rate of 5 mB per tick unless a redstone signal is supplied. It creates 128 RF/tick. When the device is picked up, either by breaking it or by holding shift and right clicking it, it will retain its stored fuel and energy, allowing the user to move it around quickly."
+				""
+				"Unlike other Immersive Engineering machines, the Portable Generator does not require a power relay - instead, a LV Wire Coil or MV Wire Coil may be directly attached to the block."
+			]
+			dependencies: [
+				"3F2B399F6E3190E4"
+				"7D4AA3C434A30047"
+			]
+			id: "265C3023D984D6AC"
+			tasks: [{
+				id: "61934C7A96753F4B"
+				type: "item"
+				item: "immersivepetroleum:gas_generator"
+			}]
+		}
+		{
+			x: 5.0d
+			y: -18.5d
+			subtitle: "Will make the items you pick up enter directly into the backpack. It has a small 3x3 filter. If any items are listed on the filter, you can either choose to pick up only those items, or to stop those items from being picked up"
+			dependencies: ["59DF5370DD2EAE51"]
+			id: "333798C80A21F10E"
+			tasks: [{
+				id: "48008B5CD68191F6"
+				type: "item"
+				item: "sophisticatedbackpacks:pickup_upgrade"
+			}]
+		}
+		{
+			x: 6.0d
+			y: -18.5d
+			shape: "gear"
+			subtitle: "Provides more filtering options"
+			dependencies: [
+				"2F64EED1F5172A81"
+				"333798C80A21F10E"
+			]
+			id: "69BCDB0A4574AB5B"
+			tasks: [{
+				id: "2AB3AAC4B4B0CDC2"
+				type: "item"
+				item: "sophisticatedbackpacks:advanced_pickup_upgrade"
+			}]
+		}
+		{
+			x: 5.0d
+			y: -17.5d
+			subtitle: "Items can be pipes in/out of backpacks using hoppers, pipes and more. This upgrade will allow you to filter what items can be piped into, or out of the backapack"
+			dependencies: ["59DF5370DD2EAE51"]
+			id: "3B754876C7351111"
+			tasks: [{
+				id: "01CCE69F4849E8BE"
+				type: "item"
+				item: "sophisticatedbackpacks:filter_upgrade"
+			}]
+		}
+		{
+			x: 6.0d
+			y: -17.5d
+			shape: "gear"
+			subtitle: "Provides more filtering options"
+			dependencies: [
+				"3B754876C7351111"
+				"2F64EED1F5172A81"
+			]
+			id: "569A67F028959C05"
+			tasks: [{
+				id: "6666ED6D8DE32C6F"
+				type: "item"
+				item: "sophisticatedbackpacks:advanced_filter_upgrade"
+			}]
+		}
+		{
+			x: 5.0d
+			y: -16.5d
+			subtitle: "Will allow your backpack to compress compatible items in a 2x2 grid"
+			dependencies: ["59DF5370DD2EAE51"]
+			id: "6D3E7ACFBF834F7B"
+			tasks: [{
+				id: "2614730F6FFF499D"
+				type: "item"
+				item: "sophisticatedbackpacks:compacting_upgrade"
+			}]
+		}
+		{
+			x: 6.0d
+			y: -16.5d
+			shape: "gear"
+			subtitle: "Will enable compacting for items in a 3x3 grid. Also has more filtering options"
+			dependencies: [
+				"6D3E7ACFBF834F7B"
+				"2F64EED1F5172A81"
+			]
+			id: "2DC753708BAE3210"
+			tasks: [{
+				id: "17E5DF1E12E3C8EC"
+				type: "item"
+				item: "sophisticatedbackpacks:advanced_compacting_upgrade"
+			}]
+		}
+		{
+			x: 5.0d
+			y: -15.5d
+			subtitle: "Will make your backpack void the items which are listed on a filter"
+			dependencies: ["59DF5370DD2EAE51"]
+			id: "426DE75E053F3D82"
+			tasks: [{
+				id: "7FEAC5825ED6095C"
+				type: "item"
+				item: "sophisticatedbackpacks:void_upgrade"
+			}]
+		}
+		{
+			x: 6.0d
+			y: -15.5d
+			shape: "gear"
+			subtitle: "Provides more filtering options"
+			dependencies: [
+				"2F64EED1F5172A81"
+				"426DE75E053F3D82"
+			]
+			id: "4F5B893D6B2E216D"
+			tasks: [{
+				id: "0FD4B79A0962AC58"
+				type: "item"
+				item: "sophisticatedbackpacks:advanced_void_upgrade"
+			}]
+		}
+		{
+			x: 13.0d
+			y: -18.5d
+			subtitle: "The items listed on this upgrade's filter will be added to the backpack when you shift right-click a chest containing them. We recommand using this upgrade with the Refill Upgrade"
+			dependencies: ["59DF5370DD2EAE51"]
+			id: "462CCB62A36BFAE8"
+			tasks: [{
+				id: "50F361B4A82D17C4"
+				type: "item"
+				item: "sophisticatedbackpacks:restock_upgrade"
+			}]
+		}
+		{
+			x: 12.0d
+			y: -18.5d
+			shape: "gear"
+			subtitle: "Provides more filtering options"
+			dependencies: [
+				"2F64EED1F5172A81"
+				"462CCB62A36BFAE8"
+			]
+			id: "56DEF2CEB355F134"
+			tasks: [{
+				id: "77FB215C1D45FF17"
+				type: "item"
+				item: "sophisticatedbackpacks:advanced_restock_upgrade"
+			}]
+		}
+		{
+			x: 13.0d
+			y: -17.5d
+			subtitle: "Provides a 3x3 filter. When you shift right-click on a chest, the items listed on that filter will be placed from the backpack, into the chest. If no items are listed on the filter, all the items from the backpack will be transfered to that chest"
+			dependencies: ["59DF5370DD2EAE51"]
+			id: "42E4E7D3F0AFF795"
+			tasks: [{
+				id: "369FAFFF9324DDB1"
+				type: "item"
+				item: "sophisticatedbackpacks:deposit_upgrade"
+			}]
+		}
+		{
+			x: 12.0d
+			y: -17.5d
+			shape: "gear"
+			subtitle: "Provides more filtering options"
+			dependencies: [
+				"2F64EED1F5172A81"
+				"42E4E7D3F0AFF795"
+			]
+			id: "6F7D20CB116B83C3"
+			tasks: [{
+				id: "2236FEB3D18226CF"
+				type: "item"
+				item: "sophisticatedbackpacks:advanced_deposit_upgrade"
+			}]
+		}
+		{
+			x: 9.0d
+			y: -20.5d
+			shape: "gear"
+			subtitle: "Provides a filter with 6 slots. The items listed on this filter will be pushed to the player's hotbar. This can be useful if you're building something as you can store all of your building blocks in your backpack"
+			dependencies: ["59DF5370DD2EAE51"]
+			id: "2E34D4672F9293AB"
+			tasks: [{
+				id: "266B0E4AFD592EB5"
+				type: "item"
+				item: "sophisticatedbackpacks:refill_upgrade"
+			}]
+		}
+		{
+			x: 6.0d
+			y: -14.0d
+			shape: "heart"
+			subtitle: "Makes your backpack absolutely indestructible. Not even the void can destroy it"
+			dependencies: ["2F64EED1F5172A81"]
+			id: "4117ECC5D91C851D"
+			tasks: [{
+				id: "1594104650C2AAEB"
+				type: "item"
+				item: "sophisticatedbackpacks:everlasting_upgrade"
+			}]
+		}
+		{
+			x: 13.0d
+			y: -16.5d
+			subtitle: "Will add a simple Furnace to the backpack"
+			dependencies: ["59DF5370DD2EAE51"]
+			id: "69EC01F16F0AECA9"
+			tasks: [{
+				id: "5E32BC68855E1A44"
+				type: "item"
+				item: {
+					id: "sophisticatedbackpacks:smelting_upgrade"
+					Count: 1b
+					ForgeCaps: {
+						"polymorph:stack_recipe_data": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 12.0d
+			y: -16.5d
+			shape: "gear"
+			subtitle: "Provides filters for both smeltable items and fuels. With this upgrade, you can configure your backpack, so that it will constantly smelt iron using coal while you're mining. It's recommended that you use this upgrade with the Pickup Upgrade"
+			dependencies: [
+				"2F64EED1F5172A81"
+				"69EC01F16F0AECA9"
+			]
+			id: "63BFD80B5A87C4E5"
+			tasks: [{
+				id: "00BE14764064D6E5"
+				type: "item"
+				item: {
+					id: "sophisticatedbackpacks:auto_smelting_upgrade"
+					Count: 1b
+					ForgeCaps: {
+						"polymorph:stack_recipe_data": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 5.0d
+			y: -14.0d
+			shape: "gear"
+			subtitle: "Will add a Crafting Table to your backpack. No more portable crafting tables on sticks or other oddities!"
+			hide_dependency_lines: true
+			dependencies: ["49698B7FBB07F2EC"]
+			id: "6289A678C4D88F4F"
+			tasks: [{
+				id: "32868BAB427E95E0"
+				type: "item"
+				item: {
+					id: "sophisticatedbackpacks:crafting_upgrade"
+					Count: 1b
+					ForgeCaps: {
+						"polymorph:stack_recipe_data": { }
+					}
+				}
+			}]
+		}
+		{
+			x: 13.0d
+			y: -14.0d
+			shape: "gear"
+			subtitle: "Will add a Stonecutter to your backpack"
+			dependencies: ["59DF5370DD2EAE51"]
+			id: "28C0ABBCC917F8CC"
+			tasks: [{
+				id: "591DBEB4ECCDA62E"
+				type: "item"
+				item: "sophisticatedbackpacks:stonecutter_upgrade"
+			}]
+		}
+		{
+			x: 13.0d
+			y: -15.5d
+			subtitle: "Has to be used with the Tank Upgrade. Will make the backpack outo-output any liquids to the fluid tanks located bellow the backpack. Remember you can place down backpacks with shift right-click"
+			dependencies: ["5F68C4D92EF20E09"]
+			id: "64F50E1767348194"
+			tasks: [{
+				id: "3F28FED3C77217BA"
+				type: "item"
+				item: "sophisticatedbackpacks:pump_upgrade"
+			}]
+		}
+		{
+			x: 12.0d
+			y: -15.5d
+			shape: "gear"
+			subtitle: "Will provide 4 filter slots. It will also allow the backpack to act more like a in-world pump and as a bucket"
+			dependencies: [
+				"2F64EED1F5172A81"
+				"64F50E1767348194"
+			]
+			id: "350031C6B02CB60F"
+			tasks: [{
+				id: "5410D4232EC50066"
+				type: "item"
+				item: "sophisticatedbackpacks:advanced_pump_upgrade"
+			}]
+		}
+		{
+			x: 12.0d
+			y: -14.0d
+			shape: "heart"
+			subtitle: "Will allow you to transfer your experiance into the backpack's tank. This upgrade has to be used with a Tank Upgrade"
+			dependencies: ["2F64EED1F5172A81"]
+			id: "26612CE2C471F2C5"
+			tasks: [{
+				id: "4FEF87432116C2F0"
+				type: "item"
+				item: "sophisticatedbackpacks:xp_pump_upgrade"
+			}]
+		}
+		{
+			title: "Handy Turtles"
+			icon: {
+				id: "computercraft:turtle_normal"
+				Count: 1b
+				tag: {
+					RightUpgrade: "minecraft:diamond_pickaxe"
+				}
+			}
+			x: 9.0d
+			y: -10.5d
+			shape: "gear"
+			subtitle: "Computers doing everything. Left Click for more info"
+			description: [
+				"Turtles can be equipped with different tools in order to perform certain tasks and actions. While regular diamond tools will consume their durability, the tools equipped by a Turtle, won't."
+				""
+				"All turtles can execute quite the same range of actions, but the tools they're equipped with, will allow them to execute their actions more quicker. For example, a Mining Turtle can chop down trees, but will do it quite slow comparing to a Felling Turtle."
+				""
+				"Now, how do you use this things? Unfortunately, if you don't have some programming knowledge, things will be quite hard to handle. But we'll walk you through some of the basic things you can achieve with some turtles."
+				""
+				"Mining Turtle - You can set it up to basically be a quarry or to do strip mining for you."
+				""
+				"Melee Trutle - You can make a great mob grinder from it. Its kills do count as a player kill, so you'll be able to get xp while you're afk at a mob farm."
+				""
+				"Digging Turtle - Will be efficient in ares where you need to break dirt blocks."
+				""
+				"Felling Turtle - You can make a pretty great wood farm using this one."
+				""
+				"Farming Turtle - Can be used to manage large crop fields."
+				""
+				"Now, each turtle can be equipped with two tools/modules. This means that on a Turtle, you cna have a Pickaxe on one side, and a Crafting Table on the other. Such combos can be used in your advantage, to achieve behaviours like - a Mining Turtle can compress the cobblestone obtained while mining, in order to get more space."
+				""
+				"To use the features mentioned previously, you'll have to use programs. Turtles come, by default, with some programs, but you can also make your own. While this might be a hard thing to achieve, you can also get pre-made programs from the ComputerCraft forum, through Pastebin."
+				""
+				"To add a program to your Turtle, just type: pastebin get <pastebin file name> <whatever name you want the program to have>."
+				""
+				"To make things more clear, Turtle/Computer programs are usually posted on Pastebin.com. Each program posted there, has a unique web adress which includes the name of that program. Simply copy that name formed of random characters and things should work."
+				""
+				"Make sure to read the forum post of each program you want to use, to get a better understanding of how that program works."
+			]
+			dependencies: ["0D3846475EDA5957"]
+			size: 1.5d
+			id: "0181383EFE09E250"
+			tasks: [{
+				id: "3E6BA5BBF8F62533"
+				type: "checkmark"
+				title: "Got it!"
+			}]
+			rewards: [{
+				id: "5CB11A4B3C0CB369"
+				type: "loot"
+				table_id: 8587500481418189075L
+			}]
+		}
+		{
+			title: "Modern Lighting"
+			x: 8.0d
+			y: -8.0d
+			shape: "gear"
+			subtitle: "When supplied with power, the Powered Lantern will emita light source similar to Glowstone. However, it will keep mobs from spawning in a 32x32 area around them. The Floodlight, when provided with power will light an area of 32 blocks in front of it. With an Engineer's Hammer, you can rotate the Floodlight around. A redstone signal will be required to turn the Floodlight on. This behavior can be reversed with a Screwdriver"
+			dependencies: ["360B0A95C0A30AF6"]
+			id: "16CBF83E4F55CAA5"
+			tasks: [
+				{
+					id: "2F3AB5C934C5C35C"
+					type: "item"
+					item: "immersiveengineering:floodlight"
+				}
+				{
+					id: "58E3D2B10C5AF429"
+					type: "item"
+					item: "immersiveengineering:electric_lantern"
+				}
+			]
+		}
+		{
+			x: 8.5d
+			y: -4.5d
+			shape: "gear"
+			subtitle: "Mana Pylons can be used to boost the power of an Enchanting Table. Just two of these placed next to it, will boost the Enchanting Table's power to lvl 30"
+			dependencies: ["73A248C448C4C47D"]
+			id: "37D8AA4711E24A91"
+			tasks: [{
+				id: "1A8B63F4228B0889"
+				type: "item"
+				item: "botania:mana_pylon"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 6.5d
+			shape: "gear"
+			subtitle: "The Kitchen Floor is not just a decorative block, but also, a functional one. Since the blocks added by Cooking for Blockheads are meant to work with each other, you can use the Kitchen Floor to connect all of the blocks together"
+			dependencies: ["40205D351BE13B77"]
+			id: "473A56CFF714C950"
+			tasks: [{
+				id: "47692147BAB856CA"
+				type: "item"
+				item: "cookingforblockheads:white_kitchen_floor"
+			}]
+		}
+		{
+			x: 7.0d
+			y: 6.5d
+			shape: "gear"
+			subtitle: "The Cooking Table can be used as a crafting station for you Kitchen. When it is part of a Kitchen which has lots of cooking ingredients, this Table will show you and will also allow you to easily craft complex recipes with those ingredients"
+			dependencies: ["40205D351BE13B77"]
+			id: "180C02CAF73467A2"
+			tasks: [{
+				id: "52FAAFD3D5D03DBC"
+				type: "item"
+				item: "cookingforblockheads:cooking_table"
+			}]
+		}
+		{
+			x: 8.0d
+			y: 6.5d
+			shape: "gear"
+			subtitle: "The Oven is, essencially a large smoker which uses Cooking Oil as fuel. It can hold 3 stacks of food at a time and it can cook 9 items at a time. You'll eventually be able to upgrade it to use RF/FE instead of Cooking Oil, but for now, if you're planning on using this, make sure you've god Cooking Oil"
+			dependencies: ["40205D351BE13B77"]
+			id: "485557DABCE45FCF"
+			tasks: [{
+				id: "322D785C89A5199A"
+				type: "item"
+				item: "cookingforblockheads:oven"
+			}]
+		}
+		{
+			title: "Kitchen Storage"
+			x: 9.0d
+			y: 6.5d
+			shape: "gear"
+			subtitle: "The Kitchen Counter and the Kitchen Cabinet can be used to store cooking ingredients to be used in recipes. While the counters are meant to be placed on the ground, the cabinets can be placed above. Use Kitchen Corners and Hanging Kitchen Corners to connect the lower part of the Kitchen, with the higher one. The Fridge can be used exactly like the Cabinets/Counters, but it can be upgraded to provide ice to recipes, but that will come later"
+			dependencies: ["40205D351BE13B77"]
+			id: "2C47A39D73048037"
+			tasks: [
+				{
+					id: "7BE6A14AE96E96B3"
+					type: "item"
+					item: "cookingforblockheads:counter"
+				}
+				{
+					id: "17A948AC02D20DA1"
+					type: "item"
+					item: "cookingforblockheads:cabinet"
+				}
+				{
+					id: "1FB48FA5E63C3DB8"
+					type: "item"
+					item: "cookingforblockheads:fridge"
+				}
+			]
+		}
+		{
+			x: 10.0d
+			y: 6.5d
+			shape: "gear"
+			subtitle: "The Toaster will take Bread and turn it into Toast without using any butter"
+			dependencies: ["40205D351BE13B77"]
+			id: "6B18F4BB6C07C9C4"
+			tasks: [{
+				id: "4D5DC281EF825DD0"
+				type: "item"
+				item: "cookingforblockheads:toaster"
+			}]
+		}
+		{
+			x: 11.0d
+			y: 6.5d
+			shape: "gear"
+			subtitle: "The Cow in a Jar will provide milk to all the required recipes. To make this strange item, you'll have to place a Cow untop of a regular Jar and, then, drop an anvil on the Cow. Breaking the Cow in a Jar will not release the Cow of anything"
+			dependencies: ["40205D351BE13B77"]
+			id: "01BD6B3F7A0023F4"
+			tasks: [{
+				id: "4B664190C9FE91F0"
+				type: "item"
+				item: "cookingforblockheads:cow_jar"
+			}]
+		}
+		{
+			x: 12.0d
+			y: 6.5d
+			shape: "gear"
+			subtitle: "The Kitchen Sink can provide water to all the recipes that require it. You'll have to feed water into the Sink, as it will NOT act as an infinite water source"
+			dependencies: ["40205D351BE13B77"]
+			id: "2E7D59A94FCC9063"
+			tasks: [{
+				id: "5F9F7CC324F46EE2"
+				type: "item"
+				item: "cookingforblockheads:sink"
+			}]
+		}
+		{
+			x: 9.5d
+			y: -4.5d
+			shape: "gear"
+			subtitle: "The Teru Teru Bozu can be used to reduce the amount of time in which Bad Weather will take place. You can also give them a Sunflower to make the Sun return"
+			dependencies: ["655AB81DE00B783B"]
+			id: "4E3AEBEEF7BBCF09"
+			tasks: [{
+				id: "60DF8D030C8F5068"
+				type: "item"
+				item: "botania:teru_teru_bozu"
+			}]
+		}
+		{
+			x: 7.5d
+			y: -10.5d
+			shape: "heart"
+			subtitle: "The Portable Crafting Table: The Handheld Crafting Table will allow you to access a standard 3x3 Crafting Grid from anywhere with ease"
+			dependencies: [
+				"275FE11C673E522D"
+				"14C60A7B6156F520"
+				"2BA7183800B331E0"
+			]
+			size: 1.5d
+			id: "49698B7FBB07F2EC"
+			tasks: [{
+				id: "7FFA086064AEE0D0"
+				type: "item"
+				item: "extendedcrafting:handheld_table"
+			}]
+			rewards: [{
+				id: "4896F319AAAB3B25"
+				type: "loot"
+				table_id: 8587500481418189075L
+			}]
+		}
+		{
+			x: 9.0d
+			y: -12.0d
+			subtitle: "Appears lit even in dark areas"
+			dependencies: [
+				"5BCDBA72A5350DAA"
+				"20565A3484CED967"
+			]
+			id: "5C20152FAF327541"
+			tasks: [{
+				id: "4D514F9254FA3746"
+				type: "item"
+				item: "tconstruct:manyullyn_item_frame"
+			}]
+		}
+		{
+			x: 9.0d
+			y: -7.0d
+			shape: "gear"
+			subtitle: "The Engineer's Goggles can be worn in the curios slots. Once they're equipped, and you're looking at a block from Create, information about the SU generated/consumed will be shown, along side with other useful information"
+			dependencies: [
+				"5F68C4D92EF20E09"
+				"59DF5370DD2EAE51"
+				"6833FFB6AB33C9D6"
+			]
+			id: "62FEC918A73AE6A0"
+			tasks: [{
+				id: "12635A29E43027C6"
+				type: "item"
+				item: "create:goggles"
+			}]
+		}
+		{
+			x: 9.0d
+			y: -18.0d
+			shape: "gear"
+			subtitle: "Traveling without any risks. Left Click for more info"
+			description: [
+				"The Engineer's Skyhook is a mobility tool that gives you the ability to ride along wires, ropes and cables up to great distances."
+				""
+				"Using it on a mid-air line, will connect you to it, and from there, you'll ride down the line with gravity unless you'll use your movement keys."
+			]
+			dependencies: ["5A40BDBC56A4844F"]
+			id: "00809D198FA90568"
+			tasks: [{
+				id: "06AC64E8A8EDFE9D"
+				type: "item"
+				item: {
+					id: "immersiveengineering:skyhook"
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							Size: 2
+							Items: [ ]
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: 10.0d
+			y: -8.0d
+			shape: "gear"
+			subtitle: "The Asphalt Concrete is a block added by Immersive Petroleum. While walking on it, you'll gain a movement speed bonus of 20%"
+			dependencies: ["0365486E5D53E231"]
+			id: "3A4EFBD806E50E39"
+			tasks: [{
+				id: "147F14A3484B6A5E"
+				type: "item"
+				item: "immersivepetroleum:asphalt"
+			}]
+		}
+		{
+			x: 5.0d
+			y: -8.0d
+			shape: "gear"
+			subtitle: "The Laboratory Furnace will be slightly faster then the vanilla Furnace. If a Thermal Plate from Powah is placed in one of the two auxiliary slots of the Furnace, and RF is provided, it will start to smelt items faster"
+			dependencies: ["69DA94D714E296AC"]
+			id: "11BDE71F0ED568AD"
+			tasks: [{
+				id: "463C88292EC77B15"
+				type: "item"
+				item: "engineersdecor:small_lab_furnace"
+			}]
+		}
+		{
+			x: 13.0d
+			y: -8.0d
+			shape: "gear"
+			subtitle: "The Small Electrical Furnace can take tiny amounts of RF to burn items just like a vanilla Furnace would. In its GUI, it has a tiny button with 4 positions. With it, you can choose how fast the Furnace will smelt items. The faster it goes, the more RF wil be used. Also note that, a certain level of RF has to be reached in order for it to work. Finally, this furnace will automatically pull items from the inventory adjacent to its input side (which is marked with a Blue dot)"
+			hide_dependency_lines: true
+			dependencies: [
+				"79BB64427280F8AE"
+				"11BDE71F0ED568AD"
+			]
+			id: "0BC1C7CDEA40838F"
+			tasks: [{
+				id: "3EB5E266524CB246"
+				type: "item"
+				item: "engineersdecor:small_electrical_furnace"
+			}]
+		}
+		{
+			x: 7.0d
+			y: -6.0d
+			shape: "gear"
+			subtitle: "The Factory Hopper is a smarted version of the vanilla Hopper. First, it has 18 slots and it can transfer a maximum amount of 32 items at a time. It also has options for different transfer delay, redstone control and more"
+			dependencies: [
+				"79BB64427280F8AE"
+				"2BF07F660D1559DE"
+			]
+			id: "77914ED859B33D5F"
+			tasks: [{
+				id: "37E62ADB539C22D2"
+				type: "item"
+				item: "engineersdecor:factory_hopper"
+			}]
+		}
+		{
+			x: 9.0d
+			y: -17.0d
+			shape: "gear"
+			subtitle: "The Morph-O-Tool is a gadget which is similar to the Akashic Tome. It can store multiple Wrenches in it. If you're looking at a block of a certain mod, the Morph-O-Tool will turn into the wrench added by that mod (if it has it stored)"
+			dependencies: ["40205D351BE13B77"]
+			id: "62BF8A4AEDEBB411"
+			tasks: [{
+				id: "7EFBFCFE348127E6"
+				type: "item"
+				item: "morphtool:tool"
+			}]
+		}
+		{
+			title: "The Primitive Steam Turbine"
+			icon: "immersiveindustry:steam_turbine"
+			x: 4.5d
+			y: -10.5d
+			shape: "heart"
+			subtitle: "The Steam Turbine is a revolutionary multiblock structure that will consume a maximum amount of 64mb/t of Liquid Steam to produce 1024 RF/t. This will allow you to turn the Steam you were previously producing directly into power, without any rotational force being involved. The output rate of 1024 RF/t will be split between the Turbine's two outputs. A Projector is adviced for building this Structure"
+			dependencies: [
+				"7D4AA3C434A30047"
+				"6B4D6FD11DFC8011"
+				"2E420B464AC031B6"
+			]
+			size: 1.5d
+			id: "7819A4E622B92BC8"
+			tasks: [
+				{
+					id: "3BAF513993504997"
+					type: "item"
+					item: "immersiveengineering:sheetmetal_steel"
+					count: 13L
+				}
+				{
+					id: "0D944FDA00571FC9"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 15L
+				}
+				{
+					id: "4C23547C1F083779"
+					type: "item"
+					item: "immersiveengineering:generator"
+					count: 6L
+				}
+				{
+					id: "1B7D95528658A10A"
+					type: "item"
+					item: "immersiveengineering:radiator"
+					count: 6L
+				}
+				{
+					id: "05E9BF146978F20B"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "0AFC5F18489BC6E4"
+					type: "item"
+					item: "emendatusenigmatica:steel_block"
+					count: 3L
+				}
+				{
+					id: "75CD45D4032D58C2"
+					type: "item"
+					item: "immersiveengineering:fluid_pipe"
+					count: 3L
+				}
+			]
+		}
+		{
+			title: "Diesel Generator"
+			icon: "immersiveengineering:diesel_generator"
+			x: 13.5d
+			y: -10.5d
+			shape: "heart"
+			subtitle: "More structure. More RF. Left Click for more info"
+			description: [
+				"Construct the Diesel Generator, which can produce 2048 RF/tick using Diesel or Biodiesel as fuel. The generator has three outputs. Keep in mind that the 2048 RF output will be split between the generator's three outputs."
+				""
+				"To build this structure, use the guide provided in the Engineer's Manual. You can also use a projector to see the structure in the world."
+				""
+				"You might want to use the extreme sound muffler menu in your inventory to turn down the volume for the sounds produced by this machine. Trust us. This thing is LOUD."
+			]
+			dependencies: [
+				"7D4AA3C434A30047"
+				"31A4F73AF44D70B1"
+				"6B4D6FD11DFC8011"
+			]
+			dependency_requirement: "one_started"
+			size: 1.5d
+			id: "26C28AE460BABB1A"
+			tasks: [
+				{
+					id: "554EB4C81F735C10"
+					type: "item"
+					item: "immersiveengineering:radiator"
+					count: 9L
+				}
+				{
+					id: "7AA4F7909BA78822"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 6L
+				}
+				{
+					id: "3E6174A421215774"
+					type: "item"
+					item: "immersiveengineering:generator"
+					count: 4L
+				}
+				{
+					id: "367286036790949E"
+					type: "item"
+					item: "immersiveengineering:heavy_engineering"
+					count: 13L
+				}
+				{
+					id: "6BED38C390162162"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "69E498BC8E0E8631"
+					type: "item"
+					item: "immersiveengineering:fluid_pipe"
+					count: 5L
+				}
+			]
+			rewards: [{
+				id: "73EB5E188BD11545"
+				type: "loot"
+				table_id: 5206766833681472091L
+			}]
+		}
+		{
+			title: "Automated Engineer's Workbench"
+			icon: "immersiveengineering:auto_workbench"
+			x: 7.5d
+			y: -9.0d
+			shape: "gear"
+			subtitle: "Components can be mass-produced now. Left Click for more info"
+			description: [
+				"The Automated Workbench is a 3x2x3 multi-block structure which is the automated version of the Engineer's Workbench."
+				""
+				"The orientation of the Conveyor Belts is important; they should \"flow\" to the front of the multiblock. After it is fully arranged, right-click the middle Treated Wood Slab with an Engineer's Hammer to complete the multiblock structure."
+				""
+				"Redstone Flux (RF) is required for the Automated Workbench to function. It is input through where the Light Engineering Block was in the multiblock structure's creation.In the Automated Workbench's GUI, a Engineer's Blueprint must be added in order for it to function."
+				""
+				"General example of the structure:"
+				""
+				"{image:kubejs:textures/immersive/automated_engineer_workbench_example.png width:140 height:140 align:1}"
+			]
+			dependencies: ["31A4F73AF44D70B1"]
+			id: "5C0F5C3DB1FE2F98"
+			tasks: [
+				{
+					id: "3C5CA15A10B70957"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_grate_top"
+					count: 5L
+				}
+				{
+					id: "047BECCC47275C61"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 4L
+				}
+				{
+					id: "07DEB8D0468BE974"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "5B51430C72BBBC38"
+					type: "item"
+					item: "immersiveengineering:heavy_engineering"
+					count: 2L
+				}
+				{
+					id: "0563A0B47C7A3DBA"
+					type: "item"
+					item: "immersiveengineering:slab_treated_wood_horizontal"
+					count: 2L
+				}
+				{
+					id: "6DAE35F6A452F6D0"
+					type: "item"
+					item: "immersiveengineering:conveyor_basic"
+					count: 4L
+				}
+			]
+		}
+		{
+			title: "The Excavator"
+			icon: "immersiveengineering:excavator"
+			x: 9.0d
+			y: -9.0d
+			shape: "gear"
+			subtitle: "Diggy Diggy HOLE! Left Click for more info"
+			description: [
+				"The Excavator is capable of generating a massive quantity of ores at the cost of 512 RF/tick. To properly use it, you'll have to search for an ore deposit using a Core Sample Drill. Once you've found an ore deposit, you can buit the Excavator above it, and start extracting it."
+				""
+				"This multiblock structure has two pieces:"
+				""
+				"- The Engine"
+				"- The Bucket Wheel"
+				""
+				"To build this structure, use the guide provided in the Engineer's Manual. You can also use a projector to see the structure in the world."
+				""
+				"Example of the Excavator's power input:"
+				""
+				"{image:kubejs:textures/immersive/excavator_power_example.png width:100 height:100 align:1 fit:true}"
+			]
+			dependencies: ["31A4F73AF44D70B1"]
+			id: "751DB16191F3159E"
+			tasks: [
+				{
+					id: "0586649B8475E6B3"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 6L
+				}
+				{
+					id: "2CA47B8C717531A5"
+					type: "item"
+					item: "immersiveengineering:sheetmetal_steel"
+					count: 16L
+				}
+				{
+					id: "44347F0702775EFE"
+					type: "item"
+					item: "immersiveengineering:radiator"
+					count: 3L
+				}
+				{
+					id: "4E5889BD2E13D135"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 9L
+				}
+				{
+					id: "1CA1F386A985A694"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "6F8F4548911445A3"
+					type: "item"
+					item: "immersiveengineering:heavy_engineering"
+					count: 4L
+				}
+			]
+			rewards: [{
+				id: "6EBBF278AAE26F42"
+				type: "loot"
+				table_id: 5206766833681472091L
+			}]
+		}
+		{
+			title: "Immersive Sawmill"
+			icon: "immersiveengineering:sawmill"
+			x: 10.5d
+			y: -9.0d
+			shape: "gear"
+			subtitle: "Cutting, now using electricity. Left Click for more info"
+			description: [
+				"The Sawmill is a machine assembly which cuts wooden logs  neatly stacked planks."
+				""
+				"The machine operates in two stages by first stripping the bark off the log and then using a saw blade to cut the striped long apart, everything by consuming RF/FE."
+				""
+				"In the cutting process, you can receive sawdust which can be used now to make paper, and other products in the future."
+			]
+			dependencies: ["31A4F73AF44D70B1"]
+			id: "3442FB40C42B698A"
+			tasks: [
+				{
+					id: "7E330737E9706C39"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 8L
+				}
+				{
+					id: "7BE311F7F5DCFB01"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 6L
+				}
+				{
+					id: "7547BE6B72D0A309"
+					type: "item"
+					item: "immersiveengineering:sheetmetal_iron"
+					count: 4L
+				}
+				{
+					id: "6603F4A1150C1625"
+					type: "item"
+					item: "immersiveengineering:heavy_engineering"
+					count: 2L
+				}
+				{
+					id: "38610EEAD95B45D4"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "097CB239C39A8A4C"
+					type: "item"
+					item: "immersiveengineering:conveyor_basic"
+					count: 4L
+				}
+			]
+		}
+		{
+			title: "Lubricant"
+			x: 7.0d
+			y: -8.0d
+			shape: "gear"
+			subtitle: "Lubricant can be used to make machines such as the Excavetor, PumpJack, etc. run smoother. This quest is here just for providing some info"
+			dependencies: ["4261B19707343F3D"]
+			id: "6D461175C8690305"
+			tasks: [{
+				id: "76FA7BBAED02790F"
+				type: "item"
+				item: "immersivepetroleum:oil_can"
+			}]
+		}
+		{
+			x: 9.0d
+			y: -8.0d
+			shape: "heart"
+			subtitle: "This block is Wither-proof"
+			dependencies: ["4AADFD307A5BCF37"]
+			id: "04BC8A5DB0D0A04B"
+			tasks: [{
+				id: "01104CB1FE3C3545"
+				type: "item"
+				item: "engineersdecor:rebar_concrete"
+			}]
+		}
+		{
+			title: "The Advanced Woodcutter"
+			x: 10.5d
+			y: -10.5d
+			shape: "heart"
+			subtitle: "The Advanced Woodcutter will allow you to process the logs from BYG; this should make your building tasks easier. Unlike the regular Woodcutter, this one is also portable, so you an open it from your inventory. Just Shift Right Click with it in your hand"
+			dependencies: ["2E420B464AC031B6"]
+			size: 1.5d
+			id: "04758C0EF8E5BB6C"
+			tasks: [{
+				id: "673AD1D2FDDA405C"
+				type: "item"
+				item: "corail_woodcutter:oak_woodcutter"
+			}]
+		}
+	]
+}

@@ -1,0 +1,2644 @@
+{
+	id: "0706115113454085"
+	group: "532DAB84AB301350"
+	order_index: 1
+	filename: "arcane_2"
+	title: "Arcane - 2"
+	icon: "astralsorcery:altar_radiance"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Botania: Part 1"
+			icon: {
+				id: "botania:cosmetic_botanist_emblem"
+				Count: 1b
+				tag: { }
+			}
+			x: -0.5d
+			y: -1.0d
+			shape: "square"
+			subtitle: "And here you are. This is one of the first quests of the magic phase in the 2nd Age. Here you'll start with Botania. Left Click for ore info"
+			description: [
+				"Botania is a magic mod based around flowers. Throughout the world, you'll find 16 types of Mystical Flowers based on Minecraft's colors."
+				""
+				"Each Mystical Flower has a tall version which can be harvested only with sheers. You can also obtain these, by placing Petals on Grass and using Bone Meal on them. This will allow you to multiply the amount of petals you have. Note that this process will not work in some biomes."
+				""
+				"When placed in the crafting grid, the mystical flowers will give you colored petals. These petals can further be used in the Petal Apothecary to make functional floras."
+				""
+				"The newly resulted flowers will have new and useful abilities. To find more about these flowers, look in the \"Useful Items\" tab."
+				""
+				"Ok, new flowers, but how you use this apothecary? It's simple. Place the Apothecary in the world. After that, place some water into it. Next, you'll have to throw the items required for a recipe in the Apothecary. When a valid recipe was made, an overlay will appear on your screen. To finalize the recipe throw in the Apothery, the item requested on that overlay (usually, a seed)."
+			]
+			dependencies: ["40205D351BE13B77"]
+			size: 2.0d
+			id: "44A732EE455674E8"
+			tasks: [{
+				id: "47B33342E8122DF8"
+				type: "item"
+				item: "botania:apothecary_default"
+			}]
+		}
+		{
+			title: "Mana Pool"
+			x: 6.5d
+			y: -2.5d
+			shape: "square"
+			subtitle: "The Mana Battery. Left Click for more info"
+			description: [
+				"The Mana Pool  is the primary block for Mana storage in the mod and can store an extremely large amount of Mana inside. Mana stored in the pool can be used to power other blocks in Botania that require Mana to function, such as functional flowers."
+				""
+				"Mana can be inserted into the Mana Pool via a Mana Spreader, and any adjacent Mana Spreaders will pull Mana from it to fill their internal buffer. The amount of Mana in a pool can be displayed as a bar by right-clicking the Mana Pool with a Wand of the Forest. The amount of Mana displayed in the Pool can be updated with successive clicks."
+				""
+				"Many resources can be thrown into the Mana Pool, infusing them into different forms. For example, an Steel Ingot can be thrown into the pool to transform into Manasteel Ingot."
+			]
+			dependencies: ["293550F27911E358"]
+			id: "655AB81DE00B783B"
+			tasks: [
+				{
+					id: "60F9E357A4F4D950"
+					type: "item"
+					item: "botania:mana_pool"
+				}
+				{
+					id: "2FC8736500E6C60E"
+					type: "item"
+					item: {
+						id: "botania:twig_wand"
+						Count: 1b
+						tag: {
+							color1: 0
+							color2: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "The EndoFlame"
+			icon: "botania:endoflame"
+			x: -1.0d
+			y: -6.5d
+			shape: "gear"
+			subtitle: "Uses solid fuel to generate mana"
+			dependencies: ["28BEE9CBF6F44FEE"]
+			id: "7A456971CB158835"
+			tasks: [{
+				id: "4A0E1DD0B21A45D5"
+				type: "item"
+				item: "botania:endoflame"
+			}]
+			rewards: [{
+				id: "339CC0F38CE0D255"
+				type: "loot"
+				table_id: 8587500481418189075L
+			}]
+		}
+		{
+			title: "The Pure Daisy"
+			x: 1.5d
+			y: -1.0d
+			shape: "square"
+			subtitle: "Create the Pure Daisy, one of the most beautiful flowers added by Botania. Left Click for more info"
+			description: [
+				"The Pure Daisy is not just beautiful and pure as its name states, but it is also functional."
+				""
+				"That means that it does something. When certain blocks are placed next to it, the Pure Daisy will start turning them into other blocks, efectively executing a transmutation cycle. This process will take 60 seconds."
+				""
+				"You can see all the transmutations that can be performed using a Pure Daisy by pressing \"u\" on it. Meanwhile, the most important two transmutations we're gonna talk about, are the ones for the LivingWood and the LivingRock."
+				""
+				"By placing the Pure Daisy on the ground and surrounding it with Infused Wood, you can obtain LivingWood which will be a key material for the recipes from Botania."
+				""
+				"By placing the Pure Daisy on the ground and surrounding it with Smooth Stone Bricks, you can obtain LivingRock which will be a key material for the recipes from Botania."
+			]
+			dependencies: [
+				"44A732EE455674E8"
+				"56017FCF2D7819F8"
+			]
+			id: "3B845F0A6E919ED1"
+			tasks: [{
+				id: "0F969A9E33B1F288"
+				type: "item"
+				item: "botania:pure_daisy"
+				count: 2L
+			}]
+		}
+		{
+			title: "Manasteel"
+			x: 6.5d
+			y: -3.5d
+			shape: "square"
+			subtitle: "Drop a Steel Ingot into a filled Mana Pool to create a Manasteel Ingot"
+			dependencies: ["655AB81DE00B783B"]
+			id: "48148EE28276AB64"
+			tasks: [{
+				id: "471D0E92102DA055"
+				type: "item"
+				item: "botania:manasteel_ingot"
+			}]
+			rewards: [{
+				id: "50620A019673C1F1"
+				type: "item"
+				item: "botania:manasteel_ingot"
+				count: 16
+			}]
+		}
+		{
+			x: -0.5d
+			y: 3.5d
+			shape: "square"
+			subtitle: "So bright, yet soo dull. Left Click for more info"
+			description: [
+				"The Resonating Wand is a very useful tool for a starlight sorcerer. It has many uses, such as:"
+				""
+				"When its night time, when held, it will show the areas whereyou can find Rock Crystal ore."
+				""
+				"Another use is for starting starlight crafting recipes by right-clicking on the starlight crafting tables."
+				""
+				"Recipes won't be visible on Multiplayer, so here you go:"
+				""
+				"{image:kubejs:textures/astralsorcery/resonating_wand_recipe-min.png width:100 height:140 align:1}"
+				""
+				"You'll need Marble and Treated Sticks."
+			]
+			dependencies: [
+				"52FD71220EF8CF35"
+				"54A9CA62C88CA53A"
+				"0B822C45336FAAAA"
+			]
+			id: "5B24E6B0D366B061"
+			tasks: [{
+				id: "0501A99337976739"
+				type: "item"
+				item: "astralsorcery:wand"
+			}]
+			rewards: [{
+				id: "75127E561E4577B2"
+				type: "item"
+				item: "emendatusenigmatica:coke_gem"
+				count: 8
+			}]
+		}
+		{
+			x: 2.5d
+			y: 5.5d
+			shape: "square"
+			subtitle: "The Starlight Pool. Left Click for more info"
+			description: [
+				"A Lightwell, when given items such as Aquamarine or Rock Crystals, will create Liquid Starlight from them."
+				""
+				"Liquid Starlight will have plenty of uses in the future."
+				""
+				"Note that, by using magma/netherrack or packed ice/ice instead of the rockcrystal/aquamarine, you'll receive lava/water."
+				""
+				"As Direwolf would say, 'neat!'"
+			]
+			dependencies: [
+				"6833FFB6AB33C9D6"
+				"5100EDF6D4054286"
+			]
+			id: "5E731BFE079CCF9C"
+			tasks: [{
+				id: "06E785FD3221E4D1"
+				type: "item"
+				item: "astralsorcery:well"
+			}]
+			rewards: [{
+				id: "045BC8A3A0C61EED"
+				type: "item"
+				item: "emendatusenigmatica:coke_gem"
+				count: 16
+			}]
+		}
+		{
+			x: 2.5d
+			y: 3.5d
+			shape: "square"
+			subtitle: "Shiny. Left Click for more info"
+			description: [
+				"Rock Crystals can be used for lots of purposes. You might use them in tool recipes, magical constructs and others."
+				""
+				"To find rock crystals, you can use a Resonating Wand when it's night time."
+				""
+				"Example of how Rock Crystals will be shown in the world:"
+				""
+				"{image:kubejs:textures/astralsorcery/rock_crystal_example.png width:100 height:100 align:1}"
+				""
+				"Later, you'll be able to grow your own Crystals."
+				""
+				"Finally, another method of obtaining Rock Crystals will be through a Resourceful Bees Honeycomb Block conversion. Use JEI to see how you can obtain the Rock Crystal Ore."
+			]
+			dependencies: ["5B24E6B0D366B061"]
+			id: "6833FFB6AB33C9D6"
+			tasks: [{
+				id: "75B983989D02D9C5"
+				type: "item"
+				item: {
+					id: "astralsorcery:rock_crystal"
+					Count: 1b
+					tag: {
+						astralsorcery: { }
+					}
+				}
+			}]
+		}
+		{
+			title: "Starlight Crafting Altar"
+			icon: "astralsorcery:altar_attunement"
+			x: 6.5d
+			y: 3.5d
+			shape: "square"
+			subtitle: "Starlight Crafting Mark II - obtain the Starlight Crafting Altar by crafting it above Y 120, during night time. Left Click for more info"
+			description: [
+				"The Starlight Crafting Altar, in comparison to its previous version, this will one will require a structure in order to work."
+				""
+				"By Shift Right Clicking with the Resonating Wand on the Altar, you'll see a preview of its structure."
+				""
+				"A Relay structure and an area with a decent starlight amount + plus a high Y position, will be enough for you to make the 3rd Altar tier, so don't worry about the Fosic Resonator for now. But know that you'll probably relocate your Altar once you get the Resonator."
+			]
+			dependencies: [
+				"5BC44F27B24D5624"
+				"5F68C4D92EF20E09"
+			]
+			id: "0CA03557153003A7"
+			tasks: [
+				{
+					id: "75C8A5A80C1CDBEB"
+					type: "item"
+					item: "astralsorcery:altar_attunement"
+				}
+				{
+					id: "584D6259FF95FC64"
+					type: "item"
+					item: "astralsorcery:marble_chiseled"
+					count: 8L
+				}
+				{
+					id: "4C3C2131ED840428"
+					type: "item"
+					item: "astralsorcery:marble_arch"
+					count: 28L
+				}
+				{
+					id: "26EA8DF737016438"
+					type: "item"
+					item: "astralsorcery:marble_bricks"
+					count: 24L
+				}
+				{
+					id: "416A8012ECC0A863"
+					type: "item"
+					item: "astralsorcery:black_marble_raw"
+					count: 21L
+				}
+				{
+					id: "577038A4B17135C0"
+					type: "item"
+					item: "astralsorcery:marble_pillar"
+					count: 8L
+				}
+			]
+			rewards: [{
+				id: "53EE11B1C63D99F1"
+				type: "loot"
+				table_id: 8587500481418189075L
+			}]
+		}
+		{
+			title: "Celestial Altar"
+			icon: "astralsorcery:altar_constellation"
+			x: 9.5d
+			y: 2.0d
+			shape: "square"
+			subtitle: "Starlight Crafting Mark III. Left Click for more info"
+			description: [
+				"The Celestial Altar is the third tier of crafting altar and is used throughout the Constellation chapter of the Astral Tome."
+				""
+				"The Altar works similarly to its predecessor the Starlight Crafting Altar, and can make all recipes that the latter can. However, it has 8 extra input slots that can be used for more crafting recipes. It can gather Starlight much more efficiently, and requires a larger structure to be built in order to support it."
+				""
+				"Remember you can also shift right-click the Starlight Crafting Altar with a Resonating want to see a preview of its required structure."
+			]
+			dependencies: ["1744D1F736052F09"]
+			id: "05B9DF27F7AD850D"
+			tasks: [
+				{
+					id: "5764A82C89AAC172"
+					type: "item"
+					item: "astralsorcery:altar_constellation"
+				}
+				{
+					id: "41E74073BA0742CD"
+					type: "item"
+					item: "astralsorcery:marble_runed"
+					count: 4L
+				}
+				{
+					id: "1B1A2F1EF9EAFCDD"
+					type: "item"
+					item: "astralsorcery:marble_bricks"
+					count: 16L
+				}
+				{
+					id: "43169E42DF1EDAEE"
+					type: "item"
+					item: "astralsorcery:black_marble_raw"
+					count: 28L
+				}
+				{
+					id: "46A50EE86A9348E2"
+					type: "item"
+					item: "astralsorcery:marble_raw"
+					count: 12L
+				}
+			]
+			rewards: [{
+				id: "17AA8C6E7C047BFF"
+				type: "loot"
+				table_id: 5206766833681472091L
+			}]
+		}
+		{
+			title: "Iridescent Altar"
+			icon: "astralsorcery:altar_radiance"
+			x: 12.5d
+			y: 0.5d
+			shape: "square"
+			subtitle: "Starlight Crafting Mark IV. Left Click for more info"
+			description: [
+				"The Iridescent Altar is the fourth and last tier of crafting altar and is used throughout the Radiance chapter of the Astral Tome. It can contain more Starlight and adds 4 more slots for crafting."
+				""
+				"Right-clicking on it will open up its GUI, which will display a slot on the left-hand side, where you can place constellation-attuned Rock Crystals or Celestial Crystals for certain recipes."
+				""
+				"Many of the Iridescent Altar's recipes require secondary items to be placed around on Spectral Relays surrounding the Altar. When crafting is in progress a translucent image of the required item will appear on a Relay, at which point the player must right-click on the Relay with the designated item."
+				""
+				"Lastly, this altar's structure is an upgraded verion of the one used previously with the Celestial Altar. The Astral Tome will show you how to place the last bricks for this one."
+			]
+			dependencies: [
+				"1A99C6281674DE7C"
+				"4B750F660C0D5E6E"
+				"2F64EED1F5172A81"
+				"5F68C4D92EF20E09"
+				"2E3880C1F6D082FA"
+				"56017FCF2D7819F8"
+			]
+			id: "73A248C448C4C47D"
+			tasks: [
+				{
+					id: "05D298DD43D9C13B"
+					type: "item"
+					item: "astralsorcery:altar_radiance"
+				}
+				{
+					id: "3CB15ED9D2EE905C"
+					type: "item"
+					item: "astralsorcery:marble_bricks"
+					count: 28L
+				}
+			]
+			rewards: [{
+				id: "08BB4F6EC1D5BF80"
+				type: "loot"
+				table_id: 5206766833681472091L
+			}]
+		}
+		{
+			x: 8.5d
+			y: -1.0d
+			shape: "square"
+			subtitle: "A Runic Altar can be given mana to create a variety of magical runes"
+			dependencies: ["6E6272D607C825A5"]
+			dependency_requirement: "one_completed"
+			id: "663E35409B5EA827"
+			tasks: [{
+				id: "2D436E085ECAB6ED"
+				type: "item"
+				item: "botania:runic_altar"
+			}]
+			rewards: [
+				{
+					id: "6D962CA9BA29A249"
+					type: "loot"
+					table_id: 8587500481418189075L
+				}
+				{
+					id: "56C79E5DF1757509"
+					type: "item"
+					item: "botania:rune_fire"
+					count: 2
+				}
+				{
+					id: "3D599232051B575E"
+					type: "item"
+					item: "botania:rune_water"
+					count: 2
+				}
+				{
+					id: "760AC98B1ADBFE9B"
+					type: "item"
+					item: "botania:rune_earth"
+					count: 2
+				}
+				{
+					id: "2C56E844CF2202B9"
+					type: "item"
+					item: "botania:rune_air"
+					count: 2
+				}
+			]
+		}
+		{
+			x: 14.469047619047657d
+			y: -0.9654761904761813d
+			shape: "diamond"
+			subtitle: "Terrasteel is potent for the usage of tools, armor, and arcane implements as a consequence of the immense amounts of Mana channeled through it. One mana pool will be required to obtain one Terrasteel ingot. Required to unlock the 3rd Age"
+			dependencies: ["01FC38677F843BDA"]
+			size: 2.0d
+			id: "111B86AE41B02D70"
+			tasks: [{
+				id: "2E530C37565916F0"
+				type: "item"
+				item: "botania:terrasteel_ingot"
+			}]
+			rewards: [{
+				id: "515E4BA568B740CB"
+				type: "loot"
+				table_id: 8587500481418189075L
+			}]
+		}
+		{
+			x: 12.5d
+			y: 2.0d
+			shape: "square"
+			subtitle: "Resonating Gems, created at a Starlight Infuser, are an important ingredient in powerful magical artifacts"
+			dependencies: ["31988739B9487413"]
+			id: "1A99C6281674DE7C"
+			tasks: [{
+				id: "762FC5D50670D522"
+				type: "item"
+				item: "astralsorcery:resonating_gem"
+			}]
+		}
+		{
+			x: 9.5d
+			y: -1.0d
+			shape: "square"
+			subtitle: "Mana Diamonds hold large amounts of Mana, making them a potent crafting ingredient"
+			dependencies: [
+				"663E35409B5EA827"
+				"0CC58FDE0B5D0373"
+			]
+			id: "3D75721DA9392AA5"
+			tasks: [{
+				id: "32247098E1983CFB"
+				type: "item"
+				item: "botania:mana_diamond"
+			}]
+			rewards: [{
+				id: "33E5A995E9FD28B9"
+				type: "loot"
+				table_id: 8587500481418189075L
+			}]
+		}
+		{
+			x: 8.5d
+			y: 5.5d
+			shape: "square"
+			subtitle: "Iron, but it's linked to the stars. Left Click for more info"
+			description: [
+				"By linking the Starlight from a Collector Crystal, or another source, to some Iron ore, you can obtain Starmetal ore, which can be further melted into Starmetal Ingots."
+				""
+				"Ignore the recipe shown by JEI. The Starmetal Ore can be obtained with any type of Iron Ore."
+			]
+			dependencies: ["0063D04885DE7664"]
+			id: "479274E5E5289335"
+			tasks: [{
+				id: "7D8A202E0DFD4B33"
+				type: "item"
+				item: "astralsorcery:starmetal_ore"
+			}]
+			rewards: [{
+				id: "55251115118EFE9A"
+				type: "item"
+				item: "emendatusenigmatica:coke_gem"
+				count: 16
+			}]
+		}
+		{
+			x: 12.5d
+			y: -1.0d
+			shape: "square"
+			subtitle: "The Terrestrial Agglomeration Plate is used to create Terrasteel from Manasteel, Mana Diamonds, and Mana Pearls. Left Click for more info"
+			description: [
+				"The Terrestial Agglomeration Plate is the core element of the structure required to make Terrasteel. The structure can be seen in the Lexica Botania and it requires 5 LivingRock and 4 Lapis Lazuli blocks."
+				""
+				"When a single Manasteel Ingot, Mana Diamond and Mana Pearl are dropped on the center of the structure, the crafting process will begin and the plate block will start accepting Mana."
+				""
+				"While Mana can be provided with Mana Spreaders, the Lexica Botania recommends using Sparks for much higher transfer rates. And yeah, we also recommend this, of course ♥"
+				""
+				"If any item is dropped on, picked up, or despawns from the Plate while crafting is ongoing, all progress will be lost and consumed Mana will not be recovered."
+				""
+				"Once the Plate receives 1,000,000 Mana the three items will be turned into a single Terrasteel Ingot."
+				""
+				"Lastly, the Terrestrial Agglomeration Plate can be used to obtain other alloys such as Ebony and Ivory."
+			]
+			dependencies: [
+				"3D75721DA9392AA5"
+				"73A248C448C4C47D"
+			]
+			id: "01FC38677F843BDA"
+			tasks: [{
+				id: "5DF7884765B966F5"
+				type: "item"
+				item: "botania:terra_plate"
+			}]
+			rewards: [{
+				id: "33BD06973FA39B64"
+				type: "loot"
+				table_id: 8587500481418189075L
+			}]
+		}
+		{
+			title: "The Attunement Altar"
+			icon: "astralsorcery:attunement_altar"
+			x: 5.5d
+			y: 3.5d
+			shape: "gear"
+			subtitle: "Twinkle, twinkle, little star, now I wonder what you are! Left Click for more info"
+			description: [
+				"The Attunement Altar is used to attune Rock Crystals, Celestial Crystals, and (when attuning to a bright constellation) players for further crafting, rituals, or perks."
+				""
+				"After completing the structure required by this altar to work, you'll have to place Spectral Relays on the Sooty Marble to attune the Altar to a specific constellation."
+				""
+				"The placement of these Relays can be displayed when the constellation is in the sky and the player is holding its Constellation Paper in either hand; the blocks to place the Relays on will emit dark blue particles. When all the Relays are in place, beams of light will connect them and lift the small ornaments around the Altar up. It is accompanied by a constant humming sound effect."
+				""
+				"When the Attunement Altar is fully set up, Rock Crystals and Celestial Crystals can be thrown onto the Altar to attune them. When set to a bright constellation unattuned players may step onto the Altar to receive that constellation's perks; attuned players must use a Shifting Star to remove their attunement to their preexisting constellation before being able to become attuned to another constellation. If you've never been attuned to a constellation, you don't have to worry about using a Shifting Star."
+				""
+				"After you've been attuned to a constellation, you'll unlock a perk tree tab in the Astral Tome. Similar to other games, you'll level up and gather points to spend in this skill tree. Eventually you'll become very powerful."
+				""
+				"The maximum level for the 2nd Age, will be 20. The absolute maximum amount is 40. You'll unlock higher levels in the next Ages."
+			]
+			dependencies: ["0CA03557153003A7"]
+			id: "4483446C4DA06FCE"
+			tasks: [
+				{
+					id: "5082D24BD4409663"
+					type: "item"
+					item: "astralsorcery:attunement_altar"
+				}
+				{
+					id: "38A322ECA156C2D9"
+					type: "item"
+					item: "astralsorcery:marble_runed"
+					count: 4L
+				}
+				{
+					id: "57E381F8BE5BEAE8"
+					type: "item"
+					item: "astralsorcery:marble_arch"
+					count: 64L
+				}
+				{
+					id: "374477CF85DBA615"
+					type: "item"
+					item: "astralsorcery:marble_arch"
+					count: 16L
+				}
+				{
+					id: "1EAC591808B50920"
+					type: "item"
+					item: "astralsorcery:black_marble_raw"
+					count: 64L
+				}
+				{
+					id: "7FEB2D7EAA210EA8"
+					type: "item"
+					item: "astralsorcery:black_marble_raw"
+					count: 64L
+				}
+				{
+					id: "549270041B60C553"
+					type: "item"
+					item: "astralsorcery:black_marble_raw"
+					count: 64L
+				}
+				{
+					id: "76B4AA6FB7A97E4E"
+					type: "item"
+					item: "astralsorcery:black_marble_raw"
+					count: 33L
+				}
+				{
+					id: "2E06E219B8A44EE0"
+					type: "item"
+					item: "astralsorcery:marble_pillar"
+					count: 12L
+				}
+				{
+					id: "56764E3D4F57E50D"
+					type: "item"
+					item: "astralsorcery:marble_chiseled"
+					count: 4L
+				}
+			]
+			rewards: [{
+				id: "67C4BAABB88F09DF"
+				type: "loot"
+				table_id: 8587500481418189075L
+			}]
+		}
+		{
+			x: 8.5d
+			y: -2.5d
+			shape: "gear"
+			subtitle: "A Botanical Brewery can use Mana to create powerful and reusable potions. Left Click for more info"
+			description: [
+				"The Botanical Brewery can brew a variety of potions that can be held in both Managlass Vials and Alfglass Flasks, which holds 4 and 6 doses of the potion brewed respectively. It requires Mana bursts supplied by a Mana Spreader to function."
+				""
+				"Brewing with the Botanical Brewery requires three elements. Items are added to the Brewery by either right clicking on it, or dropping the items directly onto it.To start brewing, the Managlass Vial, or Alfglass Flask is added. Then, if a valid combination of reagents are added to the Brewery, any bound Mana Spreader will start supplying Mana to the Brewery automatically. Once the brew is done, it will drop the potion on the ground."
+				""
+				"Depending on what container you're using, you'll get more potion. Managlass Vials can hold 4 potions at once, while an Alfglass Flask can hold 6 potions at once."
+				""
+				"Alfglass Flasks will not be available for now, so feel free to use the Managlass Vial for now."
+			]
+			dependencies: ["663E35409B5EA827"]
+			id: "26E2DFED52DBB2F6"
+			tasks: [{
+				id: "421F22199E47E5E8"
+				type: "item"
+				item: "botania:brewery"
+			}]
+			rewards: [
+				{
+					id: "2D40D304EDCEF7EB"
+					type: "item"
+					item: "botania:vial"
+					count: 8
+				}
+				{
+					id: "26B11C0A1B04BFEB"
+					type: "item"
+					item: {
+						id: "botania:brew_flask"
+						Count: 1b
+						tag: {
+							brewKey: "botania:haste"
+						}
+					}
+				}
+				{
+					id: "548CE219A9DFCA7C"
+					type: "item"
+					item: {
+						id: "botania:brew_flask"
+						Count: 1b
+						tag: {
+							brewKey: "botania:regen_weak"
+						}
+					}
+				}
+				{
+					id: "323AAA9F302FAC0F"
+					type: "item"
+					item: {
+						id: "botania:brew_flask"
+						Count: 1b
+						tag: {
+							brewKey: "botania:night_vision"
+						}
+					}
+				}
+				{
+					id: "2266B8BA575B5F9E"
+					type: "item"
+					item: {
+						id: "botania:brew_flask"
+						Count: 1b
+						tag: {
+							brewKey: "botania:absorption"
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Oh, it wasn't RF? 0_o"
+			x: 6.5d
+			y: -5.0d
+			shape: "heart"
+			subtitle: "The Mana Fluxfield can convert Mana into electricity. Any more tech-savvy mage may find a use in this. Left Click for more info"
+			description: [
+				"The Mana Fluxfield converts Mana into Redstone Flux (RF)."
+				""
+				"The Mana Fluxfield can be sent Mana via a Mana Spreader with an internal buffer of up to 12800 Mana. Mana can then be converted to RF to be transmitted to other batteries, machines, wires, etc. at a conversion rate of 10 RF per Mana. Therefore, one mana burst from a regular mana spreader with no lens will produce 1,600 RF. Also, 1 Mana Pool will be equal to 10M RF."
+				""
+				"However, the energy output rate of a Mana Fluxfield is limited to 64 RF/t, shared among all sides. If more mana is fed into the Mana Fluxfield than it has capacity left, any additional mana will be lost. This is particularly noticeable when using mana bursts with high capacities, such as from a Gaia Mana Spreader or a Mana Lens: Potency, and especially when only small amounts of energy are drained from the Mana Fluxfield."
+			]
+			dependencies: [
+				"48148EE28276AB64"
+				"2BA7183800B331E0"
+				"0EF94371D99AC9BA"
+			]
+			size: 1.5d
+			id: "573D9BD499D8F6ED"
+			tasks: [{
+				id: "204D7C49AD392CFE"
+				type: "item"
+				item: "botania:mana_fluxfield"
+			}]
+			rewards: [{
+				id: "4117EA4DB41E79C5"
+				type: "loot"
+				table_id: 8587500481418189075L
+			}]
+		}
+		{
+			icon: {
+				id: "astralsorcery:celestial_gateway"
+				Count: 1b
+				tag: {
+					astralsorcery: { }
+				}
+			}
+			x: 7.5d
+			y: 3.5d
+			shape: "gear"
+			subtitle: "The Long Range Teleporter. Left Click for more info"
+			description: [
+				"The Celestial Gateway is used to teleport players to other Celestial Gateways."
+				""
+				"When the structure is built correctly, approaching the Gateway will cause the area around the player to darken into a panoramic night sky. Celestial Gateways that can be teleported to are depicted with larger yellow stars among the starry backdrop. Sneaking or holding right-click while looking at one will teleport the player to that Gateway after a few seconds. While sneaking, a preview of the Gateway will be shown."
+				""
+				"It can be renamed in Anvils which will create a small caption appearing on the star while looking at it."
+				"Also, Gateways require view of the sky in dimensions without a roof, such as the Overworld."
+			]
+			dependencies: [
+				"0CA03557153003A7"
+				"5929690A5286D4C0"
+			]
+			id: "140BBF063F2F861A"
+			tasks: [
+				{
+					id: "32F4F351D7DCDB24"
+					type: "item"
+					item: {
+						id: "astralsorcery:celestial_gateway"
+						Count: 1b
+						tag: {
+							astralsorcery: { }
+						}
+					}
+				}
+				{
+					id: "3BC897BC5BDCD19C"
+					type: "item"
+					item: "astralsorcery:marble_arch"
+					count: 20L
+				}
+				{
+					id: "6EF4B3B180335A5F"
+					type: "item"
+					item: "astralsorcery:black_marble_raw"
+					count: 25L
+				}
+				{
+					id: "31D47C31162EF06A"
+					type: "item"
+					item: "astralsorcery:marble_runed"
+					count: 4L
+				}
+				{
+					id: "7E7173F0F3937D3A"
+					type: "item"
+					item: "astralsorcery:marble_engraved"
+					count: 4L
+				}
+			]
+			rewards: [{
+				id: "3B503B73C0720F66"
+				type: "item"
+				item: "emendatusenigmatica:coke_gem"
+				count: 32
+			}]
+		}
+		{
+			x: 6.5d
+			y: -1.0d
+			shape: "square"
+			subtitle: "Hehe, we've lied, of course. You can think of us as a group of mean individuals, but here's the thing: We don't really care. Or do we? *Cough cough* getting back to the subject, let's talk about the Mana Pearl. This thing gathers mana from a Mana Pool to transfer it to powerful objects, such as the Runic Altar. Make sure you make lots of these, as you'll need them a lot later"
+			dependencies: [
+				"655AB81DE00B783B"
+				"4C956B4082ADFD05"
+			]
+			id: "6E6272D607C825A5"
+			tasks: [{
+				id: "5215EAF3AC07AB2C"
+				type: "item"
+				item: "botania:mana_pearl"
+			}]
+		}
+		{
+			title: "The Ore Tripling Apparatus"
+			icon: "astralsorcery:infuser"
+			x: 11.5d
+			y: 2.0d
+			shape: "square"
+			subtitle: "Liquid? Light? Who cares?! Left Click for more info"
+			description: [
+				"The Starlight Infuser is used to infuse various items with Starlight to transform them (such as turning Aquamarines into Resonating Gems) and turning Crystal tools into their infused counterparts."
+				""
+				" In order for an infusion to occur, the pits around the Infuser must be filled with Liquid Starlight source blocks."
+				""
+				"When an infusion occurs there is a chance for one or more Liquid Starlight blocks to be consumed. When infusing a Crystal tool all Liquid Starlight blocks will be consumed."
+			]
+			dependencies: ["2C663BCA0CD81FF9"]
+			id: "31988739B9487413"
+			tasks: [
+				{
+					id: "0E1641133DFB12B5"
+					type: "item"
+					item: "astralsorcery:infuser"
+				}
+				{
+					id: "1E3448050982EA04"
+					type: "item"
+					item: "astralsorcery:marble_raw"
+					count: 16L
+				}
+				{
+					id: "20D76EE64040EE34"
+					type: "item"
+					item: "astralsorcery:marble_pillar"
+					count: 4L
+				}
+				{
+					id: "5E9788A36F402A35"
+					type: "item"
+					item: "astralsorcery:marble_runed"
+					count: 20L
+				}
+				{
+					id: "4108A0D47AC37650"
+					type: "item"
+					item: "minecraft:lapis_block"
+				}
+				{
+					id: "4F528118C052D124"
+					type: "item"
+					item: "astralsorcery:marble_chiseled"
+					count: 8L
+				}
+			]
+			rewards: [{
+				id: "17D1D7A6015E3A92"
+				type: "item"
+				item: "emendatusenigmatica:coke_gem"
+				count: 32
+			}]
+		}
+		{
+			title: "Spell Casting: Part 1"
+			x: 14.5d
+			y: 5.5d
+			shape: "gear"
+			subtitle: "Psimetal is GORGEOUS!!! Left click for more info"
+			description: [
+				"The Spell Inscriber is the place where you'll be able to make your custom spells. Even tho Psi allows you to make pretty much, any spell you can imagine, it is highly recommanded that you get your spells from the internet, Reddit, to be more precise. Why? Easy. It saves you lots of time and pretty much, you can find spells that you didn't even knew were possible to create. To get spells online, you'll just have to copy them, like you would with any kind of text. To get spells into your game, just press the \"Import from Clipboard\" button in a Spell Inscriber."
+				""
+				"The first spell you're gonna make, is the Infusion spell. This one will allow you to turn gold ingots into psimetal ingots, and get stronger wands."
+				""
+				"Open the iscriber and search for the \"Infusion\" spell. Click on it. After that, just right-click the instriber with a Spell Node and your spell will be transfered to it. Further, you'll have to place your wand in a Rod Constructor and add the node to it. Finally, just drop some gold on the ground and right-click on it with your wand. If you make a mistake in the Inscriber, while your're making your spell, just hit the \"Delete\" key on your keyboard to remove the wrong element/elements."
+				""
+				"Example of the basic infusion spell:"
+				""
+				"{image:kubejs:textures/psi/psimetal_spell_example.png width:100 height:100 align:1 fit:true}"
+				""
+				"More information about all the other elements present in the Spell Inscriber can be found in the Encyclopaedia Psionica."
+			]
+			dependencies: ["09A3A44A54E0B217"]
+			id: "71D510AFB898A319"
+			tasks: [
+				{
+					id: "08FABDF31915BE47"
+					type: "item"
+					item: "psi:programmer"
+				}
+				{
+					id: "577A39F26FF7F0BD"
+					type: "item"
+					item: {
+						id: "psi:spell_bullet"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "12C18FDF8DC355EA"
+					type: "item"
+					item: "psi:psimetal"
+				}
+			]
+		}
+		{
+			title: "Basic Wand"
+			x: 12.5d
+			y: 5.5d
+			shape: "gear"
+			subtitle: "Must have some power to cast spells. Left Click for more info"
+			description: [
+				"Great, you have Psidust. Now you'll have to upgrade your wand to be able to cast more serious spells. There are a couple of things you'll need."
+				""
+				"First, place the previously made, Focusing Rod, in your crafting grid to get back your Iron Rod Frame. After that, you'll have to construct your new wand. Place the components required to finish this quest in the Rod Constructor, to obtain your new wand."
+				""
+				"Example of how the new wand will be built:"
+				""
+				"{image:kubejs:textures/psi/first_wand_psi_example.png width:160 height:100 align:1}"
+			]
+			dependencies: ["74A57B9FBA4B3D87"]
+			id: "09A3A44A54E0B217"
+			tasks: [
+				{
+					id: "6118ADF647C8E35E"
+					type: "item"
+					item: "psi:cad_assembly_iron"
+				}
+				{
+					id: "2F9F319309C80EDB"
+					type: "item"
+					item: "psi:cad_core_basic"
+				}
+				{
+					id: "251C8202ACBD56FD"
+					type: "item"
+					item: "psi:cad_socket_basic"
+				}
+				{
+					id: "36E00FD636A2BE54"
+					type: "item"
+					item: "psi:cad_battery_basic"
+				}
+			]
+		}
+		{
+			title: "Obtaining Psidust"
+			x: 12.5d
+			y: 3.5d
+			shape: "gear"
+			subtitle: "Pink and shiny. Left Click for more info"
+			description: [
+				"Psidust is one of Psi's most basic materials. To obtain it, you'll need the most basic wand you can make."
+				""
+				"To build your wand, you'll need an Iron Rod Frame. Just place this rod in the Rod Constructor and you're done."
+				""
+				"To obtain Psidust, just drop some redstone on the ground and right-click on it with your wand to turn it into Psidust."
+				""
+				"Example of making a basic wand:"
+				""
+				"{image:kubejs:textures/psi/basic_wand_psi_example.png width:160 height:100 align:1}"
+				""
+				"One more thing. You can have only ONE wand in your inventory at a time. Multiple wands will keep you from castig spells."
+			]
+			dependencies: [
+				"1744D1F736052F09"
+				"70E368152DD258AA"
+			]
+			id: "74A57B9FBA4B3D87"
+			tasks: [
+				{
+					id: "526321B5556FA9EE"
+					type: "item"
+					item: "psi:cad_assembly_iron"
+				}
+				{
+					id: "1C63370379FEEC13"
+					type: "item"
+					item: "psi:psidust"
+				}
+			]
+		}
+		{
+			x: 6.5d
+			y: 0.5d
+			shape: "square"
+			subtitle: "Mana Wireless CABLE. Left Click for more info"
+			description: [
+				"The Mana Spreader is used to transport Mana in Botania."
+				""
+				"The direction of the Mana bursts can be manipulated by shift-right clicking on it with the Wand of the Forest. There is an alternative method of orientating the Mana Spreader, and that is to bind it to another block. To do so, shift right-click on the Mana Spreader then shift right-click on another block to automatically orient the Mana Spreader to direct its Mana bursts to that block. Mana Spreaders fire Mana in discrete bursts rather than in a continuous stream."
+				""
+				"While holding the Wand of the Forest, the player will see the Mana Spreader emit small pulses in the direction it is oriented. These show how far Mana bursts will travel before some of the Mana is lost. The Mana Spreader's bursts, like the Pulse Mana Spreader's, can only travel a distance of 12 blocks before beginning to suffer some Mana loss. Mana bursts can be seen regardless of whether or not the player is holding the Wand of the Forest."
+				""
+				"The actual burst of Mana are different from the pointing laser. Once the spreader is aimed at an item that can accept Mana, it will shoot a large pulse which is longer and thicker than the aiming laser. It will not fire another burst before the last one reaches its destination."
+				""
+				"The Mana Spreader can be turned on and off with a redstone signal, while the Pulse Mana Spreader just sends one burst per redstone pulse."
+			]
+			dependencies: ["5BC44F27B24D5624"]
+			id: "4D65F01C90781DF4"
+			tasks: [{
+				id: "5DCCD38A962804FE"
+				type: "item"
+				item: "botania:mana_spreader"
+			}]
+			rewards: [{
+				id: "398EA8F717A358D4"
+				type: "loot"
+				table_id: 8587500481418189075L
+			}]
+		}
+		{
+			title: "Hydroangeas"
+			x: 0.0d
+			y: -6.5d
+			shape: "gear"
+			subtitle: "Generates mana by consuming water source blocks"
+			dependencies: ["28BEE9CBF6F44FEE"]
+			id: "7AED80285796F262"
+			tasks: [{
+				id: "22882B8468A67013"
+				type: "item"
+				item: "botania:hydroangeas"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -6.0d
+			shape: "gear"
+			subtitle: "Similar to The Hydroangeas, however it'll consume lava source blocks to generate mana. Keep in mind that it has a cooldown"
+			dependencies: ["28BEE9CBF6F44FEE"]
+			id: "084E6C8B3907D0B6"
+			tasks: [{
+				id: "23FBC04C13C2E405"
+				type: "item"
+				item: "botania:thermalily"
+			}]
+		}
+		{
+			x: -2.5d
+			y: -4.0d
+			shape: "gear"
+			subtitle: "It'll generate mana using xp"
+			dependencies: ["28BEE9CBF6F44FEE"]
+			id: "55F748E1D470BA7E"
+			tasks: [{
+				id: "4DBD48BB98B2DA11"
+				type: "item"
+				item: "botania:rosa_arcana"
+			}]
+			rewards: [{
+				id: "0A9B89D29E75D139"
+				type: "loot"
+				table_id: 5206766833681472091L
+			}]
+		}
+		{
+			x: -2.5d
+			y: -5.0d
+			shape: "gear"
+			subtitle: "By consuming leaves, this flower will produce mana"
+			dependencies: ["28BEE9CBF6F44FEE"]
+			id: "444858B5A21BA83F"
+			tasks: [{
+				id: "4818B87C0DBE73CB"
+				type: "item"
+				item: "botania:munchdew"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -6.0d
+			shape: "gear"
+			subtitle: "TNT, as an unconventional source of power, it might prove to be a powerful ally in the mana generating department"
+			dependencies: ["28BEE9CBF6F44FEE"]
+			id: "2B674CA6EF2C9A82"
+			tasks: [{
+				id: "544B6089C0C475BD"
+				type: "item"
+				item: "botania:entropinnyum"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -5.0d
+			shape: "gear"
+			subtitle: "Hungrier than Garfield himself, the Gourmaryllis should generate tons of mana by consuming food"
+			dependencies: ["28BEE9CBF6F44FEE"]
+			id: "058650894FD6C66E"
+			tasks: [{
+				id: "68EB741E696480B3"
+				type: "item"
+				item: "botania:gourmaryllis"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -4.0d
+			shape: "gear"
+			subtitle: "As I like to call it, 'the slime press', the Narslimmus will consume slimes of different sizes to generate mana"
+			dependencies: ["28BEE9CBF6F44FEE"]
+			id: "7974A3C14D5F6F97"
+			tasks: [{
+				id: "15C5FDC3957FE386"
+				type: "item"
+				item: "botania:narslimmus"
+			}]
+			rewards: [{
+				id: "61DFDE34A1688EF2"
+				type: "loot"
+				table_id: 5206766833681472091L
+			}]
+		}
+		{
+			title: "Generating Mana"
+			icon: {
+				id: "botania:mana_bottle"
+				Count: 1b
+				tag: { }
+			}
+			x: -0.5d
+			y: -4.0d
+			shape: "square"
+			subtitle: "Botania's essence. Left Click for more info"
+			description: [
+				"Botania, at base, a magic mod, requires Mana generated by Flowers to power its unique contraptions."
+				""
+				"There is a variety of generating flora you can choose from, maybe perfect to suit your needs."
+				""
+				"Also, through your Mana generation journey, you'll quickly find out that Mana is very similar to RF. Maybe there'll be a way of converting it into electricity later."
+			]
+			dependencies: ["44A732EE455674E8"]
+			id: "28BEE9CBF6F44FEE"
+			tasks: [{
+				id: "078D09FC45155D1D"
+				type: "checkmark"
+				title: "Understood!"
+			}]
+		}
+		{
+			x: 7.5d
+			y: 0.5d
+			shape: "gear"
+			subtitle: "Used to transport Mana like the standard Mana Spreader, except it will only emit Mana when a redstone signal is present. Furthermore, the Pulse Mana Spreader emits mana once per redstone pulse, which is useful for sending Mana to objects like Drums"
+			dependencies: ["4D65F01C90781DF4"]
+			id: "4DBD381788951B8E"
+			tasks: [{
+				id: "2680D13B1C3A87FD"
+				type: "item"
+				item: "botania:redstone_spreader"
+			}]
+		}
+		{
+			title: "Basic Elemental Runes"
+			x: 12.5d
+			y: -2.9948979591836604d
+			shape: "gear"
+			subtitle: "Decursio: The Last Airbender pack <3"
+			hide_dependency_lines: true
+			dependencies: ["663E35409B5EA827"]
+			size: 1.5d
+			id: "033008FBBEFB8E2A"
+			tasks: [
+				{
+					id: "5A3C93AB3A6C17DA"
+					type: "item"
+					item: "botania:rune_water"
+				}
+				{
+					id: "0F4E331615DD558C"
+					type: "item"
+					item: "botania:rune_earth"
+				}
+				{
+					id: "204E4CC598F248A6"
+					type: "item"
+					item: "botania:rune_fire"
+				}
+				{
+					id: "20FAA4078A7CB9A1"
+					type: "item"
+					item: "botania:rune_air"
+				}
+			]
+		}
+		{
+			title: "Advanced Seasonal Runes"
+			x: 14.436139455782303d
+			y: -3.0d
+			shape: "gear"
+			subtitle: "Vivaldi's power stones"
+			hide_dependency_lines: true
+			dependencies: ["663E35409B5EA827"]
+			size: 1.5d
+			id: "6441A8AAB2A4686E"
+			tasks: [
+				{
+					id: "09D34E577A4AD24B"
+					type: "item"
+					item: "botania:rune_spring"
+				}
+				{
+					id: "1F81661C224DD904"
+					type: "item"
+					item: "botania:rune_summer"
+				}
+				{
+					id: "09882C8C36391E71"
+					type: "item"
+					item: "botania:rune_autumn"
+				}
+				{
+					id: "6968CEF7894C9EE2"
+					type: "item"
+					item: "botania:rune_winter"
+				}
+			]
+		}
+		{
+			x: 16.51386054421768d
+			y: -1.0d
+			shape: "gear"
+			subtitle: "Magic, concentrated engraved stone"
+			hide_dependency_lines: true
+			dependencies: ["663E35409B5EA827"]
+			size: 1.5d
+			id: "2914918CED2A5233"
+			tasks: [{
+				id: "7BC34E805C8352C1"
+				type: "item"
+				item: "botania:rune_mana"
+			}]
+		}
+		{
+			title: "Elite Sinful Runes"
+			x: 16.5d
+			y: 0.7023809523809632d
+			shape: "gear"
+			subtitle: "Fury, in the land of the BLOCKHEADS"
+			hide_dependency_lines: true
+			dependencies: ["663E35409B5EA827"]
+			size: 1.5d
+			id: "28C51BB6B0A7A808"
+			tasks: [
+				{
+					id: "4C2601C7292D8237"
+					type: "item"
+					item: "botania:rune_lust"
+				}
+				{
+					id: "40EB10EAEE0A142C"
+					type: "item"
+					item: "botania:rune_gluttony"
+				}
+				{
+					id: "60DE56597E2540CE"
+					type: "item"
+					item: "botania:rune_greed"
+				}
+				{
+					id: "1FAA3F48DAAE770A"
+					type: "item"
+					item: "botania:rune_sloth"
+				}
+				{
+					id: "2C933A7C6A9DB055"
+					type: "item"
+					item: "botania:rune_wrath"
+				}
+				{
+					id: "435E7FD40389E555"
+					type: "item"
+					item: "botania:rune_envy"
+				}
+				{
+					id: "4ABDC9818F33AF24"
+					type: "item"
+					item: "botania:rune_pride"
+				}
+			]
+		}
+		{
+			x: 8.0d
+			y: -5.0d
+			shape: "gear"
+			subtitle: "The mini-beacon. Left Click for more info"
+			description: ["The Incense Stick is used to infuse brews created from the Botanical Brewery, although not all brews can be infused as an Incense Stick. The infused Incense Stick is placed on an Incense Plate where it can be ignited to release the effects of the brew in a 30 block radius, much like an activated Beacon."]
+			dependencies: ["26E2DFED52DBB2F6"]
+			id: "1857944ACA6B9085"
+			tasks: [{
+				id: "7396A84620C0CB4D"
+				type: "item"
+				item: {
+					id: "botania:incense_stick"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "1D30C60CEF591A1A"
+				type: "loot"
+				table_id: 8587500481418189075L
+			}]
+		}
+		{
+			x: 9.0d
+			y: -5.0d
+			shape: "heart"
+			subtitle: "Permanent potion effects. Left Click for more info"
+			description: [
+				"The Tainted Blood Pendant is a curio added by Botania. When worn in the Curio Amulet slot, it will give the potion effect infused into the pendant for the duration of 4 seconds (14 seconds for Night Vision) every 4 seconds, given that the wearer has a mana source in he's/her's inventory."
+				""
+				"A version of this pandant which has regeneration is highly recommended, as health regen can be quite a problem in this pack."
+			]
+			dependencies: ["26E2DFED52DBB2F6"]
+			id: "6DA06DB8CA8745E3"
+			tasks: [{
+				id: "4FAA550F2FFFA47F"
+				type: "item"
+				item: {
+					id: "botania:blood_pendant"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "087CD9CC3D565F51"
+				type: "loot"
+				table_id: 8587500481418189075L
+			}]
+		}
+		{
+			x: -0.5d
+			y: 5.5d
+			shape: "square"
+			subtitle: "Starlight Crafting Mark I. Make sure you READ the \"Altar Boosting 101!\" quest on this quests page. Left Click for more info"
+			description: [
+				"The Luminous Crafting Table will be the most basic form of Astral Sorcery crafting."
+				""
+				"To obtain it, you'll need two things:"
+				""
+				"- a vanilla crafting table"
+				"- a collector crystal"
+				""
+				"Throughout the world you can find another type of shrine, which is bigger then the others. Here you can find a collector crystal."
+				""
+				"Collector Crystal Shrine example:"
+				""
+				"{image:kubejs:textures/astralsorcery/collector_shrine_example.png width:130 height:100 align:1}"
+				""
+				"To obtain the Luminous Crafting Table, you'll have to place the vanilla crafting table, under the Collector Crystal. The Crystall will require clear view of the sky. After the clear view is provided, just place the vanilla crafting table under the crystal and it should turn into the Luminous Crafting Table."
+				""
+				"After you have the table, you'll have to place it in the world. A gauge will be visible in the mid bottom of its interface. That indicates the amount of starlight that the table has in that moment. Some recipes will require large amounts of starlight. Make sure you read the \"&aAltar Boosting 101!&r\" quest for more info on starlight amounts."
+				""
+				"Keep in mind that, during the day, no starlight will be collected by your table. The highest value of starlight available to you, will usually be at midnight."
+				""
+				"Example of the Starlight gauge:"
+				""
+				"{image:kubejs:textures/astralsorcery/starlight_gauge_example.png width:180 height:100 align:1}"
+			]
+			dependencies: ["5B24E6B0D366B061"]
+			id: "5100EDF6D4054286"
+			tasks: [{
+				id: "00A0B86BDFCA7622"
+				type: "item"
+				item: "astralsorcery:altar_discovery"
+			}]
+			rewards: [{
+				id: "50CBBB26FD1DED3A"
+				type: "loot"
+				table_id: 8587500481418189075L
+			}]
+		}
+		{
+			x: 4.5d
+			y: 5.5d
+			shape: "square"
+			subtitle: "Starlight, in its liquid form is useful in many ways. One of them is upgrading your rock crystals. Left Click for more info"
+			description: [
+				"If you're a Minecraft veteran, you're aware of the existance of cobblestone generators."
+				""
+				"Well, what if we told you that it is possible to make a Packed Ice and Sand generator?"
+				""
+				"By making a cobblestone generator using Liquid Starlight instead of water, you can obtain Sand."
+				""
+				"By making a cobblestone generator using Liquid Starlight, instead of Lava, you can obtain Packed Ice."
+				""
+				"Another use for the Liquid Starlight is for combining Rock Crystals. Just toss two of them in pond of Liquid Starlight and some of their atributes will be combined."
+			]
+			dependencies: ["5E731BFE079CCF9C"]
+			id: "584CF3BBE466991F"
+			tasks: [{
+				id: "4EED322A64CB3FF7"
+				type: "item"
+				item: "astralsorcery:liquid_starlight_bucket"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 3.5d
+			shape: "square"
+			subtitle: "To obtain Infused Wood, throw Wood Logs in Liquid Starlight. The Starlight can be placed down just like any other liquid. You might wanna automate this process as soon as you can"
+			dependencies: ["584CF3BBE466991F"]
+			id: "1981466AA18F454E"
+			tasks: [{
+				id: "4C1FB5C2598FA2C2"
+				type: "item"
+				item: "astralsorcery:infused_wood"
+			}]
+		}
+		{
+			x: 6.5d
+			y: 5.5d
+			shape: "square"
+			subtitle: "Crystals obay their master. Left Click for more info"
+			description: [
+				"The Linking Tool is used to direct Starlight from a Collector Crystal, Celestial Collector Crystal, Lens, or PrismLens to a block."
+				""
+				"Right-clicking on one of the aforementioned blocks with the Linking Tool will display a \"Selected <block>!\" message in the chat. Right-clicking blocks will direct a ray of starlight to the selected blocks with the text \"Linked <block> to a block!\" Shift right-clicking on the starlight-producing blocks will erase all existing starlight rays and display the message \"Unlinked all links!\" in the chat. Switching to another item will display \"Stopped linking!\" in the chat, and finishing the linking process."
+				""
+				"Redirecting the Starlight to some blocks may have interesting results."
+				""
+				"One may be able to transform Iron ore into Starmetal ore."
+				""
+				"Additionally, Starlight redirected to Light Wells, can make them work faster."
+			]
+			dependencies: [
+				"0CA03557153003A7"
+				"15CD1782F17EF2BC"
+			]
+			id: "0063D04885DE7664"
+			tasks: [{
+				id: "12FA48217BDDBE35"
+				type: "item"
+				item: "astralsorcery:linking_tool"
+			}]
+		}
+		{
+			title: "Observing the stars!"
+			icon: "astralsorcery:aquamarine_sand_ore"
+			x: -0.5d
+			y: 2.0d
+			shape: "square"
+			subtitle: "Ok. The 2nd Age. You're on fire! This is one of the first quests in the magic phase of the 2nd Age. Here you'll start working on Astral Sorcery. Note that this mod has a research system which will NOT allow you to make all the recipes shown by JEI until you unlock the required chapters in the Astral Tome"
+			dependencies: ["40205D351BE13B77"]
+			dependency_requirement: "one_completed"
+			size: 2.0d
+			id: "0B822C45336FAAAA"
+			tasks: [{
+				id: "7092CB68A61EF59F"
+				type: "item"
+				item: "astralsorcery:aquamarine"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 5.5d
+			shape: "square"
+			subtitle: "Nocturnal Powder can be used to cover certain areas in complete darkness, thus allowing lots of mobs to spawn in that area. This effect is not permanent"
+			dependencies: ["457641D552217D32"]
+			id: "233B88D292A4128F"
+			tasks: [{
+				id: "356193B8F75B7D83"
+				type: "item"
+				item: "astralsorcery:nocturnal_powder"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 5.5d
+			shape: "square"
+			subtitle: "Illumination Powder can be used to light areas at a distance"
+			dependencies: ["5100EDF6D4054286"]
+			id: "457641D552217D32"
+			tasks: [{
+				id: "7FB77C2F274B7979"
+				type: "item"
+				item: "astralsorcery:illumination_powder"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 3.5d
+			shape: "gear"
+			subtitle: "The Cave Illuminator will, when placed somewhere, randomly spawn light sources in the nearby caves"
+			dependencies: ["457641D552217D32"]
+			id: "141BBFB693769B2B"
+			tasks: [{
+				id: "146C28C887DDB6D6"
+				type: "item"
+				item: "astralsorcery:illuminator"
+			}]
+		}
+		{
+			x: 10.5d
+			y: 2.0d
+			shape: "square"
+			subtitle: "Throw a Rock Crystal and a piece of Stardust in a pool of Liquid Starlight and get your first Celestial Crystal. Note that you'll have to wait for the Crystal to grow before you can harvest it. If you grow your crystals on a Starmetal Ore, their growth process will be faster, however, over time, the Starmetal Ore will turn back to Vanilla Iron (linking a collector crystal to the Starmetal Ore, will allow you to get the Ore back, once it turns to Iron)"
+			dependencies: ["05B9DF27F7AD850D"]
+			id: "2C663BCA0CD81FF9"
+			tasks: [{
+				id: "5708BC976A29D5CC"
+				type: "item"
+				item: {
+					id: "astralsorcery:celestial_crystal"
+					Count: 1b
+					tag: {
+						astralsorcery: { }
+					}
+				}
+			}]
+		}
+		{
+			x: 16.5d
+			y: 2.0d
+			subtitle: "Last tier of Rod Frames. Will give you the possiblity of making more powerful spells"
+			dependencies: ["5706BD54F9033CE8"]
+			id: "7C73CD5F28ACF0B5"
+			tasks: [
+				{
+					id: "6F3848EF7A00405E"
+					type: "item"
+					item: "psi:cad_assembly_ebony_psimetal"
+				}
+				{
+					id: "71EB3DFB5141A572"
+					type: "item"
+					item: "psi:cad_assembly_ivory_psimetal"
+				}
+			]
+		}
+		{
+			x: 16.5d
+			y: 5.5d
+			subtitle: "These Component can be used to make a better wand"
+			dependencies: ["71D510AFB898A319"]
+			id: "58D23FAA80D97207"
+			tasks: [
+				{
+					id: "6361813EF7D53AF3"
+					type: "item"
+					item: "psi:cad_battery_extended"
+				}
+				{
+					id: "4D14E4E5B4CE1012"
+					type: "item"
+					item: "psi:cad_core_conductive"
+				}
+				{
+					id: "6C0942FA676CE634"
+					type: "item"
+					item: "psi:cad_socket_large"
+				}
+			]
+		}
+		{
+			x: 16.5d
+			y: 3.5d
+			subtitle: "Next gen upgrade to your wand"
+			dependencies: ["3F45E827BA9F9DB4"]
+			id: "78F6AFBE83449EA1"
+			tasks: [
+				{
+					id: "0A4681A4F994FCE3"
+					type: "item"
+					item: "psi:cad_battery_ultradense"
+				}
+				{
+					id: "531220054DF71722"
+					type: "item"
+					item: "psi:cad_core_hyperclocked"
+				}
+				{
+					id: "31BA673018BA1CE9"
+					type: "item"
+					item: "psi:cad_socket_transmissive"
+				}
+				{
+					id: "473E21A16A0829DE"
+					type: "item"
+					item: "psi:cad_core_radiative"
+				}
+				{
+					id: "1E387EB6F71EDBA8"
+					type: "item"
+					item: "psi:cad_socket_huge"
+				}
+			]
+		}
+		{
+			title: "Advanced Wand gives Psigems"
+			x: 14.5d
+			y: 3.5d
+			shape: "gear"
+			subtitle: "Diamonds were never prettyer <3 Left Click for more info"
+			description: [
+				"To make Psigems will need a new, stronger wand. Other then that, the process is besically the same."
+				""
+				"Just select the \"Greater Infusion\" trick in the Inscriber, use a new Spell Node to place your spell in the wand, and cast it to a dropped Diamond."
+			]
+			dependencies: ["71D510AFB898A319"]
+			id: "3F45E827BA9F9DB4"
+			tasks: [
+				{
+					id: "71D90BB9A611C5C0"
+					type: "item"
+					item: "psi:cad_assembly_psimetal"
+				}
+				{
+					id: "728757AD90BCF19F"
+					type: "item"
+					item: "psi:cad_core_overclocked"
+				}
+				{
+					id: "0C1C19C078B5E7EA"
+					type: "item"
+					item: "psi:cad_socket_signaling"
+				}
+				{
+					id: "456D9A3A6E684324"
+					type: "item"
+					item: "psi:cad_battery_basic"
+				}
+				{
+					id: "66F6BE0CA51DEA43"
+					type: "item"
+					item: "psi:psigem"
+				}
+			]
+		}
+		{
+			title: "Ebony and Ivory"
+			x: 14.5d
+			y: 2.0d
+			shape: "gear"
+			subtitle: "Strife's main weapons: These alloys can be obtained by infusing Terrasteel with either Bitumen or Refined Radiance. These can be used to further upgrade your Psi gear. One mana pool will be required to obtain these"
+			dependencies: [
+				"111B86AE41B02D70"
+				"3F45E827BA9F9DB4"
+			]
+			id: "5706BD54F9033CE8"
+			tasks: [
+				{
+					id: "7ACF36D208556611"
+					type: "item"
+					item: "psi:ebony_psimetal"
+				}
+				{
+					id: "5FB7844B0EE45EDA"
+					type: "item"
+					item: "psi:ivory_psimetal"
+				}
+			]
+			rewards: [{
+				id: "049818E8473C9D3C"
+				type: "loot"
+				table_id: 8587500481418189075L
+			}]
+		}
+		{
+			x: 7.5d
+			y: -2.5d
+			shape: "gear"
+			subtitle: "The Alchemy Catalyst is used to provide certain items with a secondary transformation when tossed into a Mana Pool at the cost of some Mana stored in the pool. It must be placed directly underneath a Mana Pool. You can use JEI to see a full list of available transformations"
+			dependencies: ["655AB81DE00B783B"]
+			id: "484E4B9A1CA2ACAD"
+			tasks: [{
+				id: "35CD59D0C8CFC65D"
+				type: "item"
+				item: "botania:alchemy_catalyst"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -3.0d
+			shape: "gear"
+			subtitle: "Generates mana from rain/thunderstorms. It has to be placed on vivid grass or encahnted soil to work properly"
+			dependencies: [
+				"28BEE9CBF6F44FEE"
+				"78877D1E8F84071A"
+			]
+			id: "04C0036F74A646EE"
+			tasks: [{
+				id: "62C2D417E03B6FB3"
+				type: "item"
+				item: "mythicbotany:raindeletia"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -3.0d
+			shape: "gear"
+			subtitle: "Generates mana from Netherstars. One star will generate 2 mana pools, however, you'll have to make a contraption which will pick up the star from time to time, so that your star doesn't DESPAWN!"
+			dependencies: ["28BEE9CBF6F44FEE"]
+			id: "38BA89618F102582"
+			tasks: [{
+				id: "159E104F672C9D47"
+				type: "item"
+				item: "mythicbotany:wither_aconite"
+			}]
+		}
+		{
+			title: "Making Star Dust"
+			icon: "astralsorcery:stardust"
+			x: 9.5d
+			y: 3.5d
+			shape: "square"
+			subtitle: "Stardust can be used in lots of Astral Constructs, such as: tools, altars and other stations"
+			dependencies: ["6C29985B7D3FB379"]
+			id: "1744D1F736052F09"
+			tasks: [{
+				id: "6241DE373F31740D"
+				type: "item"
+				item: "astralsorcery:stardust"
+			}]
+		}
+		{
+			x: 10.5d
+			y: 0.5d
+			shape: "gear"
+			subtitle: "Souls provide POWER!!! Left Click for more info"
+			description: [
+				"We, at Decuriso Entertainment Inc., understand that, using a vanilla Enchanting Table, can get quite boring and time consuming. That's why we're giving you the opportunity to obtain better enchantments, faster. We're happy to present to you The Soul Enchanter."
+				""
+				"Unlike its vanilla counterpart, The Soul Enchanter will use Soul Shards instead of lapis."
+				"Other differences from the vanilla Enchanting Table will be the following:"
+				""
+				"- bookshelves are NOT required"
+				""
+				"- enchants start at a lame, level 1 strength"
+				""
+				"- items can be enchanted indefinitely, until they receive their maximum number of enchantments with their maximum level, thus going from a lame enchantment, to an epic one"
+				""
+				"Recipes won't be visible on Multiplayer, so here you go:"
+				""
+				"{image:kubejs:textures/eidolon/soul_enchanter_recipe-min.png width:100 height:150 align:1}"
+				""
+				"You'll need Vibrant Infused Wood and Manyullyn Blocks."
+			]
+			hide_dependency_lines: true
+			dependencies: [
+				"3D75721DA9392AA5"
+				"31988739B9487413"
+			]
+			id: "1F6E34D4E5B184B5"
+			tasks: [{
+				id: "4F0D1BBD2AFABE29"
+				type: "item"
+				item: "eidolon:soul_enchanter"
+			}]
+			rewards: [{
+				id: "64EC25FB3BD347DE"
+				type: "loot"
+				table_id: 8587500481418189075L
+			}]
+		}
+		{
+			x: 5.5d
+			y: 0.5d
+			shape: "square"
+			subtitle: "Livinwood will be used within many Botania crafting recipes. Use JEI to see some of them"
+			dependencies: [
+				"3B845F0A6E919ED1"
+				"1981466AA18F454E"
+			]
+			id: "5BC44F27B24D5624"
+			tasks: [{
+				id: "63A1AA83B1D2B7D9"
+				type: "item"
+				item: "botania:livingwood"
+			}]
+		}
+		{
+			x: 5.5d
+			y: -2.5d
+			shape: "square"
+			subtitle: "Livingrock will be used within many Botania crafting recipes. Use JEI to see some of them"
+			dependencies: [
+				"3B845F0A6E919ED1"
+				"43AF274C38EE94E5"
+			]
+			id: "293550F27911E358"
+			tasks: [{
+				id: "7767CA6E2ED448F4"
+				type: "item"
+				item: "botania:livingrock"
+			}]
+		}
+		{
+			x: 9.5d
+			y: 5.5d
+			shape: "square"
+			subtitle: "Dude, what happened to the Grindstone? 0_o Left Click for more info"
+			description: [
+				"The Starmetal Cutting Tool can be used to make Star Dust. You'll have to drop Starmetal Ingots on the ground and then, Left-Click them with the Cutting Tool."
+				""
+				"Additionally, you can split Rock Crystals to separate their atributes. Note that, by splitting the crystals, there's a chance to loose some of the attributes."
+			]
+			dependencies: [
+				"479274E5E5289335"
+				"5F68C4D92EF20E09"
+			]
+			id: "6C29985B7D3FB379"
+			tasks: [{
+				id: "08380804EF8FE81F"
+				type: "item"
+				item: {
+					id: "astralsorcery:chisel"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 1.0d
+			y: 2.0d
+			shape: "square"
+			subtitle: "Celestial Papers. Left Click for more info"
+			description: [
+				"There are five base constellations in Astral Sorcery. To start tinkering with them, you'll need to five their respective constellation paper. These can be found throughout the world in astral shrines."
+				""
+				"The first five papers you'll aquire will reveal the base constellations. The rest of them will be listed as \"There is nothing here.\". It would be a great idea to keep them, as they might come useful later."
+				""
+				"In the astral shines, you can find chests with loot. If you're lucky, maybe you can find even Diamonds. Here's an example of an astral shrine:"
+				""
+				"{image:kubejs:textures/astralsorcery/astral_shrine_example.png width:100 height:100 align:1}"
+				""
+				"One more thing. Even tho you can find constellation papers in these shrines, you can also craft them!"
+				""
+				"Oh, almost forgot! In this pack, astral constellations have been changed to their IRL counterpart. Not really. They're basically the same constellations as usual, but their name and shape was altered. For example, Evorsio is now, Aries. You can look into the \"Astrological Sorcery\" mod to find out more about the changes."
+			]
+			dependencies: ["0B822C45336FAAAA"]
+			id: "38AF1BC745A1EB1C"
+			tasks: [{
+				id: "32DEC83F999356ED"
+				type: "item"
+				item: {
+					id: "astralsorcery:constellation_paper"
+					Count: 1b
+					tag: {
+						astralsorcery: { }
+					}
+				}
+			}]
+		}
+		{
+			x: 1.0d
+			y: 4.5d
+			shape: "diamond"
+			subtitle: "Crafting the glass will allow you to enter The Twilight Forest. Once you have the Glass, move towards the \"Twilight Forest\" tab in the \"Dimensional Explorer\" chapter group. It will also allow you to study the sky to find constellations. Left Click for more info"
+			description: [
+				"With this handy telescope, you'll be able to spy the night sky and look for constellations. Through the Looking Glass, you'll be able to see all the stars on the sky, however, only a few of them will make a Constellation, the brighter and the larger ones, to be more precise. Also, these stars will have a more noticeble linger to them, and will appear as an overlay, so it will be quite hard to not notice them. Also, keep in mind that there might be nights when there will be no Constellations on the sky, so just wait for the next night."
+				""
+				"Example of how the stars of a Constellation look:"
+				""
+				"{image:kubejs:textures/astralsorcery/capricornus_looking_glass_example.png width:100 height:100 align:1}"
+				""
+				"The Constellation shown in the above example is Capricornus."
+				""
+				"When you find a constellation, you'll have to hold down the Shift key. After that, your cursor will appear on the screen and you'll have to trace the constellation. After you've traced the shape, the constellation will be available to you. Astral Sorcery makes it so that every constellation you discover, will be visible on the sky, but in this pack, this will not happen. To see the discovered constelations on the sky, you'll have to close the game and follow this path in the pack's folder: <packfolder>/config/astralsorcery-client.toml. Here you'll have to fill the \"skyRenderingEnabled\" entry, with this, including the quotation marks: \"minecraft:overworld\". After that, save the changes and start the game."
+				""
+				"One last thing. If you haven't discovered a constellation through a Constellation Paper, you won't ba able to unlock it, even if you've traced it correctly."
+			]
+			dependencies: [
+				"5100EDF6D4054286"
+				"6833FFB6AB33C9D6"
+				"5F68C4D92EF20E09"
+			]
+			id: "47FA4A7BD534DE6C"
+			tasks: [{
+				id: "24E25DE94B71D201"
+				type: "item"
+				item: "astralsorcery:hand_telescope"
+			}]
+		}
+		{
+			x: 9.5d
+			y: -2.5d
+			shape: "square"
+			subtitle: "Crafting the Scarab will allow you open the Portal towards Atum. Once you have it, move towards the \"Atum\" tab in the \"Dimensional Explorer\" chapter group"
+			dependencies: ["3D75721DA9392AA5"]
+			id: "4A3AF0119A31CFF3"
+			tasks: [{
+				id: "06A6175DF3A363CF"
+				type: "item"
+				item: "atum:scarab"
+			}]
+		}
+		{
+			x: 5.5d
+			y: -1.0d
+			shape: "square"
+			subtitle: "Mana Pearls will be required further in Botania. Since there's no way you can just infuse a regular Ender Pearl with mana, you'll need something more.. let's say unique. Here's the deal. Make a powerful, yet unstable version of the regular Ender Pearl, and we'll make sure that your life will be easier from now on. Tip: To see the recipe for this item, press \"u\" on Illumination Powder. It's an Eidolon Brazier recipe"
+			hide_dependency_lines: true
+			dependencies: [
+				"077199D0B5C0CEDD"
+				"40205D351BE13B77"
+				"233B88D292A4128F"
+				"457641D552217D32"
+			]
+			id: "4C956B4082ADFD05"
+			tasks: [{
+				id: "07C9299377E4109E"
+				type: "item"
+				item: "decursiomod:unstable_ender_pearl"
+			}]
+		}
+		{
+			x: 11.5d
+			y: 0.5d
+			shape: "gear"
+			subtitle: "Ultimate Enchanting Contraption. Left Click for more info"
+			description: [
+				"The Stellar Refraction Table is used to engrave glass to create potions and enchant items or books."
+				""
+				"The table has two slots - the first one accepts Parchment, Water Bottles, Books and enchantable items, the second accepts Infused Glass and Engraved Glass. Right clicking the table with them will insert the item, shift-right clicking with an empty hand will remove items instead."
+				""
+				"Right clicking the table will open the GUI. The left and right sides of the GUI contain constellations currently up in the sky known to the player. The top shows the inserted items. When parchment and an unengraved Infused Glass is inserted, dragging constellation images from the slots on the side will attempt to draw them on the parchment. The chance to draw the constellation depends on time of night (highest at midnight) and the amount of constellations already drawn on the parchment (decreases with more drawings). If drawing fails, all drawings will be removed and one parchment will be consumed. Once 3 constellations are drawn, the glass will be engraved."
+				""
+				"The levels of enchantments or potion effects applied by the engraved glass depends on the overlap of the drawn constellations. For best result, around 25% of the drawings should be overlapping. If a single constellation is multiple times, the strength of its effect is the average of all of its drawing's effects."
+				""
+				"Putting a water bottle in the table with an engraved glass will convert it into \"Stardew\" - a potion with the glass's engraved constellations' effects. The duration of each of the effects is a random number between 4,800 ticks (4 minutes) and 7,200 ticks (6 minutes). There's a 1 in 30 chance the resulting potion will have the Phoenix-Fire potion effect added. Making potions on the table has a 1 in 3 chance to damage the glass."
+				""
+				"Putting a book or an unenchanted enchantable item in the table with an engraved glass will enchant it with the glass's engraved constellations' enchantments. Enchantments are added in the order of the constellations listed on the glass's tooltip. If any enchantments are conflicting (i.e. Fortune and Silk Touch), only the first will be added unless the following ones ignore conflicts. Enchanting on the table always damages the glass."
+			]
+			dependencies: [
+				"73A248C448C4C47D"
+				"1F6E34D4E5B184B5"
+				"4B750F660C0D5E6E"
+			]
+			id: "75D92B3F147DE02E"
+			tasks: [{
+				id: "78B456DA2A31DC70"
+				type: "item"
+				item: "astralsorcery:refraction_table"
+			}]
+		}
+		{
+			title: "Sagittarius"
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1b
+				tag: {
+					Icon: "kubejs:textures/astralsorcery/sagittarius_example.png"
+				}
+			}
+			x: -1.5d
+			y: 7.25d
+			shape: "gear"
+			subtitle: "Sagittarius (Offensive) is a bright constellation associated with violence and attacking. Attuning yourself to Sagittarius unlocks a root node with 10% more projectile/melee damage, and allows to gain perk experience by dealing damage"
+			description: ["{image:kubejs:textures/astralsorcery/sagittarius_example.png width:100 height:100 align:1}"]
+			hide_dependency_lines: true
+			dependencies: ["47FA4A7BD534DE6C"]
+			size: 1.5d
+			optional: true
+			id: "15E9D2892DC0F870"
+			tasks: [{
+				id: "38BEA5066EB7677D"
+				type: "checkmark"
+				title: "Got it"
+			}]
+		}
+		{
+			title: "Capricornus"
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1b
+				tag: {
+					Icon: "kubejs:textures/astralsorcery/capricornus_example.png"
+				}
+			}
+			x: 1.5d
+			y: 7.25d
+			shape: "gear"
+			subtitle: "Capricornus (Defence) is a bright constellation associated with increasing defensive power or repulsion. Attuning yourself to Capricornus unlocks a root node with 20% more armor, and allows to gain perk experience by taking damage"
+			description: ["{image:kubejs:textures/astralsorcery/capricornus_example.png width:100 height:100 align:1}"]
+			hide_dependency_lines: true
+			dependencies: ["47FA4A7BD534DE6C"]
+			size: 1.5d
+			optional: true
+			id: "2DDAB495566E54F4"
+			tasks: [{
+				id: "41AF08C996F16DED"
+				type: "checkmark"
+				title: "Got it"
+			}]
+		}
+		{
+			title: "Gemini"
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1b
+				tag: {
+					Icon: "kubejs:textures/astralsorcery/gemini_example.png"
+				}
+			}
+			x: 6.75d
+			y: 7.25d
+			shape: "gear"
+			subtitle: "Gemini (Travel) is a bright constellation associated with distance and speed. Attuning yourself to Gemini unlocks a root node with 10% increased movement speed, and allows to gain perk experience by moving around"
+			description: ["{image:kubejs:textures/astralsorcery/gemini_example.png width:100 height:100 align:1}"]
+			hide_dependency_lines: true
+			dependencies: ["47FA4A7BD534DE6C"]
+			size: 1.5d
+			optional: true
+			id: "2E3B1809E06F4422"
+			tasks: [{
+				id: "204827EC01D2385B"
+				type: "checkmark"
+				title: "Got it"
+			}]
+		}
+		{
+			title: "Virgo"
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1b
+				tag: {
+					Icon: "kubejs:textures/astralsorcery/virgo_example.png"
+				}
+			}
+			x: 12.0d
+			y: 7.25d
+			shape: "gear"
+			subtitle: "Virgo (Creation) is a bright constellation associated with growth and life. Attuning yourself to Virgo unlocks a root node with +2 added maximum life, and allows to gain perk experience by placing blocks"
+			description: ["{image:kubejs:textures/astralsorcery/virgo_example.png width:100 height:100 align:1}"]
+			hide_dependency_lines: true
+			dependencies: ["47FA4A7BD534DE6C"]
+			size: 1.5d
+			optional: true
+			id: "31279BC58CC00853"
+			tasks: [{
+				id: "794D95BABDDD6A58"
+				type: "checkmark"
+				title: "Got it"
+			}]
+		}
+		{
+			title: "Aries"
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1b
+				tag: {
+					Icon: "kubejs:textures/astralsorcery/aries_example.png"
+				}
+			}
+			x: 15.0d
+			y: 7.25d
+			shape: "gear"
+			subtitle: "Aries (Destruction) is a bright constellation associated with breaking the environment. Attuning yourself to Aries unlocks a root node with +1 added reach, and allows to gain perk experience by breaking blocks"
+			description: ["{image:kubejs:textures/astralsorcery/aries_example.png width:100 height:100 align:1}"]
+			hide_dependency_lines: true
+			dependencies: ["47FA4A7BD534DE6C"]
+			size: 1.5d
+			optional: true
+			id: "390F5029FB7874ED"
+			tasks: [{
+				id: "36F53B853A7A0950"
+				type: "checkmark"
+				title: "Got it"
+			}]
+		}
+		{
+			title: "Libra"
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1b
+				tag: {
+					Icon: "kubejs:textures/astralsorcery/libra_example.png"
+				}
+			}
+			x: -0.75d
+			y: 9.5d
+			shape: "gear"
+			subtitle: "Libra (Light) is a dim constellation associated with light and banishment. You cannot attune yourself to dim constellations. While included in a ritual, this constellation will prevent any hostile mobs from spawning near the Ritual Pedestal and the surrounding area"
+			description: ["{image:kubejs:textures/astralsorcery/libra_example.png width:100 height:100 align:1}"]
+			hide_dependency_lines: true
+			dependencies: ["4483446C4DA06FCE"]
+			size: 1.5d
+			optional: true
+			id: "2453019FFD163779"
+			tasks: [{
+				id: "1FAE84764DCC19A4"
+				type: "checkmark"
+				title: "Got it"
+			}]
+		}
+		{
+			title: "Taurus"
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1b
+				tag: {
+					Icon: "kubejs:textures/astralsorcery/taurus_example.png"
+				}
+			}
+			x: 2.25d
+			y: 9.5d
+			shape: "gear"
+			subtitle: "Taurus (Mineral) is a dim constellation associated with ores and stone. You cannot attune yourself to dim constellations. While included in a ritual, this constellation will cause nearby Stone blocks to turn into a random ore block"
+			description: ["{image:kubejs:textures/astralsorcery/taurus_example.png width:100 height:100 align:1}"]
+			hide_dependency_lines: true
+			dependencies: ["4483446C4DA06FCE"]
+			size: 1.5d
+			optional: true
+			id: "4980DD5CAEF22481"
+			tasks: [{
+				id: "46CD15175C25D3DF"
+				type: "checkmark"
+				title: "Got it"
+			}]
+		}
+		{
+			title: "Scorpius"
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1b
+				tag: {
+					Icon: "kubejs:textures/astralsorcery/scorpius_example.png"
+				}
+			}
+			x: 4.5d
+			y: 9.5d
+			shape: "gear"
+			subtitle: "Scorpius (Time) is a dim constellation associated with the passage of time and relativity. Unlike other constellations, it will only appear the night after a solar eclipse which occurs every 36 days. You cannot attune yourself to dim constellations. While included in a ritual, this constellation increases the ticking speed of machines"
+			description: ["{image:kubejs:textures/astralsorcery/scorpius_example.png width:100 height:100 align:1}"]
+			hide_dependency_lines: true
+			dependencies: ["4483446C4DA06FCE"]
+			size: 1.5d
+			optional: true
+			id: "02E1A013BBC28446"
+			tasks: [{
+				id: "42BF138D1E43860A"
+				type: "checkmark"
+				title: "Got it"
+			}]
+		}
+		{
+			title: "Pisces"
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1b
+				tag: {
+					Icon: "kubejs:textures/astralsorcery/pisces_example.png"
+				}
+			}
+			x: 6.75d
+			y: 9.5d
+			shape: "gear"
+			subtitle: "Pisces (Fishing) is a dim constellation associated with water and fishing. You cannot attune yourself to dim constellations. While included in a ritual, this constellation makes it easier to fish in Water blocks near the Pedestal"
+			description: ["{image:kubejs:textures/astralsorcery/pisces_example.png width:100 height:100 align:1}"]
+			hide_dependency_lines: true
+			dependencies: ["4483446C4DA06FCE"]
+			size: 1.5d
+			id: "7E64FBA5B6A946E7"
+			tasks: [{
+				id: "0065D0892392EFDD"
+				type: "checkmark"
+				title: "Got it"
+			}]
+		}
+		{
+			title: "Aquarius"
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1b
+				tag: {
+					Icon: "kubejs:textures/astralsorcery/aquarius_example.png"
+				}
+			}
+			x: 9.0d
+			y: 9.5d
+			shape: "gear"
+			subtitle: "Aquarius (Herding) is a dim constellation associated with animals and serenity. You cannot attune yourself to dim contellations. While included in a ritual, this constellation causes nearby animals to age and shed items as if they were slain"
+			description: ["{image:kubejs:textures/astralsorcery/aquarius_example.png width:100 height:100 align:1}"]
+			hide_dependency_lines: true
+			dependencies: ["4483446C4DA06FCE"]
+			size: 1.5d
+			optional: true
+			id: "2BFB487545E77871"
+			tasks: [{
+				id: "01571976D8B83A60"
+				type: "checkmark"
+				title: "Got it"
+			}]
+		}
+		{
+			title: "Leo"
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1b
+				tag: {
+					Icon: "kubejs:textures/astralsorcery/leo_example.png"
+				}
+			}
+			x: 11.25d
+			y: 9.5d
+			shape: "gear"
+			subtitle: "Leo (Heat) is a dim constellation associated with fire and heat. You cannot attune yourself to dim constellations. While included in a ritual, this constellation will smelt or melt nearby blocks (e.g., Sand into Glass) around the Pedestal"
+			description: ["{image:kubejs:textures/astralsorcery/leo_example.png width:100 height:100 align:1}"]
+			hide_dependency_lines: true
+			dependencies: ["4483446C4DA06FCE"]
+			size: 1.5d
+			id: "5939AF4665795792"
+			tasks: [{
+				id: "49D5727D358C17B3"
+				type: "checkmark"
+				title: "Got it"
+			}]
+		}
+		{
+			title: "Cancer"
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1b
+				tag: {
+					Icon: "kubejs:textures/astralsorcery/cancer_example.png"
+				}
+			}
+			x: 14.25d
+			y: 9.5d
+			shape: "gear"
+			subtitle: "Cancer (Convocation) is a dim constellation associated with conjuration and regeneration. Unlike other constellations, it will only appear during full and new moons. You cannot attune yourself to dim constellations. While included in a ritual, this constellation increases the spawn rate of all entities, including hostile ones"
+			description: ["{image:kubejs:textures/astralsorcery/cancer_example.png width:100 height:100 align:1}"]
+			hide_dependency_lines: true
+			dependencies: ["4483446C4DA06FCE"]
+			hide: false
+			size: 1.5d
+			optional: true
+			id: "6F02D1EC528B5932"
+			tasks: [{
+				id: "7D83DC6903A44C9C"
+				type: "checkmark"
+				title: "Got it"
+			}]
+		}
+		{
+			title: "Corona Borealis"
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1b
+				tag: {
+					Icon: "kubejs:textures/astralsorcery/corona_borealis_example.png"
+				}
+			}
+			x: 0.75d
+			y: 11.75d
+			shape: "gear"
+			subtitle: "Corona Borealis (Ice) is a faint constellation associated with ice and frigidity. While included in a ritual, this constellation is used to augment other constellations, increasing their range while lowering their potency"
+			description: ["{image:kubejs:textures/astralsorcery/corona_borealis_example.png width:100 height:100 align:1}"]
+			hide_dependency_lines: true
+			dependencies: ["4483446C4DA06FCE"]
+			size: 1.5d
+			optional: true
+			id: "53BDD529681B55D1"
+			tasks: [{
+				id: "0BBC740201C6D400"
+				type: "checkmark"
+				title: "Got it"
+			}]
+		}
+		{
+			title: "Scutum"
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1b
+				tag: {
+					Icon: "kubejs:textures/astralsorcery/scutum_example.png"
+				}
+			}
+			x: 4.5d
+			y: 11.75d
+			shape: "gear"
+			subtitle: "Scutum (Beyond) is a faint constellation associated with endurance and tenacity. While included in a ritual, this constellation is used to augment other constellations, increasing their potency while lowering their range"
+			description: ["{image:kubejs:textures/astralsorcery/scutum_example.png width:100 height:100 align:1}"]
+			hide_dependency_lines: true
+			dependencies: ["4483446C4DA06FCE"]
+			size: 1.5d
+			optional: true
+			id: "68C3A65A8CB3C847"
+			tasks: [{
+				id: "7368B7DDF26601EC"
+				type: "checkmark"
+				title: "Got it"
+			}]
+		}
+		{
+			title: "Lyra"
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1b
+				tag: {
+					Icon: "kubejs:textures/astralsorcery/lyra_example.png"
+				}
+			}
+			x: 9.0d
+			y: 11.75d
+			shape: "gear"
+			subtitle: "Lyra (Alteration) is a faint constellation associated with corruption and resonance. While included in a ritual, this constellation is used to augment other constellations, corrupting the effect of the original ritual as well as increasing the crystal's fracture rate. Left Click for more info"
+			description: [
+				"Lyra's effects on other constellations:"
+				""
+				"Virgo - Nearby living entities receive Weakness IV, Mining Fatigue III, Hunger III, and Bleeding IIIHas a chance to destroy crops."
+				""
+				"Capricornus - Hostile mobs and projectiles are buffed in speed and attack strength."
+				""
+				"Sagittarius - Hostile mobs near the Pedestal receive Resistance IIIDamages playersNearby animals receive Inner Wealth."
+				""
+				"Aries - Places random solid blocks in a 33x33x33 cube around the Pedestal."
+				""
+				"Gemini - Entities near the Pedestal receive Fatigue and Slowness."
+				""
+				"Aquarius - Kills animals instantly while also granting them Inner Wealth."
+				""
+				"Leo - Places Ice near the pedestal."
+				""
+				"Scorpius - Freezes both mobs and machines."
+				""
+				"Libra - Makes the night last longer in the world it's in."
+				""
+				"Taurus - Creates 3x3 stone platforms underneath entities when there is space beneath them. These platforms may contain ores."
+				""
+				"Pisces - Places water near the pedestal."
+				""
+				"Cancer - Skeletons within range are turned to Wither Skeletons and given Inner Wealth IV."
+				""
+				"{image:kubejs:textures/astralsorcery/lyra_example.png width:100 height:100 align:1}"
+			]
+			hide_dependency_lines: true
+			dependencies: ["4483446C4DA06FCE"]
+			size: 1.5d
+			optional: true
+			id: "54D3EE82656AA3C1"
+			tasks: [{
+				id: "7130140E53ABC775"
+				type: "checkmark"
+				title: "Got it"
+			}]
+		}
+		{
+			title: "Opiuchus"
+			icon: {
+				id: "ftbquests:custom_icon"
+				Count: 1b
+				tag: {
+					Icon: "kubejs:textures/astralsorcery/ophiuchus_example.png"
+				}
+			}
+			x: 12.75d
+			y: 11.75d
+			shape: "gear"
+			subtitle: "Opiuchus (Hunger) is a faint constellation associated with anger and ferocity. While included in a ritual, this constellation is used to augment other constellations, increasing their range and potency as well as the crystal's fracture rate"
+			description: ["{image:kubejs:textures/astralsorcery/ophiuchus_example.png width:100 height:100 align:1}"]
+			hide_dependency_lines: true
+			dependencies: ["4483446C4DA06FCE"]
+			size: 1.5d
+			optional: true
+			id: "00F1268A02CFD64D"
+			tasks: [{
+				id: "3FB81C6279115E24"
+				type: "checkmark"
+				title: "Got it"
+			}]
+		}
+		{
+			x: 3.5d
+			y: 3.5d
+			shape: "square"
+			subtitle: "The Fosic Resonator will be required later - for now you won't need it to get the Starlight Crafting Altar. Left Click for more info"
+			description: [
+				"While it's night time, you can find areas highly concentrated with starlight if you're holding the Fosic Resonator in one of your hands."
+				""
+				"Example of how the area looks:"
+				""
+				"{image:kubejs:textures/astralsorcery/astral_better_starlight_example.png width:100 height:100 align:1}"
+				""
+				"Exploring at a slow phase is adviced, as it takes some time for these blue patches to appear."
+				""
+				"Now, it's important to understand that usually this items is optional. Here however, it will be mandatory for the higher Altar tiers (Celestial and Iridescent). This pack is configured in a way which will require every single drop of Starlight that you can get your hands on."
+				""
+				"If this is the first time you're reading this, most probably, you'll not be able to make this item. That's fine. Just note that, sooner or later, more Starlight will be required for your recipes. When that happens, you'll need this gadget. You'll most probably have to relocate your Altar to an area highly concentrated in Starlight."
+			]
+			dependencies: [
+				"1981466AA18F454E"
+				"6B4D6FD11DFC8011"
+			]
+			id: "4E4B8F0BE0F28D14"
+			tasks: [{
+				id: "39A58E46D3E6EC16"
+				type: "item"
+				item: {
+					id: "astralsorcery:resonator"
+					Count: 1b
+					tag: {
+						astralsorcery: {
+							upgrades: [0]
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: 9.5d
+			y: 0.5d
+			shape: "square"
+			subtitle: "Starlight + Mana + Hard Materials = <3. Left Click for more info"
+			description: [
+				"The Heart of Diamond is the main ingredient in the process of obtaining Mana Diamonds. In the 2nd Age you'll have to craft it."
+				""
+				"In the 3rd Age, you'll be able to farm the Heart of Diamond using a Drygmy farm from Ars Nouveau. You'll need the Stoneling mob. The only way to obtain a Stoneling is by Right Clicking with the Heart of Diamond on a Stone block."
+			]
+			dependencies: ["05B9DF27F7AD850D"]
+			id: "0CC58FDE0B5D0373"
+			tasks: [{
+				id: "1B29144519DAB0A3"
+				type: "item"
+				item: "quark:diamond_heart"
+			}]
+		}
+		{
+			title: "Enhanced Celestial Collector"
+			icon: {
+				id: "astralsorcery:celestial_collector_crystal"
+				Count: 1b
+				tag: {
+					astralsorcery: {
+						constellation: "astralsorcery:discidia"
+						crystalProperties: {
+							attributes: [
+								{
+									property: "astralsorcery:size"
+									pLevel: 3
+									discovered: 1b
+								}
+								{
+									property: "astralsorcery:purity"
+									pLevel: 2
+									discovered: 1b
+								}
+								{
+									property: "astralsorcery:shape"
+									pLevel: 3
+									discovered: 1b
+								}
+								{
+									property: "astralsorcery:collector.rate"
+									pLevel: 3
+									discovered: 1b
+								}
+								{
+									property: "astralsorcery:constellation.discidia"
+									pLevel: 2
+									discovered: 1b
+								}
+							]
+						}
+					}
+				}
+			}
+			x: 13.5d
+			y: 2.0d
+			shape: "heart"
+			subtitle: "All the Starlight you'll go. Left Click for more info"
+			description: [
+				"Using a Celestial Collector Crystal which is attuned to a Constellation, you can build a structure which can be used to boost the amount of Starlight that an altar has access to."
+				""
+				"When placed in the world, the Celestial Collector Crystal generates Starlight which can be used to power other blocks from the mod through the use of the Linking Tool. It can be crafted from a Celestial Crystal that is attuned to any of the twelve bright or dim Constellations."
+				""
+				"If it is placed within 16 blocks of another Celestial Collector Crystal or Collector Crystal, the amount of Starlight generated will be significantly reduced."
+				""
+				"If the proper multiblock structure is built for it, the Crystal will give more Starlight to an Altar when the Crystal's Constellation is NOT in the Sky, rather then the ususal behaviour, where the Crystal will give a maximum amount of Starlight when its Constellation IS in the Sky."
+			]
+			dependencies: ["1A99C6281674DE7C"]
+			id: "6B45553D9532A11F"
+			tasks: [
+				{
+					id: "71B509A994272A6A"
+					type: "item"
+					item: "astralsorcery:marble_chiseled"
+					count: 5L
+				}
+				{
+					id: "68FE79E68DB2DF12"
+					type: "item"
+					item: "astralsorcery:marble_runed"
+					count: 12L
+				}
+				{
+					id: "5E35FF9812D5EE59"
+					type: "item"
+					item: "astralsorcery:marble_raw"
+					count: 9L
+				}
+				{
+					id: "5F4E7F5AE5736B48"
+					type: "item"
+					item: "astralsorcery:marble_engraved"
+					count: 5L
+				}
+				{
+					id: "4D3C0521F45DC231"
+					type: "item"
+					item: {
+						id: "astralsorcery:liquid_starlight_bucket"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "4774EABCEA2AB7BF"
+					type: "item"
+					item: "astralsorcery:marble_pillar"
+				}
+				{
+					id: "75A3A75025D5885E"
+					type: "item"
+					item: {
+						id: "astralsorcery:celestial_collector_crystal"
+						Count: 1b
+						tag: {
+							astralsorcery: { }
+						}
+					}
+				}
+			]
+		}
+		{
+			x: -0.5d
+			y: 0.5d
+			shape: "gear"
+			subtitle: "Thaumcraft is not here yet. However, if you're a veteran you'll remember The Everfull Urn. The Urn of Endless Waters is similar to it. It will provide water only to Cauldrons and Petal Apothecaries. Try it out!"
+			dependencies: ["40205D351BE13B77"]
+			id: "319CFF3F247EEBF8"
+			tasks: [{
+				id: "1B1776949BB2D097"
+				type: "item"
+				item: "hexblades:everfull_urn"
+			}]
+		}
+		{
+			title: "Altar Boosting 101!"
+			icon: {
+				id: "botania:cosmetic_questgiver_mark"
+				Count: 1b
+				tag: { }
+			}
+			x: 2.5d
+			y: 2.0d
+			shape: "gear"
+			subtitle: "Wanna boost your Altar? Left Click for more info"
+			description: [
+				"Since 1.12.2 Astral Sorcery changed some things regarding the Altar boosting and the starlight in general."
+				""
+				"Now the starlight amount available will be determined by the fosic field. This field is present in the entire world with a power level ranging from 0.0-1.0."
+				""
+				"While holding a Fosic Resonator in your hand, you'll be able to see the areas with a power of 0.4 or higher."
+				""
+				"This means that, overall, in the world, there will be areas with a very low amount of starlight available and areas with more starlight available."
+				""
+				"Until you get your hands on the Fosic Resonator, if you find yourself in a situation where you can't craft an item because you don't have enough starlight, your best bet would be to relocate your altar to another spot, maybe with 0.2, or 0.3 power."
+				""
+				"Now let's talk about the changes to the boosting methods. Now you won't be able to stack multiple instances of the same boosting method, as they'll get inefficient. For example, using more the one Collector Crystal will make both of them weaker. You basically have to combine multiple boosting methods."
+				""
+				"Let's see some of them:"
+				"- Y level: the higher, the better"
+				"- Collector Crystal: the stats of the crystal will affect the amount of starlight added to your altar"
+				"- Relays Structure: the following structure will boost the amount of starlight available in your altar"
+				""
+				"{image:kubejs:textures/astralsorcery/astral_relay_structure_example.png width:100 height:100 align:1}"
+				""
+				"The structure will require a Glass Lens on the Relay."
+			]
+			dependencies: ["6833FFB6AB33C9D6"]
+			size: 1.5d
+			id: "07605DD4AD505CFC"
+			tasks: [
+				{
+					id: "02753445C91A23D8"
+					type: "item"
+					item: "astralsorcery:spectral_relay"
+				}
+				{
+					id: "5CB8820D20186FB5"
+					type: "item"
+					item: "astralsorcery:black_marble_raw"
+				}
+				{
+					id: "62E2B6599190F754"
+					type: "item"
+					item: "astralsorcery:marble_arch"
+					count: 4L
+				}
+				{
+					id: "61B7FC7A884AAF6D"
+					type: "item"
+					item: "astralsorcery:marble_chiseled"
+					count: 4L
+				}
+				{
+					id: "746564EF537EC351"
+					type: "item"
+					item: "astralsorcery:glass_lens"
+				}
+			]
+		}
+	]
+}

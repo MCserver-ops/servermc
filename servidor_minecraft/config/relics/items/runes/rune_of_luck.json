@@ -1,0 +1,12 @@
+{
+  "ingredients": [
+    "minecraft:rabbit_foot",
+    "minecraft:emerald",
+    "minecraft:fern"
+  ],
+  "loot": {
+    "table": [
+    ],
+    "chance": 0
+  }
+}

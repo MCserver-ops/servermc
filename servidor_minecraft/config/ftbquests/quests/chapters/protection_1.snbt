@@ -1,0 +1,714 @@
+{
+	id: "5420B876F0E222BC"
+	group: "52BC1523CD35BD71"
+	order_index: 3
+	filename: "protection_1"
+	title: "Protection - 1"
+	icon: {
+		id: "sanguinearsenal:sanguine_praetor_tunic"
+		Count: 1b
+		tag: {
+			Damage: 0
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "The Chain Armor"
+			icon: {
+				id: "minecraft:chainmail_chestplate"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -2.5d
+			y: -1.0d
+			shape: "gear"
+			subtitle: "Starting Adventurer: This armor will be your starting point in the defensive department"
+			dependencies: ["0DDA2FB169318B04"]
+			id: "2BA40FC4C6826DA4"
+			tasks: [
+				{
+					id: "3E214E0EFBEC0C16"
+					type: "item"
+					item: {
+						id: "minecraft:chainmail_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "5963BD4F35A50D93"
+					type: "item"
+					item: {
+						id: "minecraft:chainmail_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "286F62FCDA5685EF"
+					type: "item"
+					item: {
+						id: "minecraft:chainmail_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "147704DF03FAB13A"
+					type: "item"
+					item: {
+						id: "minecraft:chainmail_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "391AB506E0D3E092"
+					type: "item"
+					item: "minecraft:arrow"
+					count: 64
+				}
+				{
+					id: "58EF5FFB3171F724"
+					type: "item"
+					item: {
+						id: "minecraft:bow"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "The Warlock Armor"
+			icon: {
+				id: "eidolon:warlock_cloak"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 0.5d
+			y: -1.0d
+			shape: "gear"
+			subtitle: "Pantless Merlin: No pants? A true magician NEVER WEARS PANTS! Left Click for more info"
+			description: [
+				"When worn, provides mitigation of certain bad effects. Also gives you a magic damage boost."
+				""
+				"This armor set does NOT include a pair of pants."
+			]
+			dependencies: ["5BE9A7D51A671963"]
+			id: "7A720A0079E99E08"
+			tasks: [
+				{
+					id: "49F281DD34016EA5"
+					type: "item"
+					item: {
+						id: "eidolon:warlock_hat"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "799A96F1347F77B5"
+					type: "item"
+					item: {
+						id: "eidolon:warlock_cloak"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "47BB35CDB3C6044D"
+					type: "item"
+					item: {
+						id: "eidolon:warlock_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "617D0D1F60574ECC"
+					type: "item"
+					item: "eidolon:zombie_heart"
+					count: 5
+				}
+				{
+					id: "1CD87BC5D21AFABC"
+					type: "item"
+					item: {
+						id: "eidolon:bonechill_wand"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "The Neptunium Armor"
+			icon: {
+				id: "aquaculture:neptunium_chestplate"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -1.0d
+			y: 1.0d
+			shape: "heart"
+			subtitle: "Son of Poseidon: Gives you total advantage under water"
+			dependencies: ["42AF545672802A08"]
+			id: "4912BEC79270070A"
+			tasks: [
+				{
+					id: "2BA8832D8A01B439"
+					type: "item"
+					item: {
+						id: "aquaculture:neptunium_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "566F69168BFD94D1"
+					type: "item"
+					item: {
+						id: "aquaculture:neptunium_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "69F1171DD217FF97"
+					type: "item"
+					item: {
+						id: "aquaculture:neptunium_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "4EF10B3651C26FA4"
+					type: "item"
+					item: {
+						id: "aquaculture:neptunium_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "6632484AF5742BC3"
+				type: "item"
+				item: "aquaculture:neptunium_ingot"
+				count: 64
+			}]
+		}
+		{
+			title: "The Leather Armor"
+			icon: {
+				id: "minecraft:leather_chestplate"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -1.5d
+			y: -3.0d
+			subtitle: "Resourceful Tinkerer: If you made this armor, it is most likely because you'll upgrade it to something better. You also could've made it just because you like it. Yeah. That's fair. Just that. Yeah."
+			dependencies: ["0DDA2FB169318B04"]
+			id: "2B1D34891B1C8331"
+			tasks: [
+				{
+					id: "2BAAE6B0093C8138"
+					type: "item"
+					item: {
+						id: "minecraft:leather_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "1FB2B54F84DAB09F"
+					type: "item"
+					item: {
+						id: "minecraft:leather_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "612DDD972B0835DF"
+					type: "item"
+					item: {
+						id: "minecraft:leather_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "3DC3AA6CF24D9016"
+					type: "item"
+					item: {
+						id: "minecraft:leather_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "The Sanguine Praetor Armor"
+			icon: {
+				id: "sanguinearsenal:sanguine_praetor_tunic"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 1.5d
+			y: -1.0d
+			shape: "gear"
+			subtitle: "The Bloody Cultist. Left Click for the recipes and more info"
+			description: [
+				"This armor will be your ultimate defense against The Wither, as it will negate the wither effect and will provide strenght while you're in The Nether. To see the recipe for the armor, press \"U\" on Crimson Weave."
+				""
+				"Additionaly, this armor will give you permanent potion effects based on the dimension you are in:"
+				""
+				"Overworld - Resistance"
+				"Nether - Strenght"
+				"Twilight Forest - Speed"
+				"Atum - Haste"
+				"The End - Slow Fall"
+				""
+				"These effects can be amplified if a Blood Flask is used in combination with this armor. You can find more info about the Blood Flask in the \"Useful Items\" tab."
+				""
+				"Another feature provided by this armor will be a Blood Bar. Think of it as a rage mod. Simply kill mobs and it will slowly fill up. When it's full, you can active the Blood Aura. When it is turned on, you'll receive Regeneration III as long as you have Blood on that Bar."
+				""
+				"This Bar can also be used with the Scepter of Blood and the Sanguine Scythe to unlock some powerful ranged attacks."
+				""
+				"Recipes won't be visible on Multiplayer, so here you go:"
+				""
+				"{image:kubejs:textures/eidolon/praetor_hood_recipe-min.png width:100 height:140 align:1}"
+				""
+				"{image:kubejs:textures/eidolon/praetor_tunic_recipe.png width:100 height:140 align:1}"
+				""
+				"{image:kubejs:textures/eidolon/praetor_leggings_recipe-min.png width:100 height:140 align:1}"
+				""
+				"{image:kubejs:textures/eidolon/praetor_boots_recipe-min.png width:100 height:140 align:1}"
+			]
+			dependencies: ["7DFB99444DF72CF8"]
+			id: "597DB0D9C559A243"
+			tasks: [
+				{
+					id: "41025FC71175EDBF"
+					type: "item"
+					item: {
+						id: "sanguinearsenal:sanguine_praetor_hood"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "643D05FF44DE4959"
+					type: "item"
+					item: {
+						id: "sanguinearsenal:sanguine_praetor_tunic"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "786428330519B3AD"
+					type: "item"
+					item: {
+						id: "sanguinearsenal:sanguine_praetor_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "114FA32B9CFE41F4"
+					type: "item"
+					item: {
+						id: "sanguinearsenal:sanguine_praetor_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "3C23FF8747CB9116"
+				type: "loot"
+				table_id: 5206766833681472091L
+			}]
+		}
+		{
+			title: "The Traveler's Armor"
+			icon: {
+				id: "tconstruct:travelers_chestplate"
+				Count: 1b
+				tag: {
+					tic_multipliers: { }
+					tic_stats: {
+						"tconstruct:durability": 160.0f
+						"tconstruct:armor": 5.0f
+					}
+					tic_broken: 0b
+					tic_modifiers: [ ]
+					HideFlags: 3
+					Damage: 0
+					tic_persistent_data: {
+						abilities: 1
+						defense: 2
+						upgrades: 3
+					}
+				}
+			}
+			x: -1.5d
+			y: -1.0d
+			shape: "gear"
+			subtitle: "Basic Tinkerer: Well.. you got to see this too. Tinkers has armors now. This set of armor can be modified with resistance towards fire, explosions and others. Applying upgrades such as Diamonds to it, will boots its protection"
+			dependencies: ["2BA40FC4C6826DA4"]
+			id: "37449993E23E82FB"
+			tasks: [
+				{
+					id: "5A808F645A434FE3"
+					type: "item"
+					item: {
+						id: "tconstruct:travelers_helmet"
+						Count: 1b
+						tag: {
+							tic_multipliers: { }
+							tic_stats: {
+								"tconstruct:durability": 110.0f
+								"tconstruct:armor": 1.0f
+							}
+							tic_broken: 0b
+							tic_modifiers: [ ]
+							HideFlags: 3
+							Damage: 0
+							tic_persistent_data: {
+								abilities: 1
+								defense: 2
+								upgrades: 3
+							}
+						}
+					}
+				}
+				{
+					id: "47403DF24FA25F48"
+					type: "item"
+					item: {
+						id: "tconstruct:travelers_chestplate"
+						Count: 1b
+						tag: {
+							tic_multipliers: { }
+							tic_stats: {
+								"tconstruct:durability": 160.0f
+								"tconstruct:armor": 5.0f
+							}
+							tic_broken: 0b
+							tic_modifiers: [ ]
+							HideFlags: 3
+							Damage: 0
+							tic_persistent_data: {
+								abilities: 1
+								defense: 2
+								upgrades: 3
+							}
+						}
+					}
+				}
+				{
+					id: "2D43838CD53E2962"
+					type: "item"
+					item: {
+						id: "tconstruct:travelers_leggings"
+						Count: 1b
+						tag: {
+							tic_multipliers: { }
+							tic_stats: {
+								"tconstruct:durability": 150.0f
+								"tconstruct:armor": 4.0f
+							}
+							tic_broken: 0b
+							tic_modifiers: [ ]
+							HideFlags: 3
+							Damage: 0
+							tic_persistent_data: {
+								abilities: 1
+								defense: 2
+								upgrades: 3
+							}
+						}
+					}
+				}
+				{
+					id: "36C430F2422D0DA5"
+					type: "item"
+					item: {
+						id: "tconstruct:travelers_boots"
+						Count: 1b
+						tag: {
+							tic_multipliers: { }
+							tic_stats: {
+								"tconstruct:durability": 130.0f
+								"tconstruct:armor": 1.0f
+							}
+							tic_broken: 0b
+							tic_modifiers: [ ]
+							HideFlags: 3
+							Damage: 0
+							tic_persistent_data: {
+								abilities: 1
+								defense: 2
+								upgrades: 3
+							}
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "The Gold Armor"
+			icon: {
+				id: "minecraft:golden_chestplate"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 0.5d
+			y: -3.0d
+			subtitle: "BlingBling-man: Useful in The Nether, keeping Hoglins at bay"
+			dependencies: ["0DDA2FB169318B04"]
+			id: "39B172FFF0FFFD5B"
+			tasks: [
+				{
+					id: "60F5239A0C9E592E"
+					type: "item"
+					item: {
+						id: "minecraft:golden_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "40E4E0FD5AB231E5"
+					type: "item"
+					item: {
+						id: "minecraft:golden_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "53D5124D9E869AFD"
+					type: "item"
+					item: {
+						id: "minecraft:golden_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "110238C50ECBE875"
+					type: "item"
+					item: {
+						id: "minecraft:golden_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Mutant Exoskeleton"
+			icon: {
+				id: "mutantbeasts:mutant_skeleton_chestplate"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 0.0d
+			y: 1.0d
+			shape: "heart"
+			subtitle: "Bone Worrior: This Armor will provide Speed/Speed II (depending if youre running or not) and Jump Boost. Iron-level of protection will be granted"
+			dependencies: ["1B5CD5130C2E5AF3"]
+			id: "45CF499B8206C415"
+			tasks: [
+				{
+					id: "3E1943810B0A95AE"
+					type: "item"
+					item: {
+						id: "mutantbeasts:mutant_skeleton_skull"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "01622B90A4C4B4CC"
+					type: "item"
+					item: {
+						id: "mutantbeasts:mutant_skeleton_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "0FBFC5A45E90D89C"
+					type: "item"
+					item: {
+						id: "mutantbeasts:mutant_skeleton_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "091551FFA98A7118"
+					type: "item"
+					item: {
+						id: "mutantbeasts:mutant_skeleton_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "45C36B8EECAA779D"
+				type: "item"
+				item: "minecraft:bone_block"
+				count: 64
+			}]
+		}
+		{
+			title: "Oak Armor"
+			icon: {
+				id: "swoodarmor:chestplate"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -0.5d
+			y: -3.0d
+			subtitle: "Forest Soldier: This Armor will provide protection between the Leather and the Chanin levels, giving a total amount of 10 Armor Points. It is also more durable then the Leather Armor"
+			dependencies: ["76F7CACBB3B85B1F"]
+			id: "4654A7E4009EB979"
+			tasks: [
+				{
+					id: "0E759470075AF1CB"
+					type: "item"
+					item: {
+						id: "swoodarmor:helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "5C4A754F7DA8BEB7"
+					type: "item"
+					item: {
+						id: "swoodarmor:chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "6889755A5674F6B9"
+					type: "item"
+					item: {
+						id: "swoodarmor:leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "12BF184E10FAA219"
+					type: "item"
+					item: {
+						id: "swoodarmor:boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+	]
+}

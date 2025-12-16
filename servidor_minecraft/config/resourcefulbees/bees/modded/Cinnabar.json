@@ -1,0 +1,34 @@
+{
+    "flower": "tag:forge:ores/cinnabar",
+    "creator": "Me_Ryan",
+    "lore": "Hive Bee",
+    "maxTimeInHive": 600,
+    "hasHoneycomb": true,
+    "baseLayerTexture": "cinnabar/cinnabar",
+    "ColorData": {
+      "modelType": "ORE",
+      "isBeeColored": false,
+      "honeycombColor": "#ff0059",
+      "primaryColor": "#919191",
+      "secondaryColor": "#ff0059"
+    },
+    "CentrifugeData": {
+      "hasCentrifugeOutput": true,
+      "mainOutput": "emendatusenigmatica:cinnabar_gem",
+      "bottleOutput": "minecraft:honey_bottle",
+      "mainOutputWeight": 0.40
+    },
+    "SpawnData": {
+      "canSpawnInWorld": false
+    },
+    "BreedData": {
+      "isBreedable": true,
+      "parent1": "Red_Carpenter",
+      "parent2": "Ashy_Digging",
+      "feedItem": "minecraft:barrier"
+    },
+    "CombatData": {
+      "isPassive": true
+    },
+    "TraitData": {}
+  }

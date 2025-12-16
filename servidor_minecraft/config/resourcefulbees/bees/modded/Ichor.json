@@ -1,0 +1,52 @@
+{
+    "flower": "tconstruct:magma_cake",
+    "creator": "Me_Ryan",
+    "lore": "Hive Bee",
+    "hasHoneycomb": true,
+    "traits": ["slimy", "blazing"],
+    "maxTimeInHive": 1200,
+    "baseLayerTexture": "ichor/ichor",
+    "ColorData": {
+      "modelType": "ARMORED",
+      "honeycombColor": "#ff9300",
+      "primaryColor": "#ff9300",
+      "secondaryColor": "#b65100"
+    },
+    "MutationData": {
+      "hasMutation": true,
+      "mutations" : [
+        {
+          "type": "BLOCK",
+          "inputID": "minecraft:honey_block",
+          "chance": 0.8,
+          "outputs": [
+            {"outputID": "tconstruct:ichor_slime", "weight": 10}
+          ]
+        }
+      ]
+    },
+    "CentrifugeData": {
+      "hasCentrifugeOutput": true,
+      "mainOutput": "tconstruct:ichor_slime_ball",
+      "mainOutputWeight": 0.30
+    },
+    "SpawnData": {
+      "canSpawnInWorld": false
+    },
+    "BreedData": {
+      "isBreedable": true,
+      "parent1": "Slimy",
+      "parent2": "Blazing",
+      "feedItem": "tconstruct:ichor_slime",
+      "feedAmount": 8
+    },
+    "CombatData": {  
+      "isPassive": false,  
+      "removeStingerOnAttack": false,
+      "inflictsPoison": true,
+      "attackDamage": 3
+      },
+    "TraitData": {
+      "hasTraits": true
+    }
+  }

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 8,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 90,
+	  "quality": 5,
+          "name": "emendatusenigmatica:coke_gem"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 10,
+	  "quality": -5,
+          "name": "charcoal_pit:ash"
+        }
+      ]
+    }
+  ]
+}

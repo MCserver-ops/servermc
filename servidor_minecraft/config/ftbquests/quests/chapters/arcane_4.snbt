@@ -1,0 +1,867 @@
+{
+	id: "0738E2585220E32A"
+	group: "08EB5BB8DBF33B74"
+	order_index: 1
+	filename: "arcane_4"
+	title: "Arcane - 4"
+	icon: "projecte:collector_mk3"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: -4.0d
+			y: 0.0d
+			shape: "square"
+			subtitle: "The Legend is Real. Left Click for more info"
+			description: [
+				"The Philosopher's Stone, as the legend says, is a mythic alchemical substance capable of turning base metals such as mercury into gold, or silver."
+				""
+				"It is also called the elixir of life, useful for rejuvenation and for achieving immortality."
+				""
+				"While all of the properties mentioned previously, come from a legend, they're very real here, just like the Stone is. Somehow."
+				""
+				"The Philosopher's Stone will allow you to convert Iron into Gold, Gold into Diamonds, and more. It also has the ability to perform equivalent exchanges on different blocks. Use JEI to see what your options are. Switch between Right-Click and Shift Right-Click to perform all of these exchanges. THe Philosopher's Stone can also be charged to make it have a larger area of effect. Charge it by using the Charge key (bind it in your controls menu)."
+				""
+				"Lastly, it can also be used to access a Crafting Grid (this feature is also related to a key which you'll have to bind in your controls menu)."
+			]
+			dependencies: [
+				"5AE4F9E81E692C43"
+				"5442ABAE0B9D9D6D"
+				"7983AC02872A7903"
+			]
+			id: "62B77E823E7C96CE"
+			tasks: [{
+				id: "5E1D7896E2B83063"
+				type: "item"
+				item: {
+					id: "projecte:philosophers_stone"
+					Count: 1b
+					tag: { }
+					ForgeCaps: {
+						Parent: { }
+					}
+				}
+			}]
+			rewards: [{
+				id: "1995F481EFA8096B"
+				type: "loot"
+				table_id: 3966812906621148304L
+			}]
+		}
+		{
+			x: -3.0d
+			y: 1.0d
+			shape: "square"
+			subtitle: "Item Factory I. Left Click for more info"
+			description: [
+				"The Energy Condenser is a chest-like machine added by ProjectE. It duplicates items with EMC values using other items with EMC values. The top-left slot is where the item to be duplicated is placed. Then, any item put in its other 91 Inventory slots will be converted into the target item, should there be enough EMC."
+				""
+				"Condensers can also use EMC created from adjacent Antimatter Relays and Energy Collectors. If there are no slots remaining in the Energy Condenser, it stops condensing items."
+				""
+				"The Energy Condenser can instantly fill all of its inventory slots with the item in the target slot, provided it has enough EMC stored to do so. It is also able to convert items to EMC at a rate of 20 items per second or 1 item per game tick."
+				""
+				"The Energy Condenser has a maximum limit of 10.000.000 EMC, so you mihgt not be able to multiply anything with it."
+			]
+			dependencies: [
+				"75EB00BEED4C74E3"
+				"12AC8B789FF3D939"
+			]
+			id: "3B08D8D5CDB296B0"
+			tasks: [{
+				id: "31A473E37710D2DD"
+				type: "item"
+				item: "projecte:condenser_mk1"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 2.5d
+			shape: "diamond"
+			subtitle: "The Energy Condenser MK2 is an upgraded version of the Energy Condenser. In addition to being substantially faster than the Energy Condenser, the MK2 also has a separate inventory for output. This separate inventory lets hoppers put items into the Condenser"
+			dependencies: ["3B08D8D5CDB296B0"]
+			size: 1.5d
+			id: "2045CAE403CC5EC8"
+			tasks: [{
+				id: "650E4C18F6303E20"
+				type: "item"
+				item: "projecte:condenser_mk2"
+			}]
+			rewards: [{
+				id: "4EE9752D3FC33043"
+				type: "loot"
+				table_id: 3966812906621148304L
+			}]
+		}
+		{
+			x: 2.0d
+			y: 0.0d
+			shape: "square"
+			subtitle: "EMC Storage Starter. Left Click for more info"
+			description: [
+				"The Klein Star Zwei is an EMC storage item added by ProjectE. It holds up to 200,000 EMC and is also used in the crafting of Klein Star Drei. "
+				""
+				"It can be charged by being placed in a Transmutation Table and being feed in items, or by being placed in the charging slot of an Energy Collector or Anti-Matter Relay. Klein Stars are discharged by being placed in the discharging slot of an Anti-Matter Relay. If a charged Klein Star is placed in the \"flames\" slot of a Transmutation Table, the star will be destroyed, converted to EMC and any stored energy will be lost"
+			]
+			dependencies: ["5E2127A7705A4A6F"]
+			id: "5377551301E8A6AA"
+			tasks: [{
+				id: "33C38A882B451214"
+				type: "item"
+				item: {
+					id: "projecte:klein_star_zwei"
+					Count: 1b
+					ForgeCaps: {
+						Parent: { }
+					}
+				}
+			}]
+		}
+		{
+			x: 3.0d
+			y: 0.0d
+			shape: "square"
+			subtitle: "EMC Storage Basic: The Klein Star Drei holds up to 800,000 EMC and is also used in the crafting of Klein Star Vier"
+			dependencies: ["5377551301E8A6AA"]
+			id: "615C65FF22889C9C"
+			tasks: [{
+				id: "47C0D249A0E685CA"
+				type: "item"
+				item: {
+					id: "projecte:klein_star_drei"
+					Count: 1b
+					ForgeCaps: {
+						Parent: { }
+					}
+				}
+			}]
+		}
+		{
+			x: 4.0d
+			y: 0.0d
+			shape: "square"
+			subtitle: "EMC Storage Advanced. EMC Storage Ultimate: The Klein Star Vier holds up to 3,200,000 EMC and is also used in the crafting of the Klein Star Sphere"
+			dependencies: ["615C65FF22889C9C"]
+			id: "38AD990946255660"
+			tasks: [{
+				id: "1F360B83872FC786"
+				type: "item"
+				item: {
+					id: "projecte:klein_star_vier"
+					Count: 1b
+					ForgeCaps: {
+						Parent: { }
+					}
+				}
+			}]
+		}
+		{
+			x: 5.0d
+			y: 0.0d
+			shape: "square"
+			subtitle: "EMC Storage Elite. EMC Storage Ultimate: The Klein Star Sphere holds up to 12,800,000 EMC and is also used in the crafting of Klein Star Omega"
+			dependencies: ["38AD990946255660"]
+			id: "611AE9C752E80E39"
+			tasks: [{
+				id: "757262561B61E624"
+				type: "item"
+				item: {
+					id: "projecte:klein_star_sphere"
+					Count: 1b
+					ForgeCaps: {
+						Parent: { }
+					}
+				}
+			}]
+		}
+		{
+			x: 6.0d
+			y: 0.0d
+			shape: "square"
+			subtitle: "EMC Storage Ultimate: The Klein Star Omega holds up to 51,200,000 EMC"
+			dependencies: ["611AE9C752E80E39"]
+			id: "0C6AA092DC94E3FC"
+			tasks: [{
+				id: "0522F20B1F8F5273"
+				type: "item"
+				item: {
+					id: "projecte:klein_star_omega"
+					Count: 1b
+					ForgeCaps: {
+						Parent: { }
+					}
+				}
+			}]
+		}
+		{
+			x: 2.0d
+			y: 3.0d
+			shape: "square"
+			subtitle: "EMC Generator MK I. Left Click for more info"
+			description: [
+				"The Energy Collector MK1 is a tier 1 passive EMC generator added by ProjectE."
+				""
+				"It passively generates 4 EMC every 1 second up to a maximum of 10,000 EMC depending on the highest light level. When placed adjacent to an Energy Condenser MK1, Energy Condenser MK2, Anti-Matter Relay MK1, Anti-Matter Relay MK2 or Anti-Matter Relay MK3 it will transfer the EMC into that machine."
+			]
+			dependencies: [
+				"5377551301E8A6AA"
+				"5AE4F9E81E692C43"
+			]
+			id: "40843985E361868D"
+			tasks: [{
+				id: "29A3EDA5D47553EB"
+				type: "item"
+				item: "projecte:collector_mk1"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 3.0d
+			shape: "square"
+			subtitle: "EMC Generator MK II. Left Click for more info"
+			description: [
+				"The Energy Collector MK2 is a passive EMC generator added by ProjectE."
+				""
+				"It will generate a passive maximum of 12 EMC per second up to a maximum of 30,000 EMC at a light level of 15. When placed adjacent to an Energy Condenser, Energy Condenser MK2, Energy Condenser MK3, Anti-Matter Relay MK2 or Anti-Matter Relay MK1, it will transfer the EMC into that machine."
+			]
+			dependencies: [
+				"40843985E361868D"
+				"38AD990946255660"
+				"5AE4F9E81E692C43"
+			]
+			id: "14CE2B006D67AFD1"
+			tasks: [{
+				id: "4A4D1CCEA3B06ED3"
+				type: "item"
+				item: "projecte:collector_mk2"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 3.0d
+			shape: "square"
+			subtitle: "EMC Generator MK III. Left Click for more info"
+			description: [
+				"The Energy Collector MK3 is a tier 3 passive EMC generator added by ProjectE."
+				""
+				"In strong lighting, or if placed in the nether, it will generate a passive 40 EMC per second up to a maximum of 60,000 EMC. When placed adjacent to a Energy Condenser MK1, Energy Condenser MK2, Energy Condenser MK3, Anti-Matter Relay MK1, Anti-Matter Relay MK2, or Anti-Matter Relay MK3, it will transfer the EMC into that machine."
+			]
+			dependencies: [
+				"14CE2B006D67AFD1"
+				"0C6AA092DC94E3FC"
+				"5AE4F9E81E692C43"
+			]
+			id: "4B644E685EEEBAA8"
+			tasks: [{
+				id: "28E14223001AAEA9"
+				type: "item"
+				item: "projecte:collector_mk3"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -3.0d
+			shape: "square"
+			subtitle: "EMC Transfer MK I. Left Click for more info"
+			description: [
+				"The Anti-Matter Relay MK1 is an EMC manipulator added by ProjectE."
+				""
+				"This machine serves two functions. Firstly, any item placed into its inventory will be converted into EMC. Secondly, it transfers energy from Energy Collectors to Energy Condensers. When transferring, it gives a small, 1 EMC per second bonus. It is also used to charge the Klein Star series with EMC.It can transfer up to 64 EMC/s and can store up to 100,000 EMC."
+			]
+			dependencies: [
+				"5377551301E8A6AA"
+				"5AE4F9E81E692C43"
+			]
+			id: "6BD29B20D8E981CC"
+			tasks: [{
+				id: "5F8CB99209E70167"
+				type: "item"
+				item: "projecte:relay_mk1"
+			}]
+		}
+		{
+			title: "The Dark Matter"
+			x: 7.0d
+			y: 0.0d
+			shape: "square"
+			subtitle: "The Dark Matter is one of the most dense items available in the Universe. The only thing denser then this thing will be the Red Matter. It is a crafting ingredient. It can be used to make powerful items, including Tools and Armor"
+			dependencies: [
+				"21F39BEFB97FD0D6"
+				"563ACC13E46B2F13"
+				"4B644E685EEEBAA8"
+			]
+			id: "200CAD7C99709A33"
+			tasks: [{
+				id: "69466D8C1818B1F1"
+				type: "item"
+				item: "projecte:dark_matter"
+			}]
+			rewards: [{
+				id: "0A68D6C84F35A40B"
+				type: "loot"
+				table_id: 3966812906621148304L
+			}]
+		}
+		{
+			title: "The Red Matter"
+			x: 8.5d
+			y: 0.0d
+			shape: "diamond"
+			subtitle: "To be honest, we have no idea how you're not dying just by holding this thing, but anyways. The Red Matter is the densest item in the Universe. Like its little brother, the Dark Matter, it is also a crafting component for extremely over powered items, such as Tools and Armor. Required to unlock the Endgame"
+			dependencies: [
+				"200CAD7C99709A33"
+				"21F39BEFB97FD0D6"
+			]
+			size: 2.0d
+			id: "012BA0505E1EEA5D"
+			tasks: [{
+				id: "0ED9D000FB66A704"
+				type: "item"
+				item: "projecte:red_matter"
+			}]
+			rewards: [{
+				id: "7DAA8A21BF01F7FA"
+				type: "loot"
+				table_id: 3966812906621148304L
+			}]
+		}
+		{
+			x: 4.0d
+			y: -3.0d
+			shape: "square"
+			subtitle: "EMC Transfer MK II: Maximum Output of 192 EMC/s. Maximum Storage of 1,000,000 EMC."
+			dependencies: [
+				"6BD29B20D8E981CC"
+				"38AD990946255660"
+				"5AE4F9E81E692C43"
+			]
+			id: "5D70C8B56CE17C67"
+			tasks: [{
+				id: "6EC62503C187E982"
+				type: "item"
+				item: "projecte:relay_mk2"
+			}]
+		}
+		{
+			x: 6.0d
+			y: -3.0d
+			shape: "square"
+			subtitle: "EMC Transfer MK III: Maximum Output of 640 EMC/s. Maximum Storage of 10,000,000 EMC."
+			dependencies: [
+				"5D70C8B56CE17C67"
+				"0C6AA092DC94E3FC"
+				"5AE4F9E81E692C43"
+			]
+			id: "563ACC13E46B2F13"
+			tasks: [{
+				id: "316CD22DB471C692"
+				type: "item"
+				item: "projecte:relay_mk3"
+			}]
+		}
+		{
+			title: "Power of the Flower Power, DUUUUUH!"
+			icon: "mysticalagriculture:mystical_flower_essence"
+			x: 4.0d
+			y: -4.5d
+			shape: "gear"
+			subtitle: "By combining Anti-Matter Relays with Energy Collectors, you can generate huge amounts of EMC. Left Click for more info"
+			description: [
+				"A Power Flower is an arrangement of Energy Collectors (of any size) and Antimatter Relays (of any model) that feed into a central Energy Condenser, producing an unlimited amount of EMC to convert into materials. The arrangement of the collectors and relays takes on the shape of a flower, hence the term \"Power Flower\"."
+				""
+				"There are several thousand different configurations or variations on the Power Flower principle which have different strengths and uses. As each of the configurations needs a tutorial in itself, we'll try to walk you through each one:"
+				""
+				"Petaled Power Flower: The Petaled Power Flower is ideal for large-scale, expandable EMC generation. They can be quite large depending on your EMC requirements, and are suited for being buried underground."
+				""
+				"Example:"
+				""
+				"{image:kubejs:textures/projecte/powerflower_petal_final.png width:100 height:100 align:1 fit:true}"
+				""
+				"This is the Power Flower configuration known as a \"Petaled Power Flower\" and is well suited for large-scale production with an expandable setup. It is comprised of an EMC generation structure in a flower-petal configuration tying into a central \"stalk\" or target point. As your resources demand/allow you can add more \"petals\" to the configuration to increase its output."
+				""
+				"This structure is modular and you can have as many modules as you want/need. A module will require:"
+				""
+				"- 1 Energy Condenser"
+				"- 4 Anti-Matter Relays"
+				"- 12 Energy Collectors"
+				""
+				"Step 1: A standard module on a Flower is a comprised of each of the listed materials above and will occupy roughly a 5x5x3 grid, depending on your final implementation. If you're planning on needing a lot of \"petals\" on your Power Flower, it is advisable to bury the Power Flower near bedrock level so you can expand upward."
+				""
+				"Step 2: Layer 1 - The 1st layer of a module is comprised of an Energy Condenser , 4 Antimatter Relays and 8 Energy Collectors. While your Energy Condenser is exposed, make sure to set its target to the item you wish to multiply."
+				""
+				"{image:kubejs:textures/projecte/powerflower_petal_1.png width:100 height:100 align:1 fit:true}"
+				""
+				"Step 3: Layer 2 - In Layer 2, place a Logistical Transport Pipe (or any other pipe which can transport items) on top of the Energy Condenser, then place additional Energy Collectors on top of the exposed faces of the Antimatter Relays. Make sure that, by using a Configurator, you make the Logistical Transport Pipes to stay disconnected from any of the Anti-Matter Relays, or the Energy Collectors."
+				""
+				"{image:kubejs:textures/projecte/powerflower_petal_2.png width:100 height:100 align:1 fit:true}"
+				""
+				"Step 4: Layer 3 - To finish off this module of the Power Flower you just need to hook up the Logistical Transport Pipe to an external storage option, like a Chest. You can also place Glowstone on the Energy Collectors to maximize their efficiency. After that, just add more Anti-Matter Relays to repeat the process and start making a new module."
+				""
+				"{image:kubejs:textures/projecte/powerflower_petal_3.png width:100 height:100 align:1 fit:true}"
+				""
+				"Again. Make as many modules as you want and need to maximize your item multiplication setup. You can also use any combination of Energy Collectors and Anti-Matter Relays. Their tier won't affect anything, excepting the setup's efficiency."
+				""
+				"Orb Power Flower: The Orb Power Flower configuration is a smaller configuration ideally suited for a \"working\" environment in which you need quick access to a Power Flower but don't need the massive EMC generation of a larger, petaled version."
+				""
+				"Example:"
+				""
+				"{image:kubejs:textures/projecte/powerflower_orb_final.png width:100 height:100 align:1 fit:true}"
+				""
+				"The Orb Power Flower is a configuration of the Power Flower that favors easy access, ease of production change and lower space requirements over the amount of  EMC produced. It is often the most common starter power flower configuration as it is cheaper and easier to use than the more advanced Petaled Power Flower."
+				""
+				"It requires 1 main condenser, 5 relays and 17 collectors.  The central condensor can also be replaced with another collector and used to power a Klein star instead of creating items. This actually generates slightly more EMC/sec than with a condenser."
+			]
+			hide_dependency_lines: true
+			dependencies: [
+				"6BD29B20D8E981CC"
+				"40843985E361868D"
+			]
+			size: 1.5d
+			id: "6C384104CB7F0370"
+			tasks: [{
+				id: "3DE553E0A6C27B36"
+				type: "checkmark"
+				title: "Ok!"
+			}]
+		}
+		{
+			title: "Becoming a Mystical Knight"
+			x: -12.5d
+			y: 0.5d
+			shape: "square"
+			subtitle: "Base material for Mystical Agriculture. It is obtained by energizing Terminite and Draconium"
+			dependencies: [
+				"3EC9990D435FB994"
+				"2189BE654F45470A"
+				"78ECF24A2D1EB21A"
+			]
+			size: 2.0d
+			id: "268543BE27CB36E3"
+			tasks: [{
+				id: "18F42AB24C3C8517"
+				type: "item"
+				item: "mysticalagriculture:prosperity_ingot"
+			}]
+		}
+		{
+			x: -6.0d
+			y: -1.0d
+			shape: "square"
+			subtitle: "Grow the Pink Slime seeds to produce Pink Slimeballs and advance towards infinity"
+			dependencies: [
+				"1D781547D59DC885"
+				"6761DAF630E24995"
+				"0A574FE8A32052DE"
+			]
+			id: "1C2176A86945597E"
+			tasks: [{
+				id: "50461D4B18BCE816"
+				type: "item"
+				item: "mysticalagriculture:pink_slime_seeds"
+			}]
+		}
+		{
+			x: -10.0d
+			y: 0.5d
+			shape: "square"
+			subtitle: "Growing totally legal plants. Left Click for more info"
+			description: [
+				"Like the most majority of the mods available, Mystical Agriculture also has its own crafting system and it's called The Infusion Altar."
+				""
+				"It is made out of two parts: The Altar and the Pedestals. After placing the Altar down, the Pedestal placement locations will be shown. "
+				""
+				"To craft something, place your items on the Altar and Pedestals by Right-Clicking with them, or by using item pipes, and then, provide a redstone signal to start the crafting process."
+			]
+			dependencies: [
+				"268543BE27CB36E3"
+				"01454647A04025DA"
+				"1F1573111F7E02AF"
+			]
+			id: "0784FAA81F918BF0"
+			tasks: [
+				{
+					id: "307BBBDF7445259E"
+					type: "item"
+					item: "mysticalagriculture:infusion_altar"
+				}
+				{
+					id: "1B98CA1F6B1431A3"
+					type: "item"
+					item: "mysticalagriculture:infusion_pedestal"
+					count: 8L
+				}
+			]
+			rewards: [{
+				id: "4C1F7E5C562437FD"
+				type: "loot"
+				table_id: 3966812906621148304L
+			}]
+		}
+		{
+			x: -10.0d
+			y: -2.0d
+			shape: "square"
+			subtitle: "Base for Mystical Agriculture's 1st Tier. Will allow you to grow Ice, Wood, and more types of Crops. It is also the only type of Essence which can be turned into a crop which can be grown"
+			dependencies: ["13CEDEFFDB89D920"]
+			id: "73D5AB177A05AFFD"
+			tasks: [{
+				id: "7CCCEC90069B9556"
+				type: "item"
+				item: "mysticalagriculture:inferium_essence"
+			}]
+			rewards: [{
+				id: "0E590FBDCD33A140"
+				type: "loot"
+				table_id: 8587500481418189075L
+			}]
+		}
+		{
+			x: -8.0d
+			y: -2.0d
+			shape: "square"
+			subtitle: "Base for Mystical Agriculture's 2nd Tier. Will allow you to grow Uraninite, Aluminum, and more types of Crops"
+			dependencies: ["73D5AB177A05AFFD"]
+			id: "5B254040E2C7BB6D"
+			tasks: [{
+				id: "33D66E1FE7F91A04"
+				type: "item"
+				item: "mysticalagriculture:prudentium_essence"
+			}]
+			rewards: [{
+				id: "5B4EC74FE2F19B18"
+				type: "loot"
+				table_id: 8587500481418189075L
+			}]
+		}
+		{
+			x: -7.0d
+			y: -2.0d
+			shape: "square"
+			subtitle: "Base for Mystical Agriculture's 3rd Tier. Will allow you to grow Crops for the most majority of the ores/minerals available"
+			dependencies: ["5B254040E2C7BB6D"]
+			id: "625A8912D0199540"
+			tasks: [{
+				id: "391D6E13E130CDA9"
+				type: "item"
+				item: "mysticalagriculture:tertium_essence"
+			}]
+			rewards: [{
+				id: "436391EAAA40716D"
+				type: "loot"
+				table_id: 7176426831663151036L
+			}]
+		}
+		{
+			x: -6.0d
+			y: -2.0d
+			shape: "square"
+			subtitle: "Base for Mystical Agriculture's 4th Tier. Will allow you to access rare metal Crops"
+			dependencies: ["625A8912D0199540"]
+			id: "6761DAF630E24995"
+			tasks: [{
+				id: "2FBC190E0B2BDCD4"
+				type: "item"
+				item: "mysticalagriculture:imperium_essence"
+			}]
+			rewards: [{
+				id: "0B69F674CF48445D"
+				type: "loot"
+				table_id: 7176426831663151036L
+			}]
+		}
+		{
+			x: -5.0d
+			y: -2.0d
+			shape: "square"
+			subtitle: "Base for Mystical Agriculture's 5th Tier. Will allow you to obtain Diamond and Netherite Crops. It will also give you access to a very powerful set of Armor and Tools which are Modular and can accept Augments"
+			dependencies: ["6761DAF630E24995"]
+			id: "77CEF9AA1C8EC6FD"
+			tasks: [{
+				id: "55998B07048332F1"
+				type: "item"
+				item: "mysticalagriculture:supremium_essence"
+			}]
+			rewards: [{
+				id: "10689B4AD4148F3C"
+				type: "loot"
+				table_id: 3966812906621148304L
+			}]
+		}
+		{
+			x: -4.0d
+			y: -2.0d
+			shape: "square"
+			subtitle: "The Base for Mystical Agriculture's last Tier. Will give you access to Nether Star and Dragon Egg Crops. It will also allow you to enter in the ProjectE"
+			dependencies: ["77CEF9AA1C8EC6FD"]
+			id: "7983AC02872A7903"
+			tasks: [{
+				id: "6A5F550B2F805354"
+				type: "item"
+				item: "mysticalagradditions:insanium_essence"
+			}]
+			rewards: [{
+				id: "06622CE12233E47E"
+				type: "loot"
+				table_id: 3966812906621148304L
+			}]
+		}
+		{
+			title: "Welcome to Mystical Agriculture"
+			x: -12.5d
+			y: -2.0d
+			shape: "square"
+			subtitle: "Planting essential resources. Left Click for more info"
+			description: [
+				"Mystical Agriculture is a mod that allows you grow crops for resources as an alternative to quarries. "
+				""
+				"In our pack, these crops are mostly used to obtain resources such as metals and minerals. Feel free to look through JEI to see what crops you have available."
+				""
+				"Now, let's talk about tiers and how to start with this mod. There are 6 tiers, represented by Essences. Each tier will be more and more expensive to obtain, but it will also be more powerful."
+				""
+				"Each plant added by this mod is bound to a different tier, as a result of their output. For example, Wood Crops will be made with Inferium Essence (which is the 1st Tier), and the Iron Crops will be made with Tertium Essence (which is the 3rd Tier)."
+				""
+				"To obtain the 1st Tier of Essence (Inferium), you'll need Luminessence. By dropping this glowing powder in a Mana Pool with an Alchemy Catalyst under it, you can obtain the Inferium Essence."
+				""
+				"For the Luminessence, we recommend using a Resonant Integral Component with Flux Linkage Amplifiers for each Fluid Encapsulator you're going to use."
+			]
+			dependencies: ["78ECF24A2D1EB21A"]
+			size: 2.0d
+			id: "13CEDEFFDB89D920"
+			tasks: [{
+				id: "6431BB7460FCBB4E"
+				type: "item"
+				item: "extendedcrafting:luminessence"
+			}]
+		}
+		{
+			x: -8.0d
+			y: 0.5d
+			shape: "square"
+			subtitle: "The Prosperity Seeds are the base for each special crop added by Mystical Agriculture. Make sure you've got lots of these"
+			dependencies: ["0784FAA81F918BF0"]
+			id: "0A574FE8A32052DE"
+			tasks: [{
+				id: "6AA1D35CA071828E"
+				type: "item"
+				item: "mysticalagriculture:prosperity_seed_base"
+			}]
+		}
+		{
+			x: -8.0d
+			y: -1.0d
+			shape: "diamond"
+			subtitle: "Make the Uraninite Seeds and start growing your way towards massive amounts of Powah!"
+			dependencies: [
+				"0A574FE8A32052DE"
+				"5B254040E2C7BB6D"
+				"6987496DAC648CAC"
+				"7C04B7C2DDAB717B"
+			]
+			id: "2E80CB94077AB4B9"
+			tasks: [{
+				id: "51148A2225BCC346"
+				type: "item"
+				item: "mysticalagriculture:uraninite_seeds"
+			}]
+		}
+		{
+			title: "Covalence Dusts"
+			x: -3.0d
+			y: 0.0d
+			shape: "square"
+			subtitle: "Three colors in my world. Left Click for more info"
+			description: [
+				"The Covalance Dusts are used in high end recipes to obtain powerful machines and overpowered items."
+				""
+				"Covalence dust comes in 3 tiers. This includes Low (Green), Medium (Light Blue), High (Dark Blue)."
+			]
+			dependencies: ["62B77E823E7C96CE"]
+			id: "75EB00BEED4C74E3"
+			tasks: [
+				{
+					id: "275E4C81C8F89AB4"
+					type: "item"
+					item: "projecte:low_covalence_dust"
+				}
+				{
+					id: "1C8CFB9E28E0A626"
+					type: "item"
+					item: "projecte:medium_covalence_dust"
+				}
+				{
+					id: "555ACB3FAA8A19AB"
+					type: "item"
+					item: "projecte:high_covalence_dust"
+				}
+			]
+		}
+		{
+			x: -1.5d
+			y: 0.0d
+			shape: "square"
+			subtitle: "Equivalent to 4 regular Coals. However, it has the potential to be create even more powerful fuels"
+			dependencies: ["75EB00BEED4C74E3"]
+			id: "1D8480D78DB3313C"
+			tasks: [{
+				id: "391EC0DF15725608"
+				type: "item"
+				item: "projecte:alchemical_coal"
+			}]
+			rewards: [{
+				id: "7BBAD0EFEDB2FAD1"
+				type: "loot"
+				table_id: 7176426831663151036L
+			}]
+		}
+		{
+			x: -0.5d
+			y: 0.0d
+			shape: "square"
+			subtitle: "Equivalent to 16 regular Coals. However, it has the potential to be create even more powerful fuels"
+			dependencies: ["1D8480D78DB3313C"]
+			id: "01E0BC926197C0C2"
+			tasks: [{
+				id: "6AFE6E51D409DBB2"
+				type: "item"
+				item: "projecte:mobius_fuel"
+			}]
+			rewards: [{
+				id: "75145B21175E52D6"
+				type: "loot"
+				table_id: 7176426831663151036L
+			}]
+		}
+		{
+			x: 0.5d
+			y: 0.0d
+			shape: "square"
+			subtitle: "Equivalent to 64 regular Coals. However, it has the potential to be create even more powerful fuels and strage objects"
+			dependencies: ["01E0BC926197C0C2"]
+			id: "5E2127A7705A4A6F"
+			tasks: [{
+				id: "4DABD9B453D24824"
+				type: "item"
+				item: "projecte:aeternalis_fuel"
+			}]
+			rewards: [{
+				id: "6E0DDA7911F2BE64"
+				type: "loot"
+				table_id: 7176426831663151036L
+			}]
+		}
+		{
+			title: "The Mystical Gemstones"
+			x: -10.0d
+			y: 2.5d
+			shape: "square"
+			subtitle: "Will be used as a base material in Mystical Agriculture. Is obtained by Energizing Souce Gems"
+			dependencies: ["17442ADE28BA9B49"]
+			size: 2.0d
+			id: "1F1573111F7E02AF"
+			tasks: [{
+				id: "52D605A89BC4385E"
+				type: "item"
+				item: "mysticalagriculture:prosperity_gemstone"
+			}]
+		}
+		{
+			x: -3.0d
+			y: -1.0d
+			shape: "heart"
+			subtitle: "Plant them, give them a Crux, give them the best soil and some Growth Accelerators and watch them as they give you infinite Nether Stars"
+			dependencies: ["09DC773965145FAD"]
+			id: "4F3C55E280C39BC2"
+			tasks: [{
+				id: "4591A4F4864570B6"
+				type: "item"
+				item: "mysticalagriculture:nether_star_seeds"
+			}]
+		}
+		{
+			x: -3.0d
+			y: -3.0d
+			shape: "heart"
+			subtitle: "Plant them, give them a Crux, give them the best soil and some Growth Accelerators and watch them as they give you infinite Dragon Eggs"
+			dependencies: ["09DC773965145FAD"]
+			id: "3897396F82F93C1B"
+			tasks: [{
+				id: "35BAF2833C9FA0EB"
+				type: "item"
+				item: "mysticalagriculture:dragon_egg_seeds"
+			}]
+		}
+		{
+			title: "Cruxes for Overpowered Vegetation"
+			x: -3.0d
+			y: -2.0d
+			shape: "gear"
+			subtitle: "Some plants can't just grow on dirt and need additional support. When growing Nether Star and Dragon Egg Seeds, Cruxes will be required. These have to be placed underneath the dirt block that has a plant growing untop of it. And of course, each plant requires its own unique Crux"
+			dependencies: ["7983AC02872A7903"]
+			id: "09DC773965145FAD"
+			tasks: [
+				{
+					id: "09B326EE93EFF4B7"
+					type: "item"
+					item: "mysticalagradditions:nether_star_crux"
+				}
+				{
+					id: "5369FCEB62B826EF"
+					type: "item"
+					item: "mysticalagradditions:dragon_egg_crux"
+				}
+			]
+		}
+		{
+			title: "The Tinker Table"
+			x: -5.0d
+			y: -4.5d
+			shape: "gear"
+			subtitle: "This is a modification station capable of adding Augments to different modular items from Mystical Agriculture. Although it has 6 slots available, all the modular items will use just one of these, so yeah. Consider this table to have only one slot. The modular items consist in all the Supremium Tools and the Supremium Armor set"
+			dependencies: ["77CEF9AA1C8EC6FD"]
+			size: 1.5d
+			id: "1AB281AAAE7C3826"
+			tasks: [{
+				id: "6EF4B099D830B871"
+				type: "item"
+				item: "mysticalagriculture:tinkering_table"
+			}]
+			rewards: [{
+				id: "1E82C8FE946D67E6"
+				type: "loot"
+				table_id: 3966812906621148304L
+			}]
+		}
+		{
+			x: -10.0d
+			y: -1.0d
+			shape: "gear"
+			subtitle: "Inferium is the only Essence from Mystical Agriculture which can be grown. Make the Inferium Seeds to start making the greatest Garden seen by mankind"
+			dependencies: [
+				"73D5AB177A05AFFD"
+				"0A574FE8A32052DE"
+			]
+			id: "087E305FEA5F6023"
+			tasks: [{
+				id: "7078EA76003ED1A3"
+				type: "item"
+				item: "mysticalagriculture:inferium_seeds"
+			}]
+		}
+		{
+			x: -4.0d
+			y: -3.0d
+			shape: "gear"
+			subtitle: "Biofuel is a fluid added by Industrial Foregoing. Biofuel is created in a Magma Crucible with Insanium Essence. This liquid will be used by different Industrial Foregoing gadgets. It also has some other uses. It will inflict Speed and Haste status effects if it is consumed with a Straw. Entities will be inflicted with Haste while touching Biofuel"
+			dependencies: ["7983AC02872A7903"]
+			id: "602570E296D9834F"
+			tasks: [{
+				id: "6ED9BC7EF0C4FDA1"
+				type: "item"
+				item: {
+					id: "industrialforegoing:biofuel_bucket"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+	]
+}

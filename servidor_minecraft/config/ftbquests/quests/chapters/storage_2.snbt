@@ -1,0 +1,840 @@
+{
+	id: "4D3E521122B9FC2F"
+	group: "532DAB84AB301350"
+	order_index: 2
+	filename: "storage_2"
+	title: "Storage - 2"
+	icon: "prettypipes:item_terminal"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.5d
+			y: -3.5d
+			shape: "gear"
+			subtitle: "Everything goes through it. Left Click for more info"
+			description: [
+				"The Pipes can be used to connect chests and other storage options together, thus making a storage system very similar to an ME system, but quite primitive at the same time."
+				""
+				"The pipes have an internal inventory which can hold up to three upgrades. This inventory will be available if a pipe has a machine/inventory directly connected to it. Each upgrade will make the pipes run faster or give it certain abilities, such as retaining recipes for auto-crafting."
+			]
+			dependencies: ["317181A56CEF7C70"]
+			size: 1.5d
+			id: "1912B03B18D40D1D"
+			tasks: [{
+				id: "74637303CAD82B9B"
+				type: "item"
+				item: "prettypipes:pipe"
+				count: 8L
+			}]
+		}
+		{
+			x: 3.5d
+			y: -3.5d
+			shape: "gear"
+			subtitle: "All's connected. Left Click for more info"
+			description: [
+				"The Item Terminal will allow you to view all the items in your system, to request them, or send them back to the system."
+				""
+				"If you're familiar with AE2 or RS, you can consider this a simple terminal, and the chests, your storage cells. However, if you have no idea what AE2 or RS are, well think of this terminal as a master control panel where you can get any item you want from one of your chests, as long as there's a pipe connection between the chest and the terminal."
+				""
+				"A simple connection example:"
+				""
+				"{image:kubejs:textures/prettypipes/simple_connection_example.png width:140 height:100 align:1}"
+				""
+				"The chest in the example, can be easily replaced with 10000 million chests, as long as you have enough pipes, of course."
+				""
+				"Terminal interface example:"
+				""
+				"{image:kubejs:textures/prettypipes/item_terminal_interface_example.png width:110 height:100 align:1 fit:true}"
+				""
+				"Red - Here you can see all the items in your system."
+				""
+				"Green - Here you can search for a certain items. This will be useful if you have thousands of items."
+				""
+				"Orange - Here you can choose how you want your items to be listed. They can be listed either by their amount, alphabetically or by their mod. You can also choose if you want them to be listed ascending or descending."
+				""
+				"Dark Blue - Here you can select the amount of items you want from the system. Also, here you can request them after a certain amount was selected. To request an item, click it in the item list (red), select an amount and then, hit \"request\". A message should appear in the chat stating that a certain amount of an items, was sent to the terminal. Keep in mind, that items have to actually come from the chest to the terminal, so a greater distance between the chest area and the terminal, will mean more time for the items to reach their destination. The speed at which the items are moving can be increased with Speed Increase Modules."
+				""
+				"Light Blue - Here you'll receive your requested items."
+				""
+				"Magenta - Here you can place items back into the system. The pipes will try to put the items in the closest chest available. Of course, you'll be able to sort your items with different modules later."
+				""
+				"One more thing, only one side of the Terminal can have a pipe attached to it."
+			]
+			dependencies: [
+				"1912B03B18D40D1D"
+				"7B959027BE4234D8"
+			]
+			size: 1.5d
+			id: "526134260FAFD727"
+			tasks: [{
+				id: "2F6E8FBF60B4CB3E"
+				type: "item"
+				item: "prettypipes:item_terminal"
+			}]
+			rewards: [{
+				id: "60767F850C66856A"
+				type: "loot"
+				table_id: 5206766833681472091L
+			}]
+		}
+		{
+			x: 5.0d
+			y: -3.5d
+			shape: "gear"
+			subtitle: "Produced by Stank Industries in the 1800s. Left Click for more info"
+			description: [
+				"The Crafting Terminal is very similar to the Item Terminal, but it has a small addition to it. This one will allow you to craft directly into it, so you don't have to use an external crafting table anymore."
+				""
+				"Crafting Terminal interface example:"
+				""
+				"{image:kubejs:textures/prettypipes/crafting_terminal_interface_example.png width:160 height:100 align:1 fit:true}"
+				""
+				"As you can see in the example above, this Terminal has a crafting interface. However, don't get too excited, as you'll still have to request your items from your system in order to place them into the grid. This will be bothering especially when you're quickly selecting a recipe from JEI. But hey, better than nothing, right?"
+				""
+				"Lastly, this terminal will also allow for just one of its faces to be attached to a pipe."
+			]
+			dependencies: [
+				"526134260FAFD727"
+				"275FE11C673E522D"
+			]
+			size: 1.5d
+			id: "0B8E2DA9B43167E0"
+			tasks: [{
+				id: "6308EA57F185265B"
+				type: "item"
+				item: "prettypipes:crafting_terminal"
+			}]
+			rewards: [{
+				id: "0D24151B6C4B9423"
+				type: "loot"
+				table_id: 8587500481418189075L
+			}]
+		}
+		{
+			x: 2.0d
+			y: -9.5d
+			shape: "gear"
+			subtitle: "Full recipes available. This upgrade will give you 9 input slots and 4 output slots. This will unlock full crafting recipes. Mostly useful for auto-crafting a recipe which would require 9 different items"
+			dependencies: [
+				"1EFC36C4EDF9C7EB"
+				"2E3880C1F6D082FA"
+			]
+			id: "1E4FF1C53D3430E8"
+			tasks: [{
+				id: "18852A28B69D674F"
+				type: "item"
+				item: "prettypipes:high_crafting_module"
+			}]
+		}
+		{
+			x: 5.5d
+			y: -8.5d
+			shape: "gear"
+			subtitle: "Items move the fastest"
+			dependencies: ["6CFF430CA12BC369"]
+			id: "54F90B99AFBE0BA3"
+			tasks: [{
+				id: "524F864BE26E502B"
+				type: "item"
+				item: "prettypipes:high_speed_module"
+			}]
+		}
+		{
+			x: 2.5d
+			y: -6.5d
+			shape: "gear"
+			subtitle: "Want to control your pipe with a redstone signal? This module will allow just that. Works for wither sending or retrieving"
+			hide_dependency_lines: true
+			dependencies: ["61069757CDBB386B"]
+			id: "7C98D6E0B58B9265"
+			tasks: [{
+				id: "63F07CB40E88A1C1"
+				type: "item"
+				item: "prettypipes:redstone_module"
+			}]
+		}
+		{
+			x: 1.5d
+			y: -6.5d
+			shape: "gear"
+			subtitle: "Limits the amount of items that can enter adjent inventories. It will automatically prevent over-sending"
+			hide_dependency_lines: true
+			dependencies: ["61069757CDBB386B"]
+			id: "2C0A6FF55BBBD846"
+			tasks: [{
+				id: "1CF451FACA14D1A7"
+				type: "item"
+				item: "prettypipes:stack_size_module"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -6.5d
+			shape: "gear"
+			subtitle: "This place is not that important: Works similar to the High Priority Module, but instead of forcing the items to go into it, this module will make the items to prefer the whole system, rather then the pipe which has it installed"
+			hide_dependency_lines: true
+			dependencies: ["61069757CDBB386B"]
+			id: "02276C25C768FE78"
+			tasks: [{
+				id: "27F65709FFC3384D"
+				type: "item"
+				item: "prettypipes:low_low_priority_module"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -8.5d
+			shape: "gear"
+			subtitle: "Hadn't I closed this area? 0_o: This module has the lowest priority yet. Your items will pass through it very rarely, depending on what conditions you're creating for your system"
+			dependencies: ["4B580F0070FAF409"]
+			id: "34705FDD871C4B67"
+			tasks: [{
+				id: "6D810971DC37CED2"
+				type: "item"
+				item: "prettypipes:high_low_priority_module"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -7.5d
+			shape: "gear"
+			subtitle: "What was this place for?: This module has even less priority"
+			dependencies: ["02276C25C768FE78"]
+			id: "4B580F0070FAF409"
+			tasks: [{
+				id: "190CDE131D67BE66"
+				type: "item"
+				item: "prettypipes:medium_low_priority_module"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -6.5d
+			shape: "gear"
+			subtitle: "Come here first!: Ever wanted your items to go into a certain inventory, before others? Well, now's possible. Placing this module in a pipe connected to an inventory, will make the items in your system, try to reach that inventory first. This upgrade can be used to properly sort your items through your system"
+			hide_dependency_lines: true
+			dependencies: ["61069757CDBB386B"]
+			id: "1C95FD0867A2D69C"
+			tasks: [{
+				id: "4124C53B69976600"
+				type: "item"
+				item: "prettypipes:low_high_priority_module"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -7.5d
+			shape: "gear"
+			subtitle: "Higher Priority means more possibilities: This Higher Priority Module will overwrite other upgrades with a lower priority, so your items will try to reach the pipe which has this upgrade first"
+			dependencies: ["1C95FD0867A2D69C"]
+			id: "7EA0B2EE9CDD9C73"
+			tasks: [{
+				id: "5FAE9942A88D2145"
+				type: "item"
+				item: "prettypipes:medium_high_priority_module"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -8.5d
+			shape: "gear"
+			subtitle: "Here, or nowhere: This module has the highest priority yet"
+			dependencies: ["7EA0B2EE9CDD9C73"]
+			id: "45996F94DA59F608"
+			tasks: [{
+				id: "1B78472BCBA0E4F4"
+				type: "item"
+				item: "prettypipes:high_high_priority_module"
+			}]
+		}
+		{
+			x: -0.5d
+			y: -6.5d
+			shape: "gear"
+			subtitle: "Thermal Servos?: This upgrade will pull items from inventories without any commands from a terminal. It also has a filter so you can choose what items you want to be extracted. This can be useful for setting up wood farms and all sorts of factories. Has 3 filter slots. Will pull one item at a time"
+			hide_dependency_lines: true
+			dependencies: ["61069757CDBB386B"]
+			id: "77F12FBA8982D481"
+			tasks: [{
+				id: "2CE53908390B6353"
+				type: "item"
+				item: "prettypipes:low_extraction_module"
+			}]
+		}
+		{
+			x: -0.5d
+			y: -7.5d
+			shape: "gear"
+			subtitle: "Has 6 filter slots. Will pull 4 items at a time"
+			dependencies: ["77F12FBA8982D481"]
+			id: "2363E53ADC604EC7"
+			tasks: [{
+				id: "50A51596BCF43079"
+				type: "item"
+				item: "prettypipes:medium_extraction_module"
+			}]
+		}
+		{
+			x: -0.5d
+			y: -8.5d
+			shape: "gear"
+			subtitle: "Has 9 filter slots. Will pull 1 stack at a time"
+			dependencies: ["2363E53ADC604EC7"]
+			id: "2EC98866789E450F"
+			tasks: [{
+				id: "21E063B362E685DB"
+				type: "item"
+				item: "prettypipes:high_extraction_module"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -6.5d
+			shape: "gear"
+			subtitle: "Vacuum Servo: Works similar to the Extraction Module, but it has to be placed in the destination pipe. It also has a filter, but you'll have to fill it with items in order for the module to start pulling items from other chests. Has 3 filter slots. Will pull one item at a time"
+			hide_dependency_lines: true
+			dependencies: ["61069757CDBB386B"]
+			id: "2AAFDC6E74747378"
+			tasks: [{
+				id: "6A5D95C5B689AF08"
+				type: "item"
+				item: "prettypipes:low_retrieval_module"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -7.5d
+			shape: "gear"
+			subtitle: "Has 6 filter slots. Will pull 8 items at a time"
+			dependencies: ["2AAFDC6E74747378"]
+			id: "09DDC809620AFCF5"
+			tasks: [{
+				id: "4178B52406AAE39C"
+				type: "item"
+				item: "prettypipes:medium_retrieval_module"
+			}]
+		}
+		{
+			x: -1.5d
+			y: -8.5d
+			shape: "gear"
+			subtitle: "Has 9 filter slots. Will pull 16 items at a time"
+			dependencies: ["09DDC809620AFCF5"]
+			id: "41E001269484EFEC"
+			tasks: [{
+				id: "4D9C8DB239E4171B"
+				type: "item"
+				item: "prettypipes:high_retrieval_module"
+			}]
+		}
+		{
+			x: 4.5d
+			y: -6.5d
+			shape: "gear"
+			subtitle: "Yes, filters. Left Click for more info"
+			description: [
+				"This module will allow you to set up filters for your system."
+				""
+				"This module has to be placed in the pipe which is directly connected to the destination chest. After being installed, a filter menu will be provided. Here, you can place items to either be allowed or dissallowed to enter the chest."
+				""
+				"This module has 5 filter slots."
+			]
+			hide_dependency_lines: true
+			dependencies: ["61069757CDBB386B"]
+			id: "7AD6C299B230A830"
+			tasks: [{
+				id: "4DD0D21A4495AFB1"
+				type: "item"
+				item: "prettypipes:low_filter_module"
+			}]
+		}
+		{
+			x: 4.5d
+			y: -7.5d
+			shape: "gear"
+			subtitle: "Has 9 filter slots"
+			dependencies: ["7AD6C299B230A830"]
+			id: "05A2269C64054454"
+			tasks: [{
+				id: "5607AA3D83CFD037"
+				type: "item"
+				item: "prettypipes:medium_filter_module"
+			}]
+		}
+		{
+			x: 4.5d
+			y: -8.5d
+			shape: "gear"
+			subtitle: "Has 18 filter slots"
+			dependencies: ["05A2269C64054454"]
+			id: "420512A12E7BD752"
+			tasks: [{
+				id: "7630D8800BAE4A36"
+				type: "item"
+				item: "prettypipes:high_filter_module"
+			}]
+		}
+		{
+			title: "The Pretty Pipe System"
+			icon: "prettypipes:pipe_frame"
+			x: -1.0d
+			y: -3.5d
+			shape: "gear"
+			subtitle: "Budget ME! Left Click for more info"
+			description: [
+				"Pretty Pipes is a mod which allows players to connect their chests and other storage options together to create a nice ecosystem which they can access easily and without too much issues."
+				""
+				"While you'll need pipes (lots of them) to start tinkering with this mod, you'll also need a wrench to properly control the pipes. With the Pipe Wrench you can do the following modifications:"
+				""
+				"- You can disconnect pipes from certain blocks as, by default, the pipes will connect to anything accessible for them."
+				""
+				"- By shift right-clicking a pipe, you can break them very easily."
+				""
+				"- If you're holding the Wrench in your right hand, and a block in your right hand, you can place the blocks from the right hand, as covers for the pipes. These covers can be removed by shift right-clicking them with the Wrench."
+			]
+			dependencies: ["606DD326CCAB7FB2"]
+			size: 1.5d
+			id: "317181A56CEF7C70"
+			tasks: [{
+				id: "0F0506B37D76568F"
+				type: "checkmark"
+				title: "Oki!"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -5.5d
+			subtitle: "This will be the base for all the modules for the Pretty Pipes system. Left Click for more info"
+			description: [
+				"Modules will make your pipes and, in consequance, your whole system, better."
+				""
+				"These (not actually the one in this quest, lol) have to be placed in one of the pipe's inventory slots in order to work."
+				""
+				"We'll talk later more about the location where these modules can and have to be placed in order for them to work properly, but for now, just remember that they should be placed in the pipe which is directly connected to a storage block/machine/station."
+			]
+			dependencies: [
+				"59DF5370DD2EAE51"
+				"2E3880C1F6D082FA"
+			]
+			id: "61069757CDBB386B"
+			tasks: [{
+				id: "0EFA60204AC79B00"
+				type: "item"
+				item: "prettypipes:blank_module"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 0.5d
+			shape: "gear"
+			subtitle: "The Reinforced Storage Crate it's  like a Chest, but when broken, all of the items are kept. Right-clicking it allows access to it's contents.The Reinforced Storage Crate cannot be destroyed by an explosion"
+			dependencies: ["69DA94D714E296AC"]
+			id: "2874AD40A40240FC"
+			tasks: [{
+				id: "48A577C46DDC0A90"
+				type: "item"
+				item: "immersiveengineering:reinforced_crate"
+			}]
+		}
+		{
+			x: 3.5d
+			y: 0.5d
+			shape: "gear"
+			subtitle: "The Adjustable Crate is an item container which can hold a maximum amount of 1024 items. By scrolling up/down you can select exactly the quantity of items that are allowed to be placed in the crate. A fellow engineer might find a great use for this in their contraption"
+			dependencies: ["5F68C4D92EF20E09"]
+			id: "2B2BF49903C16BBC"
+			tasks: [{
+				id: "4A4729CA7708E538"
+				type: "item"
+				item: "create:adjustable_crate"
+			}]
+		}
+		{
+			title: "Immersive Tank"
+			x: 2.5d
+			y: 1.5d
+			shape: "gear"
+			subtitle: "512 buckets of liquid"
+			description: [
+				"The Tank is a multiblock structure provided by Immersive Engineering. It can hold up to 512 buckets of any liquid. To build it, you'll need 34 iron sheetmetal blocks and 4 treated fences. An immersive hammer will be required to finalize the build."
+				""
+				"For more info consult the engineering manual."
+			]
+			dependencies: ["59DF5370DD2EAE51"]
+			id: "57AC69C355FD9677"
+			tasks: [
+				{
+					id: "67C8061A619BC88E"
+					type: "item"
+					item: "immersiveengineering:sheetmetal_iron"
+					count: 34L
+				}
+				{
+					id: "05D222C135F2F253"
+					type: "item"
+					item: "immersiveengineering:treated_fence"
+					count: 4L
+				}
+			]
+		}
+		{
+			title: "Silo"
+			x: 1.5d
+			y: 1.5d
+			shape: "gear"
+			subtitle: "41472 items?! 0_o Left Click for more info"
+			description: [
+				"The Silo is very similar to the tank."
+				""
+				"However, unlike the tank, it is used for storing large amounts of one item. It is an equivalent to 24 chests."
+				""
+				"The top of the structure is used as an imput, while the bottom is used as an output."
+			]
+			dependencies: ["59DF5370DD2EAE51"]
+			id: "18D81EDA2C78EF5E"
+			tasks: [
+				{
+					id: "5EB30DD46D6708ED"
+					type: "item"
+					item: "immersiveengineering:sheetmetal_iron"
+					count: 50L
+				}
+				{
+					id: "46544FAB85939875"
+					type: "item"
+					item: "immersiveengineering:treated_fence"
+					count: 4L
+				}
+			]
+		}
+		{
+			x: 1.5d
+			y: 0.5d
+			shape: "gear"
+			subtitle: "The Fluid Tank is a block added by Create. When placed next to each other, these tanks will fuse together to combine their volume, thus making a larger tank"
+			dependencies: ["59DF5370DD2EAE51"]
+			id: "339788904F451471"
+			tasks: [{
+				id: "7F3A4BC0ACCA0E72"
+				type: "item"
+				item: "create:fluid_tank"
+			}]
+		}
+		{
+			x: 5.5d
+			y: -6.5d
+			shape: "gear"
+			subtitle: "Let's get things moving. Left Click for more info"
+			description: [
+				"Has to be placed in the pipes which have a valind inventory connected to them."
+				""
+				"This upgrade will give a speed boost for the items which come out of an inventory."
+				""
+				"For example, when it is placed in a pipe connected to a chest, the items comming from that chest will move at greater speeds."
+				""
+				"Note that this upgrade will NOT increase the speed of the whole system. You'll need an upgrade for each chest you've got, including the terminals."
+			]
+			hide_dependency_lines: true
+			dependencies: ["61069757CDBB386B"]
+			id: "0C1F9A71F1B44ECE"
+			tasks: [{
+				id: "28C1A534D9C3B359"
+				type: "item"
+				item: "prettypipes:low_speed_module"
+			}]
+		}
+		{
+			x: 5.5d
+			y: -7.5d
+			shape: "gear"
+			subtitle: "Items move faster"
+			dependencies: ["0C1F9A71F1B44ECE"]
+			id: "6CFF430CA12BC369"
+			tasks: [{
+				id: "12A167BDC0E5D3D7"
+				type: "item"
+				item: "prettypipes:medium_speed_module"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -7.5d
+			shape: "gear"
+			subtitle: "Auto Crafting is possible RIGHT NOW! Left Click for more info"
+			description: [
+				"Ok, this might be a little tricky to understand, but this upgrade will just allow your system to use an external auto-crafting table to perform crafting operations. Right now, the only auto-crafting table available to you, will be the Rat Crafting Table from the Rats mod."
+				""
+				"In order for this upgrade to work properly, you'll have to place it in the pipe which is directly connected to your auto-crafter (Rat Crafting Table)."
+				""
+				"This is the Low tier and it will allow for just one recipe with one ingredient to be kept by a pipe. However, the Rat Crafting Table can remember only one recipe, so you might find the higher tier upgrades, to be useful just for the possibility of using multiple items for the input. And yeah, you can place three of these upgrades in a pipe, so you should be good for now."
+				""
+				"Example of how the Crafting Module interface looks:"
+				""
+				"{image:kubejs:textures/prettypipes/low_crafting_module_example.png width:170 height:100 align:1}"
+				""
+				"By default, this module comes empty. The top slots (higher tiers have more slots) of the interface are the place where you'll put the ingredients for the recipe. Don't worry, those are just ghost items, it will not actually take 9 diamonds and a diamond block, for example."
+				""
+				"The bottom slot is for the output. You'll have to place the items valid for a recipe output in there. In the above example, 9 pieces of Stone would result in 1 piece of Compressed Stone, so that's what we've placed there. Invalid recipes will simply do nothing, as this menu just serves as a way of you telling the system with what items it should try to make another item."
+				""
+				"When a recipe is placed in the module, a terminal will show that item as a requestable recipe:"
+				""
+				"{image:kubejs:textures/prettypipes/requestable_recipe_example.png width:160 height:100 align:1 fit:true}"
+				""
+				"After the \"Request\" button was pressed, the items will be moved from the chest and placed into the auto-crafting table (in your case, the Rat Crafting Table)."
+				""
+				"After the table finishes the recipe, another pipe, placed on the bottom of the table, will take the output and deliver it to the Terminal. Keep in mind that the Rat Crafting Table can output ONLY from the bottom side."
+				""
+				"Example of a simple auto-crafting setup:"
+				""
+				"{image:kubejs:textures/prettypipes/simple_auto_crafting_setup_example.png width:100 height:100 align:1}"
+				""
+				"The pipe highlited in the example above, is where the Low Crafting Module is placed."
+				"The pipe below the crafting table, will take the Compressed Stone when it's finished and deliver it to the Terminal, for you to use it."
+				"Having a Crafting Terminal will not affect anything in this process, so no problems there."
+				""
+				"Keep in mind that you can cancel the crafting process at any time, but you'll have to take the items from the Rat Crafting Table manually, as canceling the process will only stop the pipes system from taking the recipe output from the Table."
+			]
+			hide_dependency_lines: true
+			dependencies: ["61069757CDBB386B"]
+			id: "7F6A0D0E88409222"
+			tasks: [{
+				id: "301BB1CE17AA1807"
+				type: "item"
+				item: "prettypipes:low_crafting_module"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -8.5d
+			shape: "gear"
+			subtitle: "More slots, more possiblities. This upgrade has 4 input slots and 2 output slots. Mostly useful for auto-crafting a recipe which would require maximum 4 different items"
+			dependencies: [
+				"7F6A0D0E88409222"
+				"2E3880C1F6D082FA"
+			]
+			id: "1EFC36C4EDF9C7EB"
+			tasks: [{
+				id: "2F2653EA8F1E32B0"
+				type: "item"
+				item: "prettypipes:medium_crafting_module"
+			}]
+		}
+		{
+			title: "The Toolbox (Create)"
+			x: -0.5d
+			y: 0.5d
+			shape: "gear"
+			subtitle: "The Toolbox can hold a maximum amound of 2048 stackable items. To use it, you'll have to place it on the ground. When an item is placed in it, the box will remember that item, so later, you can place it back much easier. While you're in the box's radius while it is placed down, you can access it's contents from a distance, by pressing the toolsbox key (you'll have to bind it in the controls menu). Additionally, the Toolbox has a button in the middle of its interface for quick placing all of your previous items into it. Finally, items can be inserted in the Toolbox through hoppers and other similar means"
+			dependencies: ["59DF5370DD2EAE51"]
+			id: "78EFBF772AA91E6E"
+			tasks: [{
+				id: "07C6D8AE6DD17362"
+				type: "item"
+				item: "create:brown_toolbox"
+			}]
+		}
+		{
+			title: "The Toolbox (Immersive)"
+			x: 4.5d
+			y: 0.5d
+			shape: "gear"
+			subtitle: "Food, Tools, Wires. All on the go: The Engineer's Toolbox  is used to store tools and other items. Right-clicking it will open it. Each slot can only store a specific type of item/block; \"Food\" can store edibles, \"Tools\" can store tools, \"Wiring\" can store Immersive Engineering coils and similar items, and \"Anything\" can store, as it sounds, any block or item.Shift right-clicking it will place it. It can be right-clicked in its block form to be opened. When broken, it will retain all of the items in it"
+			dependencies: ["59DF5370DD2EAE51"]
+			id: "48B30B04BE1BBC45"
+			tasks: [{
+				id: "228ABEF3401AE3C0"
+				type: "item"
+				item: {
+					id: "immersiveengineering:toolbox"
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							Size: 23
+							Items: [ ]
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: 1.0d
+			y: -11.0d
+			shape: "gear"
+			subtitle: "Mana Tablets are used to store mana. This can be used to power any tools from your inventory, that may require it. Keep in mind that this tablet will take one space slot from your inventory, so you might want to upgrade to a Band of Mana"
+			dependencies: ["6E6272D607C825A5"]
+			id: "22731B5D372A1C18"
+			tasks: [{
+				id: "2551F81AA047B460"
+				type: "item"
+				item: {
+					id: "botania:mana_tablet"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 2.0d
+			y: -11.0d
+			shape: "gear"
+			subtitle: "Portable Mana Battery - Mark I: The Band of Mana can be used just like a Mana Tablet, but it comes in the shape of a ring which can be worn in the ring curios slots, to not take away from your inventory. It will store 500.000 Mana"
+			dependencies: [
+				"48148EE28276AB64"
+				"6E6272D607C825A5"
+				"22731B5D372A1C18"
+			]
+			id: "3D04491730811B96"
+			tasks: [{
+				id: "4AA57CB89B6972DE"
+				type: "item"
+				item: {
+					id: "botania:mana_ring"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 3.0d
+			y: -11.0d
+			shape: "gear"
+			subtitle: "Portable Mana Battery - Mark II: The Terrasteel allows this band to hold even larger amounts of mana. It will store 2.000.000 Mana"
+			dependencies: ["3D04491730811B96"]
+			id: "6CFFBD03F401EB98"
+			tasks: [{
+				id: "2585CDCAA9CF4095"
+				type: "item"
+				item: {
+					id: "botania:mana_ring_greater"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 2.0d
+			y: -2.0d
+			shape: "gear"
+			subtitle: "I need power on the go!: This Curios can be placed in your curio back slot and it will allow you to store 100k of RF/FE on the go. You can fill it with electricity at a Charging Station"
+			dependencies: [
+				"3F2B399F6E3190E4"
+				"1F1994D8C11FAB3D"
+			]
+			id: "0081118B49CE15D9"
+			tasks: [{
+				id: "7EADEC3A3A0E931E"
+				type: "item"
+				item: "immersiveengineering:powerpack"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -1.0d
+			shape: "gear"
+			subtitle: "This upgrade can be placed in a backpack to store RF in it. The amount of RF stored will be based on the tier of the backpack. A Netherite Backpack will hold 90k RF"
+			dependencies: [
+				"0081118B49CE15D9"
+				"59DF5370DD2EAE51"
+			]
+			id: "1FEC310512D4775A"
+			tasks: [{
+				id: "2DB1C4116908E809"
+				type: "item"
+				item: "sophisticatedbackpacks:battery_upgrade"
+			}]
+		}
+		{
+			x: 1.0d
+			y: -1.0d
+			shape: "gear"
+			subtitle: "Will give your backpack a fluid tank. Tha amount of fluid storage will be based on the tier of the backpack. A Netherite Backpack will allow 18 buckets to be stored"
+			hide_dependency_lines: true
+			dependencies: [
+				"339788904F451471"
+				"5F68C4D92EF20E09"
+			]
+			id: "6EC70A81B6197D03"
+			tasks: [{
+				id: "07189033DC3904B2"
+				type: "item"
+				item: "sophisticatedbackpacks:tank_upgrade"
+			}]
+		}
+		{
+			title: "Stack Upgrade"
+			x: 3.0d
+			y: -1.0d
+			shape: "gear"
+			subtitle: "This upbrade will allow the maximum stack size of the items stored in a backpack, to be 128, rather then 64"
+			dependencies: ["59DF5370DD2EAE51"]
+			id: "37CCDDD8AD037DD0"
+			tasks: [{
+				id: "06F151F8AEA6B0BA"
+				type: "item"
+				item: "sophisticatedbackpacks:stack_upgrade_tier_1"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -4.339285714285715d
+			shape: "heart"
+			subtitle: "Things will be faster now. Left Click for more info"
+			description: ["When this block is connected to your pipes system and it is provided with RF/FE, it will make the items travel through the pipes at extreme speeds. This will NOT make the item transfer instantaneously, but it will be pretty fast!"]
+			hide_dependency_lines: true
+			dependencies: [
+				"54F90B99AFBE0BA3"
+				"10D3BBDC4C911B81"
+				"7B959027BE4234D8"
+				"79CD250CE08D8C5A"
+				"56017FCF2D7819F8"
+			]
+			id: "778E872EA5D13A96"
+			tasks: [{
+				id: "181019A5C8A847A7"
+				type: "item"
+				item: "prettypipes:pressurizer"
+			}]
+			rewards: [{
+				id: "70712B0906A8F419"
+				type: "loot"
+				table_id: 8587500481418189075L
+			}]
+		}
+		{
+			x: 2.5d
+			y: 0.5d
+			shape: "gear"
+			subtitle: "The Metal Barrel is the upgraded version of the Wooden Barrel. Unlike its wooden counterpart, this one will be able to hold hot fluids, such as lava. It can store the same amount of buckets as the Wooden Barrel"
+			dependencies: [
+				"22D8E166626FA608"
+				"79BB64427280F8AE"
+			]
+			id: "7AE0751DD7654912"
+			tasks: [{
+				id: "095C754FCED0C8AE"
+				type: "item"
+				item: "immersiveengineering:metal_barrel"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -12.0d
+			shape: "gear"
+			subtitle: "Mark IV - Diamonds at the Expo. Wanna have 72 Slots? Make the Fourth Tier Backpack using Diamonds. It will also have 3 Upgrade Slots"
+			dependencies: [
+				"371A70521F7AE65E"
+				"655AB81DE00B783B"
+				"3D75721DA9392AA5"
+				"40205D351BE13B77"
+			]
+			id: "61640A55E9877F54"
+			tasks: [{
+				id: "772BA51B2A29EAA2"
+				type: "item"
+				item: "sophisticatedbackpacks:diamond_backpack"
+			}]
+		}
+	]
+}

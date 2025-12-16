@@ -1,0 +1,826 @@
+{
+	id: "21C936A259B79851"
+	group: "38E0BE3B64EF67A2"
+	order_index: 0
+	filename: "introduction"
+	title: "Introduction"
+	icon: "artifacts:crystal_heart"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "The Quests"
+			icon: "ftbquests:book"
+			x: -3.5d
+			y: -1.0d
+			shape: "square"
+			subtitle: "We highly recommend reading this. Left Click for more info"
+			description: [
+				"The Quests we've designed here, are meant to guide you through your journey. Keep in mind that we assume you're already accustomed with the most majority of the mods included in the game, so do not expect any beginner level type of tutorials :')"
+				""
+				"This quests menu can be accessed either through your inventory, or by pressing 'BACKSPACE' on your keyboard, so you don't have to craft or use any book which would take away from your inventory space. Spoiler: In the beginning, you'll need as much space as possible."
+				""
+				"It is HIGHLY recommended that you follow the quest lines as they'll explain how to do certain things."
+				""
+				"How quests are listed:"
+				""
+				"-The main progression of the pack, is represented by the Square Shape."
+				""
+				"-There will be certain quests which you may consider to be your main goal, these quests are listed under the Diamond Shape."
+				" "
+				"-The quests under the Circle Shape represent common/regular/usual tasks."
+				""
+				"- The quests under the Gear Shape represent extremely useful items, items that you should take interest into."
+				""
+				"- Lastly, the quests under the Heart shape represent legendary items/tasks."
+				""
+				"Finally, we want to let you know how FTB quests works. Almost every quest has, or SHOULD have a dependency. This dependecy can be in the same tab as the quest you want to finish, or can be in another tab."
+				""
+				"If the dependency is in the same tab, some line will be drawn between the dependecy and its quest."
+				""
+				"However, if the dependency is in another tab, no visual representation will be given."
+				""
+				"To see all the dependencies of a quest, you'll have to click on the top left arrow in the quest's description:"
+				""
+				"{image:kubejs:textures/general/example1.png width:250 height:100 align:1 fit:true}"
+				""
+				"Another example would be this quest's dependency, which is \"The Decursio Project\" quest."
+				""
+				"Most of the time, you won't be able to start a quest until all of its dependencies are finished. However, there will be a numerous number of occasions where this will NOT be the case, and you'll be able to start a quest without finishing all of its dependencies."
+			]
+			dependencies: ["71C0BE4D047B47BC"]
+			id: "3AB71A814633A2B8"
+			tasks: [{
+				id: "37049F9C99E387DB"
+				type: "checkmark"
+				title: "Click me!"
+			}]
+		}
+		{
+			title: "The 'Dimensional Explorer' group"
+			icon: {
+				id: "botania:black_hole_talisman"
+				Count: 1b
+				tag: { }
+			}
+			x: 2.5d
+			y: -1.0d
+			shape: "square"
+			subtitle: "Sick of hicking? Jump into other worlds, duh! Left Click for more info"
+			description: [
+				"The Dimensional Explorer group will guide you through the steps you need to do in order to get to all the dimensions provided in the pack."
+				""
+				"Note that the dimensions are locked under game stages, so a simple task like getting to The Nether will be much harder here."
+				""
+				"Just follow the quest lines and you should be ok. If you want to get into a certain dimension, just go to its tab in the \"Dimensional Explorer\" group, and see what requirements that dimension has."
+				""
+				"Oh, things you should know: AE2, Ars Nouveau and Draconic Evolution are installed, BUT certus quartz, source gems and draconium ore are available only on The Moon, Venus and Mercury. So yeah, good luck getting there."
+				""
+				"Lastly, here's an example of how you unlock and finish The Nether:"
+				""
+				"{image:kubejs:textures/general/example11.png width:250 height:200 align:1 fit:true}"
+			]
+			dependencies: ["5EBF0B4AC9EBAF9D"]
+			id: "74CBD18069836DA8"
+			tasks: [{
+				id: "11D55AF0CD7FA3B0"
+				type: "checkmark"
+				title: "Click me!"
+			}]
+		}
+		{
+			title: "The Decursio Project"
+			icon: {
+				id: "artifacts:crystal_heart"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -5.5d
+			y: -1.0d
+			shape: "heart"
+			subtitle: "Welcome - Make sure to check our Wiki for the latest info available; you can find it on our Curseforge page. Left Click for more info"
+			description: [
+				"Hi! If you're reading this it means that you've agreed to the terms and conditions of our contract and you are ready to begin an amazing Journey."
+				""
+				"This modpack was designed to challenge the skills, patience and the modded Minecraft knowledge of every individual."
+				""
+				"To make you more comfortable with the challenges you're about to experiance, I'd say we should tell you what are some of this pack's features:"
+				""
+				"- Expert style progression system based around quests"
+				"- Items gated behind Ages"
+				"- Modified recipes"
+				"- Realistic mechanics, such as temperature, seasons and nutrition"
+				""
+				"If you haven't read our terms and conditions, you should know that this is your LAST CHANCE of aborting this Journey. If you don't want to continue, please close the game now. If you want to continue, just keep reading. "
+				""
+				""
+				"Great! You've decided to stay. We appreciate your thirst and desire for a great challenge! And now that you are ready to begin.. "
+				""
+				"We, here, at Decursio Entertainment Inc. are pleased to present to you.."
+				""
+				"{image:kubejs:textures/general/bh_dp_logo.png width:220 height:100 align:1 fit:true}"
+			]
+			hide_dependency_lines: true
+			size: 2.0d
+			id: "71C0BE4D047B47BC"
+			tasks: [{
+				id: "383276005926C75F"
+				type: "checkmark"
+				title: "Click me!"
+			}]
+		}
+		{
+			title: "'Gear' tabs"
+			icon: "emendatusenigmatica:lumium_gear"
+			x: 3.5d
+			y: -1.0d
+			shape: "square"
+			subtitle: "Main questline focused on Tech. Left Click for more info"
+			description: ["The 'Gear' quest tabs will be your MAIN progress line, right next to the 'Arcane' tabs. These ones will guide you through most of the 'realistic'/NOT related to magic things."]
+			dependencies: ["74CBD18069836DA8"]
+			id: "64C556784CE573F2"
+			tasks: [{
+				id: "1381BD294535F9FC"
+				type: "checkmark"
+				title: "Click me!"
+			}]
+		}
+		{
+			title: "'Arcane' tabs"
+			icon: "ars_nouveau:dominion_wand"
+			x: 4.5d
+			y: -1.0d
+			shape: "square"
+			subtitle: "Main questline focused on Magic. Left Click for more info"
+			description: ["The 'Arcane' quest tabs will be your MAIN progress line, right next to the 'Gear' tabs. Similar to the 'Gear' tabs, the 'Arcane' tabs will mainly be about the magic/alchemy-related tasks."]
+			dependencies: ["64C556784CE573F2"]
+			id: "7C4A09DB82968E56"
+			tasks: [{
+				id: "70CE4C1BFF57550D"
+				type: "checkmark"
+				title: "Click me!"
+			}]
+		}
+		{
+			title: "'Tools' tabs"
+			icon: {
+				id: "twilightforest:fiery_pickaxe"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -1.0d
+			y: 1.0d
+			subtitle: "Your precious tools"
+			description: ["The 'Tools' tabs will try to show you all the possible tools you are able to make in your current Age."]
+			optional: true
+			id: "1F2C8891DFC1D176"
+			tasks: [{
+				id: "10C21F961929F25C"
+				type: "checkmark"
+				title: "Click me!"
+			}]
+		}
+		{
+			title: "'Storage' tabs"
+			icon: "appliedenergistics2:controller"
+			x: 0.0d
+			y: 1.0d
+			subtitle: "Yes, part of this is the ME system"
+			description: ["The 'Storage' tabs will try to guide you through all the possible storage options you have available in the respective Age."]
+			optional: true
+			id: "5401675D80FFFB6A"
+			tasks: [{
+				id: "290052CE4A7C753A"
+				type: "checkmark"
+				title: "Click me!"
+			}]
+		}
+		{
+			title: "'Protection' tabs"
+			icon: {
+				id: "mekanism:mekasuit_bodyarmor"
+				Count: 1b
+				tag: {
+					HideFlags: 2
+				}
+			}
+			x: 1.0d
+			y: 1.0d
+			subtitle: "What do you expect? Oh, The Armours You'll Go"
+			description: ["This series of tabs, will be focused in showing you all the armor possibilities available in your current Age."]
+			optional: true
+			id: "7A33273E5BBD10B0"
+			tasks: [{
+				id: "3AC8A43AE0926FE2"
+				type: "checkmark"
+				title: "Click me!"
+			}]
+		}
+		{
+			title: "'Useful Items' tabs"
+			icon: "mythicbotany:mjoellnir"
+			x: 2.0d
+			y: 1.0d
+			subtitle: "Yes, you'll make Thor's hammer"
+			description: ["Focused on useful/interesting items, this series of tabs will show you a bunch of Appealing Apparatus available in your current Age."]
+			optional: true
+			id: "156B18F969D86AA1"
+			tasks: [{
+				id: "3F57F8331008DEB9"
+				type: "checkmark"
+				title: "Click me!"
+			}]
+		}
+		{
+			title: "'Cookbook 365th Edition' tab (Not Yet Implemented)"
+			icon: {
+				id: "farmersdelight:skillet"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -2.0d
+			y: 2.0d
+			subtitle: "Feeling like in Ratatouille! Left Click for more info"
+			description: ["The 'Cookbook 365th Edition' tab, unlike other tabs, is universal, meaning that all the food-related stuff will be here from the begining of the pack, 'till the end of it."]
+			optional: true
+			id: "3AB411D84BE96DDB"
+			tasks: [{
+				id: "1C06971B3D153667"
+				type: "checkmark"
+				title: "Click me!"
+			}]
+		}
+		{
+			title: "'Relics/Artifacts' tab"
+			icon: {
+				id: "relics:stellar_catalyst"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -1.0d
+			y: 2.0d
+			subtitle: "Useful anytime. Left Click for more info"
+			description: [
+				"Like the 'Cooking!' tab, this one is universal too."
+				""
+				"The 'Relics/Artifacts' tab is gonna keep track of all the rare, bonuses giving items that you find around the multiverse."
+				""
+				"The Artifacts and the Relics mods are installed. They're gonna provide items which you can find in dungeons. When equipped, these items give unique bonuses."
+			]
+			optional: true
+			id: "1670ED5573458FAD"
+			tasks: [{
+				id: "7787324D01D5831D"
+				type: "checkmark"
+				title: "Understood!"
+			}]
+		}
+		{
+			title: "Using FTB Teams."
+			icon: {
+				id: "botania:cosmetic_questgiver_mark"
+				Count: 1b
+				tag: { }
+			}
+			x: -0.5d
+			y: 4.0d
+			shape: "gear"
+			subtitle: "Want to complete the quests with your friends? Make a team. Left Click for more info"
+			description: [
+				"To make a team use '/ftbteams party create'."
+				""
+				"To invite a player to your party use '/ftbteams party invite ~player_name~'."
+				""
+				"To accept an invite, you can click the invitation received in chat."
+				""
+				"You can leave a party by using '/ftbteams party leave ~party_name~'."
+				" "
+				"Note that IF YOU LEAVE A TEAM with completed quests, you'll loose all the progress you've made. Also, if the party is dissolved, the progress will, again, be lost."
+			]
+			optional: true
+			id: "6804F0CB13B7B664"
+			tasks: [{
+				id: "2EE7696D13AA19F2"
+				type: "checkmark"
+				title: "Ok!"
+			}]
+		}
+		{
+			title: "'Music!' tab"
+			icon: "xercamusic:guitar"
+			x: 3.0d
+			y: 2.0d
+			subtitle: "The 'Music!' tab will guide you through the process of making music, or as Miles would call them, 'beats'!"
+			optional: true
+			id: "5972655F415ED630"
+			tasks: [{
+				id: "486BB1A1AF79AEC9"
+				type: "checkmark"
+				title: "Ok!"
+			}]
+		}
+		{
+			title: "'Doggy Talents' tab"
+			icon: "doggytalents:doggy_charm"
+			x: 2.0d
+			y: 2.0d
+			subtitle: "Friends for life. Left Click for more info"
+			description: [
+				"The 'Doggy Talents' tab will keep track of most of the things added by Doggy Talents 2!"
+				""
+				"To summarize, Doggy Talents 2 upgrades the vanilla dogs, thus making them much more smarter, stronger and useful."
+			]
+			optional: true
+			id: "4C5435D77C8BEA7E"
+			tasks: [{
+				id: "14E3881A3A113AD5"
+				type: "checkmark"
+				title: "Ok!"
+			}]
+		}
+		{
+			title: "'My Colony' tab"
+			icon: "minecolonies:supplycampdeployer"
+			x: 0.0d
+			y: 2.0d
+			subtitle: "SimsCraft? Left Click for more info"
+			description: ["This tab will keep track of the things you'll be doing in the MineColonies mod."]
+			optional: true
+			id: "2E8A465BD14E4A9D"
+			tasks: [{
+				id: "5FDFE23D8A9DFD62"
+				type: "checkmark"
+				title: "Ok!"
+			}]
+		}
+		{
+			title: "Hats!"
+			icon: {
+				id: "eidolon:top_hat"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 2.5d
+			y: 4.0d
+			shape: "gear"
+			subtitle: "The Hats mod is installed. By pressing 'H' you can open the hats menu and equip any hat you like <3 Keep in mind that, in survival, you'll have to kill certain mobs, to obtain their hats"
+			optional: true
+			id: "21484825C29E5E2B"
+			tasks: [{
+				id: "3520DC35EE719531"
+				type: "checkmark"
+				title: "Ok!"
+			}]
+		}
+		{
+			title: "Interaction with other players"
+			icon: "minecraft:player_head"
+			x: -1.5d
+			y: 4.0d
+			shape: "gear"
+			subtitle: "You're on a server, right? Left Click for more info"
+			description: [
+				"This pack includes two features which will make your interactions with other players more fun."
+				""
+				"These mods are:"
+				"- Player Revive"
+				"- Mr. Crayfish's Furniture: Mailing System"
+				""
+				"With PlayerRevive you can help other players in certain battles. After a player dies, he/she/they can be revived within a 60 seconds period after their death."
+				""
+				"With the mailing system provided by Mr. Crayfish's Furniture mod, you can send certain packages to players across the map. More info can be found in 'Useful Items - 1'."
+			]
+			optional: true
+			id: "24B1CF988287282C"
+			tasks: [{
+				id: "6779468DA69FE19E"
+				type: "checkmark"
+				title: "Ok!"
+			}]
+		}
+		{
+			title: "'Unlocking Ages' Tab"
+			icon: "minecraft:diamond_block"
+			x: 6.5d
+			y: -1.0d
+			shape: "diamond"
+			subtitle: "WE HIGHLY RECOMMEND YOU TO READ THIS! Left Click for more info"
+			description: [
+				"This pack uses the Totally Harmonious Item Stages mod to force the player to go through a certain Age before going to the next one. Different items are locked to different Ages. These items will appear as 'Unknown Item'. You won't be able to use these 'Unknown Items'. Things such as Tools cannot be used. Armor cannot be worn. Blocks cannot be placed. Blocks such as furnaces cannot be placed and if you manage to find one that's already placed, you won't be able to access it."
+				""
+				"If you attempt to open a Crafting Interface to craft certain items, all of the 'Unknown Items' will be dropped out of your inventory and you won't be able to pick them up as long as you have that Crafting Interface opened (&cBE AWEAR! THIS INCLUDES FURNACES, ANVILS AND OTHER STATIONS - JUST THE STORAGE CONTAINERS WILL BE AVAILABLE FOR THESE ITEMS - THESE INCLUDE CHESTS, BACKPACKS, CRATES, BARRELS&r)."
+				""
+				"Also, some items will have certain types of interactions available (for example, you can open Chests, but you cannot place them until you actually unlock them). To find out how you can interact with something, just look as the item's tooltip. Oh, don't worry, you CAN place the 'Unknown Items' in chests and other storage blocks."
+				""
+				"Apart from items, Ages are also gating the following contents:"
+				""
+				"1. Amount of available chunks for force loading"
+				"2. Overall mobs difficulty on the map"
+				"3. Some quality of life features"
+				"4. Astral Sorcery Levels"
+				""
+				"1. Unlike other packs, chunk loading will be a bit of a problem here. With each Age you unlock, more chunks will be available for force loading. Here's how many chunks you'll have available for force loading in each Age:"
+				""
+				"&a- 1st Age: 1 chunk&r"
+				"&a- 2nd Age: 5 chunks&r"
+				"&a- 3rd Age: 15 chunks&r"
+				"&a- 4th Age: 100 chunks&r"
+				""
+				"2. With each Age, mobs will get stronger, similar to SevTech Ages. They'll be able to use armor and items such as Ender Pearls to get a hold of you. We'd suggest to prepare yourself with stronger gear before claiming an Age, as you might bet overwhelmed by them. Here's the difficulty of each Age:"
+				""
+				"&a- 1st Age: difficulty 15&r"
+				"&a- 2nd Age: difficulty 50&r"
+				"&a- 3rd Age: difficulty 100&r"
+				"&a- 4th Age: difficulty 200&r"
+				"&a- Endgame: difficulty 500&r"
+				""
+				"Just as a refrance:"
+				""
+				"- difficulty 15: &cZombies will have 25 heath points&r"
+				"- difficulty 100: &cZombies will have 52 health points&r"
+				"- difficulty 500: &cZombies will have 100 health points&r"
+				""
+				"3. To stop you, the player, from using certain vanilla methods to advance through this pack faster, certain features have been gated to the 2nd Age. These features are the ability to build Iron Golems and the ability to light a Nether Portal with fire. Starting with the pack's 2nd Age, these features will become available."
+				""
+				"\"Amm.. guys, I need to get in the Nether in the 1st Age, you know that, right?\""
+				""
+				"Don't worry about it. You'll find a way to light up the portal when the time comes."
+				""
+				"4. Astral Sorcery's leveling system is capped to 40 Levels. However, they'll be limited per Age. You'll unlock the system in the 2nd Age. Here's how the levels are capped through the pack:"
+				""
+				"- 2nd Age: 20 Levels Max"
+				"- 3rd Age: 30 Levels Max"
+				"- 4th Age: 40 Levels Max"
+			]
+			dependencies: ["7C4A09DB82968E56"]
+			size: 2.0d
+			id: "430FADD2ACF0EE6F"
+			tasks: [{
+				id: "0D68260BAEC1AC17"
+				type: "checkmark"
+				title: "Click me!"
+			}]
+		}
+		{
+			title: "Chunk Loading 101"
+			icon: "twilightforest:magic_map"
+			x: 1.5d
+			y: 4.0d
+			shape: "gear"
+			subtitle: "How to chunk load? Left Click for more info"
+			description: [
+				"In this pack, chunk loading is provided by a combination of FTB Chunks and Journey Map."
+				""
+				"Let's see how to actually force load a chunk if you're not familiar."
+				"Open the Journey Map menu by pressing \"M\". The world map will be visible and, on the mid-right side of the screen, the FTBChunk Claiming Mode button will be available."
+				""
+				"After turning the Chunk Claiming mode on, you'll be able to Claim an area of chunks to prevent other players from interacting with them. Additionally if you press shift click on your claimed chunks, you'll force load them. Note that you have a limited amount of chunks to claim and a limited amount of chunks to force load. You can see how many available you currently have in the buttom left corner."
+				""
+				"Chunks can also be claimed from your inventory. Just press on the Map icon present in the top left corner."
+				""
+				"Important: After unlocking a new Age you'll need to Click through the chunk claiming GUI to update your currently available chunks for force loading. It's just a minor visual update issue, nothing to worry about."
+			]
+			optional: true
+			id: "5D0D594E69E5E552"
+			tasks: [{
+				id: "7969BAECED6016DC"
+				type: "checkmark"
+				title: "Click me!"
+			}]
+		}
+		{
+			title: "What happens when you die?"
+			icon: "doggytalents:throw_bone"
+			x: 1.5d
+			y: -1.0d
+			shape: "square"
+			subtitle: "It will eventually happen. Left Click for more info"
+			description: [
+				"Ok, face it. You're not Superman or anything, so you'll have to deal with death at point. Or.. you might actually be Superman given the fact that you respawn after you die.. :/"
+				""
+				"Anyway, what happens after you die? It's modded Minecraft, so something special must happen, right? Right??? Well, of course, duhh."
+				""
+				"This pack uses the Corpse mod to assist you with your deaths. After you die, a Corpse which has all of your items will spawn at your death location, so you can collect the items with ease. This Corpse will not fall into the void and will not be damaged by lava, so your precious items should be safe. However, if something unexpected happens, you should be able to get your items back using creative mode and this command: /deathhistory <your_name>"
+				""
+				"This will open your death history menu where you can click the 'Items' button to access your last corpse. While you're in creative mode you can retrive them."
+				""
+				"Now let's talk about some of the corpse mechanics. When it first appears, it will look exactly like you (cuz..yeah, it is you). Only you'll be able to access it at this point. However, after 6 minutes, the corpse will turn into a Skeleton. In this state, any player will be able to access the corpse, so if you're on a server, make sure to get your items back as quickly as possible."
+			]
+			dependencies: ["03DAB868F9989418"]
+			id: "5EBF0B4AC9EBAF9D"
+			tasks: [{
+				id: "3E40D4F008AAD397"
+				type: "checkmark"
+				title: "Click me!"
+			}]
+		}
+		{
+			title: "'Resourceful Bees' tab"
+			icon: "minecraft:bee_nest"
+			x: 1.0d
+			y: 2.0d
+			subtitle: "Somehow simple mob/resource farms. Left Click for more info"
+			description: ["This tab will be focused on guiding you through the Resourceful Bees mod. While more information will be given there, just know that you'll be able to get items such as Rotten Flesh, Bones, Gunpowder from Bees."]
+			optional: true
+			id: "156AAF1377E6EC1A"
+			tasks: [{
+				id: "76B25AD0EEE2FC4B"
+				type: "checkmark"
+				title: "Ok!"
+			}]
+		}
+		{
+			title: "Ages Emergency Commands"
+			icon: "minecraft:redstone_torch"
+			x: -0.5d
+			y: -3.5d
+			shape: "gear"
+			subtitle: "Got an issue? These might help. Left Click for more info"
+			description: [
+				"Issues can occur in every pack. This one is NOT an exception. If for some reason you get into problems with the Ages, here's a list of commands that should assist you through your journey:"
+				""
+				"- \"&a/thitemstages add <your_name> <the_gamestage_you_need>&r\": This command will give you the Age of you choise."
+				"- \"&a/thitemstages remove <your_name> <the_age_you_don't_want_anymore>&r\": This command will remove from you the Age you want."
+				"- \"&a/thitemstages all&r\": Will give you all the knwon Ages."
+				"- \"&a/thitemstages clear&r\": Will remove all the Ages you currently have."
+				""
+				"- \"&a/ftbranks add <your_name> age_1&r\": Will give you the chunk loading abilities of the 1st Age. Change \"&aage_1&r\" with \"&aage_2&r\", \"&aage_3&r\", \"&aage_4&r\" to obtain the loading abilities of the Age of your choise."
+				"- \"&a/ftbranks remove <your_name> age_1&r\": Will remove the chunk loading abilities of the 1st Age from your. \"&aage_1&r\" can be changed with \"&aage_2&r\", \"&aage_3&r\", \"&aage_4&r\" to remove the loading abilities of different Ages from you."
+			]
+			optional: true
+			id: "7AF8114545A5EC9D"
+			tasks: [{
+				id: "3EF847CCAC5CB07E"
+				type: "checkmark"
+				title: "Got it!"
+			}]
+		}
+		{
+			title: "The Boss Fights"
+			icon: {
+				id: "atum:eyes_of_atem"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -2.5d
+			y: -1.0d
+			shape: "square"
+			subtitle: "There are 7 main Boss Fight in this pack. Left Click for more info"
+			description: [
+				"This pack also aims to challange you through various Boss Fights. We've prepared 7 of them just for you. Let's see what your worst enemies will be and how they're distributed through the pack:"
+				""
+				"- The Wither: 1st Age"
+				"- Twilight's Ur-Ghast: 2nd Age"
+				"- Atum's Pharaoh: 2nd Age"
+				"- Botania's Guardian of Gaia: 3rd Age"
+				"- Ars Nouveau's Wilden Chimera: 3rd Age"
+				"- Minecraft's Ender Dragon: 3rd Age"
+				"- Draconic Evolution's Chaos Guardian: 4th Age"
+				""
+				"Now, let's talk a bit about the first 5 Boss Fights. These will be quite special due to the fact that they'll be required in order to get to The End. Why? It's quite simple."
+				""
+				"This pack uses the End Remastered mod to change the way in which you're getting to The End. Instead of 12 Eyes of Ender, you'll need 12 unique Eyes. Now, upon defeating the first 5 Bosses mentioned previously, you'll be rewarded with a number of those 12 Eyes. When you have all of them, you'll be able to go to The End."
+				""
+				"Take good care of these Eyes after you obtain them, because if you somehow manage to lose one of them, well.. there's no way to get it back besides creative commands. And yeah, you need all of them to open The End Portal."
+				""
+				"Oh, yeah. Also know that these Eyes can be used to find the Stronghold just like some regular Eyes of Ender would be used. They do not break in the air like the Ender Eyes do, so do not be afraid to use them as much as you like."
+			]
+			dependencies: ["3AB71A814633A2B8"]
+			id: "2EAD55CBE9A8573E"
+			tasks: [{
+				id: "08BE5C724046CB0D"
+				type: "checkmark"
+				title: "Click me!"
+			}]
+		}
+		{
+			title: "What's JEI?"
+			icon: {
+				id: "botania:cosmetic_questgiver_mark"
+				Count: 1b
+				tag: { }
+			}
+			x: -1.5d
+			y: -3.5d
+			shape: "gear"
+			subtitle: "Understanding the most popular MC search system. Left Click for more info"
+			description: [
+				"JEI (Just Enough Items) is the most downloaded mod ever. It is used to search items and recipes that mods add. As such, it's crucial to understand how JEI works."
+				""
+				"Left-clicking on an item or pressing your recipe key ('R' by default) displays all the recipes to craft that item - it won't show anything if there are no recipes to make it, or if it is obtained through a method which doe NOT have JEI support. Right-clicking on an item or pressing your use key ('U' by default) displays all the recipes that use that item - again, if there are none it won't do anything."
+				""
+				"You can use the scroll wheel to change pages when viewing recipes. You can also use the 'Backspace' key to go back to the previously viewed recipe."
+				""
+				"On the right side of the recipe viewer, you see all the places that recipe can be done in. Due to compatibility issues, it's only most, not literally all."
+				""
+				"Pressing your Bookmark key ('A' by default) saves the item to the left side of your inventory. This can be used to keep track of what you intended to do previously."
+				""
+				"You can use JEI to seach using substring matching, meaning searching \"coal\" finds both \"Coal\" and \"Charcoal\". You can search for all the items from a mod by using @, for example \"@botania\" finds everything from the Botania mod (if a mod is not visible, it means that it is either not installed, or you don't have access to it yet). You can search for two separate things by separating them with '|' symbol, a vertical line, typically located above the 'Enter' key. You can exclude results by attaching a '-' before it, for example \"-@minecraft\" finds everything that isn't from Vanilla Minecraft. You can also combine these, for example while \"@botan\" would show Botania, BotanyPots and MythicBotany items, you can use \"@botan -@mythic -@pot\" to show only Botania, or you can use for example \"@botan -@mythic -@pot|@astral\" to search for everything in Botania and Astral Sorcery."
+				""
+				"If you'd like to import a recipe into a Crafting Table without having to lay it out, you can simply view the recipe in JEI while in the Crafting interface, and left-click the '+' button. That will move all items into the Crafting field. If you'd like to move as many items into the Crafting field from your inventory as possible, hold 'Shift' while pressing the '+' button."
+			]
+			optional: true
+			id: "6D9F55F947430394"
+			tasks: [{
+				id: "40B8C86677AC07E3"
+				type: "checkmark"
+				title: "Got it!"
+			}]
+		}
+		{
+			title: "Tree Gravity?!"
+			icon: {
+				id: "decursiomod:flint_axe"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 1.5d
+			y: -3.5d
+			shape: "gear"
+			subtitle: "Chopping Trees with STYLE! Left Click for more info"
+			description: [
+				"The process of harvesting wood can be quite frustrating at the beginning of a modpack, so, to help you, we've added the Tree Harvester mod."
+				""
+				"With it, you can chop down entire Trees just by breaking their base. To use it, break the base of a Tree with an Axe while SNEAKING."
+			]
+			optional: true
+			id: "12A275FE700E8DC9"
+			tasks: [{
+				id: "221DCAD13562EBAD"
+				type: "checkmark"
+				title: "Got it!"
+			}]
+		}
+		{
+			title: "Slabs are VERTICAL too!"
+			icon: {
+				id: "doubleslabs:vertical_slab"
+				Count: 1b
+				tag: {
+					item: {
+						id: "minecraft:oak_slab"
+						Count: 1b
+					}
+				}
+			}
+			x: 2.5d
+			y: -3.5d
+			shape: "gear"
+			subtitle: "Building with character, duh. Left Click for more info"
+			description: [
+				"In the Decursio Project, we're using the Double Slabs mod to assist you, the player, in your building journey."
+				""
+				"This mod allows you to place different slabs untop of each other. This means that you can have a block which is half Oak Plank, and half Stone."
+				""
+				"With this mod, you can also place Vertical Slabs. And yeah, you can combine those too. To place Vertical Slabs, you'll have to hold down the `Shift` key while placing a Slab."
+			]
+			optional: true
+			id: "6B7789C1CDFF9236"
+			tasks: [{
+				id: "1BCFCCBB76D2A4CA"
+				type: "checkmark"
+				title: "Got it!"
+			}]
+		}
+		{
+			title: "Seasons and Fertility?! 0_o"
+			icon: "minecraft:clock"
+			x: -0.5d
+			y: -1.0d
+			shape: "square"
+			subtitle: "Crops don't grow at all times! Left Click for more info"
+			description: [
+				"In The Decursio Project, we're using the Serene Seasons mod to make the things a little more realistic."
+				""
+				"There are 4 Main Seasons and 2 Secondary Seasons for the Tropical Biomes (Desert, Jungle Savannah). Each one of the Main Seasons has 3 individual subcategories. For example, Spring will consist in:"
+				""
+				"- Early Spring"
+				"- Mid Spring"
+				"- Late Spring"
+				""
+				"New Worlds will always start in Early Summer. Each sub-season will last for 10 MC days. On a Multiplayer server, the Seasons won't progress if no players are online.                                                                            Seasons will affect the crop fertility (implemented). "
+				""
+				"While Summers will be warm and cozy, Winters will be cold and harsh. Better start working on a base which will keep you warm during the Winter."
+				""
+				"Some Crops will grow only in the Summer time, some crops will grow during Spring and Autumn. When a Crop is planted in another Season then the one that's ideal for it, it will NOT grow. This behavior can be avoided by placing Greenhouse Glass blocks above your crops. Since you won't have access to them from the beginning, you'll have to plan ahead on what crops you wanna grow. Spoiler: We suggest to get your hands on Wheat as soon as you can."
+				""
+				"If you wanna see what's the current Season, either, make a Calendar, or look at the icon of this quest."
+				""
+				"Lastly, let's return to those 2 Secondary Seasons. Biomes like the Desert, will have Wet and Dry seasons."
+				""
+				"In the Tropical Biomes, only Summer crops are in season due to the relatively high temperatures (Other crops can still be grown underground, or using a Greenhouse Glass roof to insulate them)."
+			]
+			dependencies: ["5C5C0DCF3920B839"]
+			id: "5C3AEDA602F4A6D1"
+			tasks: [{
+				id: "3D385870FC4853A4"
+				type: "checkmark"
+				title: "Click me!"
+			}]
+		}
+		{
+			title: "Harder Healing!"
+			icon: "eidolon:zombie_heart"
+			x: -1.5d
+			y: -1.0d
+			shape: "square"
+			subtitle: "Why's my health still low? 0_o"
+			description: [
+				"In our modpack, you'll have to deal with a reduced healing rate."
+				""
+				"By deafault, your health is set to regenerate at a downgraded rate of the old, 1.7.10 regen system. While your hunger bar is above a certain level, you'll regenerate one health point every 6 seconds, rather then 2, like it was back in MC 1.7.10."
+				""
+				"Additionally, unlike 1.7.10, after you take damage, there will be NO cooldown before you start healing again. Try being very careful in any situation you find yourself. Things WILL eventually get easier as you progress and unlock different items. For now, we highly recommend you to obtain The Sanguine Amulet from Eidolon. You can also make sure you keep a diverse Diet. This will increase your max health to 30 HP."
+				""
+				"Lastly, if you're not familiar to how regeneration worked back in 1.7.10, just know that filling up your hunger bar just used to slowly heal half a heart until some of your hunger bar went down."
+			]
+			dependencies: ["2EAD55CBE9A8573E"]
+			id: "5C5C0DCF3920B839"
+			tasks: [{
+				id: "21CEE8B83136797D"
+				type: "checkmark"
+				title: "Click me!"
+			}]
+		}
+		{
+			title: "Find me in every chest!"
+			icon: "quark:birch_chest"
+			x: 0.5d
+			y: -3.5d
+			shape: "gear"
+			subtitle: "The Find Me mod is installed. With it, you can hover over an item, press the \"Search Nearby Chests for Items\" key, and then, that item will be showed in the nearest storage block, with white smoke particles"
+			optional: true
+			id: "6241AF25C8725E21"
+			tasks: [{
+				id: "36AFCCAEA2BEF782"
+				type: "checkmark"
+				title: "Got it!"
+			}]
+		}
+		{
+			title: "Villager Professions?"
+			icon: "minecraft:emerald"
+			x: 0.5d
+			y: 4.0d
+			shape: "gear"
+			subtitle: "By pressing `U` on an Emerald, you can see what work stations will be required for all the Villager professions available in the game"
+			optional: true
+			id: "113E2AE59C0495BE"
+			tasks: [{
+				id: "45C81DED5D8559FE"
+				type: "checkmark"
+				title: "Click me!"
+			}]
+		}
+		{
+			title: "Player Diet!"
+			icon: {
+				id: "relics:infinity_ham"
+				Count: 1b
+				tag: {
+					pieces: 3
+					Damage: 0
+				}
+			}
+			x: 0.5d
+			y: -1.0d
+			shape: "square"
+			subtitle: "Nutrition? Minecraft? Whaa....? Left Click for more info"
+			description: [
+				"In this pack you'll also have the possibility of gaining bonus effects by keeping a diverse diet. There are 6 nutritional groups you can work with:"
+				""
+				"1. Fruits"
+				"2. Grains"
+				"3. Proteins"
+				"4. Vegetables"
+				"5. Diary"
+				"6. Sugars"
+				""
+				"Some of these will provide good effects, and some of them will provide bad effects, depending on their value shown in your inventory's Diet menu."
+				""
+				"We suggest you visit our Wiki for a more detailed explanation."
+			]
+			dependencies: ["5C3AEDA602F4A6D1"]
+			id: "03DAB868F9989418"
+			tasks: [{
+				id: "4ADE9057AFDB1D02"
+				type: "checkmark"
+				title: "Click me!"
+			}]
+		}
+	]
+}

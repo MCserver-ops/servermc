@@ -1,0 +1,37 @@
+{
+    "flower": "tag:minecraft:leaves",
+    "creator": "Me_Ryan",
+    "lore": "Lonely Bee",
+    "hasHoneycomb": true,
+    "customCombDrop": "minecraft:honeycomb",
+    "customCombBlockDrop": "minecraft:honeycomb_block",
+    "baseLayerTexture": "leafcutter/leafcutter",
+    "traits": [],
+    "maxTimeInHive": 1200,
+    "ColorData": {
+      "modelType": "ORE",
+      "primaryColor": "#1d590b",
+      "secondaryColor": "#d0f4dc"
+    },
+    "SpawnData": {
+      "canSpawnInWorld": true,
+      "biomeWhitelist": "tag:FOREST",
+      "lightLevel": "DAY",
+      "biomeblacklist": "tag:ocean",
+      "spawnWeight": 10
+    },
+    "BreedData": {
+      "isBreedable": true,
+      "feedItem": "tag:minecraft:leaves",
+      "feedAmount": 64
+    },
+    "CombatData": {  
+      "isPassive": false,  
+      "removeStingerOnAttack": false,
+      "inflictsPoison": true,
+      "attackDamage": 2
+      },
+    "TraitData": {
+      "hasTraits": true
+    }
+  }

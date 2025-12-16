@@ -1,0 +1,18 @@
+
+["SWA - Armor Protection and Toughness"]
+	#Ex: "3" will result in every piece of the Wood Armor to have 3 toughness.
+	#Range: 0 ~ 10
+	"Armor Toughness" = 0
+	#Set how much protection the Wood Boots has. (0-10)
+	#Range: 0 ~ 10
+	"Boots Protection" = 2
+	#Set how much protection the Wood Leggings has. (0-10)
+	#Range: 0 ~ 10
+	"Leggings Protection" = 3
+	#Set how much protection the Wood Chestplate has. (0-10)
+	#Range: 0 ~ 10
+	"Chestplate Protection" = 4
+	#Set how much protection the Wood Helmet has. (0-10)
+	#Range: 0 ~ 10
+	"Helmet Protection" = 1
+

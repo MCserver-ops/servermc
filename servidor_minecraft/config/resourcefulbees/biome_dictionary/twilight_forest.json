@@ -1,0 +1,10 @@
+{
+    "biomes": [
+        "twilightforest:dense_forest",
+        "twilightforest:forest",
+        "twilightforest:oak_savannah",
+        "twilightforest:mushroom_forest",
+        "twilightforest:spooky_forest",
+        "twilightforest:enchanted_forest"
+    ]
+}

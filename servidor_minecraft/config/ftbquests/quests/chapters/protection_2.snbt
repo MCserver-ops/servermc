@@ -1,0 +1,1124 @@
+{
+	id: "1FCC2048E2DD682A"
+	group: "532DAB84AB301350"
+	order_index: 3
+	filename: "protection_2"
+	title: "Protection - 2"
+	icon: {
+		id: "botania:terrasteel_chestplate"
+		Count: 1b
+		tag: {
+			Damage: 0
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "The Diamond Armor"
+			icon: {
+				id: "minecraft:diamond_chestplate"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -6.0d
+			y: 5.5d
+			shape: "gear"
+			subtitle: "Knight in a shiny armor: Minecraft's most iconic armor. Provides high protection and looks stunning"
+			dependencies: ["530614718BB9C3B1"]
+			id: "29452F9E6911793B"
+			tasks: [
+				{
+					id: "2B61300E1B1D5A89"
+					type: "item"
+					item: {
+						id: "minecraft:diamond_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "293286F91BE5E497"
+					type: "item"
+					item: {
+						id: "minecraft:diamond_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "7D5EBDB9ABEE2B83"
+					type: "item"
+					item: {
+						id: "minecraft:diamond_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "0882568861FF2780"
+					type: "item"
+					item: {
+						id: "minecraft:diamond_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "4DA3C8C85A56D3C4"
+				type: "item"
+				item: "ironchest:diamond_chest"
+			}]
+		}
+		{
+			title: "The Netherite Armor"
+			icon: {
+				id: "minecraft:netherite_chestplate"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -5.0d
+			y: 5.5d
+			shape: "heart"
+			subtitle: "Nether Worrior: An upgrade to The Diamond Armor. Provides even better protection then its shiny counterpart and it will not be destroyed when dropped in fire or lava. Additionally, it will reduce the amount of knockback you receive"
+			dependencies: ["29452F9E6911793B"]
+			id: "048DC15A43048021"
+			tasks: [
+				{
+					id: "33C6C4C89CD9706F"
+					type: "item"
+					item: {
+						id: "minecraft:netherite_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "53D110CDEDD02A88"
+					type: "item"
+					item: {
+						id: "minecraft:netherite_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "049F1150E59238A3"
+					type: "item"
+					item: {
+						id: "minecraft:netherite_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "5FB6AF558621B9E9"
+					type: "item"
+					item: {
+						id: "minecraft:netherite_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "745DEFAADBD4B738"
+					type: "item"
+					item: "ironchest:obsidian_chest"
+				}
+				{
+					id: "40EE93DF62520A5A"
+					type: "loot"
+					table_id: 8587500481418189075L
+				}
+			]
+		}
+		{
+			title: "The ManaSteel Armor"
+			icon: {
+				id: "botania:manasteel_chestplate"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -9.0d
+			y: 2.5d
+			shape: "gear"
+			subtitle: "Midgard Soldier: Similar to The Iron Armor. It will draw mana from its wearer's inventory to repair itself"
+			dependencies: ["48148EE28276AB64"]
+			id: "7BF9AECF2F7CCF30"
+			tasks: [
+				{
+					id: "4337339F50C4962D"
+					type: "item"
+					item: {
+						id: "botania:manasteel_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "1857BD0E689C52B9"
+					type: "item"
+					item: {
+						id: "botania:manasteel_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "3AAD6CD66CCEBD21"
+					type: "item"
+					item: {
+						id: "botania:manasteel_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "36AB2F7EFD19477E"
+					type: "item"
+					item: {
+						id: "botania:manasteel_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "The TerraSteel Armor"
+			icon: {
+				id: "botania:terrasteel_chestplate"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -3.0d
+			y: 2.5d
+			shape: "gear"
+			subtitle: "Midgard Guardian: An upgrade of The ManaSteel Armor. Provides high protection, also decreases the mana cost for certain actions"
+			dependencies: [
+				"59F02054FBFE0C44"
+				"09D34E577A4AD24B"
+				"1F81661C224DD904"
+				"09882C8C36391E71"
+				"6968CEF7894C9EE2"
+			]
+			id: "798FF27CDD988BFF"
+			tasks: [
+				{
+					id: "48C8CD35AD7FE303"
+					type: "item"
+					item: {
+						id: "botania:terrasteel_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "43CA46248E556545"
+					type: "item"
+					item: {
+						id: "botania:terrasteel_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "792BB0078571C6CD"
+					type: "item"
+					item: {
+						id: "botania:terrasteel_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "231F330F4D328E8F"
+					type: "item"
+					item: {
+						id: "botania:terrasteel_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "7E1A42C967807447"
+				type: "loot"
+				table_id: 8587500481418189075L
+			}]
+		}
+		{
+			title: "The ManaWeave Robe"
+			icon: {
+				id: "botania:manaweave_chestplate"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -4.0d
+			y: 2.5d
+			shape: "gear"
+			subtitle: "Starting Botanist: This lightweight robe will decreases the mana cost of certain actions just for some manaweave cloth. Fun fact, durring Christmas, this armor will change its appearance into a bright red"
+			dependencies: ["655AB81DE00B783B"]
+			id: "59F02054FBFE0C44"
+			tasks: [
+				{
+					id: "2B2C8B38EBAA2AA2"
+					type: "item"
+					item: {
+						id: "botania:manaweave_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "6871B5B92C197281"
+					type: "item"
+					item: {
+						id: "botania:manaweave_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "6939F6DFB0F23295"
+					type: "item"
+					item: {
+						id: "botania:manaweave_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "20736707ECC3AD5B"
+					type: "item"
+					item: {
+						id: "botania:manaweave_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "The Focusing Armor"
+			icon: {
+				id: "psi:psimetal_exosuit_chestplate"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -8.0d
+			y: 2.5d
+			shape: "gear"
+			subtitle: "Arcane Soldier: Gives the ability of infusing certain spells into the armor, much like a modular suit"
+			dependencies: [
+				"7BF9AECF2F7CCF30"
+				"3F45E827BA9F9DB4"
+			]
+			hide: false
+			id: "3F05B3CB5CE81277"
+			tasks: [
+				{
+					id: "6051282D2343870A"
+					type: "item"
+					item: {
+						id: "psi:psimetal_exosuit_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "592B5F16834A4A17"
+					type: "item"
+					item: {
+						id: "psi:psimetal_exosuit_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "347670EA47F1E15E"
+					type: "item"
+					item: {
+						id: "psi:psimetal_exosuit_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "7740595994B1E417"
+					type: "item"
+					item: {
+						id: "psi:psimetal_exosuit_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "The Iron Armor"
+			icon: {
+				id: "minecraft:iron_chestplate"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -7.0d
+			y: 5.5d
+			subtitle: "Classic Knight: Minecraft's most used set of armor. It provides decent protection"
+			dependencies: ["59DF5370DD2EAE51"]
+			id: "530614718BB9C3B1"
+			tasks: [
+				{
+					id: "726E1F8E326EFF4E"
+					type: "item"
+					item: {
+						id: "minecraft:iron_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "638E1631FDF08473"
+					type: "item"
+					item: {
+						id: "minecraft:iron_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "56DC08BC381943CD"
+					type: "item"
+					item: {
+						id: "minecraft:iron_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "20F387F596FB2A3B"
+					type: "item"
+					item: {
+						id: "minecraft:iron_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "668FEE97A4A3C21F"
+				type: "item"
+				item: "ironchest:iron_chest"
+			}]
+		}
+		{
+			title: "The Copper Gear Suit"
+			icon: {
+				id: "create_stuff_additions:copper_exoskeleton_chestplate"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -6.5d
+			y: 2.5d
+			shape: "gear"
+			subtitle: "Create-Man MkI: Even though it doesn't have any flamethrowers, this reddish exoskeleton can enhance your speed and strenght, all at the cost of some fuel and some mining fatigue. Left Click for more info"
+			description: [
+				"To power the exoskeleton and the leggings, hold them in your left hand and drop the fuel with the right hand. You can use coal or wood as fuel."
+				""
+				"The boots of this armor will not allow you to swim. This can be a great thing if you're planning on building a base under water. Using the Copper Backtank is adviced if you're gonna do that. "
+				""
+				"Additionally, wearing the boots, will allow you to stand on convoyer belts without being pushed."
+			]
+			dependencies: [
+				"4B00B60DE355C08C"
+				"59DF5370DD2EAE51"
+			]
+			id: "7619AFE10D34EBA2"
+			tasks: [
+				{
+					id: "702186BBB5166CF9"
+					type: "item"
+					item: {
+						id: "create:diving_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "7679A1AD4BE3C335"
+					type: "item"
+					item: {
+						id: "create_stuff_additions:copper_exoskeleton_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "62474619B2817796"
+					type: "item"
+					item: {
+						id: "create_stuff_additions:copper_accelerator_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "068E54C380F8F9DD"
+					type: "item"
+					item: {
+						id: "create:diving_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "The Brass Gear Suit"
+			icon: {
+				id: "create_stuff_additions:exoskeleton_chestplate"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -5.5d
+			y: 2.5d
+			shape: "gear"
+			subtitle: "Create-Man MkII: Through the power of brass, you are able to make a better version of your original armor, giving you even better reflexes and protection. Additionally, you can make a modified version of the exoskeleton which will allow you to fly. No mining fatigue will be given, also swiming will be possible here"
+			dependencies: [
+				"5F68C4D92EF20E09"
+				"59DF5370DD2EAE51"
+				"2E3880C1F6D082FA"
+				"275FE11C673E522D"
+			]
+			id: "2D0CAF1B9CDB822B"
+			tasks: [
+				{
+					id: "33955E2197FEAB04"
+					type: "item"
+					item: {
+						id: "create_stuff_additions:brass_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "1D296B6D31E20219"
+					type: "item"
+					item: {
+						id: "create_stuff_additions:exoskeleton_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "23D4F2A66CEB1A7E"
+					type: "item"
+					item: {
+						id: "create_stuff_additions:brass_accelerator_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "1BB5A7FE462CC341"
+					type: "item"
+					item: {
+						id: "create_stuff_additions:brass_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "0F9820D56E2C2D7E"
+				type: "loot"
+				table_id: 8587500481418189075L
+			}]
+		}
+		{
+			title: "The Plate Armor"
+			icon: {
+				id: "tconstruct:plate_chestplate"
+				Count: 1b
+				tag: {
+					tic_multipliers: { }
+					tic_stats: {
+						"tconstruct:armor_toughness": 2.0f
+						"tconstruct:knockback_resistance": 0.1f
+						"tconstruct:durability": 480.0f
+						"tconstruct:armor": 7.0f
+					}
+					tic_broken: 0b
+					tic_modifiers: [ ]
+					HideFlags: 3
+					Damage: 0
+					tic_persistent_data: {
+						abilities: 1
+						defense: 4
+						upgrades: 1
+					}
+				}
+			}
+			x: -5.5d
+			y: 4.0d
+			shape: "gear"
+			subtitle: "Purple Tinkerer: Second tier of tinkers armor, this will be focused on defense, rather then modularity"
+			dependencies: ["5BCDBA72A5350DAA"]
+			id: "51549DA82B9B29D3"
+			tasks: [
+				{
+					id: "6BAAF806A92575FE"
+					type: "item"
+					item: {
+						id: "tconstruct:plate_helmet"
+						Count: 1b
+						tag: {
+							tic_multipliers: { }
+							tic_stats: {
+								"tconstruct:armor_toughness": 2.0f
+								"tconstruct:knockback_resistance": 0.1f
+								"tconstruct:durability": 330.0f
+								"tconstruct:armor": 2.0f
+							}
+							tic_broken: 0b
+							tic_modifiers: [ ]
+							HideFlags: 3
+							Damage: 0
+							tic_persistent_data: {
+								abilities: 1
+								defense: 4
+								upgrades: 1
+							}
+						}
+					}
+				}
+				{
+					id: "4DF4F0CDB05C71F6"
+					type: "item"
+					item: {
+						id: "tconstruct:plate_chestplate"
+						Count: 1b
+						tag: {
+							tic_multipliers: { }
+							tic_stats: {
+								"tconstruct:armor_toughness": 2.0f
+								"tconstruct:knockback_resistance": 0.1f
+								"tconstruct:durability": 480.0f
+								"tconstruct:armor": 7.0f
+							}
+							tic_broken: 0b
+							tic_modifiers: [ ]
+							HideFlags: 3
+							Damage: 0
+							tic_persistent_data: {
+								abilities: 1
+								defense: 4
+								upgrades: 1
+							}
+						}
+					}
+				}
+				{
+					id: "6B7918D63A3719AA"
+					type: "item"
+					item: {
+						id: "tconstruct:plate_leggings"
+						Count: 1b
+						tag: {
+							tic_multipliers: { }
+							tic_stats: {
+								"tconstruct:armor_toughness": 2.0f
+								"tconstruct:knockback_resistance": 0.1f
+								"tconstruct:durability": 450.0f
+								"tconstruct:armor": 5.0f
+							}
+							tic_broken: 0b
+							tic_modifiers: [ ]
+							HideFlags: 3
+							Damage: 0
+							tic_persistent_data: {
+								abilities: 1
+								defense: 4
+								upgrades: 1
+							}
+						}
+					}
+				}
+				{
+					id: "52ADB96248336FE2"
+					type: "item"
+					item: {
+						id: "tconstruct:plate_boots"
+						Count: 1b
+						tag: {
+							tic_multipliers: { }
+							tic_stats: {
+								"tconstruct:armor_toughness": 2.0f
+								"tconstruct:knockback_resistance": 0.1f
+								"tconstruct:durability": 390.0f
+								"tconstruct:armor": 2.0f
+							}
+							tic_broken: 0b
+							tic_modifiers: [ ]
+							HideFlags: 3
+							Damage: 0
+							tic_persistent_data: {
+								abilities: 1
+								defense: 4
+								upgrades: 1
+							}
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "50BD64C9850F9CDF"
+				type: "loot"
+				table_id: 8587500481418189075L
+			}]
+		}
+		{
+			x: -6.0d
+			y: -1.0d
+			subtitle: "By default, the Mantle of stars is just a powerful Chestplate. However, it can be attuned to one of 11 constellations to obtain certain abilities"
+			dependencies: ["73A248C448C4C47D"]
+			id: "0556970F3FF94BBA"
+			tasks: [{
+				id: "11F4DB7D99BE4AB6"
+				type: "item"
+				item: {
+					id: "astralsorcery:mantle"
+					Count: 1b
+					tag: {
+						astralsorcery: { }
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "1E552B236ECF37A4"
+				type: "loot"
+				table_id: 8587500481418189075L
+			}]
+		}
+		{
+			title: "Mantle of the Stars - Sagittarius"
+			x: -6.5d
+			y: 0.0d
+			shape: "gear"
+			subtitle: "Will allow you to accumulate all the damage you take, to reflect it later upon your enemies, by hitting them. Kinda similar to Marvel's Vibranium, but it will allow you to reflect the damage for multiple hits"
+			hide_dependency_lines: true
+			dependencies: ["0556970F3FF94BBA"]
+			id: "20690EAB764C5C35"
+			tasks: [{
+				id: "7ED6CCBC79711949"
+				type: "item"
+				item: {
+					id: "astralsorcery:mantle"
+					Count: 1b
+					tag: {
+						astralsorcery: {
+							constellationName: "astralsorcery:discidia"
+						}
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Mantle of the Stars - Aries"
+			x: -5.5d
+			y: 0.0d
+			shape: "gear"
+			subtitle: "Will give you +2 mining size"
+			hide_dependency_lines: true
+			dependencies: ["0556970F3FF94BBA"]
+			id: "24143A6734D3C2AA"
+			tasks: [{
+				id: "58F909E3832B2964"
+				type: "item"
+				item: {
+					id: "astralsorcery:mantle"
+					Count: 1b
+					tag: {
+						astralsorcery: {
+							constellationName: "astralsorcery:evorsio"
+						}
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Mantle of the Stars - Virgo"
+			x: -4.5d
+			y: 0.0d
+			shape: "gear"
+			subtitle: "Will allow you to walk on air. Ascending/descending will consume starlight. Additionally, it will heal you regardless of your hunger bar being full or not"
+			hide_dependency_lines: true
+			dependencies: ["0556970F3FF94BBA"]
+			id: "23A6C8C0B5D287C9"
+			tasks: [{
+				id: "7DF2DC5362F61066"
+				type: "item"
+				item: {
+					id: "astralsorcery:mantle"
+					Count: 1b
+					tag: {
+						astralsorcery: {
+							constellationName: "astralsorcery:aevitas"
+						}
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Mantle of the Stars - Capricornus"
+			x: -7.5d
+			y: 0.0d
+			shape: "gear"
+			subtitle: "Will give you 3 shield charges which will negate 100% of all the damage you take from 3 hits"
+			hide_dependency_lines: true
+			dependencies: ["0556970F3FF94BBA"]
+			id: "62F21D5D033DAC0F"
+			tasks: [{
+				id: "268277453316567F"
+				type: "item"
+				item: {
+					id: "astralsorcery:mantle"
+					Count: 1b
+					tag: {
+						astralsorcery: {
+							constellationName: "astralsorcery:armara"
+						}
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Mantle of the Stars - Pisces"
+			x: -6.0d
+			y: 1.0d
+			shape: "gear"
+			subtitle: "Will give you advantages underwater, such as increased swimming/movement speed, increase mining speed and so on"
+			hide_dependency_lines: true
+			dependencies: ["0556970F3FF94BBA"]
+			id: "060064931135EEBB"
+			tasks: [{
+				id: "7D6BAA448E548346"
+				type: "item"
+				item: {
+					id: "astralsorcery:mantle"
+					Count: 1b
+					tag: {
+						astralsorcery: {
+							constellationName: "astralsorcery:octans"
+						}
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Mantle of the Stars - Taurus"
+			x: -5.0d
+			y: 1.0d
+			shape: "gear"
+			subtitle: "If you hold a block in your hand, it will highlight it, so you can see it much easier. Kinda acts like an X-ray"
+			hide_dependency_lines: true
+			dependencies: ["0556970F3FF94BBA"]
+			id: "1887B7B2825F4E62"
+			tasks: [{
+				id: "479871F471C9C51F"
+				type: "item"
+				item: {
+					id: "astralsorcery:mantle"
+					Count: 1b
+					tag: {
+						astralsorcery: {
+							constellationName: "astralsorcery:mineralis"
+						}
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Mantle of the Stars - Aquarius"
+			x: -4.0d
+			y: 1.0d
+			shape: "gear"
+			subtitle: "Will summon \"minions\" which will assist you in combat"
+			hide_dependency_lines: true
+			dependencies: ["0556970F3FF94BBA"]
+			id: "699EC680FAC7E7C3"
+			tasks: [{
+				id: "40C865112DEECE90"
+				type: "item"
+				item: {
+					id: "astralsorcery:mantle"
+					Count: 1b
+					tag: {
+						astralsorcery: {
+							constellationName: "astralsorcery:bootes"
+						}
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Mantle of the Stars - Cancer"
+			x: -8.0d
+			y: 1.0d
+			shape: "gear"
+			subtitle: "When you break a block using its apropriate tool, a minion will be summoned to help you with your task. This also works with swords when fighting an enemie, as a minion will be summoned to assist you in your battle"
+			hide_dependency_lines: true
+			dependencies: ["0556970F3FF94BBA"]
+			id: "2DE86CAE9EF92409"
+			tasks: [{
+				id: "6C8241AEEFEC1C24"
+				type: "item"
+				item: {
+					id: "astralsorcery:mantle"
+					Count: 1b
+					tag: {
+						astralsorcery: {
+							constellationName: "astralsorcery:pelotrio"
+						}
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Mantle of the Start - Leo"
+			x: -3.0d
+			y: 1.0d
+			shape: "gear"
+			subtitle: "Will make the fire damage you take, will be casted upon the Mantle's durability, instead of you"
+			hide_dependency_lines: true
+			dependencies: ["0556970F3FF94BBA"]
+			id: "7A256548D025202D"
+			tasks: [{
+				id: "591C34D7084699D2"
+				type: "item"
+				item: {
+					id: "astralsorcery:mantle"
+					Count: 1b
+					tag: {
+						astralsorcery: {
+							constellationName: "astralsorcery:fornax"
+						}
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Mantle of the Stars - Scorpius"
+			x: -7.0d
+			y: 1.0d
+			shape: "gear"
+			subtitle: "Will allow you to stop time for some mobs around you"
+			hide_dependency_lines: true
+			dependencies: ["0556970F3FF94BBA"]
+			id: "290D763728F7B182"
+			tasks: [{
+				id: "78AB7FDC5049B32E"
+				type: "item"
+				item: {
+					id: "astralsorcery:mantle"
+					Count: 1b
+					tag: {
+						astralsorcery: {
+							constellationName: "astralsorcery:horologium"
+						}
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Mantle of the Stars - Libra"
+			x: -9.0d
+			y: 1.0d
+			shape: "gear"
+			subtitle: "Will give you the ability to see containers, spawners and entities throw walls"
+			hide_dependency_lines: true
+			dependencies: ["0556970F3FF94BBA"]
+			id: "3198A2B4303E10F5"
+			tasks: [{
+				id: "271B977C7DA2BA51"
+				type: "item"
+				item: {
+					id: "astralsorcery:mantle"
+					Count: 1b
+					tag: {
+						astralsorcery: {
+							constellationName: "astralsorcery:lucerna"
+						}
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "The Faraday Suit"
+			icon: {
+				id: "immersiveengineering:armor_faraday_chest"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -6.5d
+			y: 4.0d
+			shape: "gear"
+			subtitle: "Electric Shielding: The Faraday set will allow you to pass by a Tesla Coil in low-power mode, without being electrocuted. In high-power mode however, it increases the damage dealt to you"
+			dependencies: ["59DF5370DD2EAE51"]
+			id: "457ED0ED9EB6FCFA"
+			tasks: [
+				{
+					id: "72404FD519ECF584"
+					type: "item"
+					item: {
+						id: "immersiveengineering:armor_faraday_head"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "4610CE478BA93947"
+					type: "item"
+					item: {
+						id: "immersiveengineering:armor_faraday_chest"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "08E9E2ABDBB3CD63"
+					type: "item"
+					item: {
+						id: "immersiveengineering:armor_faraday_legs"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "23DD8A7E55B2E67E"
+					type: "item"
+					item: {
+						id: "immersiveengineering:armor_faraday_feet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+	]
+}

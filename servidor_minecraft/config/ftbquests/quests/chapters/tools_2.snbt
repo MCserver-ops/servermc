@@ -1,0 +1,1857 @@
+{
+	id: "6244A96A4551F93E"
+	group: "532DAB84AB301350"
+	order_index: 4
+	filename: "tools_2"
+	title: "Tools - 2"
+	icon: {
+		id: "astralsorcery:infused_crystal_sword"
+		Count: 1b
+		tag: {
+			astralsorcery: {
+				crystalProperties: {
+					attributes: [
+						{
+							property: "astralsorcery:size"
+							pLevel: 3
+							discovered: 1b
+						}
+						{
+							property: "astralsorcery:shape"
+							pLevel: 3
+							discovered: 1b
+						}
+						{
+							property: "astralsorcery:tool.durability"
+							pLevel: 3
+							discovered: 1b
+						}
+						{
+							property: "astralsorcery:tool.efficiency"
+							pLevel: 3
+							discovered: 1b
+						}
+					]
+				}
+			}
+			Damage: 0
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "ManaSteel Tools"
+			x: -2.5d
+			y: 3.0d
+			subtitle: "Similar to iron tools, however, these will use mana to repair themselves. Similar to other tools which run on RF, however, these will break if their durability is low enough"
+			dependencies: ["48148EE28276AB64"]
+			id: "40CB6D2FCEB2EFBE"
+			tasks: [
+				{
+					id: "35394BC23A44F7D5"
+					type: "item"
+					item: {
+						id: "botania:manasteel_pick"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "3650F2E7ACAA924B"
+					type: "item"
+					item: {
+						id: "botania:manasteel_sword"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "537A7326E2FE8358"
+					type: "item"
+					item: {
+						id: "botania:manasteel_axe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "6F8BC33293F3F739"
+					type: "item"
+					item: {
+						id: "botania:manasteel_shovel"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "332A1B6C43150E33"
+					type: "item"
+					item: {
+						id: "botania:manasteel_shears"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "696AF3C23E5D0892"
+					type: "item"
+					item: {
+						id: "botania:manasteel_hoe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "6899C36DF79B7CA6"
+					type: "item"
+					item: {
+						id: "botania:livingwood_bow"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			x: -1.0d
+			y: 4.0d
+			shape: "heart"
+			subtitle: "The 13x13 PowerDrill: By default, the Terra Shatterer is simply a powerful pickaxe. However, as you store more and more Mana into it, the radius in which it can mine when you righ-click with it, will increase. Mana will repair it"
+			dependencies: [
+				"111B86AE41B02D70"
+				"22731B5D372A1C18"
+			]
+			id: "22A9778BC532714E"
+			tasks: [{
+				id: "08CF618837BCCCD1"
+				type: "item"
+				item: {
+					id: "botania:terra_pick"
+					Count: 1b
+					tag: {
+						mana: 9999
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Crystal tools"
+			x: -0.5d
+			y: 1.5d
+			shape: "gear"
+			subtitle: "The Rock Crystal tools can have different stats based on their attributes. The Rock Crystals used in a tool's recipe will directly affect the final tool's stats. Some can have lots for durability points, some have better efficiency and some, can have better damage"
+			dependencies: [
+				"6833FFB6AB33C9D6"
+				"584CF3BBE466991F"
+			]
+			id: "52713A940537C9A9"
+			tasks: [
+				{
+					id: "4C4C97A1CE8CFF0C"
+					type: "item"
+					item: {
+						id: "astralsorcery:crystal_pickaxe"
+						Count: 1b
+						tag: {
+							astralsorcery: {
+								crystalProperties: {
+									attributes: [
+										{
+											property: "astralsorcery:size"
+											pLevel: 3
+											discovered: 1b
+										}
+										{
+											property: "astralsorcery:shape"
+											pLevel: 3
+											discovered: 1b
+										}
+										{
+											property: "astralsorcery:tool.durability"
+											pLevel: 3
+											discovered: 1b
+										}
+										{
+											property: "astralsorcery:tool.efficiency"
+											pLevel: 3
+											discovered: 1b
+										}
+									]
+								}
+							}
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "4B52F9B59735FCF8"
+					type: "item"
+					item: {
+						id: "astralsorcery:crystal_sword"
+						Count: 1b
+						tag: {
+							astralsorcery: {
+								crystalProperties: {
+									attributes: [
+										{
+											property: "astralsorcery:size"
+											pLevel: 3
+											discovered: 1b
+										}
+										{
+											property: "astralsorcery:shape"
+											pLevel: 3
+											discovered: 1b
+										}
+										{
+											property: "astralsorcery:tool.durability"
+											pLevel: 3
+											discovered: 1b
+										}
+										{
+											property: "astralsorcery:tool.efficiency"
+											pLevel: 3
+											discovered: 1b
+										}
+									]
+								}
+							}
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "2444F1E7C3B0C428"
+					type: "item"
+					item: {
+						id: "astralsorcery:crystal_axe"
+						Count: 1b
+						tag: {
+							astralsorcery: {
+								crystalProperties: {
+									attributes: [
+										{
+											property: "astralsorcery:size"
+											pLevel: 3
+											discovered: 1b
+										}
+										{
+											property: "astralsorcery:shape"
+											pLevel: 3
+											discovered: 1b
+										}
+										{
+											property: "astralsorcery:tool.durability"
+											pLevel: 3
+											discovered: 1b
+										}
+										{
+											property: "astralsorcery:tool.efficiency"
+											pLevel: 3
+											discovered: 1b
+										}
+									]
+								}
+							}
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "7BFE7D3955152A6C"
+					type: "item"
+					item: {
+						id: "astralsorcery:crystal_shovel"
+						Count: 1b
+						tag: {
+							astralsorcery: {
+								crystalProperties: {
+									attributes: [
+										{
+											property: "astralsorcery:size"
+											pLevel: 3
+											discovered: 1b
+										}
+										{
+											property: "astralsorcery:shape"
+											pLevel: 3
+											discovered: 1b
+										}
+										{
+											property: "astralsorcery:tool.durability"
+											pLevel: 3
+											discovered: 1b
+										}
+										{
+											property: "astralsorcery:tool.efficiency"
+											pLevel: 3
+											discovered: 1b
+										}
+									]
+								}
+							}
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 0.0d
+			y: 4.0d
+			shape: "heart"
+			subtitle: "The Terra Truncator can cut down entire trees at once, at the cost of large amounts of Mana. Left click for more info"
+			description: [
+				"The Terra Truncator, as previously said, will chop down entire trees in just one swipe. "
+				""
+				"However, this tool does not make exceptions when it comes to the wood pieces present in your base. You'll need a stone of temperance in your inventory for the Truncator to stop using its amazing abilities. When you have the stone in your inventory, just right-click with it to turn it on."
+			]
+			dependencies: ["111B86AE41B02D70"]
+			id: "3F874C87453C8853"
+			tasks: [{
+				id: "0404DF9F3AB1754C"
+				type: "item"
+				item: {
+					id: "botania:terra_axe"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "277C05D1A0399C2B"
+				type: "item"
+				item: {
+					id: "botania:temperance_stone"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: -2.0d
+			y: 4.0d
+			shape: "heart"
+			subtitle: "Terrari-oh..wrong game?: The Terra Blade is a legendary weapon which will launch mana from the user's inventory to create powerful projectiles that will deal lots of damage to their enemies. To launch bursts, just left-click with the TerraBlade in hand. This sword will also repair itself using mana from the player's inventory"
+			dependencies: ["111B86AE41B02D70"]
+			id: "6F2389F3B4CBD351"
+			tasks: [{
+				id: "2AF08100D6AADDD4"
+				type: "item"
+				item: {
+					id: "botania:terra_sword"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 0.0d
+			y: 0.0d
+			shape: "gear"
+			subtitle: "Biodiesel Miner. Left Click for more info"
+			description: [
+				"The Mining Drill is a tool powered by Biodiesel, and can be filled directly from a Refinery."
+				""
+				"When crafted, it does not come with a Drill Head. It needs either an Iron Drill Head or a Steel Drill Head installed. To install a Drill Head, the Mining Drill should be placed in an Engineer's Workbench, and the corresponding Drill Head should be placed in the top of the four \"upgrade slots\" (shift-clicking should work though, too)."
+				""
+				"The Mining Drill can be used without a Drill Head, however, it is slower and less efficient than a Wooden Pickaxe, and not very well worth it. The Drill Head will determine the mining area, level, speed, attack damage and durability of the Mining Drill. Steel is better than Iron, but both are much better than using no Drill Head whatsoever."
+				""
+				"The Mining Drill has a special hitting animation. Although it makes each hit look slower, it is nothing but visual.The Mining Drill does not work underwater- for this, a Pressurized Air Tank upgrade is needed."
+			]
+			dependencies: ["31A4F73AF44D70B1"]
+			id: "105C88D5D3F6D2DC"
+			tasks: [{
+				id: "471D2152CA9C1212"
+				type: "item"
+				item: {
+					id: "immersiveengineering:drill"
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							Size: 5
+							Items: [ ]
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: -1.0d
+			y: 0.0d
+			shape: "gear"
+			subtitle: "'Not really a chainsaw' - Ciscod. Left Click for more info"
+			description: [
+				"The Buzzsaw is a tool powered by Biodiesel, and can be filled directly from a Refinery."
+				""
+				"When crafted, it does not come with a Saw Blade. It needs either Rockcutter Blade, or a Saw Blade installed. To install a Blade, the Buzzsaw should be placed in an Engineer's Workbench, and the corresponding Blade should be placed in the top of the three \"upgrade slots\" (shift-clicking should work though, too)."
+				""
+				"The Blade installed will determinate the type of blocks that can be harvested with the Buzzsaw. A Rockcutter blade will allow the Buzzsaw to dig through stone like a Pickaxe enchanted with Silktouch would. On the other way, this blade will NOT allow the Buzzsaw to chop down trees. To start harvesting entire forests, you'll need the Sawblade. With this one, the Buzzsaw will chop trees from one blow, so good luck at deforesting. Haha, just don't forget to replant the trees <3"
+			]
+			dependencies: ["31A4F73AF44D70B1"]
+			id: "274D93C9A38BC38E"
+			tasks: [{
+				id: "29125AC0031F7E46"
+				type: "item"
+				item: {
+					id: "immersiveengineering:buzzsaw"
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							Size: 5
+							Items: [ ]
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: 0.0d
+			y: -3.0d
+			shape: "gear"
+			subtitle: "The Extendo Grip is a tools for all the minecrafters who feel like their hands are too short. Holding this tool in your left hand, will allow you to have extended reach"
+			dependencies: [
+				"2BA7183800B331E0"
+				"275FE11C673E522D"
+			]
+			id: "54EFF439DAE73195"
+			tasks: [{
+				id: "0CCE518E10006403"
+				type: "item"
+				item: {
+					id: "create:extendo_grip"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Psimetal Tools"
+			x: 1.5d
+			y: 3.0d
+			shape: "circle"
+			subtitle: "These tools can be infused with custom spells to make them more potent"
+			dependencies: ["3F45E827BA9F9DB4"]
+			id: "3E4D745A42D6F541"
+			tasks: [
+				{
+					id: "1E9540254FB63F4D"
+					type: "item"
+					item: {
+						id: "psi:psimetal_pickaxe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "331A25E215735EED"
+					type: "item"
+					item: {
+						id: "psi:psimetal_sword"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "5F75DA64B4AB2A0F"
+					type: "item"
+					item: {
+						id: "psi:psimetal_axe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "747007E93C0B8358"
+					type: "item"
+					item: {
+						id: "psi:psimetal_shovel"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 0.5d
+			y: 3.0d
+			shape: "gear"
+			subtitle: "The Vitreous Pickaxe is as cheap as it is useful. It will allow you to get back your glass, just like a tool enchanted with Silk Touch would"
+			dependencies: ["48148EE28276AB64"]
+			id: "51AC83D175768970"
+			tasks: [{
+				id: "7E104D261F098D68"
+				type: "item"
+				item: {
+					id: "botania:glass_pickaxe"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 0.5d
+			y: -2.0d
+			shape: "gear"
+			subtitle: "Blockhead Cowboy. Left Click for more info"
+			description: [
+				"The Revolver is a ranged weapon which shoots Cartridges."
+				""
+				"To load the gun, shift right-click with the Revolver in hand to open its GUI. Only one Cartridge/item can be put into each of the 8 slots."
+				""
+				"Right-clicking with the gun in hand will make it shoot. When a Cartridge is used, the Empty Casing or Empty Shell will remain behind."
+			]
+			dependencies: ["69DA94D714E296AC"]
+			id: "750F3FC54E2BD45A"
+			tasks: [{
+				id: "726FE90688D6B4F6"
+				type: "item"
+				item: {
+					id: "immersiveengineering:revolver"
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							Size: 21
+							Items: [ ]
+						}
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "233E0D79EF5B0FB4"
+					type: "item"
+					item: "immersiveengineering:casull"
+					count: 64
+				}
+				{
+					id: "56CD490A1C01E49B"
+					type: "item"
+					item: "immersiveengineering:buckshot"
+					count: 16
+				}
+			]
+		}
+		{
+			x: -1.5d
+			y: -2.0d
+			shape: "gear"
+			subtitle: "Electric Hunter. Left Click for more info"
+			description: [
+				"The Railgun is a ranged weapon which shoots various items as ammunition:"
+				""
+				"- Iron Rods: 10 damage"
+				"- Steel Rods: 12 damage"
+				"- Aluminum Rods: 9 damage"
+				"- Graphite Electrodes: 16 damage"
+				"- Sawblades: 12 damage"
+				""
+				"The Railgun does not need to be loaded; it will automatically grab ammunition from items in the inventory, displayed as being in the \"slot\" in the UI (bottom right corner). This works much like a bow, in terms of ammunition."
+				""
+				"A Charging Station, or any other FE/RF Charger will be required to keep the Railgun functional. While in the player's inventory, the player can view the Railgun's charge level."
+				""
+				"Holding down right-click with the Railgun in hand will \"charge\" it (not to be confused with FE/RF charging). Once the charge level (the number on the Railgun in-game) is at 99, it can be released. Each use of the Railgun costs 800 RF."
+				""
+				"Railgun charging takes time, though; it is not instant, and different materials and shapes incur more required charge time, although when fully charged, it will make various electrical noises. There is no overcharge, nor a limit to how long you may hold a projectile."
+			]
+			dependencies: [
+				"360B0A95C0A30AF6"
+				"69DA94D714E296AC"
+			]
+			id: "4D374953FF0E2430"
+			tasks: [{
+				id: "6EEFB34B10B8E379"
+				type: "item"
+				item: {
+					id: "immersiveengineering:railgun"
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							Size: 3
+							Items: [ ]
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: -0.5d
+			y: -2.0d
+			shape: "gear"
+			subtitle: "Pyro? Is that you?! 0_o Left Click for more info"
+			description: [
+				"The Chemical Thrower is a ranged weapon which shoots various fluids:"
+				""
+				"- Water: Extinguishes fire and hurts Blazes"
+				"- Lava: Sets enemies on fire"
+				"- Creosote Oil: Gives the Flammable potion effect which will make enemies take more damage from fire"
+				"- Plant Oil"
+				"- Ethanol: Sets enemies on fire"
+				"- Biodiesel: Gives the Flammable potion effect which will make enemies take more damage from fire"
+				"- Liquid Concrete: Will make Quick Dry Concrete which can be used to suffocate your enemies"
+				""
+				"To load the Chemical Thrower, the player may fill it with a liquid using a machine such as the Bottling Machine, right-click on a tank or barrel containing a valid liquid, or place it into the orange slot of a machine which outputs liquid (such as the Coke Oven for Creosote Oil)."
+				""
+				"Right-clicking with the Chemical Thrower in hand will make it spray. It will consume 20 mB a tick while spraying."
+				""
+				"By shift right-clicking with the Chemical Thrower in hand will toggle \"pilot light mode\". In this mode it will apply ignition to the liquid if it is flammable."
+			]
+			dependencies: ["31A4F73AF44D70B1"]
+			id: "71FE3F57FEB74F76"
+			tasks: [{
+				id: "0AEEAC34EF653DC4"
+				type: "item"
+				item: {
+					id: "immersiveengineering:chemthrower"
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							Size: 4
+							Items: [ ]
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: -0.5d
+			y: 3.0d
+			subtitle: "Sick of making the perfect bow, just to have it break later in the game? The LivingWood Bow will repair itself if its user has mana in their inventory. Similar to an electric bow, however, if no mana is provided to it, it will eventually, break"
+			dependencies: ["655AB81DE00B783B"]
+			id: "1331FF5A602E744B"
+			tasks: [{
+				id: "34F19F3B5B50C1BD"
+				type: "item"
+				item: {
+					id: "botania:livingwood_bow"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Cleaver - Carved"
+			icon: {
+				id: "tconstruct:cleaver"
+				Count: 1b
+				tag: {
+					tic_multipliers: {
+						"tconstruct:mining_speed": 0.25f
+						"tconstruct:attack_damage": 1.5f
+						"tconstruct:durability": 3.5f
+					}
+					tic_stats: {
+						"tconstruct:attack_speed": 0.9f
+						"tconstruct:mining_speed": 1.1f
+						"tconstruct:attack_damage": 6.75f
+						"tconstruct:harvest_level": 1.0f
+						"tconstruct:durability": 364.0f
+					}
+					tic_broken: 0b
+					tic_modifiers: [
+						{
+							name: "tconstruct:severing"
+							level: 2s
+						}
+						{
+							name: "tconstruct:stonebound"
+							level: 4s
+						}
+						{
+							name: "tconstruct:silky_aoe_shears"
+							level: 1s
+						}
+						{
+							name: "tconstruct:two_handed"
+							level: 1s
+						}
+					]
+					HideFlags: 3
+					tic_materials: [
+						"tconstruct:stone"
+						"tconstruct:stone"
+						"tconstruct:stone"
+						"tconstruct:stone"
+					]
+					Damage: 0
+					tic_persistent_data: {
+						abilities: 1
+						upgrades: 2
+					}
+				}
+			}
+			x: -4.5d
+			y: -2.0d
+			subtitle: "Its large. Left Click for more info"
+			description: [
+				"The Cleaver is a sword-like weapon made with two tough tool rods, a large plate, and a large sword blade. They swing very slowly due to the massive size, giving you Mining Fatigue III, but do more damage than most other weapons. They have the natural ability to sometimes decapitate mobs(beheading) , leaving their heads as an item drop to wear, or to use as a decoration. This works on zombies, creepers, skeletons, wither skeletons and other players."
+				""
+				"Keep in mind that this quest is here just to let you know that this tool exists and that you can make it. Finishing this quest doesn't actually mean you did what you had to."
+			]
+			dependencies: ["4F47DBA8B82E7DFB"]
+			id: "3D6A759D22BE0C78"
+			tasks: [{
+				id: "754936356B122F6B"
+				type: "checkmark"
+				title: "Ok!"
+			}]
+		}
+		{
+			title: "Sledge Hammer - Carved"
+			icon: {
+				id: "tconstruct:sledge_hammer"
+				Count: 1b
+				tag: {
+					tic_multipliers: {
+						"tconstruct:mining_speed": 0.4f
+						"tconstruct:attack_damage": 1.35f
+						"tconstruct:durability": 4.0f
+					}
+					tic_stats: {
+						"tconstruct:attack_speed": 0.75f
+						"tconstruct:mining_speed": 1.7600001f
+						"tconstruct:attack_damage": 5.4f
+						"tconstruct:harvest_level": 1.0f
+						"tconstruct:durability": 416.0f
+					}
+					tic_broken: 0b
+					tic_modifiers: [
+						{
+							name: "tconstruct:smite"
+							level: 2s
+						}
+						{
+							name: "tconstruct:stonebound"
+							level: 4s
+						}
+						{
+							name: "tconstruct:two_handed"
+							level: 1s
+						}
+					]
+					HideFlags: 3
+					tic_materials: [
+						"tconstruct:stone"
+						"tconstruct:stone"
+						"tconstruct:stone"
+						"tconstruct:stone"
+					]
+					Damage: 0
+					tic_persistent_data: {
+						abilities: 1
+						upgrades: 2
+					}
+				}
+			}
+			x: -4.5d
+			y: 0.0d
+			subtitle: "The Sledge Hammer is a broad mining tool. It harvests blocks in a wide range. It is also effective against undead"
+			description: ["Keep in mind that this quest is here just to let you know that this tool exists and that you can make it. Finishing this quest doesn't actually mean you did what you had to."]
+			dependencies: ["4F47DBA8B82E7DFB"]
+			id: "42059E181F835E6E"
+			tasks: [{
+				id: "10F2FC9CCA8FAF9A"
+				type: "checkmark"
+				title: "Ok!"
+			}]
+		}
+		{
+			title: "Vein Hammer - Carved"
+			icon: {
+				id: "tconstruct:vein_hammer"
+				Count: 1b
+				tag: {
+					tic_multipliers: {
+						"tconstruct:mining_speed": 0.3f
+						"tconstruct:attack_damage": 1.25f
+						"tconstruct:durability": 5.0f
+					}
+					tic_stats: {
+						"tconstruct:attack_speed": 1.1f
+						"tconstruct:mining_speed": 1.32f
+						"tconstruct:attack_damage": 3.75f
+						"tconstruct:harvest_level": 1.0f
+						"tconstruct:durability": 520.0f
+					}
+					tic_broken: 0b
+					tic_modifiers: [
+						{
+							name: "tconstruct:piercing"
+							level: 2s
+						}
+						{
+							name: "tconstruct:stonebound"
+							level: 4s
+						}
+						{
+							name: "tconstruct:two_handed"
+							level: 1s
+						}
+					]
+					HideFlags: 3
+					tic_materials: [
+						"tconstruct:stone"
+						"tconstruct:stone"
+						"tconstruct:stone"
+						"tconstruct:stone"
+					]
+					Damage: 0
+					tic_persistent_data: {
+						abilities: 1
+						upgrades: 2
+					}
+				}
+			}
+			x: -4.5d
+			y: 1.5d
+			subtitle: "The Vein Hammer is a broad mining tools. It harvests many connected blocks of the same type, perfect for ores"
+			description: ["Keep in mind that this quest is here just to let you know that this tool exists and that you can make it. Finishing this quest doesn't actually mean you did what you had to."]
+			dependencies: ["4F47DBA8B82E7DFB"]
+			id: "452C96D74DB5C433"
+			tasks: [{
+				id: "109C96B0B81A5ABD"
+				type: "checkmark"
+				title: "Ok!"
+			}]
+		}
+		{
+			title: "Broad Axe - Carved"
+			icon: {
+				id: "tconstruct:broad_axe"
+				Count: 1b
+				tag: {
+					tic_multipliers: {
+						"tconstruct:mining_speed": 0.3f
+						"tconstruct:attack_damage": 1.5f
+						"tconstruct:durability": 4.25f
+					}
+					tic_stats: {
+						"tconstruct:attack_speed": 0.6f
+						"tconstruct:mining_speed": 1.32f
+						"tconstruct:attack_damage": 9.0f
+						"tconstruct:harvest_level": 1.0f
+						"tconstruct:durability": 442.0f
+					}
+					tic_broken: 0b
+					tic_modifiers: [
+						{
+							name: "tconstruct:stonebound"
+							level: 4s
+						}
+						{
+							name: "tconstruct:axe_transform_hidden"
+							level: 1s
+						}
+						{
+							name: "tconstruct:two_handed"
+							level: 1s
+						}
+					]
+					HideFlags: 3
+					tic_materials: [
+						"tconstruct:stone"
+						"tconstruct:stone"
+						"tconstruct:stone"
+						"tconstruct:stone"
+					]
+					Damage: 0
+					tic_persistent_data: {
+						abilities: 1
+						upgrades: 2
+					}
+				}
+			}
+			x: -4.5d
+			y: 2.5d
+			subtitle: "The Braod Axe fells small trees in a single swing, and makes quick work of large trees. It makes for a powerful heavy weapon. Timber!"
+			description: ["Keep in mind that this quest is here just to let you know that this tool exists and that you can make it. Finishing this quest doesn't actually mean you did what you had to."]
+			dependencies: ["4F47DBA8B82E7DFB"]
+			id: "320450DD9AF0FFA7"
+			tasks: [{
+				id: "5922E16E14FE406E"
+				type: "checkmark"
+				title: "Ok!"
+			}]
+		}
+		{
+			title: "Excavator - Carved"
+			icon: {
+				id: "tconstruct:excavator"
+				Count: 1b
+				tag: {
+					tic_multipliers: {
+						"tconstruct:mining_speed": 0.3f
+						"tconstruct:attack_damage": 1.2f
+						"tconstruct:durability": 3.75f
+					}
+					tic_stats: {
+						"tconstruct:attack_speed": 1.0f
+						"tconstruct:mining_speed": 1.32f
+						"tconstruct:attack_damage": 3.0f
+						"tconstruct:harvest_level": 1.0f
+						"tconstruct:durability": 390.0f
+					}
+					tic_broken: 0b
+					tic_modifiers: [
+						{
+							name: "tconstruct:knockback"
+							level: 2s
+						}
+						{
+							name: "tconstruct:stonebound"
+							level: 4s
+						}
+						{
+							name: "tconstruct:shovel_transform_hidden"
+							level: 1s
+						}
+						{
+							name: "tconstruct:two_handed"
+							level: 1s
+						}
+					]
+					HideFlags: 3
+					tic_materials: [
+						"tconstruct:stone"
+						"tconstruct:stone"
+						"tconstruct:stone"
+						"tconstruct:stone"
+					]
+					Damage: 0
+					tic_persistent_data: {
+						abilities: 1
+						upgrades: 2
+					}
+				}
+			}
+			x: -4.5d
+			y: 4.0d
+			subtitle: "The Excavator is braod digging tool. It digs up large areas of soil and snow in a wide range. Terraforming!"
+			description: ["Keep in mind that this quest is here just to let you know that this tool exists and that you can make it. Finishing this quest doesn't actually mean you did what you had to."]
+			dependencies: ["4F47DBA8B82E7DFB"]
+			id: "7AC56713BAEA42BF"
+			tasks: [{
+				id: "00C414460B2C12EE"
+				type: "checkmark"
+				title: "Ok!"
+			}]
+		}
+		{
+			title: "Scythe - Carved"
+			icon: {
+				id: "tconstruct:scythe"
+				Count: 1b
+				tag: {
+					tic_multipliers: {
+						"tconstruct:mining_speed": 0.45f
+						"tconstruct:durability": 2.5f
+					}
+					tic_stats: {
+						"tconstruct:attack_speed": 0.8f
+						"tconstruct:mining_speed": 1.98f
+						"tconstruct:attack_damage": 2.0f
+						"tconstruct:harvest_level": 1.0f
+						"tconstruct:durability": 260.0f
+					}
+					tic_broken: 0b
+					tic_modifiers: [
+						{
+							name: "tconstruct:stonebound"
+							level: 4s
+						}
+						{
+							name: "tconstruct:silky_aoe_shears"
+							level: 1s
+						}
+						{
+							name: "tconstruct:harvest"
+							level: 1s
+						}
+						{
+							name: "tconstruct:hoe_transform_hidden"
+							level: 1s
+						}
+						{
+							name: "tconstruct:two_handed"
+							level: 1s
+						}
+					]
+					HideFlags: 3
+					tic_materials: [
+						"tconstruct:stone"
+						"tconstruct:stone"
+						"tconstruct:stone"
+						"tconstruct:stone"
+					]
+					Damage: 0
+					tic_persistent_data: {
+						abilities: 1
+						upgrades: 2
+					}
+				}
+			}
+			x: -4.5d
+			y: 5.0d
+			subtitle: "The Scythe is a broad reaping tool, mowing down plants in a wide area. Right Click will harvest and replant crops"
+			description: ["Keep in mind that this quest is here just to let you know that this tool exists and that you can make it. Finishing this quest doesn't actually mean you did what you had to."]
+			dependencies: ["4F47DBA8B82E7DFB"]
+			id: "653E8D4D6BEE9D88"
+			tasks: [{
+				id: "32BF37E753E2ED19"
+				type: "checkmark"
+				title: "Ok!"
+			}]
+		}
+		{
+			title: "Cleaver - Casted"
+			icon: {
+				id: "tconstruct:cleaver"
+				Count: 1b
+				tag: {
+					tic_multipliers: {
+						"tconstruct:mining_speed": 0.25f
+						"tconstruct:attack_damage": 1.5f
+						"tconstruct:durability": 3.5f
+					}
+					tic_stats: {
+						"tconstruct:attack_speed": 0.9f
+						"tconstruct:mining_speed": 1.5f
+						"tconstruct:attack_damage": 8.25f
+						"tconstruct:harvest_level": 2.0f
+						"tconstruct:durability": 1540.0f
+					}
+					tic_broken: 0b
+					tic_modifiers: [
+						{
+							name: "tconstruct:severing"
+							level: 2s
+						}
+						{
+							name: "tconstruct:sturdy"
+							level: 4s
+						}
+						{
+							name: "tconstruct:silky_aoe_shears"
+							level: 1s
+						}
+						{
+							name: "tconstruct:two_handed"
+							level: 1s
+						}
+					]
+					HideFlags: 3
+					tic_materials: [
+						"tconstruct:iron"
+						"tconstruct:iron"
+						"tconstruct:iron"
+						"tconstruct:iron"
+					]
+					Damage: 0
+					tic_persistent_data: {
+						abilities: 1
+						upgrades: 2
+					}
+				}
+			}
+			x: 3.5d
+			y: -2.0d
+			subtitle: "The Cleaver is now made of metal"
+			description: ["Keep in mind that this quest is here just to let you know that this tool exists and that you can make it. Finishing this quest doesn't actually mean you did what you had to."]
+			dependencies: ["4F47DBA8B82E7DFB"]
+			id: "2E2F3534C9757FA8"
+			tasks: [{
+				id: "77E2E3CAA16C3C50"
+				type: "checkmark"
+				title: "Ok!"
+			}]
+		}
+		{
+			title: "Sledge Hammer - Casted"
+			icon: {
+				id: "tconstruct:sledge_hammer"
+				Count: 1b
+				tag: {
+					tic_multipliers: {
+						"tconstruct:mining_speed": 0.4f
+						"tconstruct:attack_damage": 1.35f
+						"tconstruct:durability": 4.0f
+					}
+					tic_stats: {
+						"tconstruct:attack_speed": 0.75f
+						"tconstruct:mining_speed": 2.4f
+						"tconstruct:attack_damage": 6.75f
+						"tconstruct:harvest_level": 2.0f
+						"tconstruct:durability": 1760.0f
+					}
+					tic_broken: 0b
+					tic_modifiers: [
+						{
+							name: "tconstruct:smite"
+							level: 2s
+						}
+						{
+							name: "tconstruct:sturdy"
+							level: 4s
+						}
+						{
+							name: "tconstruct:two_handed"
+							level: 1s
+						}
+					]
+					HideFlags: 3
+					tic_materials: [
+						"tconstruct:iron"
+						"tconstruct:iron"
+						"tconstruct:iron"
+						"tconstruct:iron"
+					]
+					Damage: 0
+					tic_persistent_data: {
+						abilities: 1
+						upgrades: 2
+					}
+				}
+			}
+			x: 3.5d
+			y: 0.0d
+			subtitle: "Things should be faster now"
+			description: ["Keep in mind that this quest is here just to let you know that this tool exists and that you can make it. Finishing this quest doesn't actually mean you did what you had to."]
+			dependencies: ["4F47DBA8B82E7DFB"]
+			id: "76965906DDEAAD47"
+			tasks: [{
+				id: "379F50D043A4298D"
+				type: "checkmark"
+				title: "Ok!"
+			}]
+		}
+		{
+			title: "Vein Hammer - Casted"
+			icon: {
+				id: "tconstruct:vein_hammer"
+				Count: 1b
+				tag: {
+					tic_multipliers: {
+						"tconstruct:mining_speed": 0.3f
+						"tconstruct:attack_damage": 1.25f
+						"tconstruct:durability": 5.0f
+					}
+					tic_stats: {
+						"tconstruct:attack_speed": 1.1f
+						"tconstruct:mining_speed": 1.8000001f
+						"tconstruct:attack_damage": 5.0f
+						"tconstruct:harvest_level": 2.0f
+						"tconstruct:durability": 2200.0f
+					}
+					tic_broken: 0b
+					tic_modifiers: [
+						{
+							name: "tconstruct:piercing"
+							level: 2s
+						}
+						{
+							name: "tconstruct:sturdy"
+							level: 4s
+						}
+						{
+							name: "tconstruct:two_handed"
+							level: 1s
+						}
+					]
+					HideFlags: 3
+					tic_materials: [
+						"tconstruct:iron"
+						"tconstruct:iron"
+						"tconstruct:iron"
+						"tconstruct:iron"
+					]
+					Damage: 0
+					tic_persistent_data: {
+						abilities: 1
+						upgrades: 2
+					}
+				}
+			}
+			x: 3.5d
+			y: 1.5d
+			subtitle: "You're lazy, I get it"
+			description: ["Keep in mind that this quest is here just to let you know that this tool exists and that you can make it. Finishing this quest doesn't actually mean you did what you had to."]
+			dependencies: ["4F47DBA8B82E7DFB"]
+			id: "60ADD54EC429B323"
+			tasks: [{
+				id: "197A846F452A3D06"
+				type: "checkmark"
+				title: "Ok!"
+			}]
+		}
+		{
+			title: "Broad Axe - Casted"
+			icon: {
+				id: "tconstruct:broad_axe"
+				Count: 1b
+				tag: {
+					tic_multipliers: {
+						"tconstruct:mining_speed": 0.3f
+						"tconstruct:attack_damage": 1.5f
+						"tconstruct:durability": 4.25f
+					}
+					tic_stats: {
+						"tconstruct:attack_speed": 0.6f
+						"tconstruct:mining_speed": 1.8000001f
+						"tconstruct:attack_damage": 10.5f
+						"tconstruct:harvest_level": 2.0f
+						"tconstruct:durability": 1870.0f
+					}
+					tic_broken: 0b
+					tic_modifiers: [
+						{
+							name: "tconstruct:sturdy"
+							level: 4s
+						}
+						{
+							name: "tconstruct:axe_transform_hidden"
+							level: 1s
+						}
+						{
+							name: "tconstruct:two_handed"
+							level: 1s
+						}
+					]
+					HideFlags: 3
+					tic_materials: [
+						"tconstruct:iron"
+						"tconstruct:iron"
+						"tconstruct:iron"
+						"tconstruct:iron"
+					]
+					Damage: 0
+					tic_persistent_data: {
+						abilities: 1
+						upgrades: 2
+					}
+				}
+			}
+			x: 3.5d
+			y: 2.5d
+			subtitle: "Chop CHOP!"
+			description: ["Keep in mind that this quest is here just to let you know that this tool exists and that you can make it. Finishing this quest doesn't actually mean you did what you had to."]
+			dependencies: ["4F47DBA8B82E7DFB"]
+			id: "1FDDA10A1B16E5F4"
+			tasks: [{
+				id: "56D398A9B50FF99C"
+				type: "checkmark"
+				title: "Ok!"
+			}]
+		}
+		{
+			title: "Excavator - Casted"
+			icon: {
+				id: "tconstruct:excavator"
+				Count: 1b
+				tag: {
+					tic_multipliers: {
+						"tconstruct:mining_speed": 0.3f
+						"tconstruct:attack_damage": 1.2f
+						"tconstruct:durability": 3.75f
+					}
+					tic_stats: {
+						"tconstruct:attack_speed": 1.0f
+						"tconstruct:mining_speed": 1.8000001f
+						"tconstruct:attack_damage": 4.2000003f
+						"tconstruct:harvest_level": 2.0f
+						"tconstruct:durability": 1650.0f
+					}
+					tic_broken: 0b
+					tic_modifiers: [
+						{
+							name: "tconstruct:knockback"
+							level: 2s
+						}
+						{
+							name: "tconstruct:sturdy"
+							level: 4s
+						}
+						{
+							name: "tconstruct:shovel_transform_hidden"
+							level: 1s
+						}
+						{
+							name: "tconstruct:two_handed"
+							level: 1s
+						}
+					]
+					HideFlags: 3
+					tic_materials: [
+						"tconstruct:iron"
+						"tconstruct:iron"
+						"tconstruct:iron"
+						"tconstruct:iron"
+					]
+					Damage: 0
+					tic_persistent_data: {
+						abilities: 1
+						upgrades: 2
+					}
+				}
+			}
+			x: 3.5d
+			y: 4.0d
+			subtitle: "Diggy diggy hole"
+			description: ["Keep in mind that this quest is here just to let you know that this tool exists and that you can make it. Finishing this quest doesn't actually mean you did what you had to."]
+			dependencies: ["4F47DBA8B82E7DFB"]
+			id: "682FDB005F5026A0"
+			tasks: [{
+				id: "4EAC11AE10C535E9"
+				type: "checkmark"
+				title: "Ok!"
+			}]
+		}
+		{
+			title: "Scythe - Casted"
+			icon: {
+				id: "tconstruct:scythe"
+				Count: 1b
+				tag: {
+					tic_multipliers: {
+						"tconstruct:mining_speed": 0.45f
+						"tconstruct:durability": 2.5f
+					}
+					tic_stats: {
+						"tconstruct:attack_speed": 0.8f
+						"tconstruct:mining_speed": 2.6999998f
+						"tconstruct:attack_damage": 3.0f
+						"tconstruct:harvest_level": 2.0f
+						"tconstruct:durability": 1100.0f
+					}
+					tic_broken: 0b
+					tic_modifiers: [
+						{
+							name: "tconstruct:sturdy"
+							level: 4s
+						}
+						{
+							name: "tconstruct:silky_aoe_shears"
+							level: 1s
+						}
+						{
+							name: "tconstruct:harvest"
+							level: 1s
+						}
+						{
+							name: "tconstruct:hoe_transform_hidden"
+							level: 1s
+						}
+						{
+							name: "tconstruct:two_handed"
+							level: 1s
+						}
+					]
+					HideFlags: 3
+					tic_materials: [
+						"tconstruct:iron"
+						"tconstruct:iron"
+						"tconstruct:iron"
+						"tconstruct:iron"
+					]
+					Damage: 0
+					tic_persistent_data: {
+						abilities: 1
+						upgrades: 2
+					}
+				}
+			}
+			x: 3.5d
+			y: 5.0d
+			subtitle: "No, you're not the Death"
+			description: ["Keep in mind that this quest is here just to let you know that this tool exists and that you can make it. Finishing this quest doesn't actually mean you did what you had to."]
+			dependencies: ["4F47DBA8B82E7DFB"]
+			id: "4CC42C3E6347708C"
+			tasks: [{
+				id: "7E8C56360AAC0196"
+				type: "checkmark"
+				title: "Ok!"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -3.0d
+			shape: "gear"
+			subtitle: "The Potato Cannon will launch well.. potatoes, to deal massive damage to its targets. Usign poisonous potatos instead of regular potatoes, will inflict poison to the target. The Cannon can be enchanted with Potato Recovery for a better chance as receiving back your potatoes"
+			dependencies: [
+				"275FE11C673E522D"
+				"2BA7183800B331E0"
+			]
+			id: "0B5B0DAA219F25EA"
+			tasks: [{
+				id: "7B6F2BD77D9F8F73"
+				type: "item"
+				item: {
+					id: "create:potato_cannon"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Rapier - Carved"
+			icon: {
+				id: "tinker_rapier:rapier_tic"
+				Count: 1b
+				tag: {
+					tic_multipliers: { }
+					tic_stats: {
+						"tconstruct:attack_speed": 3.0f
+						"tconstruct:mining_speed": 5.225f
+						"tconstruct:attack_damage": 2.25f
+						"tconstruct:harvest_level": 1.0f
+						"tconstruct:durability": 104.0f
+					}
+					tic_broken: 0b
+					tic_modifiers: [
+						{
+							name: "tconstruct:stonebound"
+							level: 4s
+						}
+						{
+							name: "tconstruct:silky_shears"
+							level: 1s
+						}
+					]
+					HideFlags: 3
+					tic_materials: [
+						"tconstruct:stone"
+						"tconstruct:stone"
+						"tconstruct:stone"
+						"tconstruct:stone"
+					]
+					Damage: 0
+					tic_persistent_data: {
+						abilities: 1
+						upgrades: 2
+					}
+				}
+			}
+			x: -4.5d
+			y: -1.0d
+			subtitle: "The Rapier is a weapon which relies on speed to defeat its enemies. By default, it has the ability to puch you backwards when you right-click with it. Additionally, it will deal more damage to enemies which don't have a Chestplate"
+			description: ["Keep in mind that this quest is here just to let you know that this tool exists and that you can make it. Finishing this quest doesn't actually mean you did what you had to."]
+			dependencies: ["4F47DBA8B82E7DFB"]
+			id: "610F34292BDD8B72"
+			tasks: [{
+				id: "327E74CA5E3A7C4C"
+				type: "checkmark"
+				title: "Ok!"
+			}]
+		}
+		{
+			title: "Rapier - Casted"
+			icon: {
+				id: "tinker_rapier:rapier_tic"
+				Count: 1b
+				tag: {
+					tic_multipliers: { }
+					tic_stats: {
+						"tconstruct:attack_speed": 3.0f
+						"tconstruct:mining_speed": 6.75f
+						"tconstruct:attack_damage": 3.25f
+						"tconstruct:harvest_level": 2.0f
+						"tconstruct:durability": 440.0f
+					}
+					tic_broken: 0b
+					tic_modifiers: [
+						{
+							name: "tconstruct:sturdy"
+							level: 4s
+						}
+						{
+							name: "tconstruct:silky_shears"
+							level: 1s
+						}
+					]
+					HideFlags: 3
+					tic_materials: [
+						"tconstruct:iron"
+						"tconstruct:iron"
+						"tconstruct:iron"
+						"tconstruct:iron"
+					]
+					Damage: 0
+					tic_persistent_data: {
+						abilities: 1
+						upgrades: 2
+					}
+				}
+			}
+			x: 3.5d
+			y: -1.0d
+			subtitle: "The Rapier, now made of casted metals"
+			description: ["Keep in mind that this quest is here just to let you know that this tool exists and that you can make it. Finishing this quest doesn't actually mean you did what you had to."]
+			dependencies: ["4F47DBA8B82E7DFB"]
+			id: "474C2E78DF77BC28"
+			tasks: [{
+				id: "21589CE261A133B9"
+				type: "checkmark"
+				title: "Ok!"
+			}]
+		}
+		{
+			x: -3.0d
+			y: 6.0d
+			shape: "gear"
+			subtitle: "Infinite Water: By consuming Mana from a player-carried Mana Tablet, the Rod of the Seas can create a Water source block in a targeted area. It can also be used to refill a Petal Apothecary. Both of these abilities consume 75 Mana per use"
+			dependencies: ["5A3C93AB3A6C17DA"]
+			id: "0E90891241CDE2D2"
+			tasks: [{
+				id: "480EFD8F78089B9F"
+				type: "item"
+				item: "botania:water_rod"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 6.0d
+			shape: "gear"
+			subtitle: "The Upwards Propeller: By using Mana from a player-carried Mana Tablet, the Rod of the Skies propels the player into the air at a very high velocity. When the Rod is given to a Livingwood Avatar, every time a player jumps in a 13x13 area around the Avatar they will be launched 35 blocks up and given the Feather Feet effect for 5 seconds"
+			dependencies: ["20FAA4078A7CB9A1"]
+			id: "299652600AB2F04F"
+			tasks: [{
+				id: "77520B6A3D974977"
+				type: "item"
+				item: {
+					id: "botania:tornado_rod"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: -1.0d
+			y: 6.0d
+			shape: "gear"
+			subtitle: "The Fire Circle: By using Mana from a Mana Tablet in the player's inventory, the Rod of the Hells will cast a circle of red fire clouds around the player, and any entity including the caster will burn inside the circle"
+			dependencies: ["204E4CC598F248A6"]
+			id: "22D952FE6E8D01FC"
+			tasks: [{
+				id: "15B732F51AFA56A6"
+				type: "item"
+				item: "botania:fire_rod"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 5.0d
+			shape: "gear"
+			subtitle: "Infinite Dirt: The Rod of the Lands will consume Mana from the player's inventory to create a Dirt block in the targeted area, using 75 Mana per block"
+			dependencies: ["0F4E331615DD558C"]
+			id: "21DD9DF319EBE8A4"
+			tasks: [{
+				id: "245242D15F07C57B"
+				type: "item"
+				item: "botania:dirt_rod"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 5.0d
+			shape: "gear"
+			subtitle: "Did somebody say Terrafirmacraft? Oh, no? Oh...well. ANYWAY, you can flat large areas with this thing! Left Click for more info"
+			description: [
+				"The Rod of the Terra Firma will consume Mana from the player's inventory to flatten and level the ground to where the player is standing by either removing blocks, or placing dirt."
+				""
+				"When the right-click is held down, the Rod will attempt to flatten the land in a 33x33x33 area. It will fill the area 17 blocks below the player by placing Dirt on top of any blocks it finds and will remove all natural blocks 16 blocks above the player. When filling, it will try to alter the land as naturally as possible. Blocks that have been removed by the Rod are permanently lost. The cost of removing or creating blocks is 55 Mana per block."
+				""
+				"The Rod will not function if the player attempts to use it below the sea level."
+				""
+				"Blocks affected by this process are: Dirt, Stone, Gravel, Sand, Grass, Mycelium, Podzol, Snow layers, Sandstone, Hardened Clay, Diorite, Granite and Andesite."
+			]
+			dependencies: [
+				"111B86AE41B02D70"
+				"6441A8AAB2A4686E"
+			]
+			id: "338B62B131DE6656"
+			tasks: [{
+				id: "3EE9566FD585B3A8"
+				type: "item"
+				item: "botania:terraform_rod"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 5.0d
+			shape: "gear"
+			subtitle: "Infinite Cobblestone: The Rod of the Depths will consume Mana from the player's inventory to create a Cobblestone block in the targeted area, using 150 Mana per block"
+			dependencies: [
+				"5A3C93AB3A6C17DA"
+				"204E4CC598F248A6"
+			]
+			id: "3DB300BF0A833CAF"
+			tasks: [{
+				id: "5936E67EA77249A4"
+				type: "item"
+				item: "botania:cobble_rod"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 6.0d
+			shape: "gear"
+			subtitle: "Limited x-ray. Left Click for more info"
+			description: [
+				"By consuming Mana from the player's inventory, the Rod of the Plentiful Mantle can show nearby ores."
+				""
+				"When used, all ores in a 15 block radius around the player will be highlighted for a short time by colored particles visible through walls. Every color shows a single type of ore, but is different on every use. The Rod consumes 3,000 Mana per use."
+				""
+				"When this rod is given to a Livingwood Avatar, ores in an 18 block radius will be revealed, using 3,000 Mana every 10 seconds. The colors will not be changed if the Avatar is not moved."
+			]
+			hide_dependency_lines: true
+			dependencies: ["3D75721DA9392AA5"]
+			id: "43373229173D788F"
+			tasks: [{
+				id: "4B4C9EB10F57328B"
+				type: "item"
+				item: "botania:divining_rod"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 6.0d
+			shape: "gear"
+			subtitle: "Instant Block Smelter: By consuming Mana from the player's inventory, the Rod of the Molten Core will smelt targeted blocks at a cost of 300 Mana per block smelted"
+			dependencies: ["204E4CC598F248A6"]
+			id: "5231528266DA3E2B"
+			tasks: [{
+				id: "46514B9C06CCF2CA"
+				type: "item"
+				item: "botania:smelt_rod"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 6.0d
+			shape: "gear"
+			subtitle: "Block Swapper: By consuming Mana from the player's inventory, the Rod of the Shifting Crust can replace blocks of one type in its range with a different one from the player's inventory. Shift right-clicking a block with the Rod will set it as the target"
+			dependencies: ["1FAA3F48DAAE770A"]
+			id: "5E0B5FE61A5BC398"
+			tasks: [{
+				id: "67F3A108CB26DA7D"
+				type: "item"
+				item: {
+					id: "botania:exchange_rod"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			title: "Pew-pew!"
+			x: -1.5d
+			y: 3.0d
+			shape: "gear"
+			subtitle: "Well.. the title is pretty self explanatory, isn't it? It isn't?! Well... Left Click for more info"
+			description: [
+				"The Mana Blaster is portable Mana Spreader that the player can fire to shoot Mana bursts using Mana from a Mana Tablet in the player's inventory."
+				""
+				"Compared to a Mana Spreader, Mana bursts fired by the blaster are 5 times faster, but hold 25% less Mana. When the Blaster is fired, the player will be affected by recoil proportional to the burst's velocity."
+				""
+				"Mana Lenses can be used with the Blaster to provide it with their effects. To apply them, craft the blaster and the lens together. Lenses are removed by putting the blaster in the crafting grid by itself. The Tripwire and Flare Lenses cannot be applied. The Blaster can only hold a single lens. Applying a Lens Clip will allow the blaster to store 5 more - the active lens is changed by shift-right clicking with the blaster."
+				""
+				"The Mana Blaster has a 1.5 second cooldown time before it can be shot again, shown by the durability bar. The cooldown is decreased by 8 ticks for every level of the Haste status effect."
+			]
+			dependencies: [
+				"2914918CED2A5233"
+				"3D75721DA9392AA5"
+			]
+			id: "1CDD6A0933AFD82D"
+			tasks: [{
+				id: "53D090BACDD7266D"
+				type: "item"
+				item: {
+					id: "botania:mana_gun"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: -2.5d
+			y: 7.0d
+			shape: "gear"
+			subtitle: "Infinite Torches: When right clicked on a block, it places a light source. If there is already a light source present then it will be removed. When shift-right clicked on a block, it turns it into an unbreakable Translucent Block. Shift-right clicking on a translucent block reverts it to its previous state. The wand can be crafted with any dye to change the color of placed light sources"
+			dependencies: ["05B9DF27F7AD850D"]
+			id: "7330250FE72C49F4"
+			tasks: [{
+				id: "4B24B6F21FE28741"
+				type: "item"
+				item: {
+					id: "astralsorcery:illumination_wand"
+					Count: 1b
+					tag: {
+						astralsorcery: { }
+					}
+				}
+			}]
+		}
+		{
+			x: -1.5d
+			y: 7.0d
+			shape: "gear"
+			subtitle: "Building Wand: It is used to aid block placement. While wielding the wand, sneak right-click on a block in the world to set it as the template block to place down. Aim at any block in the world to build a straight line of that block from the original block to yourself"
+			dependencies: ["05B9DF27F7AD850D"]
+			id: "634D3BDE419DC51F"
+			tasks: [{
+				id: "7DF4136285092FBE"
+				type: "item"
+				item: {
+					id: "astralsorcery:architect_wand"
+					Count: 1b
+					tag: {
+						astralsorcery: { }
+					}
+				}
+			}]
+		}
+		{
+			x: -0.5d
+			y: 7.0d
+			shape: "gear"
+			subtitle: "Block Exchanger: This wand can be used to replace blocks with other blocks. Shift right-clicking a block with it, will select that specific block, to be used as a replacement for other blocks, of course, if the player has that type of block in their inventory. While looking at the air and using shift right-click, the player can cycle between multiple AOE sizes"
+			dependencies: ["05B9DF27F7AD850D"]
+			id: "7D0C859830DAC0CA"
+			tasks: [{
+				id: "4ADA73DE47B9B0B1"
+				type: "item"
+				item: {
+					id: "astralsorcery:exchange_wand"
+					Count: 1b
+					tag: {
+						astralsorcery: { }
+					}
+				}
+			}]
+		}
+		{
+			x: 0.5d
+			y: 7.0d
+			shape: "gear"
+			subtitle: "The Arcane Grappeler..?: When the player right clicks with the wand, they are pulled in the direction they are looking"
+			dependencies: ["05B9DF27F7AD850D"]
+			id: "649DD7FA9F00C007"
+			tasks: [{
+				id: "1E193FFA74A1D524"
+				type: "item"
+				item: "astralsorcery:grapple_wand"
+			}]
+		}
+		{
+			x: 1.5d
+			y: 7.0d
+			shape: "gear"
+			subtitle: "Corvo's Blink: When the player right clicks with the wand, they'll be pushed in the direction they are looking. By shift right-clicking with it, the player can switch to the \"Blink\" mode. If the \"Blink\" mode is selected, the user will be teleported to a location, rather then pushed. The \"Blink\" mode will require more starlight to be used"
+			dependencies: ["05B9DF27F7AD850D"]
+			id: "06D8390E808C57E0"
+			tasks: [{
+				id: "75797A9FBDAD3A25"
+				type: "item"
+				item: {
+					id: "astralsorcery:blink_wand"
+					Count: 1b
+					tag: {
+						astralsorcery: { }
+					}
+				}
+			}]
+		}
+		{
+			x: 1.0d
+			y: 4.0d
+			shape: "heart"
+			subtitle: "The Terra Harvester is a very powerful shovel. Similarly to the Terra Shatterer, the Harvester has two modes. In the Default mode, it will be a regular shovel, with the ability to make paths and till soil. If it's in your off-hand you can use it on crops as Bonemeal. When its Advanced mode is turned on (Right-Click), the Harvester will work in a 3x3 area. An Overwrowth Seed can be found in the world through loot chests"
+			dependencies: [
+				"111B86AE41B02D70"
+				"42C9859BE477A1BD"
+			]
+			id: "5CCF902DF4B48140"
+			tasks: [{
+				id: "66855EA6DB49B77C"
+				type: "item"
+				item: {
+					id: "botaniaadditions:terra_shovel"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -0.5d
+			y: -1.0d
+			shape: "gear"
+			subtitle: "The HPS is an upgraded version of the Vanilla Shield. Besides being more durable then the Vanilla Shield, it can also receive some upgrades at the Engineer's Workbench. Left Click for more info"
+			description: [
+				"There are 3 upgrades available for this Shield. However, it has only 2 upgrade slots, so you'll have to choose what you'll use. The upgrades are:"
+				""
+				"The Flashbulb: When your attack is blocked, the attacked will be blinded by a powerful Flash."
+				""
+				"The Shock Emmiters: This upgrade will vaporize the incomming projectiles. It will also shock the attackers."
+				""
+				"The Magnetic Glove: When this upgrade is installed on the Shield, you have the ability to double tap on the `S` key to get it in your off-hand as long as it is somehere in you inventory. Pressing the `S` key again, will return the Shield to its initial position."
+			]
+			dependencies: ["59DF5370DD2EAE51"]
+			id: "693AE5BD8CB1BE1D"
+			tasks: [{
+				id: "5BB14074D389C420"
+				type: "item"
+				item: {
+					id: "immersiveengineering:shield"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+					ForgeCaps: {
+						Parent: {
+							Size: 2
+							Items: [ ]
+						}
+					}
+				}
+			}]
+		}
+	]
+}

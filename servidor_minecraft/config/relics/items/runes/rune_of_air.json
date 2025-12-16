@@ -1,0 +1,13 @@
+{
+  "ingredients": [
+    "minecraft:feather",
+    "minecraft:sugar",
+    "minecraft:sugar_cane",
+    "minecraft:string"
+  ],
+  "loot": {
+    "table": [
+    ],
+    "chance": 0
+  }
+}

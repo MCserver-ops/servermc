@@ -1,0 +1,42 @@
+{
+    "flower": "minecraft:nether_bricks",
+    "creator": "Me_Ryan",
+    "lore": "Hive Bee",
+    "hasHoneycomb": true,
+    "traits": ["blaze"],
+    "maxTimeInHive": 1800,
+    "baseLayerTexture": "magmatic/magmatic",
+    "ColorData": {
+      "modelType": "ORE",
+      "honeycombColor": "#ffcc00",
+      "primaryColor": "#ffcc00",
+      "secondaryColor": "#b23d08"
+    },
+      "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+        "mainOutput": "minecraft:magma_cream",
+        "bottleOutput": "minecraft:honey_bottle",
+        "bottleOutputWeight": 0.10,
+        "mainOutputWeight": 0.20
+      },
+      "SpawnData": {
+        "canSpawnInWorld": false
+      },
+      "BreedData": {
+        "isBreedable": true,
+        "parent1": "Lava",
+        "parent2": "Mason",
+        "feedItem": "minecraft:magma_block",
+        "feedAmount": 64
+      },
+      "CombatData": {
+        "isPassive": false,
+        "removeStingerOnAttack": true,
+        "inflictsPoison": false,
+        "attackDamage": 8
+      },
+      "TraitData": {
+        "hasTraits": true
+      }
+  }
+  

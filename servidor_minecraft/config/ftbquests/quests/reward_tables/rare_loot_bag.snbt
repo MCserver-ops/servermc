@@ -1,0 +1,54 @@
+{
+	id: "6397CA2E59DD37BC"
+	order_index: 1
+	title: "Rare Loot Bag"
+	icon: "immersiveengineering:shader_bag_rare"
+	loot_size: 1
+	rewards: [
+		{ item: "thermal:rf_coil", count: 16, weight: 2 }
+		{ item: "emendatusenigmatica:steel_ingot", count: 64, weight: 2 }
+		{ item: "minecraft:iron_block", count: 32, weight: 2 }
+		{ item: "minecraft:coal_block", count: 64, weight: 2 }
+		{ item: "mekanism:alloy_infused", count: 16, weight: 2 }
+		{
+			item: {
+				id: "mob_grinding_utils:tank"
+				Count: 1b
+				tag: {
+					FluidName: "minecraft:lava"
+					Amount: 32000
+					x: -10
+					y: 95
+					z: -35
+					id: "mob_grinding_utils:tank"
+				}
+			}
+		}
+		{ item: "pamhc2foodcore:baconcheeseburgeritem", count: 8 }
+		{ item: "pamhc2foodextended:cherrypieitem", count: 16 }
+		{ item: "pamhc2foodextended:pineapplehamitem", count: 16 }
+		{ item: "minecraft:enchanted_golden_apple", count: 12 }
+		{ item: "aquaculture:neptunium_ingot", count: 12 }
+		{
+			item: {
+				id: "artifacts:helium_flamingo"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{
+			item: {
+				id: "artifacts:digging_claws"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+		}
+		{ item: "botania:livingrock", count: 64 }
+		{ item: "botania:livingwood", count: 64 }
+		{ item: "quark:diamond_heart", count: 16, weight: 3 }
+	]
+}

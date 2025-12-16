@@ -1,0 +1,14 @@
+{
+  "type": "charcoal_pit:orekiln",
+  "ingredients": [
+    [
+        {
+          "tag": "forge:ores/gold"
+        }
+    ]
+  ],
+  "result": {
+    "tag": "forge:ingots/gold"
+  },
+  "amount": 1
+}

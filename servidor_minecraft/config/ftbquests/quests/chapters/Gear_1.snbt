@@ -1,0 +1,2185 @@
+{
+	id: "24F728EF8FBE1617"
+	group: "52BC1523CD35BD71"
+	order_index: 0
+	filename: "Gear_1"
+	title: "Gear - 1"
+	icon: "tconstruct:smeltery_controller"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Starting Tools"
+			x: -9.0d
+			y: -4.0d
+			shape: "square"
+			subtitle: "Make your first tools and conquer the World with them. Left Click for more info"
+			description: [
+				"Unlike a regular Minecraft experiance, here you'll have to use Flint to make your first set of Tools. These will require Flint and Straw. Straw can be obtained by breaking Grass with the Flint Knife."
+				""
+				"Now, the Flint set of Tools will be quite similar to the Stone one, which you're most probably used to. However, there are some key differences between these Flint tools and the Vanilla ones."
+				""
+				"They'll have less durability and the Pickaxe will allow you to mine only Copper, Tin, Zinc, Lapis Lazuli and Lead. Coal, Iron and other resources cannot be harvested by this pick and you'll have to progress further in order to obtain a pick strong enough to break the other Ores."
+				""
+				"Finishing this quest will give you a Chopping Block which can be used to obtain 4 Planks out of a variety of Logs. Just place a Log on the Chopping Block and Right-Click it with an Axe until you get your Planks."
+			]
+			dependencies: ["7B865240A787B916"]
+			id: "6D0A47AE3920EFBB"
+			tasks: [
+				{
+					id: "0251744F82208489"
+					type: "item"
+					item: {
+						id: "farmersdelight:flint_knife"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "00DA7C56C1C71288"
+					type: "item"
+					item: {
+						id: "decursiomod:flint_pickaxe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "58A43FBF1DBFA6A5"
+					type: "item"
+					item: "minecraft:flint"
+					count: 8
+				}
+				{
+					id: "0D9719E8BFBB3087"
+					type: "item"
+					item: "primutils:chopping_block"
+				}
+				{
+					id: "1DE09AA08C31A026"
+					type: "item"
+					item: "farmersdelight:straw"
+					count: 32
+				}
+			]
+		}
+		{
+			title: "Getting into some real Tools!"
+			x: 0.5d
+			y: -7.0d
+			shape: "square"
+			subtitle: "Using Tinkers Construct, make your first Pickaxe. Left Click for more info. PS: Vanilla tools have modified recipes and are not available at this stage"
+			description: [
+				"Since you can't use Bronze Tools forever, we'd say it is time for an upgrade, or actually, a downgrade. "
+				""
+				"Tinker's Construct will eventually allow you to access Tools better then the Bronze ones, but for now you'll have to downgrade to something like Stone (metals can't be used yet, as they have to be casted). Don't worry, you'll be able to upgrade even these new Stone Tools."
+				""
+				"For now, through the Part Builder, you'll be able to access only Tier I Materials. Note that each Material available (even Tier I), usually has some special abilities. For example, Tools which contain a Stone Part will mine faster when they have low durability, but will do less Damage. To see more about these Materials and their properties, consult the 'Encyclopedia of Tinkering'."
+			]
+			dependencies: ["0B45311ED355CBB3"]
+			id: "7C29480CE8A8FDE5"
+			tasks: [{
+				id: "5EB3623D73116AE8"
+				type: "advancement"
+				title: "Make any tool from Tinkers Construct"
+				advancement: "tconstruct:tools/tinker_tool"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "55BCBB8D7B18BF2C"
+				type: "loot"
+				table_id: 5206766833681472091L
+			}]
+		}
+		{
+			x: 0.5d
+			y: -4.5d
+			shape: "square"
+			subtitle: "Build a vanilla Furnace and get out of the primitive stage of the game"
+			dependencies: ["6F6302D94B7809B6"]
+			id: "1AF3E867A00953D7"
+			tasks: [{
+				id: "452C5BE79A6B398A"
+				type: "item"
+				item: "minecraft:furnace"
+			}]
+			rewards: [{
+				id: "64A1CB095576EE3C"
+				type: "item"
+				item: "emendatusenigmatica:iron_chunk"
+				count: 64
+			}]
+		}
+		{
+			title: "The Coke Oven - Mk I"
+			x: 7.0d
+			y: -4.0d
+			shape: "square"
+			subtitle: "Craft Coke Bricks. Left click for information on creating a Coke Oven"
+			description: [
+				"Right click a 3x3x3 cube of Coke Bricks with an Engineer's Hammer to make a Coke Oven."
+				""
+				"The Coke Oven will fill up with Creosote Oil and eventually stop working, so try to automate draining this as soon as possible."
+			]
+			dependencies: ["5FCF6A3D94BB7EA2"]
+			id: "75ACC6EA81DF8C4D"
+			tasks: [{
+				id: "67EDF398D500CD42"
+				type: "item"
+				item: "immersiveengineering:cokebrick"
+				count: 27L
+			}]
+			rewards: [{
+				id: "55FFBAD8FEBEBE9F"
+				type: "item"
+				item: "supplementaries:faucet"
+			}]
+		}
+		{
+			title: "Blast Furnace"
+			x: 7.0d
+			y: 0.5d
+			shape: "square"
+			subtitle: "Craft Blast Bricks. Left click for information on creating a Blast Furnace"
+			description: [
+				"Right click a 3x3x3 cube of Blast Bricks with an Engineer's Hammer to make a Blast Furnace."
+				""
+				"A Blast Furnace will accept Coal Coke produced in a Coke Oven and Iron Ingots to slowly produce Steel."
+			]
+			dependencies: ["6C5A3F90A7B88666"]
+			id: "0E1C4AEDB8594945"
+			tasks: [{
+				id: "2B20273225A90A38"
+				type: "item"
+				item: "immersiveengineering:blastbrick"
+				count: 27L
+			}]
+		}
+		{
+			title: "Forging Ahead!"
+			x: 9.0d
+			y: 0.5d
+			shape: "diamond"
+			subtitle: "Obtain Steel from a Blast Furnace which uses Coal Coke, or Charcoal as Fuel. 1 Coal Coke will be required per Steel Ingot. 4 Charcoal pieces will be required per Steel Ingot. Required to unlock the 2nd Age"
+			dependencies: [
+				"0E1C4AEDB8594945"
+				"3C32EA0E664589C1"
+			]
+			size: 2.0d
+			id: "031023A8EA6FD4D0"
+			tasks: [{
+				id: "5CFC34FC014226DE"
+				type: "item"
+				item: "emendatusenigmatica:steel_ingot"
+			}]
+			rewards: [{
+				id: "313971B4AF54EF75"
+				type: "loot"
+				table_id: 5206766833681472091L
+			}]
+		}
+		{
+			title: "Crafting Table MkIII"
+			x: 8.0d
+			y: -6.0d
+			shape: "gear"
+			subtitle: "Unlike the Crafting Station from Tinker's Construct, the Metal Crafting Table has an internal inventory for storing items you might use store items for recipes. It also has a feature which will allow you to make the previous recipes with ease. Just hit the arrows located on the right hand side"
+			dependencies: ["34DE05218D6A3ACA"]
+			id: "14C60A7B6156F520"
+			tasks: [{
+				id: "67122798373B4B39"
+				type: "item"
+				item: "engineersdecor:metal_crafting_table"
+			}]
+			rewards: [{
+				id: "40478E0943652F73"
+				type: "item"
+				item: "immersiveengineering:treated_wood_horizontal"
+				count: 64
+			}]
+		}
+		{
+			title: "Crafting Table MkI"
+			x: -12.5d
+			y: -4.0d
+			shape: "square"
+			subtitle: "Getting Started. Left click for more info"
+			description: [
+				"Well, nothing too special here, just the vanilla Crafting Table. Don't worry, you'll spend a lot of time making lots and lots of modded things. "
+				""
+				"For now, just make a Crafting Table to receive a nice starting kit. This kit will include the Nature's Compass which will allow you to find all the biomes you need. Right Click with it and its interface will open. Here, you'll be able to search for any biome in the game throught multiple filters."
+				""
+				"This quest will be the start of the 1st Age's tech phase and at this point, you can consider yourself to be some sort of Advanced Cavemen. Call yourself Homo Sapiens Sapiens Sapiens."
+			]
+			dependencies: ["3073595C53701173"]
+			size: 2.0d
+			id: "0DDA2FB169318B04"
+			tasks: [{
+				id: "7DB9C0EAD3B6046C"
+				type: "item"
+				title: "Any Crafting Table"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:workbench"
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "43973F3BF30F9344"
+					type: "item"
+					item: {
+						id: "minecraft:shield"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "51E2AF3457D22B2C"
+					type: "item"
+					item: {
+						id: "ceramics:clay_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "75728118B6BDE937"
+					type: "item"
+					item: {
+						id: "ceramics:clay_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "08A752BA181E4CD2"
+					type: "item"
+					item: {
+						id: "ceramics:clay_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "50685376BDD2F69F"
+					type: "item"
+					item: {
+						id: "ceramics:clay_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "2FD745DF3547F693"
+					type: "item"
+					item: {
+						id: "naturescompass:naturescompass"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "2C6452FFE695C6C0"
+					type: "item"
+					item: {
+						id: "akashictome:tome"
+						Count: 1b
+						tag: {
+							"akashictome:is_morphing": 1b
+							"akashictome:data": {
+								industrialforegoing: {
+									id: "patchouli:guide_book"
+									Count: 1b
+									tag: {
+										"patchouli:book": "industrialforegoing:industrial_foregoing"
+									}
+								}
+								tconstruct: {
+									id: "tconstruct:encyclopedia"
+									Count: 1b
+								}
+								powah: {
+									id: "powah:book"
+									Count: 1b
+								}
+								resourcefulbees: {
+									id: "patchouli:guide_book"
+									Count: 1b
+									tag: {
+										"patchouli:book": "resourcefulbees:fifty_shades_of_bees"
+									}
+								}
+								astralsorcery: {
+									id: "astralsorcery:tome"
+									Count: 1b
+									tag: {
+										"akashictome:displayName": {
+											text: "Astral Tome"
+										}
+										"akashictome:is_morphing": 1b
+										display: {
+											Name: "{\"translate\":\"akashictome.sudo_name\",\"with\":[{\"color\":\"green\",\"text\":\"Astral Tome\"}]}"
+										}
+									}
+								}
+								psi: {
+									id: "patchouli:guide_book"
+									Count: 1b
+									tag: {
+										"patchouli:book": "psi:encyclopaedia_psionica"
+									}
+								}
+								immersiveengineering: {
+									id: "immersiveengineering:manual"
+									Count: 1b
+								}
+								simpleplanes: {
+									id: "patchouli:guide_book"
+									Count: 1b
+									tag: {
+										"patchouli:book": "simpleplanes:planes_book"
+									}
+								}
+								eidolon: {
+									id: "eidolon:codex"
+									Count: 1b
+									tag: {
+										"akashictome:displayName": {
+											text: "Ars Ecclesia"
+										}
+										"akashictome:is_morphing": 1b
+										display: {
+											Name: "{\"translate\":\"akashictome.sudo_name\",\"with\":[{\"color\":\"green\",\"text\":\"Ars Ecclesia\"}]}"
+										}
+									}
+								}
+								transport: {
+									id: "patchouli:guide_book"
+									Count: 1b
+									tag: {
+										"akashictome:displayName": {
+											text: "Advanced Transport"
+										}
+										"patchouli:book": "transport:guide"
+										"akashictome:is_morphing": 1b
+										display: {
+											Name: "{\"translate\":\"akashictome.sudo_name\",\"with\":[{\"color\":\"green\",\"text\":\"Advanced Transport\"}]}"
+										}
+									}
+								}
+								engineersdecor: {
+									id: "patchouli:guide_book"
+									Count: 1b
+									tag: {
+										"patchouli:book": "engineersdecor:engineersdecor_manual"
+									}
+								}
+								botania: {
+									id: "botania:lexicon"
+									Count: 1b
+									tag: { }
+								}
+								ars_nouveau: {
+									id: "ars_nouveau:worn_notebook"
+									Count: 1b
+									tag: {
+										"akashictome:displayName": {
+											text: "Worn Notebook"
+										}
+										"akashictome:is_morphing": 1b
+										display: {
+											Name: "{\"translate\":\"akashictome.sudo_name\",\"with\":[{\"color\":\"green\",\"text\":\"Worn Notebook\"}]}"
+										}
+									}
+								}
+								draconicevolution: {
+									id: "draconicevolution:info_tablet"
+									Count: 1b
+									tag: {
+										"akashictome:displayName": {
+											text: "Information Tablet"
+										}
+										"akashictome:is_morphing": 1b
+										display: {
+											Name: "{\"translate\":\"akashictome.sudo_name\",\"with\":[{\"color\":\"green\",\"text\":\"Information Tablet\"}]}"
+										}
+									}
+								}
+								thermal: {
+									id: "patchouli:guide_book"
+									Count: 1b
+									tag: {
+										"patchouli:book": "thermal:guidebook"
+									}
+								}
+								rftoolsbase: {
+									id: "rftoolsbase:manual"
+									Count: 1b
+								}
+								twilightforest: {
+									id: "patchouli:guide_book"
+									Count: 1b
+									tag: {
+										"patchouli:book": "twilightforest:guide"
+									}
+								}
+								supplementaries: {
+									id: "patchouli:guide_book"
+									Count: 1b
+									tag: {
+										"patchouli:book": "supplementaries:supplementaries_guide"
+									}
+								}
+							}
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "The Camp Fire"
+			x: -12.5d
+			y: -2.5d
+			shape: "gear"
+			subtitle: "The Camp Fire will act as an early option for Cooking. It can heat up most of the average food items and it can even be used to obtain Torches early, since you don't have access to regular Coal yet. Just place Sticks on the Campfire and wait"
+			dependencies: ["0DDA2FB169318B04"]
+			id: "267C933451F8C430"
+			tasks: [{
+				id: "07A42FE871DE2809"
+				type: "item"
+				item: "minecraft:campfire"
+			}]
+			rewards: [{
+				id: "689FF9DB9E3125F0"
+				type: "item"
+				item: "minecraft:torch"
+				count: 64
+			}]
+		}
+		{
+			title: "Starting Agriculture - Animal"
+			icon: "farmersdelight:ham"
+			x: -14.0d
+			y: -3.5d
+			subtitle: "Delicious even in MidGard. Left Click for more info"
+			description: [
+				"Part of agriculture are animals, too. Start a basic animal farm to keep yourself well fed."
+				""
+				"We'd suggest getting Cows early on, as they'll provide both Leather and Milk which will be used a lot in the beginning."
+			]
+			dependencies: ["0DDA2FB169318B04"]
+			id: "7A57A97C17D9CD09"
+			tasks: [{
+				id: "72B9667E2B68152E"
+				type: "advancement"
+				title: "Breed two animals"
+				icon: {
+					id: "artifacts:crystal_heart"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				advancement: "minecraft:husbandry/breed_an_animal"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "000AF16049E673D2"
+				type: "item"
+				item: "farmersdelight:smoked_ham"
+				count: 32
+			}]
+		}
+		{
+			x: 9.0d
+			y: -4.0d
+			shape: "diamond"
+			subtitle: "Better then your regular coal. This beauty can smelt up to 16 items at a time, instead of 8 which can be smelted with the Vanilla Coal"
+			dependencies: ["75ACC6EA81DF8C4D"]
+			size: 2.0d
+			id: "3C32EA0E664589C1"
+			tasks: [{
+				id: "3867E0ED1F0B7D47"
+				type: "item"
+				item: "emendatusenigmatica:coke_gem"
+			}]
+			rewards: [{
+				id: "09809262BCEF310E"
+				type: "loot"
+				table_id: 5206766833681472091L
+			}]
+		}
+		{
+			title: "Starting Agriculture - Vegetal"
+			icon: "farmersdelight:tomato"
+			x: -14.0d
+			y: -4.5d
+			subtitle: "Go do som' foreging! Left Click for more info"
+			description: [
+				"Highly recommended at the beginning of you jorney, is to start foreging for food. Starting a Farm is also recommended early on to produce certain resources. Use Glass blocks untop of your crops to make them grow YEAR ROUND!"
+				""
+				"Note that: The crops you'll find in OverWorld will be generated by Pam's Harvestraft 2."
+			]
+			dependencies: ["0DDA2FB169318B04"]
+			id: "35896A17FE122E1D"
+			tasks: [{
+				id: "1CFAC355AE4FCE58"
+				type: "item"
+				title: "Obtain a crop!"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:crops"
+					}
+				}
+			}]
+			rewards: [{
+				id: "603AAE64F891A66F"
+				type: "item"
+				item: "farmersdelight:mixed_salad"
+				count: 24
+			}]
+		}
+		{
+			title: "Da Vinci's Storage"
+			icon: "minecraft:chest"
+			x: 8.0d
+			y: -5.0d
+			shape: "gear"
+			subtitle: "Make the vanilla chest!"
+			description: [
+				"The Vanilla Chest, is now crafted with treated wood. By combining the chest with a log, you can obtain that type of chest."
+				""
+				"*vanilla logs, for their respective type of chest, not supported - example: spruce chest dont exist*"
+			]
+			dependencies: ["34DE05218D6A3ACA"]
+			id: "755209504228B453"
+			tasks: [{
+				id: "598928F6BD0476E0"
+				type: "item"
+				item: "minecraft:chest"
+			}]
+			rewards: [
+				{
+					id: "134C944258ADECA0"
+					type: "item"
+					item: "immersiveengineering:treated_wood_horizontal"
+					count: 16
+				}
+				{
+					id: "47E0E0066251E709"
+					type: "item"
+					item: "minecolonies:supplychestdeployer"
+				}
+			]
+		}
+		{
+			title: "Basic Tinker Setup"
+			x: -1.0d
+			y: -7.0d
+			shape: "square"
+			subtitle: "These two stations are added by Tinker's Construct and will be used to make your first set of tools. Left Click for more info"
+			description: [
+				"Tinker's Construct allows players like you to create modular Tools which are, in many ways, better then the Vanilla Tool. These two Stations are a part of the mod and they're used to build Tool Part and assemble them into great Tools. Let's see how these work."
+				""
+				"First, if you haven't played with TC since 1.12, you should know that the Stencil Table was removed and now, it is integrated into the Part Builder. You'll only need blank Patterns."
+				""
+				"Now, if you haven't touched Tinker's Construct in your life, you should know that the Part Builder is used to turn materials into tool parts. A blank Pattern is placed in the left-hand side of the GUI. The material to be used is then place next to the pattern. This will show you a list of possible Tool Parts to craft. Choose one and then, take it out of the GUI."
+				""
+				"Now, you might find yourself in a situation where you select a Tool Part and nothing happens. That's most probably due to the fact that you don't have enough Material to make that Part. Yeah, that's right. Some Tool Parts, such as a Hammer Head, will require, for example, 8 pieces of Cobblestone. So make sure you have enough materials before starting to make your Tool."
+				""
+				"Example of the Part Builder GUI:"
+				""
+				"{image:kubejs:textures/tconstruct/part_builder_gui_example.png width:150 height:100 align:1 fit:true}"
+				""
+				"Notice how we're trying to make a Pickaxe Head with only 1 piece of Cobblestone. That's not gonna happen, as also stated by the information given on the right-hand side, we need 1 more piece of Cobblestone for a Pickaxe head. You can also see that, more information about the material we're using, is shown on the right-hand side. That information is related to all the possible parts we can make with that Material."
+				""
+				"Now, let's cover the Tinker Station. This is where you will assemble your Tool. Upon opening the GUI, you'll be greeted by a very nice interface. It might look a bit confusing in the beginning, but don't worry, we'll cover its main aspects."
+				""
+				"On the left-hand side, you'll be able to see a series of buttons. The first one is the upgrade tab, where you can place already existing Tools from Tinker's Construct, and upgrade them. All the other buttons represent tabs where you can assemble Tools. Unfortunately, the Tinker Station will NOT allow you to assemble all the Tools available in the mod, so, for now, you'll have to wait until the 2nd Age for more advanced Tools. "
+				""
+				"Selecting one of the Tools, will show you, on the right-hand side, all of the Parts required to assemble it, along with a general description of the Tool and what it does. Place your Parts in their respective slots, and your Tool will be ready for work."
+				""
+				"Example of the Tinker Station GUI:"
+				""
+				"{image:kubejs:textures/tconstruct/tinker_station_gui_example.png width:180 height:100 align:1 fit:true}"
+				""
+				"Notice how we're trying to make a Stone Pickage. The Pickaxe tab has selected on the left-hand side and information about the Pickaxe we're about to assemble is shown on the right-hand side."
+				""
+				"Now, a small addition to our pack is the Tinker's Construct Planner Mod. It adds a small Blueprint button in the Tinker Station (highlighted in green in the exemple shown previously). Upon clicking on it, a planning menu will be opened. Here you can play around with certain Tools, Materials, Upgrades and Abilities to create the ultimate Tool. You can also bookmark it and have it saved, so you can build it later."
+			]
+			dependencies: ["135837E3D930E5A7"]
+			id: "0B45311ED355CBB3"
+			tasks: [
+				{
+					id: "3CC3BB2ACF204450"
+					type: "item"
+					item: {
+						id: "tconstruct:part_builder"
+						Count: 1b
+						tag: {
+							texture: "minecraft:oak_planks"
+						}
+					}
+				}
+				{
+					id: "025377D14ABF1DE4"
+					type: "item"
+					item: "tconstruct:tinker_station"
+				}
+			]
+			rewards: [{
+				id: "6BF8B309FDC93E09"
+				type: "item"
+				item: "tconstruct:pattern"
+				count: 32
+			}]
+		}
+		{
+			title: "Glass"
+			x: 2.0d
+			y: -4.5d
+			shape: "square"
+			subtitle: "Glass will be used to make a smeltery setup. That's it. Juust that. What? You're looking for something else?"
+			dependencies: ["1AF3E867A00953D7"]
+			id: "4F5315A98ABA996E"
+			tasks: [{
+				id: "27AEDFB51AABB0C1"
+				type: "item"
+				title: "Any Glass"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:glass"
+					}
+				}
+			}]
+			rewards: [{
+				id: "0BB3496015A1AAAD"
+				type: "item"
+				item: "minecraft:sand"
+				count: 64
+			}]
+		}
+		{
+			title: "Making Grout"
+			x: 2.0d
+			y: -3.5d
+			shape: "square"
+			subtitle: "I am Groot! Grout will be used to obtaine Seared Stone in general. This will be a main ingredient in the process of obtaining Tinkers Construct contraptions"
+			hide_dependency_lines: true
+			dependencies: ["6D0A47AE3920EFBB"]
+			id: "60C80C15F2C90E58"
+			tasks: [{
+				id: "3171F0F8510DCB0B"
+				type: "item"
+				item: "tconstruct:grout"
+				count: 34L
+			}]
+			rewards: [{
+				id: "75581AA8E793644F"
+				type: "item"
+				item: "minecraft:gravel"
+				count: 64
+			}]
+		}
+		{
+			x: 4.0d
+			y: -4.0d
+			shape: "square"
+			subtitle: "Basic smelting. Note that, in this pack, none of the tinker's smelting options will provide more ingots/ore. Ore doubling will come later, and will be provided, as a start, by Create. Left Click for more info"
+			description: [
+				"Well, what do you know? Part of the journey is Tinkers Construct and so is the smelting system provided by it."
+				""
+				"The Melter will be your first and most basic smelting setup. If you're a veteran, then you'll wander what happened to the smeltery? That'll come later, don't worry. For now, you're stuck with this setup."
+				""
+				"The melter can hold 9 ingots of any metal/material and has only 3 input slots. It can either accept solid fuel through a Heater, or liquid fuel (lava) through a Seared Tank."
+				""
+				"Melter setup example:"
+				""
+				"{image:kubejs:textures/tconstruct/melter_example.png width:130 height:130 align:1}"
+			]
+			dependencies: [
+				"4F5315A98ABA996E"
+				"60C80C15F2C90E58"
+			]
+			id: "2F7E8BAF91003DEE"
+			tasks: [
+				{
+					id: "3C7D6FDEE1998981"
+					type: "item"
+					item: "tconstruct:seared_melter"
+				}
+				{
+					id: "6AB16A84CE72F264"
+					type: "item"
+					item: "tconstruct:seared_faucet"
+					count: 2L
+				}
+				{
+					id: "6AA21D593D38053E"
+					type: "item"
+					item: "tconstruct:seared_heater"
+				}
+				{
+					id: "55A0A4546FCAD57B"
+					type: "item"
+					item: "tconstruct:seared_table"
+				}
+				{
+					id: "51BB9343718A1C06"
+					type: "item"
+					item: "tconstruct:seared_basin"
+				}
+			]
+		}
+		{
+			title: "Basic Casting"
+			x: 4.0d
+			y: -5.5d
+			shape: "gear"
+			subtitle: "Casting can be done with basic sand casts which hold only one use"
+			dependencies: ["2F7E8BAF91003DEE"]
+			id: "26F5825FF690ECDC"
+			tasks: [{
+				id: "5A0B96FAC85C41A3"
+				type: "item"
+				title: "Make a one-use cast"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "tconstruct:casts/single_use"
+					}
+				}
+			}]
+			rewards: [{
+				id: "6FCF7098201D88F2"
+				type: "item"
+				item: "tconstruct:blank_sand_cast"
+				count: 8
+			}]
+		}
+		{
+			title: "Flowing Seared Stone"
+			icon: "tconstruct:seared_brick"
+			x: 6.0d
+			y: -4.0d
+			shape: "square"
+			subtitle: "Molten Seared Stone will be required to obtain Coke Bricks"
+			dependencies: ["20565A3484CED967"]
+			id: "5FCF6A3D94BB7EA2"
+			tasks: [{
+				id: "4C652BA766414ACB"
+				type: "checkmark"
+				title: "Finish this quest DOES NOT mean you did what you had to!"
+			}]
+		}
+		{
+			title: "Mighty Smeltery"
+			x: 5.0d
+			y: -4.0d
+			shape: "square"
+			subtitle: "The Smeltery will allow you to make some alloys and also, to smelt more materials at once. Left Click for more info"
+			description: [
+				"The Smeltery is a multi-block structure used in the creation of higher-tier weapons and tools using metal and alloys. It is used to smelt ores, ingots or blocks of almost any metal as well as Obsidian."
+				""
+				"Begin construction by placing a 3x3 base of Seared Bricks. Typical Smeltery construction has the base laid into the ground rather than on top of the ground. "
+				""
+				"Add walls one layer above the Smeltery base in a 5x5 perimeter. The corners are not necessary for the functioning of the smeltery and may be left out. Any blocks placed in these corners will not count as a component of the Smeltery."
+				""
+				"To complete the Smeltery, replace two of the wall blocks with a Seared Tank and a Smeltery Controller. The Smeltery Controller should begin glowing, indicating successful Smeltery construction. Right-clicking the Smeltery Controller will allow you to access the Smeltery GUI. Note that you can only have one Smeltery Controller in a smeltery."
+				""
+				"You can continue to add layers to your Smeltery walls. Every layer that you add will give you an additional 9 processing slots (9 slots for each 3x3 space inside the smeltery). The smeltery walls can be constructed out of any variety of Seared Brick, Seared Glass, or Seared Windows."
+				""
+				"You will also need to add Smeltery Drains and Faucets to your Smeltery. When you place a Smeltery Drain, it does not matter which side the hole faces. If your Smeltery is a 5x5 with no corners, you cannot place the drain in the empty corners; it must be placed in one of the walls. You can place the drains at any level up and down the Smeltery; however, keep in mind that they will require a Casting Basin or Casting Table placed directly underneath the faucet to work."
+				""
+				"How to Use:"
+				""
+				"To use the Smeltery, you must first add some lava to the Seared Tank, Seared Window, or Seared Glass (Either manually by right-clicking with a bucket of Lava. This will heat up the interior of the Smeltery to allow you to process materials. Once your Smeltery has some lava powering it, right-click on the Smeltery Controller to bring up its GUI."
+				""
+				"The left side of the GUI shows your processing slots, with 9 slots added for every layer of empty space inside your smeltery."
+				""
+				"The middle of the GUI is the storage tank where the liquid metals are stored. This allows you to see how much liquid metal is inside the Smeltery, what kinds of metal, and in what order they will be drained (starting from the bottom). You CAN CHANGE the order by clicking on the desired liquid."
+				""
+				"The bar along the right side of the GUI is how much lava the Smeltery currently has left. Having less lava means the ores heat up slower. No lava prevents any smelting from occurring. "
+				""
+				"To use the liquid metal, you must drain the liquid into a Casting Basin or a Casting Table. Place a Seared Faucet onto the small hole on a Smeltery Drain, and place a Casting Basin or Casting Table underneath the drain. To activate the Faucet, right-click on it. A Casting Basin will allow you to create blocks. Metal blocks require 9 ingots, but other smeltable materials, like Obsidian or Glass and Sand, require the same amount of material that was placed into the smeltery. The Casting Table will allow you to create casts out of Gold to create other metal items using the casts you have previously made."
+				""
+				"Example of a basic Smeltery setup:"
+				""
+				"{image:kubejs:textures/tconstruct/smeltery_example.png width:100 height:100 align:1}"
+				""
+				"GUI Example:"
+				""
+				"{image:kubejs:textures/tconstruct/smeltery_gui_example.png width:140 height:100 align:1 fit:true}"
+				""
+				"Oh, one more thing. As long as you don't break the Smeltery's controller, you can modify the structure without loosing the molten liquids inside of it."
+			]
+			dependencies: ["2F7E8BAF91003DEE"]
+			id: "20565A3484CED967"
+			tasks: [{
+				id: "71A6808704FE539E"
+				type: "item"
+				item: "tconstruct:smeltery_controller"
+			}]
+			rewards: [{
+				id: "21E2AADBFA888850"
+				type: "loot"
+				table_id: 5206766833681472091L
+			}]
+		}
+		{
+			title: "Fantastic Foundry"
+			x: 6.0d
+			y: -8.5d
+			shape: "gear"
+			subtitle: "Smelting, now on another level. Left Click for more info"
+			description: [
+				"The Foundry is a multiblock structure which can be used to smelt large quantities of metals and materials. "
+				""
+				"It will NOT allow the materials inside of it to form alloys, so some of you might find this to be useful."
+				""
+				"It will extract byproducts from each ore. For example, smelting ore, will give you some gold."
+				""
+				"Can smelt items/blocks in their original materials, for example, it can smelt upgrades to get back all the materials that went in their production."
+				""
+				"Has a larger capacity then the Smeltery."
+				""
+				"The Foundry must be made out of Scorched tier blocks. Its floor cannot be made of glass. It cannot be made in an \"L\" shape and must have edges and corners in order to function correctly."
+				""
+				"Its maximum size can be 16x16x65 external, and 14x14x64 internal."
+				""
+				"Example of a simple Foundry setup:"
+				""
+				"{image:kubejs:textures/tconstruct/foundry_setup_example.png width:100 height:100 align:1 fit:true}"
+				""
+				"The Foundry's GUI is the same as the Smeltery's."
+			]
+			dependencies: [
+				"65E59CB1F28CFD6E"
+				"7DD684ECEA83C365"
+			]
+			id: "78BE6C467B08D383"
+			tasks: [{
+				id: "0EAC1DB45751451F"
+				type: "item"
+				item: "tconstruct:foundry_controller"
+			}]
+			rewards: [{
+				id: "03EFB2364259C357"
+				type: "loot"
+				table_id: 5206766833681472091L
+			}]
+		}
+		{
+			title: "Flowing Scorched Stone"
+			icon: "tconstruct:scorched_brick"
+			x: 6.0d
+			y: 0.5d
+			shape: "square"
+			subtitle: "Molten Scorched Stone will be required to obtain Blast Bricks"
+			dependencies: ["5555E26C80C3773C"]
+			id: "6C5A3F90A7B88666"
+			tasks: [{
+				id: "7502729BD5B48287"
+				type: "checkmark"
+				title: "Finish this quest DOES NOT mean you did what you had to!"
+			}]
+		}
+		{
+			title: "Making Nether Grout"
+			x: 6.0d
+			y: -1.0d
+			shape: "square"
+			subtitle: "I am Groot! But from The Nether. This is the Nether version of the Grout. It will be used to obtain Scoarched Stone in general. This material will be used to make advanced Tinkers Construct machines and it can be obtained by reaching the Nether, gathering Blaze Powder, and making Magma Cream. See all the dependencies of this quest, to see how you can reach the Nether"
+			dependencies: [
+				"754A702F2CA77E02"
+				"079148BF286C8D56"
+				"2C6FB2BD60174B44"
+			]
+			id: "5555E26C80C3773C"
+			tasks: [{
+				id: "4C1EF604583E7C37"
+				type: "item"
+				item: "tconstruct:nether_grout"
+				count: 54L
+			}]
+		}
+		{
+			title: "Raising the temperature!"
+			icon: "minecraft:lava_bucket"
+			x: 5.5d
+			y: -5.5d
+			shape: "square"
+			subtitle: "Upgraded fuels. Left Click for more info"
+			description: [
+				"While solid fuels are easy to use, they will quickly prove to be ineficient when it comes to the temperature they produce."
+				""
+				"Higher temperatures are required for smelting certain metals/materials for creating advanced alloys."
+				""
+				"While:"
+				"- solid fuels produce 800 degrees,"
+				"- lava will produce 1000 degrees,"
+				"- blazing blood will produce 1500 degrees"
+				""
+				"Keep in mind that this quest is here just to keep track of what you need to do, finishing it doesn't actually mean you did what you had to."
+			]
+			dependencies: ["2F7E8BAF91003DEE"]
+			id: "3FC98B7470122574"
+			tasks: [{
+				id: "7FF426CB5216EB3A"
+				type: "checkmark"
+				title: "Obtain some buckets of lava!"
+			}]
+		}
+		{
+			title: "Alloyer!"
+			x: 5.0d
+			y: -8.5d
+			shape: "gear"
+			subtitle: "Alloys, now in a different way. Left Click for more info"
+			description: [
+				"The Alloyer came as a solution for the Foundy's lack of alloying capabilities."
+				""
+				"The Alloyer can accept 4 Ingot Tanks on its sides. These tanks can be filled with molten metal/material to be proccessed into powerful alloys."
+				"The Alloyer also need some type of liquid fuel, either Lava or Blazing Blood. This fuel needs to be placed a Fuel Tank, under the Alloyer. The type of fuel used, will affect the alloys you can make. Blazing Blood will allow you to obtain stronger alloys, but unfortunately, you don't have access to it at the moment, so you'll have to use Lava and weaker alloys."
+				""
+				"Example of an Alloyer setup with three Smelteries:"
+				""
+				"{image:kubejs:textures/tconstruct/alloyer_setup_example.png width:140 height:140 align:1}"
+				""
+				"Alloyer GUI example:"
+				""
+				"{image:kubejs:textures/tconstruct/alloyer_gui_example.png width:120 height:100 align:1 fit:true}"
+				""
+				"Keep in mind that you might want to make multiple Alloyers for all the alloys you plan on mass producing, as you might find it difficult to produce two or more alloys in the same Alloyer."
+			]
+			dependencies: [
+				"7DD684ECEA83C365"
+				"27B6DCCCE49DD15B"
+			]
+			id: "51E03079CD6639C9"
+			tasks: [{
+				id: "260F3019DF68A93E"
+				type: "item"
+				item: "tconstruct:scorched_alloyer"
+			}]
+			rewards: [{
+				id: "52DA1CED18DA4654"
+				type: "loot"
+				table_id: 5206766833681472091L
+			}]
+		}
+		{
+			title: "Molten Obsidian"
+			icon: "tconstruct:molten_obsidian_bucket"
+			x: 5.5d
+			y: -7.0d
+			subtitle: "Obtain Molten Obsidian to make the Alloyer and the Foundry!"
+			dependencies: ["3FC98B7470122574"]
+			id: "7DD684ECEA83C365"
+			tasks: [{
+				id: "7B798AA0BA0124F0"
+				type: "checkmark"
+				title: "Finishing this quest, does not mean you did what you had to!"
+			}]
+		}
+		{
+			title: "Advanced Casting"
+			x: 4.0d
+			y: -2.5d
+			shape: "square"
+			subtitle: "Gold Cast are upgraded versions of the regular Sand Casts. Unlike their Sand sounterparts, these ones will last forever"
+			dependencies: ["2F7E8BAF91003DEE"]
+			id: "4EE4B646E9535ADB"
+			tasks: [{
+				id: "7486B66DDB2AEFF8"
+				type: "item"
+				title: "Make a gold cast"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "tconstruct:casts/gold"
+					}
+				}
+			}]
+			rewards: [{
+				id: "7010C413441F6E4D"
+				type: "item"
+				item: "minecraft:gold_ingot"
+				count: 16
+			}]
+		}
+		{
+			title: "Crafting Table MkII"
+			x: 0.5d
+			y: -5.5d
+			shape: "gear"
+			subtitle: "Crafting is now upgraded. The Crafting Station can hold items, rather then returning them to your inventory"
+			dependencies: ["135837E3D930E5A7"]
+			id: "73338A76945F9E96"
+			tasks: [{
+				id: "4300ACC12CCD5F34"
+				type: "item"
+				item: {
+					id: "tconstruct:crafting_station"
+					Count: 1b
+					tag: {
+						texture: "minecraft:dark_oak_log"
+					}
+				}
+			}]
+		}
+		{
+			title: "Rats can bring good things too"
+			x: 2.0d
+			y: 0.5d
+			shape: "square"
+			subtitle: "READ THIS QUEST ENTIRELY!"
+			description: [
+				"Ok, you've got the cheese, now what? Well, now comes the rat taming part."
+				""
+				"\"But hey! Crazy Decursio Guys, why on Earth would I tame a rat? Aren't they dangerous?\""
+				""
+				"Well, some of them, yeah, but some can be quite useful. Rats can spawn in the world like any hostile mobs, and some of them carry a deadly pleague, but some DON'T. You want those which do not have the plague. Why? Here comes the funny part."
+				""
+				"After dropping cheese (yes, drop, not right click) to a rat, and taming it, you should have access to its inventory by Right-Clicking it. Here, you'll be able to set it into different modes. Now, before actually starting to use your Rats to automate things, know that there's one more thing you'll have to do. The newly tamed Rats, will need a small amount of Blood in order to perform all of their actions. To get that small amount of Blood, set them in the `Hunt Animals` mode and allow them to hit a Mob once. After that, they'll be able to perform all of the actions you'll set them to perform. Make sure you head over to `The Staffs of RAT POWER!` quest, in the `Useful Items - 1` tab, to learn more about how you can control your Rats."
+				""
+				"Regular rat:"
+				"{image:kubejs:textures/rats/regular_rat_example.png width:100 height:100 align:1}"
+				"Plagued rat:"
+				"{image:kubejs:textures/rats/plagued_rat_example.png width:100 height:100 align:1}"
+				""
+				"Plagued rats cannot be tamed and will give you the plague effect which will not allow you to regenerate in any way/shape/form. Be careful while dealing with them, you've been warned."
+				""
+				"Ps: Tamed rats can sit on your head which makes them even cuter then they already are. Just shift right-click them. To get them down, shift left-click the air."
+				""
+				"Ps2: If you're having issues finding any rats, check the \"Trash can\" quest in the \"Overworld\" tab."
+				""
+				"Ps3: Note that, there might be some instances where your Rats might look like they're not doing anything. In that case, you might wanna check and see if there's something that might interfere with your Rat. For example, you might set them in the `Harvest` mode, and see them stading still and not doing anything. That might happen because they might be targeting a pieace of Grass, or a Flower that's out of their reach."
+			]
+			dependencies: ["0905B2D5C3DE9715"]
+			id: "013E07B05C35CCE6"
+			tasks: [{
+				id: "6A2D65545AE25412"
+				type: "advancement"
+				title: "Tame a rat by dropping cheese to it"
+				advancement: "rats:rats/tame_rat"
+				criterion: ""
+			}]
+			rewards: [
+				{
+					id: "55382A56323C2503"
+					type: "item"
+					item: "minecraft:leather"
+					count: 8
+				}
+				{
+					id: "45972EF7E112CADF"
+					type: "item"
+					item: "quark:apple_crate"
+					count: 32
+				}
+			]
+		}
+		{
+			title: "Copper and Tin"
+			x: -7.5d
+			y: -2.5d
+			shape: "square"
+			subtitle: "Obtain these two basic metals to get out of the Stone Age. Left Click for more info"
+			description: [
+				"In The Decurio Project, ore gen is provided by Emendatus Enigmatica."
+				""
+				"This means that the most majority of the ores in the game, will be from this mod. This also includes the vanilla ores."
+				""
+				"A major difference between the usual ores and the ones added by this mod is that, when you break them, you'll receive a chunk istead of the ore itself. However, don't worry, the chunks will act similarly to the ore, and if that doesn't cut it for you, then you can always turn the chunks back to their ore version. Just place a chunk in the crafting grid."
+				""
+				"Example of how Emendatus Enigmatica ores can look:"
+				""
+				"{image:kubejs:textures/general/ore_example.png width:150 height:100 align:1 fit:true}"
+			]
+			dependencies: ["6D0A47AE3920EFBB"]
+			id: "69B40A754150E09F"
+			tasks: [
+				{
+					id: "36FB5839C9EF4B87"
+					type: "item"
+					item: "emendatusenigmatica:copper_chunk"
+				}
+				{
+					id: "7AAC1036E50C6A76"
+					type: "item"
+					item: "emendatusenigmatica:tin_chunk"
+				}
+			]
+		}
+		{
+			title: "Ready for the cheese? Guess not."
+			x: 0.5d
+			y: -3.5d
+			shape: "square"
+			subtitle: "Obtain milk from a cow to start making cheese. Its uses will later be revealed to you"
+			dependencies: ["6F6302D94B7809B6"]
+			id: "1F37467D5ABE7850"
+			tasks: [{
+				id: "11EBD435D2E133D2"
+				type: "item"
+				item: "minecraft:milk_bucket"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 0.5d
+			shape: "square"
+			subtitle: "Creamy? Neh, more like stinky. Left Click for more info"
+			description: [
+				"Ok, if you're reading this, it means that you're still with us, which is great. Let's jump to the subject here, the cheese."
+				""
+				"Cheese will be important for several reasons, the most important being, rats."
+				"Theese tiny creatures like the smell and taste of this milky byproduct and can be tamed using it."
+				""
+				"To make Cheese, you'll have to place 1 bucket of Vinegar into a Fermentation Barrel filled with Milk. After 2 MC days, you'll obtain 16 Cheese pieces."
+				""
+				"Special thanks to Jen_Jenn for suggesting Rats for this pack."
+			]
+			dependencies: [
+				"1F37467D5ABE7850"
+				"28963BD76AF813B2"
+			]
+			id: "0905B2D5C3DE9715"
+			tasks: [{
+				id: "588D9949785A28EA"
+				type: "item"
+				item: "rats:cheese"
+			}]
+			rewards: [{
+				id: "7DF6B3CB7D1D842D"
+				type: "loot"
+				table_id: 5206766833681472091L
+			}]
+		}
+		{
+			title: "Training was never easier"
+			x: 4.0d
+			y: 0.5d
+			shape: "square"
+			subtitle: "Give upgrades to a rat to make it do awesome things! Left Click for more info"
+			description: [
+				"Each rat has only three upgrade slots in which you can place upgrades. Each upgrade will enhance or give the rat, new abilities. Rats can perform auto-crafting, crop harvesting, item transportation, fishing and much more."
+				""
+				"This is the base upgrade. It will not apply any bonuses to your rat, but is the main ingredient in every upgrade recipe."
+				""
+				"To learn more about different upgrades, check the \"Useful Items Tab\"."
+			]
+			dependencies: [
+				"4EE4B646E9535ADB"
+				"013E07B05C35CCE6"
+			]
+			id: "71C7535E1E3A39A3"
+			tasks: [{
+				id: "33BF414E155AD35C"
+				type: "item"
+				item: "rats:rat_upgrade_basic"
+			}]
+		}
+		{
+			title: "Remy's less gastronomical relative"
+			x: 5.0d
+			y: 0.5d
+			shape: "square"
+			subtitle: "Cut, polish and repeat! Left Click for more info"
+			description: [
+				"This upgrade will allow a rat to refine coal into some tiny squishy balls. These might come in handy later."
+				""
+				"Note that, you Rat CANNOT be in 'Stay Here' mode to produce the Squash Balls."
+			]
+			dependencies: ["71C7535E1E3A39A3"]
+			id: "71623529BA60F7E0"
+			tasks: [{
+				id: "2C64A80D94067FD8"
+				type: "item"
+				item: "rats:rat_upgrade_gemcutter"
+			}]
+		}
+		{
+			title: "The Squishy Reagent"
+			x: 5.0d
+			y: -1.0d
+			shape: "square"
+			subtitle: "These rat-made balls will act as a perfect reagent for mixing Nether Grout"
+			dependencies: ["71623529BA60F7E0"]
+			id: "2C6FB2BD60174B44"
+			tasks: [{
+				id: "219CCFB2709E1090"
+				type: "item"
+				item: "rats:little_black_squash_balls"
+			}]
+		}
+		{
+			x: 7.0d
+			y: -7.0d
+			subtitle: "The Scoarched Bricks will be used to obtain The Foundry"
+			hide_dependency_lines: true
+			dependencies: ["5555E26C80C3773C"]
+			id: "65E59CB1F28CFD6E"
+			tasks: [{
+				id: "2794CDBF1490FE99"
+				type: "item"
+				item: "tconstruct:scorched_bricks"
+			}]
+		}
+		{
+			x: 4.0d
+			y: -7.0d
+			subtitle: "The Scoarched Stone will be used to obtain The Alloyer"
+			hide_dependency_lines: true
+			dependencies: ["5555E26C80C3773C"]
+			id: "27B6DCCCE49DD15B"
+			tasks: [{
+				id: "467C06AAEA0C9269"
+				type: "item"
+				item: "tconstruct:scorched_stone"
+			}]
+		}
+		{
+			title: "Strange Alien Artifacts"
+			x: 2.0d
+			y: -5.5d
+			shape: "square"
+			subtitle: "These might have a use later. Left Click for more info"
+			description: [
+				"Throughout your journey you might find some strange meteors throughout the world. "
+				""
+				"While they might not look like something very important, you should know that, inside of them, usually, you can find a Skystone Chest. Inside it, you'll find some strange artifacts. While you have no idea how to use them, or what to do with them yet, know that you'll need them at a point, so it might be a good idea to go hunting for them now."
+				""
+				"After finding a Meteor in the world, know that you'll need a Diamond-level pick to break through the Skystone."
+			]
+			dependencies: ["3840B8C852E90031"]
+			id: "707659BED60BED08"
+			tasks: [
+				{
+					id: "3247C00876D2B487"
+					type: "item"
+					item: "appliedenergistics2:calculation_processor_press"
+				}
+				{
+					id: "130CA54F268EC00E"
+					type: "item"
+					item: "appliedenergistics2:engineering_processor_press"
+				}
+				{
+					id: "13AB0BFF39777306"
+					type: "item"
+					item: "appliedenergistics2:logic_processor_press"
+				}
+				{
+					id: "754AF895FF2DFA21"
+					type: "item"
+					item: "appliedenergistics2:silicon_press"
+				}
+			]
+		}
+		{
+			title: "Clay Tools 101"
+			x: -7.5d
+			y: -8.0d
+			shape: "square"
+			subtitle: "\"It's Clay Tech; You like it?\" Left Click for more info"
+			description: [
+				"Considering the fact that you're basically just a Cavemen, the most advanced form of technology available to you at the moment, will be, well.. clay. Vessels, buckets, shears, and even armor can be made from this. "
+				""
+				"Let's breafly cover each one of them."
+				""
+				"The Clay Vessel has mainly two uses. It can either be cooked to obtain a solid Container, or it can be used to smelt soft ores, such as Lead and Gold. It can even be used to make Bronze."
+				""
+				"The Clay Bucket can be cooked to obtain a Terracotta version of it, which will allow you to carry liquids."
+				""
+				"And finally, the Clay Shears Parts can be also be cooked to make Ceramic Shears Parts which can be crafted into some neat Ceramic Shears."
+			]
+			dependencies: ["153EBA0E05C07D6D"]
+			id: "22A5FBC2D7602C42"
+			tasks: [
+				{
+					id: "384743CCEF70C1A2"
+					type: "item"
+					item: "charcoal_pit:clay_pot"
+				}
+				{
+					id: "558A9C60A2B2901E"
+					type: "item"
+					item: "ceramics:unfired_clay_bucket"
+				}
+				{
+					id: "64DAE10CFC129911"
+					type: "item"
+					item: "ceramicshears:clay_shears_part"
+					count: 2L
+				}
+			]
+		}
+		{
+			title: "Ceramic Tools 107"
+			x: -4.5d
+			y: -5.5d
+			shape: "gear"
+			subtitle: "Initial utilities for every Cavemen. Left Click for more info"
+			description: [
+				"Let's cover some very basic, yet very useful items. "
+				""
+				"Since you don't have access to advanced storage options, or to iron, you might be interested in these items. Or not, you do you."
+				""
+				"Until you are able to get chests, you'll have to rely on other storage options. Here you have your first one. The Ceramic Vessel has 9 storage slots, perfect for storing initial items. It can also act as a backpack, since it will keep its contents when is picked up."
+				""
+				"If you're interested in transporting liquids in the beginning, then you might wanna get your hands on the Clay Bucket. This thing is mostly a vanilla Bucket, but with the added disadvantage of not being able to carry hot liquids properly. You can, tho, use it to carry hot liquids once, before it breaks."
+				""
+				"Lastly, let's talk about the Ceramic Shears. These will be just like a regular set of Shears, but they'll have less durability overall."
+			]
+			hide_dependency_lines: true
+			dependencies: ["67EAA2A3900A3889"]
+			size: 1.5d
+			id: "23AD49F8C75DB7D8"
+			tasks: [
+				{
+					id: "1FCDCE71E1BF7495"
+					type: "item"
+					title: "Any Ceramic Vessel"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "charcoal_pit:ceramic_pots"
+						}
+					}
+				}
+				{
+					id: "29425CE345FDCD94"
+					type: "item"
+					item: "ceramics:clay_bucket"
+				}
+				{
+					id: "233592D9948F334D"
+					type: "item"
+					item: {
+						id: "ceramicshears:ceramic_shears"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			x: -12.5d
+			y: -8.0d
+			shape: "square"
+			subtitle: "Clay is a very versatile resource, which can be molded into lots of things. Make sure you obtain a fair amount of it"
+			dependencies: ["3073595C53701173"]
+			size: 2.0d
+			id: "153EBA0E05C07D6D"
+			tasks: [{
+				id: "72EEF846AD460859"
+				type: "item"
+				item: "minecraft:clay_ball"
+			}]
+		}
+		{
+			title: "Welcome to The Bronze Age"
+			x: -6.0d
+			y: -4.0d
+			shape: "diamond"
+			subtitle: "Since stones don't last forever, greater materials will be required to advance. Combine 3 Copper Chunks with 1 Tin Chunk in a Clay Vessel to obtain Bronze and enter into The Bronze Age"
+			dependencies: [
+				"67EAA2A3900A3889"
+				"5FACA0A9749FDEDD"
+				"69B40A754150E09F"
+			]
+			size: 1.5d
+			id: "4E22F16A0F02B22D"
+			tasks: [{
+				id: "19FA9155423C8B5E"
+				type: "item"
+				item: "emendatusenigmatica:bronze_ingot"
+			}]
+			rewards: [{
+				id: "4632EEF16010D2D3"
+				type: "loot"
+				table_id: 5206766833681472091L
+			}]
+		}
+		{
+			title: "Welcome to the Stone Age"
+			x: -10.5d
+			y: -4.0d
+			shape: "diamond"
+			subtitle: "Sticks, stones, dirt, gravel and clay. Every individual has to learn how to use these before any other complex form of technology is available. For now, search for some Gravel and break it to obtain Flint"
+			dependencies: ["0DDA2FB169318B04"]
+			size: 1.5d
+			id: "7B865240A787B916"
+			tasks: [{
+				id: "06A2C42B1F5E4F6B"
+				type: "item"
+				item: "minecraft:flint"
+			}]
+		}
+		{
+			title: "The Iron Age is Real!"
+			icon: {
+				id: "botania:cosmetic_questgiver_mark"
+				Count: 1b
+				tag: { }
+			}
+			x: -3.0d
+			y: -4.0d
+			shape: "diamond"
+			subtitle: "Welcome to the Iron Age where you can finally understand how this strong metal works and how you can manipulate it to your advantage"
+			dependencies: [
+				"00C8BACB753E9568"
+				"797361740283A2F8"
+				"1AF92428654EFF97"
+			]
+			size: 1.5d
+			id: "4A5D67C920BE8E6B"
+			tasks: [{
+				id: "4F3734B030E45BCF"
+				type: "custom"
+				title: "Break the finished Bloom with a Pickaxe"
+				icon: "minecraft:magma_block"
+			}]
+			rewards: [
+				{
+					id: "4CF759D8592A5AAF"
+					type: "loot"
+					table_id: 5206766833681472091L
+				}
+				{
+					id: "1FC4E18191A74E5A"
+					type: "command"
+					title: "Learn how to use Iron and Furnaces!"
+					icon: {
+						id: "botania:cosmetic_questgiver_mark"
+						Count: 1b
+						tag: { }
+					}
+					command: "/thitemstages add @p \"iron_age,furnaces\""
+					player_command: false
+				}
+			]
+		}
+		{
+			title: "Bronze Tools"
+			x: -6.0d
+			y: -7.0d
+			shape: "square"
+			subtitle: "Not only are more durable, but they'll also allow you to obtain Iron Chunks, Silver, Gold and Redstone! Unfortunately, Coal will still NOT be available, but you'll manage. Make the Bronze Tools to advance further"
+			dependencies: ["4E22F16A0F02B22D"]
+			id: "5C4E567B0E9BBC87"
+			tasks: [{
+				id: "1348E67E59404961"
+				type: "item"
+				item: {
+					id: "decursiomod:bronze_pickaxe"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: -3.0d
+			y: -7.0d
+			shape: "square"
+			subtitle: "In this form, it won't be very helpful. The Iron Chunk have to be crushed into Iron Dust using a Mill Stone. The Dust will eventually be processed in a Bloomery to obtain Iron Ingots"
+			dependencies: ["5C4E567B0E9BBC87"]
+			id: "1AF92428654EFF97"
+			tasks: [{
+				id: "515D08F3E3D3622A"
+				type: "item"
+				item: "emendatusenigmatica:iron_chunk"
+			}]
+		}
+		{
+			title: "The Bloomery"
+			x: -4.5d
+			y: -4.0d
+			shape: "square"
+			subtitle: "Getting into some serious matters. Left Click for more info"
+			description: [
+				"A Bloomery is a type of metallurgical furnace once used widely for smelting Iron from its oxides. The Bloomery was the earliest form of smelter capable of smelting Iron."
+				""
+				"To build the Bloomery, just make a 1 or 2 block tall chimney out of Sandy Bricks with a Tuyere block on the bottom layer and two Bellows pointing into it. The block at the very bottom of the structure has to be a Bloomery Block. "
+				""
+				"Example of the Bloomery Structure:"
+				""
+				"{image:kubejs:textures/charcoal_pit/bloomery_structure_example.png width:100 height:100 align:1}"
+				""
+				"To start producing Iron Ingots using the Bloomery, you'll need to obtain Iron Dust from Iron Chunks. Shift Right-Clicking the Bloomery Block at the bottom with an Iron Dust, will start making an Iron Pyle. Just Right-Click the Iron Pyle to add more Dust. When no more Dust can be added, start adding Charcoal. When Charcoal cannot be added anymore, return to adding Iron Dust. Finally, using a Fire Starter, light up the Iron Pyle in the Bloomery."
+				""
+				"Once you light it, pump the Bellows to stoke the fire. You don't need to pump them the entire time. Pumping them in tandem, will fill the buffer faster. Once it's done, in about 4 MC hours, work the bloom (break it with a pickaxe multiple times) with a Pickaxe until it drops 8 Iron Ingots. If you let it cool, or don't pump the Bellows enough, it will fail and you will have to start over. Don't worry about loosing your resources if the smelting process fails. You'll get a Failed/Cooled Bloom which can later be smelted back into 8 Iron Ingots in a Blast Furnace."
+				""
+				"Important 1: You'll need 8 Iron Dusts to actually start producing Iron Ingots with this structure!"
+				""
+				"Important 2: Ignore what the OneProbe says about the fire being fully GROWN. That information is there because of how the Bloomery was codded. Just keep pumping that Bellows until the fire disappears and you get a Magma-like block in the Bloomery."
+			]
+			dependencies: [
+				"4E22F16A0F02B22D"
+				"082652E2D64C9967"
+			]
+			id: "797361740283A2F8"
+			tasks: [
+				{
+					id: "02B76690DABE0CCF"
+					type: "item"
+					item: "charcoal_pit:main_bloomery"
+				}
+				{
+					id: "10A554866382F4EC"
+					type: "item"
+					item: "charcoal_pit:sandy_tuyere"
+				}
+			]
+		}
+		{
+			title: "Boosting the Flames"
+			x: -3.0d
+			y: -2.5d
+			shape: "square"
+			subtitle: "The Bellows will be a part of the Bloomery structure which will be used to obtain Iron Ingots"
+			dependencies: ["55F6BEA66FDEAE94"]
+			id: "00C8BACB753E9568"
+			tasks: [{
+				id: "1C7CD239FBF12B28"
+				type: "item"
+				item: "charcoal_pit:bellows"
+			}]
+		}
+		{
+			title: "Pristine Leather ♥"
+			x: -3.0d
+			y: 0.5d
+			shape: "square"
+			subtitle: "By leaving 1 Wet Tanned Hide on a Drying Rack for a quarter of an MC Day, you can get regular, vanilla Leather"
+			dependencies: ["711D0652E814D558"]
+			id: "55F6BEA66FDEAE94"
+			tasks: [{
+				id: "767F9ED3098A0D68"
+				type: "item"
+				item: "minecraft:leather"
+			}]
+			rewards: [{
+				id: "27BC33AF47CED57A"
+				type: "item"
+				item: "minecraft:glass"
+				count: 16
+			}]
+		}
+		{
+			title: "The Charcoal Pit"
+			x: -7.5d
+			y: -4.0d
+			shape: "square"
+			subtitle: "Can't get Coal? Charcoal is better anyways. Left Click for more info"
+			description: [
+				"Certain processes such as the smelting of soft Ores, such as Copper, or Harder Ores, such as Iron, will require a more stronger Fuel. Since Wood won't cut it, the best bet will be regular Coal, right? Wrong. At this point, you don't really have access to regular Coal, so what options do you have?"
+				""
+				"Well, you can explore the World and hope to find some regular Coal, or you can start producing Charcoal."
+				""
+				"While, regularly you would just place some Logs in a Furnace and obtain Charcoal, things will be more complicated here. You'll have to build a Charcoal Pit. Don't worry, it will not be very hard."
+				""
+				"Charcoal Pits are kind of modular. This means that you can make them as large, or as small as you want. To actually build the Pit, you'll need Log Piles. You can have as many as you want. Dig a hole in the ground and place your Log Piles in it. After that, just cover the Piles with dirt, but let one of them, exposed. Now use a Fire Starter on the exposed Log Pile and light it up. After the Pile is ignited, cover it with Dirt. Smoke particles should come from the Pit, indicating that the process of making Charcoal has started."
+				""
+				"After 18 MC hours, the smoke particles will dissappear, indicating that you Charcoal is ready. Remove the Dirt from the top of the Pit and dig your Charcoal with a Shovel. You'll also receive Ash as a byproduct. It can be used to make Bone Meal."
+				""
+				"Example of Charcoal Pit ready to be fired:"
+				""
+				"{image:kubejs:textures/charcoal_pit/charcoal_pit_unfired_example.png width:100 height:100 align:1}"
+				""
+				"Example of a Charcoal Pit running:"
+				""
+				"{image:kubejs:textures/charcoal_pit/fired_charcoal_pit_example.png width:100 height:100 align:1}"
+				""
+				"Example of the finished Charcoal:"
+				""
+				"{image:kubejs:textures/charcoal_pit/finished_charcoal_pit_example.png width:100 height:100 align:1}"
+			]
+			dependencies: ["6D0A47AE3920EFBB"]
+			id: "5FACA0A9749FDEDD"
+			tasks: [
+				{
+					id: "2F813860AB9DBCBA"
+					type: "item"
+					item: "charcoal_pit:log_pile"
+				}
+				{
+					id: "20FBAE423873443A"
+					type: "item"
+					item: "minecraft:charcoal"
+				}
+			]
+			rewards: [{
+				id: "0969D19A3A9CB315"
+				type: "item"
+				item: "charcoal_pit:ash"
+				count: 32
+			}]
+		}
+		{
+			title: "Cavemen Stations"
+			x: -8.5d
+			y: -1.0d
+			shape: "square"
+			subtitle: "Build a Basin, a Mill and a Rack to progress further. Left Click for more info"
+			description: [
+				"Nothing too complicated regarding the crafting process of these working stations. Something we want to clarify would be the fact that you should search for Andesite/Granite/Diorite, or any other type of Stone, instead of trying to cook your own, to make these things."
+				""
+				"Also, you'll have to start a farm of Industrial Hemp in order to obtain the Canvas Required for the Drying Rack."
+				""
+				"Now, let's talk about each one of these quickly."
+				""
+				"The MillStone will allow you to grind some items into basic initial resources required to progress further. Just Right-Click to place the inputs in, Right-Click again on the handle to start grinding. The output will be dropped on the ground. Shift Right-Click will remove the items present in its inventory."
+				""
+				"The Wooden Basin will be used to mix up items with a liquids to combine them properly. It will be used to produce Leather. It can also be used to make Bread and more. It can accept 4 items. Liquids can be inserted with Clay Channels for automation. Outputs will be dropped on the ground."
+			]
+			dependencies: [
+				"6D0A47AE3920EFBB"
+				"76F7CACBB3B85B1F"
+			]
+			dependency_requirement: "one_completed"
+			id: "6AF58B751977F945"
+			tasks: [
+				{
+					id: "4D2D7530597C49DB"
+					type: "item"
+					item: "primutils:millstone"
+				}
+				{
+					id: "76A2F79855787F4A"
+					type: "item"
+					item: "primutils:basin"
+				}
+				{
+					id: "64DE5869D6D1A91D"
+					type: "item"
+					item: "primutils:drying_rack"
+				}
+			]
+		}
+		{
+			title: "The Pit/Ore Kiln"
+			icon: "charcoal_pit:straw"
+			x: -7.5d
+			y: -5.5d
+			shape: "square"
+			subtitle: "Primitive Cooking is a thing. Left Click for more info"
+			description: [
+				"The Pit Kiln is a primitive form of firing pottery. Since you don't have access to any type of advanced heating methods (camp fires don't count and even if you manage to find a Furnace in the world, you won't be able to use it), you'll have to make a Pit Kiln to progress further."
+				""
+				"Pit Kilns can cook lots of clay items. By pressing \"U\" on a piece of Straw from the Charcoal Pit mod, you can see all the possible recipes."
+				""
+				"Let's see how to build one of these things:"
+				""
+				"First, dig a 1x1x1 hole in the ground and Shift Right-Click the bottom on the hole with some Clay items. Usually you can place up to 8 Clay items, but some of them will be limited to 1. This includes the Clay Vessel."
+				""
+				"Second, take 6 pieces of Straw and Right-Click with them on the Clay item located at the buttom. After that, do the same with 3 Logs."
+				""
+				"Finally, Right-Click the block created with a Fire Starter to to light it up."
+				""
+				"After 8 MC hours, your Clay item will be ready to be picked up with some Ash as a byproduct. The Ash can be used to make Fertilizer."
+				""
+				"Example of a Pit ready to be set on fire:"
+				""
+				"{image:kubejs:textures/charcoal_pit/pit_kiln_ready_example.png width:100 height:100 align:1}"
+				""
+				"Example of a Pit which is done cooking and ready to be harvested:"
+				""
+				"{image:kubejs:textures/charcoal_pit/pit_kiln_done_example.png width:100 height:100 align:1}"
+				""
+				"Lastly, we want to let you know that, by using the Pit Kiln, you can also process some ores. Just Right-Click a Clay Vessel to open its GUI. Here you'll have to place Ore Chunks and Fuel, in the form of Charcoal. Coal can also be used, but you can obtain it only from Loot Chests for now, so better stick to using Charcoal. Wait, you can't get Charcoal? Wrong. Check 'The Charcoal Pit' quest."
+				""
+				"After filling the Vessel, you can place your curson on it to see the tooltip which will tell you what you'll receive and the amount of Fuel present/required in the Vessel. If not enough Fuel is present, you won't be able to place it down, to fire it."
+				""
+				"You can also combine the Ore Chunks in the Vessel to obtain alloys. Do not try to fire a Vessel with invalid metal ratios, as it will result in a total loss of all of your resources."
+			]
+			dependencies: [
+				"22A5FBC2D7602C42"
+				"6D0A47AE3920EFBB"
+				"5FACA0A9749FDEDD"
+			]
+			dependency_requirement: "one_completed"
+			id: "67EAA2A3900A3889"
+			tasks: [
+				{
+					id: "4A09A85DDAD61C2B"
+					type: "item"
+					item: "farmersdelight:straw"
+					count: 6L
+				}
+				{
+					id: "1F9B48368BD6995C"
+					type: "item"
+					title: "Any Logs"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "minecraft:logs"
+						}
+					}
+					count: 3L
+				}
+				{
+					id: "447114E5446F52F7"
+					type: "item"
+					item: "charcoal_pit:fire_starter"
+				}
+			]
+		}
+		{
+			x: -9.5d
+			y: 0.5d
+			shape: "square"
+			subtitle: "By combining 1 Cow Hide with 1 Salt and 1000 mb of Water in a Wooden Basin, you can obtain the Salted Hide, which will represent the first stage of the Leather making process"
+			dependencies: [
+				"6AF58B751977F945"
+				"068BDFEF7E743BAA"
+			]
+			id: "45A0255F7D8B3FF9"
+			tasks: [{
+				id: "0EA0E42920E4DC06"
+				type: "item"
+				item: "decursiomod:salted_hide"
+			}]
+		}
+		{
+			x: -8.5d
+			y: 0.5d
+			shape: "square"
+			subtitle: "Dried Hide is obtained by leaving 1 Salted Hide on a Drying Rack for a half of an MC Day. This will represent the second stage of the Leather making process"
+			dependencies: [
+				"45A0255F7D8B3FF9"
+				"6AF58B751977F945"
+			]
+			id: "5A3DB26337E118FD"
+			tasks: [{
+				id: "508BAF0FFC898506"
+				type: "item"
+				item: "decursiomod:dried_hide"
+			}]
+		}
+		{
+			title: "Wet Tanned Hide"
+			icon: "decursiomod:wet_tanned_hide"
+			x: -7.5d
+			y: 0.5d
+			shape: "square"
+			subtitle: "The Wet Tanned Hide will be the third stage of the Leather making process. To obtain it, you'll have to make Bark Resin which is obtained by crushing 10 pieces of Bark in a Stone Mill. The Resin will be combined with Water and Dried Hide in a Wooden Basin, resulting into the Wet Tanned Hide"
+			dependencies: [
+				"5A3DB26337E118FD"
+				"6AF58B751977F945"
+			]
+			id: "711D0652E814D558"
+			tasks: [
+				{
+					id: "5820A008A2F2E234"
+					type: "item"
+					item: "farmersdelight:tree_bark"
+				}
+				{
+					id: "26DC8BC0F54C4DF4"
+					type: "item"
+					item: "decursiomod:bark_resin"
+				}
+				{
+					id: "2199CC4A291E7532"
+					type: "item"
+					item: "decursiomod:wet_tanned_hide"
+				}
+			]
+		}
+		{
+			x: -1.0d
+			y: -5.5d
+			shape: "square"
+			subtitle: "Make 5 Pattern to enter in Tinker's Construct and become a true Tinkerer"
+			dependencies: ["6F6302D94B7809B6"]
+			id: "135837E3D930E5A7"
+			tasks: [{
+				id: "255235CACF1EC308"
+				type: "item"
+				item: "tconstruct:pattern"
+				count: 5L
+			}]
+		}
+		{
+			title: "Time is the Key"
+			x: -1.0d
+			y: -2.5d
+			shape: "square"
+			subtitle: "A Fermentation Barrel will allow you to obtain Alcohol and Vinegar, two essential ingredients in the process of making Cheese. Left Click for more info"
+			description: [
+				"In this pack, Cheese will be an important item. Through your journey, you'll discover better ways of producing it, but for now, you'll use the Fermentation Barrel."
+				""
+				"This thing will take water and a some fruits/grains and turn them into Alcohol. 16 Water buckets and one stack of Fruits will be turned into 16 buckets of Alcohol. This can either be consumed with a glass bottle for some unique effects, or can be turned into Vinegar."
+				""
+				"Vinegar can be obtained by placing Fruits into an Alcohol filled Fermentation Barrel. So. Water + 2 stacks of Fruits will get you Vinegar."
+				""
+				"One Bucket of Vinegar can turn 16 buckets of Milk into 16 Cheese pieces."
+			]
+			dependencies: ["6F6302D94B7809B6"]
+			id: "719F725BBF59BFB9"
+			tasks: [{
+				id: "4CBB6A2E4C933053"
+				type: "item"
+				item: "charcoal_pit:barrel"
+			}]
+		}
+		{
+			title: "Fruit => Alcohol => Vinegar"
+			icon: "minecraft:apple"
+			x: -1.0d
+			y: 0.5d
+			shape: "square"
+			subtitle: "The next step in the Human Evolution will be Alcohol. Use JEI to see the uses of a Fermentation Barrel and figure out, what tipes of Alcohol you can make. After that, you'll have to use one stack of Fruits to turn 16 Alcohol buckets into 16 Vinegar buckets. This whole process will take about 4 MC days, so start working on it. Note: ONLY the Vinegar recipe shown by JEI is inaccurate! Also, by typing \"$fruits\" in JEI, you should see all the items that will turn alcohol into Vinegar"
+			dependencies: ["719F725BBF59BFB9"]
+			id: "28963BD76AF813B2"
+			tasks: [
+				{
+					id: "6B7D3F69DE9B4FFE"
+					type: "item"
+					title: "Any Fruit"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:fruits"
+						}
+					}
+				}
+				{
+					id: "6355596D4636B933"
+					type: "item"
+					item: {
+						id: "charcoal_pit:vinegar_bucket"
+						Count: 1b
+						tag: { }
+					}
+				}
+			]
+		}
+		{
+			x: -5.5d
+			y: -1.0d
+			shape: "square"
+			subtitle: "This paste can be used to build Brick Blocks. It can also be used by certain Building Gadgets to create visual replacements for certain blocks. This feature will be available starting with the 3rd Age"
+			dependencies: ["28D2440988FC023D"]
+			id: "15CD4A4DAD12E481"
+			tasks: [{
+				id: "73AE4323A5C8B707"
+				type: "item"
+				item: "buildinggadgets:construction_paste"
+			}]
+		}
+		{
+			title: "Sandy Bricks for HEAT"
+			x: -4.5d
+			y: -1.0d
+			shape: "square"
+			subtitle: "The Sandy Bricks are capable of withstanding large amounts of heat. Due to this property, they're perfect for processing Iron into Ingots"
+			dependencies: ["15CD4A4DAD12E481"]
+			id: "082652E2D64C9967"
+			tasks: [{
+				id: "60050900195D89B2"
+				type: "item"
+				item: "charcoal_pit:sandy_brick"
+				count: 17L
+			}]
+		}
+		{
+			x: -12.5d
+			y: 0.5d
+			shape: "square"
+			subtitle: "A very imporant material you're gonna need in your journey, will be Leather. However, unlike a vanilla experiance, this will not be easy to obtain. Leather has to be processed out of Cow Hide which can be obtained only from.. well.. Cows (not really). So yeah, good luck starting a Farm"
+			hide_dependency_lines: true
+			dependencies: ["6D0A47AE3920EFBB"]
+			size: 2.0d
+			id: "068BDFEF7E743BAA"
+			tasks: [{
+				id: "0BC87FF50ED16484"
+				type: "item"
+				item: "decursiomod:cow_hide"
+			}]
+		}
+		{
+			title: "Canvas"
+			x: -9.5d
+			y: -1.0d
+			shape: "square"
+			subtitle: "The Canvas will be required to build a Drying Rack which will help you progress further. It also has some other uses, including storage options. Make it with some Straw and some Hemp Fibers which can be harvested from Industrial Hemps. Break some Grass to obtain Hemp seeds"
+			dependencies: ["6D0A47AE3920EFBB"]
+			id: "76F7CACBB3B85B1F"
+			tasks: [{
+				id: "2297BF5409D856B7"
+				type: "item"
+				item: "farmersdelight:canvas"
+			}]
+		}
+		{
+			x: -6.5d
+			y: -1.0d
+			shape: "square"
+			subtitle: "The Dense Construction Block will be used to obtain Construction Paste. It is made by placing a Construction Block Powder in water and waiting a few seconds for it convert. The conversion is not instantaneous like it is with the vanilla Concrete. It can also be made in a Wooden Basin"
+			dependencies: ["6FABAEC20D7E03B6"]
+			id: "28D2440988FC023D"
+			tasks: [{
+				id: "64AAA3F01C540AD1"
+				type: "item"
+				item: "buildinggadgets:construction_block_dense"
+			}]
+		}
+		{
+			x: -7.5d
+			y: -1.0d
+			shape: "square"
+			subtitle: "Made out of Sand, Clay and Lapis Dust, the Construction Block Powder, can be turned into a very dense block, perfect for producing Construction Paste"
+			dependencies: ["6AF58B751977F945"]
+			id: "6FABAEC20D7E03B6"
+			tasks: [{
+				id: "6650494CC4DA33D0"
+				type: "item"
+				item: "buildinggadgets:construction_block_powder"
+			}]
+		}
+		{
+			title: "Initial Dynamics"
+			x: -12.5d
+			y: -6.5d
+			shape: "gear"
+			subtitle: "Liquids will be a valuable resource even in the beginning, so you should be able to work with them properly. A Cistern will allow you to store liquids. A Channel will allow you to transport liquids and, finally, a Faucet will allow you to extract liquids"
+			dependencies: ["153EBA0E05C07D6D"]
+			id: "0FB88F49709D3C17"
+			tasks: [
+				{
+					id: "11966BD4BDC83186"
+					type: "item"
+					item: "ceramics:clay_cistern"
+				}
+				{
+					id: "6A64F4DB87FC80E1"
+					type: "item"
+					item: "ceramics:clay_channel"
+				}
+				{
+					id: "10800AD00FBD1961"
+					type: "item"
+					item: "ceramics:clay_faucet"
+				}
+			]
+		}
+		{
+			title: "Ceramics provide Liquid Manipulation"
+			x: -12.5d
+			y: -5.5d
+			shape: "gear"
+			subtitle: "Let's put these babies to good use! Left Click for more info"
+			description: [
+				"These three items will allow you to access liquid manipulation early in the game, so let's cover each one of them."
+				""
+				"The Ceramic Cistern can be used as a Liquid Tank, but only for Cool Liquids, such as Water, Milk, Vinegar, etc. It can also store Hot Liquids, such as Lava, but it will take constant damage over time, until it breaks and all of its contents will be placed in world. It is also not portable and it will loose all of its contents when picked up. Cracked Cisterns can also be picked up. They'll be damaged and fixed in your Crafting Grid with some Clay."
+				""
+				"A Cistern can hold 4 Buckets of liquid. It can also be vertically extended with more Cirsterns. This works only with Cisterns of the same color, so, for example, an Orange Cistern CANNOT extend a Green Cistern. You can use this behavior in your advantage."
+				""
+				"Now, let's talk about Faucets. These can be used to extract liquids from Cisterns and other Drains, for example, those present in Tinker's Construct. When it's connected to a Cistern, it can extract the liquid present in it by simply right-clicking it. It can also receive a Redstone Signal to output fluids automatically. Faucets can be placed anywhere on a Cistern. The amount of fluid present, won't interfere with the position of the Faucet."
+				""
+				"Finally, let's talk about Channels. If you're familiar with Tinker's Construct, these are exactly like the Seared, or the Scorched Channels present there, with the exception of not being able to transport hot fluids without taking damage."
+				""
+				"However, if you're not familiar with Tinker's Construct, know that these things are used to transport liquids around. They can also insert liquids into other Cisterns, or other 'machines' or working stations, but they CANNOT be used to extract from them. In this case, they have to be used in combination with a Faucet."
+				""
+				"Example of a Faucet-Channel Combo:"
+				""
+				"{image:kubejs:textures/ceramics/channel_faucet_example.png width:100 height:100 align:1}"
+				""
+				"Channels are a bit tricky to handle as they'll often not allow liquids to flow properly and you'll have no idea why is that happening. The answear is quite simple. You can adjust their flowing direction by Right-Clicking, or Shift Right-Clicking, depending on which side you wish to configure. Their texture will help you figure out in which way they'll allow liquids to pass, as they have some little 'arrows' drawn on them."
+				""
+				"Example of two Channels flowing in opposite directions:"
+				""
+				"{image:kubejs:textures/ceramics/channel_flowing_example.png width:100 height:100 align:1}"
+				""
+				"In the example shown above, the Channel on the right side will allow liquids to go back, while the Channel on the left side will allow liquids to go forward."
+				""
+				"With Right-Click you can even disconnect them from pretty much anything, including themselves."
+				""
+				"Liquids can even be transported downwards. By placing Channels over each other, you can configure them (by Right-Clicking from bellow) to transfer their contents from the one located above, to the one located below."
+				""
+				"Example of two Channels ready to flow into each other:"
+				""
+				"{image:kubejs:textures/ceramics/channel_down_example.png width:100 height:100 align:1}"
+				""
+				"Notice how the Channel present above has a small opening which will allow liquids to flow down."
+				""
+				"Finally, we want to show you a small setup which will take water from a Cistern and place it in a Wooden Basin:"
+				""
+				"{image:kubejs:textures/ceramics/channel_full_setup_example.png width:160 height:100 align:1}"
+				""
+				"Notice how all the tiny 'arrows' on the Channels are pointing towards the Wooden Basin."
+				""
+				"Channels can also make turns to right or left, but unfortunately, they cannot go upwards."
+			]
+			dependencies: [
+				"0FB88F49709D3C17"
+				"67EAA2A3900A3889"
+			]
+			id: "4719F845B409823A"
+			tasks: [
+				{
+					id: "2B7716942B70C631"
+					type: "item"
+					title: "Ceramic Cistern"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "ceramics:terracotta_cisterns"
+						}
+					}
+				}
+				{
+					id: "6C71384DE2ECD100"
+					type: "item"
+					item: "ceramics:terracotta_channel"
+				}
+				{
+					id: "30C55087CF64DBA8"
+					type: "item"
+					item: "ceramics:terracotta_faucet"
+				}
+			]
+		}
+		{
+			title: "Tinker's Upgrades"
+			icon: "tconstruct:slimesteel_reinforcement"
+			x: 2.0d
+			y: -7.0d
+			shape: "gear"
+			subtitle: "Making that Pick, worthy. Left Click for more info"
+			description: [
+				"Tinker's Construct is a mod focused around modularity. This means that most of your gear can be upgraded/augmented/modified to suit your needs."
+				""
+				"Now, we'd suggest checking the 'Encyclopedia of Tinkering' to fully understand Tinker's Construct and all of it's features, but we'll also try to briefly explain some of the upgrade mechanics."
+				""
+				"Tinkers Construct has mainly 2 types of modifications. These include Upgrades and Abilities. Upgrades are modifications which usually boost the stats already present on a Tool. Abilities are modifiers which provide unique traits to your Tools; think of them as Enchantments. These can allow you to Dual Wield Weapons, Breath Underwater and more."
+				""
+				"Each Tool/Piece of Equipment added by this mod has a limited total number of Upgrade and Ability slots. The number of available Upgrades and Abilities can be increased through certain ways. These include &aDragon Heads, Music Disks, Skulls, End Crystals, Book and Quill&r and they have to be applied to your Tool/Armor at a Tinker's Station, or a Tinker's Anvil."
+				""
+				"The Upgrades and Abilities previously mentioned, are further organized in more categories:"
+				""
+				"- General: These are Upgrades/Abilities which are effective on multiple types of tools, including Melee Weapons, Harvest Tools, along with Armor. There are also some Upgrades/Abilities which are only available to Melee Weapons and Havest Tools, so make sure to check JEI and the Encyclopedia of Tinkering to find out more."
+				""
+				"- Weapon: These are Upgrades/Abilities that are most effective on Melee Weapons, whether it is a Sword, or a repurposed Harvest Tool. Many of these upgrades can also be applied to Chestplates, but there's a catch. That Chestplate needs the 'Unarmed' Ability."
+				""
+				"- Harvest: These are Upgrades/Abilities that are effective mostly on Harvest Tools, such as Pickaxes, Axes and more."
+				""
+				"- Armor: These are Upgrades/Abilities which are typically effective on a single type of Armor or are desinged to run on counter attacks. These mainly include things like Aqua Affinity, Double Jump, Zoom and more."
+				""
+				"Finally, we've covered the Upgrades and the Abilities. Now, let's cover the Defense Upgrades. These are special Upgrades dedicated to Armor Pieces. They include things such as Dedicated Protection, for example, Blast Protection, Knockback Resistance, Gold for walking past Piglins, and more. Note that more Defense Slots CANNOT be added, so you'll have to change the type of Armor you want to use, as each set of Armor added by Tinker's Construct has different amounts of slots."
+				""
+				"Oh, and one more word of advice. If you're interested in upgrading your Armor with general Protection, then you have to use a Diamond which, luckly, is considered to be a General Upgrade."
+			]
+			dependencies: ["7C29480CE8A8FDE5"]
+			id: "3840B8C852E90031"
+			tasks: [{
+				id: "70B85DD491A6C129"
+				type: "checkmark"
+				title: "Got it!"
+			}]
+		}
+		{
+			x: -1.0d
+			y: -4.0d
+			shape: "square"
+			subtitle: "Obtain your first Iron Ingots and start building powerful and useful machines/gadgets/contraptions"
+			dependencies: ["4A5D67C920BE8E6B"]
+			id: "6F6302D94B7809B6"
+			tasks: [{
+				id: "08C5D66C85CFCBB1"
+				type: "item"
+				item: "minecraft:iron_ingot"
+			}]
+		}
+		{
+			title: "Getting Treated Wood!"
+			x: 7.0d
+			y: -5.5d
+			shape: "square"
+			subtitle: "Oh, you want your precious chests.. I see..oh, and the tools too, yeah.. Left Click for more info"
+			description: [
+				"In The Decursio Project the recipes for chests and tools have been altered. To obtain these precious vanilla items, you'll need treated wood."
+				""
+				"Finishing this quest will allow you to place and use basic storage options."
+			]
+			dependencies: ["75ACC6EA81DF8C4D"]
+			id: "34DE05218D6A3ACA"
+			tasks: [{
+				id: "44E70E86D6C731B0"
+				type: "item"
+				title: "Any Treated Plank"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:treated_wood"
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "31BF30E785716D82"
+					type: "item"
+					item: "immersiveengineering:treated_wood_horizontal"
+					count: 32
+				}
+				{
+					id: "434AC617E7F0188C"
+					type: "item"
+					item: "immersiveengineering:wooden_barrel"
+				}
+				{
+					id: "36105CD02BDADA84"
+					type: "command"
+					title: "Learn to make and use advanced storage and regular tools! Discover Colonies!"
+					icon: {
+						id: "botania:cosmetic_questgiver_mark"
+						Count: 1b
+						tag: { }
+					}
+					command: "/thitemstages add @p \"storage,tools,tool_rods\""
+					player_command: false
+				}
+			]
+		}
+	]
+}

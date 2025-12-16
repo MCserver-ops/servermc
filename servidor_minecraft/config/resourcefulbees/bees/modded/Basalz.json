@@ -1,0 +1,43 @@
+{
+    "flower": "minecraft:polished_basalt",
+    "creator": "Me_Ryan",
+    "lore": "Hive Bee",
+    "hasHoneycomb": true,
+    "traits": ["blaze"],
+    "maxTimeInHive": 1800,
+    "baseLayerTexture": "basalz/basalz",
+    "ColorData": {
+      "modelType": "ORE",
+      "honeycombColor": "#2e4253",
+      "primaryColor": "#2e4253",
+      "secondaryColor": "#ff250f"
+    },
+      "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+        "mainOutput": "thermal:basalz_rod",
+        "bottleOutput": "minecraft:honey_bottle",
+        "mainOutputCount": 1,
+        "bottleOutputWeight": 0.80,
+        "mainOutputWeight": 0.20
+      },
+      "SpawnData": {
+        "canSpawnInWorld": false
+      },
+      "BreedData": {
+        "isBreedable": true,
+        "parent1": "Magmatic",
+        "parent2": "Icy",
+        "feedItem": "thermal:polished_slag",
+        "feedAmount": 32
+      },
+      "CombatData": {  
+        "isPassive": false,  
+        "removeStingerOnAttack": true,
+        "inflictsPoison": false,
+        "attackDamage": 3
+    },
+      "TraitData": {
+        "hasTraits": true
+      }
+  }
+  

@@ -1,0 +1,16 @@
+craftingTable.removeRecipe(<item:comforts:hammock_white>);
+craftingTable.removeRecipe(<item:comforts:hammock_orange>);
+craftingTable.removeRecipe(<item:comforts:hammock_magenta>);
+craftingTable.removeRecipe(<item:comforts:hammock_light_blue>);
+craftingTable.removeRecipe(<item:comforts:hammock_yellow>);
+craftingTable.removeRecipe(<item:comforts:hammock_lime>);
+craftingTable.removeRecipe(<item:comforts:hammock_pink>);
+craftingTable.removeRecipe(<item:comforts:hammock_gray>);
+craftingTable.removeRecipe(<item:comforts:hammock_light_gray>);
+craftingTable.removeRecipe(<item:comforts:hammock_red>);
+craftingTable.removeRecipe(<item:comforts:hammock_cyan>);
+craftingTable.removeRecipe(<item:comforts:hammock_purple>);
+craftingTable.removeRecipe(<item:comforts:hammock_blue>);
+craftingTable.removeRecipe(<item:comforts:hammock_brown>);
+craftingTable.removeRecipe(<item:comforts:hammock_green>);
+craftingTable.removeRecipe(<item:comforts:hammock_black>);

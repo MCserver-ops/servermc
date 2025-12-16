@@ -1,0 +1,18 @@
+{
+  "ingredients": [
+    "minecraft:fire_charge",
+    "minecraft:magma_block",
+    "minecraft:magma_cream",
+    "minecraft:netherite_scrap",
+    "minecraft:blaze_rod",
+    "minecraft:blaze_powder",
+    "minecraft:netherrack",
+    "minecraft:nether_brick",
+    "minecraft:crying_obsidian"
+  ],
+  "loot": {
+    "table": [
+    ],
+    "chance": 0
+  }
+}

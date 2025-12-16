@@ -1,0 +1,39 @@
+{
+    "flower": "minecraft:netherrack",
+    "creator": "Me_Ryan",
+    "lore": "Hive Bee",
+    "hasHoneycomb": true,
+    "traits": ["nether"],
+    "maxTimeInHive": 1800,
+    "baseLayerTexture": "netherbricky/netherbricky",
+    "ColorData": {
+    "honeycombColor": "#660e07",
+    "primaryColor": "#660e07",
+    "secondaryColor": "#a7281e"
+  },
+    "CentrifugeData": {
+      "hasCentrifugeOutput": true,
+      "mainOutput": "minecraft:nether_bricks",
+      "mainOutputCount": 32,
+      "mainOutputWeight": 0.50,
+      "secondaryOutput": "minecraft:red_nether_bricks",
+      "secondaryOutputCount": 64,
+      "secondaryOutputWeight": 0.30
+    },
+    "SpawnData": {
+      "canSpawnInWorld": false
+    },
+    "BreedData": {
+      "isBreedable": true,
+      "parent1": "Bricky",
+      "parent2": "Nether",
+      "feedItem": "minecraft:stone",
+      "feedAmount": 64
+    },
+    "CombatData": {
+      "isPassive": true
+    },
+    "TraitData": {
+      "hasTraits": true
+    }
+}

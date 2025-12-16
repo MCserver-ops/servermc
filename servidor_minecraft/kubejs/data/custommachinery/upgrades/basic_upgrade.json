@@ -1,0 +1,12 @@
+{
+	"item": "appliedenergistics2:speed_card",
+	"machines": ["custommachinery:certus_quartz_charger", "custommachinery:metal_compressor"],
+	"modifiers": [
+		{
+			"requirement": "custommachinery:speed",
+			"mode": "input",
+			"operation": "addition",
+			"modifier": -20
+		}
+	]
+}

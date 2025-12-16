@@ -1,0 +1,50 @@
+{
+  "flower": "tconstruct:earth_cake",
+  "lore": "Hive Bee",
+  "hasHoneycomb": true,
+  "traits": ["slimy"],
+  "maxTimeInHive": 1200,
+  "baseLayerTexture": "slime/slime_bee",
+  "ColorData": {
+    "modelType": "ARMORED",
+    "gelLayerTexture": "/slime/slime_gel_Layer",
+    "honeycombColor": "#62B64A"
+  },
+  "MutationData": {
+    "hasMutation": true,
+    "mutations" : [
+      {
+        "type": "BLOCK",
+        "inputID": "minecraft:honey_block",
+        "chance": 0.8,
+        "outputs": [
+          {"outputID": "minecraft:slime_block", "weight": 10}
+        ]
+      }
+    ]
+  },
+  "CentrifugeData": {
+    "hasCentrifugeOutput": true,
+    "mainOutput": "minecraft:slime_ball",
+    "mainOutputWeight": 0.30
+  },
+  "SpawnData": {
+    "canSpawnInWorld": false
+  },
+  "BreedData": {
+    "isBreedable": true,
+    "parent1": "Green_Carpenter",
+    "parent2": "Reed",
+    "feedItem": "minecraft:slime_block",
+    "feedAmount": 8
+  },
+  "CombatData": {  
+    "isPassive": false,  
+    "removeStingerOnAttack": false,
+    "inflictsPoison": true,
+    "attackDamage": 3
+    },
+  "TraitData": {
+    "hasTraits": true
+  }
+}

@@ -1,0 +1,43 @@
+{
+    "flower": "thermal:energy_cell",
+    "creator": "Me_Ryan & Me_Ryan",
+    "lore": "§fLonely Bee\nCoil gives power to coil - Only spawns in The End",
+    "loreColor": "#FFC900",
+    "hasHoneycomb": true,
+    "traits": [],
+    "maxTimeInHive": 1800,
+    "baseLayerTexture": "redstoneflux/redstoneflux",
+    "ColorData": {
+    "modelType": "QUEEN",
+    "honeycombColor": "#e43232",
+    "primaryColor": "#e43232",
+    "secondaryColor": "#701ad5"
+  },
+    "CentrifugeData": {
+      "hasCentrifugeOutput": true,
+      "mainOutput": "thermal:rf_coil",
+      "secondaryOutput": "thermal:upgrade_augment_1",
+      "bottleOutput": "minecraft:honey_bottle",
+      "bottleOutputWeight": 0.95,
+      "mainOutputWeight": 0.20,
+      "secondaryOutputWeight": 0.05
+    },
+    "SpawnData": {
+      "canSpawnInWorld": true,
+      "biomeWhitelist": "tag:END",
+      "lightLevel": "ANY",
+      "spawnWeight": 2,
+      "maxGroupSize": 1
+    },
+    "BreedData": {
+      "isBreedable": true,
+      "feedItem": "emendatusenigmatica:bitumen_gem",
+      "feedAmount": 64
+    },
+    "CombatData": {
+      "isPassive": true
+    },
+    "TraitData": {
+      "hasTraits": true
+    }
+}

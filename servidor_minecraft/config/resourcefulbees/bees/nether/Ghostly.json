@@ -1,0 +1,33 @@
+{
+    "flower": "minecraft:warped_fungus",
+    "creator": "Me_Ryan",
+    "lore": "Hive Bee",
+    "maxTimeInHive": 1000,
+    "hasHoneycomb": true,
+    "baseLayerTexture": "ghostly/ghostly",
+    "traits": ["nether"],
+    "ColorData": {
+      "isBeeColored": false,
+      "honeycombColor": "#f2e6ea",
+      "primaryColor": "#f2e6ea",
+      "secondaryColor": "#ffa6a6"
+    },
+    "CentrifugeData": {
+      "hasCentrifugeOutput": true,
+      "mainOutput": "minecraft:ghast_tear",
+      "mainOutputWeight": 0.25
+    },
+    "SpawnData": {
+        "canSpawnInWorld": false
+      },
+    "BreedData": {
+      "isBreedable": true,
+      "parent1": "Water",
+      "parent2": "Soul",
+      "feedItem": "minecraft:ghast_tear",
+      "feedAmount": 8
+    },
+    "TraitData": {
+      "hasTraits": true
+    }
+  }

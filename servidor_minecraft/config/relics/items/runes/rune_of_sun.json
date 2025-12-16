@@ -1,0 +1,11 @@
+{
+  "ingredients": [
+    "minecraft:glass_pane",
+    "minecraft:sunflower"
+  ],
+  "loot": {
+    "table": [
+    ],
+    "chance": 0
+  }
+}

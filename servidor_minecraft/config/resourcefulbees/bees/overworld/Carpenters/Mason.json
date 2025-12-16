@@ -1,0 +1,39 @@
+{
+    "flower": "minecraft:bricks",
+    "creator": "Me_Ryan",
+    "lore": "Lonely Bee",
+    "hasHoneycomb": true,
+    "customCombDrop": "minecraft:honeycomb",
+    "customCombBlockDrop": "minecraft:honeycomb_block",
+    "traits": [],
+    "maxTimeInHive": 1800,
+    "baseLayerTexture": "mason/mason",
+    "ColorData": {
+      "modelType": "ORE",
+      "primaryColor": "#5f87a2",
+      "secondaryColor": "#bbf6f8"
+    },
+    "MutationData": {
+      "hasMutation": false
+    },
+    "SpawnData": {
+      "canSpawnInWorld": true,
+      "biomeWhitelist": "tag:overworld",
+      "lightLevel": "DAY",
+      "spawnWeight": 5
+    },
+    "BreedData": {
+      "isBreedable": true,
+      "feedItem": "minecraft:brick",
+      "feedAmount": 32
+    },
+    "CombatData": {  
+        "isPassive": false,  
+        "removeStingerOnAttack": true,
+        "inflictsPoison": true,
+        "attackDamage": 2
+    },
+    "TraitData": {
+      "hasTraits": true
+    }
+  }

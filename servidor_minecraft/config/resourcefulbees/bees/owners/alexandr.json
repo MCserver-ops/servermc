@@ -1,0 +1,43 @@
+{
+    "flower": "create:cogwheel",
+    "creator": "alexandr & Me_Ryan",
+    "lore": "§fLonely Bee\nSay `reinstall life`, then you're done - Only spawns in The Twilight Forest",
+    "loreColor": "#FFA2B5",
+    "hasHoneycomb": true,
+    "traits": [],
+    "maxTimeInHive": 1800,
+    "baseLayerTexture": "mechanical/mechanical",
+    "ColorData": {
+    "modelType": "ARMORED",
+    "honeycombColor": "#e54c81",
+    "primaryColor": "#28252a",
+    "secondaryColor": "#e54c81"
+  },
+    "CentrifugeData": {
+      "hasCentrifugeOutput": true,
+      "mainOutput": "create:rose_quartz",
+      "secondaryOutput": "create:andesite_casing",
+      "bottleOutput": "minecraft:honey_bottle",
+      "bottleOutputWeight": 0.95,
+      "mainOutputWeight": 0.70,
+      "secondaryOutputWeight": 0.20
+    },
+    "SpawnData": {
+      "canSpawnInWorld": true,
+      "biomeWhitelist": "twilightforest:dense_forest,twilightforest:forest,twilightforest:oak_savannah,twilightforest:mushroom_forest,twilightforest:spooky_forest,twilightforest:enchanted_forest",
+      "lightLevel": "ANY",
+      "spawnWeight": 3,
+      "maxGroupSize": 1
+    },
+    "BreedData": {
+      "isBreedable": true,
+      "feedItem": "create:andesite_alloy",
+      "feedAmount": 32
+    },
+    "CombatData": {
+      "isPassive": true
+    },
+    "TraitData": {
+      "hasTraits": true
+    }
+}

@@ -1,0 +1,52 @@
+{
+    "flower": "tconstruct:sky_cake",
+    "creator": "Me_Ryan",
+    "lore": "Hive Bee",
+    "hasHoneycomb": true,
+    "traits": ["slimy"],
+    "maxTimeInHive": 1200,
+    "baseLayerTexture": "skyslime/skyslime",
+    "ColorData": {
+      "modelType": "ARMORED",
+      "honeycombColor": "#b2e1ef",
+      "primaryColor": "#b2e1ef",
+      "secondaryColor": "#f1fcff"
+    },
+    "MutationData": {
+      "hasMutation": true,
+      "mutations" : [
+        {
+          "type": "BLOCK",
+          "inputID": "minecraft:honey_block",
+          "chance": 0.8,
+          "outputs": [
+            {"outputID": "tconstruct:sky_slime", "weight": 10}
+          ]
+        }
+      ]
+    },
+    "CentrifugeData": {
+      "hasCentrifugeOutput": true,
+      "mainOutput": "tconstruct:sky_slime_ball",
+      "mainOutputWeight": 0.30
+    },
+    "SpawnData": {
+      "canSpawnInWorld": false
+    },
+    "BreedData": {
+      "isBreedable": true,
+      "parent1": "Slimy",
+      "parent2": "Blizz",
+      "feedItem": "tconstruct:sky_slime",
+      "feedAmount": 8
+    },
+    "CombatData": {  
+      "isPassive": false,  
+      "removeStingerOnAttack": false,
+      "inflictsPoison": true,
+      "attackDamage": 3
+      },
+    "TraitData": {
+      "hasTraits": true
+    }
+  }

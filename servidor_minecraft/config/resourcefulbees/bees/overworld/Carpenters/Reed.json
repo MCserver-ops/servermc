@@ -1,0 +1,50 @@
+{
+    "flower": "minecraft:sugar_cane",
+    "creator": "Me_Ryan",
+    "lore": "Lonely Bee",
+    "hasHoneycomb": true,
+    "customCombDrop": "minecraft:honeycomb",
+    "customCombBlockDrop": "minecraft:honeycomb_block",
+    "traits": [],
+    "maxTimeInHive": 1200,
+    "ColorData": {
+      "isBeeColored": true,
+      "primaryColor": "#70b221",
+      "secondaryColor": "#744208",
+      "honeycombColor": "#70b221"
+    },
+    "MutationData": {
+      "hasMutation": true,
+      "mutations" : [
+        {
+          "type": "BLOCK",
+          "inputID": "minecraft:tall_grass",
+          "chance": 0.8,
+          "outputs": [
+            {"outputID": "minecraft:sugar_cane", "weight": 5}
+          ]
+        }
+      ]
+    },
+    "SpawnData": {
+      "canSpawnInWorld": true,
+      "biomeWhitelist": "tag:SWAMP",
+      "lightLevel": "DAY",
+      "biomeblacklist": "tag:ocean",
+      "spawnWeight": 4
+    },
+    "BreedData": {
+      "isBreedable": true,
+      "feedItem": "minecraft:sugar_cane",
+      "feedAmount": 64
+    },
+    "CombatData": {  
+      "isPassive": false,  
+      "removeStingerOnAttack": false,
+      "inflictsPoison": true,
+      "attackDamage": 3
+      },
+    "TraitData": {
+      "hasTraits": true
+    }
+  }

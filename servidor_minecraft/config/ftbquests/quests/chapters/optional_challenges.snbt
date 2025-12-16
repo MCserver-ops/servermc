@@ -1,0 +1,228 @@
+{
+	id: "7AD2EAF62A54E7FC"
+	group: "227FB27389135A7A"
+	order_index: 1
+	filename: "optional_challenges"
+	title: "Optional Challenges"
+	icon: "minecraft:nether_star"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "How this Chapter Works"
+			icon: "botania:cosmetic_questgiver_mark"
+			x: 0.0d
+			y: 0.0d
+			subtitle: "Left click for more information on this chapter"
+			description: [
+				"This chapter is filled with optional challenges that you may want to complete. None of these are mandatory, and there really isn't a real reward for completing them."
+				""
+				"These are intended mostly for players who just want an extra challenge or objective."
+			]
+			dependencies: ["466242CC140468C5"]
+			id: "60FE564C79D326E1"
+			tasks: [{
+				id: "7C9B2783B41D3D2F"
+				type: "checkmark"
+				title: "Understood"
+			}]
+		}
+		{
+			title: "Ore Quintupling"
+			icon: "emendatusenigmatica:diamond_crystal"
+			x: 3.0d
+			y: -2.5d
+			subtitle: "Set up a system that, when given ores, will process them and quintuple the output"
+			dependencies: ["60FE564C79D326E1"]
+			id: "4588B102F038498A"
+			tasks: [{
+				id: "477A5A72DA0501B3"
+				type: "checkmark"
+				title: "Done it"
+			}]
+			rewards: [{
+				id: "010DA643A4CB1C0C"
+				type: "loot"
+				table_id: 3966812906621148304L
+			}]
+		}
+		{
+			title: "Unlimited Powah!"
+			icon: "powah:uraninite"
+			x: 1.0d
+			y: 3.0d
+			subtitle: "Fully automate supplying a Nitro Reactor with Uraninite"
+			dependencies: ["60FE564C79D326E1"]
+			id: "0ED4AAC3C39C383D"
+			tasks: [{
+				id: "69E225ED52E46DA8"
+				type: "checkmark"
+				title: "Done it"
+			}]
+			rewards: [{
+				id: "61C8C8373F887AA5"
+				type: "loot"
+				table_id: 3966812906621148304L
+			}]
+		}
+		{
+			title: "Dodging Chernobyl"
+			icon: "mekanism:radioactive_waste_barrel"
+			x: -2.0d
+			y: 0.0d
+			subtitle: "Create a maximum size Fission Reactor from Mekanism, and have enough infrastructure to keep it cooled"
+			dependencies: ["60FE564C79D326E1"]
+			id: "7213B10A51500CDB"
+			tasks: [{
+				id: "27B8D324FD13D8B6"
+				type: "checkmark"
+				title: "Done it"
+			}]
+			rewards: [{
+				id: "0B10AA3B1C98B695"
+				type: "loot"
+				table_id: 3966812906621148304L
+			}]
+		}
+		{
+			title: "Solving World Hunger"
+			icon: "farmersdelight:ratatouille"
+			x: -3.0d
+			y: -2.5d
+			subtitle: "Automate the production of 64 unique food types"
+			dependencies: ["60FE564C79D326E1"]
+			id: "5441397882B70253"
+			tasks: [{
+				id: "48A3A78919ED9199"
+				type: "checkmark"
+				title: "Done it"
+			}]
+			rewards: [{
+				id: "7FBAED4EA5E7847D"
+				type: "loot"
+				table_id: 3966812906621148304L
+			}]
+		}
+		{
+			title: "Withered Away"
+			icon: "minecraft:nether_star"
+			x: -2.5d
+			y: 2.0d
+			subtitle: "Automate the construction and death of Withers"
+			dependencies: ["60FE564C79D326E1"]
+			id: "68D5E0B9DAAB951A"
+			tasks: [{
+				id: "411F46C8C3515274"
+				type: "checkmark"
+				title: "Done it"
+			}]
+			rewards: [{
+				id: "03930B67D7591197"
+				type: "loot"
+				table_id: 3966812906621148304L
+			}]
+		}
+		{
+			title: "Many-er Manas"
+			icon: "botania:fabulous_pool"
+			x: 2.0d
+			y: 0.0d
+			subtitle: "Automate the production of Mana with the Rafflowsia, with a system that can create and feed it 39 unique flower types"
+			dependencies: ["60FE564C79D326E1"]
+			id: "2223701DC7B67A4B"
+			tasks: [{
+				id: "7706C681223D29F3"
+				type: "checkmark"
+				title: "Done it"
+			}]
+			rewards: [{
+				id: "71F4905D114FEC25"
+				type: "loot"
+				table_id: 3966812906621148304L
+			}]
+		}
+		{
+			title: "Elon's Dream"
+			icon: "alexsmobs:guster_eye"
+			x: -1.0d
+			y: 3.0d
+			subtitle: "Terraform the planet Mars on an area of 500x500. On the surface only, of course and have a Colony of Villagers there."
+			dependencies: ["60FE564C79D326E1"]
+			id: "1D636E333D4D38DB"
+			tasks: [{
+				id: "6BB18D4B95F845DE"
+				type: "checkmark"
+				title: "Done it"
+			}]
+			rewards: [{
+				id: "01B6D87982E51A2A"
+				type: "loot"
+				table_id: 3966812906621148304L
+			}]
+		}
+		{
+			title: "Mad Hatter"
+			icon: {
+				id: "artifacts:superstitious_hat"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 2.5d
+			y: 2.0d
+			subtitle: "Gather all the hats from the Hats mod"
+			dependencies: ["60FE564C79D326E1"]
+			id: "62F86D823AFFADA1"
+			tasks: [{
+				id: "78A93E998EF3811D"
+				type: "advancement"
+				advancement: "hats:hats/variants_100"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "1D33C01278853607"
+				type: "loot"
+				table_id: 3966812906621148304L
+			}]
+		}
+		{
+			title: "Flaming Matters"
+			icon: "projecte:red_matter"
+			x: -1.0d
+			y: -3.5d
+			subtitle: "Create a setup which can produce 5 Red Matters/Hour without having any EMC interractions being a part of it"
+			dependencies: ["60FE564C79D326E1"]
+			id: "69EA1B97D9C82DA5"
+			tasks: [{
+				id: "5A064BF0A11D89A2"
+				type: "checkmark"
+				title: "Done it"
+			}]
+			rewards: [{
+				id: "0A1107C02610FC19"
+				type: "loot"
+				table_id: 3966812906621148304L
+			}]
+		}
+		{
+			title: "Chaotic Peace"
+			icon: "draconicevolution:reactor_core"
+			x: 1.0d
+			y: -3.5d
+			subtitle: "Create a Computercraft setup which would be able to control and regulate a Draconic Reactor on its own"
+			dependencies: ["60FE564C79D326E1"]
+			id: "518434F97773059D"
+			tasks: [{
+				id: "3F66D7BD26448206"
+				type: "checkmark"
+				title: "Done it"
+			}]
+			rewards: [{
+				id: "6FA1CEC50C57AA20"
+				type: "loot"
+				table_id: 3966812906621148304L
+			}]
+		}
+	]
+}

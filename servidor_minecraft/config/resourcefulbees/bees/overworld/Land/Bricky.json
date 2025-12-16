@@ -1,0 +1,39 @@
+{
+    "flower": "minecraft:stone",
+    "creator": "Me_Ryan",
+    "lore": "Hive Bee",
+    "hasHoneycomb": true,
+    "traits": [],
+    "maxTimeInHive": 1800,
+    "baseLayerTexture": "bricky/bricky",
+    "ColorData": {
+    "honeycombColor": "#a1a1a1",
+    "primaryColor": "#a1a1a1",
+    "secondaryColor": "#8f8f8f"
+  },
+    "CentrifugeData": {
+      "hasCentrifugeOutput": true,
+      "mainOutput": "minecraft:stone_bricks",
+      "mainOutputCount": 32,
+      "mainOutputWeight": 0.50,
+      "secondaryOutput": "minecraft:bricks",
+      "secondaryOutputCount": 64,
+      "secondaryOutputWeight": 0.30
+    },
+    "SpawnData": {
+      "canSpawnInWorld": false
+    },
+    "BreedData": {
+      "isBreedable": true,
+      "parent1": "Dungeon",
+      "parent2": "Mason",
+      "feedItem": "minecraft:stone",
+      "feedAmount": 64
+    },
+    "CombatData": {
+      "isPassive": true
+    },
+    "TraitData": {
+      "hasTraits": true
+    }
+}

@@ -1,0 +1,9 @@
+
+["General Options"]
+	#List all the stages that you want to have.
+	stages = ["age_1", "age_2", "age_2_armor", "age_3", "age_4", "atum_2", "end", "endgame", "furnaces", "iron_age", "lockedforever", "nether", "storage", "tool_rods", "tools", "twilight_forest"]
+	#Set this value to 'true' whenever you're having issues, this will allow the mod to output everything it tries to do in the log.
+	debugMode = false
+	#Set this value to 'true' if you want to use the ImprovedMobs integration.
+	improvedMobs = true
+

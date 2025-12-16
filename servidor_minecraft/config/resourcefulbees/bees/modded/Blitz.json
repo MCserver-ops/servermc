@@ -1,0 +1,42 @@
+{
+    "flower": "tag:forge:ores/sulfur",
+    "creator": "Me_Ryan",
+    "lore": "Hive Bee",
+    "hasHoneycomb": true,
+    "traits": ["lightning"],
+    "maxTimeInHive": 1800,
+    "baseLayerTexture": "blitz/blitz",
+    "ColorData": {
+      "honeycombColor": "#d1eeff",
+      "primaryColor": "#d1eeff",
+      "secondaryColor": "#ffe350"
+    },
+      "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+        "mainOutput": "thermal:blitz_rod",
+        "bottleOutput": "minecraft:honey_bottle",
+        "mainOutputCount": 1,
+        "bottleOutputWeight": 0.60,
+        "mainOutputWeight": 0.20
+      },
+      "SpawnData": {
+        "canSpawnInWorld": false
+      },
+      "BreedData": {
+        "isBreedable": true,
+        "parent1": "Blazing",
+        "parent2": "Icy",
+        "feedItem": "quark:bottled_cloud",
+        "feedAmount": 64
+      },
+      "CombatData": {  
+        "isPassive": false,  
+        "removeStingerOnAttack": true,
+        "inflictsPoison": false,
+        "attackDamage": 5
+      },
+      "TraitData": {
+        "hasTraits": true
+      }
+  }
+  

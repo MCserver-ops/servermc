@@ -1,0 +1,13 @@
+{
+	version: 1
+	uuid: "11ea941a24f43d999d6958f7109ec1b1"
+	name: "NxzTap"
+	can_edit: false
+	lock: false
+	auto_pin: false
+	task_progress: { }
+	started: { }
+	completed: { }
+	claimed_rewards: { }
+	pinned_quests: [ ]
+}

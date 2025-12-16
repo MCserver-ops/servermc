@@ -1,0 +1,47 @@
+{
+    "flower": "tag:minecraft:corals",
+    "creator": "Me_Ryan",
+    "lore": "Lonely Bee",
+    "hasHoneycomb": true,
+    "traits": ["can_swim"],
+    "maxTimeInHive": 1800,
+    "baseLayerTexture": "coral/coral",
+    "ColorData": {
+      "isBeeColored": false,
+      "honeycombColor": "#ed3325",
+      "primaryColor": "#ed3325",
+      "secondaryColor": "#edc525"
+    },
+    "MutationData": {
+      "hasMutation": false
+    },
+    "CentrifugeData": {
+      "hasCentrifugeOutput": true,
+      "mainOutput": "minecraft:fire_coral",
+      "secondaryOutput": "minecraft:tube_coral",
+      "mainOutputCount": 1,
+      "mainOutputWeight": 0.35,
+      "secondaryOutputCount": 4,
+      "secondaryOutputWeight": 0.10
+    },
+    "SpawnData": {
+      "canSpawnInWorld": true,
+      "biomeWhitelist": "tag:ocean",
+      "lightLevel": "DAY",
+      "spawnWeight": 4
+    },
+    "BreedData": {
+      "isBreedable": true,
+      "feedItem": "minecraft:kelp",
+      "feedAmount": 64
+    },
+    "CombatData": {  
+        "isPassive": false,  
+        "removeStingerOnAttack": false,
+        "inflictsPoison": true,
+        "attackDamage": 2
+    },
+    "TraitData": {
+      "hasTraits": true
+    }
+  }

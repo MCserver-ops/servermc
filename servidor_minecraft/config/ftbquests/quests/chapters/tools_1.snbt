@@ -1,0 +1,1532 @@
+{
+	id: "630E723516653E1B"
+	group: "52BC1523CD35BD71"
+	order_index: 4
+	filename: "tools_1"
+	title: "Tools - 1"
+	icon: {
+		id: "eidolon:sapping_sword"
+		Count: 1b
+		tag: {
+			Damage: 0
+		}
+	}
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 5.0d
+			y: 1.0d
+			shape: "gear"
+			subtitle: "I like building with Obsidian! Left Click for more info"
+			description: [
+				"The Pickaxe of Inversion is a pretty amazing tool. As its name says, it will invert the time required to break blocks. This means that blocks such as stone/dirt, which normally take a short time to break, will now be mined extremely slow, while blocks such as obsidian, will be mined almost instantly."
+				""
+				"PS: No, you can't use it to break bedrock."
+			]
+			dependencies: [
+				"52FD71220EF8CF35"
+				"2672CC97E79EB5DE"
+			]
+			id: "76C8EB7F4966EB2B"
+			tasks: [{
+				id: "4F87094255A0C618"
+				type: "item"
+				item: {
+					id: "eidolon:reversal_pick"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 4.0d
+			y: 1.0d
+			shape: "gear"
+			subtitle: "The Axe of Cleaving is a powerful weapon added by Eidolon. Apart from being just a very powerful Axe, it also had the ability to decapitate mobs, such as Wither Skeletons, with relative ease. Out of 10 Wither Skeletons, one should drop a Skull - don't be surprised if you're really unlucky. Make sure the last blow dealt to your enemy, is a critical hit"
+			dependencies: [
+				"08BEA27B64FD36C4"
+				"2672CC97E79EB5DE"
+			]
+			id: "1F31E13A62282610"
+			tasks: [{
+				id: "72B02464FC496CC2"
+				type: "item"
+				item: {
+					id: "eidolon:cleaving_axe"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 6.0d
+			y: 1.0d
+			shape: "gear"
+			subtitle: "The Sword of Sapping is one of Eidolon's most powerful items. As its name suggests, when used on a mob, its life will be drawn from it and transfered to you. Tip: Press \"u\" on an Iron Sword to see the recipe"
+			dependencies: [
+				"077199D0B5C0CEDD"
+				"0492A1CDFB26CAE1"
+			]
+			id: "3BF276B20E0F4B76"
+			tasks: [{
+				id: "488FAC4CDD1C17B2"
+				type: "item"
+				item: {
+					id: "eidolon:sapping_sword"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "The Vanilla Tools"
+			icon: "immersiveengineering:stick_treated"
+			x: 6.5d
+			y: -1.5d
+			subtitle: "Tinkers Construct is NOT for me! Left Click for more info"
+			description: [
+				"You want the vanilla tools? You need treated wood."
+				""
+				"Keep in mind that this quests is here just to let you know that the vanilla tools are made with treated sticks."
+			]
+			dependencies: ["34DE05218D6A3ACA"]
+			id: "0401119DCD92939D"
+			tasks: [{
+				id: "7C86571BF0BC63AB"
+				type: "checkmark"
+				title: "Vanilla tools are made with treated sticks"
+			}]
+		}
+		{
+			x: 5.0d
+			y: 7.0d
+			shape: "gear"
+			subtitle: "Eidolon's main weapon. It deals lots of damage when you right click with it. Recommended against The Wither"
+			dependencies: [
+				"52FD71220EF8CF35"
+				"2672CC97E79EB5DE"
+			]
+			id: "12A63DBF436F8B87"
+			tasks: [{
+				id: "6A0FD8C54889C8B0"
+				type: "item"
+				item: {
+					id: "eidolon:soulfire_wand"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 6.0d
+			y: 7.0d
+			shape: "gear"
+			subtitle: "Similar to the Soulfire Wand, however, you'll quickly find out that it has the ability to truly chill your enemies"
+			dependencies: [
+				"2672CC97E79EB5DE"
+				"52FD71220EF8CF35"
+			]
+			id: "77F885A2A8D182D2"
+			tasks: [{
+				id: "1148B99BA5B98A1F"
+				type: "item"
+				item: {
+					id: "eidolon:bonechill_wand"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Steel Tools"
+			x: 4.5d
+			y: -1.5d
+			subtitle: "The Steel tools will be better the the regular, iron tools, but they won't be able to break obsidian, like the diamonds ones would"
+			dependencies: ["031023A8EA6FD4D0"]
+			id: "3A846DCEF60F25D4"
+			tasks: [
+				{
+					id: "1956EEC2B0512D37"
+					type: "item"
+					item: {
+						id: "immersiveengineering:pickaxe_steel"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "03503E3E662FE27B"
+					type: "item"
+					item: {
+						id: "immersiveengineering:sword_steel"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "2355F0B9E3964465"
+					type: "item"
+					item: {
+						id: "immersiveengineering:axe_steel"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "51128DAD6958C579"
+					type: "item"
+					item: {
+						id: "immersiveengineering:shovel_steel"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "0B93B4C4CA646F0C"
+					type: "item"
+					item: {
+						id: "immersiveengineering:hoe_steel"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Neptunium Tools"
+			x: 5.5d
+			y: -1.5d
+			shape: "heart"
+			subtitle: "These tools will grant certain advantages under water. Ps: the hoe will keep the tilled soil moist"
+			dependencies: ["34DE05218D6A3ACA"]
+			id: "01644324EA667322"
+			tasks: [
+				{
+					id: "2E13D48FBEAC3D07"
+					type: "item"
+					item: {
+						id: "aquaculture:neptunium_pickaxe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "0D56FF2376BB2DF2"
+					type: "item"
+					item: {
+						id: "aquaculture:neptunium_sword"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "61D708E6BA595999"
+					type: "item"
+					item: {
+						id: "aquaculture:neptunium_axe"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "5A7779EA51A43E4B"
+					type: "item"
+					item: {
+						id: "aquaculture:neptunium_shovel"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "4C1196C2C9ED95D6"
+					type: "item"
+					item: {
+						id: "aquaculture:neptunium_fishing_rod"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "75392555D2B296DD"
+					type: "item"
+					item: {
+						id: "aquaculture:neptunium_bow"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "6EE879F912BA85D1"
+					type: "item"
+					item: "aquaculture:neptunium_fillet_knife"
+				}
+			]
+		}
+		{
+			title: "Kama - Carved"
+			icon: {
+				id: "tconstruct:kama"
+				Count: 1b
+				tag: {
+					tic_multipliers: {
+						"tconstruct:attack_damage": 0.75f
+					}
+					tic_stats: {
+						"tconstruct:attack_speed": 1.8f
+						"tconstruct:mining_speed": 4.4f
+						"tconstruct:attack_damage": 1.5f
+						"tconstruct:harvest_level": 1.0f
+						"tconstruct:durability": 104.0f
+					}
+					tic_broken: 0b
+					tic_modifiers: [
+						{
+							name: "tconstruct:stonebound"
+							level: 3s
+						}
+						{
+							name: "tconstruct:shears"
+							level: 1s
+						}
+						{
+							name: "tconstruct:harvest"
+							level: 1s
+						}
+						{
+							name: "tconstruct:hoe_transform_hidden"
+							level: 1s
+						}
+					]
+					HideFlags: 3
+					tic_materials: [
+						"tconstruct:stone"
+						"tconstruct:stone"
+						"tconstruct:stone"
+					]
+					Damage: 0
+					tic_persistent_data: {
+						abilities: 1
+						upgrades: 3
+					}
+				}
+			}
+			x: 2.0d
+			y: 7.0d
+			subtitle: "Hoe + Scythe = LOVE. The Kama is a combination between a how and a scythe and it has some interesting abilities. Left Click for more info"
+			description: ["Keep in mind that this quests is here merely to keep track of what you did. If you've made a kama using tool parts carved at a Part Builder, you can consider this quest, complete."]
+			dependencies: ["0B45311ED355CBB3"]
+			id: "133FDA76CD0F6764"
+			tasks: [{
+				id: "1DF5615E6F2FF117"
+				type: "checkmark"
+				title: "Ok!"
+			}]
+		}
+		{
+			title: "Kama - Casted"
+			icon: {
+				id: "tconstruct:kama"
+				Count: 1b
+				tag: {
+					tic_multipliers: {
+						"tconstruct:attack_damage": 0.75f
+					}
+					tic_stats: {
+						"tconstruct:attack_speed": 1.8f
+						"tconstruct:mining_speed": 6.0f
+						"tconstruct:attack_damage": 2.25f
+						"tconstruct:harvest_level": 2.0f
+						"tconstruct:durability": 398.75f
+					}
+					tic_broken: 0b
+					tic_modifiers: [
+						{
+							name: "tconstruct:sturdy"
+							level: 3s
+						}
+						{
+							name: "tconstruct:shears"
+							level: 1s
+						}
+						{
+							name: "tconstruct:harvest"
+							level: 1s
+						}
+						{
+							name: "tconstruct:hoe_transform_hidden"
+							level: 1s
+						}
+					]
+					HideFlags: 3
+					tic_materials: [
+						"tconstruct:iron"
+						"tconstruct:iron"
+						"tconstruct:iron"
+					]
+					Damage: 0
+					tic_persistent_data: {
+						abilities: 1
+						upgrades: 3
+					}
+				}
+			}
+			x: 9.0d
+			y: 7.0d
+			subtitle: "This one, too. Left Click for more info"
+			description: ["Keep in mind that this quests is here merely to keep track of what you did. If you've made a kama using tool parts casted at a Tinkers Smeltery/Foundry/Melter/Alloyer, you can consider this quest, complete."]
+			dependencies: ["2F7E8BAF91003DEE"]
+			id: "7EB157A85050ECDE"
+			tasks: [{
+				id: "1328672DBD132D11"
+				type: "checkmark"
+				title: "Ok!"
+			}]
+		}
+		{
+			title: "Pickaxe - Carved"
+			icon: {
+				id: "tconstruct:pickaxe"
+				Count: 1b
+				tag: {
+					tic_multipliers: { }
+					tic_stats: {
+						"tconstruct:attack_speed": 1.2f
+						"tconstruct:mining_speed": 4.4f
+						"tconstruct:attack_damage": 1.0f
+						"tconstruct:harvest_level": 1.0f
+						"tconstruct:durability": 104.0f
+					}
+					tic_broken: 0b
+					tic_modifiers: [
+						{
+							name: "tconstruct:piercing"
+							level: 1s
+						}
+						{
+							name: "tconstruct:stonebound"
+							level: 3s
+						}
+					]
+					HideFlags: 3
+					tic_materials: [
+						"tconstruct:stone"
+						"tconstruct:stone"
+						"tconstruct:stone"
+					]
+					Damage: 0
+					tic_persistent_data: {
+						abilities: 1
+						upgrades: 3
+					}
+				}
+			}
+			x: 2.0d
+			y: 2.0d
+			subtitle: "Your regular pickaxe, now custom made from solid materials. Left Click for more info"
+			description: ["Keep in mind that this quests is here merely to keep track of what you did. If you've made a pickaxe using tool parts carved at a Part Builder, you can consider this quest, complete."]
+			dependencies: ["0B45311ED355CBB3"]
+			id: "192C78AAD442E110"
+			tasks: [{
+				id: "3FAFD9C9C833E6FF"
+				type: "checkmark"
+				title: "Ok!"
+			}]
+		}
+		{
+			title: "Hand Axe - Carved"
+			icon: {
+				id: "tconstruct:hand_axe"
+				Count: 1b
+				tag: {
+					tic_multipliers: { }
+					tic_stats: {
+						"tconstruct:attack_speed": 0.9f
+						"tconstruct:mining_speed": 4.4f
+						"tconstruct:attack_damage": 7.0f
+						"tconstruct:harvest_level": 1.0f
+						"tconstruct:durability": 104.0f
+					}
+					tic_broken: 0b
+					tic_modifiers: [
+						{
+							name: "tconstruct:stonebound"
+							level: 3s
+						}
+						{
+							name: "tconstruct:axe_transform_hidden"
+							level: 1s
+						}
+					]
+					HideFlags: 3
+					tic_materials: [
+						"tconstruct:stone"
+						"tconstruct:stone"
+						"tconstruct:stone"
+					]
+					Damage: 0
+					tic_persistent_data: {
+						abilities: 1
+						upgrades: 3
+					}
+				}
+			}
+			x: 2.0d
+			y: 3.0d
+			subtitle: "Your regular axe, now carved from solid materials. Left Click for more info"
+			description: ["Keep in mind that this quests is here merely to keep track of what you did. If you've made an axe using tool parts carved at a Part Builder, you can consider this quest, complete."]
+			dependencies: ["0B45311ED355CBB3"]
+			id: "5D5782558BCF65A7"
+			tasks: [{
+				id: "615B015955329AA0"
+				type: "checkmark"
+				title: "Ok!"
+			}]
+		}
+		{
+			title: "Sword - Carved"
+			icon: {
+				id: "tconstruct:sword"
+				Count: 1b
+				tag: {
+					tic_multipliers: {
+						"tconstruct:mining_speed": 0.5f
+						"tconstruct:durability": 1.1f
+					}
+					tic_stats: {
+						"tconstruct:attack_speed": 1.6f
+						"tconstruct:mining_speed": 2.2f
+						"tconstruct:attack_damage": 4.0f
+						"tconstruct:harvest_level": 1.0f
+						"tconstruct:durability": 114.4f
+					}
+					tic_broken: 0b
+					tic_modifiers: [
+						{
+							name: "tconstruct:stonebound"
+							level: 3s
+						}
+						{
+							name: "tconstruct:silky_shears"
+							level: 1s
+						}
+					]
+					HideFlags: 3
+					tic_materials: [
+						"tconstruct:stone"
+						"tconstruct:stone"
+						"tconstruct:stone"
+					]
+					Damage: 0
+					tic_persistent_data: {
+						abilities: 1
+						upgrades: 3
+					}
+				}
+			}
+			x: 2.0d
+			y: 1.0d
+			subtitle: "Your regular Sword, now carved from solid materials. Left Click for more info"
+			description: ["Keep in mind that this quests is here merely to keep track of what you did. If you've made a sword using tool parts carved at a Part Builder, you can consider this quest, complete."]
+			dependencies: ["0B45311ED355CBB3"]
+			id: "03BDBEB85D1E6A38"
+			tasks: [{
+				id: "5DF8AC744871C629"
+				type: "checkmark"
+				title: "Ok!"
+			}]
+		}
+		{
+			title: "Mattock - Carved"
+			icon: {
+				id: "tconstruct:mattock"
+				Count: 1b
+				tag: {
+					tic_multipliers: {
+						"tconstruct:secondary_mining": 0.65f
+						"tconstruct:mining_speed": 1.1f
+						"tconstruct:attack_damage": 1.1f
+						"tconstruct:durability": 1.25f
+					}
+					tic_stats: {
+						"tconstruct:attack_speed": 0.9f
+						"tconstruct:secondary_mining": 0.65f
+						"tconstruct:attack_damage": 2.75f
+						"tconstruct:harvest_level": 1.0f
+						"tconstruct:durability": 130.0f
+						"tconstruct:mining_speed": 4.84f
+					}
+					tic_broken: 0b
+					tic_modifiers: [
+						{
+							name: "tconstruct:knockback"
+							level: 1s
+						}
+						{
+							name: "tconstruct:stonebound"
+							level: 3s
+						}
+						{
+							name: "tconstruct:shovel_transform_hidden"
+							level: 1s
+						}
+					]
+					HideFlags: 3
+					tic_materials: [
+						"tconstruct:stone"
+						"tconstruct:stone"
+						"tconstruct:stone"
+					]
+					Damage: 0
+					tic_persistent_data: {
+						abilities: 1
+						upgrades: 3
+					}
+				}
+			}
+			x: 2.0d
+			y: 6.0d
+			subtitle: "Axe and Shovel, now combined. Left Click for more info"
+			description: ["Keep in mind that this quests is here merely to keep track of what you did. If you've made a mattock using tool parts carved at a Part Builder, you can consider this quest, complete."]
+			dependencies: ["0B45311ED355CBB3"]
+			id: "7ED66481411F73D0"
+			tasks: [{
+				id: "09EC2B496FD3BC02"
+				type: "checkmark"
+				title: "Ok!"
+			}]
+		}
+		{
+			title: "Dagger - Carved"
+			icon: {
+				id: "tconstruct:dagger"
+				Count: 1b
+				tag: {
+					tic_multipliers: {
+						"tconstruct:mining_speed": 0.75f
+						"tconstruct:attack_damage": 0.5f
+						"tconstruct:durability": 1.0f
+					}
+					tic_stats: {
+						"tconstruct:attack_speed": 2.0f
+						"tconstruct:mining_speed": 3.3000002f
+						"tconstruct:attack_damage": 1.5f
+						"tconstruct:harvest_level": 1.0f
+						"tconstruct:durability": 78.0f
+					}
+					tic_broken: 0b
+					tic_modifiers: [
+						{
+							name: "tconstruct:padded"
+							level: 1s
+						}
+						{
+							name: "tconstruct:stonebound"
+							level: 2s
+						}
+						{
+							name: "tconstruct:offhand_attack"
+							level: 1s
+						}
+						{
+							name: "tconstruct:silky_shears"
+							level: 1s
+						}
+					]
+					HideFlags: 3
+					tic_materials: [
+						"tconstruct:stone"
+						"tconstruct:stone"
+					]
+					Damage: 0
+					tic_volatile_data: {
+						"tconstruct:duel_wielding": 1b
+					}
+					tic_persistent_data: {
+						abilities: 1
+						upgrades: 3
+					}
+				}
+			}
+			x: 2.0d
+			y: 5.0d
+			subtitle: "A quick, short wapon, capable of dealing damage from both hands. Useful as a secondary weapon. Left Click for more info"
+			description: ["Keep in mind that this quests is here merely to keep track of what you did. If you've made a dagger using tool parts carved at a Part Builder, you can consider this quest, complete."]
+			dependencies: ["0B45311ED355CBB3"]
+			id: "5E2E085A9BE8790D"
+			tasks: [{
+				id: "2A6FE0F3A1B6C3F7"
+				type: "checkmark"
+				title: "Ok!"
+			}]
+		}
+		{
+			title: "Pickaxe - Casted"
+			icon: {
+				id: "tconstruct:pickaxe"
+				Count: 1b
+				tag: {
+					tic_multipliers: { }
+					tic_stats: {
+						"tconstruct:attack_speed": 1.2f
+						"tconstruct:mining_speed": 6.0f
+						"tconstruct:attack_damage": 2.0f
+						"tconstruct:harvest_level": 2.0f
+						"tconstruct:durability": 398.75f
+					}
+					tic_broken: 0b
+					tic_modifiers: [
+						{
+							name: "tconstruct:piercing"
+							level: 1s
+						}
+						{
+							name: "tconstruct:sturdy"
+							level: 3s
+						}
+					]
+					HideFlags: 3
+					tic_materials: [
+						"tconstruct:iron"
+						"tconstruct:iron"
+						"tconstruct:iron"
+					]
+					Damage: 0
+					tic_persistent_data: {
+						abilities: 1
+						upgrades: 3
+					}
+				}
+			}
+			x: 9.0d
+			y: 2.0d
+			subtitle: "The Pickaxe was never so modular. Left Click for more info"
+			description: ["Keep in mind that this quests is here merely to keep track of what you did. If you've made a pickaxe using tool parts casted at a Tinkers Smeltery/Foundry/Melter/Alloyer, you can consider this quest, complete."]
+			dependencies: ["2F7E8BAF91003DEE"]
+			id: "66762FA2E8BA19BC"
+			tasks: [{
+				id: "4F82AE2AF8C1A172"
+				type: "checkmark"
+				title: "Ok!"
+			}]
+		}
+		{
+			title: "Hand Axe - Casted"
+			icon: {
+				id: "tconstruct:hand_axe"
+				Count: 1b
+				tag: {
+					tic_multipliers: { }
+					tic_stats: {
+						"tconstruct:attack_speed": 0.9f
+						"tconstruct:mining_speed": 6.0f
+						"tconstruct:attack_damage": 8.0f
+						"tconstruct:harvest_level": 2.0f
+						"tconstruct:durability": 398.75f
+					}
+					tic_broken: 0b
+					tic_modifiers: [
+						{
+							name: "tconstruct:sturdy"
+							level: 3s
+						}
+						{
+							name: "tconstruct:axe_transform_hidden"
+							level: 1s
+						}
+					]
+					HideFlags: 3
+					tic_materials: [
+						"tconstruct:iron"
+						"tconstruct:iron"
+						"tconstruct:iron"
+					]
+					Damage: 0
+					tic_persistent_data: {
+						abilities: 1
+						upgrades: 3
+					}
+				}
+			}
+			x: 9.0d
+			y: 3.0d
+			subtitle: "Lumberjacks would be jaelous. Left Click for more info"
+			description: ["Keep in mind that this quests is here merely to keep track of what you did. If you've made an axe using tool parts casted at a Tinkers Smeltery/Foundry/Melter/Alloyer, you can consider this quest, complete."]
+			dependencies: ["2F7E8BAF91003DEE"]
+			id: "5B4BAB8A09F39FF1"
+			tasks: [{
+				id: "3D6A33F7B130B9E6"
+				type: "checkmark"
+				title: "Ok!"
+			}]
+		}
+		{
+			title: "Dagger - Casted"
+			icon: {
+				id: "tconstruct:dagger"
+				Count: 1b
+				tag: {
+					tic_multipliers: {
+						"tconstruct:mining_speed": 0.75f
+						"tconstruct:attack_damage": 0.5f
+						"tconstruct:durability": 1.0f
+					}
+					tic_stats: {
+						"tconstruct:attack_speed": 2.0f
+						"tconstruct:mining_speed": 4.5f
+						"tconstruct:attack_damage": 2.0f
+						"tconstruct:harvest_level": 2.0f
+						"tconstruct:durability": 268.125f
+					}
+					tic_broken: 0b
+					tic_modifiers: [
+						{
+							name: "tconstruct:padded"
+							level: 1s
+						}
+						{
+							name: "tconstruct:sturdy"
+							level: 2s
+						}
+						{
+							name: "tconstruct:offhand_attack"
+							level: 1s
+						}
+						{
+							name: "tconstruct:silky_shears"
+							level: 1s
+						}
+					]
+					HideFlags: 3
+					tic_materials: [
+						"tconstruct:iron"
+						"tconstruct:iron"
+					]
+					Damage: 0
+					tic_volatile_data: {
+						"tconstruct:duel_wielding": 1b
+					}
+					tic_persistent_data: {
+						abilities: 1
+						upgrades: 3
+					}
+				}
+			}
+			x: 9.0d
+			y: 5.0d
+			subtitle: "Assasins need strong tools. Left Click for more info"
+			description: ["Keep in mind that this quests is here merely to keep track of what you did. If you've made a dagger using tool parts casted at a Tinkers Smeltery/Foundry/Melter/Alloyer, you can consider this quest, complete."]
+			dependencies: ["2F7E8BAF91003DEE"]
+			id: "13B9F1B2CB54B8F7"
+			tasks: [{
+				id: "78DE20C94C9D3651"
+				type: "checkmark"
+				title: "Ok!"
+			}]
+		}
+		{
+			title: "Mattock - Casted"
+			icon: {
+				id: "tconstruct:mattock"
+				Count: 1b
+				tag: {
+					tic_multipliers: {
+						"tconstruct:secondary_mining": 0.65f
+						"tconstruct:mining_speed": 1.1f
+						"tconstruct:attack_damage": 1.1f
+						"tconstruct:durability": 1.25f
+					}
+					tic_stats: {
+						"tconstruct:attack_speed": 0.9f
+						"tconstruct:secondary_mining": 0.65f
+						"tconstruct:attack_damage": 3.8500001f
+						"tconstruct:harvest_level": 2.0f
+						"tconstruct:durability": 498.4375f
+						"tconstruct:mining_speed": 6.6000004f
+					}
+					tic_broken: 0b
+					tic_modifiers: [
+						{
+							name: "tconstruct:knockback"
+							level: 1s
+						}
+						{
+							name: "tconstruct:sturdy"
+							level: 3s
+						}
+						{
+							name: "tconstruct:shovel_transform_hidden"
+							level: 1s
+						}
+					]
+					HideFlags: 3
+					tic_materials: [
+						"tconstruct:iron"
+						"tconstruct:iron"
+						"tconstruct:iron"
+					]
+					Damage: 0
+					tic_persistent_data: {
+						abilities: 1
+						upgrades: 3
+					}
+				}
+			}
+			x: 9.0d
+			y: 6.0d
+			subtitle: "This one is now made from metal, too. Left Click for more info"
+			description: ["Keep in mind that this quests is here merely to keep track of what you did. If you've made a mattock using tool parts casted at a Tinkers Smeltery/Foundry/Melter/Alloyer, you can consider this quest, complete."]
+			dependencies: ["2F7E8BAF91003DEE"]
+			id: "74E0F0C6533599DB"
+			tasks: [{
+				id: "020DEFEBA56AE6E4"
+				type: "checkmark"
+				title: "Ok!"
+			}]
+		}
+		{
+			title: "Sword - Casted"
+			icon: {
+				id: "tconstruct:sword"
+				Count: 1b
+				tag: {
+					tic_multipliers: {
+						"tconstruct:mining_speed": 0.5f
+						"tconstruct:durability": 1.1f
+					}
+					tic_stats: {
+						"tconstruct:attack_speed": 1.6f
+						"tconstruct:mining_speed": 3.0f
+						"tconstruct:attack_damage": 5.0f
+						"tconstruct:harvest_level": 2.0f
+						"tconstruct:durability": 438.625f
+					}
+					tic_broken: 0b
+					tic_modifiers: [
+						{
+							name: "tconstruct:sturdy"
+							level: 3s
+						}
+						{
+							name: "tconstruct:silky_shears"
+							level: 1s
+						}
+					]
+					HideFlags: 3
+					tic_materials: [
+						"tconstruct:iron"
+						"tconstruct:iron"
+						"tconstruct:iron"
+					]
+					Damage: 0
+					tic_persistent_data: {
+						abilities: 1
+						upgrades: 3
+					}
+				}
+			}
+			x: 9.0d
+			y: 1.0d
+			subtitle: "Vanilla Sword, in the classic tinker style. Left Click for more info"
+			description: ["Keep in mind that this quests is here just to keep track of what you did. If you've made a sword using tool parts casted at a Tinkers Smeltery/Foundry/Melter/Alloyer, you can consider this quest, complete."]
+			dependencies: ["2F7E8BAF91003DEE"]
+			id: "59749002D65ED468"
+			tasks: [{
+				id: "11EFB57422035352"
+				type: "checkmark"
+				title: "Ok!"
+			}]
+		}
+		{
+			title: "Hexium Katana"
+			x: 4.5d
+			y: 2.0d
+			subtitle: "This Katana will serve as the base for the FrostBrand. Left Click for the recipe"
+			description: [
+				"Recipes won't be visible on Multiplayer, so here you go:"
+				""
+				"{image:kubejs:textures/eidolon/hexxium_katana_recipe-min.png width:100 height:140 align:1}"
+				""
+				"You'll need Shadow Infused Nuggets and Ingots."
+			]
+			dependencies: [
+				"615658B27FCE3AB0"
+				"08BEA27B64FD36C4"
+			]
+			hide: false
+			id: "77355C0801398011"
+			tasks: [{
+				id: "3E3D134D6368C8FB"
+				type: "item"
+				item: {
+					id: "hexblades:katana_dull"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Hexium Sword"
+			x: 4.5d
+			y: 3.0d
+			subtitle: "This Sword will serve as the base for The Tongue of Asar. Left Click for the recipe"
+			description: [
+				"Recipes won't be visible on Multiplayer, so here you go:"
+				""
+				"{image:kubejs:textures/eidolon/hexxium_sword_recipe-min.png width:100 height:140 align:1}"
+				""
+				"You'll need Shadow Infused Ingots."
+			]
+			dependencies: [
+				"615658B27FCE3AB0"
+				"08BEA27B64FD36C4"
+			]
+			hide: false
+			id: "17CF0CBD93790378"
+			tasks: [{
+				id: "4E0770683850DD56"
+				type: "item"
+				item: {
+					id: "hexblades:sword_dull"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Hexium Saber"
+			x: 4.5d
+			y: 4.0d
+			subtitle: "This Saber will serve as the base for the Fang of the Kraken. Left Click for the recipe"
+			description: [
+				"Recipes won't be visible on Multiplayer, so here you go:"
+				""
+				"{image:kubejs:textures/eidolon/hexxium_saber_recipe-min.png width:100 height:140 align:1}"
+				""
+				"You'll need Shadow Infused Ingots."
+			]
+			dependencies: [
+				"615658B27FCE3AB0"
+				"08BEA27B64FD36C4"
+			]
+			hide: false
+			id: "035CBED539B0E72D"
+			tasks: [{
+				id: "65A78A3DB0905F94"
+				type: "item"
+				item: {
+					id: "hexblades:saber_dull"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Hexium Hammer"
+			x: 4.5d
+			y: 5.0d
+			subtitle: "This Hammer will serve as the base for the Earth Destroyer. Left Click for the recipes"
+			description: [
+				"Recipes won't be visible on Multiplayer, so here you go:"
+				""
+				"{image:kubejs:textures/eidolon/hexxium_hammer_recipe-min.png width:100 height:140 align:1}"
+				""
+				"You'll need Shadow Infused Nuggets and Blocks."
+			]
+			dependencies: [
+				"615658B27FCE3AB0"
+				"08BEA27B64FD36C4"
+			]
+			hide: false
+			id: "53D0B7811FCC7AEE"
+			tasks: [{
+				id: "7788FE9F349A8B6D"
+				type: "item"
+				item: {
+					id: "hexblades:hammer_dull"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Hexium Dagger"
+			x: 4.5d
+			y: 6.0d
+			subtitle: "This Dagger will serve as the base for the Lightning Slasher. Left Click for the recipe"
+			description: [
+				"Recipes won't be visible on Multiplayer, so here you go:"
+				""
+				"{image:kubejs:textures/eidolon/hexxium_dagger_recipe-min.png width:100 height:140 align:1}"
+				""
+				"You'll need Shadow Infused Nuggets."
+			]
+			dependencies: [
+				"615658B27FCE3AB0"
+				"08BEA27B64FD36C4"
+			]
+			hide: false
+			id: "023D1CB3A09ED5A9"
+			tasks: [{
+				id: "030BD75A358B9B79"
+				type: "item"
+				item: {
+					id: "hexblades:dagger_dull"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 5.5d
+			y: 2.0d
+			shape: "gear"
+			subtitle: "When you right-click with this weapon in your hand, it will unleash its powers and will inflict slowness on your enemies when you attack them. Keep in mind that the weapon's abilities won't last forever. The time they'll last will be displayed on the weapon's durability bar. Killing enemies will give you more time before the weapon's powers are depleated and the weapon has to recharge"
+			dependencies: [
+				"077199D0B5C0CEDD"
+				"77355C0801398011"
+				"21378F7407807CD1"
+			]
+			id: "1D4194D3321A9E2D"
+			tasks: [{
+				id: "6AFD04C3013242F2"
+				type: "item"
+				item: {
+					id: "hexblades:ice_katana_1"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 6.5d
+			y: 2.0d
+			shape: "heart"
+			subtitle: "The FrostBrand is the final form of the Chillrazor and, similarly to it, the FrostBrand will slow down your enemies when you attack them, however, the slowness inflicted by this version of the weapon will be much stronger then the previous one. This version of the weapon also has to recharge after some time"
+			dependencies: [
+				"570BA5FA1822BCF8"
+				"1D4194D3321A9E2D"
+			]
+			id: "27E6DF7E2B6BB1A2"
+			tasks: [{
+				id: "757C4C32C592BBAD"
+				type: "item"
+				item: {
+					id: "hexblades:ice_katana_2"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 5.5d
+			y: 3.0d
+			shape: "gear"
+			subtitle: "When you right-click with this weapon in your hand, it will unleash its powers which will set your enemies on fire when you attack them. Additionally, it will give you fire resistance. Keep in mind that the weapon's abilities won't last forever. The time they'll last will be displayed on the weapon's durability bar. Killing enemies will give you more time before the weapon's powers are depleated and the weapon has to recharge"
+			dependencies: [
+				"077199D0B5C0CEDD"
+				"17CF0CBD93790378"
+				"21378F7407807CD1"
+			]
+			id: "0D63D71E71071B99"
+			tasks: [{
+				id: "536A6E3E20F9F843"
+				type: "item"
+				item: {
+					id: "hexblades:flame_sword_1"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 6.5d
+			y: 3.0d
+			shape: "heart"
+			subtitle: "The Tongue of Asar is the final form of the Nether BroadSword and, similarly to it, the Tongue of Asar will set your enemies on fire when you attack them, however this version of the weapon will make the fire last for a longer period of time. Additionally, this version will give you fire resistance peranenetly. This version of the weapon also has to recharge after some time"
+			dependencies: [
+				"570BA5FA1822BCF8"
+				"0D63D71E71071B99"
+			]
+			id: "03D82A970162FF63"
+			tasks: [{
+				id: "6E6CF336836B76B0"
+				type: "item"
+				item: {
+					id: "hexblades:flame_sword_2"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 5.5d
+			y: 4.0d
+			shape: "gear"
+			subtitle: "When you right-click with this weapon in your hand, it will unleash its powers which will allow you to breath underwater for a limited amount of time. Keep in mind that the weapon's abilities won't last forever. The time they'll last will be displayed on the weapon's durability bar. Killing enemies will give you more time before the weapon's powers are depleated and the weapon has to recharge"
+			dependencies: [
+				"077199D0B5C0CEDD"
+				"035CBED539B0E72D"
+				"21378F7407807CD1"
+			]
+			id: "780822D90246E9DD"
+			tasks: [{
+				id: "4F9D9EDE11589E9C"
+				type: "item"
+				item: {
+					id: "hexblades:water_saber_1"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 6.5d
+			y: 4.0d
+			shape: "heart"
+			subtitle: "The Fang of the Kraken is the final form of the Cutlass of Waves and, similarly to it, the Fang of the Kraken will give you water breathing, however this version of the weapon will also give you dolphin's grace, both permanently. Additionally it will also give you conduit power for a limited amount of time. This version of the weapon also has to recharge after some time"
+			dependencies: [
+				"570BA5FA1822BCF8"
+				"780822D90246E9DD"
+			]
+			id: "3E4A047819CE29D2"
+			tasks: [{
+				id: "6481A203C1BFC4CB"
+				type: "item"
+				item: {
+					id: "hexblades:water_saber_2"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 5.5d
+			y: 5.0d
+			shape: "gear"
+			subtitle: "When you right-click with this hammer, it will start dealing more damage and knockback to your enemies. Additionally, if shift right-click it used, the hammer will be switched to mining mode, which will allow you to break blocks like stone more easier. The hammer's abilities are not permanent and the time they'll be available will be displayed on the hammer's durability bar"
+			dependencies: [
+				"077199D0B5C0CEDD"
+				"53D0B7811FCC7AEE"
+				"21378F7407807CD1"
+			]
+			id: "6F247E0CBBEF10F8"
+			tasks: [{
+				id: "5ECC09B8C043B733"
+				type: "item"
+				item: {
+					id: "hexblades:earth_hammer_1"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 6.5d
+			y: 5.0d
+			shape: "heart"
+			subtitle: "The Earth Destroyer is the final form of the Rockbane. It will does more damage and knockback to your enemies. Additionally, it will have a greater mining speed"
+			dependencies: [
+				"570BA5FA1822BCF8"
+				"6F247E0CBBEF10F8"
+			]
+			id: "49FC8B019AB13249"
+			tasks: [{
+				id: "362C789359BAAE94"
+				type: "item"
+				item: {
+					id: "hexblades:earth_hammer_2"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 5.5d
+			y: 6.0d
+			shape: "gear"
+			subtitle: "Unlike other weapons added by Hexblades, these two will be more special as they'll be made by infusing a Hexium Dagger in a ritual. When one of them is used in the right hand and the other in the left hand, one of them will become a melee weapon, whhile the other will become a ranged weapon. Keep in mind that they'll have to be used together in order to work properly"
+			dependencies: [
+				"077199D0B5C0CEDD"
+				"023D1CB3A09ED5A9"
+				"21378F7407807CD1"
+			]
+			id: "7CEB85E8AA020C82"
+			tasks: [
+				{
+					id: "3FAA168BC5C07E29"
+					type: "item"
+					item: {
+						id: "hexblades:thunder_knives_right1"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "433A28371A899AFB"
+					type: "item"
+					item: {
+						id: "hexblades:thunder_knives_left1"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 6.5d
+			y: 6.0d
+			shape: "heart"
+			subtitle: "The Lightning Slasher and the Lightning Caller are the final versions of the Thunder and Bolt Daggers. These two will deal more damage and will recharge faster then their previous versions"
+			dependencies: [
+				"570BA5FA1822BCF8"
+				"7CEB85E8AA020C82"
+			]
+			id: "72786206F054C45A"
+			tasks: [
+				{
+					id: "6F17EC7FC1E2E240"
+					type: "item"
+					item: {
+						id: "hexblades:thunder_knives_right2"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "564B25BC9525B474"
+					type: "item"
+					item: {
+						id: "hexblades:thunder_knives_left2"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 7.0d
+			y: 1.0d
+			shape: "heart"
+			subtitle: "Infused with a nether star, the Sanguine Witherer can drain more life out of you foes. Additionally, it will give you night vision when you right click with it. Tip: Press \"u\" on the Sword of Sapping to see the recipe"
+			dependencies: ["3BF276B20E0F4B76"]
+			id: "295DD6494CA7079B"
+			tasks: [{
+				id: "14622B1D5D087225"
+				type: "item"
+				item: {
+					id: "hexblades:blood_sword"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "The Blood Scepter"
+			x: 5.0d
+			y: 0.0d
+			shape: "gear"
+			subtitle: "Sanguine Arsenal's main weapon. An upgraded version of the SoulFire Wand, the Scepter of Blood can be used both as a melee, and as a ranged weapon. It also has more durability. The Sanguine Praetor Armor will be required for the ranged attack to work. Tip: Press \"u\" on the SoulFire Wand to see the Scepter's recipe. 25 Hearts of living creatures will be required to make the Ritual"
+			hide_dependency_lines: true
+			dependencies: [
+				"12A63DBF436F8B87"
+				"377DDDF081820BFB"
+				"03E1A8C6F933631D"
+			]
+			id: "48E6B594DFDDE529"
+			tasks: [{
+				id: "1A391AC0DAD02F57"
+				type: "item"
+				item: {
+					id: "sanguinearsenal:scepter_of_blood"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 6.0d
+			y: -2.5d
+			shape: "heart"
+			subtitle: "Maximum building range of 9. Has infinite durability"
+			dependencies: [
+				"170A7FEFF20DF377"
+				"1BD61910AB0290E3"
+			]
+			id: "1B76A1FD1A9DE625"
+			tasks: [{
+				id: "4A24B70EB28A687A"
+				type: "item"
+				item: {
+					id: "constructionwand:infinity_wand"
+					Count: 1b
+					tag: {
+						wand_options: { }
+					}
+				}
+			}]
+		}
+		{
+			x: 5.0d
+			y: -2.5d
+			shape: "gear"
+			subtitle: "Maximum building range of 4 blocks"
+			dependencies: ["34DE05218D6A3ACA"]
+			id: "170A7FEFF20DF377"
+			tasks: [{
+				id: "305E7210CD2B018F"
+				type: "item"
+				item: {
+					id: "constructionwand:diamond_wand"
+					Count: 1b
+					tag: {
+						wand_options: { }
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "SlimeSling"
+			x: 5.5d
+			y: -3.5d
+			shape: "gear"
+			subtitle: "With the Slimesling, you can launch yourself in the distance, at large speeds"
+			dependencies: ["0DDA2FB169318B04"]
+			id: "676C1B976D5EEE7C"
+			tasks: [{
+				id: "6E68E9E0E0E370F3"
+				type: "item"
+				title: "Any SlimeSling"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "tconstruct:slimeslings"
+					}
+				}
+			}]
+		}
+		{
+			x: 6.0d
+			y: 0.0d
+			shape: "gear"
+			subtitle: "The Praetor's Scythe is a very powerful weapon. It has two passive features and an active one. When you land a hit on multiple mobs with it, the damage will be equal to all the targets affected. It's like it has Sweeping Edge 10000. It is also very fast, so if you get cornered in a situation, feel free to land hits as fast as possible to get out. Its active feature is exclusive to a user that's wearing the Sanguine Praetor Armor. When Blood is available on the Blood Bar, you can launch the Scythe with Right-Click. It will target the closest agressive mob to its launch point. After hitting its target, it will return to you, just like a boomerang. Tip: Press \"u\" on the Reaper's Scythe to see the Scythe's recipe. 40 Hearts of living creatures will be required to make the Ritual"
+			dependencies: ["35A42F33FE263878"]
+			id: "79DFFF807DB6F52A"
+			tasks: [{
+				id: "2ED59D842C16A140"
+				type: "item"
+				item: {
+					id: "sanguinearsenal:praetor_scythe"
+					Count: 1b
+					tag: {
+						Damage: 0
+						AttributeModifiers: [
+							{
+								Amount: 9.0d
+								Slot: "mainhand"
+								AttributeName: "minecraft:generic.attack_damage"
+								Operation: 0
+								UUID: [I;
+									1944018768
+									-1695399009
+									-2136876536
+									588942024
+								]
+								Name: "generic.attack_damage"
+							}
+							{
+								Amount: 0.85d
+								Slot: "mainhand"
+								AttributeName: "minecraft:generic.attack_speed"
+								Operation: 0
+								UUID: [I;
+									32167376
+									21908912
+									-1581068272
+									189749210
+								]
+								Name: "generic.attack_speed"
+							}
+						]
+					}
+				}
+			}]
+		}
+	]
+}

@@ -1,0 +1,3970 @@
+{
+	id: "60F67840A3B161A7"
+	group: "11592D5C828EEDBF"
+	order_index: 5
+	filename: "useful_items_3"
+	title: "Useful Items - 3"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	images: [
+		{
+			x: 32.5d
+			y: -2.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "minecraft:textures/particle/heart.png"
+			hover: ["Familiars"]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 32.5d
+			y: -8.0d
+			width: 1.0d
+			height: 1.0d
+			rotation: 0.0d
+			image: "ars_nouveau:textures/items/ritual_wilden_summon.png"
+			hover: ["Ritual Tablets"]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 23.5d
+			y: -20.5d
+			width: 1.5d
+			height: 1.0d
+			rotation: 0.0d
+			image: "boss_tools:textures/timer/timer1.png"
+			hover: ["Tier 1 Spells"]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 23.5d
+			y: -15.5d
+			width: 1.5d
+			height: 1.0d
+			rotation: 0.0d
+			image: "boss_tools:textures/timer/timer2.png"
+			hover: ["Tier 2 Spells"]
+			click: ""
+			dev: false
+			corner: false
+		}
+		{
+			x: 23.5d
+			y: -10.5d
+			width: 1.5d
+			height: 1.0d
+			rotation: 0.0d
+			image: "boss_tools:textures/timer/timer3.png"
+			hover: ["Tier 3 Spells"]
+			click: ""
+			dev: false
+			corner: false
+		}
+	]
+	quests: [
+		{
+			x: 28.0d
+			y: -39.5d
+			subtitle: "All the mobs I'll ever want. Left Click for more info"
+			description: [
+				"The Spawner is a machine added by RFTools Utility. It requires power, a syringe and at least 3 Matter Beamers in order to work properly."
+				""
+				"The Syringe has to be placed inside the Spawner, only after it was filled with a mob's essence. To fill the Syringe, just hit the mob you want to spawn. You can check what essence level you have in the Syringe by right-clicking with it."
+				""
+				"After the Syringe was filled, you can place it in the Spawner. Info about the required items should be provided on the right side of the Spawner interface."
+				""
+				"The items listed there represent the Key Matter, the Bulk Matter and the Living Matter required for the Spawner to summon a creature. These types of matter must be provided to the Spawner through Matter Beamers (you can see the quest for these to learn more about them)."
+			]
+			dependencies: ["5B3C80318977A04B"]
+			id: "5090ED364A40E88B"
+			tasks: [{
+				id: "5F4B2A94910F50CB"
+				type: "item"
+				item: "rftoolsutility:spawner"
+			}]
+			rewards: [{
+				id: "5226B449A0C80477"
+				type: "item"
+				item: "rftoolsutility:syringe"
+			}]
+		}
+		{
+			x: 30.0d
+			y: -39.5d
+			subtitle: "Items -> Matter -> Mobs. Left Click for more info"
+			description: [
+				"The Matter Beamer is used to transform certain items into different types of Matter. These types of Matter can be provided to a Spawner to summon certain mobs."
+				""
+				"To properly use the Beamers, you need to connect them to a Spawer using a Smart Wrench from RFTools. Further, power and a redstone signal must be provided for the Beamer to work. After items are supplied to the Beamer, alongside the required power and the restone signal, a red beam should be appear between the Beamer and the Spawner to show that the're connected and working. Note that without the items, no red beam will be visible."
+			]
+			dependencies: ["5B3C80318977A04B"]
+			id: "5CDE5C6C15E22A16"
+			tasks: [{
+				id: "373F228ADB0782DA"
+				type: "item"
+				item: "rftoolsutility:matter_beamer"
+			}]
+		}
+		{
+			x: 29.0d
+			y: -39.5d
+			shape: "circle"
+			subtitle: "The Machine Infuser can be used to upgrade other machines from RF Tools. Place the machine in, provide power, some Dimensional Shards and watch how your machine is upgraded"
+			dependencies: ["3367D3C501792C05"]
+			id: "49C711628DED800A"
+			tasks: [{
+				id: "6B8361D5226D6D19"
+				type: "item"
+				item: "rftoolsbase:machine_infuser"
+			}]
+		}
+		{
+			x: 26.5d
+			y: -38.5d
+			shape: "gear"
+			subtitle: "Actually player kill. Left Click for more info"
+			description: [
+				"The Mob Masher is a machine added by MobGrindingUtilities which, unlike the Computercraft Turtles, needs just a redstone signal to operate."
+				""
+				"Any mobs that come close to it will be rapidely killed, dropping items and xp which can either be collected by you, or by a Absoption Hopper."
+			]
+			dependencies: ["5B3C80318977A04B"]
+			id: "4ED5B4DCA43D850E"
+			tasks: [{
+				id: "715CA06C73BC8B15"
+				type: "item"
+				item: "mob_grinding_utils:saw"
+			}]
+		}
+		{
+			x: 31.5d
+			y: -38.5d
+			shape: "gear"
+			subtitle: "Universal Hopper. Left Click for more info"
+			description: [
+				"The Absorption Hopper will pick up anything in its range. This also includes xp orbs which will be instantly turned into liquid xp in its inventory."
+				""
+				"It is best used in a mob farm as it will pick up everything and it CANNOT accept any filters."
+			]
+			dependencies: ["5B3C80318977A04B"]
+			id: "265350FA44E4F60E"
+			tasks: [{
+				id: "7A28D9A602AA817D"
+				type: "item"
+				item: "mob_grinding_utils:absorption_hopper"
+			}]
+		}
+		{
+			x: 29.0d
+			y: -33.0d
+			shape: "gear"
+			subtitle: "The Energetic Infuser will allow you to charge up to 9 items at a time. It can receive augments to charge items faster and hold more power"
+			dependencies: ["2F64EED1F5172A81"]
+			id: "133DD8C083D8FDA9"
+			tasks: [{
+				id: "3FF73758A678DC4A"
+				type: "item"
+				item: "thermal:charge_bench"
+			}]
+		}
+		{
+			x: 28.5d
+			y: -32.0d
+			shape: "gear"
+			subtitle: "The Nullifier will delete all items and fluids that are transferred to it. When given items through its UI, it will keep those items until you decide to delete them. A filter can be applied to it in order to whitelist or blacklist certain items from being deleted"
+			dependencies: ["7EF155944458998F"]
+			id: "5869E324C779E5C5"
+			tasks: [{
+				id: "6B057F0AC3B4A986"
+				type: "item"
+				item: "thermal:device_nullifier"
+			}]
+		}
+		{
+			x: 28.0d
+			y: -33.0d
+			shape: "gear"
+			subtitle: "The Vacuumulator will act as a Hopperhock from Botania, excluding the fact that it is more techy. A filter can be applied to it in order to whitelist or blacklist certain items from being picked up"
+			dependencies: ["7EF155944458998F"]
+			id: "58F065B7CABD8ABB"
+			tasks: [{
+				id: "194169E853A7D5CA"
+				type: "item"
+				item: "thermal:device_collector"
+			}]
+		}
+		{
+			x: 30.0d
+			y: -33.0d
+			shape: "gear"
+			subtitle: "The Igneous Extruder can be used to generate infinite amounts of stone/cobblestone/basalt. You might be able to use it with the Matter Condenser to obtain Matter Balls or Singularities"
+			dependencies: ["7EF155944458998F"]
+			id: "2816E0E5A7438149"
+			tasks: [{
+				id: "56AB23F34D7B3875"
+				type: "item"
+				item: "thermal:device_rock_gen"
+			}]
+		}
+		{
+			title: "The Thermal Water Pump"
+			x: 29.5d
+			y: -32.0d
+			shape: "gear"
+			subtitle: "The Aqueous Accumulator will generate water for your needs. In order for it to work, at least two water source blocks must be adjacent to the Accumulator. Blocks present above or below the Accumulator will not count. Additionally, the Aqueous Accumulator can accept various augments in order to be more efficient"
+			dependencies: ["7EF155944458998F"]
+			id: "0BBFC0BE7B016667"
+			tasks: [{
+				id: "1B5304840D18A5FF"
+				type: "item"
+				item: "thermal:device_water_gen"
+			}]
+		}
+		{
+			x: 26.5d
+			y: 3.0d
+			shape: "gear"
+			subtitle: "The Mana Collector is used to transport Mana from flowers to Sparks. It transfers mana from flowers much faster than Mana Spreaders. It allows the mana of flowers to be inserted into the spark network directly. You will need to attach a recessive spark augment to the collector for it to work"
+			dependencies: ["51C8A2EC12659993"]
+			id: "34D378D7DCA3AD0E"
+			tasks: [{
+				id: "50CDB3C395565589"
+				type: "item"
+				item: "mythicbotany:mana_collector"
+			}]
+		}
+		{
+			x: 24.5d
+			y: -3.5d
+			shape: "gear"
+			subtitle: "When worn, you'll be able to cast a very strong slowness effect on your enemies by simply hitting them. You'll also be immune to wall suffocation"
+			dependencies: ["12BEA0308056A4B6"]
+			id: "2501FBED48DD2E34"
+			tasks: [{
+				id: "2F3E10D6700E1F17"
+				type: "item"
+				item: {
+					id: "mythicbotany:ice_ring"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 26.5d
+			y: -3.5d
+			shape: "gear"
+			subtitle: "When worn, you'll be immune to all kinds of fire damage. Additionally, you'll be able to set your enemies on fire when you'll hit them"
+			dependencies: ["12BEA0308056A4B6"]
+			id: "5760D1D8666E4D29"
+			tasks: [{
+				id: "6C51FC8FB8255209"
+				type: "item"
+				item: {
+					id: "mythicbotany:fire_ring"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 25.5d
+			y: -3.5d
+			shape: "gear"
+			subtitle: "Portable Mana Generator MkIII - An upgraded version of the Greater Band of Aura. This one will generate Mana at a much faster rate"
+			dependencies: ["01C35754A9AEF761"]
+			id: "686C82346D375EB3"
+			tasks: [{
+				id: "65C710FF2A6DE424"
+				type: "item"
+				item: {
+					id: "mythicbotany:aura_ring_greatest"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 25.5d
+			y: -2.5d
+			shape: "gear"
+			subtitle: "When worn, this Ring will give you random gold items when you'll place Gold Blocks in the world. Note that, while using this ring, it has a random chance of becomming cursed, chase in which you'll have to cleanse it again"
+			dependencies: ["23166E01B7633B1B"]
+			id: "5C1A4BBFA4EDD99A"
+			tasks: [{
+				id: "63542C1145FEDB8B"
+				type: "item"
+				item: {
+					id: "mythicbotany:andwari_ring"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 25.5d
+			y: -5.5d
+			shape: "gear"
+			subtitle: "May luck be on your side. Left click for more info"
+			description: [
+				"The Dice of Fate is a powerful artifact dropped by the 2nd Guardian of Gaia. The dice is bound to the player it dropped for, and cannot be used by others. This item doesn't despawn when dropped onto the ground."
+				""
+				"When used, the dice will turn into a random Relic not yet obtained by the player. Upon obtaining a relic the player will be awarded its respective advancement. If the player already has all the relic advancements, the dice will disappear instead."
+				""
+				"What are these Relics?"
+				""
+				"These are legendary items with unique abilities which get bound to you. This means that you cannot share them with other players, they'll work only with you. Also, they're so unique that you cannot have multiple of them. If you lose one, it is gone forever, so be careful with them."
+			]
+			dependencies: ["51C8A2EC12659993"]
+			id: "4EAF85156A964999"
+			tasks: [{
+				id: "31A1BF94E6580298"
+				type: "item"
+				item: {
+					id: "botania:dice"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "70454B3B2DDD5869"
+				type: "loot"
+				table_id: 7176426831663151036L
+			}]
+		}
+		{
+			x: 24.5d
+			y: -4.5d
+			shape: "heart"
+			subtitle: "The Blessing of a lovely Goddess <3 Left Click for more info"
+			description: [
+				"The Fruit of Grisaia is one of the six Relics dropped by the Dice of Fate."
+				""
+				"When used, it will use Mana to fill the player's hunger. About 50,000 Mana is necessary to completely fill the hunger bar."
+			]
+			dependencies: ["4EAF85156A964999"]
+			id: "76F4EEF622AE4EF7"
+			tasks: [{
+				id: "28B2402C0B79938A"
+				type: "item"
+				item: {
+					id: "botania:infinite_fruit"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 25.5d
+			y: -4.5d
+			shape: "heart"
+			subtitle: "Because Valhalla has an army <3 Left Click for more info"
+			description: [
+				"The Key of the King's Law is one of the six Relics dropped by the Dice of Fate."
+				""
+				"When the right-click is held, it will spawn 20 weapon-shaped projectiles behind the player, using 150 Mana per projectile. Releasing the right mouse button when 20 projectiles are present or selecting a different item will launch the projectiles towards the targeted block, or 64 blocks in the direction the player is looking in if they are not targeting a block."
+				""
+				"When a projectile hits an entity or a block, it will explode with strength of 3 (same as a Creeper), but will not damage blocks. A direct hit on an entity will deal an additional 20 points of damage to it. If a launched projectile does not hit anything, it will despawn after 10 seconds after being launched."
+			]
+			dependencies: ["4EAF85156A964999"]
+			id: "426FD484824BC58E"
+			tasks: [{
+				id: "7CF39033AD4C6DC9"
+				type: "item"
+				item: {
+					id: "botania:king_key"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 26.5d
+			y: -4.5d
+			shape: "heart"
+			subtitle: "Home is home, what can you do? Left Click for more info"
+			description: [
+				"The Eye of the Flügel is one of the six Relics dropped by the Dice of Fate."
+				""
+				"Shift right-clicking a block in the world will set the target location. The selected block is marked with a glowing outline while the Eye is held."
+				""
+				"After holding the right-mouse button down for 2 seconds the player will be teleported on top of the bound block, using 10 Mana per block of distance from the target location. The player must be in the same dimension as the target block to teleport to it."
+				""
+				"If the Eye of the Flügel is present in the player's inventory, their Flügel Tiara will not stop functioning when it runs out of charge—its Mana cost will be tripled instead."
+			]
+			dependencies: ["4EAF85156A964999"]
+			id: "4DFDCC25F3800EF1"
+			tasks: [{
+				id: "11DBA01FA0B77CC7"
+				type: "item"
+				item: {
+					id: "botania:flugel_eye"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 26.5d
+			y: -6.5d
+			shape: "heart"
+			subtitle: "With one of these, Ragnarok would've ended sooner. Left Click for more info"
+			description: [
+				"The Ring of Thor is one of the six Relics dropped by the Dice of Fate."
+				""
+				"When worn in the Curios slot, an activated Terra Shatterer, or an Alf Shatterer will mine a much bigger area."
+			]
+			dependencies: ["4EAF85156A964999"]
+			id: "681E7E7B7C9A1FF9"
+			tasks: [{
+				id: "6BE1EE71B7F59563"
+				type: "item"
+				item: {
+					id: "botania:thor_ring"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 25.5d
+			y: -6.5d
+			shape: "heart"
+			subtitle: "Well. You've got a small portion of the Allfather's power. Use it wisely. Left Click for more info"
+			description: [
+				"The Ring of Odin is one of the six Relics dropped by the Dice of Fate."
+				""
+				"When worn in the Curios slot, you will gain an additional 20 health points and become immune to suffocation, drowning, fire, lava, starvation and fall damage."
+			]
+			dependencies: ["4EAF85156A964999"]
+			id: "66C4D4D34B5F1FDD"
+			tasks: [{
+				id: "3CEA6DCC8E45CFE1"
+				type: "item"
+				item: {
+					id: "botania:odin_ring"
+					Count: 1b
+					tag: {
+						baubleUUIDMost: -1932244472441779186L
+						baubleUUIDLeast: -6616698481110954928L
+					}
+				}
+			}]
+		}
+		{
+			x: 24.5d
+			y: -6.5d
+			shape: "heart"
+			subtitle: "Let's face it, Loki would've had more of these, duh. Left Click for more info"
+			description: [
+				"The Ring of Loki is one of the six Relics that can be obtained out of a Dice of Fate. "
+				""
+				"When worn in the Curios slot, you will gain the abillity to place multiple blocks at once in selected locations. Shift right-clicking with an empty hand will select a location. The first block selected is the source block. Selected blocks are marked with a glowing outline, the source block outline is larger."
+				""
+				"Selecting an already chosen location will remove that selection. If the source block is unselected, all selections are reset."
+				""
+				"Shift right-clicking with a block will attempt to place blocks on the relative positions to the selected block. The Mana cost of placing one block is, most of the time, equal to the amount of selected blocks."
+			]
+			dependencies: ["4EAF85156A964999"]
+			id: "5C5DAC8FE16C08E2"
+			tasks: [{
+				id: "4E0CCB494E434CA8"
+				type: "item"
+				item: {
+					id: "botania:loki_ring"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 24.0d
+			y: 2.0d
+			shape: "gear"
+			subtitle: "The Black Hole Talisman can hold infinite amounts of one block. To use it, shift right-click on a block of your choice. After that shift right-click in the air to activate the Talisman. Now just watch how each block of that type gets automatically inserted into the Talisman. Right-click to place blocks with the Talisman. Place the Talisman in a crafting grid to extract stacks of that block"
+			dependencies: ["398B882BA973C054"]
+			id: "50EF70C6EF0B3D8A"
+			tasks: [{
+				id: "0C637B5645D2895B"
+				type: "item"
+				item: {
+					id: "botania:black_hole_talisman"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 25.5d
+			y: -1.5d
+			shape: "gear"
+			subtitle: "Mana Traveller MkIII: When worn, it will increase your movement speed by 2.8 m/s. Your jump height will be increased by 2, and will grant step assist if you're not sneaking. Lastly, you'll get 3 less points of fall damage "
+			dependencies: ["398B882BA973C054"]
+			id: "1C24584446E28112"
+			tasks: [{
+				id: "6099DD64F72C359C"
+				type: "item"
+				item: {
+					id: "botania:super_travel_belt"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 23.5d
+			y: 0.0d
+			shape: "gear"
+			subtitle: "The Nimbus Amulet is an upgraded version of the Cirrus Amulet. It will allow you to triple jump"
+			dependencies: [
+				"398B882BA973C054"
+				"336899A4795EED9B"
+			]
+			id: "2EB8DA9234A14788"
+			tasks: [{
+				id: "06233D1D15C154B0"
+				type: "item"
+				item: {
+					id: "botania:super_cloud_pendant"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 27.5d
+			y: 0.0d
+			shape: "gear"
+			subtitle: "The Crimson Pendant will provide full-on protection again fire damage"
+			dependencies: [
+				"5359762ABAD18190"
+				"398B882BA973C054"
+			]
+			id: "5BC2A1811B14537B"
+			tasks: [{
+				id: "5CEC32A037E8AFC3"
+				type: "item"
+				item: {
+					id: "botania:super_lava_pendant"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 24.5d
+			y: -1.5d
+			shape: "gear"
+			subtitle: "When worn, this ring will increase the distance from which you can interact with any block by 3"
+			dependencies: ["12BEA0308056A4B6"]
+			id: "557EE3DFC1762CAB"
+			tasks: [{
+				id: "1663CF4D27D860D8"
+				type: "item"
+				item: {
+					id: "botania:reach_ring"
+					Count: 1b
+					tag: {
+						baubleUUIDMost: -7328061118853724808L
+						baubleUUIDLeast: -5097318749340654938L
+					}
+				}
+			}]
+		}
+		{
+			x: 26.5d
+			y: -1.5d
+			shape: "gear"
+			subtitle: "When worn, the chance of spawning a Pixie while you're being hit, will be increased. This ring does not require the Elementium Armor to be worn in order to have an effect on you"
+			dependencies: ["12BEA0308056A4B6"]
+			id: "6D163D234B4A38FA"
+			tasks: [{
+				id: "42A48DCF738A62BD"
+				type: "item"
+				item: {
+					id: "botania:pixie_ring"
+					Count: 1b
+					tag: {
+						baubleUUIDMost: 8442299206788468401L
+						baubleUUIDLeast: -5952385547861047683L
+					}
+				}
+			}]
+		}
+		{
+			x: 24.5d
+			y: 0.0d
+			shape: "gear"
+			subtitle: "The Flare Chakram is an upgraded version of the Thorn Chakram. It will set its targets on fire upon impact"
+			dependencies: [
+				"6A5222307B2449EA"
+				"01C35754A9AEF761"
+			]
+			id: "28CAEB997B33F9D5"
+			tasks: [{
+				id: "1494EE9FF2351F4F"
+				type: "item"
+				item: "botania:flare_chakram"
+			}]
+		}
+		{
+			title: "The Flügel Tiara"
+			x: 25.5d
+			y: 0.0d
+			shape: "heart"
+			subtitle: "Lovely Wings, make me FLYYYYYY :3 Left Click for more info"
+			description: [
+				"When worn, the Flügel Tiara will allow you to fly as if  you were in Creative Mode by consuming Mana from a carried Mana Tablet, or Band, at a rate of 70/tick. When in flight, white sparks trail behind you. "
+				""
+				"Note the you'll be able to fly for a limited amount of time. The Bar present the right side of your HUD will show you how long you can fly. Lastly, sprinting while flying, will boost you forwards."
+			]
+			dependencies: ["398B882BA973C054"]
+			hide_text_until_complete: false
+			id: "662DDEF03F89F449"
+			tasks: [{
+				id: "6F4646F268A112CC"
+				type: "item"
+				item: {
+					id: "botania:flight_tiara"
+					Count: 1b
+					tag: {
+						variant: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 26.5d
+			y: 0.0d
+			shape: "gear"
+			subtitle: "The Charm of the Diva will turn the mobs that hit you against each other"
+			dependencies: ["398B882BA973C054"]
+			id: "521ED2ED0542C3F4"
+			tasks: [{
+				id: "08B3348CF1D8389B"
+				type: "item"
+				item: {
+					id: "botania:diva_charm"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 24.0d
+			y: -8.0d
+			shape: "gear"
+			subtitle: "The Cloak of Virtue will nullify all the physical incoming damage. After that, it will go on a cooldown for 10 seconds. You won't be protected from magic damage"
+			dependencies: ["398B882BA973C054"]
+			id: "0B2AE1442408E1AE"
+			tasks: [{
+				id: "7BA9D9049BFDDC5D"
+				type: "item"
+				item: {
+					id: "botania:holy_cloak"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 27.0d
+			y: -8.0d
+			shape: "gear"
+			subtitle: "The Cloak of Sin will damage all the nearby monsters for the same amount of damage that was dealt to you. After that, it will go on a cooldown for 10 seconds. It will not work with magic damage"
+			dependencies: ["398B882BA973C054"]
+			id: "463E718072AE18EA"
+			tasks: [{
+				id: "3F7702656ABE4620"
+				type: "item"
+				item: {
+					id: "botania:unholy_cloak"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "7FD69575E5FA0590"
+				type: "loot"
+				table_id: 7176426831663151036L
+			}]
+		}
+		{
+			x: 25.5d
+			y: -8.0d
+			shape: "gear"
+			subtitle: "The Cloak of Balance will halve the damage taken and deal the same amount of damage to the attacker. After that, it will go on a cooldown for 10 seconds. It will not work with magic damage"
+			dependencies: ["398B882BA973C054"]
+			id: "377768E18076913A"
+			tasks: [{
+				id: "13C174ECD3F62622"
+				type: "item"
+				item: {
+					id: "botania:balance_cloak"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 27.5d
+			y: -40.5d
+			shape: "gear"
+			subtitle: "Building with DireWolf20. Left Click for more info"
+			description: [
+				"Are you tired of being able to place only 20 blocks in a straight line? You want more possibilities? More freedom? Congratulations! DireWolf20's Building Gadget is for you."
+				""
+				"This nifty device allows you to place 31 block in a straight line. Just like with the Formation Wand from Astral Sorcery, you'll have to shift right-click on a block to select it as the template block. Aim at any other block in the distance and BOOM! You can build a straight line with ease. Additionally, the Building Gadget has a Settings Menu (assign it in your controls menu) where you can access more amazing features, such as:"
+				""
+				"- Anchor: Allows you to keep a steady preview of the blocks you're going to place next."
+				""
+				"- Rotate: Works best with blocks such as the Glazed Terracotta or Stairs which can be rotated based on your position."
+				""
+				"- Mirror: Will mirror blocks such as the Glazed Terracottas on the X axis."
+				""
+				"- Undo: Explains itself."
+				""
+				"- Raytrace Fluid: Will not build over liquids."
+				""
+				"The Building Gadget has more building modes which you can combine to obtain unique patterns and structures."
+			]
+			dependencies: ["2F64EED1F5172A81"]
+			id: "28433698F63FE64D"
+			tasks: [{
+				id: "4CA439F2EF6C5B48"
+				type: "item"
+				item: {
+					id: "buildinggadgets:gadget_building"
+					Count: 1b
+					tag: {
+						state: {
+							serializer: "buildinggadgets:dummy_serializer"
+							state: {
+								Name: "minecraft:air"
+							}
+							data: { }
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: 28.5d
+			y: -40.5d
+			shape: "gear"
+			subtitle: "Exchanging with DireWolf20. Left Click for more info"
+			description: [
+				"This one will be a replacement for the Conversion Wand from Astral Sorcery."
+				""
+				"Unlike the Conversion Wand, which has a maximum working area of 11x11, the Exchanging Gadget has a maximum working area of 15x15."
+				""
+				"It has multiple exchanging modes which can be combined to obtain unique patterns."
+				""
+				"Lastly, unlike other gadgets, this one does not have an \"Undo\" option. Also be careful with what blocks you're exchanging, as this gadget will not allow you to pickup blocks like you would with a Silktouch enchanted tool. Well, of course, that's unless you actually enchant the gadget with Silktouch, which you can absolutelly do."
+			]
+			dependencies: ["2F64EED1F5172A81"]
+			id: "08E051590AC81054"
+			tasks: [{
+				id: "3B03F8A9A668F1C6"
+				type: "item"
+				item: {
+					id: "buildinggadgets:gadget_exchanging"
+					Count: 1b
+					tag: {
+						state: {
+							serializer: "buildinggadgets:dummy_serializer"
+							state: {
+								Name: "minecraft:air"
+							}
+							data: { }
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: 29.5d
+			y: -40.5d
+			shape: "gear"
+			subtitle: "Copy-Pasting with DireWolf20. Left Click for more info"
+			description: [
+				"The Copy-Paste Gadget can be quite useful especially when dealing with lots of multiblock structures, which spoiler: you'll do a lot."
+				""
+				"This gadget has two modes. The Copy mode will require two positions to be set using a regular right-click for the first one, and a shift right-click for the second one. After you've selected the area of block you want to copy, by using the Setting Menu of the Copy-Paste Gadget, you can switch to Paste mode."
+				""
+				"In this mode you'll be able to set a position for the copy of the previously selected structure. You can also anchor the preview to make sure you're pasting in the right place (if you end up pasting in the wrong place, no problem, this gadged also has an \"Undo\" option)."
+				""
+				"Lastly, when placing a copy of something, you can quickly see a list of the required blocks and their exact amounts by holding shift while hovering your cursor over the gadget."
+			]
+			dependencies: ["2F64EED1F5172A81"]
+			id: "716AAA953F8637BB"
+			tasks: [{
+				id: "55C38A5CAA455B28"
+				type: "item"
+				item: {
+					id: "buildinggadgets:gadget_copy_paste"
+					Count: 1b
+					tag: {
+						mode: 0b
+						template_id: [I;
+							317794198
+							445794288
+							-1783476324
+							-389357296
+						]
+					}
+				}
+			}]
+		}
+		{
+			x: 30.5d
+			y: -40.5d
+			shape: "gear"
+			subtitle: "Destroying with DireWolf20. Left click for more information"
+			description: [
+				"Want to build something, but there's just too much terrain around and you just can't work with it? Fear not. The Destruction Gadget is for you."
+				""
+				"First, understand that this gadget will NOT give you the blocks it will break, so if you want tons of dirt/cobblestone, you might want to use some tools. "
+				""
+				"Now, unlike other gadgets, you'll have to shift right-click with this one to select the area in which you want it to work. Additionally, from the Settings Menu, you can configure the gadged so it will void only liquids. To do that, just enable the \"Ray-Trace Fluid\" and the \"Fluid Only\" options. The first one will tell the gadged \"Hey, see that liquid? Yeah, don't ignore it\", while the second one will tell the gadged \"Ok, see the liquid? Interact only with it and ignore the solid blocks around\". If only the \"Ray-Trace Fluid\" option is enabled, the Destruction Gadget will void all the blocks found in its working area. "
+				""
+				"Finally, of course, this gadget will also void all the fluids it will interract with."
+			]
+			dependencies: ["2F64EED1F5172A81"]
+			id: "5A1CEA3731F08C76"
+			tasks: [{
+				id: "174B0026EDF220FD"
+				type: "item"
+				item: {
+					id: "buildinggadgets:gadget_destruction"
+					Count: 1b
+					tag: {
+						overlay: 1b
+						fuzzy: 1b
+					}
+				}
+			}]
+		}
+		{
+			x: 28.5d
+			y: 2.0d
+			subtitle: "It is very similar to the Entropy Lens, however, instead of an explosion, it will create a festive firework which has the color of the mana burst"
+			dependencies: [
+				"12BEA0308056A4B6"
+				"0AADF62ADF6430C2"
+			]
+			id: "4E9489DB94986F17"
+			tasks: [{
+				id: "56404FDBFC4FDDDC"
+				type: "item"
+				item: {
+					id: "botania:lens_firework"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 28.5d
+			y: 3.0d
+			subtitle: "The Flare Lens will disable the ability of the Mana Spreader to launch mana bursts, and, in exchange, it will allow it to constantly launch a decorative flare"
+			dependencies: [
+				"12BEA0308056A4B6"
+				"0AADF62ADF6430C2"
+			]
+			id: "72CB129AA96F3D5A"
+			tasks: [{
+				id: "7D118F93D81182F4"
+				type: "item"
+				item: {
+					id: "botania:lens_flare"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 28.5d
+			y: 4.0d
+			subtitle: "This is an interesting one and it can be used to make traps. This Lens will allow a Mana Spreader to shoot a mana burst only if a mob or player is in the way of the Spreader"
+			dependencies: [
+				"0AADF62ADF6430C2"
+				"12BEA0308056A4B6"
+			]
+			id: "4DEFC314CD9F8749"
+			tasks: [{
+				id: "60472ED37DCBF75F"
+				type: "item"
+				item: {
+					id: "botania:lens_tripwire"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 22.5d
+			y: 2.0d
+			subtitle: "The burst launched by the Mana Spreader which has this lens will turn all the other Mana Spreaders towards their origin point when it hits them. On short, with this you can make a Mana Spreated turn towards another Mana Spreader"
+			dependencies: [
+				"12BEA0308056A4B6"
+				"0AADF62ADF6430C2"
+			]
+			id: "23FA693E45482087"
+			tasks: [{
+				id: "2773310A0E806F58"
+				type: "item"
+				item: {
+					id: "botania:lens_redirect"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 22.5d
+			y: 4.0d
+			subtitle: "As its name might suggest, the Paintslinger lens will allow you to color mobs/entities that can receive color. Just combine the lens with a piece of dye, pop it on a Mana Spreader, then launch a burst at a block such as Wool or at a Sheep and they should get the color of the burst"
+			dependencies: [
+				"12BEA0308056A4B6"
+				"0AADF62ADF6430C2"
+			]
+			id: "2A043CBFCCE494E0"
+			tasks: [{
+				id: "73EEE5D4B07681DF"
+				type: "item"
+				item: {
+					id: "botania:lens_paint"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 22.5d
+			y: 3.0d
+			subtitle: "The Warp Lens has to be used with a Force Relay and a Bore lens. Using a Slime Ball you cna combine the Bore Lens with the Warp Lens in your crafting grid. Place this Composite Lens on a Mana Spreder Facing a Force Relay. The said Relay will teleport the mana burst it receives to the block it's bound to. See the 'Force Relay' quest in 'Useful Items - 2' to learn more about the Relay"
+			dependencies: [
+				"0FC87F7225551D24"
+				"0AADF62ADF6430C2"
+			]
+			id: "443A1D531A08FFD2"
+			tasks: [{
+				id: "2EED48447F0E5E56"
+				type: "item"
+				item: {
+					id: "botania:lens_warp"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			title: "Making Factories I"
+			x: 27.5d
+			y: -43.0d
+			shape: "gear"
+			subtitle: "Unlike a regular Mekansim experiance, in this pack the Factories can be made only with the Tier Installers. This tier will turn any Mekanism Machine into a Basic Tier Factory which can perform three tasks at a time. For example, a Basic Smelting Factory will be like three Energized Smelters into one. Also, most Factories will have an \"Auto-Sort\" feature, which will evenly spread the input items through the machine's input slots "
+			dependencies: ["40623128C431038D"]
+			id: "0F714BCD1ADD8481"
+			tasks: [{
+				id: "0A88A9A1DA38D6D6"
+				type: "item"
+				item: "mekanism:basic_tier_installer"
+			}]
+		}
+		{
+			x: 31.5d
+			y: -34.0d
+			shape: "gear"
+			subtitle: "More RF? More sawdust. Left Click for more info"
+			description: [
+				"Sick of machines that take up too much space? Still want more planks from your wood? Congrats! The Thermal Sawmill is for you."
+				""
+				"By using a set of very well positioned blades, the Sawmill will cut a verious amount of logs to produce more planks and sawdust."
+				""
+				"This machine can receive augments for better processing speeds, less RF/FE consumption and more."
+			]
+			dependencies: ["06F6D673E86907A6"]
+			id: "053C97DA04FE8546"
+			tasks: [{
+				id: "072439924140DAC8"
+				type: "item"
+				item: "thermal:machine_sawmill"
+			}]
+		}
+		{
+			x: 32.5d
+			y: -34.0d
+			shape: "gear"
+			subtitle: "What's the best coal? RF, duh. Left Click for more info"
+			description: [
+				"Smelting items just got much more easier, of course, through the power of RF. "
+				""
+				"The Redstone Furnace will use fair amounts of RF to smelt your items. It can receive certain augments to smelt items faster or consume less power."
+			]
+			dependencies: ["06F6D673E86907A6"]
+			id: "5BFA71139027C12E"
+			tasks: [{
+				id: "6F45575CD5F0D357"
+				type: "item"
+				item: "thermal:machine_furnace"
+			}]
+		}
+		{
+			x: 27.5d
+			y: -34.0d
+			shape: "gear"
+			subtitle: "Cooling 101, no nitrogen. Left Click for more info"
+			description: [
+				"Ok, time for another upgrade. Until now, you've been using mechanical presses or other means to obtain metal gears and rods. Well now, while you can use a Multiservo Press to obtain those gears a little more easier, you can also use the Blast Chiller to obtain rods more easier."
+				""
+				"This machine will use a set of powerful fans, accompanied by a ice, to freeze any liquid metal that gets inside of its internal tank."
+				""
+				"This machine can receive augments for better processing speeds, less RF/FE consumption and more."
+			]
+			dependencies: ["06F6D673E86907A6"]
+			id: "5EA136838FF2E1A5"
+			tasks: [{
+				id: "019780A82A8B0F78"
+				type: "item"
+				item: "thermal:machine_chiller"
+			}]
+		}
+		{
+			x: 28.5d
+			y: -34.0d
+			shape: "gear"
+			subtitle: "Potions, no brewing stand, cuz 21st century, duh. Left Click for more info"
+			description: [
+				"The Alchemical Imbuer can be compared to an electric Brewing Stand. However, you'll quickly find out that this machine has its own advantages and disatvantages. One of the disadvantages is the fact that you won't be ablte to brew all the existing potions. One advantage is that, you can make 4 bottles of potion out of one ingredient, instead of 3."
+				""
+				"This machine can receive augments for better processing speeds, less RF/FE consumption and more."
+			]
+			dependencies: ["06F6D673E86907A6"]
+			id: "1D0B1A53F431848D"
+			tasks: [{
+				id: "50C5BC8521F35159"
+				type: "item"
+				item: "thermal:machine_brewer"
+			}]
+		}
+		{
+			x: 25.5d
+			y: -34.0d
+			shape: "gear"
+			subtitle: "Smash, crush and pulverise. Left click for more info"
+			description: [
+				"When it comes to crushing, this machine is essential in any factory."
+				""
+				"The Pulverizer will use fair amounts of RF to crush ores and other goodies to effectively double them."
+				""
+				"Like the Induction Smelter, the Pulverizer can use different Catalysts to increase the amount of resources given by a crushed ore. This machine can be augmented to run faster, use less power and keep its catalysts more often."
+			]
+			dependencies: ["06F6D673E86907A6"]
+			id: "11E37BD562D31B42"
+			tasks: [{
+				id: "6271E9C92CBFD330"
+				type: "item"
+				item: "thermal:machine_pulverizer"
+			}]
+		}
+		{
+			x: 29.5d
+			y: -34.0d
+			shape: "gear"
+			subtitle: "Gardening Cloche 3.0. Left Click for more info"
+			description: [
+				"Gardening Cloche, the a Botany Pot; what's next? Simply, the Phytogenic Insolator. By consuming water, RF/FE and seeds, this machine can mass grow crops, plants and tress, just for you to use as you please."
+				""
+				"This machine can receive augments for better processing speeds, less RF/FE consumption, perpetual processing and more."
+			]
+			hide_dependency_lines: true
+			dependencies: [
+				"0AAF3A1925404692"
+				"1C1A22B5352768A7"
+			]
+			id: "048E71D91D614AE9"
+			tasks: [{
+				id: "72C2F7D4B4F0F95D"
+				type: "item"
+				item: "thermal:machine_insolator"
+			}]
+		}
+		{
+			x: 26.0d
+			y: -45.5d
+			shape: "gear"
+			subtitle: "Mekanism's Smelter. Left Click for more info"
+			description: [
+				"This is machine will be the electric furnace provided by Mekanism. At first, you might think that this thing is faster then the Redstone Furnace you've probabily been using until this point. Well, unfortunately, this will not be the case. The Smelter is quite slower the one provided by Thermal."
+				""
+				"\"Even when fully upgraded?\""
+				""
+				"A fully upgraded Redstone Furnace (1 Resonant Component + 3 Flux Linkage Amplifiers) will be twice as fast as a fully upgraded Energized Smelter."
+				""
+				"\"Ok... then.. why should I build this thing?\""
+				""
+				"Like with any other Mekanism machine, this one can be turned into a Factory using a Basic Tier Installer. Factories can execute 3, 5, 7 or 9 operations at a time, depending on their tier. So yeah, that's it. If you want to plan ahead, make this Smelter. You won't regret it probably."
+				""
+				"Ps: When no upgrade are applied on both sides, even the Basic Factory (which executes three operations at a time) is faster then a Redstone Furnace. When full upgrades are applied on both sides, the Basic Smelting Factory and the Redstone Furnace, will be kinda equal."
+			]
+			dependencies: ["41B717C98381E7DC"]
+			id: "4A15C3E5EB06A3EE"
+			tasks: [{
+				id: "68C293EE7BA957B8"
+				type: "item"
+				item: "mekanism:energized_smelter"
+			}]
+		}
+		{
+			x: 28.0d
+			y: -44.5d
+			shape: "gear"
+			subtitle: "Precision cutting, no danger. Left Click for more info"
+			description: ["This will be a major upgrade from the Thermal Sawmill. While the Sawmill was able to cut logs into multiple planks, this machine will also be able to recycle lots of wood products into their original plank components."]
+			dependencies: ["41B717C98381E7DC"]
+			id: "1A0E62E755F4ECCF"
+			tasks: [{
+				id: "5FE4F67A5CC69B1F"
+				type: "item"
+				item: "mekanism:precision_sawmill"
+			}]
+		}
+		{
+			x: 26.5d
+			y: -34.0d
+			shape: "gear"
+			subtitle: "Rotational force forever. Left Click for more info"
+			description: [
+				"The Centrifugal Separator is essentially an electric centrifuge which can be used to separate certain items such as alloy dusts, into their original components."
+				""
+				"Like other machines from the Thermal Series, it can receive certain augments for better processing speeds and so on."
+			]
+			dependencies: ["06F6D673E86907A6"]
+			id: "42D8DFBD5DB9BD13"
+			tasks: [{
+				id: "062F946DB791795E"
+				type: "item"
+				item: "thermal:machine_centrifuge"
+			}]
+		}
+		{
+			x: 26.0d
+			y: -44.5d
+			shape: "gear"
+			subtitle: "Mix mix mix. Left Click for more info"
+			description: ["The Combiner can be used to obtain certain dyes. You can also use this machine to obtain ores if you need them."]
+			dependencies: ["41B717C98381E7DC"]
+			id: "37B9BF5999F26530"
+			tasks: [{
+				id: "2F289A71DD637E28"
+				type: "item"
+				item: "mekanism:combiner"
+			}]
+		}
+		{
+			x: 27.0d
+			y: -45.5d
+			shape: "gear"
+			subtitle: "Ore processing upgraded. Left Click for more info"
+			description: [
+				"The Purification Chamber is a component of the Mekanism ore processing system. It can be used to make either an ore tripling system, or an ore quintupling system."
+				""
+				"This machine will take ores and shards and will turn them into clumps. These clumps can be processed into ingots."
+			]
+			dependencies: ["41B717C98381E7DC"]
+			id: "34892AFD2D821EB2"
+			tasks: [{
+				id: "5AC75DE932334498"
+				type: "item"
+				item: "mekanism:purification_chamber"
+			}]
+		}
+		{
+			x: 28.0d
+			y: -45.5d
+			shape: "gear"
+			subtitle: "Chemicals to the rescue. Left Click for more info"
+			description: [
+				"The Chemical Injection Chamber is, in many ways, similar to the Fluid Encapsulator from the Thermal Series, as it will infuse certain items with certain gases. Unlike the Encapsulator, this machine uses gases and not liquids. "
+				""
+				"The Chemical Injection Chamber is part of the Mekanism ore processing system and it is used to obtain five ingots from one ore."
+			]
+			dependencies: ["41B717C98381E7DC"]
+			id: "50B6D5FFC5C8D4BD"
+			tasks: [{
+				id: "2E5C587B7C5EFE15"
+				type: "item"
+				item: "mekanism:chemical_injection_chamber"
+			}]
+		}
+		{
+			x: 24.0d
+			y: 5.0d
+			shape: "gear"
+			subtitle: "Void Miner: Will use mana to turn the nearby Stone blocks into random Ores"
+			dependencies: ["028B8D773D1F3FC6"]
+			id: "2DB7F5DECDE3FA1C"
+			tasks: [{
+				id: "2039FA87505C6264"
+				type: "item"
+				item: "botania:orechid"
+			}]
+		}
+		{
+			title: "Botany Pots"
+			x: 27.0d
+			y: 1.0d
+			shape: "gear"
+			subtitle: "Gardening Cloche 2.0 - A Botany Pot can be used to grow crops in it. They'll harvest and replant the crops automatically"
+			dependencies: ["16AA0D0FD3075CB9"]
+			id: "1C1A22B5352768A7"
+			tasks: [{
+				id: "3507540EC70707A2"
+				type: "item"
+				title: "Botany Pot"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "botanypots:hopper_botany_pots"
+					}
+				}
+			}]
+		}
+		{
+			x: 28.0d
+			y: -37.5d
+			shape: "gear"
+			subtitle: "Making liquid XP. Left Click for more info"
+			description: [
+				"This amazing furnace uses 40RF/t to smelt 3 items at a time and produce 2mb of Essence per smelted item."
+				""
+				"This liquid Essence can be used later in a Liquid Encapsulator to start producing Bottles of XP."
+				""
+				"Note that later, there will be better ways of producing this Essence, so don't worry."
+			]
+			dependencies: ["29771342B7D46B9F"]
+			id: "3FEB394895131E7C"
+			tasks: [{
+				id: "626A440D5D540364"
+				type: "item"
+				item: "industrialforegoing:resourceful_furnace"
+			}]
+		}
+		{
+			x: 30.0d
+			y: -44.5d
+			shape: "gear"
+			subtitle: "Electricity can turn into heat. Left Click for more info"
+			description: [
+				"The Resistive Heater is a condensed, coiled resistor capable of converting electrical energy directly into heat energy."
+				""
+				"The Resistive heater has a basic UI with a text input slot. Here, you'll be able to select the power consumption rate of the Heater. After providing power to it, the Heater will start to generate heat which can be transfered to any other machines that might require it"
+			]
+			dependencies: ["40623128C431038D"]
+			id: "601C99D6B3091701"
+			tasks: [{
+				id: "370B16DE912305A7"
+				type: "item"
+				item: "mekanism:resistive_heater"
+			}]
+		}
+		{
+			x: 32.0d
+			y: -44.5d
+			shape: "gear"
+			subtitle: "Pack your things. We're moving out! Left Click for more info"
+			description: [
+				"Cardboard Box is used for boxing up other blocks to move them, preserving the inventory while being moved."
+				""
+				"By right clicking it on any block, tank, chest or machine, you wrap it in this protective box that you can break while still preserving everything about that block, tank, chest or machine. This includes its inventory, orientation, installed upgrades, and more, and should work with any block from any mod. You can later place it safely into the world. Sneak right-click to unwrap a box, causing the Cardboard Box to drop as an item."
+				""
+				"Note that this functionality can essentially be used to move blocks as a substitute for Silk Touch. However, it will not be able to pickup certain blocks, such as Radioactive Waste Barrels."
+				""
+				"Lastly, boxes cannot be unwrapped in any inventory—only when placed in the world."
+			]
+			hide_dependency_lines: true
+			dependencies: [
+				"5F4E614A68873FDD"
+				"7BB22D0BC75A1884"
+			]
+			id: "794BC52AB423A7E1"
+			tasks: [{
+				id: "0761F7F7B66BEE72"
+				type: "item"
+				item: "mekanism:cardboard_box"
+			}]
+		}
+		{
+			x: 24.5d
+			y: 3.0d
+			shape: "gear"
+			subtitle: "It is an upgraded version of the Mana Spreader and allows for Mana bursts to travel longer without losing Mana. It can fire Mana bursts up to 20 blocks before suffering Mana loss compared to the 12-block distance of the standard Mana Spreader. The Elven Mana Spreader also fires Mana at a faster rate"
+			dependencies: ["028B8D773D1F3FC6"]
+			id: "5FF5D30C847CB9B1"
+			tasks: [{
+				id: "1888653A55F6C8E8"
+				type: "item"
+				item: "botania:elven_spreader"
+			}]
+		}
+		{
+			title: "My perfect machine settings"
+			x: 31.0d
+			y: -44.5d
+			subtitle: "The Configuration card can be used to copy side configurations from one machine to another machine of the same type. You will be able to copy settings from, for example, a Crusher to a Crusher, but not from a Crusher to a Metallurgic Infuser"
+			dependencies: ["41B717C98381E7DC"]
+			id: "54AB65D28A1186AE"
+			tasks: [{
+				id: "60714CD2001E8BE2"
+				type: "item"
+				item: "mekanism:configuration_card"
+			}]
+		}
+		{
+			x: 31.0d
+			y: -45.5d
+			subtitle: "The key for the power. Literally. Left Click for more info"
+			description: [
+				"The Laser is a block primarily used in the ignition of a Fusion Reactor, but also digs through blocks, allowing it to be used in mining or farming setups, usually in combination with the Laser Tractor Beam. It does fire damage to mobs in the laser beam."
+				""
+				"Additionally, Lasers can be used in combination with Laser Amplifiers to obtain a wireless energy transfer system."
+				""
+				"Simply point a Laser at a Laser Amplifier and make sure that the Amplifier is set to be active only with a redstone signal. After that, the Amplifier should receive power in its internal buffer. You can use any universal cable to extract the power from the Amplifier, and send it to any place you need it. By using this system, you'll not loose any power, but keep in mind that the laser beam can and WILL hurt any mobs that pass through it."
+				""
+				"However, if the Amplifier's internal energy buffer is filled up, you'll end up loosing power due to the fact that you Laser won't stop sending power to the Amplifier."
+				""
+				"Finally, a Laser's beam will stop after 64 blocks from its starting point, which of course, is the Laser."
+			]
+			dependencies: ["20066A1C19E42D20"]
+			id: "1007BBD46F9F289B"
+			tasks: [{
+				id: "5E8C3ED228E6F4E7"
+				type: "item"
+				item: "mekanism:laser"
+			}]
+		}
+		{
+			x: 30.0d
+			y: -45.5d
+			subtitle: "It will collect the energy received from other Lasers and will unleash it whenever you need it. It is an essencial component for starting the Fusion Reactor"
+			dependencies: ["1007BBD46F9F289B"]
+			id: "3B96F69447F8F2F3"
+			tasks: [{
+				id: "1285E87DBA343C57"
+				type: "item"
+				item: "mekanism:laser_amplifier"
+			}]
+		}
+		{
+			x: 32.0d
+			y: -45.5d
+			subtitle: "When placed in front of a Laser, it will collect the blocks destroyed by the Laser in its internal inventory, so you cna easily collect them"
+			dependencies: ["1007BBD46F9F289B"]
+			id: "4D5454854C372DE2"
+			tasks: [{
+				id: "6EF16ACCC7683EEE"
+				type: "item"
+				item: "mekanism:laser_tractor_beam"
+			}]
+		}
+		{
+			title: "The Certus Quartz Charger"
+			x: 29.0d
+			y: -37.5d
+			shape: "gear"
+			subtitle: "Making Charged Certus Quartz more easier. Left Click for more info"
+			description: [
+				"Mining for Certus Quartz might be an easy thing, but mining for Charged Certus Quartz, it's not. So. What can you do? Fortunately, these two types of Quartz are not that different and all it takes to turn a piece of regular Certus Quartz into a Charged one, is well.. power."
+				""
+				"That's where this nifty device comes in. The Certus Quartz Charger can turn a regular Certus Quartz, into a Charged Certus Quartz by using a healthy amount of power."
+				""
+				"This machine can accept up to 4 AE2 Acceleration Cards as speed upgrades."
+			]
+			dependencies: ["631FBD2CC11F4972"]
+			id: "37433E0548807EA7"
+			tasks: [{
+				id: "210B9AD8D6D35B01"
+				type: "item"
+				item: {
+					id: "custommachinery:custom_machine_item"
+					Count: 1b
+					tag: {
+						machine: "custommachinery:certus_quartz_charger"
+					}
+				}
+			}]
+		}
+		{
+			title: "Making Factories II"
+			x: 28.5d
+			y: -43.0d
+			shape: "gear"
+			subtitle: "This Tier Installer will turn any Basic Factory, into an Advanced one which will be able to perform five operations at a time"
+			dependencies: ["40623128C431038D"]
+			id: "5EBAB2284FB89E3D"
+			tasks: [{
+				id: "5429B4034AD90B81"
+				type: "item"
+				item: "mekanism:advanced_tier_installer"
+			}]
+		}
+		{
+			title: "Making Factories III"
+			x: 29.5d
+			y: -43.0d
+			shape: "gear"
+			subtitle: "This Tier Installer will turn any Advanced Factory, into an Elite one which will be able to perform seven operations at a time"
+			dependencies: ["40623128C431038D"]
+			id: "02D38EF83C8442CC"
+			tasks: [{
+				id: "463356AC577BD071"
+				type: "item"
+				item: "mekanism:elite_tier_installer"
+			}]
+		}
+		{
+			title: "Making Factories IV"
+			x: 30.5d
+			y: -43.0d
+			shape: "gear"
+			subtitle: "This Tier Installer will turn any Elite Factory, into an Ultimate one which will be able to perform nine operations at a time"
+			dependencies: ["40623128C431038D"]
+			id: "666047442064CF97"
+			tasks: [{
+				id: "6C026F96F49C28DE"
+				type: "item"
+				item: "mekanism:ultimate_tier_installer"
+			}]
+		}
+		{
+			x: 28.0d
+			y: -47.0d
+			subtitle: "Banning the unworthy. Left Click for more info"
+			description: [
+				"The Security Desk can be used to manage the security settings of all the machines added by Mekanism. To do this you'll have to enable the Override feature of the desk. After that, you'll be able to select any of the security options present at the bottom of the Security Desk interface."
+				""
+				"This Desk is also used to add any players to your Trusted list. The Desk has field where you'll type in the name of the player you want to trust. After that, you'll have to hit the checkmark to place that player on the list. If your machines are set to the \"Trusted\" mode, the players on your trusted list will be able to access them."
+			]
+			dependencies: [
+				"41B717C98381E7DC"
+				"5000BE1C387FA8A3"
+			]
+			id: "071C1613EB532EC0"
+			tasks: [{
+				id: "6C8F200AA3DC6A56"
+				type: "item"
+				item: "mekanism:security_desk"
+			}]
+		}
+		{
+			x: 30.0d
+			y: -47.0d
+			subtitle: "This machine can be used to exchange any ores into similar ores from other mods. For example, the Iron Chunks from Emendatus Enigmatica can be turned into Vanilla Iron using the \"forge:ores/iron\" tag. Left Click for more info"
+			description: ["Finishing this quest, will give you the Dictionary. This tiny gadget can be used on any block to see what game tags it is associated with."]
+			dependencies: ["41B717C98381E7DC"]
+			id: "1E12AB51134D355D"
+			tasks: [{
+				id: "1E22383E94ABC9F1"
+				type: "item"
+				item: "mekanism:oredictionificator"
+			}]
+			rewards: [{
+				id: "6E0D8F837714A062"
+				type: "item"
+				item: "mekanism:dictionary"
+			}]
+		}
+		{
+			x: 29.0d
+			y: -28.0d
+			shape: "gear"
+			subtitle: "The FluxoMagnet is an electric alternative to the Ring of Magnetization from Botania. If you're having bad time obtaining mana, you should consider upgrading to this nifty gadget. It can be upgraded in a Tinker's Workbench to work on a larger area, or to hold more power. When has a filter installed, shift right-click with it to see the filter menu"
+			dependencies: ["7EF155944458998F"]
+			id: "32F8CF9F754E2FE4"
+			tasks: [{
+				id: "56421011B6B59250"
+				type: "item"
+				item: {
+					id: "thermal:flux_magnet"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 30.0d
+			y: -28.0d
+			shape: "gear"
+			subtitle: "The Alchemical Quiver can hold and infuse 80 arrows with 4.000 mB of any potion. To insert arrows into the Quiver, just right click with it in your hand. To take the arrows aout, just shift right-click with the Quiver. You can enchant the Quiver to make it hold a maximum amount of 280 arrows and 14.000 mB of potion"
+			dependencies: ["5984E05C451F1AF2"]
+			id: "579368B1D2082EEB"
+			tasks: [{
+				id: "4257AD4EABE30D1C"
+				type: "item"
+				item: {
+					id: "thermal:potion_quiver"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 28.0d
+			y: -28.0d
+			shape: "gear"
+			subtitle: "The Potion Infuser can be used to either apply potion effects on other mobs, or to apply them to yourself. Additionally, the Infuser has an \"Auto-Infuse\" mode available which can be used to apply small doses of potion to yourself"
+			dependencies: ["5984E05C451F1AF2"]
+			id: "0F18A1E22C03B4E3"
+			tasks: [{
+				id: "49F119A4118D9C90"
+				type: "item"
+				item: {
+					id: "thermal:potion_infuser"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 31.0d
+			y: -28.0d
+			subtitle: "The Redprint can be used to copy and paste the side configuration of any machinne added by the Thermal Series"
+			dependencies: ["7EF155944458998F"]
+			id: "2226EDB25AAB1ACF"
+			tasks: [{
+				id: "584E9D9BC2B5A22D"
+				type: "item"
+				item: "thermal:redprint"
+			}]
+		}
+		{
+			x: 27.0d
+			y: -28.0d
+			shape: "circle"
+			subtitle: "The Signalum Security Lock can be applied to any machine added by the Thermal Series to unlock its security panel and effectively select which players should/should not be able to access you machines"
+			dependencies: ["5984E05C451F1AF2"]
+			id: "44957A259993A52D"
+			tasks: [{
+				id: "6B14C6132BF27AB0"
+				type: "item"
+				item: "thermal:lock"
+			}]
+		}
+		{
+			x: 28.5d
+			y: -29.5d
+			subtitle: "This augment will allow your machines to store the xp comming from their operations, or the world. When applied to a machine, an icon resembling an Insightful Crystal will appear on the machine's interface"
+			dependencies: ["7EF155944458998F"]
+			id: "4C55AD2BCDE7E4C1"
+			tasks: [{
+				id: "4E5E0C2F1750D01C"
+				type: "item"
+				item: "thermal:xp_storage_augment"
+			}]
+		}
+		{
+			x: 24.0d
+			y: -35.5d
+			shape: "gear"
+			subtitle: "This augment will scale the RF/FE storage and transfer rate by 4x"
+			dependencies: ["7EF155944458998F"]
+			id: "04DB0107DAB5BC55"
+			tasks: [{
+				id: "29F693BB38C53909"
+				type: "item"
+				item: "thermal:rf_coil_augment"
+			}]
+		}
+		{
+			x: 24.0d
+			y: -33.5d
+			shape: "gear"
+			subtitle: "This augment will scale the RF/FE storage by 2x and the RF/FE transfer rate by 6x"
+			dependencies: ["7EF155944458998F"]
+			id: "54312F4DCEDDF748"
+			tasks: [{
+				id: "719A609A03F00180"
+				type: "item"
+				item: "thermal:rf_coil_xfer_augment"
+			}]
+		}
+		{
+			x: 24.0d
+			y: -34.5d
+			shape: "gear"
+			subtitle: "This augment will scale the RF/FE storage by 6x and the RF/FE transfer rate by 2x"
+			dependencies: ["7EF155944458998F"]
+			id: "715489D1F9290F3B"
+			tasks: [{
+				id: "485492ADFBB41EC0"
+				type: "item"
+				item: "thermal:rf_coil_storage_augment"
+			}]
+		}
+		{
+			x: 24.0d
+			y: -32.5d
+			shape: "gear"
+			subtitle: "This augment will scale the liquid storage capacity of any tank from the Thermal Series by 4x. This includes machines, fluid cells, dynamos and items"
+			dependencies: ["7EF155944458998F"]
+			id: "5AF715FAB7556E01"
+			tasks: [{
+				id: "4875782FCE35F761"
+				type: "item"
+				item: "thermal:fluid_tank_augment"
+			}]
+		}
+		{
+			x: 30.5d
+			y: -29.5d
+			subtitle: "This filter will be used in machines such as the Vacuumulator to indicate which items it should/should not pick up. It can also be applied on items such as the FluxoMagnet"
+			dependencies: ["7EF155944458998F"]
+			id: "1AC22AA178085616"
+			tasks: [{
+				id: "695A222BF0507A98"
+				type: "item"
+				item: "thermal:item_filter_augment"
+			}]
+		}
+		{
+			x: 34.0d
+			y: -35.5d
+			shape: "gear"
+			subtitle: "Will make your machines run faster. This augment will increase the maximum RF/FE usage rate by 100%, but will scale the RF/FE used per operation by 1.1x"
+			dependencies: ["7EF155944458998F"]
+			id: "242E509F320F0246"
+			tasks: [{
+				id: "2C3E51F87F2C4050"
+				type: "item"
+				item: "thermal:machine_speed_augment"
+			}]
+		}
+		{
+			x: 34.0d
+			y: -34.5d
+			shape: "gear"
+			subtitle: "Will make your machines use less RF/FE. This augment will reduce the RF/FE required per operation, scaling it by 0.9x, but will also decrease the maximum RF/FE usage rate by 10%. This means that your machine will run slower, but will use less power"
+			dependencies: ["0AAF3A1925404692"]
+			id: "15242B7AE365CB31"
+			tasks: [{
+				id: "5CA1FF4A1568DBA4"
+				type: "item"
+				item: "thermal:machine_efficiency_augment"
+			}]
+		}
+		{
+			x: 34.0d
+			y: -33.5d
+			shape: "gear"
+			subtitle: "Will increase the change of a secondary output item to be produced. This augment will increase the chance of a machine such as the Induction Smelter to make a secondary output item, but will scale the energy usage by 1.25x"
+			dependencies: ["7EF155944458998F"]
+			id: "2DF4B460C8FD8958"
+			tasks: [{
+				id: "0A799CC3674A6C9F"
+				type: "item"
+				item: "thermal:machine_output_augment"
+			}]
+		}
+		{
+			x: 34.0d
+			y: -32.5d
+			shape: "gear"
+			subtitle: "For machines such as the Induction Chamber, will reduce the chance of a catalyst to be used. This augment will scale the catalyst usage by 0.8x, but will also scale the energy usage by 1.25x"
+			dependencies: ["7EF155944458998F"]
+			id: "48BB969A7AFD3BE3"
+			tasks: [{
+				id: "50536A93D98C08B8"
+				type: "item"
+				item: "thermal:machine_catalyst_augment"
+			}]
+		}
+		{
+			x: 30.0d
+			y: -30.5d
+			shape: "gear"
+			dependencies: ["5984E05C451F1AF2"]
+			id: "1AF977BAB708622F"
+			tasks: [{
+				id: "6C2502E4CAF9EF20"
+				type: "item"
+				item: "thermal:dynamo_output_augment"
+			}]
+		}
+		{
+			x: 31.0d
+			y: -30.5d
+			shape: "gear"
+			dependencies: ["0AAF3A1925404692"]
+			id: "3AA66BDE889DFAB3"
+			tasks: [{
+				id: "635F07A2528FF169"
+				type: "item"
+				item: "thermal:dynamo_fuel_augment"
+			}]
+		}
+		{
+			x: 29.0d
+			y: -30.5d
+			shape: "gear"
+			subtitle: "This augment will increase the area of effect of your tool/machine. Each augment added will increase the area of effect by one block in every direction"
+			dependencies: ["7EF155944458998F"]
+			id: "15584A5FBE8977FE"
+			tasks: [{
+				id: "665C4B0BD31A6225"
+				type: "item"
+				item: "thermal:area_radius_augment"
+			}]
+		}
+		{
+			x: 27.0d
+			y: -30.5d
+			shape: "gear"
+			dependencies: ["5984E05C451F1AF2"]
+			id: "75E19B8C8F17877C"
+			tasks: [{
+				id: "7B4DEC6AC8C755C7"
+				type: "item"
+				item: "thermal:potion_amplifier_augment"
+			}]
+		}
+		{
+			x: 28.0d
+			y: -30.5d
+			shape: "gear"
+			dependencies: ["0AAF3A1925404692"]
+			id: "4421041E59C66887"
+			tasks: [{
+				id: "6D3511B97169169B"
+				type: "item"
+				item: "thermal:potion_duration_augment"
+			}]
+		}
+		{
+			x: 29.5d
+			y: -29.5d
+			subtitle: "This augment will allow your machines to delete any excess non-primary item outputs"
+			dependencies: ["7EF155944458998F"]
+			id: "729802360E515B3F"
+			tasks: [{
+				id: "1147ED5D71BE0FB6"
+				type: "item"
+				item: "thermal:machine_null_augment"
+			}]
+		}
+		{
+			x: 27.0d
+			y: -42.0d
+			subtitle: "Will allow a Digital Miner to produce blocks as a replacement for the ores it gathers"
+			dependencies: ["09812AE1E82D15C5"]
+			id: "1C3E7ADD74AAD495"
+			tasks: [{
+				id: "3F4841060EFD91C6"
+				type: "item"
+				item: "mekanism:upgrade_stone_generator"
+			}]
+		}
+		{
+			x: 30.0d
+			y: -42.0d
+			subtitle: "Will reduce the amount of energy required by a machine in order to run"
+			dependencies: ["09812AE1E82D15C5"]
+			id: "020E8772F717BD6B"
+			tasks: [{
+				id: "777D5C05E4AA157D"
+				type: "item"
+				item: "mekanism:upgrade_energy"
+			}]
+		}
+		{
+			x: 28.0d
+			y: -42.0d
+			subtitle: "Will increase the processing speed of a machine, at the cost of more power being used"
+			dependencies: ["09812AE1E82D15C5"]
+			id: "1FACCFBD7170663A"
+			tasks: [{
+				id: "7659A502DBC667C8"
+				type: "item"
+				item: "mekanism:upgrade_speed"
+			}]
+		}
+		{
+			x: 29.0d
+			y: -42.0d
+			shape: "square"
+			subtitle: "It will allow an Electric Pump to produce Heavy Water, instead of regular Water"
+			dependencies: ["09812AE1E82D15C5"]
+			id: "3D462F66F66EE969"
+			tasks: [{
+				id: "5932C4A27AB87373"
+				type: "item"
+				item: "mekanism:upgrade_filter"
+			}]
+		}
+		{
+			x: 31.0d
+			y: -42.0d
+			subtitle: "Will silence the machine that has this upgrade applied"
+			dependencies: ["09812AE1E82D15C5"]
+			id: "753AAFD1B9AEBDED"
+			tasks: [{
+				id: "0B1E513D4D824881"
+				type: "item"
+				item: "mekanism:upgrade_muffling"
+			}]
+		}
+		{
+			x: 32.0d
+			y: -42.0d
+			subtitle: "When installed on a machine, it will keep the chunk that the machine's in, loaded"
+			dependencies: ["09812AE1E82D15C5"]
+			id: "2BE3EFC174FD0E85"
+			tasks: [{
+				id: "6FBFAF88A0BDFD72"
+				type: "item"
+				item: "mekanism:upgrade_anchor"
+			}]
+		}
+		{
+			x: 26.0d
+			y: -42.0d
+			subtitle: "Can be used in machines that use gases. This includes the Purification Chamber or the Chemical Injection Chamber"
+			dependencies: ["09812AE1E82D15C5"]
+			id: "1104D266AEC2D86B"
+			tasks: [{
+				id: "65C3E10015DB1BA3"
+				type: "item"
+				item: "mekanism:upgrade_gas"
+			}]
+		}
+		{
+			x: 29.0d
+			y: -38.5d
+			subtitle: "Can be used to turn Liquid XP/EssenceOfKnowledge/Essence into Xp orbs which you can collect. It is useful when combined with a tank holding large amounts of liquid xp"
+			dependencies: ["7EF155944458998F"]
+			id: "3C96480FD12A08BD"
+			tasks: [{
+				id: "777812881090FE79"
+				type: "item"
+				item: "mob_grinding_utils:xp_tap"
+			}]
+		}
+		{
+			x: 27.5d
+			y: -29.5d
+			subtitle: "This augment can be used in the Phytogenic Insolator to instantly insert the valid outputs into the input slot. For example, if you're growing Wheat in the Insolator, this augment will make the Wheat Seed to be instantly added back to the input slot of the machine"
+			dependencies: ["5984E05C451F1AF2"]
+			id: "1A14147332291694"
+			tasks: [{
+				id: "184A1390A82FBE09"
+				type: "item"
+				item: "thermal:machine_cycle_augment"
+			}]
+		}
+		{
+			x: 25.0d
+			y: -26.0d
+			shape: "gear"
+			subtitle: "Let's cast spells easier then before. Left Click for more info"
+			description: [
+				"The Spell Book is a powerful artifact added by Ars Nouveau. It allows its user to create and cast spells with ease. Since you've reached the point where you can get your hands on this amazing instrument, we'll tell you what it can do and how you can make your own spells."
+				""
+				"When right-clicking with the Spell Book in hand for the first time, an interface will appear:"
+				""
+				"{image:kubejs:textures/arsnouveau/spellbook_example.png width:150 height:100 align:1 fit:true}"
+				""
+				"Let's see what each thing does in here:"
+				""
+				"Green - Here you'll fing the Notebook menu, the Color Picker Menu and the Familiars menu. The Notebook menu will open the Worn Notebook which is Ars Nouveau's guide book. The Color Picker menu is where you'll be able to choose the color of the spells you'll cast. The Familiar menu is where you'll be able to summon your current Familiars (find more about familiars in the 'Tablet of Binding' quest)."
+				""
+				"Yellow - Here you'll find your Glyphs. Think of them as spell components. There are 3 types of Glyphs: Form, Augment and Effect. The Form is the way a spell will be casted. The Effect is the outcome of a spell being casted and the Augment is bonuses/modifications of the previously mentioned Forms and Effects. When you open the Spell Book for the first time, some Glyphs will be available to you, but not all of them. To obtain more, you'll have to craft them and right-click them. Note that Glyphs are organized in 3 Tiers. For each Tier, you'll need the proper Spell Book. This Novice Spell Book will allow you to access only Tier 1 Glyphs. So. You want better Spells? Make a better Spell Book. Higher Tier Spell Books will also allow you to use lower Tier Glyps."
+				""
+				"Aqua - Here's the Spell crafting field. Here you'll desing your Spells. To create a spell, you'll have to add Glyphs available above by left-clicking them. Each Spell must start with a Form Glyph. After that, you can add either an Effect Glyph, or combinations of Augment and Effect Glyphs. Each Spell can have a maximum amount of 10 Glyphs."
+				""
+				"Light Blue - Here you can name your Spell, save your Spell and clear the Spell crafting field."
+				""
+				"Magenta - Here you can seach through your available Glyphs."
+				""
+				"Red - Here you can select your saved Spells. Each Spell Book can have a maximum amount of 10 saved Spells."
+				""
+				"After creating a Spell, you can cast it by simply right-clicking the Spell Book. "
+				""
+				"Now, since Ars Nouveau has the ability to create very powerful Spells, there has to be a catch in using them. While holding the Spell Book in your hand, you might've noticed that a fancy magenta bar appears on your screen. That's you mana bar. Things are simple. The more potent your Spells are, the more mana will be consumed. Mana does regenerate on its own and there will be various means to increase the amount of mana you have and its regen rate, but for now, get used to what you have."
+				""
+				"Lastly note that after creating your first Spell, you'll have to use the Open Spell Book key (bind it in your controls menu) to open the Spell Book again."
+			]
+			dependencies: ["02396D546396B926"]
+			size: 2.0d
+			id: "1C0488BF0EB53837"
+			tasks: [{
+				id: "42C7457B784CF062"
+				type: "item"
+				item: "ars_nouveau:novice_spell_book"
+			}]
+			rewards: [{
+				id: "501FED4FFA8FFF54"
+				type: "loot"
+				table_id: 7176426831663151036L
+			}]
+		}
+		{
+			x: 29.0d
+			y: -26.0d
+			shape: "gear"
+			subtitle: "The Mage's Spell Book will allow you to use Tier 2 Spells"
+			dependencies: [
+				"1C0488BF0EB53837"
+				"398B882BA973C054"
+			]
+			size: 2.0d
+			id: "783C2235BA55500C"
+			tasks: [{
+				id: "22613B8CDFFC0F44"
+				type: "item"
+				item: "ars_nouveau:apprentice_spell_book"
+			}]
+			rewards: [{
+				id: "7E34111355CD1623"
+				type: "loot"
+				table_id: 7176426831663151036L
+			}]
+		}
+		{
+			x: 33.0d
+			y: -26.0d
+			shape: "gear"
+			subtitle: "The Archmage Spell Book will allow you to use Tier 3 Spells"
+			dependencies: [
+				"783C2235BA55500C"
+				"4946B5DA53086A8F"
+			]
+			size: 2.0d
+			id: "347DB15573D2B1DB"
+			tasks: [{
+				id: "3852C661DF119305"
+				type: "item"
+				item: "ars_nouveau:archmage_spell_book"
+			}]
+			rewards: [{
+				id: "7ACC6ADE5CF64156"
+				type: "loot"
+				table_id: 7176426831663151036L
+			}]
+		}
+		{
+			x: 29.0d
+			y: -47.0d
+			shape: "gear"
+			subtitle: "The Electric Pump has to be placed above a water source. It will slowly produce water. Additionaly, it can be used to obtain Heavy Water which has planty of uses through Mekanism."
+			dependencies: ["41B717C98381E7DC"]
+			id: "41B2EF37EC8191B5"
+			tasks: [{
+				id: "4A0F4F5F7BA2217A"
+				type: "item"
+				item: "mekanism:electric_pump"
+			}]
+		}
+		{
+			x: 25.5d
+			y: 3.0d
+			shape: "gear"
+			subtitle: "It is the highest tier of Mana Spreader available and allows for Mana bursts to travel longer without losing Mana. The Gaia Mana Spreader can fire Mana bursts up to 48 blocks before suffering Mana loss, compared to the 20-block distance of the Elven Mana Spreader and the 12-block distance of the standard Mana Spreader"
+			dependencies: ["398B882BA973C054"]
+			id: "69A044360F6BA241"
+			tasks: [{
+				id: "36A7F063A5D1BB72"
+				type: "item"
+				item: "botania:gaia_spreader"
+			}]
+		}
+		{
+			x: 34.5d
+			y: -6.0d
+			shape: "gear"
+			subtitle: "Will consume Source to provide Creative Flight to the nearby players. Unlike Astral Sorcery's Rituals, this one will be much more easier to set up"
+			dependencies: [
+				"23BF297FF4BD920D"
+				"21F96BD25793F2B8"
+			]
+			id: "328922ADC350C65F"
+			tasks: [{
+				id: "7E31C75AC38FC95D"
+				type: "item"
+				item: "ars_nouveau:ritual_flight"
+			}]
+		}
+		{
+			x: 31.0d
+			y: -5.0d
+			shape: "gear"
+			subtitle: "Will set the time to Day. This will skip to the next MC day and NOT rewind the time or anything"
+			dependencies: [
+				"21F96BD25793F2B8"
+				"23BF297FF4BD920D"
+			]
+			id: "0895633546DD4C01"
+			tasks: [{
+				id: "0377DDDD2B3B3F03"
+				type: "item"
+				item: "ars_nouveau:ritual_sunrise"
+			}]
+		}
+		{
+			x: 32.5d
+			y: -7.0d
+			shape: "gear"
+			subtitle: "This Ritual will apply the bonemeal effect on the nearby blocks while Source is available for consumption. If a Bone Block is thrown into this Ritual, it will instead try to force the nearby baby animals to grow"
+			dependencies: [
+				"21F96BD25793F2B8"
+				"23BF297FF4BD920D"
+			]
+			id: "460D4100F03527C4"
+			tasks: [{
+				id: "2727CD0A1F039650"
+				type: "item"
+				item: "ars_nouveau:ritual_overgrowth"
+			}]
+		}
+		{
+			x: 33.0d
+			y: -5.0d
+			shape: "gear"
+			subtitle: "Will set the time to Night. This will, of course, move to the next MC day"
+			dependencies: [
+				"21F96BD25793F2B8"
+				"23BF297FF4BD920D"
+			]
+			id: "0BB04B05D8143688"
+			tasks: [{
+				id: "7B122EB58D802568"
+				type: "item"
+				item: "ars_nouveau:ritual_moonfall"
+			}]
+		}
+		{
+			x: 33.5d
+			y: -7.0d
+			shape: "gear"
+			subtitle: "Will cause all the nearby animals to occasionally breed. This Ritual will use Source in order to work and will not have any effects if more the twenty animals are present nearby"
+			dependencies: [
+				"23BF297FF4BD920D"
+				"21F96BD25793F2B8"
+			]
+			id: "3A1ACA17ED9A88B7"
+			tasks: [{
+				id: "6A0B402BE49F1AC2"
+				type: "item"
+				item: "ars_nouveau:ritual_fertility"
+			}]
+		}
+		{
+			x: 33.5d
+			y: -6.0d
+			shape: "gear"
+			subtitle: "Will convert nearby eligible entities into Bound Scripts, used for summoning a Familiar.  Learn more about the available familiars in their respective quest"
+			dependencies: [
+				"21F96BD25793F2B8"
+				"23BF297FF4BD920D"
+			]
+			id: "600F5EFE483069A3"
+			tasks: [{
+				id: "4E3443E4310B4B4F"
+				type: "item"
+				item: "ars_nouveau:ritual_binding"
+			}]
+		}
+		{
+			x: 32.5d
+			y: -6.0d
+			subtitle: "Will allow you to essencially obtain X-ray for a limited amount of time. Just throw the block of your choice into the Ritual, start it and you'll be able to see your selected block with ease once you get close to it. If a Glyph of Extend Time is applied to the Ritual before starting it, you'll be able to see through blocks for 15 minutes"
+			dependencies: [
+				"21F96BD25793F2B8"
+				"23BF297FF4BD920D"
+			]
+			id: "051C946F8CFAB7EF"
+			tasks: [{
+				id: "1AD01854C8AD7EFB"
+				type: "item"
+				item: "ars_nouveau:ritual_scrying"
+			}]
+		}
+		{
+			x: 34.5d
+			y: -7.0d
+			shape: "gear"
+			subtitle: "Will transform the nearby Archwood Trees into Weald Walker which, essentially, are nice guards with 60 health. With a Dominion Wand you can select an area for them to protect"
+			dependencies: [
+				"21F96BD25793F2B8"
+				"23BF297FF4BD920D"
+			]
+			id: "1FD822B9D91ABE1D"
+			tasks: [{
+				id: "0A557A62445E5C47"
+				type: "item"
+				item: "ars_nouveau:ritual_awakening"
+			}]
+		}
+		{
+			x: 31.5d
+			y: -7.0d
+			shape: "gear"
+			subtitle: "Will dig 4 holes to bedrock bellow the Ritual Brazier, dropping all the mined blocks"
+			dependencies: [
+				"23BF297FF4BD920D"
+				"21F96BD25793F2B8"
+			]
+			id: "1FDCFEAF3C7D2701"
+			tasks: [{
+				id: "06D6938F3958FCA1"
+				type: "item"
+				item: "ars_nouveau:ritual_burrowing"
+			}]
+		}
+		{
+			x: 30.5d
+			y: -6.0d
+			shape: "gear"
+			subtitle: "When performed in a Village, it will start an Illager Raid. Additionally, by throwing an Emerald into the Ritual, you can start a Raid on its maximum difficulty"
+			dependencies: [
+				"21F96BD25793F2B8"
+				"23BF297FF4BD920D"
+			]
+			id: "1EC6D9A4E35F20A9"
+			tasks: [{
+				id: "0A328FB0B03C8C33"
+				type: "item"
+				item: "ars_nouveau:ritual_challenge"
+			}]
+		}
+		{
+			x: 34.0d
+			y: -5.0d
+			shape: "gear"
+			subtitle: "When performed, it will attempt to clear the weather. By throwing a Gunpowder into the Ritual, you can make it Rain and by throwing a Lapis Block into the Ritual, you can make it Storm. This Ritual can be used in combination with certain Botania Generating Floras to achieve cheap Mana production systems"
+			dependencies: [
+				"21F96BD25793F2B8"
+				"23BF297FF4BD920D"
+			]
+			id: "1800C52F1DC2502E"
+			tasks: [{
+				id: "77D690F4BE26E555"
+				type: "item"
+				item: "ars_nouveau:ritual_cloudshaping"
+			}]
+		}
+		{
+			x: 32.0d
+			y: -5.0d
+			shape: "gear"
+			subtitle: "This Ritual will destroy all the nearby mobs, giving you Experience Gems in the process. Note that the mobs will NOT give any of their regular drops"
+			dependencies: [
+				"23BF297FF4BD920D"
+				"21F96BD25793F2B8"
+			]
+			id: "2D41082824C5010A"
+			tasks: [{
+				id: "77EB98EB48B10CAA"
+				type: "item"
+				item: "ars_nouveau:ritual_disintegration"
+			}]
+		}
+		{
+			x: 31.5d
+			y: -6.0d
+			shape: "gear"
+			subtitle: "This Ritual requires an inscribed Warp Scroll. When activated, it will try to teleport all the nearby entities to the inscribed location on the Warp Scroll"
+			dependencies: [
+				"21F96BD25793F2B8"
+				"23BF297FF4BD920D"
+			]
+			id: "4D5622A502DB1989"
+			tasks: [{
+				id: "24CF07B686BFA4D6"
+				type: "item"
+				item: "ars_nouveau:ritual_warping"
+			}]
+		}
+		{
+			x: 30.5d
+			y: -7.0d
+			shape: "gear"
+			subtitle: "This Ritual will try to heal all the nearby entities if Source is provided. It will damage all the nearby undead mobs. The Zombie Villagers present nearby will be instantly cured. If a player is present nearby, the cured Villager will also have trading discounts"
+			dependencies: [
+				"21F96BD25793F2B8"
+				"23BF297FF4BD920D"
+			]
+			id: "3AA4807D45BA977E"
+			tasks: [{
+				id: "6BBFA9BC695982BF"
+				type: "item"
+				item: "ars_nouveau:ritual_restoration"
+			}]
+		}
+		{
+			title: "Bookwyrm"
+			x: 32.0d
+			y: 1.0d
+			shape: "gear"
+			subtitle: "This Script will allow you to summon a BookWyrm from your Spellbook to assist you in your adventures. Left Click for more info"
+			description: [
+				"The Bookwyrm is a familiar that will reduce the cost of all spells cast, and increase any spell damage by 1."
+				""
+				"This Glyph can be obtained by performing the Ritual of Binding near a wield Bookwyrm. Can be unssumoned by using Dispel on it."
+			]
+			hide_dependency_lines: true
+			dependencies: ["600F5EFE483069A3"]
+			id: "614621AF95FA02F1"
+			tasks: [{
+				id: "1F36D65026A0D2BE"
+				type: "item"
+				item: "ars_nouveau:familiar_bookwyrm"
+			}]
+		}
+		{
+			title: "Sylph"
+			x: 32.0d
+			y: -1.0d
+			shape: "gear"
+			subtitle: "This Script will allow you to summon a Sylph from your Spellbook to assist you in your adventures. Left Click for more info"
+			description: [
+				"Sylphs will reduce the cost of Elemental Earth glyphs by half, and grants bonus saturation when consuming food."
+				""
+				"This Glyph can be obtained by performing the Ritual of Binding near a wield Sylph. Can be unssumoned by using Dispel on it."
+			]
+			hide_dependency_lines: true
+			dependencies: ["600F5EFE483069A3"]
+			id: "464825E13F3C5021"
+			tasks: [{
+				id: "347BDAC72B57B996"
+				type: "item"
+				item: "ars_nouveau:familiar_sylph"
+			}]
+		}
+		{
+			title: "Carbuncle"
+			x: 33.0d
+			y: -1.0d
+			shape: "gear"
+			subtitle: "This Script will allow you to summon a Carbuncle from your Spellbook to assist you in your adventures. Left Click for more info"
+			description: [
+				"The Curbuncle is a familiar which will grant you Speed 2. Additionally, using a Golden Nugget on the Curbuncle will allow it to give you a short duration of the Scrying effect, which will allow you to see all the Gold Ores nearby."
+				""
+				"This Glyph can be obtained by performing the Ritual of Binding near a wield Carbuncle. Can be unssumoned by using Dispel on it."
+			]
+			hide_dependency_lines: true
+			dependencies: ["600F5EFE483069A3"]
+			id: "57327DC86A479B14"
+			tasks: [{
+				id: "4B3D9A255968FFB6"
+				type: "item"
+				item: "ars_nouveau:familiar_carbuncle"
+			}]
+		}
+		{
+			title: "Drygmy"
+			x: 33.0d
+			y: 1.0d
+			shape: "gear"
+			subtitle: "This Script will allow you to summon a Drygmy from your Spellbook to assist you in your adventures. Left Click for more info"
+			description: [
+				"The Drygmy is a familiar that will increase the damage of Earth spells by 2, and has a chance to increase the amount of looting when slaying enemies."
+				""
+				"This Glyph cna be obtained by using the Ritual of Binding of a wield Drygmy. Can be unssumoned by using Dispel on it."
+			]
+			hide_dependency_lines: true
+			dependencies: ["600F5EFE483069A3"]
+			id: "4970FC27F2A5DEAB"
+			tasks: [{
+				id: "700CEFA7E99C86F1"
+				type: "item"
+				item: "ars_nouveau:familiar_drygmy"
+			}]
+		}
+		{
+			title: "Wixie"
+			x: 32.5d
+			y: 0.0d
+			shape: "gear"
+			subtitle: "This Script will allow you to summon a Wixie from your Spellbook to assist you in your adventures. Left Click for more info"
+			description: [
+				"The Wixie will increase the duration of potions that you consume. Additionally, the Wixie will apply harmful potions to enemies during combat."
+				""
+				"This Glyph can be obtained by performing the Ritual of Binding near a wield Wixie. Can be unssumoned by using Dispel on it."
+			]
+			hide_dependency_lines: true
+			dependencies: ["600F5EFE483069A3"]
+			id: "73E83AF6F353054A"
+			tasks: [{
+				id: "5002D95FDD13A06C"
+				type: "item"
+				item: "ars_nouveau:familiar_wixie"
+			}]
+		}
+		{
+			x: 25.0d
+			y: 4.0d
+			shape: "gear"
+			subtitle: "Fight Starter, no regrets: The Heisei Dream will, at the cost of some mana, force the nearby mobs to fight each other"
+			dependencies: ["0FC87F7225551D24"]
+			id: "6BC3AFF956674FC6"
+			tasks: [{
+				id: "3CDA9922653344B2"
+				type: "item"
+				item: "botania:heisei_dream"
+			}]
+		}
+		{
+			x: 25.5d
+			y: 6.0d
+			shape: "heart"
+			subtitle: "Dungeon Loot Spawner: This flower will consume mana to summon powerful mobs which, when killed, will drop random dungeon loot items"
+			dependencies: ["398B882BA973C054"]
+			id: "4B1D464564DD5A50"
+			tasks: [{
+				id: "0B8B738524EFB997"
+				type: "item"
+				item: "botania:loonium"
+			}]
+		}
+		{
+			x: 25.0d
+			y: 5.0d
+			shape: "gear"
+			subtitle: "Short Range Item Teleporter: The Spectranthemum will use mana to teleport any dropped item to a destination in a 11x11 area around it. A Wand of the Forest can be used to connect the flower to one block in this 11x11 area"
+			dependencies: ["0FC87F7225551D24"]
+			id: "43EA3460438D2EB4"
+			tasks: [{
+				id: "218368679F5CD686"
+				type: "item"
+				item: "botania:spectranthemum"
+			}]
+		}
+		{
+			x: 26.0d
+			y: 5.0d
+			shape: "gear"
+			subtitle: "The Flowers of Poseidon: The Bubbell is a flower which will clear all the water blocks in its vecinity to create 12x12x12 domes of air underwater when it's constantly supplied with mana. The Petite version of this flower will have a smaller radius"
+			dependencies: ["0FC87F7225551D24"]
+			id: "552058D8A1B823E0"
+			tasks: [
+				{
+					id: "1E87658429D67F3A"
+					type: "item"
+					item: "botania:bubbell"
+				}
+				{
+					id: "05150134E2CF2BFE"
+					type: "item"
+					item: "botania:bubbell_chibi"
+				}
+			]
+		}
+		{
+			x: 27.0d
+			y: 4.0d
+			shape: "gear"
+			subtitle: "Nether Void Miner: Nether version of the Orechid. It will turn Netherrack into Nether like ores. Additionally it will work only in the Nether"
+			dependencies: ["0FC87F7225551D24"]
+			id: "57E36D00F24C6CA6"
+			tasks: [{
+				id: "09C99A521FAA5E4D"
+				type: "item"
+				item: "botania:orechid_ignem"
+			}]
+		}
+		{
+			x: 26.0d
+			y: 4.0d
+			shape: "gear"
+			subtitle: "Vagetal Tag Gun: The Labellia will use mana and Name Tags dropped into it to name all the items/mobs present in a nearby 5x5 radius"
+			dependencies: ["0FC87F7225551D24"]
+			id: "604B116434002F10"
+			tasks: [{
+				id: "6C16E1912CF360A4"
+				type: "item"
+				item: "botania:labellia"
+			}]
+		}
+		{
+			title: "Slime-Chunk Detector"
+			x: 22.5d
+			y: 0.0d
+			shape: "gear"
+			subtitle: "Wanna find slime chunks faster? When you're in a slime chunk, the slimeball present in this tiny jar will start to dance :D"
+			dependencies: [
+				"12BEA0308056A4B6"
+				"47C92313B4A81B87"
+			]
+			id: "1474C005600D2FC6"
+			tasks: [{
+				id: "6D2509DA1F8F935D"
+				type: "item"
+				item: "botania:slime_bottle"
+			}]
+		}
+		{
+			x: 28.5d
+			y: 0.0d
+			shape: "gear"
+			subtitle: "The Extrapolated Bucket will void all the liquids it will pick up"
+			dependencies: [
+				"12BEA0308056A4B6"
+				"47C92313B4A81B87"
+			]
+			id: "315107868B0B3960"
+			tasks: [{
+				id: "76B4D94E6689A9E5"
+				type: "item"
+				item: "botania:open_bucket"
+			}]
+		}
+		{
+			x: 27.0d
+			y: 2.0d
+			shape: "gear"
+			subtitle: "This item will allow you to move Spawner around. Keep in mind it has only one use"
+			dependencies: [
+				"12BEA0308056A4B6"
+				"47C92313B4A81B87"
+			]
+			id: "7BB22D0BC75A1884"
+			tasks: [{
+				id: "103711C72447AABC"
+				type: "item"
+				item: "botania:spawner_mover"
+			}]
+		}
+		{
+			x: 24.0d
+			y: 4.0d
+			shape: "gear"
+			subtitle: "Auto Ritual Flora: When placed near Master Rune Holder and provided with Mana, the Petrunia will be able to start Rune Rituals automatically"
+			dependencies: ["73E1F2B370C80359"]
+			id: "1FD89C219A085D86"
+			tasks: [{
+				id: "09001608D6B2CD21"
+				type: "item"
+				item: "mythicbotany:petrunia"
+			}]
+		}
+		{
+			x: 27.0d
+			y: 5.0d
+			shape: "gear"
+			subtitle: "External Brewing Stand Heater: The Exoblaze will use Mana to heat up all the nearby Brewing Stands, thus removing the need of Blaze Powder "
+			dependencies: ["0FC87F7225551D24"]
+			id: "5785ACA814C85146"
+			tasks: [{
+				id: "06CB019ACD5D0035"
+				type: "item"
+				item: "mythicbotany:exoblaze"
+			}]
+		}
+		{
+			x: 29.0d
+			y: -21.5d
+			subtitle: "Effect: Will ignite blocks/entities for a short amount of time"
+			dependencies: ["16AA0D0FD3075CB9"]
+			id: "3E6C46F1340AA348"
+			tasks: [{
+				id: "43948CF58F47A8FD"
+				type: "item"
+				item: "ars_nouveau:glyph_ignite"
+			}]
+		}
+		{
+			x: 27.5d
+			y: -23.5d
+			subtitle: "Form: Will apply effects directly beneath your feet"
+			dependencies: [
+				"16AA0D0FD3075CB9"
+				"005E1D5602B26325"
+			]
+			id: "389486E7E41DFD85"
+			tasks: [{
+				id: "0416A7CD92AEAEF0"
+				type: "item"
+				item: "ars_nouveau:glyph_underfoot"
+			}]
+		}
+		{
+			x: 27.0d
+			y: -20.5d
+			subtitle: "Effect: Will give the Bouncy effect to the targeted entity. This will make it bounce just like if it was standing on a Slime Block"
+			dependencies: ["16AA0D0FD3075CB9"]
+			id: "2DA3B1BC799D1017"
+			tasks: [{
+				id: "7185CAACEA70CC12"
+				type: "item"
+				item: "ars_nouveau:glyph_bounce"
+			}]
+		}
+		{
+			x: 31.0d
+			y: -20.5d
+			subtitle: "Effect: This one is kinda unique as it acts more like a Form Gliph. When cast upon a block, it will create a Rune which will act like a land mine. When a mob passes over the Rune, all the other effects specified in the Spell will be given to that mob"
+			dependencies: ["16AA0D0FD3075CB9"]
+			id: "261C2166E36A702A"
+			tasks: [{
+				id: "707FADC3596869E6"
+				type: "item"
+				item: "ars_nouveau:glyph_rune"
+			}]
+		}
+		{
+			x: 26.0d
+			y: -21.5d
+			subtitle: "Effect: Will stop entities from moving/jumping"
+			dependencies: ["16AA0D0FD3075CB9"]
+			id: "7E804ACC23CF06AA"
+			tasks: [{
+				id: "08CB5D820F80A06D"
+				type: "item"
+				item: "ars_nouveau:glyph_snare"
+			}]
+		}
+		{
+			x: 32.0d
+			y: -21.5d
+			subtitle: "Effect: Will freeze the water and lava in a small area. It will also slow down entities for a short amount of time"
+			dependencies: ["16AA0D0FD3075CB9"]
+			id: "11D4A33E40996C51"
+			tasks: [{
+				id: "21BB81CCFBC8454B"
+				type: "item"
+				item: "ars_nouveau:glyph_freeze"
+			}]
+		}
+		{
+			x: 32.0d
+			y: -19.5d
+			subtitle: "Effect: Will summon a tamed horse with a saddle at the targeted location"
+			dependencies: ["16AA0D0FD3075CB9"]
+			id: "5766ACB56361D3CB"
+			tasks: [{
+				id: "27CB7C32EFF5C53C"
+				type: "item"
+				item: "ars_nouveau:glyph_summon_steed"
+			}]
+		}
+		{
+			x: 28.5d
+			y: -23.5d
+			subtitle: "Form: Will apply effects on the blocks you directly right-click on"
+			dependencies: [
+				"16AA0D0FD3075CB9"
+				"005E1D5602B26325"
+			]
+			id: "2B53E025F43A629E"
+			tasks: [{
+				id: "0FD5A4C0BF0ECDA7"
+				type: "item"
+				item: "ars_nouveau:glyph_touch"
+			}]
+		}
+		{
+			x: 29.0d
+			y: -22.5d
+			subtitle: "Augment: Will allow certain Forms to target blocks they usually wouldn't target, such as air and water"
+			dependencies: ["16AA0D0FD3075CB9"]
+			id: "7606B627A2843C98"
+			tasks: [{
+				id: "65E8E3BC6AAC38AE"
+				type: "item"
+				item: "ars_nouveau:glyph_sensitive"
+			}]
+		}
+		{
+			x: 25.0d
+			y: -21.5d
+			subtitle: "Effect: Will place an item from the caster's inventory to a location "
+			dependencies: ["16AA0D0FD3075CB9"]
+			id: "0B9907795487480A"
+			tasks: [{
+				id: "17F010830037628E"
+				type: "item"
+				item: "ars_nouveau:glyph_toss"
+			}]
+		}
+		{
+			x: 30.0d
+			y: -19.5d
+			subtitle: "Effect: This is also quite an unique one. Even though it is an effect, you can consider it to be more of an Augment. All the Effect placed on the right side of this Effect will have a small delay before being casted "
+			dependencies: ["16AA0D0FD3075CB9"]
+			id: "21D94604B3C8179A"
+			tasks: [{
+				id: "64E49068566C61A3"
+				type: "item"
+				item: "ars_nouveau:glyph_delay"
+			}]
+		}
+		{
+			x: 29.0d
+			y: -20.5d
+			subtitle: "Effect: If cast upon a block, will create a light source. If cast upon yourself, you'll get Night Vision. If cast upon other entities, they'll get Glowing and Night Vision"
+			dependencies: ["16AA0D0FD3075CB9"]
+			id: "17C96CA24E155BFB"
+			tasks: [{
+				id: "0AB751C02204B745"
+				type: "item"
+				item: "ars_nouveau:glyph_light"
+			}]
+		}
+		{
+			x: 31.0d
+			y: -21.5d
+			subtitle: "Effect: Will place blocks from the caster's inventory. It will start with the hotbar"
+			dependencies: ["16AA0D0FD3075CB9"]
+			id: "482A94BE237F22FB"
+			tasks: [{
+				id: "77A88417794CA671"
+				type: "item"
+				item: "ars_nouveau:glyph_place_block"
+			}]
+		}
+		{
+			x: 28.0d
+			y: -19.5d
+			subtitle: "Effect: Will summon two wolves which will assist you in combat for a limited amount of time"
+			dependencies: ["16AA0D0FD3075CB9"]
+			id: "41E1CFE855D4AB6D"
+			tasks: [{
+				id: "3757D6D13254845C"
+				type: "item"
+				item: "ars_nouveau:glyph_summon_wolves"
+			}]
+		}
+		{
+			x: 25.0d
+			y: -20.5d
+			subtitle: "Effect: Wil simulate shearing on different blocks and entities"
+			dependencies: ["16AA0D0FD3075CB9"]
+			id: "5897A240FBE974B0"
+			tasks: [{
+				id: "5524BAF58962D2E2"
+				type: "item"
+				item: "ars_nouveau:glyph_cut"
+			}]
+		}
+		{
+			x: 28.0d
+			y: -20.5d
+			subtitle: "Effect: Will damage a targeted entity. If used in combination with the Extend Time Augment, it will inflict the Poison Effect"
+			dependencies: ["16AA0D0FD3075CB9"]
+			id: "522C75D5D4FD35BF"
+			tasks: [{
+				id: "05B9432E9267971E"
+				type: "item"
+				item: "ars_nouveau:glyph_harm"
+			}]
+		}
+		{
+			x: 33.0d
+			y: -19.5d
+			subtitle: "Effect: Will allow you to active buttons/levers and basically just interact with everything from a distance"
+			dependencies: ["16AA0D0FD3075CB9"]
+			id: "6C06D6860FFBD806"
+			tasks: [{
+				id: "4C42AA58CB42B13D"
+				type: "item"
+				item: "ars_nouveau:glyph_interact"
+			}]
+		}
+		{
+			x: 26.5d
+			y: -18.0d
+			subtitle: "Augment: Will amplify the Effect Glyphs"
+			dependencies: ["16AA0D0FD3075CB9"]
+			id: "7E345094D1539176"
+			tasks: [{
+				id: "324D82941786883E"
+				type: "item"
+				item: "ars_nouveau:glyph_amplify"
+			}]
+		}
+		{
+			x: 31.0d
+			y: -19.5d
+			subtitle: "Effect: Will create a temporary block at the targeted location"
+			dependencies: [
+				"16AA0D0FD3075CB9"
+				"3CD9417B53DCCF45"
+			]
+			id: "28967C312E8FC518"
+			tasks: [{
+				id: "10C09C0B974A13F7"
+				type: "item"
+				item: "ars_nouveau:glyph_phantom_block"
+			}]
+		}
+		{
+			x: 26.0d
+			y: -20.5d
+			subtitle: "Effect: Will delete all the liquid in the targeted area"
+			hide_dependency_lines: true
+			dependencies: [
+				"315107868B0B3960"
+				"16AA0D0FD3075CB9"
+			]
+			id: "780EA2B4B4ED42C6"
+			tasks: [{
+				id: "79538945EEB3A516"
+				type: "item"
+				item: "ars_nouveau:glyph_evaporate"
+			}]
+		}
+		{
+			x: 32.0d
+			y: -20.5d
+			subtitle: "Effect: Will launch the target in the direction they're looking at"
+			dependencies: ["16AA0D0FD3075CB9"]
+			id: "2E2C835C55B8642E"
+			tasks: [{
+				id: "48A4BA28AFED1DEA"
+				type: "item"
+				item: "ars_nouveau:glyph_leap"
+			}]
+		}
+		{
+			x: 29.0d
+			y: -19.5d
+			dependencies: ["16AA0D0FD3075CB9"]
+			id: "466CB156CF9CC864"
+			tasks: [{
+				id: "24F99D9C6A4E3CDC"
+				type: "item"
+				item: "ars_nouveau:glyph_redstone_signal"
+			}]
+		}
+		{
+			x: 27.0d
+			y: -19.5d
+			subtitle: "Effect: Will harvest a fully grown crop without breaking it"
+			dependencies: ["16AA0D0FD3075CB9"]
+			id: "4DC7EB2827899923"
+			tasks: [{
+				id: "4D0742DCCAA2B80B"
+				type: "item"
+				item: "ars_nouveau:glyph_harvest"
+			}]
+		}
+		{
+			x: 33.0d
+			y: -20.5d
+			subtitle: "Effect: Will break the targeted block. Can be amplified to break blocks such as Obsidian"
+			dependencies: ["16AA0D0FD3075CB9"]
+			id: "0E1397654D8EC249"
+			tasks: [{
+				id: "6BF95D5184F5D26A"
+				type: "item"
+				item: "ars_nouveau:glyph_break"
+			}]
+		}
+		{
+			x: 27.0d
+			y: -21.5d
+			subtitle: "Effect: Will pick up all the items present in a small area near the targeted location"
+			dependencies: ["16AA0D0FD3075CB9"]
+			id: "4B66C9BB9B11AC85"
+			tasks: [{
+				id: "75BAE4679759156A"
+				type: "item"
+				item: "ars_nouveau:glyph_pickup"
+			}]
+		}
+		{
+			x: 26.0d
+			y: -19.5d
+			subtitle: "Effect: Will launch the targeted entity into the air"
+			dependencies: [
+				"16AA0D0FD3075CB9"
+				"299652600AB2F04F"
+			]
+			id: "72A3EBCA777990B2"
+			tasks: [{
+				id: "53867A79742CB45C"
+				type: "item"
+				item: "ars_nouveau:glyph_launch"
+			}]
+		}
+		{
+			x: 30.0d
+			y: -20.5d
+			subtitle: "Effect: Will reove all the potion effects owned by an Entity. Can be used on a Witch with low health to obtain a Wixie Shard. Can be used on Familiars to unsummon them"
+			dependencies: ["16AA0D0FD3075CB9"]
+			id: "7CC8A8BF7A35AE16"
+			tasks: [{
+				id: "600F1E5852D37536"
+				type: "item"
+				item: "ars_nouveau:glyph_dispel"
+			}]
+		}
+		{
+			x: 33.0d
+			y: -21.5d
+			subtitle: "Effect: Will give a speed boost to the targeted entity"
+			dependencies: ["16AA0D0FD3075CB9"]
+			id: "31058EE4F76694BF"
+			tasks: [{
+				id: "34AD7E5BD1A9BBDE"
+				type: "item"
+				item: "ars_nouveau:glyph_haste"
+			}]
+		}
+		{
+			x: 28.0d
+			y: -21.5d
+			subtitle: "Effect: Will pull the target closer to the caster"
+			dependencies: ["16AA0D0FD3075CB9"]
+			id: "29900E1FC73858B3"
+			tasks: [{
+				id: "4B14B04D42B41C8F"
+				type: "item"
+				item: "ars_nouveau:glyph_pull"
+			}]
+		}
+		{
+			x: 29.5d
+			y: -23.5d
+			subtitle: "Form: Will apply effect on the one who casts the spell"
+			dependencies: [
+				"16AA0D0FD3075CB9"
+				"005E1D5602B26325"
+			]
+			id: "616E352E1E97A723"
+			tasks: [{
+				id: "5182879ACE2C7ADC"
+				type: "item"
+				item: "ars_nouveau:glyph_self"
+			}]
+		}
+		{
+			x: 25.0d
+			y: -19.5d
+			subtitle: "Effect: Wil laplly the Wather Breathing Effect on the targeted entity"
+			dependencies: ["16AA0D0FD3075CB9"]
+			id: "564B94B0BBBF622A"
+			tasks: [{
+				id: "335ABCEEE2959D21"
+				type: "item"
+				item: "ars_nouveau:glyph_aquatic"
+			}]
+		}
+		{
+			x: 30.5d
+			y: -23.5d
+			subtitle: "Form: Will launch a projectile that, on impact, will apply effects"
+			dependencies: [
+				"16AA0D0FD3075CB9"
+				"005E1D5602B26325"
+			]
+			id: "15B2AC1D9E62ED5D"
+			tasks: [{
+				id: "036E782082DA9D55"
+				type: "item"
+				item: "ars_nouveau:glyph_projectile"
+			}]
+		}
+		{
+			x: 30.0d
+			y: -21.5d
+			subtitle: "Effect: Will push the targer away from the caster"
+			dependencies: ["16AA0D0FD3075CB9"]
+			id: "1EF8C440AEC8660E"
+			tasks: [{
+				id: "2D7F086946912671"
+				type: "item"
+				item: "ars_nouveau:glyph_gust"
+			}]
+		}
+		{
+			x: 28.0d
+			y: -16.0d
+			subtitle: "Effect: When applied to an entity that's on fire, it will create a burst of damage and fire particles that will set the nearby entities on fire"
+			dependencies: ["65EF295F1B0AFF83"]
+			id: "12FC0C31876E09E8"
+			tasks: [{
+				id: "1E28B1B3C6375DB7"
+				type: "item"
+				item: "ars_nouveau:glyph_flare"
+			}]
+		}
+		{
+			x: 30.0d
+			y: -16.0d
+			subtitle: "Effect: Very similar to the Glyph of Flare, but it will apply to the entities that are wet, or affected by slowness"
+			dependencies: ["65EF295F1B0AFF83"]
+			id: "0755316F03754588"
+			tasks: [{
+				id: "328FC48D1E69EAC3"
+				type: "item"
+				item: "ars_nouveau:glyph_cold_snap"
+			}]
+		}
+		{
+			x: 29.0d
+			y: -16.0d
+			subtitle: "Effect: Will apply the Slow Fall effect on the targeted entities"
+			dependencies: ["65EF295F1B0AFF83"]
+			id: "0DB461C7E596C967"
+			tasks: [{
+				id: "701DCEF5CF61A205"
+				type: "item"
+				item: "ars_nouveau:glyph_slowfall"
+			}]
+		}
+		{
+			x: 27.0d
+			y: -16.0d
+			subtitle: "Effect: Will turn stone into gravel and gravel into sand. Can also be used to damage mobs, especially underwater where the damage will be greater"
+			dependencies: ["65EF295F1B0AFF83"]
+			id: "06B6E668DB129A76"
+			tasks: [{
+				id: "59D90F54F1CB0062"
+				type: "item"
+				item: "ars_nouveau:glyph_crush"
+			}]
+		}
+		{
+			x: 31.0d
+			y: -16.0d
+			subtitle: "Effect: Will smelt blocks and items in the world"
+			dependencies: ["65EF295F1B0AFF83"]
+			id: "14671C6025CE197E"
+			tasks: [{
+				id: "62838C4B1996C476"
+				type: "item"
+				item: "ars_nouveau:glyph_smelt"
+			}]
+		}
+		{
+			x: 28.5d
+			y: -18.0d
+			subtitle: "Augment: Will make the projectile spells travel with greater speeds"
+			dependencies: ["65EF295F1B0AFF83"]
+			id: "33BA2E05AD2BEA70"
+			tasks: [{
+				id: "0577F6356B9FFE8B"
+				type: "item"
+				item: "ars_nouveau:glyph_accelerate"
+			}]
+		}
+		{
+			x: 26.0d
+			y: -16.0d
+			subtitle: "Effect: Will cause the plants to accelerate in growth"
+			dependencies: ["65EF295F1B0AFF83"]
+			id: "56E0CF62DB6D9DD9"
+			tasks: [{
+				id: "0FBCFE13475F1CF6"
+				type: "item"
+				item: "ars_nouveau:glyph_grow"
+			}]
+		}
+		{
+			x: 31.5d
+			y: -18.0d
+			subtitle: "Augment: Will decrease the power of a spell and also, its mana cost"
+			dependencies: ["65EF295F1B0AFF83"]
+			id: "6F246ADBD5ACDDC8"
+			tasks: [{
+				id: "099CB054F5AA42EA"
+				type: "item"
+				item: "ars_nouveau:glyph_dampen"
+			}]
+		}
+		{
+			x: 26.0d
+			y: -15.0d
+			subtitle: "Effect: Will make the targets invisible for a short amount of time"
+			dependencies: ["65EF295F1B0AFF83"]
+			id: "3A2773F7A3E19E6B"
+			tasks: [{
+				id: "79FB378A6FDCE648"
+				type: "item"
+				item: "ars_nouveau:glyph_invisibility"
+			}]
+		}
+		{
+			x: 28.0d
+			y: -15.0d
+			subtitle: "Effect: Will create a Firework at a targeted location"
+			dependencies: ["65EF295F1B0AFF83"]
+			id: "26A6250AABE4C704"
+			tasks: [{
+				id: "29025726E32B0FAA"
+				type: "item"
+				item: "ars_nouveau:glyph_firework"
+			}]
+		}
+		{
+			x: 30.0d
+			y: -17.0d
+			subtitle: "Augment: Will apply the Silk-Touch effect on any mined blocks. If included in a Explosion Spell, it will make the explosion drop all the blocks"
+			dependencies: ["65EF295F1B0AFF83"]
+			id: "4D0D9EB73840EDF3"
+			tasks: [{
+				id: "155FA5094ADCA708"
+				type: "item"
+				item: "ars_nouveau:glyph_extract"
+			}]
+		}
+		{
+			x: 30.5d
+			y: -18.0d
+			subtitle: "Augment: Will reduce the time of of any given effects"
+			dependencies: ["65EF295F1B0AFF83"]
+			id: "5BE7070B1981EEF9"
+			tasks: [{
+				id: "22362D8D8A17672F"
+				type: "item"
+				item: "ars_nouveau:glyph_duration_down"
+			}]
+		}
+		{
+			x: 31.0d
+			y: -15.0d
+			subtitle: "Effect: Will switch the targeted block with the once present on your hotbar as if you had silk touch. Can be augmented to exchange blocks of higher harnesses"
+			dependencies: [
+				"65EF295F1B0AFF83"
+				"7D0C859830DAC0CA"
+			]
+			id: "4E3E690DFD2A4F85"
+			tasks: [{
+				id: "7D8ADFB64864ACB1"
+				type: "item"
+				item: "ars_nouveau:glyph_exchange"
+			}]
+		}
+		{
+			x: 29.0d
+			y: -14.0d
+			subtitle: "Effect: Will apply a flat amount of protection against physical and magical damage to the targeted entities"
+			dependencies: ["65EF295F1B0AFF83"]
+			id: "2136AED587F754B3"
+			tasks: [{
+				id: "3FD80A5FCF831D9A"
+				type: "item"
+				item: "ars_nouveau:glyph_shield"
+			}]
+		}
+		{
+			x: 25.0d
+			y: -15.5d
+			subtitle: "Effect: Will place water on a targeted location"
+			dependencies: [
+				"65EF295F1B0AFF83"
+				"0E90891241CDE2D2"
+			]
+			id: "6E2B66577BB7A0DD"
+			tasks: [{
+				id: "0E722DDC68D10A94"
+				type: "item"
+				item: "ars_nouveau:glyph_conjure_water"
+			}]
+		}
+		{
+			x: 32.0d
+			y: -16.0d
+			subtitle: "Effect: Will harvest trees/mushrooms/cactuses from one 'blow'"
+			dependencies: ["65EF295F1B0AFF83"]
+			id: "56FE61262065F0C0"
+			tasks: [{
+				id: "3AA9BC4FC6E97BBD"
+				type: "item"
+				item: "ars_nouveau:glyph_fell"
+			}]
+		}
+		{
+			x: 27.5d
+			y: -18.0d
+			subtitle: "Augment: Will extend the time of of any given effects"
+			dependencies: ["65EF295F1B0AFF83"]
+			id: "687A4DADF250F39A"
+			tasks: [{
+				id: "61A734480714AD5D"
+				type: "item"
+				item: "ars_nouveau:glyph_extend_time"
+			}]
+		}
+		{
+			x: 27.0d
+			y: -15.0d
+			subtitle: "Effect: Will restore small amounts of health. When combined with Extended Time, it will apply Regeneration. It will damage undead mobs"
+			dependencies: ["65EF295F1B0AFF83"]
+			id: "765BEC9B1D7FDF71"
+			tasks: [{
+				id: "6A71AEAEF812942A"
+				type: "item"
+				item: "ars_nouveau:glyph_heal"
+			}]
+		}
+		{
+			x: 29.0d
+			y: -17.0d
+			subtitle: "Augment: When used in combination with a Projectile Spell, it will allow the projectile to pass through multiple mobs and blocks"
+			dependencies: ["65EF295F1B0AFF83"]
+			id: "3BF6CC408D6D2C02"
+			tasks: [{
+				id: "30D8D0C4EA653A49"
+				type: "item"
+				item: "ars_nouveau:glyph_pierce"
+			}]
+		}
+		{
+			x: 29.5d
+			y: -18.0d
+			subtitle: "Augment: Will increase the drop chance for any killed mobs and will also increase the drop chance for any mined ores"
+			dependencies: ["65EF295F1B0AFF83"]
+			id: "76F0845A5178E3EB"
+			tasks: [{
+				id: "78C807A770963F6A"
+				type: "item"
+				item: "ars_nouveau:glyph_fortune"
+			}]
+		}
+		{
+			x: 29.0d
+			y: -15.0d
+			subtitle: "Effect: Will apply a devastating swipe of damage to the entities that are airborne. The higher the height they're at, the greater the damage. It all maxes out at a height of 10"
+			dependencies: ["65EF295F1B0AFF83"]
+			id: "65534A002C85AD43"
+			tasks: [{
+				id: "4EF48E7B657ECBFC"
+				type: "item"
+				item: "ars_nouveau:glyph_wind_shear"
+			}]
+		}
+		{
+			x: 30.0d
+			y: -15.0d
+			subtitle: "Effect: Will allow you to acess your ender storage from anywhere"
+			dependencies: [
+				"65EF295F1B0AFF83"
+				"06428DE9E7B3FC83"
+			]
+			id: "68AB01F2852C3888"
+			tasks: [{
+				id: "30F0FEBEA47C1544"
+				type: "item"
+				item: "ars_nouveau:glyph_ender_inventory"
+			}]
+		}
+		{
+			x: 33.0d
+			y: -15.5d
+			subtitle: "Effect: Will create an explosion at the targeted location"
+			dependencies: ["65EF295F1B0AFF83"]
+			id: "5E849C874DC90F8C"
+			tasks: [{
+				id: "7796BFCD747AF490"
+				type: "item"
+				item: "ars_nouveau:glyph_explosion"
+			}]
+		}
+		{
+			x: 28.0d
+			y: -17.0d
+			subtitle: "Augment: Will increase the working area of certain effects"
+			hide_dependency_lines: true
+			dependencies: [
+				"15584A5FBE8977FE"
+				"65EF295F1B0AFF83"
+			]
+			id: "5E73A7E9891E22B1"
+			tasks: [{
+				id: "130C47417B2A33C7"
+				type: "item"
+				item: "ars_nouveau:glyph_aoe"
+			}]
+		}
+		{
+			x: 32.0d
+			y: -15.0d
+			subtitle: "Effect: Will force all the airborne entities to drop straight down, this includes gliding/flying/levitating"
+			dependencies: ["65EF295F1B0AFF83"]
+			id: "0147DDEACF827BDC"
+			tasks: [{
+				id: "142353BE1B443199"
+				type: "item"
+				item: "ars_nouveau:glyph_gravity"
+			}]
+		}
+		{
+			x: 25.0d
+			y: -10.5d
+			subtitle: "Effect: Will make the targeted blocks turn into air for a limited amount of time"
+			dependencies: ["52593F6356D0C223"]
+			id: "335FFFBEACE98684"
+			tasks: [{
+				id: "3710CC27FE9ABA0A"
+				type: "item"
+				item: "ars_nouveau:glyph_intangible"
+			}]
+		}
+		{
+			x: 32.0d
+			y: -10.5d
+			subtitle: "Effect: Applies the Strenght Effect on the targeted entity"
+			dependencies: ["52593F6356D0C223"]
+			id: "35D5112B6A26D500"
+			tasks: [{
+				id: "11C11DF324A0F4C3"
+				type: "item"
+				item: "ars_nouveau:glyph_strength"
+			}]
+		}
+		{
+			x: 29.0d
+			y: -11.5d
+			subtitle: "Augment: Will cause multiple projectiles to be launched at once"
+			dependencies: ["52593F6356D0C223"]
+			id: "55DDAEE9C944147F"
+			tasks: [{
+				id: "3BAD3B8BE03BD4D3"
+				type: "item"
+				item: "ars_nouveau:glyph_split"
+			}]
+		}
+		{
+			x: 29.0d
+			y: -10.5d
+			subtitle: "Effect: Will summon a decoy of yourself which will hold/wear the items your own. This decoy will attract all the nearby hostile mobs"
+			dependencies: ["52593F6356D0C223"]
+			id: "16CBEB8F7F6E2950"
+			tasks: [{
+				id: "4793A091F33F60EF"
+				type: "item"
+				item: "ars_nouveau:glyph_summon_decoy"
+			}]
+		}
+		{
+			x: 30.0d
+			y: -10.5d
+			subtitle: "Effect: Will increase the damage taken from poison, wither or fire. It will also reduce the mana regen rate"
+			dependencies: ["52593F6356D0C223"]
+			id: "63FFECF5CF473E4C"
+			tasks: [{
+				id: "39242747A9C122EE"
+				type: "item"
+				item: "ars_nouveau:glyph_hex"
+			}]
+		}
+		{
+			x: 29.5d
+			y: -9.5d
+			subtitle: "Effect: Will summon 3 Vexxes that will assist you in combat for a limited amount of time"
+			dependencies: ["52593F6356D0C223"]
+			id: "5E54E1A1ED520BD4"
+			tasks: [{
+				id: "0FFEB95AEB1BAE70"
+				type: "item"
+				item: "ars_nouveau:glyph_summon_vex"
+			}]
+		}
+		{
+			x: 29.0d
+			y: -12.5d
+			subtitle: "Form: Will summon three projectiles that will orbit armound you and unleash effects when they hit any entity. This can be useful for defensive Spells"
+			dependencies: ["52593F6356D0C223"]
+			id: "1385DD18DFE23AF5"
+			tasks: [{
+				id: "76A8F51AEE50EF6B"
+				type: "item"
+				item: "ars_nouveau:glyph_orbit"
+			}]
+		}
+		{
+			x: 28.5d
+			y: -9.5d
+			subtitle: "Effect: Upon being casted on an entity, it will unlesh lightning. It will also give the Shocked Effect that will increase the damage given by a lightning bolt"
+			dependencies: ["52593F6356D0C223"]
+			id: "19327B8777800A17"
+			tasks: [{
+				id: "541F29A5F4D11A1B"
+				type: "item"
+				item: "ars_nouveau:glyph_lightning"
+			}]
+		}
+		{
+			x: 27.0d
+			y: -10.5d
+			subtitle: "Effect: Will allow the caster to teleport to a location. When used on self, it will teleport you forward. When used on an entity while you're holding a Warp Scroll in your offhand, that entitiy will be teleported to the location saved on the Warp Scroll"
+			dependencies: ["52593F6356D0C223"]
+			id: "40D0381343D8B8C8"
+			tasks: [{
+				id: "7C0915C634927D56"
+				type: "item"
+				item: "ars_nouveau:glyph_blink"
+			}]
+		}
+		{
+			x: 31.0d
+			y: -10.5d
+			subtitle: "Effect: This one is kinda special in the sense that it will act like an Augment. Upon teaching its target, it will create an area that will release Effects on the entities located in that said area"
+			dependencies: ["52593F6356D0C223"]
+			id: "0900E23C47EEE220"
+			tasks: [{
+				id: "24CE5FC72A518B3F"
+				type: "item"
+				item: "ars_nouveau:glyph_linger"
+			}]
+		}
+		{
+			x: 33.0d
+			y: -10.5d
+			subtitle: "Effect: Will summon Evoker Fangs in the direction that this effect was casted"
+			dependencies: ["52593F6356D0C223"]
+			id: "04717A85BF53BE17"
+			tasks: [{
+				id: "7D59BC0FEDAA6C62"
+				type: "item"
+				item: "ars_nouveau:glyph_fangs"
+			}]
+		}
+		{
+			x: 26.0d
+			y: -10.5d
+			subtitle: "Effect: Will allow a targeted entity to glide just like if they had an elytra"
+			dependencies: ["52593F6356D0C223"]
+			id: "1ECF91F65C08B77C"
+			tasks: [{
+				id: "0752EA9CE221D47D"
+				type: "item"
+				item: "ars_nouveau:glyph_glide"
+			}]
+		}
+		{
+			x: 28.0d
+			y: -10.5d
+			subtitle: "Effect: Will apply the Wither Effect on any targeted entity"
+			dependencies: ["52593F6356D0C223"]
+			id: "497529D212F4BDC6"
+			tasks: [{
+				id: "39D6ED71E2EE70E3"
+				type: "item"
+				item: "ars_nouveau:glyph_wither"
+			}]
+		}
+		{
+			x: 32.0d
+			y: 5.5d
+			subtitle: "The Bookwyrm Charm will allow you to turn a vanilla Lectern into a Bookwyrm Lectern which will summon a wield Bookwyrm to assist you with certain tasks. Left Click for more info"
+			description: [
+				"To summon a Bookwyrm, you'll have to use the Bookwyrm Charm on a Vanilla Lectern. This action will turn the Lectern into a Bookwyrm Lectern which will also summon a Bookwyrm which will help your with certain tasks."
+				""
+				"A Bookwyrm can receive Spell Parchments to cast Spells in the area surrounding their Lectern."
+				""
+				"If they die, or are dispelled, they will drop their charm, so you can summon them again. "
+				""
+				"Bookwyrms can cast spells that start with the Touch, or Projectile forms. Bookwyrms will only cast a spell if every spell effect will do something. For example, Harvest, will only be cast on a tree or fully grown crop. Grow will only be cast on crops that are not fully grown. You can change this behaviour by using a Dominion Wand."
+				""
+				"You can also use Bookwyrms to pickup items. Just make sure there's a chest next to their Lectern. Bookwyrms can also be used to place blocks and interact with the world with certain items. You may give an item or block to a Bookwyrm, and it will use the item directly from the chests adjacent to the lectern. The range of the Bookwyrm can be extended by using a Dominion Wand on the Bookwyrm's Lectern while sneaking."
+				""
+				"Bookwyrms can be dyed using white, black, blue, green, red, or purple dye."
+			]
+			dependencies: ["47C92313B4A81B87"]
+			id: "67B78B65458A4FFD"
+			tasks: [{
+				id: "057E221707169DE9"
+				type: "item"
+				item: "ars_nouveau:whelp_charm"
+			}]
+		}
+		{
+			x: 33.0d
+			y: 3.5d
+			subtitle: "The Carbuncle Charm will allow you to summon a Carbuncle at a Summoning Crystal to assist you with certain tasks. Left Click for more info"
+			description: [
+				"To summon a Carbuncle, you need to use a Carbuncle Charm on a Summoning Crystal."
+				""
+				"Carbuncles can be used to transfer items between inventories. They will also harvest fully grown Source Berries. They can be dyed with purple, red, yellow, orange, blue, or green dye."
+				""
+				"To bind a Curbuncle to place items into a chest, use a Dominion Wand on the Carbuncle, and then, on that chest."
+				""
+				"To bind a Carbuncle to take items from a chest, use the Dominion Wand on the chest, and then, on your Carbuncle."
+				""
+				"While looking at your Curbuncle, you'll be able to see from how many chests items are taken and to how many chests, items are delivered. You can reset your Carbuncle by shif right-clicking them with the Dominion Wand."
+				""
+				"Carbuncles can also accept filters. By placing Item Frames with items in them on a Chest, a Carbuncle will try to place only that item on the Chest. Now, what happens if you want more advanced filters? You can use Item Scrolls. There are 3 types of scrolls:"
+				""
+				"Allow - Will allow only the items listed on it to be placed. If used directly on a Carbuncle, it will interact only with those items."
+				""
+				"Deny - Will not allow the items listed on it to be placed in a chest. If used on a Carbuncle, it will pickup any items, but not the ones listed on that scroll."
+				""
+				"Mimic - Will allow only the items that are already present in a chest to be stored."
+				""
+				"To add items to Scrolls, you'll have to place them on a Scribe's Table and then, shift right-click with the items you want on that Scroll."
+				""
+				"Finally, you can tell your Carbuncles to use only certain paths. If you use a block on a Carbuncle, it will try to reach certain destinations only by walking on the delected block."
+			]
+			dependencies: [
+				"47C92313B4A81B87"
+				"3DF741B59720CC46"
+			]
+			id: "773119AB9DF15299"
+			tasks: [{
+				id: "7CFE401FB0A3F3CA"
+				type: "item"
+				item: "ars_nouveau:carbuncle_charm"
+			}]
+		}
+		{
+			x: 33.0d
+			y: 5.5d
+			subtitle: "The Wixie Charm will allow you to turn a vanilla Cauldron into a Wixie Cauldron that will summon a wield Wixie to assist you with certain tasks. Left Click for more info"
+			description: [
+				"To obtain the Wixie Charm, you'll need a Wixie Shard which will be obtained by performing Dispel on a Witch that has less and half of its health."
+				""
+				"Now, to summon a Wixie, just use the Charm on a vanilla Cauldron. This action will turn the Cauldron into a Wixie Cauldron that will also spawn a Wixie which can help you with automation."
+				""
+				"Wixies can automatically craft items for you at the cost of some Source. To select an item for crafting, use that item on the Wixie Cauldron. The Wixie will automatically select the recipe for crafting based on the inventories nearby. You don't have to specify the exact materials for the recipe. You cna stop the crafting process by applying a redstone signal to the Cauldron."
+				""
+				"Wixies can also automatically craft potions using nearby Potin Jars and items. Potions that require water will be supplied by the Wixie. Potions that require another potion as a base will be taken fron nearby Potion Jars. A Wixie will output 3 doses of a Potion into a nearby Potion Jar when the crafting process is complete. To begin, place down an empty Potion Jar, right-click the Cauldron with an Awkward Potion, and supply Nether Wart from a nearby chest."
+			]
+			dependencies: [
+				"47C92313B4A81B87"
+				"72088266D75E60F3"
+			]
+			id: "7FAD8A150FB7DEE3"
+			tasks: [{
+				id: "7C482F2B21B8E8BD"
+				type: "item"
+				item: "ars_nouveau:wixie_charm"
+			}]
+		}
+		{
+			x: 32.0d
+			y: 3.5d
+			subtitle: "The Sylph Charm will allow you to summon a Sylph at a Summoning Crystal to assist you with certain tasks. Left Click for more info"
+			description: [
+				"You can summon a Sylph by using a Sylph Charm on a Summoning Crystal."
+				""
+				"Sylphs can be used to produce materials such as wood, crops, seeds and flowers from the plants around them. "
+				""
+				"A chest and a Source Jar have to be placed next to the Summoning Crystal to allow the Sylph to work properly. The amount of resourced produced by the Sylph will depend on its happiness."
+				""
+				"To make a Syplh happy, a variety of blocks has to be present around its home. You can right click a Sylph with a block to see if it would like that block to be a part of its home. If you right click a Sylph with an empty hand, you'll receive some info about its happiness."
+				""
+				"You can also give a Sylph an Item Scroll: Deny to stop it from producing certain resources."
+			]
+			dependencies: [
+				"47C92313B4A81B87"
+				"71CEE2F143CE8BD0"
+			]
+			id: "4C04BC6F721F5353"
+			tasks: [{
+				id: "35AC55970433C95C"
+				type: "item"
+				item: "ars_nouveau:sylph_charm"
+			}]
+		}
+		{
+			x: 32.5d
+			y: 4.5d
+			subtitle: "The Drygmy Charm will allow you to turn a vanilla Mossy Cobblestone into a Drygmy Henge that will summon a Drygmy which will assist you with certain tasks. Left Click for more info"
+			description: [
+				"The Drygmy can be summoned by using a Drygmy Charm on a vanilla Mossy Cobblestone. This action will turn the Cobblestone into a Drygmy Henge which will also summon a Drygmy that can perform certain tasks."
+				""
+				"Drygmys can produce Experiance Gems. It can also produce items from all the nearby mobs as if they were slain, however, this process relies on your Drygmy's happiness. To make a Drygmy happy, you need to have a decent amount of entities near the Drygmy's home point. You receive a happiness bonus for each unique type of entity."
+				""
+				"To start working with Drygmys, you need to have a chest and a Source Jar placed next to the Drygmy Henge. You can summon more Dygmys by using more Charms on the Henge. Each Drygmy working around will contribute to a faster process. Once maximum process has been reached, the Henge will generate items and experience gems and will deposit them into the nearby inventories. Source will be used each time this process is finished. The number of resulting items and experience gems is equal to the Drygmy's happiness."
+			]
+			dependencies: [
+				"01C35754A9AEF761"
+				"1EC6B6890FFF5733"
+			]
+			id: "3453A90ADAC3E7B6"
+			tasks: [{
+				id: "316FECD98057FA18"
+				type: "item"
+				item: "ars_nouveau:drygmy_charm"
+			}]
+		}
+		{
+			x: 30.5d
+			y: 6.0d
+			shape: "gear"
+			subtitle: "Spell Turrets work similar to a vanilla Dispancer. They can take spells from an inscribed piece of Spell Parchment. The spells can only have a Touch or a Projectile form. Upon receiving a redstone signal, the Turret will perform the spell at the cost of some Source from a nearby Source Jar. These can also be used to collect items if they have a chest next to them"
+			dependencies: ["0FC87F7225551D24"]
+			id: "337891F69C9E8624"
+			tasks: [{
+				id: "700C1BCB75803243"
+				type: "item"
+				item: "ars_nouveau:basic_spell_turret"
+			}]
+		}
+		{
+			x: 34.5d
+			y: 6.0d
+			shape: "gear"
+			subtitle: "This Turret will cast spells at half of theyr usual Source cost"
+			dependencies: ["0FC87F7225551D24"]
+			id: "6869A4127DF90BE5"
+			tasks: [{
+				id: "7831885822442712"
+				type: "item"
+				item: "ars_nouveau:spell_turret"
+			}]
+		}
+		{
+			x: 32.5d
+			y: -3.5d
+			shape: "gear"
+			subtitle: "The Potion Flask will be made using an Alfglass Flask. While it is NOT a direct upgrade to the Alfglass Flask, it will allow you to store 8 vanilla potions, so you can use them later"
+			dependencies: ["028B8D773D1F3FC6"]
+			id: "5D18C6546C1EDF44"
+			tasks: [{
+				id: "6CCD3E3642026FCA"
+				type: "item"
+				item: "ars_nouveau:potion_flask"
+			}]
+		}
+		{
+			x: 31.5d
+			y: -3.5d
+			shape: "gear"
+			subtitle: "A modified version of the Potion Flask. The potions stored in it will have + 50% more duration"
+			dependencies: ["5D18C6546C1EDF44"]
+			id: "12B9AC4E211453E3"
+			tasks: [{
+				id: "2003EBEDF02FA343"
+				type: "item"
+				item: "ars_nouveau:potion_flask_extend_time"
+			}]
+		}
+		{
+			x: 33.5d
+			y: -3.5d
+			shape: "gear"
+			subtitle: "A modified version of the Potion Flask. The potions stored in it will have an increased level, but also a decreased duration"
+			dependencies: ["5D18C6546C1EDF44"]
+			id: "501FF113A5A0B590"
+			tasks: [{
+				id: "73CB400F68726601"
+				type: "item"
+				item: "ars_nouveau:potion_flask_amplify"
+			}]
+		}
+		{
+			x: 30.5d
+			y: -1.0d
+			shape: "gear"
+			subtitle: "Occasionally, this Belt will grant a random positive effect for a short duration"
+			dependencies: ["47C92313B4A81B87"]
+			id: "79E5AB37FAD09062"
+			tasks: [{
+				id: "53C93D38B2DCFCD5"
+				type: "item"
+				item: "ars_nouveau:belt_of_unstable_gifts"
+			}]
+		}
+		{
+			x: 34.5d
+			y: -2.0d
+			shape: "gear"
+			subtitle: "This Ring will reduce the amount of mana used to cast a Spell. It will also provide a small bonus in maximum mana and mana regen"
+			dependencies: ["47C92313B4A81B87"]
+			id: "0A7C3858099D3FB9"
+			tasks: [{
+				id: "46DD92BD8F77549B"
+				type: "item"
+				item: "ars_nouveau:ring_of_lesser_discount"
+			}]
+		}
+		{
+			x: 34.5d
+			y: -1.0d
+			shape: "gear"
+			subtitle: "An upgraded version of Ring of Lesser Discount. This one will provide a slightly larger discount over its predecessor"
+			hide_dependency_lines: true
+			dependencies: [
+				"47C92313B4A81B87"
+				"0A7C3858099D3FB9"
+			]
+			id: "26D2ACE921F335E6"
+			tasks: [{
+				id: "2ABAC10BB908A572"
+				type: "item"
+				item: "ars_nouveau:ring_of_greater_discount"
+			}]
+		}
+		{
+			x: 30.5d
+			y: -2.0d
+			shape: "gear"
+			subtitle: "This Amulet will increase the mana regeneration of the wearer by a moderate amount"
+			dependencies: ["47C92313B4A81B87"]
+			id: "643DE56C6F388A9A"
+			tasks: [{
+				id: "6B7CB36244A9AAA4"
+				type: "item"
+				item: "ars_nouveau:amulet_of_mana_regen"
+			}]
+		}
+		{
+			x: 34.5d
+			y: 0.5d
+			shape: "gear"
+			subtitle: "Secondary Mana Generator: The Jar of Voiding can delete items on pickup to give you some mana in return. Shift right-click the jar to turn in on and right-click the jar with an item in your off-hand to select that item to be deleted by the jar"
+			dependencies: [
+				"3367D3C501792C05"
+				"47C92313B4A81B87"
+			]
+			id: "181E2AC078B0120A"
+			tasks: [{
+				id: "1C81350312C339B9"
+				type: "item"
+				item: "ars_nouveau:void_jar"
+			}]
+		}
+		{
+			x: 30.5d
+			y: 0.5d
+			shape: "gear"
+			subtitle: "The Mana Fireflies: After right-clikcing with it, it will summon a light source that will follow you as long as you have the Jar in your inventory"
+			dependencies: ["47C92313B4A81B87"]
+			id: "1358CAC8A64674FC"
+			tasks: [{
+				id: "3C89AA3350F87161"
+				type: "item"
+				item: "ars_nouveau:jar_of_light"
+			}]
+		}
+		{
+			x: 30.5d
+			y: 2.0d
+			shape: "gear"
+			subtitle: "The Potion Jar can be used to store up to 100 potions. You can take out potion from the Jar, using an Empty Bottle or a Potion Flask. These Jars can be locked using a Dominion Wand. Locked Jars can receive only the potion they're locked to"
+			dependencies: ["590DF4A5716D8802"]
+			id: "2CCCD9D93A6B445A"
+			tasks: [{
+				id: "425483B92095C52F"
+				type: "item"
+				item: "ars_nouveau:potion_jar"
+			}]
+		}
+		{
+			x: 30.5d
+			y: 3.0d
+			shape: "gear"
+			subtitle: "Ever wanter multiple potion effects in just one Bottle? Then, the Potion Melder is for you. This contraption can be used to create potions with mixed effects. The Potion Melder needs Source in order to operate and 3 Potion Jars attached to it, 2 on its sides and 1 bellow it. The resulting potions will be located in the Potion Jar placed beneath the Melder"
+			dependencies: [
+				"590DF4A5716D8802"
+				"028B8D773D1F3FC6"
+			]
+			id: "06123F706EAA4629"
+			tasks: [{
+				id: "3A175D64D2700776"
+				type: "item"
+				item: "ars_nouveau:potion_melder"
+			}]
+		}
+		{
+			x: 34.5d
+			y: 3.0d
+			shape: "gear"
+			subtitle: "Transfering Spells. Left Click for more info"
+			description: [
+				"The Scribe's Table is usedmainly to copy your spells to a new book, wither as a backup, or as a way to share with your friends. "
+				""
+				"To copy your spells, simply place a Spell Book on the Table, then, while sneaking, use another Spell Book on the Table. "
+				""
+				"The Scribe's Table can also be used to copy specific Spells to Spell Parchments which will be used to teach your servents how to cast them. To write a Spell on the Parchment, place the Parchment on the Table, select your Spell fron your Spell Book and then, while sneaking, right-click the Table."
+			]
+			dependencies: ["7EF155944458998F"]
+			id: "1E170DE9458A56E0"
+			tasks: [{
+				id: "064DAA6FD8014264"
+				type: "item"
+				item: "ars_nouveau:scribes_table"
+			}]
+		}
+		{
+			title: "Relays"
+			x: 34.5d
+			y: 2.0d
+			shape: "gear"
+			subtitle: "Like Mana Spreads, but different. Left Click for more info"
+			description: [
+				"Enables the transport of source between Source Jars and other Relays. Source can be pulled from a Jar by using the Dominion Wand on the Jar, and then, on the Relay."
+				""
+				"The Dominion Wand can then be used on the Relay, then on other targets to send the Source wherever it is needed."
+				""
+				"Shift Right-Click on the Relay to clear all connections."
+				""
+				"Relays have a range of 30 blocks."
+				""
+				"The Default Relay has 3 alternate versions. These include the Splitter Relay, the Warper Relay and the Depositor Relay."
+				""
+				"The Splitter Relay will support taking and transferring to multiple Jars at once. It has a larger through-put then the default Relay and it will split this through-put to multiple Jars."
+				""
+				"The Warper Relay is a long range Relay. It can teleport Source to distances larger then 30 blocks, but there might be a slight Source loss for this."
+				""
+				"Lastly, the Depositor Relay will place the Source sent to it, into the Jars located in the 5 blocks area next to it."
+			]
+			dependencies: ["47C92313B4A81B87"]
+			id: "5A9CFA9ED2344F8F"
+			tasks: [
+				{
+					id: "186B84C2867B7FEB"
+					type: "item"
+					item: "ars_nouveau:arcane_relay"
+				}
+				{
+					id: "1E8D97BE90599E87"
+					type: "item"
+					item: "ars_nouveau:arcane_relay_splitter"
+				}
+				{
+					id: "5BFD5503C44E4204"
+					type: "item"
+					item: "ars_nouveau:relay_warp"
+				}
+				{
+					id: "3A5F9556AADDC8F6"
+					type: "item"
+					item: "ars_nouveau:relay_deposit"
+				}
+			]
+		}
+		{
+			x: 24.0d
+			y: 1.0d
+			shape: "gear"
+			subtitle: "Wanna summon animals/shulkers/villagers? The Cocoon of Caprice will turn into a baby animal after two minutes since it was placed. 95% of the time it will  into a farm animal. 5% of the time it will become a Horse, a Wolf or an Ocelot. Up to 20 Chorus Fruit can be given to the cocoon to give it a chance to spawn a Shulker instead of an animal. Emeralds will cause it to spawn a baby Villager instead. Each item will increase the chance by 5%"
+			dependencies: ["0FC87F7225551D24"]
+			id: "1DB382ACA5B8D996"
+			tasks: [{
+				id: "48A39B0CD8F67B98"
+				type: "item"
+				item: "botania:cocoon"
+			}]
+		}
+		{
+			x: 25.5d
+			y: 1.0d
+			shape: "gear"
+			subtitle: "Ever wanted a Sky Island, but were too lazy to make one? Left Click for more info"
+			description: [
+				"The Shard of Laputa has to be used on a block. It will start lifting the nearby ground 42 blocks up, slowly creating a floating island."
+				""
+				"There are 20 varieties of the shard, each with higher Shard Power, up to Shard Power XX."
+				""
+				"An island created by the level I shard has a radius of 14 blocks. Each additional level of Shard Power increases the radius by 1 block, up to a maximum of a radius of 33 blocks."
+				""
+				"In terms of the dimensions the lifted island would take up, a level I shard will lift a sphere of dimensions 27x27x27 blocks, while a level XX shard will produce a sphere of dimensions 65x65x65."
+				""
+				"Craft the Shard with Gaia Spirits to bring them to the next level."
+			]
+			dependencies: ["398B882BA973C054"]
+			id: "6A2D906D8E63E2EE"
+			tasks: [{
+				id: "551B655C26A29242"
+				type: "item"
+				item: "botania:laputa_shard"
+			}]
+		}
+		{
+			x: 30.0d
+			y: -37.5d
+			shape: "gear"
+			subtitle: "The Material StoneWork Factory can be used to produce different types of building materials out of lava and water. It can also be used to obtained some compressed versions of some blocks"
+			dependencies: ["29771342B7D46B9F"]
+			id: "636692113C51ECF6"
+			tasks: [{
+				id: "5D21FC57E2392994"
+				type: "item"
+				item: "industrialforegoing:material_stonework_factory"
+			}]
+		}
+		{
+			x: 30.5d
+			y: -34.0d
+			shape: "gear"
+			subtitle: "Place that liquid in my bucket. Left Click for more info"
+			description: [
+				"The Fluid Encapsulator is a machine that can infuse certain items/blocks with various liquids. It can also be used to fill containers, such as buckets with various liquids."
+				""
+				"This machine will be essential in the production process of Flux-Infused materials, XP bottles and, of course, Fluix Pearls."
+				""
+				"This machine can receive augments for better processing speeds, less RF/FE consumption and more."
+			]
+			dependencies: ["1D2B8C95DB0C57C1"]
+			id: "2EB2C0CB138E095B"
+			tasks: [{
+				id: "4E51F1BC753E352B"
+				type: "item"
+				item: "thermal:machine_bottler"
+			}]
+		}
+		{
+			x: 30.5d
+			y: -38.5d
+			shape: "gear"
+			subtitle: "Just like regular Glass, however, it will not allow light to pass through it. Can be very useful in mob farms to view what's happening inside"
+			dependencies: ["24CB73B29CB08300"]
+			id: "6EE1EF4323B3D6A3"
+			tasks: [{
+				id: "7C151A7DB1098958"
+				type: "item"
+				item: "mob_grinding_utils:tinted_glass"
+			}]
+		}
+		{
+			title: "The Xp Drain"
+			x: 27.5d
+			y: -38.5d
+			shape: "gear"
+			subtitle: "The Xp Drain is a block that can suck all the xp you currently have on you. Just place it down, and step on it. If you have any experience levels, they'll be stored in the drain's internal tank. From here, you can extract it with pipes, buckets, bottles, anything you like"
+			dependencies: [
+				"6697085DBFFEB685"
+				"3BF276B20E0F4B76"
+				"6ACF30B2CE835291"
+				"7EF155944458998F"
+			]
+			id: "74DE8FFF6F3E6063"
+			tasks: [{
+				id: "28CD1CFA06277242"
+				type: "item"
+				item: "mob_grinding_utils:tank_sink"
+			}]
+		}
+		{
+			title: "The Resolute Ivy"
+			x: 25.5d
+			y: 2.0d
+			shape: "gear"
+			subtitle: "The Resolute Ivy can be combined with any item to add one use of the SoulBound effect to it. On short, if you die with that item in your inventory, you'll keep it when you respawn"
+			dependencies: ["3367D3C501792C05"]
+			id: "13037373EEB763A2"
+			tasks: [{
+				id: "67C796BD2CD3379E"
+				type: "item"
+				item: "botania:keep_ivy"
+			}]
+		}
+		{
+			x: 29.0d
+			y: -35.5d
+			shape: "heart"
+			subtitle: "Can be added to any Tool/Armor from Tinker's Construct for an additional Ability Slot. These, unlike other modifiers can be stacked forever"
+			dependencies: [
+				"4946B5DA53086A8F"
+				"36367A18678E09A3"
+				"5706BD54F9033CE8"
+			]
+			size: 1.5d
+			id: "66F049A2E118EAEA"
+			tasks: [{
+				id: "7D5556913C49683D"
+				type: "item"
+				item: {
+					id: "tconstruct:creative_slot"
+					Count: 1b
+					tag: {
+						slot: "abilities"
+					}
+				}
+			}]
+		}
+		{
+			x: 31.0d
+			y: -35.5d
+			shape: "heart"
+			subtitle: "Can be added to any Armor from Tinker's Construct for an additional Defense Slot. These, unlike other modifiers can be stacked forever"
+			dependencies: [
+				"4946B5DA53086A8F"
+				"293286F91BE5E497"
+				"5706BD54F9033CE8"
+				"36367A18678E09A3"
+			]
+			size: 1.5d
+			id: "07C97422837C92CB"
+			tasks: [{
+				id: "6047D57EE7CA098F"
+				type: "item"
+				item: {
+					id: "tconstruct:creative_slot"
+					Count: 1b
+					tag: {
+						slot: "defense"
+					}
+				}
+			}]
+		}
+		{
+			x: 27.0d
+			y: -35.5d
+			shape: "heart"
+			subtitle: "Can be added to any Tool/Armor from Tinker's Construct for an additional Upgrade Slot. These, unlike other modifiers can be stacked forever"
+			dependencies: [
+				"4946B5DA53086A8F"
+				"5706BD54F9033CE8"
+				"36367A18678E09A3"
+			]
+			size: 1.5d
+			id: "387362E3FF394399"
+			tasks: [{
+				id: "58D3198D286E5E35"
+				type: "item"
+				item: {
+					id: "tconstruct:creative_slot"
+					Count: 1b
+					tag: {
+						slot: "upgrades"
+					}
+				}
+			}]
+		}
+		{
+			x: 29.0d
+			y: -48.0d
+			shape: "gear"
+			subtitle: "Why does a block have only 6 sides? :/ Left Click for more info"
+			description: [
+				"The Entangled Block can be used to extend the functionality of other blocks further. Usually, a block/machine has only 6 sides, but by connecting that block/machine to this masterpiece, you can add 6 more sides to your machine, and even move it to other locations. They have infinite range. Less cables; more wireless!"
+				""
+				"Be aware! The Entangled Block does NOT work between dimensions!"
+			]
+			dependencies: ["20066A1C19E42D20"]
+			id: "4FFEA4DDED8B401D"
+			tasks: [{
+				id: "6F975DADC25C1BAA"
+				type: "item"
+				item: {
+					id: "entangled:block"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [
+				{
+					id: "16A815AA494E32C3"
+					type: "item"
+					item: {
+						id: "entangled:item"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "5E56BAE8D3952FB3"
+					type: "loot"
+					table_id: 7176426831663151036L
+				}
+			]
+		}
+	]
+}

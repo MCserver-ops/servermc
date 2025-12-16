@@ -1,0 +1,2089 @@
+{
+	id: "53C7F6D91C262AFD"
+	group: "08EB5BB8DBF33B74"
+	order_index: 5
+	filename: "useful_items_4"
+	title: "Useful Items - 4"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 5.0d
+			y: 2.5d
+			shape: "heart"
+			subtitle: "The Dark Matter Pedestal is a utility device added by ProjectE. It can hold a ProjectE utility item, such as the Repair Talisman, and asymmetrically project the effect in a 10x10x10 area centered around the pedestal's upper southeast corner. An item can be placed on the pedestal by Right Clicking it. Right Clicking it with an empty hand toggles the effects on or off. When the pedestal is active, small flames appear around the base. Items placed on the Dark Matter Pedestal can be removed by Left Clicking on the Pedestal"
+			dependencies: ["200CAD7C99709A33"]
+			id: "4FEC58137D6587D5"
+			tasks: [{
+				id: "72452D0F9B80AE05"
+				type: "item"
+				item: "projecte:dm_pedestal"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 2.5d
+			shape: "gear"
+			subtitle: "The Interdiction Torch is an item added by ProjectE. It will protect an area of 8x8 blocks around it from hostile mobs. However, Arrows and Potions may still pass through this protective area"
+			dependencies: ["62B77E823E7C96CE"]
+			id: "6D5D7BC9AEBFBDAC"
+			tasks: [{
+				id: "646DA52381BC002B"
+				type: "item"
+				item: "projecte:interdiction_torch"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 2.5d
+			shape: "gear"
+			subtitle: "The Repair Talisman is an item added by ProjectE. Like its name might suggest, it has the ability to repair items while it is being held in your inventory. You can also place it in an Alchemical Chest to use its repairing properties, but regular Chests won't work. Finally, the Talisman can also be placed on a Dark Matter Pedestal and it will repair the items from the inventory of the player that's nearby"
+			dependencies: ["75EB00BEED4C74E3"]
+			id: "641C8CCE4D66897F"
+			tasks: [{
+				id: "322CD48D1325E30D"
+				type: "item"
+				item: {
+					id: "projecte:repair_talisman"
+					Count: 1b
+					ForgeCaps: {
+						Parent: { }
+					}
+				}
+			}]
+		}
+		{
+			x: 2.5d
+			y: -3.0d
+			shape: "gear"
+			subtitle: "A useful, powerful Magnet. Left Click for more info"
+			description: [
+				"The Black Hole Band is a powerful Magnet added by ProjectE."
+				""
+				"By Right Clicking with it, all the dropped items nearby will be attracted to you. If it is placed inside of an Alchemical Chest, or an Alchemical Bag, all the dropped items nearby will be attracted to that Alchemical Chest, or Alchemical Bag."
+				""
+				"Right Clicking a Liquid with it, will void the Liquid."
+				""
+				"While it is on a Dark Matter Pedestal, it will suck all the nearby dropped items and it will drop them into any adjent inventories."
+			]
+			dependencies: ["43F037B226EDCF07"]
+			id: "46317A542329F356"
+			tasks: [{
+				id: "11CE691186462944"
+				type: "item"
+				item: {
+					id: "projecte:black_hole_band"
+					Count: 1b
+					ForgeCaps: {
+						Parent: { }
+					}
+				}
+			}]
+		}
+		{
+			x: 7.5d
+			y: -3.0d
+			shape: "gear"
+			subtitle: "The Arrow Machine Gun. Left Click for more info"
+			description: [
+				"The Archangel's Smite is an alchemical power item that consumes Redstone/Glowstone to produce massive quantities of arrows. "
+				""
+				"Unlike an ordinary bow, these arrows have the power to pass through the localized time field produced by a Watch of Flowing Time. In addition to this, these arrows are created rapidly and they should target the mob which is closest to them (given that they're fired very close to that mob)."
+				""
+				"While it's on a Dark Matter Pedestal, it will constantly start to shoot arrows at the mobs nearby."
+			]
+			dependencies: ["43F037B226EDCF07"]
+			id: "414B03131E19C58D"
+			tasks: [{
+				id: "0562D0D1872E2BAC"
+				type: "item"
+				item: {
+					id: "projecte:archangel_smite"
+					Count: 1b
+					ForgeCaps: {
+						Parent: { }
+					}
+				}
+			}]
+		}
+		{
+			x: 7.5d
+			y: -4.0d
+			shape: "gear"
+			subtitle: "Praying to Ceres. Left Click for more info"
+			description: [
+				"The Harvest Goddess Band is a tool from ProjectE. It is related to accelerated plant growth and other fertility utilities."
+				""
+				"While holding plants/seeds in your inventory, Right Clicking with this Ring, will plant them nearby. For example, Sugar Cane will be planted on the nearest position available. Seeds will be planted on the neaby farmland ."
+				""
+				"The 'Change Mode' key will make the Ring harvest all the nearby crops/grass/leaves."
+				""
+				"It will consume EMC from Redstone/Glowstone or a Klein Star to accelerate the growth of all the nearby crops."
+				""
+				"When it is placed on a Dark Matter Pedestal, the growth of the Nearby Plants, will be accelerated. It will also harvest the Grown Crops."
+			]
+			dependencies: ["43F037B226EDCF07"]
+			id: "50272D9E075C87A5"
+			tasks: [{
+				id: "338D878E5BCC8585"
+				type: "item"
+				item: {
+					id: "projecte:harvest_goddess_band"
+					Count: 1b
+					ForgeCaps: {
+						Parent: { }
+					}
+				}
+			}]
+		}
+		{
+			x: 3.5d
+			y: -5.0d
+			shape: "gear"
+			subtitle: "Let the Flames out. Left Click for more info"
+			description: [
+				"The Ring of Ignition is a tool from ProjectE. It can be used to launch fireballs, using the 'Fire Projectile' key, which will light a 3x3x3 area on fire."
+				""
+				"The Ring can be activated using the 'Change Mode' key. It will light up all the blocks near your position. "
+				""
+				"It also has 2 passive abilities. While walking through Fire, it will extinguish the fire sources in front of you. It will also make you immune to fire damage and it will extinguish you instantly."
+				""
+				"While it's on a Dark Matter Pedestal, it will ignite the mobs nearby."
+			]
+			dependencies: ["43F037B226EDCF07"]
+			id: "5075EB501B33F0DD"
+			tasks: [{
+				id: "04F84C59EA00FB27"
+				type: "item"
+				item: {
+					id: "projecte:ignition_ring"
+					Count: 1b
+					ForgeCaps: {
+						Parent: { }
+					}
+				}
+			}]
+		}
+		{
+			x: 6.5d
+			y: -5.0d
+			shape: "gear"
+			subtitle: "Sub Zero. Left Click for more info"
+			description: [
+				"The Zero Ring is a tool from ProjectE. It is related to cold, icy things. When Right Clicking with it, the Ring will place snow near your position and it will also freeze Water and Lava, turning it into Obsidian."
+				""
+				"The Ring can be charged using the 'Charge' key. Using the 'Charge' key while sneaking, will discharge the Ring. Certain levels of Charge, will make the Ring's Right Click feature be more powerful."
+				""
+				"By pressing the 'Change Mode' key, the Ring will start to freeze the entire area around your position."
+				""
+				"When placed on a Dark Matter Pedetal, the Ring will extinguish entities and will freeze the area nearby."
+			]
+			dependencies: ["43F037B226EDCF07"]
+			id: "11C64D9669315DFF"
+			tasks: [{
+				id: "7AE8E9DB86D1293C"
+				type: "item"
+				item: {
+					id: "projecte:zero_ring"
+					Count: 1b
+					tag: { }
+					ForgeCaps: {
+						Parent: { }
+					}
+				}
+			}]
+		}
+		{
+			x: 2.5d
+			y: -4.0d
+			shape: "gear"
+			subtitle: "The Creative Flight Ring. Left Click for more info"
+			description: [
+				"The Swiftwolf's Rending Gale is a power ring from ProjectE. The Swiftwolf's Rending Gale allows the player the ability to fly without Creative Mode, create repulsive force fields, or shoot projectiles while consuming EMC from items in the inventory or from a charged Klein Star. "
+				""
+				"Pressing the 'Fire Projectile' key, will fire a projectile which will launch mobs into the air, if you have Redstone in your inventory. If you have Glowstone, you'll launch projectiles with will summon a lightning bolt. While holding Redstone/Glowstone in your inventory, you should be able to fly like you're in Creative mode."
+				""
+				"Pressing 'Spacebar' twice will allow you to fall down. Right Click abilities are still available. If you open your inventory and remove the Swiftwolf's Rending Gale while flying, you will fall. It will consume 64 EMC from a Klein Star every 6 seconds while flying."
+				""
+				"Passive Effect: With Swiftwolf's Rending Gale in the hotbar, the player is immune to fall damage. Also, the player will not be able to \"trample\" tilled soil with the Rending Gale in the hotbar unless a Crop has been placed. These effects also work from the Curios slot."
+				""
+				"Passive Effect: If you press Right Click, a mob repulsive field will be created around you. This will keep all the mobs away from you."
+			]
+			dependencies: ["43F037B226EDCF07"]
+			id: "69F5CABBF5083F00"
+			tasks: [{
+				id: "552FA6447926E771"
+				type: "item"
+				item: {
+					id: "projecte:swiftwolf_rending_gale"
+					Count: 1b
+					ForgeCaps: {
+						Parent: { }
+					}
+				}
+			}]
+		}
+		{
+			x: 3.5d
+			y: -1.0d
+			shape: "gear"
+			subtitle: "The Body Stone can be used to keep your hunger bar full at all times. The 'Change Mode' key can be used to activate the stone. It will fill your hunger bar by consuming 2 redstone from your inventory for each 2 hunger points. When placed on a Dark Matter Pedestal, it will fill the nearby players's hunger bars"
+			dependencies: ["012BA0505E1EEA5D"]
+			id: "6F0CCBB8640CB3F6"
+			tasks: [{
+				id: "4B908BD91DADEC74"
+				type: "item"
+				item: {
+					id: "projecte:body_stone"
+					Count: 1b
+					ForgeCaps: {
+						Parent: { }
+					}
+				}
+			}]
+		}
+		{
+			x: 6.5d
+			y: -1.0d
+			shape: "gear"
+			subtitle: "The Soul Stone can be used to give yourself health in tight situations. The 'Change Mode' key can be used to activate the stone. It will heal you by consuming 2 redstone from your inventory for each 2 health points. When placed on a Dark Matter Pedestal, it will heal the nearby players"
+			dependencies: ["012BA0505E1EEA5D"]
+			id: "04230EBC75FCF4F8"
+			tasks: [{
+				id: "42A7FE97C03A5BFF"
+				type: "item"
+				item: {
+					id: "projecte:soul_stone"
+					Count: 1b
+					ForgeCaps: {
+						Parent: { }
+					}
+				}
+			}]
+		}
+		{
+			x: 5.0d
+			y: -2.0d
+			shape: "gear"
+			subtitle: "The Mind Stone is a essencially a limitless Storage for XP. It can be activated using the 'Change Mode' key. Once activated, it will rapidely suck all of your XP levels. The XP levels can be retrived by Right Clicking with the Stone. When it's placed on a Dark Matter Pedestal, it will suck all the nearby XP orbs"
+			dependencies: ["012BA0505E1EEA5D"]
+			id: "4DB2ADC122FD0B66"
+			tasks: [{
+				id: "6D689DACA43737E2"
+				type: "item"
+				item: {
+					id: "projecte:mind_stone"
+					Count: 1b
+					ForgeCaps: {
+						Parent: { }
+					}
+				}
+			}]
+		}
+		{
+			x: 5.0d
+			y: -0.5d
+			shape: "gear"
+			subtitle: "The Life Stone is a combination of the Body Stone and the Soul Stone. It will both heal you and keep your hunger bar filled, as long as you have redstone in your inventory to keep it running. When placed on a Dark Matter Pedestal, it will heal the nearby players and will also keep their hunger bars filled"
+			dependencies: [
+				"6F0CCBB8640CB3F6"
+				"04230EBC75FCF4F8"
+			]
+			id: "2535A1666F34DCB3"
+			tasks: [{
+				id: "085D9071F57B4AEE"
+				type: "item"
+				item: {
+					id: "projecte:life_stone"
+					Count: 1b
+					ForgeCaps: {
+						Parent: { }
+					}
+				}
+			}]
+		}
+		{
+			x: 2.5d
+			y: -2.0d
+			shape: "gear"
+			subtitle: "Infinite Lava Bucket. Left Click for more info"
+			description: [
+				"The Volcanite Amulet is a powerful tool that can easily cause much destruction if not used carefully. Similar to the Evertide Amulet, the Volcanite Amulet is a more costly tool. It is multi-use items, and has many possible applications."
+				""
+				"The Volcanite Amulet has four pertinent powers:"
+				""
+				"- Pressing the 'Fire Projectile' key, will launch a volcanite projectile, a slow-moving lava bolt. If it comes near any water block, it will evaporate that block instantly. This function is free. If it comes in contact with the sky while raining, however, it will halt precipitation, and consume 1 redstone dust. Upon striking the ground, naturally, the Volcanite projectile will use 1 redstone dust and produce lava."
+				""
+				"- Upon striking a foe or creature, it will set that creature on fire, doing a strong hit of fire damage and burning for an extended duration at the cost of 2 redstone dust. If the alchemist has no reagents, however, the Volcanite will do a meager single point of damage, and the fire will flicker only briefly."
+				""
+				"- When right clicking any block face, the amulet will consume 1 redstone dust and create a block of lava. The Volcanite can also be charged to a max of 4 levels and produce a large row or column of lava, each block consuming redstone depending on how many lava blocks were created. This is useful for laying out large sections of obsidian-fodder or collecting it for geothermal generators."
+				""
+				"- Similar to the Evertide, the Volcanite has the power to \"walk on lava\", and as long as it is equipped, it grants lava and fire immunity (see notes below if using Aether mod) - To go down in lava press \"shift\" to go up simply press \"space\" . It also protects you from lightning, however being struck is still a very rare occurrence."
+				""
+				"While it's on a Dark Matter Pedestal, it will prevent rain and snow storms."
+			]
+			dependencies: ["200CAD7C99709A33"]
+			id: "1DDDA07FEC7F4715"
+			tasks: [{
+				id: "2D2C5B414F3A057B"
+				type: "item"
+				item: {
+					id: "projecte:volcanite_amulet"
+					Count: 1b
+					ForgeCaps: {
+						Parent: { }
+					}
+				}
+			}]
+		}
+		{
+			x: 7.5d
+			y: -2.0d
+			shape: "gear"
+			subtitle: "Infinite Water Bucket. Left Click for more info"
+			description: [
+				"The Evertide Amulet is similar to the Volcanite Amulet. It is a powerful tool that can easily make a mess if not used cautiously. The Evertide Amulet has three pertinent powers:"
+				""
+				"- Pressing the 'Fire Projectile' key will shoot projectiles spawns water remotely at whatever block it collides with, for free. If the projectile passes near lava blocks of any kind, it will cool them as though struck by water. If fired at the sky, however, the Evertide will cause it to start raining."
+				""
+				"- Right Clicking will place a single block of water at your target. Right clicking while charged, instead, will place a very large quantity of water at your target. Aiming straight down while doing so will create a square pool. Aiming up, instead, produces a towering ground-fountain from the earth."
+				""
+				"- While the Evertide is equipped you won't be able to drown in water. You'll also be able to walk on water."
+				""
+				"While it's on a Dark Matter Pedestal, the Amulet will create rain and snow storms."
+			]
+			dependencies: ["200CAD7C99709A33"]
+			id: "00B3F9F598B577C3"
+			tasks: [{
+				id: "4E92655BF0D3FE36"
+				type: "item"
+				item: {
+					id: "projecte:evertide_amulet"
+					Count: 1b
+					ForgeCaps: {
+						Parent: { }
+					}
+				}
+			}]
+		}
+		{
+			x: 5.0d
+			y: -5.5d
+			shape: "heart"
+			subtitle: "Time Dilation in your POCKET! Left Click for more info"
+			description: [
+				"The Watch of Flowing Time is an alchemical power item added by ProjectE."
+				""
+				"It can speed up machines around you at a set rate and slow down mobs at the same time. In addition to that, it grants you the ability to speed up or to reverse the speed of the sun and the moon. "
+				""
+				"Note that, same as with other ProjectE items, this one can be charged too. The Watch's ability to affect the sun and the moon is determined by the amount of charge pressent in the Watch."
+			]
+			dependencies: ["200CAD7C99709A33"]
+			id: "2DFC47EA102983DF"
+			tasks: [{
+				id: "3075B959D012D9A6"
+				type: "item"
+				item: {
+					id: "projecte:watch_of_flowing_time"
+					Count: 1b
+					tag: { }
+					ForgeCaps: {
+						Parent: { }
+					}
+				}
+			}]
+			rewards: [{
+				id: "5E5DAFE7553D045A"
+				type: "loot"
+				table_id: 3966812906621148304L
+			}]
+		}
+		{
+			x: 5.0d
+			y: 1.5d
+			shape: "heart"
+			subtitle: "Shaping the World III. Left Click for more info"
+			description: [
+				"The Mercurial Eye, powered by a Klein Star, turns raw EMC into your choice of block and places nicely stacked walls of the target block or smooth walls. If you choose, the Mercurial Eye can transmute the target block into a block of your choice using the existing block's EMC to defray the cost of replacing."
+				""
+				"The Mercurial Eye has the power to build walls straight from the energy source of a Klein Star. To change the area covered by the Eye, press the 'Charge' key. To open its GUI, press the 'Extra Function' key. Modes can be changed by pressing the 'Change Mode' key. The Eye can be discharged by pressing the 'Charge' key while holding 'Shift'."
+				""
+				"Upon opening the GUI, you will see a target slot, used to select the block of choice, and a Klein Star slot, which you are required to give a source of power. It's possible to place non-block place-able items in the Target slot, such as Ladders or torches, but the item will not be placed correctly, and will drop once the block is updated. The Mercurial Eye has 4 modes:"
+				""
+				"Creation Mode: This mode acts as if you were holding the target block; useful for precision work. Be careful - the Eye does not care for your location when placing the block down."
+				""
+				"Extension Mode: The wall you are building extends from existing structures. This is extremely useful for things such as aiming down and creating bridges. Your position relative to the aimed face determines how the extension is oriented. Requires charge, which lays down blocks in a square around the aimed block."
+				""
+				"Pillar-Extension Mode: This mode creates a huge pillar which extends in the opposite direction of the aimed face, i.e. away from you. Requires charge. Do not fire upwards. At full charge it creates a 3x3x15 pillar in the direction you are aiming."
+				""
+				"Transmutation Mode: Whatever your target block is, it will transmute the blocks you target to, similar to extension mode. If the EMC of the changed block was greater than your target, you absorb the EMC. If it was less, you spend EMC. If it is the same, the power costs nothing! This function can be very helpful for building in a material that is particularly difficult to remove, such as obsidian. Rather than building with obsidian, simply build in dirt or another easily cleaned up block, then convert it into obsidian when the structure is done. At full charge it transmutates a 9x9x1 area."
+			]
+			dependencies: ["012BA0505E1EEA5D"]
+			id: "3B4062916B61E126"
+			tasks: [{
+				id: "6C62EB43315EB629"
+				type: "item"
+				item: {
+					id: "projecte:mercurial_eye"
+					Count: 1b
+					tag: { }
+					ForgeCaps: {
+						Parent: {
+							EyeInventory: [ ]
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: 6.0d
+			y: 1.5d
+			shape: "heart"
+			subtitle: "Shaping the World II. Left Click for more info"
+			description: [
+				"The Hyperkinetic Lens is a tool that launches a sphere of energy which explodes on impact. The size of the explosion depends on the charge of the Hyperkinetic Lens."
+				""
+				"Charge lvl 0 - Radius: 1, very small, 1 glowstone dust"
+				"Charge lvl 1 - Radius: 1.66, still small, 2 glowstone dust"
+				"Charge lvl 2 - Radius: 2.33, average, 4 glowstone dust"
+				"Charge lvl 3 - Radius: 3, rather large, 6 glowstone dust"
+				""
+				"The lens does fairly potent damage to mobs AND players, including the player using it. Be mindful when using it at close range."
+			]
+			dependencies: ["200CAD7C99709A33"]
+			id: "726A40DB7C9D5D74"
+			tasks: [{
+				id: "2FFAD0AB4FB09C23"
+				type: "item"
+				item: {
+					id: "projecte:hyperkinetic_lens"
+					Count: 1b
+					tag: { }
+					ForgeCaps: {
+						Parent: { }
+					}
+				}
+			}]
+		}
+		{
+			x: 5.0d
+			y: -3.0d
+			subtitle: "The Prime Band is an item added by ProjectE and it serves as a base for most of ProjectE's Rowerful Rings"
+			dependencies: ["4AF832B32DEBFBD1"]
+			id: "43F037B226EDCF07"
+			tasks: [{
+				id: "1B0D6745DBFCEC72"
+				type: "item"
+				item: "projecte:iron_band"
+			}]
+			rewards: [{
+				id: "6798D85D3F0CD33B"
+				type: "loot"
+				table_id: 3966812906621148304L
+			}]
+		}
+		{
+			x: 4.5d
+			y: -7.0d
+			shape: "gear"
+			subtitle: "Advanced Teleporter. Left Click for more info"
+			description: [
+				"The Advanced Dislocator is a major upgrade for your teleportation needs."
+				""
+				"By Shift Right Clicking with it, you can access its configuration panel. Here you can set multiple locations, based off of your current one. You can also add Ender Pearls as fuel. Without Fuel, the Dislocator, won't work. "
+				""
+				"After you've selected a location, just close the GUI, and Right Click the Dislocator to teleport to that selected location. This action will consume one Fuel."
+				""
+				"The Dislocator also has a Blink mode which will basically turn you into an Enderman. You'll be able to teleport forwand on a short range with this mode."
+			]
+			dependencies: ["2EDEE17460BCCE94"]
+			id: "435999CF64F9D814"
+			tasks: [{
+				id: "10E972EC54C06BD1"
+				type: "item"
+				item: {
+					id: "draconicevolution:advanced_dislocator"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 5.5d
+			y: -7.0d
+			shape: "gear"
+			subtitle: "Upgraded Energetic Infuser. Left Click for more info"
+			description: [
+				"The Energy Tranfuser is a very powerul charger with 4 slots and it's added by Draconic Evolution."
+				""
+				"It can rapidly charge items with very large energy buffers. Power can be inserted through the bottom, or top face."
+				""
+				"It can charge multiple items, either from Left to Right, or in a Balanced Mode which will fill all slots at the same time if all of them have items to fill up with power."
+			]
+			dependencies: [
+				"212CBE2DA076A4E3"
+				"4C052365A9BA0155"
+			]
+			id: "542BB9CDA30B43BC"
+			tasks: [{
+				id: "2D7B67ADAF1E5CDC"
+				type: "item"
+				item: "draconicevolution:energy_transfuser"
+			}]
+		}
+		{
+			x: 4.0d
+			y: -8.0d
+			shape: "heart"
+			subtitle: "As if things weren't interesting enough. Left Click for more info"
+			description: [
+				"Any Mob Farm created at this stage would require a worthy Mob Grinder. That's where this puppy comes in."
+				""
+				"The Draconic Mob Grinder will kill all the mobs present in a 7x7 area in front of it."
+				""
+				"It is recommanded that you use an XP Hopper to collect all the XP produced."
+				""
+				"Lastly, the Mob grinder can be powered either externally, or with a Capacitor in the power slot of the Grinder GUI."
+			]
+			dependencies: ["212CBE2DA076A4E3"]
+			id: "2391C3D4674606F1"
+			tasks: [{
+				id: "469CBB5944543D62"
+				type: "item"
+				item: "draconicevolution:grinder"
+			}]
+		}
+		{
+			x: 6.5d
+			y: -10.0d
+			shape: "gear"
+			subtitle: "Can hold 64M RF. Has only 16 Links. Can handle 64 Wireless Links"
+			dependencies: ["25AF965E6006CD4B"]
+			id: "201A02F66C39DFB9"
+			tasks: [{
+				id: "5395488E962B185B"
+				type: "item"
+				item: "draconicevolution:draconic_wireless_crystal"
+			}]
+		}
+		{
+			title: "Who needs cables? Part III"
+			x: 5.0d
+			y: -10.0d
+			shape: "gear"
+			subtitle: "Can hold 64M RF. Has only 32 Links"
+			dependencies: ["44EF0C161C89510B"]
+			id: "25AF965E6006CD4B"
+			tasks: [{
+				id: "0ADA3A965AC89248"
+				type: "item"
+				item: "draconicevolution:draconic_relay_crystal"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -10.0d
+			shape: "gear"
+			subtitle: "Can hold 64M RF. Has only 4 Links"
+			dependencies: ["25AF965E6006CD4B"]
+			id: "0D0CC85BA2CECC91"
+			tasks: [{
+				id: "6EBF6F85D1C0B321"
+				type: "item"
+				item: "draconicevolution:draconic_io_crystal"
+			}]
+		}
+		{
+			x: 6.5d
+			y: -12.0d
+			shape: "gear"
+			subtitle: "Can hold 4M RF. Has only 4 Links. Can handle 16 Wireless Links"
+			dependencies: ["6E667B32C7CAAB8D"]
+			id: "16F3653DB9515403"
+			tasks: [{
+				id: "1E870BCB00A5BE8D"
+				type: "item"
+				item: "draconicevolution:basic_wireless_crystal"
+			}]
+		}
+		{
+			title: "Who needs cables? Part I"
+			x: 5.0d
+			y: -12.0d
+			shape: "gear"
+			subtitle: "Can hold 4M RF. Has only 8 Links"
+			dependencies: ["212CBE2DA076A4E3"]
+			id: "6E667B32C7CAAB8D"
+			tasks: [{
+				id: "753458041000A8C6"
+				type: "item"
+				item: "draconicevolution:basic_relay_crystal"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -12.0d
+			shape: "gear"
+			subtitle: "Can hold 4M RF. Has only 2 Links"
+			dependencies: ["6E667B32C7CAAB8D"]
+			id: "46BE272264650B57"
+			tasks: [{
+				id: "717F600F7D7E4631"
+				type: "item"
+				item: "draconicevolution:basic_io_crystal"
+			}]
+		}
+		{
+			x: 6.5d
+			y: -11.0d
+			shape: "gear"
+			subtitle: "Can hold 16M RF. Has only 8 Links. Can handle 32 Wireless Links"
+			dependencies: ["5925257C9E9A2BA7"]
+			id: "7B6EC25C30BBCAFF"
+			tasks: [{
+				id: "4905FE28A0111080"
+				type: "item"
+				item: "draconicevolution:wyvern_wireless_crystal"
+			}]
+		}
+		{
+			title: "Who needs cables? Part II"
+			x: 5.0d
+			y: -11.0d
+			shape: "gear"
+			subtitle: "Can hold 16M RF. Has only 16 Links"
+			dependencies: ["408B21AB9E52F723"]
+			id: "5925257C9E9A2BA7"
+			tasks: [{
+				id: "7308E6814793989B"
+				type: "item"
+				item: "draconicevolution:wyvern_relay_crystal"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -11.0d
+			shape: "gear"
+			subtitle: "Can hold 16M RF. Has only 3 Links"
+			dependencies: ["5925257C9E9A2BA7"]
+			id: "1A8DA7E162890224"
+			tasks: [{
+				id: "025E221415563620"
+				type: "item"
+				item: "draconicevolution:wyvern_io_crystal"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -30.0d
+			shape: "gear"
+			subtitle: "The Animal Rancher will shear Sheeps and milk Cows. It can receive augments from Industrial Foregoing to increase its working area"
+			dependencies: ["72F36586FC79DCB3"]
+			id: "5580DEDE7BBA70DE"
+			tasks: [{
+				id: "00788E5A1B2A1A93"
+				type: "item"
+				item: "industrialforegoing:animal_rancher"
+			}]
+		}
+		{
+			x: 4.5d
+			y: -22.5d
+			shape: "gear"
+			subtitle: "The Meat Feeder is an Items added by Industrial Foregoing. It can be filled with Liquid Meat. While it is in a Curios Slot, it will keep you Hunger Bar filled at all times"
+			dependencies: ["1D781547D59DC885"]
+			id: "1BA8BB5B2E7E4A87"
+			tasks: [{
+				id: "27D26A5BCB1F2251"
+				type: "item"
+				item: "industrialforegoing:meat_feeder"
+			}]
+		}
+		{
+			title: "Starter Ender Gate"
+			x: 2.0d
+			y: -15.0d
+			shape: "gear"
+			subtitle: "The Ender Gate is an Energy Transfer option added by Powah. It is part of the Ender Network and you can think of it as some sort of Wireless Cable. It can be placed only on blocks which can interract with Energy. It will allow you to access the Ender Network, but it WON'T allow you to upgrade it. Like the Ender Cell, its Energy Storage Capacity depends on the current capacity of the Ender Network. SO. You want more storage? Upgrade the Network. See the 'Starter Ender Cell' quest for more info about that. This is the Starter Tier and it will provide access to 1 Channel and transfer rates of 1MRF/t"
+			dependencies: ["54DE4D5E044B2FA3"]
+			id: "5CA8FFAC1F32FBFE"
+			tasks: [{
+				id: "47A01CBDD35B219E"
+				type: "item"
+				item: "powah:ender_gate_starter"
+			}]
+		}
+		{
+			title: "Starter Ender Cell"
+			x: 2.0d
+			y: -16.0d
+			shape: "gear"
+			subtitle: "The Ender Cell is an Energy storage option added by Powah. It is part of the Ender Network. The Ender Network is a Wireless - Channel Based energy storage option. It is player locked. This means that only you'll be able to acess your system. The Ender Cells are Tier based items and each Tier will provide more Channels and better Energy Transfer Rates. Besides this, each Ender Cell has (kinda) the same Energy Storage Capacity, which is, in fact, configurable. The Ender Cells can receive regular Energy Cells to increase their Energy Storage Capacities. Just open the Ender Cell GUI, select a Channel and then Shift Right Click an Energy Cell to add it to the Ender Cell's Energy Buffer. The capacity of the add Cell, will by added to the Ender Cell. This is the Starter Tier and it will provide 1 Channel, and a transfer rate of 500kRF/t"
+			dependencies: ["54DE4D5E044B2FA3"]
+			id: "63C3D9C799F23964"
+			tasks: [{
+				id: "6531F05773BFC4F4"
+				type: "item"
+				item: "powah:ender_cell_starter"
+			}]
+		}
+		{
+			title: "Starter Energy Cell"
+			x: 2.0d
+			y: -19.5d
+			shape: "gear"
+			subtitle: "The Energy Cell is a very large battery added by Powah. Besides its large energy storage capacity, it comes in 8 Tiers. This is the Starter Tier and it will provide 250MRF Storage and 200kRF/t Energy Transfer Rates"
+			hide_dependency_lines: true
+			dependencies: ["54DE4D5E044B2FA3"]
+			id: "752AB0886AC78902"
+			tasks: [{
+				id: "6A9977DF641BB823"
+				type: "item"
+				item: "powah:energy_cell_starter"
+			}]
+		}
+		{
+			title: "Starter Player Trasmitter"
+			x: 2.0d
+			y: -17.0d
+			shape: "gear"
+			subtitle: "The Player Transmitter is a nifty device added by Powah. It is used to Wirelessly provide power to your inventory, on infinity distances, as long as you're in the same dimension as the Transmitter. Higher Tiers will allow for larger energy transfers. You'll eventually be able to upgrade all of these, so that they'll be connect to you, no matter the Dimension you're in. This is the Starter Tier and it will transfer 5kFE/t"
+			dependencies: ["60C43D48E5EAD4ED"]
+			id: "023151A6988B265B"
+			tasks: [{
+				id: "508A9AFB5ADE5B21"
+				type: "item"
+				item: "powah:player_transmitter_starter"
+			}]
+		}
+		{
+			title: "Starter Energy Cable"
+			x: 2.0d
+			y: -18.5d
+			shape: "gear"
+			subtitle: "The Energy Cable is a power transfer option added by Powah. Besides its ability to transfer large amounts of power, these Cables can also allow you, the player, and other passive and hostile creatures to pass through them. This is the Starting Tier and it will transfer 1MRF/t"
+			hide_dependency_lines: true
+			dependencies: ["54DE4D5E044B2FA3"]
+			id: "5E2E6BB57088BA4D"
+			tasks: [{
+				id: "10BB286291D1A695"
+				type: "item"
+				item: "powah:energy_cable_starter"
+			}]
+		}
+		{
+			title: "Basic Ender Gate"
+			x: 3.0d
+			y: -15.0d
+			shape: "gear"
+			subtitle: "The Basic Ender Gate provides access to 2 Channels fro mthe Ender Network and transfer rates of 2MRF/t"
+			dependencies: ["15397CFF5211DF20"]
+			id: "18E0F92794C56EF6"
+			tasks: [{
+				id: "2C52967335E7BF84"
+				type: "item"
+				item: "powah:ender_gate_basic"
+			}]
+		}
+		{
+			title: "Hardened Ender Gate"
+			x: 4.0d
+			y: -15.0d
+			shape: "gear"
+			subtitle: "The Hardened Ender Gate provides access to 3 Channels fro mthe Ender Network and transfer rates of 3.5MRF/t"
+			dependencies: ["1E8F3398B49A9168"]
+			id: "3D0B86097A95ED70"
+			tasks: [{
+				id: "01AB068079BFBA56"
+				type: "item"
+				item: "powah:ender_gate_hardened"
+			}]
+		}
+		{
+			title: "Blazing Ender Gate"
+			x: 5.0d
+			y: -15.0d
+			shape: "gear"
+			subtitle: "The Blazing Ender Gate provides access to 5 Channels from the Ender Network and transfer rates of 5.5MRF/t"
+			dependencies: ["5B16F03963346B82"]
+			id: "3E8FD2BBA38F9243"
+			tasks: [{
+				id: "38240677DAAC3CCA"
+				type: "item"
+				item: "powah:ender_gate_blazing"
+			}]
+		}
+		{
+			title: "Nitro Ender Gate"
+			x: 6.0d
+			y: -15.0d
+			shape: "gear"
+			subtitle: "The Niotic Ender Gate provides access to 7 Channels from the Ender Network and transfer rates of 7MRF/t"
+			dependencies: ["7E2835F6ED806B99"]
+			id: "7C7EF70A7A9C6E0B"
+			tasks: [{
+				id: "0CA357B09D98FF4D"
+				type: "item"
+				item: "powah:ender_gate_niotic"
+			}]
+		}
+		{
+			title: "Spirited Ender Gate"
+			x: 7.0d
+			y: -15.0d
+			shape: "gear"
+			subtitle: "The Spirited Ender Gate provides access to 9 Channels from the Ender Network and transfer rates of 8MRF/t"
+			dependencies: ["332744DC107CD260"]
+			id: "3EA448A910A97A26"
+			tasks: [{
+				id: "5F3A52F45A2AAB8D"
+				type: "item"
+				item: "powah:ender_gate_spirited"
+			}]
+		}
+		{
+			title: "Nitro Ender Gate"
+			x: 8.0d
+			y: -15.0d
+			shape: "gear"
+			subtitle: "The Nitro Ender Gate provides access to 12 Channels from the Ender Network and transfer rates of 10MRF/t"
+			dependencies: ["5AE4F9E81E692C43"]
+			id: "7FF630D9138C70B8"
+			tasks: [{
+				id: "0A231E31EC94D35C"
+				type: "item"
+				item: "powah:ender_gate_nitro"
+			}]
+		}
+		{
+			title: "Basic Ender Cell"
+			x: 3.0d
+			y: -16.0d
+			shape: "gear"
+			subtitle: "The Basic Ender Cell will provide 2 Channels for the Ender Network and a transfer rate of 1MRF/t"
+			dependencies: ["15397CFF5211DF20"]
+			id: "2283143C130B6D7E"
+			tasks: [{
+				id: "6002BDC1592CD77C"
+				type: "item"
+				item: "powah:ender_cell_basic"
+			}]
+		}
+		{
+			title: "Hardened Ender Cell"
+			x: 4.0d
+			y: -16.0d
+			shape: "gear"
+			subtitle: "The Hardened Ender Cell will provide 3 Channels for the Ender Network and a transfer rate of 1.7MRF/t"
+			dependencies: ["1E8F3398B49A9168"]
+			id: "53110EE2529AB993"
+			tasks: [{
+				id: "695EBDFB6EB019DD"
+				type: "item"
+				item: "powah:ender_cell_hardened"
+			}]
+		}
+		{
+			title: "Blazing Ender Cell"
+			x: 5.0d
+			y: -16.0d
+			shape: "gear"
+			subtitle: "The Blazing Ender Cell will provide 5 Channels for the Ender Network and a transfer rate of 2.7MRF/t"
+			dependencies: ["5B16F03963346B82"]
+			id: "4D22FE9D37FEDC46"
+			tasks: [{
+				id: "13FB43C31BCE8B17"
+				type: "item"
+				item: "powah:ender_cell_blazing"
+			}]
+		}
+		{
+			title: "Niotic Ender Cell"
+			x: 6.0d
+			y: -16.0d
+			shape: "gear"
+			subtitle: "The Niotic Ender Cell will provide 7 Channels for the Ender Network and a transfer rate of 3.5MRF/t"
+			dependencies: ["7E2835F6ED806B99"]
+			id: "282951D07C19D10A"
+			tasks: [{
+				id: "203166A2631B63C0"
+				type: "item"
+				item: "powah:ender_cell_niotic"
+			}]
+		}
+		{
+			title: "Nitro Ender Cell"
+			x: 8.0d
+			y: -16.0d
+			shape: "gear"
+			subtitle: "The Nitro Ender Cell will provide 12 Channels for the Ender Network and a transfer rate of 5MRF/t"
+			dependencies: ["5AE4F9E81E692C43"]
+			id: "5B307100E4E402EE"
+			tasks: [{
+				id: "294E8931C93F9F01"
+				type: "item"
+				item: "powah:ender_cell_nitro"
+			}]
+		}
+		{
+			title: "Spirited Ender Cell"
+			x: 7.0d
+			y: -16.0d
+			shape: "gear"
+			subtitle: "The Spirited Ender Cell will provide 9 Channels for the Ender Network and a transfer rate of 4MRF/t"
+			dependencies: ["332744DC107CD260"]
+			id: "263492A213A89D11"
+			tasks: [{
+				id: "42E653BF3F410A67"
+				type: "item"
+				item: "powah:ender_cell_spirited"
+			}]
+		}
+		{
+			title: "Basic Energy Cable"
+			x: 3.0d
+			y: -18.5d
+			shape: "gear"
+			subtitle: "The Basic Cable will transfer 2MRF/t"
+			dependencies: ["15397CFF5211DF20"]
+			id: "0C29CB78E32BA201"
+			tasks: [{
+				id: "2777352A5489FEF6"
+				type: "item"
+				item: "powah:energy_cable_basic"
+			}]
+		}
+		{
+			title: "Hardened Energy Cable"
+			x: 4.0d
+			y: -18.5d
+			shape: "gear"
+			subtitle: "The Basic Cable will transfer 3.5MRF/t"
+			dependencies: ["1E8F3398B49A9168"]
+			id: "64EA423C590F8021"
+			tasks: [{
+				id: "7FA471F07D74E87D"
+				type: "item"
+				item: "powah:energy_cable_hardened"
+			}]
+		}
+		{
+			title: "Blazing Energy Cable"
+			x: 5.0d
+			y: -18.5d
+			shape: "gear"
+			subtitle: "The Basic Cable will transfer 5.5MRF/t"
+			dependencies: ["5B16F03963346B82"]
+			id: "04DA0ACADC1ABA93"
+			tasks: [{
+				id: "51FFEA2B97917843"
+				type: "item"
+				item: "powah:energy_cable_blazing"
+			}]
+		}
+		{
+			title: "Niotic Energy Cable"
+			x: 6.0d
+			y: -18.5d
+			shape: "gear"
+			subtitle: "The Basic Cable will transfer 7MRF/t"
+			dependencies: ["7E2835F6ED806B99"]
+			id: "47469B32D5D4EAC4"
+			tasks: [{
+				id: "5C07140692FE8462"
+				type: "item"
+				item: "powah:energy_cable_niotic"
+			}]
+		}
+		{
+			title: "Spirited Energy Cable"
+			x: 7.0d
+			y: -18.5d
+			shape: "gear"
+			subtitle: "The Basic Cable will transfer 8MRF/t"
+			dependencies: ["332744DC107CD260"]
+			id: "65FE6B75ADAE58C3"
+			tasks: [{
+				id: "76E63164F83127B7"
+				type: "item"
+				item: "powah:energy_cable_spirited"
+			}]
+		}
+		{
+			title: "Nitro Energy Cable"
+			x: 8.0d
+			y: -18.5d
+			shape: "gear"
+			subtitle: "The Basic Cable will transfer 10MRF/t"
+			dependencies: ["5AE4F9E81E692C43"]
+			id: "32A95D5BE9569653"
+			tasks: [{
+				id: "5256A1FF2E089493"
+				type: "item"
+				item: "powah:energy_cable_nitro"
+			}]
+		}
+		{
+			title: "Basic Energy Cell"
+			x: 3.0d
+			y: -19.5d
+			shape: "gear"
+			subtitle: "The Basic Energy Cell has a storage capacity of 500MRF and a transfer rate of 2.5MRF/t"
+			dependencies: ["15397CFF5211DF20"]
+			id: "45AFDAC7A2CA96C4"
+			tasks: [{
+				id: "09B45ABFDD1FA502"
+				type: "item"
+				item: "powah:energy_cell_basic"
+			}]
+		}
+		{
+			title: "Hardened Energy Cell"
+			x: 4.0d
+			y: -19.5d
+			shape: "gear"
+			subtitle: "The Hardened Energy Cell has a storage capacity of 750MRF and a transfer rate of 8MRF/t"
+			dependencies: ["1E8F3398B49A9168"]
+			id: "4FD04EE6FC9B528E"
+			tasks: [{
+				id: "30F5634C30FA0410"
+				type: "item"
+				item: "powah:energy_cell_hardened"
+			}]
+		}
+		{
+			title: "Blazing Energy Cell"
+			x: 5.0d
+			y: -19.5d
+			shape: "gear"
+			subtitle: "The Blazing Energy Cell has a storage capacity of 1BRF and a transfer rate of 20MRF/t"
+			dependencies: ["5B16F03963346B82"]
+			id: "4ABA168A443FBEB5"
+			tasks: [{
+				id: "19BB75C69A49696B"
+				type: "item"
+				item: "powah:energy_cell_blazing"
+			}]
+		}
+		{
+			title: "Niotic Energy Cell"
+			x: 6.0d
+			y: -19.5d
+			shape: "gear"
+			subtitle: "The Niotic Energy Cell has a storage capacity of 1.2BRF and a transfer rate of 50MRF/t"
+			dependencies: ["7E2835F6ED806B99"]
+			id: "54366F02097955BE"
+			tasks: [{
+				id: "6C55EDD0956E29E5"
+				type: "item"
+				item: "powah:energy_cell_niotic"
+			}]
+		}
+		{
+			title: "Spirited Energy Cell"
+			x: 7.0d
+			y: -19.5d
+			shape: "gear"
+			subtitle: "The Spirited Energy Cell has a storage capacity of 1.5BRF and a transfer rate of 100MRF/t"
+			dependencies: ["332744DC107CD260"]
+			id: "67B79FE064A7B88D"
+			tasks: [{
+				id: "1AD4C54016FBA82F"
+				type: "item"
+				item: "powah:energy_cell_spirited"
+			}]
+		}
+		{
+			title: "Nitro Energy Cell"
+			x: 8.0d
+			y: -19.5d
+			shape: "gear"
+			subtitle: "The Nitro Energy Cell has a storage capacity of 2BRF and a transfer rate of 400MRF/t"
+			dependencies: ["5AE4F9E81E692C43"]
+			id: "5443113E740E0F78"
+			tasks: [{
+				id: "4360FF66D0960876"
+				type: "item"
+				item: "powah:energy_cell_nitro"
+			}]
+		}
+		{
+			title: "Starter Enegy Hopper"
+			x: 2.0d
+			y: -20.5d
+			shape: "gear"
+			subtitle: "The Energy Hopper is a machine added by Powah. It is connected to a Chest, or another storage block and it is used to charge all the chargable items in that inventory. It can be vary useful for charging Electrical Alloys. This is the starter Tier and it will provide 5kRF/t"
+			dependencies: ["54DE4D5E044B2FA3"]
+			id: "1998D23D260ED51F"
+			tasks: [{
+				id: "6CF9F52014D13F19"
+				type: "item"
+				item: "powah:energy_hopper_starter"
+			}]
+		}
+		{
+			title: "Basic Enegy Hopper"
+			x: 3.0d
+			y: -20.5d
+			shape: "gear"
+			subtitle: "The Basic Energy Hopper will provide RF transfer rates of 25kRF/t"
+			dependencies: ["15397CFF5211DF20"]
+			id: "5509FC49B2CA340A"
+			tasks: [{
+				id: "0292105381907716"
+				type: "item"
+				item: "powah:energy_hopper_basic"
+			}]
+		}
+		{
+			title: "Hardened Enegy Hopper"
+			x: 4.0d
+			y: -20.5d
+			shape: "gear"
+			subtitle: "The Hardened Energy Hopper will provide RF transfer rates of 80kRF/t"
+			dependencies: ["1E8F3398B49A9168"]
+			id: "5AF670C0871DDBE4"
+			tasks: [{
+				id: "2FF0E8B6281FAFC5"
+				type: "item"
+				item: "powah:energy_hopper_hardened"
+			}]
+		}
+		{
+			title: "Blazing Enegy Hopper"
+			x: 5.0d
+			y: -20.5d
+			shape: "gear"
+			subtitle: "The Blazing Energy Hopper will provide RF transfer rates of 200kRF/t"
+			dependencies: ["5B16F03963346B82"]
+			id: "67045F6D32CFC6FE"
+			tasks: [{
+				id: "204CD67E920882EA"
+				type: "item"
+				item: "powah:energy_hopper_blazing"
+			}]
+		}
+		{
+			title: "Niotic Enegy Hopper"
+			x: 6.0d
+			y: -20.5d
+			shape: "gear"
+			subtitle: "The Niotic Energy Hopper will provide RF transfer rates of 500kRF/t"
+			dependencies: ["7E2835F6ED806B99"]
+			id: "0BDF2C762AB05925"
+			tasks: [{
+				id: "4E4081DC0A97DF81"
+				type: "item"
+				item: "powah:energy_hopper_niotic"
+			}]
+		}
+		{
+			title: "Spirited Enegy Hopper"
+			x: 7.0d
+			y: -20.5d
+			shape: "gear"
+			subtitle: "The Spirited Energy Hopper will provide RF transfer rates of 1MRF/t"
+			dependencies: ["332744DC107CD260"]
+			id: "54904E7778F50B48"
+			tasks: [{
+				id: "1DA754439414FE7B"
+				type: "item"
+				item: "powah:energy_hopper_spirited"
+			}]
+		}
+		{
+			title: "Nitro Enegy Hopper"
+			x: 8.0d
+			y: -20.5d
+			shape: "gear"
+			subtitle: "The Nitro Energy Hopper will provide RF transfer rates of 4MRF/t"
+			dependencies: ["5AE4F9E81E692C43"]
+			id: "6D84B39FBBBFDE7F"
+			tasks: [{
+				id: "0C21AFCD658FA783"
+				type: "item"
+				item: "powah:energy_hopper_nitro"
+			}]
+		}
+		{
+			title: "Draconic Reactor"
+			x: 5.0d
+			y: -8.0d
+			shape: "heart"
+			subtitle: "*The Safest and Most Basic Power Source Ever Made*. Left Click for more info"
+			description: [
+				"This is last and, most probably, the best power option available in this pack. Now, if you're familiar with the Draconic Evolution mod, you'll know that the DE Reactor, if not maintained properly, will explode."
+				""
+				"Well, you cna rest easy knowing that, in this pack, the DE Reactor will NOT explode. Or.. at least it will not make this big of a blast:"
+				""
+				"{image:kubejs:textures/draconic_evolution/draconic_worst_outcome_example.png width:100 height:100 align:1 fit:true}"
+				""
+				"Yeah, see that? That will never happen here. However, if it's not maintained properly, a small explosion will still take place. In it's aftermath, some lava sources will also appear."
+				""
+				"Now, considering the fact that this thing can output 50M RF/T, we think that a tiny explosion will not stop you from building it."
+				""
+				"Let's see how to start."
+				""
+				"First, you place the Draconic Reactor Core where you want the center of your reactor to be. This is where the actual reaction will take place, and it will grow depending on the temperature and fuel you put in it. Next, you take 4 Reactor Stabilizers and place them in a ring around the core, the recommended distance being 5 blocks. They can be placed up to 6 blocks away, but must be in the same setup. They can also be placed vertically around the core. They must have a direct line-of-sight to the core when placed, otherwise they will not register."
+				""
+				"Once you have the ring built, right click on any of the Stabilizers to bring up the Reactor GUI. If there is no GUI, you probably did something wrong."
+				""
+				"If the GUI shows up, then, you can place the Energy Injector on one of the sides of the core that doesn't have a Reactor Stabilizer. This block is important, because it feeds RF back into the Reactor. Yes, the Reactor needs some RF to work properly and generate proper power amounts. Same as with the Stabilizers, the Injector can be placed at a maximum distance of 6 blocks between the Reactor Core and the Injector."
+				""
+				"If the things are good, you should have something like this:"
+				""
+				"{image:kubejs:textures/draconic_evolution/draconic_rector_not_started_example.png width:100 height:100 align:1 fit:true}"
+				""
+				"Now, assuming that you have fuel (Awakened Draconium), nothing should stop you from starting this Reactor, but we'd advice you to wait and prepare some safety measures. "
+				""
+				"Let's talk about some technical safety measures. The Reactor doesn't have a concept of \"limits\", and will give or take as much RF as it can. This will create an unstable reactor, and eventually an explosion. It's a good idea to use a couple of Flux Gates, which limits how much RF/t can flow through it. It is also adjustable with a redstone signal, therefore it may be a good idea to place a Supplementaries Crank on each one. The Flux Gate is directional, with the side with the Blue Square being the input, and the side with the Orange Square being the output. Place one Flux Gate with its Blue side on the back of one of the Stabilizers, then place a second Flux Gate with its Orange side facing the bottom of the Energy Injector. This allows you to control how much RF/t is going out of and into the reactor, respectively."
+				""
+				"Now, let's talk about the GUI of the Reactor:"
+				""
+				"Temperature: This is the Temperature of the Core. Keep this bellow 8000 and you should be ok."
+				""
+				"Shield Strenght: This is the strenght of the shield preventing the reactor from exploding! You will want to find a nice balance for this. Too high and the Shield will consume more power then the Reactor can produce and it won't be able to self sustain its reaction. Too low and you risk an explosion."
+				""
+				"Saturation: This is the energy stored in the Reactor's Core."
+				""
+				"Fuel Conversion: This shows how much you have burned through your fuel. The higher the Core Temperature, the faster the Reactor will burn fuel. The fusion of Draconium will result into the Chaos Element. As the Level of Chaos within the Core increases, so does the reactivity of the Draconium. The higher the reactivity, the more energy will the Reactor produce. This means that, a reactor which was started with 8 Awakened Draconium Blocks, will initially produce small amounts of power, but as time passes and the Draconium is turned into Chaos, you'll produce much more power (and higher temperatures also). A quick tip is that, if you want to start producing more power from the beginning, you can start your reactor with 4 Awakened Draconium Blocks and 4 Chaos Shards in it. This will make the amount of Chaos even with the amount of Draconium and it will result in a hotter Reactor Core and in more RF outputs."
+				""
+				"Now, a warning about Fuel in general. You CAN'T run a Reactor just with Chaos in it. Chaos needs Draconium in order to regulate itself. Without it, well.. you can imagine. Now, to refuel the Reactor, you MUST SHUT IT DOWN. Before doing this, make sure you have a significant backlog of power to supply the containment field while it shuts down. When you hit the 'Shutdown' button, the Reactor will immediately stop outputing power, and it will start the Shutdown process. This requires near 100% Saturation, thus allowing the generation rate to drop, which in term, allows the Temperature to drop. Once the Saturation passes around 99%, the Temperature will drop bellow 2000 degrees, fusion will cease and the Core will enter in the 'Cool Down' mode."
+				""
+				"Other elements of that GUI we were talkb about before, would be:"
+				""
+				"Core Volume: The size of the Reactor. This will be visible only after the Reaction was started and the value whown here will be based on how much Fuel you gave the Reactor at the beginning."
+				""
+				"Generation Rate: This is the rate at which the Reactor will produce power."
+				""
+				"Field Input Rate: The energy input required to maintain the current Shield Strength."
+				""
+				"Fuel Conversion: This is how much Fuel the Reactor is currently consuming. It is measured in nano buckets (1/1000th is a mb) per tick."
+				""
+				"Now let's cover the Reactor's operation modes:"
+				""
+				"Offline: The Reactor is turned off. It is the ONLY state in which you can dismantle it."
+				""
+				"Warming Up: The Phase where the Reactor will require power in order to charge iteself. Power will be provided to the Energy Injector which will, then, charge the Reactor. Initially, the Shield will be charged to 50%, then the Saturation to 50%, and finally, the Temperature will reach 2000 degrees. After this point, you can start up the Reactor."
+				""
+				"Online: This is the state in which the Reactor will produce the most amounts of power. You must maintain a balance between the amount of energy you supply the containment field and the amount of energy you extract. The more power you pull from the Reactor, the more the Reactor's Saturation will drop. The Reactor will compensate for this by incresing its generation rate to match the rate at which you're extracting power."
+				""
+				"Cooling Down: This is the state where the Fusion was stopped and the reactor is Cooling Down.  At this point the containment field can shut down. Once the core cools sufficiently, you'll be able to refuel or dissmantle the Reactor. Even tho the Reactor is cooling down, it is still not safe break the Reactor unit. You should wait until the temperature is below 300 degrees. If you break the Reactor ar this point, there will be no explosion, but the result will also not be ideal."
+				""
+				"Explosion Imminent: Usually, we'd tell you that, if you're seeing this, you should run. However, that will not be the case here. If your reactor gets into this mode, well.. you should just prepare some buckets and some construction blocks to repair the small damage that's gonna be caused. Know that, once the Reactor is in this state, there's nothing you can do to stop it. The GUI will show the ETA of the upcomming explosion."
+				""
+				"Finally know that you can regulate the Reactor using just vanilla Redstone. Other advanced regulation and monitorization systems can be poerformed using ComputerCraft and the Lua programming language to keep track of your Reactor's stats."
+			]
+			dependencies: [
+				"3CF914BD3213A5B4"
+				"75EB00BEED4C74E3"
+			]
+			id: "62C7EBBF23AE488E"
+			tasks: [
+				{
+					id: "4EB34FB79ADE43CD"
+					type: "item"
+					item: "draconicevolution:reactor_core"
+				}
+				{
+					id: "724A7D63478B8EA3"
+					type: "item"
+					item: "draconicevolution:reactor_stabilizer"
+					count: 4L
+				}
+				{
+					id: "012B990C79B4A137"
+					type: "item"
+					item: "draconicevolution:reactor_injector"
+				}
+				{
+					id: "78E9BFE6C47321C0"
+					type: "item"
+					item: "draconicevolution:flux_gate"
+					count: 2L
+				}
+			]
+		}
+		{
+			x: 11.0d
+			y: -11.0d
+			shape: "heart"
+			subtitle: "Install in a Wireless Terminal to obtain access to your ME System from any place in the Universe"
+			dependencies: ["5442ABAE0B9D9D6D"]
+			size: 2.0d
+			id: "0AD9AE280E429E9A"
+			tasks: [{
+				id: "22A8F46F5B6551AF"
+				type: "item"
+				item: "ae2wtlib:infinity_booster_card"
+			}]
+			rewards: [{
+				id: "11C4C7595E445320"
+				type: "loot"
+				table_id: 3966812906621148304L
+			}]
+		}
+		{
+			title: "Dimensional Binding Card"
+			x: -1.0d
+			y: -11.0d
+			shape: "heart"
+			subtitle: "When placed in a Player Transmitter, it will allow the Transmitter to send power to you regardless of the dimension you're in"
+			dependencies: ["2FA0FBD15D84DE7A"]
+			size: 2.0d
+			id: "7F9A1499D0B78950"
+			tasks: [{
+				id: "1E4D64C08B117AA2"
+				type: "item"
+				item: "powah:binding_card_dim"
+			}]
+			rewards: [{
+				id: "20ED7602B6DD6295"
+				type: "loot"
+				table_id: 3966812906621148304L
+			}]
+		}
+		{
+			title: "Mystical Seed Reprocessors"
+			icon: "mysticalagriculture:supremium_reprocessor"
+			x: 8.0d
+			y: 5.0d
+			shape: "gear"
+			subtitle: "The Seed Reprocessor can be used to break down seeds into their output essense. This can be useful to recycle the bonus seeds you'll get"
+			dependencies: [
+				"73D5AB177A05AFFD"
+				"3BDAFC3E04F62B5F"
+			]
+			dependency_requirement: "one_completed"
+			size: 2.0d
+			id: "1A6E3790B7CFE78D"
+			tasks: [{
+				id: "67FBA48EBE1612FB"
+				type: "item"
+				item: "mysticalagriculture:inferium_reprocessor"
+			}]
+		}
+		{
+			title: "Mystical Growth Accelerators"
+			icon: "mysticalagriculture:supremium_growth_accelerator"
+			x: 5.0d
+			y: 5.0d
+			shape: "gear"
+			subtitle: "The Inferium Growth Accelerator has a vertical range of 12. These can be stacked underneath a plant to boost its growing speed. Higher tiers have ONLY increased ranges"
+			dependencies: ["73D5AB177A05AFFD"]
+			size: 2.0d
+			id: "018A3EFA0D4CF841"
+			tasks: [{
+				id: "30CDDDAFDF5C0F59"
+				type: "item"
+				item: "mysticalagriculture:inferium_growth_accelerator"
+			}]
+		}
+		{
+			title: "Mystical Furnaces"
+			icon: "mysticalagriculture:supremium_furnace"
+			x: 2.0d
+			y: 5.0d
+			shape: "gear"
+			subtitle: "This is a slight upgrade to the vanilla version of the Furnace. Although it might not be extremely fast, it can be upgraded to the Supremium Tier which will smelt things extremely fast"
+			dependencies: ["73D5AB177A05AFFD"]
+			size: 2.0d
+			id: "21986132D003B4E9"
+			tasks: [{
+				id: "6EF1C9A716992394"
+				type: "checkmark"
+				title: "This quest is here just to let you know that the Furnaces exist"
+			}]
+		}
+		{
+			title: "Basic Player Trasmitter"
+			x: 3.0d
+			y: -17.0d
+			shape: "gear"
+			subtitle: "The Basic Play Transmitter has ana energy transfer rate of 25kRF/t"
+			dependencies: ["15397CFF5211DF20"]
+			id: "42953B4873B78A38"
+			tasks: [{
+				id: "1721805A214CCF05"
+				type: "item"
+				item: "powah:player_transmitter_basic"
+			}]
+		}
+		{
+			title: "Hardened Player Trasmitter"
+			x: 4.0d
+			y: -17.0d
+			shape: "gear"
+			subtitle: "The Hardened Play Transmitter has ana energy transfer rate of 80kRF/t"
+			dependencies: ["1E8F3398B49A9168"]
+			id: "55BC90649BF7E64C"
+			tasks: [{
+				id: "6DB3CBDE1325211E"
+				type: "item"
+				item: "powah:player_transmitter_hardened"
+			}]
+		}
+		{
+			title: "Blazing Player Trasmitter"
+			x: 5.0d
+			y: -17.0d
+			shape: "gear"
+			subtitle: "The Blazing Play Transmitter has ana energy transfer rate of 200kRF/t"
+			dependencies: ["5B16F03963346B82"]
+			id: "529B0526C460EBF4"
+			tasks: [{
+				id: "680DD4C843E97440"
+				type: "item"
+				item: "powah:player_transmitter_blazing"
+			}]
+		}
+		{
+			title: "Niotic Player Trasmitter"
+			x: 6.0d
+			y: -17.0d
+			shape: "gear"
+			subtitle: "The Niotic Play Transmitter has ana energy transfer rate of 500kRF/t"
+			dependencies: ["7E2835F6ED806B99"]
+			id: "63F2782CBD3A81F1"
+			tasks: [{
+				id: "656A165393CF3B03"
+				type: "item"
+				item: "powah:player_transmitter_niotic"
+			}]
+		}
+		{
+			title: "Spirited Player Trasmitter"
+			x: 7.0d
+			y: -17.0d
+			shape: "gear"
+			subtitle: "The Spirited Play Transmitter has ana energy transfer rate of 1MRF/t"
+			dependencies: ["332744DC107CD260"]
+			id: "3803C31682073F3B"
+			tasks: [{
+				id: "4D0985D59E8C82B9"
+				type: "item"
+				item: "powah:player_transmitter_spirited"
+			}]
+		}
+		{
+			title: "Nitro Player Trasmitter"
+			x: 8.0d
+			y: -17.0d
+			shape: "gear"
+			subtitle: "The Nitro Play Transmitter has ana energy transfer rate of 30MRF/t"
+			dependencies: ["5AE4F9E81E692C43"]
+			id: "7ECEDFB5ADC2F341"
+			tasks: [{
+				id: "58BEBDF4397008AF"
+				type: "item"
+				item: "powah:player_transmitter_nitro"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -22.5d
+			shape: "gear"
+			subtitle: "Can be fed to Chickens to obtain Golden Eggs. These can be used to obtain Delightful Dirt. This will constantly spawn passive animals"
+			dependencies: ["5D0D81D9E51AC854"]
+			id: "783AFBFB78135D91"
+			tasks: [{
+				id: "273A97048A63FF13"
+				type: "item"
+				item: "mob_grinding_utils:nutritious_chicken_feed"
+			}]
+		}
+		{
+			x: 6.5d
+			y: -22.5d
+			shape: "gear"
+			subtitle: "Can be fed to Chickens to obtain Dreadful Dirt which will cnstantly spawn agressive mobs"
+			dependencies: ["5D0D81D9E51AC854"]
+			id: "347DD3635F634611"
+			tasks: [{
+				id: "6E26773CB8F141DD"
+				type: "item"
+				item: "mob_grinding_utils:gm_chicken_feed_cursed"
+			}]
+		}
+		{
+			title: "Stabilized Mob Spawner"
+			icon: "draconicevolution:stabilized_spawner"
+			x: 6.0d
+			y: -8.0d
+			shape: "heart"
+			subtitle: "Grinding Forever! Left Click for more info"
+			description: [
+				"Now that you've officially entered in Draconic Evolution, certain benefits (such as this one) will become available to you. Ever wanted to have your own mob spawner powerful enough that it can summon up to 12 mobs every 5 seconds? Say \"hello\" to the Stabilized Mob Spawner."
+				""
+				"This beauty is obtained by right-clicking a vanilla mob spawner with a Draconic Core, Wyvern Core, Awakened Core or Chaotic Core. When the Core is applied, the spawner will drop as an item and can be picked up by the player. When the spawner initially drops, it retains the information about the type of mob to spawn, so if you convert a Zombie Spawner to a Stabilized Mob Spawner, you'll get a Stabilized Zombie Spawner."
+				""
+				"Now, let's say you want to change the type of spawner you have. You can turn your spawner, into another type of spawner, using a Mob Soul. Mob Souls are a rare drop when killing a mob using a Draconic Evolution weapon. The percentage chance of a Mob Soul drop can be increased with the Reaper enchantment."
+				""
+				"Note that, when breaking a Stabilized Mob Spawner, its contents will be lost. However, you can use a tool that preserves metadata such as a Cardboard Box from Mekanism can relocate the spawner without losing its mob soul."
+				""
+				"Now, let's talk about tiers, because unlike a vanilla Spawner, this one is more potent. The tier of a Stabilized Mob Spawner is determined by the Core used. Right-clicking a Stabilized Mob Spawner with a different kind of core will apply the new Core and release the old Core."
+				""
+				"- Draconic Core: Spawns up to 4 mobs every 10-40 seconds. A player must be in range and all normal spawning requirements must be met."
+				""
+				"- Wyvern Core: Spawns up to 6 mobs every 5-20 seconds. Player is not required but all normal spawning requirements must be met."
+				""
+				"- Awakened Core: Spawns up to 8 mobs every 2.5-10 seconds. No other requirements."
+				""
+				"- Chaotic Core: Spawns up to 12 mobs every 1.25-5 seconds. No other requirements."
+			]
+			dependencies: ["212CBE2DA076A4E3"]
+			id: "1E6658D92FC2CACB"
+			tasks: [{
+				id: "51AD7ADEA16F3863"
+				type: "checkmark"
+				title: "Got it!"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 0.5d
+			shape: "gear"
+			subtitle: "Item exchanger! Left Click for more info"
+			description: [
+				"The Transmutation Table is a working station added by ProjectE. It functions as a battery for EMC energy, a charger for EMC storage items, as a library of blueprints and as a fabricator of items."
+				""
+				"Before it can create an item, the Transmutation Table must \"learn\" the item. This is performed by placing an item with an EMC value into the \"flames\" slot on the GUI. The item is then destroyed, the recipe learned and the EMC value stored in the table."
+				""
+				"Creating an item from EMC is performed by clicking on an item displayed on the right side. Shift-clicking will create an entire stack (if the table holds sufficient EMC)."
+				""
+				"The icon with the crossed-out book is to unlearn unwanted items. Any item placed in this slot will be \"forgotten\" by the table until it is learned again."
+				""
+				"The table will only display items for which there is enough stored EMC to create."
+				""
+				"The information held in the table is linked to the individual player:"
+				""
+				"- The table can be picked up and moved without losing any recipes or stored energy."
+				""
+				"- Other players accessing the table will only be able to see their own data."
+				""
+				"- Personal EMC data can by accessed by using another player's table."
+				""
+				"Klein Stars can be charged by placing a star in one of the slots on the left side of the GUI and it can be discharged by putting it in the slots on the right."
+			]
+			dependencies: ["62B77E823E7C96CE"]
+			id: "0FE74D783AA9937D"
+			tasks: [{
+				id: "1E78EB082F13A581"
+				type: "item"
+				item: "projecte:transmutation_table"
+			}]
+			rewards: [{
+				id: "66B95AD36511E3C6"
+				type: "loot"
+				table_id: 3966812906621148304L
+			}]
+		}
+		{
+			x: 7.0d
+			y: 0.5d
+			shape: "gear"
+			subtitle: "The Transmutation Tablet is a very expensive item. It is essencially the Portable version of the Transmutation Table"
+			dependencies: [
+				"0FE74D783AA9937D"
+				"200CAD7C99709A33"
+				"3CF914BD3213A5B4"
+			]
+			id: "184CA834B598060E"
+			tasks: [{
+				id: "42AF922B7B0609C1"
+				type: "item"
+				item: "projecte:transmutation_tablet"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 1.5d
+			shape: "heart"
+			subtitle: "Shaping the World I. Left Click for more info"
+			description: [
+				"The Catalytic Lens is an item added by ProjectE. Its purpose is to help you shape the world as you please."
+				""
+				"When pressing the 'Fire Projectile' key (bind it in your Controls menu) with the Catalytic Lens equipped the Lens fires an explosive projectile which destroys a large area upon contact with a block."
+				""
+				"Pressing Right Click with the Catalytic Lens, functions like the Destruction Catalyst, destroying a 3x3 panel where you clicked."
+				""
+				"When you press the 'Charge Item' key, the Right Click function of the Catalytic Lens becomes more powerful, digging out long 3x3 tunnels. At max charge, the Catalytic Lens breaks through as many as 64 layers."
+				""
+				"All Block Breaking tools use 16EMC/Block Broken."
+			]
+			dependencies: ["012BA0505E1EEA5D"]
+			id: "4DEB9DF8AF299B61"
+			tasks: [{
+				id: "7D59DECF9F0B4236"
+				type: "item"
+				item: {
+					id: "projecte:catalytic_lens"
+					Count: 1b
+					tag: { }
+					ForgeCaps: {
+						Parent: { }
+					}
+				}
+			}]
+		}
+		{
+			x: 3.0d
+			y: -30.0d
+			shape: "gear"
+			subtitle: "The Hydroponic Bed is a machine designed to boost the spedd growth of crops. It will use water (and lava for nether crops) to boost the growing speed of crops. If Ether Gas is used, the crops will be boosted even more. They'll also be harvested automatically. The Crop has to be planted directly on the Hydroponic Bed. Ether Gas can be obtained in an Alchemical Imbuer with some Industrial Foregoing Fertilizer and some Liquid Hydrongen Chloride"
+			dependencies: ["72F36586FC79DCB3"]
+			id: "4291655F3801EE1F"
+			tasks: [{
+				id: "322CBAF91F53EA27"
+				type: "item"
+				item: "industrialforegoing:hydroponic_bed"
+			}]
+		}
+		{
+			x: 4.0d
+			y: -30.0d
+			shape: "gear"
+			subtitle: "The Plant Gatherer is a machine designed to harvest trees and crops. If a tree is bigger then the working area of the Gatherer, the tree will still be harvested entirely. The Gatherer will also produce small amounts of Sludge for each operation. Sludge can later be refined into new items"
+			dependencies: ["72F36586FC79DCB3"]
+			id: "699B382D1BB1BA4A"
+			tasks: [{
+				id: "5A8D744EE432AFD2"
+				type: "item"
+				item: "industrialforegoing:plant_gatherer"
+			}]
+		}
+		{
+			x: 5.0d
+			y: -30.0d
+			shape: "gear"
+			subtitle: "The Plant Sower is a machine designed to automatically plant crops with ease. Seeds have to be provided in the Right side. The Left side of the GUI is where you'll tell the machine in which regions of its working area should it plant the crops (given that you've upgraded the machine to plant crops on an area larger then 1x1)"
+			dependencies: ["72F36586FC79DCB3"]
+			id: "28A7E058C0F605BA"
+			tasks: [{
+				id: "40350EABF16A2E0D"
+				type: "item"
+				item: "industrialforegoing:plant_sower"
+			}]
+		}
+		{
+			x: 6.0d
+			y: -30.0d
+			shape: "gear"
+			subtitle: "The Plant Fertilizer is a machine that will ocnstantly apply Bone Meal/Industrial Forgoing Fertilizer to the Crops located in its working area. The Plant Fertilizer will attempt to apply Bone Meal to each plant, one by one and it will NOT move to the next one until the current one is not fully grown. This might be an advantage, or a disadvantage for you, depending on your needs"
+			dependencies: ["72F36586FC79DCB3"]
+			id: "7DF4AEFB0BB3D477"
+			tasks: [{
+				id: "608E29946266FB98"
+				type: "item"
+				item: "industrialforegoing:plant_fertilizer"
+			}]
+		}
+		{
+			x: 7.0d
+			y: -30.0d
+			shape: "gear"
+			subtitle: "The Animal Feeder will give food to you animals and it will allow them to reproduce, as long as it has animals in its working area and proper food items in its internal storage"
+			dependencies: ["72F36586FC79DCB3"]
+			id: "48D9387DC9821256"
+			tasks: [{
+				id: "4B93021FB51E8A8F"
+				type: "item"
+				item: "industrialforegoing:animal_feeder"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -26.5d
+			shape: "gear"
+			subtitle: "The Mob Crusher is an alternative for the Mob Slaughet Factory. However, unlike the latter mentioned one, the Crusher will produce Essence (liquid XP) from the mobs killed, instead of Liquid Meat and Pink Slime"
+			dependencies: ["3BDAFC3E04F62B5F"]
+			id: "6A33C6945FAAAF36"
+			tasks: [{
+				id: "09874BE49F0C8490"
+				type: "item"
+				item: "industrialforegoing:mob_crusher"
+			}]
+		}
+		{
+			x: 3.0d
+			y: -26.5d
+			shape: "gear"
+			subtitle: "When providing power and a Mob filled Mob Emprisonment Tool to this machine, it will allow you to basically have your own custom spawner for very specific entities you might require. It will also require Essence (liquid XP) to work properly, so a large XP famr with a Mob Crusher might be good to have"
+			dependencies: ["3BDAFC3E04F62B5F"]
+			id: "4EF48453F9B9F7E5"
+			tasks: [{
+				id: "1EF234371443CCD5"
+				type: "item"
+				item: "industrialforegoing:mob_duplicator"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -24.0d
+			shape: "heart"
+			subtitle: "The Wither Builder will use Power, Wither Skeleton Skulls and Soul Sand Blocks to build the the Wither Structure in the Working Area. This machine can accept Redstone interactions and different Augments from Industrial Foregoing"
+			dependencies: ["593F074B73FF3116"]
+			id: "33B2D823E8D95473"
+			tasks: [{
+				id: "1C3BD7767801ED91"
+				type: "item"
+				item: "industrialforegoing:wither_builder"
+			}]
+		}
+		{
+			x: 2.0d
+			y: -29.0d
+			shape: "gear"
+			subtitle: "When Animals such as Cows are positioned in the working area of the Sewer, it will start to collect Sewage from them. This liquid can later be turned into Fertilizer unsing a Sewage Composter"
+			dependencies: ["72F36586FC79DCB3"]
+			id: "517192E201FB49CA"
+			tasks: [{
+				id: "24BC5A56F9B27E60"
+				type: "item"
+				item: "industrialforegoing:sewer"
+			}]
+		}
+		{
+			x: 8.0d
+			y: -30.0d
+			shape: "gear"
+			subtitle: "This Machine can turn Sewage into Fertilizer. This can be later used exactly like Bone Meal"
+			dependencies: ["72F36586FC79DCB3"]
+			id: "187D36E1B59DD77B"
+			tasks: [{
+				id: "19C7F82A8D2A4B16"
+				type: "item"
+				item: "industrialforegoing:sewage_composter"
+			}]
+		}
+		{
+			x: 4.0d
+			y: -26.5d
+			shape: "gear"
+			subtitle: "The Animal Baby Separator will take all the baby mobs it detects and it will attempt to teleport them to its back, efficiently separating the babies from the adults"
+			dependencies: ["3BDAFC3E04F62B5F"]
+			id: "0815C3EF5C9E7F7F"
+			tasks: [{
+				id: "12FD7EEDCC9933B5"
+				type: "item"
+				item: "industrialforegoing:animal_baby_separator"
+			}]
+		}
+		{
+			x: 5.0d
+			y: -26.5d
+			shape: "gear"
+			subtitle: "This machine will take an item, some Essence (liquid XP) and it will attempt to enchant that item with a lvl 30 enchantment. We presume that you can imagine how much potential this thing has. No? Fine. Combine it with an Enchantment Extractor and you'll probably get OP in no time"
+			dependencies: ["3BDAFC3E04F62B5F"]
+			id: "70C0C52E8C201D25"
+			tasks: [{
+				id: "233A91B6559733F0"
+				type: "item"
+				item: "industrialforegoing:enchantment_factory"
+			}]
+		}
+		{
+			x: 5.5d
+			y: -24.0d
+			shape: "heart"
+			subtitle: "The Infinity Charger might be the fastest charger you're ever gonna get. Unfortunately, it has only one slot, but if you're in a rush for getting an item full with power, this might be your best bet"
+			dependencies: ["593F074B73FF3116"]
+			id: "60053E296A153C74"
+			tasks: [{
+				id: "65C128B36A069EE4"
+				type: "item"
+				item: "industrialforegoing:infinity_charger"
+			}]
+		}
+		{
+			x: 6.0d
+			y: -26.5d
+			shape: "gear"
+			subtitle: "Having too much enchanted items? Too much trash items? Are you having a bad time organizing yourself? Fear not. The Enchantment Sorter is for you. This machine will separate all the enchanted items from the regular ones with no problem. It also has more useful setting regarding NBT data and more, but you'll figure it out. Combine it with other Enchantment related machines from Industrial Foregoing and watch as you obtain an amazing Factory"
+			dependencies: ["3BDAFC3E04F62B5F"]
+			id: "4F7B5FAFB778B3A1"
+			tasks: [{
+				id: "6257473CC9B70BEA"
+				type: "item"
+				item: "industrialforegoing:enchantment_sorter"
+			}]
+		}
+		{
+			x: 7.0d
+			y: -26.5d
+			shape: "gear"
+			subtitle: "The Enchantment Applicator will take a series of regular items, some Enchanted Books and it will attempt to combine them. Think of this machine as an Auto-Anvil"
+			dependencies: ["3BDAFC3E04F62B5F"]
+			id: "2781F8A50EFADCAF"
+			tasks: [{
+				id: "7B88BAAE9A30C38C"
+				type: "item"
+				item: "industrialforegoing:enchantment_applicator"
+			}]
+		}
+		{
+			x: 8.0d
+			y: -26.5d
+			shape: "gear"
+			subtitle: "The Stasis Chamber is pretty much a machine coming from the year 2099. It will freeze and heal the entities located in its working area. Now, if that's not some advanced techniques of medicine, then it might be straight up, dark magic"
+			dependencies: ["3BDAFC3E04F62B5F"]
+			id: "10BF8E55F3629D36"
+			tasks: [{
+				id: "0A91EF5099605C8C"
+				type: "item"
+				item: "industrialforegoing:stasis_chamber"
+			}]
+		}
+		{
+			x: 3.5d
+			y: -25.5d
+			shape: "gear"
+			subtitle: "Ever wanted a Machine that would take thousands of Enchanted Items and would just - take the enchantments off of them? Well, your dream just got real. The Enchantment Extractor will take items such as Swords, Bows and more and will take their Enchantments off of them for you to use them later as you wish"
+			dependencies: ["3BDAFC3E04F62B5F"]
+			id: "0B156D87BB948B47"
+			tasks: [{
+				id: "65A8D670D7D6B507"
+				type: "item"
+				item: "industrialforegoing:enchantment_extractor"
+			}]
+		}
+		{
+			x: 4.5d
+			y: -25.5d
+			shape: "gear"
+			subtitle: "The Mob Detector can be very useful in very advanced mob farms. It will try to detect all the entities located in front of it. It will also emit a Redstone Signal with a strength based on the number of entities detected. Make good use of this device"
+			dependencies: ["3BDAFC3E04F62B5F"]
+			id: "719F5A574DE00267"
+			tasks: [{
+				id: "645DF309BC5F0304"
+				type: "item"
+				item: "industrialforegoing:mob_detector"
+			}]
+		}
+		{
+			x: 4.5d
+			y: -24.0d
+			shape: "heart"
+			subtitle: "The Mechanical Dirt is an organic machine which will use 1000 RF and 20mb of Liquid Meat to summon a mob. Apart from this, a light level of 7, or lower has to be provided for the Block to work properly"
+			dependencies: ["593F074B73FF3116"]
+			id: "05A870198627A443"
+			tasks: [{
+				id: "0117E4BF7FB74AF5"
+				type: "item"
+				item: "industrialforegoing:mechanical_dirt"
+			}]
+		}
+		{
+			x: 3.0d
+			y: -29.0d
+			shape: "gear"
+			subtitle: "The Block Breaer, as its name might suggest, will simply, break any block that's in front of it, excluding Bedrock"
+			dependencies: ["72F36586FC79DCB3"]
+			id: "5CE50F14BC62B41B"
+			tasks: [{
+				id: "559BBDE03DEF22B8"
+				type: "item"
+				item: "industrialforegoing:block_breaker"
+			}]
+		}
+		{
+			x: 4.0d
+			y: -29.0d
+			shape: "gear"
+			subtitle: "The Marine Fisher is a pretty nifty device. When it's placed above a water source, or when its working area is located in water, it will start to constantly obtain fishing loot, such as Fish, Treasure Items (Enchanted Books), Trash Items (Leather Boots) and more"
+			dependencies: ["72F36586FC79DCB3"]
+			id: "3F60F699F5927FDE"
+			tasks: [{
+				id: "48D9110D8C90ECDD"
+				type: "item"
+				item: "industrialforegoing:marine_fisher"
+			}]
+		}
+		{
+			x: 5.0d
+			y: -29.0d
+			shape: "gear"
+			subtitle: "The Fluid Placer, as its name might suggest, will place liquids down. This might be helpful for certain types of automation"
+			dependencies: ["72F36586FC79DCB3"]
+			id: "1DFB8CAEF78B1957"
+			tasks: [{
+				id: "020C22205C26BE11"
+				type: "item"
+				item: "industrialforegoing:fluid_placer"
+			}]
+		}
+		{
+			x: 6.0d
+			y: -29.0d
+			shape: "gear"
+			subtitle: "The Block Placer, unlike its cousin, the Block Breaker, will place blocks, instead of breaking them. Can be useful in automatization to minimize the amount of space necessary for certain tasks"
+			dependencies: ["72F36586FC79DCB3"]
+			id: "6AF7ECB8AAA30E54"
+			tasks: [{
+				id: "74C0AECE0A3533DD"
+				type: "item"
+				item: "industrialforegoing:block_placer"
+			}]
+		}
+		{
+			x: 6.5d
+			y: -24.0d
+			shape: "heart"
+			subtitle: "The Ore Laser Base is a Void Miner added by Industrial Foregoing. By itself, it is not of much use, but combined with Laser Drills, it might prove to be useful. You can use as many Laser Drills as you want, as long as they can interract with the Laser Base itself. Once the Drills are powered, the Base will start to produce Ores. The Dimension/Biome that this structure will be located, will affect the types of Ores you'll obtain. Use JEI to find more. You can also select the Depth at which you wish the Base will search for ores. Lastly, you can craft Colored Lenses which will affect the Type of Ore you'll obtain. Left Click to see an example setup"
+			description: [
+				"In the Example below, Creative Energy Cubes were used to power the Laser Drills. You'll probably have to use something else, of course."
+				""
+				"{image:kubejs:textures/industrial_foregoing/laser_ore_drill_example.png width:100 height:100 align:1 fit:true}"
+			]
+			dependencies: ["593F074B73FF3116"]
+			id: "7F2EF2C5EE4B9C97"
+			tasks: [{
+				id: "7476060C0FEF27DB"
+				type: "item"
+				item: "industrialforegoing:ore_laser_base"
+			}]
+		}
+		{
+			x: 7.0d
+			y: -29.0d
+			shape: "gear"
+			subtitle: "The Fluid Collector, like its name might suggest, will pick up any liquid that comes in contact with its working area"
+			dependencies: ["72F36586FC79DCB3"]
+			id: "5435FC2978013FBC"
+			tasks: [{
+				id: "4485E1BDE49B5B34"
+				type: "item"
+				item: "industrialforegoing:fluid_collector"
+			}]
+		}
+		{
+			x: 8.0d
+			y: -29.0d
+			shape: "gear"
+			subtitle: "When water (and lava, for nether fungi) is provided to this Machine, it can star to duplicate Mushrooms"
+			dependencies: ["72F36586FC79DCB3"]
+			id: "408B40AD0448D3CC"
+			tasks: [{
+				id: "3907391D1B6BA1CD"
+				type: "item"
+				item: "industrialforegoing:spores_recreator"
+			}]
+		}
+		{
+			x: 5.5d
+			y: -25.5d
+			shape: "gear"
+			subtitle: "If you're not a fan of Ars Nouveau's brewing system, then perhaps, this machine might be for you. The Potion Brewer is basically an Auto-Brewing Stand. Water, Blaze Powder, and other potion ingredients have to be proivded, in order for it to work properly"
+			dependencies: ["3BDAFC3E04F62B5F"]
+			id: "6BBA22F42717BECB"
+			tasks: [{
+				id: "2B3AB039DE4D51F2"
+				type: "item"
+				item: "industrialforegoing:potion_brewer"
+			}]
+		}
+		{
+			x: 4.5d
+			y: -28.0d
+			shape: "gear"
+			subtitle: "The Sludge Refiner will take Sludge Liquid from other machines, and it will process the Sludge to turn in into Dirst, Gravel, Sand, Clay and other blocks"
+			dependencies: ["72F36586FC79DCB3"]
+			id: "6E473E001B8F5A0F"
+			tasks: [{
+				id: "5197C14E34BEC127"
+				type: "item"
+				item: "industrialforegoing:sludge_refiner"
+			}]
+		}
+		{
+			x: 5.5d
+			y: -28.0d
+			shape: "gear"
+			subtitle: "The Dye Mixer might help you with the task of obtaining all the 16 MC dyes. It will require only Red, Green and Blue dyes and with a little bit of power, it will be able to produce all the other dyes from vanilla MC"
+			dependencies: ["72F36586FC79DCB3"]
+			id: "3DD19C7BC2478609"
+			tasks: [{
+				id: "236F767B2C781C43"
+				type: "item"
+				item: "industrialforegoing:dye_mixer"
+			}]
+		}
+		{
+			x: 6.5d
+			y: -25.5d
+			shape: "gear"
+			subtitle: "These Laser can be positioned close to the Laser Drill Base. If they can interract with the Base, some white particles will appear, confirming the connection exists. Each one of the Lasers will require power in order to operate"
+			dependencies: ["3BDAFC3E04F62B5F"]
+			id: "75539585E84C5EBC"
+			tasks: [{
+				id: "5B28A80D47C7C0E5"
+				type: "item"
+				item: "industrialforegoing:laser_drill"
+			}]
+		}
+		{
+			x: 5.5d
+			y: -22.5d
+			shape: "gear"
+			subtitle: "The Mob Enprinsoment Tool is an item added by Industrial Foregoing. It can be used to capture any mob you want (except boss mobs). It can also be used in a Mob Duplicator to basically create a Mob Farm of your Choise"
+			dependencies: ["6746656E8FD86EAC"]
+			id: "14B463D9C10CA27B"
+			tasks: [{
+				id: "1139DFB7DC22A780"
+				type: "item"
+				item: "industrialforegoing:mob_imprisonment_tool"
+			}]
+		}
+		{
+			x: 5.0d
+			y: -13.0d
+			shape: "heart"
+			subtitle: "Draconic Energy Network. Left Click for more info"
+			description: [
+				"The Draconic Evolution Ebergy Network is unlike any other. Both visually and functionally, it is unique."
+				""
+				"You'll need a Crystal Binder to properly work with this system."
+				""
+				"The Network is comprised of Energy Cystals. Each one of them will have an internal energy buffer and they can be linked to one another using the Crystal Binder. When 2 or more of them are linked, they'll attempt to balance their stored energy so they are both at the same Charge Level. Each Crystal can only support a limited numer of connections and the number is limited by the Type and Tier of the Crystal."
+				""
+				"In order to link two Crystals together, or to a machine, simply Shift Right Click on one of the Crystals with the Binder. After that, simply Right Click the target block to create a link. The Binder will remember the block it is bound to until you bind it to another block or Shift Right Click the air."
+				""
+				"Now, about the Crystals. There are 3 types of Crystals. Energy I/O, Energy Relay and Wireless Energy."
+				""
+				"The Energy IO is a Crystal you'll need to insert/extract power from your crystal network. To use this Crystal, simply place it on the side of your energy source/consumer and connect it to your Crystal Network. This Crystal has 2 I/O modes which you can cycle between by Shift Right Clicking them with an empty hand. "
+				""
+				"Input will make the Crystal accept energy from the attached block."
+				""
+				"Output will attempt to power the block that's attached to the Crystal."
+				""
+				"The Energy Relay is a Crystal mean to act as a hub to which you can connect other Crystals. Therefore it supports a lot more connections then the I/O one. This Crystal can only link to other Crystals and cannot be connected to machines, or other blocks."
+				""
+				"Wireless Energy is a Crystal similar to the energy realy, except that it supports fewer Crystal Links. It can Wirelessly connect to a number of receivers. This connection can supply or receive power from devices depending on the Crystals I/O mode. The max energy flow is lower then that of the I/O Crystal. The Advantage of it, however, will be that fact that it supports a large number of connections , meaning that you cna place one in the middle of your base and have it power most, if not all, of your machines. Or place it in the middle of your power plant and have it pull power from all of your generators."
+			]
+			dependencies: ["212CBE2DA076A4E3"]
+			id: "577425EB4766CBD3"
+			tasks: [{
+				id: "4757661D6BB1559C"
+				type: "item"
+				item: "draconicevolution:crystal_binder"
+			}]
+		}
+		{
+			title: "The Energy Meter"
+			x: 5.0d
+			y: -9.0d
+			shape: "heart"
+			subtitle: "At first sight, this block doesn't look like much, but don't be fooled by its appearance. This thing, besides being an RF transfer monitor, is also a very potent energy conductor. So potent, that it can transfer almost infinite amounts of RF. You might find a use for it while working with Draconic Reactors. Be aware, if you're gonna use this machine with any mundane cables or another energy transport options, you're gonna run into energy limitations emposed by those transport options"
+			dependencies: [
+				"3CF914BD3213A5B4"
+				"78E9BFE6C47321C0"
+			]
+			id: "6417E9DC55EB03F6"
+			tasks: [{
+				id: "2BAEB0B0FCA40E50"
+				type: "item"
+				item: "energymeter:meter"
+			}]
+		}
+	]
+}

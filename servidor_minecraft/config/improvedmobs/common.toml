@@ -1,0 +1,204 @@
+
+#With default value every difficulty perk maxes out at difficulty 250
+[general]
+	#Mobs to include for the new light spawning rules.
+	#Only prevention is possible. Meaning you cant allow mobs to spawn at higher light levels
+	"Light list" = []
+	#Should punish time skipping with e.g. bed, commands? If false, difficulty will increase by 0.1 regardless of skipped time.
+	"Punish Time Skip" = false
+	#Blacklist for pet you should't be able to give armor to. Pets from mods, which have custom armor should be included here.
+	"Pet Blacklist" = []
+	#Turn the light list whitelist to blacklist
+	"Light list blacklist" = false
+	#How the difficulty at a position is calculated. Supported values are: 
+	#GLOBAL: Serverwide difficulty value
+	#PLAYERMAX: Maximum difficulty of players in a 128 radius around the position
+	#PLAYERMEAN: Average difficulty of players in a 128 radius around the position
+	#Allowed Values: GLOBAL, PLAYERMAX, PLAYERMEAN
+	"Difficulty type" = "PLAYERMEAN"
+	#Handles increase in difficulty regarding current difficulty.
+	#Format is <minimum current difficulty>-<increase every 2400 ticks>
+	#Example ["0-0.01","10-0.1","30-0"]
+	#So the difficulty increases by 0.01 every 2400 ticks (->0.1 per mc day) till it reaches a difficulty of 10.
+	#Then it increases by 1 per mc day till it reaches 30 and then stops.
+	"Difficulty Increase" = []
+	#Time in ticks for which the difficulty shouldnt increase at the beginning. One full minecraft day is 24000 ticks
+	"Difficulty Delay" = 0
+	#Disable/Enable friendly fire for owned pets.
+	FriendlyFire = false
+	#Treat pet blacklist as whitelist
+	"Pet Whitelist" = false
+	#Light level >= x will prevent mob spawning for defined mobs.
+	#Range: 0 ~ 16
+	Light = 7
+	#Disable/Enables the whole difficulty scaling of this mod. Requires a mc restart
+	"Enable difficulty scaling" = false
+	#Wether difficulty should only increase with at least one online players or not
+	"Ignore Players" = false
+	#Increase difficulty with time
+	#Here untill its back as a gamerule
+	"Difficulty toggle" = false
+
+#Black/Whitelist for various stuff
+[list]
+	#Treat BLOCKBREAK flags as whitelist
+	"Breaker Whitelist" = false
+	#Treat GUARDIAN flags as whitelist
+	"Guardian Whitelist" = false
+	#Treat HELDITEMS flags as whitelist
+	"Held Equip Whitelist" = false
+	#Treat ARMOR flags as whitelist
+	"Armor Equip Whitelist" = false
+	#Treat TARGETVILLAGER flags as whitelist
+	"Villager Whitelist" = false
+	#Treat NEUTRALAGGRO flags as whitelist
+	"Neutral Aggro Whitelist" = false
+	#Entities added here will be blacklisted from their assigned flags. Usage:
+	#<entity registry name> or <namespace> followed by any of:
+	#[ALL,ATTRIBUTES,ARMOR,HELDITEMS,BLOCKBREAK,USEITEM,LADDER,STEAL,GUARDIAN,PARROT,TARGETVILLAGER,NEUTRALAGGRO,REVERSE].
+	#Having no flags is equal to ALL. Use REVERSE to reverse all flags. Some flags do nothing for certain mobs!
+	#Examples:
+	#minecraft:sheep is equal to minecraft:sheep|ALL and excludes sheeps from all modifications
+	#minecraft:sheep|REVERSE|ATTRIBUTES will add sheep to attributes modification only
+	#minecraft:sheep|ATTRIBUTES will add sheep to everything except attributes
+	"More Entities" = ["minecraft:iron_golem", "minecraft:cod", "minecraft:donkey", "minecraft:squid", "minecraft:mule", "minecraft:skeleton_horse", "minecraft:hoglin", "minecraft:strider", "minecraft:trader_llama", "minecraft:parrot", "minecraft:cow", "minecraft:zombie_horse", "minecraft:horse", "minecraft:bee", "minecraft:polar_bear", "minecraft:cat", "minecraft:pufferfish", "minecraft:bat", "minecraft:wandering_trader", "minecraft:salmon", "minecraft:fox", "minecraft:llama", "minecraft:pig", "minecraft:iron_golem", "minecraft:tropical_fish", "minecraft:turtle", "minecraft:sheep", "minecraft:ender_dragon", "minecraft:snow_golem", "minecraft:mooshroom", "minecraft:villager", "minecraft:ocelot", "minecraft:dolphin", "minecraft:chicken", "minecraft:wolf", "minecraft:panda", "minecraft:rabbit", "minecraft:villager", "minecraft:vex", "minecraft:evoker", "minecraft:evoker_fangs", "minecraft:illusioner", "minecraft:vindicator", "minecraft:ravager", "minecraft:phantom", "minecraft:wither", "twilightforest:ur_ghast", "atum:pharaoh", "minecraft:ender_dragon", "ars_nouveau:wilden_boss", "ars_nouveau:wilden_guardian", "ars_nouveau:wilden_hunter", "ars_nouveau:wilden_stalker", "ars_nouveau:blazing_weald_walker", "ars_nouveau:carbuncle", "ars_nouveau:cascading_weald_walker", "ars_nouveau:drygmy", "ars_nouveau:familiar_bookwyrm", "ars_nouveau:familiar_carbuncle", "ars_nouveau:familiar_drygmy", "ars_nouveau:familiar_sylph", "ars_nouveau:familiar_wixie", "ars_nouveau:flourishing_weald_walker", "ars_nouveau:sylph", "ars_nouveau:vexing_weald_walker", "ars_nouveau:wixie", "botania:doppleganger", "mutantbeasts:mutant_creeper", "mutantbeasts:mutant_enderman", "mutantbeasts:mutant_skeleton", "mutantbeasts:mutant_zombie", "mowziesmobs:ferrous_wroughtnaut", "mowziesmobs:foliaath", "mowziesmobs:naga", "mowziesmobs:barakoa_sunblocker", "mowziesmobs:barakoan_barakoana", "mowziesmobs:barakoana", "mowziesmobs:barakoaya", "mowziesmobs:barakoa_sunblocker_player", "mowziesmobs:barakoan_player", "mowziesmobs:barako", "eidolon:wraith", "eidolon:zombie_brute", "twilightforest:minotaur", "twilightforest:death_tome", "twilightforest:hostile_wolf", "twilightforest:hedge_spider", "twilightforest:fire_beetle", "twilightforest:lich", "twilightforest:ice_crystal", "twilightforest:knight_phantom", "twilightforest:yeti", "draconicevolution:draconic_guardian", "doggytalents:dog", "minecolonies:citizen", "minecolonies:visitor", "minecolonies:barbarian", "rats:rat", "rats:black_death", "rats:rat_king", "supplementaries:firefly", "supplementaries:red_merchant", "resourcefulbees:abbee_bee", "resourcefulbees:alexandr_bee", "resourcefulbees:aquamarine_bee", "resourcefulbees:ashy_digging_bee", "resourcefulbees:basalz_bee", "resourcefulbees:black_carpenter_bee", "resourcefulbees:blazing_bee", "resourcefulbees:blitz_bee", "resourcefulbees:blizz_bee", "resourcefulbees:bricky_bee", "resourcefulbees:chocolate_bee", "resourcefulbees:chorus_bee", "resourcefulbees:cinnabar_bee", "resourcefulbees:cobblestoen_bee", "resourcefulbees:coral_bee", "resourcefulbees:cotton_candy_bee", "resourcefulbees:creeper_bee", "resourcefulbees:dragon_bee", "resourcefulbees:drowned_bee", "resourcefulbees:dungeon_bee", "resourcefulbees:dye_bee", "resourcefulbees:ender_bee", "resourcefulbees:enderslime_bee", "resourcefulbees:ghostly_bee", "resourcefulbees:glass_bee", "resourcefulbees:glowstone_bee", "resourcefulbees:grass_bee", "resourcefulbees:green_carpenter_bee", "resourcefulbees:ichor_bee", "resourcefulbees:icy_bee", "resourcefulbees:kitten_bee", "resourcefulbees:lady_lexxie_bee", "resourcefulbees:lava_bee", "resourcefulbees:leafcutter_bee", "resourcefulbees:magmatic_bee", "resourcefulbees:mason_bee", "resourcefulbees:nether_bee", "resourcefulbees:nether_bricky_bee", "resourcefulbees:nether_quartz_bee", "resourcefulbees:obisdian_bee", "resourcefulbees:oreo_bee", "resourcefulbees:papa_beemeritus_bee", "resourcefulbees:phantom_bee", "resourcefulbees:prismarine_bee", "resourcefulbees:red_carpenter_bee", "resourcefulbees:reed_bee", "resourcefulbees:resin_bee", "resourcefulbees:ryan_bee", "resourcefulbees:sand_bee", "resourcefulbees:silky_bee", "resourcefulbees:skeleton_bee", "resourcefulbees:skyslime_bee", "resourcefulbees:slimy_bee", "resourcefulbees:soul_bee", "resourcefulbees:starry_bee", "resourcefulbees:sugarbag_bee", "resourcefulbees:tea_bee", "resourcefulbees:water_bee", "resourcefulbees:white_carpenter_bee", "resourcefulbees:wither_bee", "resourcefulbees:xp_bee", "resourcefulbees:xp_drone_bee", "resourcefulbees:yellow_carpenter_bee", "resourcefulbees:yeti_bee", "resourcefulbees:zombie_bee", "atum:camel", "atum:nomad", "atum:brigand", "luggage:luggage", "aquaculture:acacia_fish_mount", "aquaculture:arapaima", "aquaculture:arrau_turtle", "aquaculture:atlantic_cod", "aquaculture:atlantic_halibut", "aquaculture:atlantic_herring", "aquaculture:bayad", "aquaculture:birch_fish_mount", "aquaculture:blackfish", "aquaculture:bluegill", "aquaculture:boulti", "aquaculture:box_turtle", "aquaculture:brown_shrooma", "aquaculture:brown_trout", "aquaculture:capitaine", "aquaculture:carp", "aquaculture:catfish", "aquaculture:dark_oak_fish_mount", "aquaculture:gar", "aquaculture:jellyfish", "aquaculture:jungle_fish_mount", "aquaculture:minnow", "aquaculture:muskellunge", "aquaculture:oak_fish_mount", "aquaculture:pacific_halibut", "aquaculture:perch", "aquaculture:pink_salmon", "aquaculture:piranha", "aquaculture:pollock", "aquaculture:rainbow_trout", "aquaculture:red_grouper", "aquaculture:red_shrooma", "aquaculture:smallmouth_bass", "aquaculture:spectral_water_arrow", "aquaculture:spruce_fish_mount", "aquaculture:starshell_turtle", "aquaculture:synodontis", "aquaculture:tambaqui", "aquaculture:tuna", "aquaculture:water_arrow", "boss_tools:star_crawler", "boss_tools:pygro", "boss_tools:mogler", "boss_tools:alien_zombie", "artifacts:mimic", "alexsmobs:tarantula_hawk", "alexsmobs:raccoon", "alexsmobs:gorilla", "alexsmobs:mantis_shrimp", "alexsmobs:bald_eagle", "alexsmobs:orca", "alexsmobs:cachalot_whale", "alexsmobs:seagull", "alexsmobs:seal", "alexsmobs:hummingbird", "alexsmobs:capuchin_monkey", "alexsmobs:tasmanian_devil", "alexsmobs:guster", "alexsmobs:rattlesnake", "alexsmobs:roadrunner", "alexsmobs:kangaroo", "alexsmobs:elephant", "alexsmobs:crow", "alexsmobs:gazelle", "alexsmobs:crocodile", "alexsmobs:fly", "alexsmobs:sunbird", "alexsmobs:endergrade", "alexsmobs:hammerhead_shark", "alexsmobs:lobster", "alexsmobs:komodo_dragon", "alexsmobs:centipede_body", "alexsmobs:centipede_body", "alexsmobs:centipede_tail", "alexsmobs:warped_toad", "alexsmobs:warped_mosco", "alexsmobs:moose", "alexsmobs:mimicube", "alexsmobs:blobfish", "alexsmobs:cockroach", "alexsmobs:cockroach_egg", "alexsmobs:shoebill", "alexsmobs:soul_vulture", "alexsmobs:snow_leopard", "alexsmobs:spectre", "alexsmobs:alligator_snapping_turtle", "alexsmobs:mungus", "alexsmobs:stradpole", "alexsmobs:straddleboard", "alexsmobs:emu", "alexsmobs:platypus", "alexsmobs:tasmanian_devil", "alexsmobs:kangaroo", "alexsmobs:kangaroo", "alexsmobs:cachalot_whale", "alexsmobs:leafcutter_ant", "alexsmobs:tiger", "alexsmobs:void_worm", "alexsmobs:void_worm_part", "alexsmobs:frilled_shark", "alexsmobs:mimic_octopus", "alexsmobs:grizzly_bear", "quark:stoneling"]
+	#Treat PARROT flags as whitelist
+	"Parrot Whitelist" = false
+	#Treat LADDER flags as whitelist
+	"Ladder Whitelist" = false
+	#Treat USEITEM flags as whitelist
+	"Item Use Whitelist" = false
+	#Put the above flags here to completly disable them.
+	"Flag Blacklist" = []
+	#Treat ATTRIBUTES flags as whitelist
+	"Attribute Whitelist" = false
+	#Treat STEAL flags as whitelist
+	"Steal Whitelist" = false
+
+#Debugging
+[debug]
+	#Enable showing of entity paths
+	"Path Debugging" = false
+
+#Settings for mod integration
+[integration]
+	#Should the scaling health mods difficulty system be used instead of this ones. (Requires scaling health mod)
+	"Use Scaling Health Mod" = false
+
+#Settings regarding custom ai for mobs
+[ai]
+	#Chance for mobs to be able to ride a parrot
+	"Fly Chance" = 0.0
+	#Items which will be given to mobs who can break blocks. Empty list = no items. Syntax: id;weight
+	"Breaking items" = []
+	#Should mobs be able to break tile entities? Evaluated before the break list
+	"Break Tiles" = false
+	#Chance for a mob to be able to break blocks
+	#Range: 0.0 ~ 1.0
+	"Breaker Chance" = 0
+	#List for of pairs containing which mobs auto target others. Syntax is [mob id]-[mob id] where second value is the target.
+	# e.g. minecraft:zombie-minecraft:skeleton makes all zombies target skeletons
+	"Auto Target List" = []
+	#Difficulty at which mobs are able to steal items
+	"Difficulty Steal AI" = 0.0
+	#Use the block breaking sound instead of a knocking sound
+	Sound = false
+	#Initial cooldown for block breaking mobs
+	"Breaker Initial Cooldown" = 120
+	#Treat Block Whitelist as Blocklist
+	"Block as Blacklist" = false
+	#Chance for a mob to be able to steal items
+	#Range: 0.0 ~ 1.0
+	"Stealer Chance" = 0
+	#Chance for neutral mobs to be aggressive
+	#Range: 0.0 ~ 1.0
+	"Neutral Aggressive Chance" = 0
+	#Difficulty at which mobs are able to break blocks
+	"Difficulty Break AI" = 0.0
+	#Whitelist for blocks, which can be actively broken. 
+	#Usage: <registry name;classname;tag;namespace> put "!" infront to exclude blocks
+	#Note: If you include common blocks (like grass blocks) the pathfinding will be a bit strange
+	"Block Whitelist" = []
+	#Delay for the coroutil repair block. Coroutil integration needs to be enabled
+	"Repair Ticks" = 500
+	#Cooldown for breaking blocks
+	"Breaker Cooldown" = 20
+	#Chance for mobs to be able to ride a guardian
+	#Range: 0.0 ~ 1.0
+	"Guardian Chance" = 0.0
+
+#Configs regarding mobs spawning with equipment
+[equipment]
+	#Base chance for each armor pieces to get enchanted
+	#Range: 0.0 ~ 1.0
+	"Enchanting Chance" = 0.1
+	#Specify min and max enchanting levels according to difficulty. difficulty-minLevel-maxLevel
+	"Enchanting Calc" = ["15-3-5", "50-6-7", "100-10-17", "200-17-20", "500-30-50"]
+	#Adds additional x*difficulty% to base enchanting chance
+	"Enchanting Addition" = 0.01
+	#Blacklist for specific mobs and items they shouldnt use (e.g. skeletons already use bows)
+	#<entity registry name-item>
+	#For different items but same entity use multiple lines
+	#Some special names are BOW, TRIDEN, CROSSBOW refering to every bow/trident/crossbow item (So you dont need to type e.g. every bow item)
+	"Entity Item Use Blacklist" = ["minecraft:drowned;TRIDENT", "minecraft:illusioner;BOW", "minecraft:piglin;CROSSBOW", "minecraft:pillager;CROSSBOW", "minecraft:skeleton;BOW", "minecraft:snow_golem;minecraft:snowball", "minecraft:stray;BOW", "minecraft:wither_skeleton;BOW"]
+	#Base chance that a mob can have one piece of armor
+	#Range: 0.0 ~ 1.0
+	"Equipment Chance" = 0.1
+	#Chance for mobs to have a weapon
+	#Range: 0.0 ~ 1.0
+	"Weapon Chance" = 0.05
+	#Should mobs drop the armor equipped through this mod? (Other methods e.g. through vanilla is not included)
+	"Should drop equipment" = false
+	#Adds additional x*difficulty% to base item chance
+	"Item Chance add" = 0.2
+	#Base chance for each additional armor pieces
+	#Range: 0.0 ~ 1.0
+	"Additional Equipment Chance" = 0.3
+	#Blacklist for items mobs should never be able to use.
+	#Use as in using the item similar to players (e.g. shooting bows)
+	"Item Use Blacklist" = ["bigbrain:buckler"]
+	#Chance for mobs to have an item in offhand
+	#Range: 0.0 ~ 1.0
+	"Item Equip Chance" = 0.05
+	#Blacklist for mods. Add modid to prevent items from that mod being equipped. (For individual items use the equipment.json)
+	"Item Blacklist" = []
+	#Turn the use blacklist into a whitelist
+	"Item Use Whitelist" = false
+	#Adds additional x*difficulty% to base equip chance
+	"Equipment Addition" = 0.3
+	#Adds additional x*difficulty% to base weapon chance
+	"Weapon Chance Add" = 0.3
+	#Use blacklist as whitelist
+	"Item Whitelist" = false
+
+#Settings for attribute modifiers
+[attributes]
+	#Maximum increase in magic resistance. Magic reduction is percentage
+	#Range: 0.0 ~ 1.0
+	"Max Magic Resistance" = 0.4
+	#Maximum increase in knockback
+	"Max Knockback" = 0.5
+	#Magic resistance will be increased by difficulty*0.0016*x. Set to 0 to disable
+	"Magic Resistance Increase" = 1.0
+	#Speed will be increased by difficulty*0.0008*x. Set to 0 to disable
+	"Speed Increase" = 1.0
+	#Damage will be multiplied by difficulty*0.008*x. Set to 0 to disable
+	"Damage Increase Multiplier" = 1.0
+	#Projectile damage will be multiplied by maximum of this
+	"Max Projectile Damage" = 2.0
+	#Round health to the nearest x. Set to 0 to disable
+	"Round HP" = 0.5
+	#Projectile Damage will be multiplied by 1+difficulty*0.008*x. Set to 0 to disable
+	"Projectile Damage Increase" = 1.0
+	#Health will be multiplied by difficulty*0.016*x. Set to 0 to disable
+	"Health Increase Multiplier" = 1.0
+	#Damage will be multiplied by at maximum this. Set to 0 means no limit
+	"Max Damage Increase" = 3.0
+	#Health will be multiplied by at maximum this. Set to 0 means no limit
+	"Max Health Increase" = 5.0
+	#Knockback will be increased by difficulty*0.002*x. Set to 0 to disable
+	"Knockback Increase" = 1.0
+	#Maximum increase in speed
+	#Range: 0.0 ~ 1.0
+	"Max Speed" = 0.1
+

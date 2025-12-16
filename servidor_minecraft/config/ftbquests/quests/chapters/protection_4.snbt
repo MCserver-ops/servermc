@@ -1,0 +1,373 @@
+{
+	id: "5BEF7FD5FB655563"
+	group: "08EB5BB8DBF33B74"
+	order_index: 3
+	filename: "protection_4"
+	title: "Protection - 4"
+	icon: "projecte:gem_chestplate"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "The Red Matter Armor"
+			icon: "projecte:rm_chestplate"
+			x: -1.0d
+			y: 3.0d
+			shape: "gear"
+			subtitle: "The Crimson Knight: The Red Matter armor is a minor upgrade to the Dark Matter Armor. It will give you 90% damage reduction. Fall Damage is reduce with this Armor, same with the Explosion Damage"
+			dependencies: ["47A9E1E1EC810A4B"]
+			id: "11966C8BA8E71376"
+			tasks: [
+				{
+					id: "257D2D4BE7ADF539"
+					type: "item"
+					item: {
+						id: "projecte:rm_helmet"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "13C666E14A9D4798"
+					type: "item"
+					item: {
+						id: "projecte:rm_chestplate"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "2D83C686043A63DB"
+					type: "item"
+					item: {
+						id: "projecte:rm_leggings"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "3B73B087927A1A1D"
+					type: "item"
+					item: {
+						id: "projecte:rm_boots"
+						Count: 1b
+						tag: { }
+					}
+				}
+			]
+		}
+		{
+			title: "The Dark Matter Armor"
+			icon: "projecte:dm_chestplate"
+			x: -2.0d
+			y: 3.0d
+			shape: "gear"
+			subtitle: "Molecular Batman: Since Batman is Batman, with this armor you'll be Batman too. While wearing a full set, you'll get a damage reduction of 80% While this doesn't sound like much, it basically means that not a lot of thing will be able to kill you. This includes even the Chaos Guardian. However, Fall Damage and Explosions might still kill you"
+			dependencies: ["0F691561E300905D"]
+			id: "47A9E1E1EC810A4B"
+			tasks: [
+				{
+					id: "3B6B7C18E8CDF08A"
+					type: "item"
+					item: {
+						id: "projecte:dm_helmet"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "5058E875779ACEFC"
+					type: "item"
+					item: {
+						id: "projecte:dm_chestplate"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "412A5C279F49148D"
+					type: "item"
+					item: {
+						id: "projecte:dm_leggings"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "3DF9097B9682B89A"
+					type: "item"
+					item: {
+						id: "projecte:dm_boots"
+						Count: 1b
+						tag: { }
+					}
+				}
+			]
+		}
+		{
+			x: -3.5d
+			y: 4.0d
+			shape: "gear"
+			subtitle: "Energy Shields - Part 1: The Wyvern Chest Piece is a modular item added by Draconic Evolution. Without modules, it is useless. Its module inventory can be accessed through the 'Tool Module' key (you'll have to bind it in the Controls menu). It can accept Wyvern Tier Modules. It has 30 slots available. Be aware that some Modules may take more then one Module Slot. Lastly, note that all the Chest Pieces are curios, items so you can combine them with any set of armor you want"
+			dependencies: [
+				"07DC4DA638FE68C6"
+				"6E667B32C7CAAB8D"
+				"0808192C70B533E9"
+				"408B21AB9E52F723"
+			]
+			id: "4321906CDEC7A900"
+			tasks: [{
+				id: "25C1AEB1CF5A1DA8"
+				type: "item"
+				item: {
+					id: "draconicevolution:wyvern_chestpiece"
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							module_host: {
+								provider_id: [I;
+									1761994697
+									-1456518382
+									-1427205883
+									-1264470076
+								]
+								modules: [ ]
+								properties: { }
+							}
+							energy: {
+								energy: 0L
+							}
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "03F015A50D088DB3"
+				type: "loot"
+				table_id: 8587500481418189075L
+			}]
+		}
+		{
+			x: -1.5d
+			y: 4.0d
+			shape: "gear"
+			subtitle: "Energy Shields - Part 2: The Draconic Chest Piece has 48 Module Slots available. It will also allow you to install Draconic Tiers of modules"
+			dependencies: [
+				"4321906CDEC7A900"
+				"19932FD1CAE6A98B"
+				"44EF0C161C89510B"
+			]
+			id: "6A02A2A1D71BC7BD"
+			tasks: [{
+				id: "444571CF098435D0"
+				type: "item"
+				item: {
+					id: "draconicevolution:draconic_chestpiece"
+					Count: 1b
+					ForgeCaps: {
+						Parent: {
+							module_host: {
+								provider_id: [I;
+									-1188788351
+									-245215420
+									-1616417125
+									-522476142
+								]
+								modules: [ ]
+								properties: { }
+							}
+							energy: {
+								energy: 0L
+							}
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "3EB4FEBE2FDC88D8"
+				type: "loot"
+				table_id: 7176426831663151036L
+			}]
+		}
+		{
+			title: "The Gem Armor"
+			icon: "projecte:gem_chestplate"
+			x: 0.5d
+			y: 3.0d
+			shape: "gear"
+			subtitle: "The Crimson Lord: Chaos Guardian? I bet you're kidding. Left Click for more info"
+			description: [
+				"The Gem Armor is one of the most advanced and expensive armors in The Decursio Project."
+				""
+				"It offers many offensive abilities and utilities, such as Jetpack-Like Flight (just hold down the 'Spacebar') and Creative Flight (double tap the 'Spacebar'). "
+				""
+				"It will also give you a permanent speed boost. The Boots can provide Step Assist if the feature's toggled through the special key. Same thing goes for the Helmet with its Night Vision feature."
+				""
+				"While holding 'Shift', all the nearby mobs will be repealed from you."
+				""
+				"We recommend using this armor with a Chest Piece from Draconic Evolution."
+			]
+			dependencies: [
+				"11966C8BA8E71376"
+				"5584F91483D41A83"
+				"6F0CCBB8640CB3F6"
+				"2535A1666F34DCB3"
+				"04230EBC75FCF4F8"
+				"4DB2ADC122FD0B66"
+			]
+			id: "5E8EF64468A63DF6"
+			tasks: [
+				{
+					id: "0928F187918D363F"
+					type: "item"
+					item: {
+						id: "projecte:gem_helmet"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "2FB5EAF5E95D92E3"
+					type: "item"
+					item: {
+						id: "projecte:gem_chestplate"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "5C7D6869ED3B595A"
+					type: "item"
+					item: {
+						id: "projecte:gem_leggings"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "2C352355623B461D"
+					type: "item"
+					item: {
+						id: "projecte:gem_boots"
+						Count: 1b
+						tag: { }
+					}
+				}
+			]
+			rewards: [{
+				id: "7995E04956FAF31A"
+				type: "loot"
+				table_id: 3966812906621148304L
+			}]
+		}
+		{
+			title: "The Supremium Armor"
+			icon: {
+				id: "mysticalagriculture:supremium_chestplate"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -3.5d
+			y: 3.0d
+			shape: "gear"
+			subtitle: "The Little Devil: The Supremium Armor is a modular set added by Mystical Agriculture. With it, you can increase your max health, have creative flight and more. All of these features will require a Tinker Table from Mystical Agriculture, and Augments"
+			dependencies: [
+				"77CEF9AA1C8EC6FD"
+				"5B16F03963346B82"
+			]
+			id: "0F691561E300905D"
+			tasks: [
+				{
+					id: "13A520614BD53C99"
+					type: "item"
+					item: {
+						id: "mysticalagriculture:supremium_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "2AE28615A2A7CB1F"
+					type: "item"
+					item: {
+						id: "mysticalagriculture:supremium_chestplate"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "2AD6FA065D309921"
+					type: "item"
+					item: {
+						id: "mysticalagriculture:supremium_leggings"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "559DB57D64513ED6"
+					type: "item"
+					item: {
+						id: "mysticalagriculture:supremium_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "7D66AFDEDE9B7B5F"
+				type: "loot"
+				table_id: 3966812906621148304L
+			}]
+		}
+		{
+			x: 0.5d
+			y: 4.0d
+			shape: "gear"
+			subtitle: "Energy Shields - Part 3: The Chaotic Chest Piece has 80 Module Slots available. It will also allow you to install Chaotic Tiers of modules"
+			dependencies: ["6A02A2A1D71BC7BD"]
+			id: "6D31253E625EA2F3"
+			tasks: [{
+				id: "792C3E56609FA7E3"
+				type: "item"
+				item: {
+					id: "draconicevolution:chaotic_chestpiece"
+					Count: 1b
+					tag: { }
+					ForgeCaps: {
+						Parent: {
+							module_host: {
+								provider_id: [I;
+									625632909
+									1105936607
+									-1572707438
+									752136812
+								]
+								modules: [ ]
+								properties: { }
+							}
+							energy: {
+								energy: 0L
+							}
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "4AFFCF4328F5D8E5"
+				type: "loot"
+				table_id: 3966812906621148304L
+			}]
+		}
+	]
+}

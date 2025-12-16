@@ -1,0 +1,1274 @@
+{
+	id: "267F74AA195250B5"
+	group: "52BC1523CD35BD71"
+	order_index: 1
+	filename: "arcane_1"
+	title: "Arcane - 1"
+	icon: "eidolon:crucible"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "The Wicked Sign"
+			icon: "quark:purple_candle"
+			x: -10.0d
+			y: 3.0d
+			shape: "square"
+			subtitle: "Team up with The Evil. Left Click for more info"
+			description: [
+				"In order to further advance, you'll have to share The Ars Ecclesia (which is one of the Books included in the Akashic Tome you received at the beginning) with a Witch. She will grant your The Wicked Sign, which will be essential down the road."
+				""
+				"Task: Throw The Ars Ecclesia at a witch."
+				""
+				"Note: Keep in mind that this quest is here to keep track of what you need to do. Finishing it, doesn't actually mean you did what you HAD TO."
+				""
+				"{image:kubejs:textures/eidolon/example3.png width:100 height:170 align:1}"
+				"The example above shows a witch in the process of writing the wicked sign in the Ars Ecclesia."
+			]
+			dependencies: ["6EC2AAB1C3022A4E"]
+			id: "2456A6DB1ADA4325"
+			tasks: [{
+				id: "153E78E2D5339E96"
+				type: "checkmark"
+				title: "Give The Ars Ecclesia to a witch."
+				icon: "eidolon:codex"
+			}]
+		}
+		{
+			x: -10.0d
+			y: 7.0d
+			shape: "square"
+			subtitle: "Pewter can be alloyed in a Tinker's Smeltry using Lead and Iron"
+			dependencies: [
+				"6EC2AAB1C3022A4E"
+				"20565A3484CED967"
+			]
+			id: "3BC1CFB22EDA4D74"
+			tasks: [{
+				id: "4263C9DB02B11425"
+				type: "item"
+				item: "eidolon:pewter_ingot"
+			}]
+		}
+		{
+			title: "Workin' with tHe pOt!"
+			x: -5.5d
+			y: 7.0d
+			shape: "square"
+			subtitle: "A Crucible can, when given heat and water, be used to combine certain items, to obtain new ones. Left Click for more info"
+			description: [
+				"First off, the Crucible you're about to use, is NOT the Crucible from the Eidolon mod and this one has a different functionality. Let's see how you can use this thing."
+				""
+				"In order to make recipes in this Crucible, you'll have to fill it with water and provide a heat source underneath it. There are only two heat sources available and they're quite important for the recipes you're about to create."
+				""
+				"You can either use a regular Campfire, or a Soul Campfire. Some recipes will require the regular Campfire, and some of them, will require the Soul Campire. If the propper heat source is not provided, the items present in the Crucible's inventory, will be deleted. "
+				""
+				"Now, how do you actually craft something? It's quite simple. Place a bucket of Water in the Crucible, throw in the ingredients, and finally, throw in the Catalyst which will finalize the recipe. If the ingredients present in the Crucible will result in a valid recipe, the overlay shown on the screen, will show you the output and the Catalyst required to finish the recipe."
+				""
+				"\"What if I throw in the Crucible a wrong item?\""
+				""
+				"We'd suggest being careful with the Crucible. One wrong item in its inventory and all of your items will be gone, since you can't get items out. Same thing will happen if you throw in, the wrong Catalyst."
+				""
+				"\"Ok, how do I reset the Crucible if I mess it up?\""
+				""
+				"Just place a new bucket of water in the Crucible."
+				""
+				"Finally, use JEI to see what recipes you have access to, and which ones will require a Soul Campfire."
+			]
+			dependencies: [
+				"3BC1CFB22EDA4D74"
+				"20565A3484CED967"
+			]
+			id: "2045087C068870F6"
+			tasks: [{
+				id: "19B637F8DBADC266"
+				type: "item"
+				item: "decursiomod:crucible"
+			}]
+			rewards: [{
+				id: "24A17BA3B61424DF"
+				type: "item"
+				item: "minecraft:campfire"
+			}]
+		}
+		{
+			x: -2.5d
+			y: 7.0d
+			shape: "square"
+			subtitle: "Used to execute rituals. Left Click to view setup example"
+			description: [
+				"{image:kubejs:textures/eidolon/example4.png width:170 height:100 align:1}"
+				""
+				"The ritual in the example above, is the Ritual of Moonlight. It will make it night time. This ritual will require 4 stone hands. To start any ritual, just right-click the brazier with a Flint and Steel."
+				""
+				"Note that quite a numerous number of items are obtained through a Ritual. While Eidolon has JEI support, it is not very well implemented, so you can't just press \"R\" on an item to see its recipe, you'll have to press \"U\" on one of the ingredients instead. We'll try to assist you with this issue through the descriptions of our quests."
+				""
+				"Lastly, note that all the Brazier Ritual recipes will require the Stone Hands to be on the same Y level as the Brazier itself. Same goes to the advanced items holders, such as the Necrotic Focus. DO NOT ignore this."
+			]
+			dependencies: ["3BC1CFB22EDA4D74"]
+			id: "077199D0B5C0CEDD"
+			tasks: [
+				{
+					id: "3604073606808091"
+					type: "item"
+					item: "eidolon:brazier"
+				}
+				{
+					id: "26BCCE6B839E4A33"
+					type: "item"
+					item: "eidolon:stone_hand"
+				}
+			]
+		}
+		{
+			title: "Altar Mk I"
+			icon: "eidolon:straw_effigy"
+			x: -8.5d
+			y: 4.0d
+			shape: "square"
+			subtitle: "Make your first altar to start praying to The Dark Lord"
+			description: [
+				"The example below, shows you a basic altar setup."
+				""
+				"{image:kubejs:textures/eidolon/example5.png width:150 height:100 align:1}"
+			]
+			dependencies: ["6EC2AAB1C3022A4E"]
+			id: "062676BF5584EBAF"
+			tasks: [
+				{
+					id: "0982225C707334B8"
+					type: "item"
+					item: "eidolon:straw_effigy"
+				}
+				{
+					id: "6B87D9C3F21659CD"
+					type: "item"
+					item: "eidolon:wooden_altar"
+					count: 6L
+				}
+			]
+		}
+		{
+			title: "The Crystalization Ritual"
+			x: -4.0d
+			y: 4.5d
+			shape: "square"
+			subtitle: "The Crystalization Ritual is used to obtain Soul Shards. Consult the Ars Ecclesia for more info"
+			dependencies: ["077199D0B5C0CEDD"]
+			id: "25F5B4F662D9D463"
+			tasks: [{
+				id: "7293339A967A2199"
+				type: "item"
+				item: "eidolon:soul_shard"
+			}]
+			rewards: [{
+				id: "500E408365F9FB60"
+				type: "loot"
+				table_id: 5206766833681472091L
+			}]
+		}
+		{
+			title: "The Summoning Ritual"
+			icon: "minecraft:rotten_flesh"
+			x: 0.5d
+			y: 7.0d
+			shape: "gear"
+			subtitle: "With this ritual, you can summon undead mobs. There are different versions of this ritual, depending on what mob you what to summon. PS: You can summon Wither Skeletons with this one"
+			dependencies: ["077199D0B5C0CEDD"]
+			hide: true
+			id: "6C9CAADFE5A90425"
+			tasks: [{
+				id: "4C2E1029C17163E5"
+				type: "checkmark"
+				title: "Summoning ritual"
+			}]
+		}
+		{
+			title: "The Ritual of Alluring"
+			icon: {
+				id: "minecraft:carrot_on_a_stick"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -0.5d
+			y: 5.0d
+			shape: "gear"
+			subtitle: "This ritual will, as its name might suggest, lures nearby friendly mobs towards its center"
+			dependencies: ["077199D0B5C0CEDD"]
+			hide: true
+			id: "7D14BCF66D2DB5A3"
+			tasks: [{
+				id: "1EF9A6D7AB645D5E"
+				type: "checkmark"
+				title: "Alluring"
+			}]
+		}
+		{
+			title: "The Ritual of Repelling"
+			icon: {
+				id: "minecraft:shield"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -1.5d
+			y: 9.5d
+			shape: "gear"
+			subtitle: "This ritual will keep mobs away in a large area"
+			dependencies: ["077199D0B5C0CEDD"]
+			hide: true
+			id: "4637154018BEA850"
+			tasks: [{
+				id: "4C880FC7F635A490"
+				type: "checkmark"
+				title: "Shielding"
+			}]
+		}
+		{
+			title: "The Ritual of Deceit"
+			icon: "minecraft:emerald"
+			x: -0.5d
+			y: 9.0d
+			shape: "gear"
+			subtitle: "By performing dark magic, you scare the nearby villagers. With this ritual, you can make them forgive you faster"
+			dependencies: ["077199D0B5C0CEDD"]
+			hide: true
+			id: "7BED423E12729F77"
+			tasks: [{
+				id: "031F1C00809104AE"
+				type: "checkmark"
+				title: "Being forgiven"
+			}]
+		}
+		{
+			title: "The Ritual of Daylight"
+			icon: "minecraft:sunflower"
+			x: 0.0d
+			y: 8.0d
+			shape: "gear"
+			subtitle: "You can skip the night with this. And while you can just sleep through the night, this Ritual might be useful for situations where a mob would not allow you to sleep"
+			dependencies: ["077199D0B5C0CEDD"]
+			hide: true
+			id: "066D9FF41D5AC16D"
+			tasks: [{
+				id: "3553D7A3E8FEC7C4"
+				type: "checkmark"
+				title: "Let there be light!"
+			}]
+		}
+		{
+			title: "The Ritual of Moonlight"
+			icon: "minecraft:black_dye"
+			x: -1.5d
+			y: 4.5d
+			shape: "gear"
+			subtitle: "You can make it night time with it. Now that's useful"
+			dependencies: ["077199D0B5C0CEDD"]
+			hide: true
+			id: "26DB2FC033FCD6DD"
+			tasks: [{
+				id: "74B616662D15F760"
+				type: "checkmark"
+				title: "Falling into The Dark Side"
+			}]
+		}
+		{
+			title: "The Ritual of Purifying"
+			icon: "minecraft:golden_apple"
+			x: 0.0d
+			y: 6.0d
+			shape: "gear"
+			subtitle: "This ritual will cure all zombie villagers nearby. Also, it will turn Zombified Hoglins and Piglins to their natural form"
+			dependencies: ["077199D0B5C0CEDD"]
+			hide: true
+			id: "4D1DC1162086FA25"
+			tasks: [{
+				id: "17388FD9C49533C8"
+				type: "checkmark"
+				title: "The cure, now cheaper?"
+			}]
+		}
+		{
+			x: -4.5d
+			y: 10.0d
+			shape: "diamond"
+			subtitle: "Mix up a Lesser Soul Gem in your Crucible"
+			dependencies: ["39FF7B69E755AC45"]
+			hide: false
+			id: "52FD71220EF8CF35"
+			tasks: [{
+				id: "084EA5D4CBF556FD"
+				type: "item"
+				item: "eidolon:lesser_soul_gem"
+			}]
+			rewards: [
+				{
+					id: "65292845F0531745"
+					type: "loot"
+					table_id: 5206766833681472091L
+				}
+				{
+					id: "1A6FDAE7036987FA"
+					type: "item"
+					item: "eidolon:zombie_heart"
+					count: 3
+				}
+			]
+		}
+		{
+			x: -5.5d
+			y: 2.0d
+			shape: "diamond"
+			subtitle: "Mix up gold ingots, redstone and soul shards in your Crucible"
+			dependencies: [
+				"2045087C068870F6"
+				"25F5B4F662D9D463"
+			]
+			size: 1.5d
+			id: "54A9CA62C88CA53A"
+			tasks: [{
+				id: "6618856211E26444"
+				type: "item"
+				item: "eidolon:arcane_gold_ingot"
+			}]
+		}
+		{
+			x: -10.0d
+			y: 10.0d
+			shape: "square"
+			subtitle: "This workbench has the ability to combine certain magical items into powerful tools. For some recipes, additional items will be required in the special Tool Slots of the Workbench"
+			dependencies: ["3BC1CFB22EDA4D74"]
+			id: "2672CC97E79EB5DE"
+			tasks: [{
+				id: "73BAC545213CE338"
+				type: "item"
+				item: "eidolon:worktable"
+			}]
+		}
+		{
+			title: "Sacrifice Animal - Chant"
+			icon: "eidolon:goblet"
+			x: -8.5d
+			y: 2.0d
+			shape: "square"
+			subtitle: "You'll have to give The Dark Lord an offering. Left Click for more info"
+			description: [
+				"Made from Arcane Gold, the goblet will serve as the perfect vessel for your sacrifices's blood."
+				""
+				"To perform a sacrifice, you'll have to kill an animal next to the goblet which will be placed on the Altar."
+				""
+				"After the animal was killed, its blood will be placed in the goblet. Next, you'll have to perform the \"Sacrifice Animal\" chant to give the blood to The Dark Lord."
+				""
+				"Ps: The Goblet will not act as a portable tank, you'll have to bring the animal to the goblet, not the other way around."
+				""
+				"Task: Obtain the goblet and make your first sacrifice."
+				""
+				"Note: Keep in mind that this quest is here to keep track of what you need to do. Finishing it, doesn't actually mean you did what you HAD TO."
+				""
+				"Lastly, here's an example of an altar with a goblet filled with blood, placed on it:"
+				""
+				"{image:kubejs:textures/eidolon/example12.png width:250 height:200 align:1 fit:true}"
+				""
+				"Chant:"
+				""
+				"{image:kubejs:textures/eidolon/chant_sacrifice_animal_example.png width:200 height:100 align:1}"
+			]
+			dependencies: [
+				"54A9CA62C88CA53A"
+				"7FB44F8893DD2EDA"
+			]
+			id: "670E9235F59D0482"
+			tasks: [{
+				id: "190701363BCF2DA2"
+				type: "item"
+				item: "eidolon:goblet"
+			}]
+			rewards: [{
+				id: "683126830BE99956"
+				type: "loot"
+				table_id: 5206766833681472091L
+			}]
+		}
+		{
+			title: "The Touch of Darkness - Chant"
+			icon: "eidolon:unholy_symbol"
+			x: -8.5d
+			y: 1.0d
+			shape: "square"
+			subtitle: "Close to H3!! Left Click for more info"
+			description: [
+				"Use The Touch of Darkness chant on a Pewter Inley to obtain a powerful, yet unholy artifact. The Unholy Symbol may be used to further impress The Dark Lord."
+				" "
+				"It will also give you the ability to make new powerful objects, which you might find useful."
+				""
+				"This item will NOT be used in any Magic Workbench recipe (like a Bucket would not be used in a Cake recipe). Now, this item will be used in some other recipes, such as the Brazier Rituals from Eidolon."
+				""
+				"Keep in mind that you'll have to throw the inlay on the ground and then, chant at it."
+				""
+				"Chant:"
+				""
+				"{image:kubejs:textures/eidolon/chant_touch_of_darkness_example.png width:200 height:100 align:1}"
+			]
+			dependencies: ["420788C63E156433"]
+			id: "08BEA27B64FD36C4"
+			tasks: [{
+				id: "7A69BD0F928FF600"
+				type: "item"
+				item: "eidolon:unholy_symbol"
+			}]
+			rewards: [{
+				id: "5EE867DE6B793988"
+				type: "loot"
+				table_id: 5206766833681472091L
+			}]
+		}
+		{
+			title: "Becoming Death? Not really."
+			x: -7.0d
+			y: 1.0d
+			shape: "diamond"
+			subtitle: "Crafting the scythe will allow you to open The Nether Portal. It will also allow you to harvest soul shards more easier. Once you have the Scythe, move towards the \"Nether\" tab in the \"Dimensional Explorer\" chapter group. To see the recipe for the Scythe, press \"U\" on the Unholy Symbol. The Scythe's recipe will use any Kama from Tinker's Construct. You'll also need a Necrotic Focus for the Ritual!"
+			hide_dependency_lines: false
+			dependencies: [
+				"08BEA27B64FD36C4"
+				"133FDA76CD0F6764"
+				"0492A1CDFB26CAE1"
+			]
+			size: 2.0d
+			id: "35A42F33FE263878"
+			tasks: [{
+				id: "1E4BF62320216E7D"
+				type: "item"
+				item: {
+					id: "eidolon:reaper_scythe"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "360B35A976312B4A"
+					type: "loot"
+					table_id: 5206766833681472091L
+				}
+				{
+					id: "0BF83657D8B80616"
+					type: "item"
+					item: "eidolon:wraith_heart"
+					count: 3
+				}
+			]
+		}
+		{
+			title: "Upgrading the altar - Skulls"
+			icon: "minecraft:wither_skeleton_skull"
+			x: -7.0d
+			y: 5.0d
+			shape: "gear"
+			subtitle: "Decapitation. Left Click for more info"
+			description: [
+				"As you progress further, you'll find out the The Dark Lord seems to ignore your prayers."
+				" "
+				"Maybe upgrading your altar will impress him."
+				""
+				"There are multiple skulls which will add to the altar's power."
+				""
+				"The Zombie Skull: 1 capacity, 1 power"
+				"Skeleton Skull: 2 capacity"
+				"Wither Skeleton Skull: 3 capacity, 1 power"
+				""
+				"Example of how a skull should be placed on the altar:"
+				""
+				"{image:kubejs:textures/eidolon/example7.png width:250 height:200 align:1 fit:true}"
+				""
+				"Multiple skulls DO NOT stack."
+			]
+			dependencies: ["062676BF5584EBAF"]
+			id: "7E34CC523DAA6101"
+			tasks: [{
+				id: "72D9E514F968A425"
+				type: "checkmark"
+				title: "Ghather any of a wither skull/a skeleton skull/a zombie head"
+			}]
+		}
+		{
+			title: "Upgrading the altar - Herbs"
+			icon: "minecraft:wither_rose"
+			x: -7.0d
+			y: 3.0d
+			shape: "gear"
+			subtitle: "Plants, we love 'em. Left Click for more info"
+			description: [
+				"Oh, herbs - fundamental in any magician's arsenal."
+				""
+				"However, unlike other magicians, you'll need theese herbs for different purposes."
+				""
+				"Similar to the skulls, the hearbs will augment your altar."
+				""
+				"Crimson Fungus: 2 power"
+				"Warped Fungus: 2 power"
+				"Wither rose: 3 power"
+				""
+				"How herbs should be placed on the altar:"
+				""
+				"{image:kubejs:textures/eidolon/example6.png width:250 height:200 align:1 fit:true}"
+				""
+				"Multiple herbs DO NOT stack."
+			]
+			dependencies: ["062676BF5584EBAF"]
+			id: "5C31F2197CB4FD40"
+			tasks: [{
+				id: "0C520EBB567FB905"
+				type: "checkmark"
+				title: "Gather any of a wither rose/a crimson fungus/a warped fungus"
+			}]
+		}
+		{
+			title: "The Dark Prayer - Chant"
+			icon: {
+				id: "eidolon:warlock_hat"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -8.5d
+			y: 3.0d
+			shape: "square"
+			subtitle: "Demon summoner. Left Click for more info"
+			description: [
+				"The Wicked Sign will be your first method of contacting The Dark Lord. Previously given by a witch, chanting with this sign will be the first thing you'll do for maybe a few nights in order to progress further."
+				""
+				"Keep in mind that, with this, and with any other prayer method, you'll have to try more then once in order to attract The Dark Lord's attention. Also, you can pray only ONCE per day. A fire being extunguished can be heard if your prayes haven't been heard."
+				""
+				"Task: Make your first prayer to The Dark Lord."
+				""
+				"Note: Keep in mind that this quest is here to keep track of what you need to do. Finishing it, doesn't actually mean you did what you HAD TO."
+				""
+				"Below, you can see the chant:"
+				""
+				"{image:kubejs:textures/eidolon/example9.png width:170 height:100 align:1}"
+				""
+				"To execute a Chant, open the Mystical Signs tab in the Arc Ecclesia and select the signs required by the chant."
+			]
+			dependencies: [
+				"062676BF5584EBAF"
+				"2456A6DB1ADA4325"
+			]
+			id: "3F0D14B22A5EB455"
+			tasks: [{
+				id: "64D922B5C9B51804"
+				type: "checkmark"
+				title: "Do The Dark Prayer for the first time"
+			}]
+		}
+		{
+			title: "The Blood Sign"
+			icon: "quark:red_candle"
+			x: -10.0d
+			y: 2.0d
+			shape: "square"
+			subtitle: "Dirty hands. Left Click for more info"
+			description: [
+				"The Blood Sign is a gift from The Dark Lord hymself. This sign will make sacrifices available to you, thus advancing forward."
+				""
+				"Task: Obtain The Blood Sign through multiple prayers."
+				""
+				"Note: Keep in mind that this quest is here to keep track of what you need to do. Finishing it, doesn't actually mean you did what you HAD TO."
+			]
+			dependencies: ["3F0D14B22A5EB455"]
+			id: "7FB44F8893DD2EDA"
+			tasks: [{
+				id: "167FC25FDF3D34B8"
+				type: "checkmark"
+				title: "The Blood Sign"
+			}]
+		}
+		{
+			title: "The Soul Sign"
+			icon: "quark:pink_candle"
+			x: -10.0d
+			y: 1.0d
+			shape: "square"
+			subtitle: "Soul gifter. Left Click for more info"
+			description: [
+				"The Soul is often believed to be the living essence inside every being. To show The Dark Lord that you are willing to give your soul to Him, you'll need a certain sign to make a prayer with."
+				""
+				"Task: Obtain The Soul Sign through multiple animal sacrfices."
+				""
+				"Note: Keep in mind that this quest is here to keep track of what you need to do. Finishing it, doesn't actually mean you did what you HAD TO."
+			]
+			dependencies: ["670E9235F59D0482"]
+			id: "420788C63E156433"
+			tasks: [{
+				id: "355DF8EAF91EDAAB"
+				type: "checkmark"
+				title: "The Soul Sign"
+			}]
+		}
+		{
+			x: -6.5d
+			y: 10.0d
+			shape: "diamond"
+			subtitle: "Shany and dark at the same time, this gem can be used in lots of Eidolon recipes"
+			dependencies: ["39FF7B69E755AC45"]
+			id: "03E1A8C6F933631D"
+			tasks: [{
+				id: "558E496268511DF9"
+				type: "item"
+				item: "eidolon:shadow_gem"
+			}]
+		}
+		{
+			x: -8.0d
+			y: -0.5d
+			shape: "circle"
+			subtitle: "This purple looking material can be used to obtain a nice set of armor"
+			dependencies: ["08BEA27B64FD36C4"]
+			id: "5BE9A7D51A671963"
+			tasks: [{
+				id: "29DE87061C821C47"
+				type: "item"
+				item: "eidolon:wicked_weave"
+			}]
+		}
+		{
+			title: "The Blood Origins"
+			icon: "eidolon:codex"
+			x: -10.0d
+			y: 5.5d
+			shape: "square"
+			subtitle: "This will be the starting quest in the magic phase of the 1st Age. You're starting with the Eidolon mod. The Akashic Tome you receive at the start, will have the Ars Ecclesia in it. This book is part of Eidolon's progression, so you'll need it. If you've lost the Tome, you can just craft the Ars Ecclesia with a Book and a Rotten Flesh"
+			dependencies: ["3073595C53701173"]
+			size: 1.5d
+			id: "6EC2AAB1C3022A4E"
+			tasks: [{
+				id: "0F6FD1B3516126DE"
+				type: "checkmark"
+				title: "Let's go!"
+			}]
+		}
+		{
+			x: -2.5d
+			y: 1.0d
+			shape: "diamond"
+			subtitle: "Advanced Rituals: The Nectrotic Focus will allow you to execute advanced Rituals, which usually, give you very powerful items. It has to be on the same Y level as the Brazier and the Stone Hands. Skeleton Skulls can be found throut the world in Dungeons. Good luck exploring! Left Click for an example"
+			description: [
+				"In the picture shown below, you can see an example of a JEI recipe which uses a Necrotic Focus. That tiny icon is the Necrotic Focus. Remember, JEI DOES NOT show you the output of a Ritual recipe, so don't get confused, the Necrotic Focus is the place where other ingredients will be placed:"
+				""
+				"{image:kubejs:textures/eidolon/necrotic_focus_example.png width:100 height:150 align:1 fit:true}"
+			]
+			dependencies: ["077199D0B5C0CEDD"]
+			id: "0492A1CDFB26CAE1"
+			tasks: [{
+				id: "1AF7C9964A50482A"
+				type: "item"
+				item: "eidolon:necrotic_focus"
+			}]
+		}
+		{
+			title: "Sulfur -> Gunpowder"
+			icon: "minecraft:gunpowder"
+			x: -7.0d
+			y: 9.0d
+			shape: "gear"
+			subtitle: "By combining Sulfur (Eidolon) and Bonemeal with Charcoal in a Crucible, you can obtain Gunpowder"
+			dependencies: ["39FF7B69E755AC45"]
+			id: "1144E4662B06D336"
+			tasks: [{
+				id: "38DD6B7C681E414C"
+				type: "item"
+				item: "eidolon:sulfur"
+				count: 2L
+			}]
+		}
+		{
+			title: "Rotten Flesh -> Leather"
+			icon: "minecraft:leather"
+			x: -4.0d
+			y: 9.0d
+			shape: "gear"
+			subtitle: "By combining Rotten Flesh with Enchanted Ash in a Crucible, you can obtain leather"
+			dependencies: ["39FF7B69E755AC45"]
+			id: "2827864A806E7C9A"
+			tasks: [{
+				id: "3B0F6F43F77C37A3"
+				type: "checkmark"
+				title: "Sweet"
+			}]
+		}
+		{
+			title: "Hexblades - Chant"
+			x: -11.5d
+			y: 1.0d
+			shape: "gear"
+			subtitle: "Ancient and powerful, aren't they? Left Click for more info"
+			description: [
+				"Using the Sword Chant, you might raise The Dark Lord's interest into you just high enough that they might reward you with The Unstable Elemental Core. With this relic you can make a powerful weapon out of 5 versions. While you can make all of them with enough Cores, for now, you'll just have one, so choose your blade wisely."
+				""
+				"You can see these weapons in the 'Tools - 1' tab."
+				""
+				"Chant:"
+				""
+				"{image:kubejs:textures/eidolon/chant_sword_chant_example.png width:200 height:100 align:1}"
+			]
+			dependencies: ["420788C63E156433"]
+			hide: true
+			id: "21378F7407807CD1"
+			tasks: [{
+				id: "0C7EF1454B16FF47"
+				type: "item"
+				item: "hexblades:elemental_core"
+			}]
+		}
+		{
+			title: "The Sacred Sign"
+			icon: "quark:yellow_candle"
+			x: -11.5d
+			y: 5.5d
+			shape: "gear"
+			subtitle: "You might forget your flint and steel at a point. With the Chant of Flames you can light up camp fires, braziers and more. You'll have to give the Ars Ecclesia to a Cleric Vilagger to obtain the Sacred Sign required for this chant"
+			dependencies: ["6EC2AAB1C3022A4E"]
+			id: "64E6FC921A976B54"
+			tasks: [{
+				id: "3500E32AC8369D66"
+				type: "checkmark"
+				title: "Got it"
+			}]
+		}
+		{
+			x: -4.0d
+			y: 2.0d
+			subtitle: "These should be really tasty"
+			dependencies: ["25F5B4F662D9D463"]
+			id: "3CAC453CACF9E802"
+			tasks: [{
+				id: "6C4D11F527961AD6"
+				type: "item"
+				item: "hexblades:soul_candy"
+			}]
+		}
+		{
+			title: "Altar Mk II"
+			icon: "eidolon:unholy_effigy"
+			x: -9.0d
+			y: -0.5d
+			shape: "gear"
+			subtitle: "The second Altar will allow you to advance further in the eyes of The Dark Lord"
+			dependencies: ["08BEA27B64FD36C4"]
+			id: "2701C525448FFD03"
+			tasks: [
+				{
+					id: "47C4859A8E3F4F1E"
+					type: "item"
+					item: "eidolon:unholy_effigy"
+				}
+				{
+					id: "124A7791E0061315"
+					type: "item"
+					item: "eidolon:stone_altar"
+					count: 6L
+				}
+			]
+		}
+		{
+			title: "Sacrifice Villager - Chant"
+			icon: {
+				id: "artifacts:villager_hat"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -10.0d
+			y: -0.5d
+			subtitle: "This chant will be needed in order to obtain the Mind Sign. Note that you won't be able to use this chant to progress until you unlock the \"Sacrifice Villager\" page in the \"Theurgy Chapter\" of the Ars Ecclesia. This can be done by performing the \"Sacrifice Animal\" chant at a Stone Tier Altar for a few nights. Left Click for more info"
+			description: [
+				"Now, that you've unlocked the knlowledge required for this Chant, let's learn how to use it. Note that this quest can be finished just by randomly killing a Villager. However, what you actually need to do in order to progress further, is to kill a villager next to an Altar which has a Goblet on it, and then, pray to the Dark Lord until you receive the Mind Sign."
+				""
+				"Chant:"
+				""
+				"{image:kubejs:textures/eidolon/chant_sacrifice_villager_example.png width:200 height:100 align:1}"
+			]
+			dependencies: ["2701C525448FFD03"]
+			id: "5EF6C7AE5CE56681"
+			tasks: [{
+				id: "6922BAC56696C7E7"
+				type: "kill"
+				title: "Kill a Villager for a Sacrifice"
+				entity: "minecraft:villager"
+				value: 1L
+			}]
+		}
+		{
+			title: "The Mind Sign"
+			icon: "quark:blue_candle"
+			x: -10.0d
+			y: -1.5d
+			shape: "gear"
+			subtitle: "MasterMind. Left Click for more info"
+			description: [
+				"The Mind Sign is the final sign you'll get from The Dark Lord."
+				""
+				"With it, you'll be able to focus all of your knowledge towards one object, thus enhancing its abilities."
+				""
+				"Task - Obtain The Mind Sign by making multiple Villager Sacrifices at a Stone Tier Altar."
+			]
+			dependencies: ["5EF6C7AE5CE56681"]
+			id: "76C57E75255CD8BE"
+			tasks: [{
+				id: "7DE488D7206219C3"
+				type: "checkmark"
+				title: "The Mind Sign"
+			}]
+		}
+		{
+			title: "Burning Bricks!"
+			icon: "hexblades:elemental_soul_2"
+			x: -10.0d
+			y: -4.0d
+			shape: "gear"
+			subtitle: "Hard Difficulty Required - The Mini-Boss fight. Left Click for more info"
+			description: [
+				"The Elemental of Flames is a mini boss added by Eidolon's Hexblades. It has 120 health points and it is quite powerful, so be prepared for it."
+				""
+				"Defeating it has a chance of rewarding you with The Soul of an Elemental. While it may not drop this item, the quest will give it to you anyway."
+				""
+				"PS: You can also obtain this soul by performing the Elemental Soul Creation chant on a Nether Star."
+			]
+			dependencies: ["3370640F28711037"]
+			size: 1.5d
+			id: "570BA5FA1822BCF8"
+			tasks: [{
+				id: "0F70AEE3C32B55AF"
+				type: "kill"
+				title: "Defeat an Elemental of Flames"
+				icon: "hexblades:elemental_soul_2"
+				entity: "hexblades:fire_elemental"
+				value: 1L
+			}]
+			rewards: [
+				{
+					id: "3BC176005C90E041"
+					type: "item"
+					item: "hexblades:elemental_soul"
+				}
+				{
+					id: "35ECE2C686BD2BD1"
+					type: "loot"
+					table_id: 5206766833681472091L
+				}
+			]
+		}
+		{
+			title: "HexBlades +"
+			icon: {
+				id: "hexblades:flame_sword_2"
+				Count: 1b
+				tag: {
+					awakened: 1b
+					AS_Amulet_Holder: [I;
+						-2094091943
+						-458931240
+						-1905311744
+						-792705749
+					]
+					Damage: 0
+					hexSwordDamage: 9.1d
+				}
+			}
+			x: -11.5d
+			y: -1.5d
+			shape: "gear"
+			subtitle: "They can be upgraded. Left Click for more info"
+			description: [
+				"The Mind Sign will be required for this task. Focus your attention towards obtaining that."
+				""
+				"After unlocking The Mind Sign you'll have to use your current Hexblade and defeat mobs until new knowledge will be grated to you."
+				""
+				"To see your progress, you can use this command:"
+				""
+				"/hexblades devotion <player_name> get blade"
+				""
+				"Ps: Lever 30 needs to be reached."
+			]
+			dependencies: [
+				"21378F7407807CD1"
+				"76C57E75255CD8BE"
+			]
+			id: "4208F96060C4D34C"
+			tasks: [{
+				id: "1619C7F37ED46CB7"
+				type: "checkmark"
+				title: "Ok!"
+			}]
+		}
+		{
+			x: -11.5d
+			y: -2.5d
+			subtitle: "You can find its recipe in the Ars Ecclesia. Left Click for more info"
+			description: [
+				"Great, you've chanelled enough power into your weapon and now you can upgrade it."
+				""
+				"To do so, you'll need a more powerful core then the previous one. Now, where could you get one..?"
+				""
+				"Luckly, you can make it yourself. Press \"U\" on some Nether Quartz to see the Brazier Recipe. You'll need a Shadow Gem, a Lava Bucket and some other things."
+			]
+			dependencies: [
+				"4208F96060C4D34C"
+				"2DCD7BF831E21744"
+			]
+			id: "05C961BD28334ADE"
+			tasks: [{
+				id: "273835535B68B2EC"
+				type: "item"
+				item: "hexblades:fire_core"
+			}]
+		}
+		{
+			title: "Summoning an Elemental - Chant"
+			icon: "hexblades:fire_pedestal"
+			x: -11.5d
+			y: -4.0d
+			subtitle: "Hard Difficulty Required - Beware, the Fire Temple. Left Click for more info"
+			description: [
+				"Throughout the Nether, you might find some strange temples which have hieroglyphs on their walls resambling the Magmatic Core you obtained previously."
+				""
+				"In the temple's main room, you'll find a pedestal. By placing the Magmatic Core on it and performing the Elemental Pedestal Activation Chant, which will summon a Fire Elemental."
+				""
+				"Be aware. This will be a mini-boss fight. You might wanna prepare yourself before anything else."
+				""
+				"Note: Keep in mind that this quest is here to keep track of what you need to do. Finishing it, doesn't actually mean you did what you HAD TO."
+				""
+				"Chant:"
+				""
+				"{image:kubejs:textures/eidolon/chant_elemental_pedestal_activation_example.png width:200 height:100 align:1}"
+				""
+				"Picture of the Fire Elemental Tample:"
+				""
+				"{image:kubejs:textures/eidolon/fire_tample_example.png width:110 height:100 align:1 fit:true}"
+			]
+			dependencies: ["05C961BD28334ADE"]
+			id: "3370640F28711037"
+			tasks: [{
+				id: "5700174B955859FB"
+				type: "checkmark"
+				title: "Use the Elemental Pedestals Activation chant on the Fire Pedestal"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 1.0d
+			shape: "gear"
+			subtitle: "Use Crying Obsidian to make the Vanilla Enchanting Table"
+			dependencies: [
+				"37C65B0CE8EB26DD"
+				"2C6FB2BD60174B44"
+				"754A702F2CA77E02"
+				"079148BF286C8D56"
+			]
+			id: "0D2CDF37851BE110"
+			tasks: [{
+				id: "7AA18A9DD963E160"
+				type: "item"
+				item: "minecraft:enchanting_table"
+			}]
+			rewards: [
+				{
+					id: "73A222F95403DBC8"
+					type: "item"
+					item: "eidolon:zombie_heart"
+				}
+				{
+					id: "2A212651C6484646"
+					type: "item"
+					item: "eidolon:wraith_heart"
+				}
+			]
+		}
+		{
+			title: "Onions are cruel"
+			x: -1.0d
+			y: 1.0d
+			subtitle: "Crying Obsidian can either be found in the world, or crafted using a ritual. Tip, press \"U\" on an Onion to see the recipe which is made in a Brazier"
+			dependencies: ["0492A1CDFB26CAE1"]
+			id: "37C65B0CE8EB26DD"
+			tasks: [{
+				id: "1FFA212552942517"
+				type: "item"
+				item: "minecraft:crying_obsidian"
+			}]
+		}
+		{
+			title: "Crimson Weave"
+			x: -8.0d
+			y: -2.5d
+			subtitle: "Engineering of dark magic at its best. Left Click for more info"
+			description: [
+				"Great! You found a way to get your hands on the power of that Sigil."
+				""
+				"This fabric is two times stronger then that Wicked Weave you've learned about previously."
+				""
+				"Using it, you should be able to come up with some sort of protecting costume."
+				""
+				"IMPORTANT: This recipe has to be execute ONE BY ONE, at a time."
+				""
+				"Recipes won't be visible on Multiplayer, so here you go:"
+				""
+				"{image:kubejs:textures/eidolon/crimson_weave_recipe-min.png width:100 height:150 align:1}"
+				""
+				"You'll need a Sanguine Crystal which will not be consumed by the recipe."
+			]
+			dependencies: [
+				"1D09DA0333072189"
+				"2DCD7BF831E21744"
+			]
+			id: "578276668C01721B"
+			tasks: [{
+				id: "37C7664BD36E245A"
+				type: "item"
+				item: "sanguinearsenal:crimson_weave"
+			}]
+		}
+		{
+			title: "Shadow Infused Ingot"
+			x: -5.5d
+			y: -0.5d
+			subtitle: "The Shadow Infused Ingot is quite an impressive alloy. Made out of pewter, arcane gold and some other ingredients, it is able to provide great amounts of protection to its owner. However, the armor made out of this thing might not be that accesible at this point"
+			dependencies: ["54A9CA62C88CA53A"]
+			id: "615658B27FCE3AB0"
+			tasks: [{
+				id: "5EF6D45FE0B018BF"
+				type: "item"
+				item: "sanguinearsenal:shadow_ingot"
+			}]
+		}
+		{
+			x: -4.0d
+			y: 8.0d
+			subtitle: "The End is not available to you yet, however, you can obtain this powder infused with small amounts of it. You might be able to find a use for it"
+			dependencies: ["39FF7B69E755AC45"]
+			id: "16151F22321F2F09"
+			tasks: [{
+				id: "2C4D443DD69BD826"
+				type: "item"
+				item: "eidolon:ender_calx"
+			}]
+		}
+		{
+			title: "Unused potential - Chant"
+			x: -10.0d
+			y: -2.5d
+			subtitle: "Children of The Dark Lord. Left Click for more info"
+			description: [
+				"You finally reached the point where you have the trust of The Dark Lord."
+				""
+				"This Sigil represents the trust and faith that they have in you. At the same time, it holds very large amounts of power, too large for you, to be precise. But we believe that this will not stop you, now will it? We're sure you'll find a use for this thing. Meanwhile, how do you get it exactly?"
+				""
+				"Use the \"Blessing of Darkness\" on a Shadow Gem to obtain The Sigil of The Dark Lord."
+				""
+				"Chant:"
+				""
+				"{image:kubejs:textures/eidolon/blessing_of_darkness_example.png width:170 height:100 align:1}"
+			]
+			dependencies: ["76C57E75255CD8BE"]
+			id: "1D09DA0333072189"
+			tasks: [{
+				id: "2882DAB937AF3648"
+				type: "item"
+				item: "sanguinearsenal:sigil_of_the_dark_lord"
+			}]
+		}
+		{
+			title: "The Messanger of Darkness"
+			icon: "twilightforest:carminite"
+			x: -5.5d
+			y: -2.5d
+			shape: "heart"
+			subtitle: "All the blood I'll ever use. Left Click for more info"
+			description: [
+				"If you're reading this, it means you are ready to embrace the role of The Dark Lord's messanger."
+				""
+				"Finishing this quest will grant access to a powerful set of armor."
+				""
+				"We're congratulating you for reaching this point."
+			]
+			dependencies: [
+				"578276668C01721B"
+				"615658B27FCE3AB0"
+			]
+			size: 1.5d
+			id: "7DFB99444DF72CF8"
+			tasks: [{
+				id: "0FCE60CB4BD9BF60"
+				type: "checkmark"
+				title: "I am ready."
+			}]
+			rewards: [{
+				id: "2411A563D9ECC8D8"
+				type: "loot"
+				table_id: 5206766833681472091L
+			}]
+		}
+		{
+			x: -7.0d
+			y: 8.0d
+			subtitle: "Similar to the Calx of End, the Refined Crimson is a fine powder, infused with the essence of The Nether"
+			dependencies: ["39FF7B69E755AC45"]
+			id: "377DDDF081820BFB"
+			tasks: [{
+				id: "6041A1B2C18BF290"
+				type: "item"
+				item: "eidolon:crimson_essence"
+			}]
+		}
+		{
+			title: "Upgrading the altar - lighting"
+			icon: "eidolon:candle"
+			x: -7.0d
+			y: 4.0d
+			shape: "gear"
+			subtitle: "Candles? Lamps? Give 'em to me! Left Click for more info"
+			description: [
+				"Again. similar to the skulls and the herbs, lighting can be used to upgrade the altar and attract The Dark Lord's attention faster."
+				""
+				"Torch: 1 power"
+				"Lamp: 1 power, 1 capacity"
+				"Candle: 2 power"
+				"Candlestick: 2 power"
+				""
+				"Below, you can see an example of how lighting should be placed on the altar:"
+				""
+				"{image:kubejs:textures/eidolon/example8.png width:250 height:200 align:1 fit:true}"
+				""
+				"Multiple light sources, will NOT stack."
+			]
+			dependencies: ["062676BF5584EBAF"]
+			id: "2CC50BD51745AF87"
+			tasks: [{
+				id: "1959D2F9314BBC9F"
+				type: "checkmark"
+				title: "Make a candle/torch/lamp and place it on the altar"
+			}]
+		}
+		{
+			x: -5.5d
+			y: 10.0d
+			shape: "square"
+			subtitle: "Can stone be alive? Thats the question of the day. Left Click for more info"
+			description: [
+				"This smooth stone seems to have a strange linger to it, its like it is speaking to you."
+				""
+				"Through the use of other mystical arts, you might be able to give it life in the future, but for now, it just looks awesome, so go ahead, build with it!"
+			]
+			dependencies: ["2045087C068870F6"]
+			id: "43AF274C38EE94E5"
+			tasks: [{
+				id: "2A5502BEB76E0C52"
+				type: "item"
+				item: "eidolon:smooth_stone_bricks"
+			}]
+		}
+		{
+			x: -2.5d
+			y: -0.5d
+			subtitle: "Although you have no idea what this shard really is, or what it does, you might be able to get your hands on it if you manage to give a Gold Nugget to a Curbuncle. Additionally, you might find this Shard in some dungeons"
+			dependencies: ["0DDA2FB169318B04"]
+			size: 1.5d
+			id: "3DF741B59720CC46"
+			tasks: [{
+				id: "4F9FA4AB4131FE56"
+				type: "item"
+				item: "ars_nouveau:carbuncle_shards"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -0.5d
+			subtitle: "Lastly, here's the Sylph Shard. This one can be obtained by growing a Tree near a Sylph"
+			dependencies: ["0DDA2FB169318B04"]
+			size: 1.5d
+			id: "71CEE2F143CE8BD0"
+			tasks: [{
+				id: "7D39347F2FDDC735"
+				type: "item"
+				item: "ars_nouveau:sylph_shards"
+			}]
+		}
+		{
+			x: 0.5d
+			y: -2.5d
+			subtitle: "The way you cna obtain this Shard is unknown at the moment. However you might have some luck finding this shard in some dungeons"
+			dependencies: ["0DDA2FB169318B04"]
+			size: 1.5d
+			id: "72088266D75E60F3"
+			tasks: [{
+				id: "3E671E7D047B36D1"
+				type: "item"
+				item: "ars_nouveau:wixie_shards"
+			}]
+		}
+		{
+			x: -2.5d
+			y: -2.5d
+			subtitle: "Another Shard, same story. You have no idea what to do whit it, however, you should be able to obtain it by giving a Wilden Horn to a Drygmy. Later you might find a use for this item"
+			dependencies: ["0DDA2FB169318B04"]
+			size: 1.5d
+			id: "1EC6B6890FFF5733"
+			tasks: [{
+				id: "62E049B5B367F1DB"
+				type: "item"
+				item: "ars_nouveau:drygmy_shard"
+			}]
+		}
+		{
+			title: "Upgradin' tHe pOt!"
+			x: -5.5d
+			y: 8.0d
+			shape: "square"
+			subtitle: "Using a Soul Campfire as a heat source for the Crucible, you can access new recipes"
+			dependencies: [
+				"2045087C068870F6"
+				"6AA23A5FB3C37C90"
+			]
+			id: "39FF7B69E755AC45"
+			tasks: [{
+				id: "2DCD7BF831E21744"
+				type: "item"
+				item: "minecraft:soul_campfire"
+			}]
+		}
+		{
+			x: -12.5d
+			y: 5.5d
+			shape: "gear"
+			subtitle: "Alchemy? Now? O..ok. Left Click for more info"
+			description: [
+				"With The Nether being locked, you might feel the need for some potions."
+				""
+				"Using an external heat source, as replacement for the blaze powder, and some Sprouting Fungus as replacement for the nether wart, you should be able to brew some potions."
+				" "
+				"This station has to be placed untop a heated Crucible filled with water."
+			]
+			dependencies: ["3BB14AF24B4C0261"]
+			hide: true
+			id: "6662E74DD2B8E1B4"
+			tasks: [{
+				id: "150AE0EC46919738"
+				type: "item"
+				item: "eidolon:wooden_brewing_stand"
+			}]
+			rewards: [{
+				id: "50AF466575D462E5"
+				type: "item"
+				item: "eidolon:fungus_sprouts"
+				count: 2
+			}]
+		}
+	]
+}

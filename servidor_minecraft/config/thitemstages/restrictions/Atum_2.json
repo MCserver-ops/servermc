@@ -1,0 +1,8 @@
+{
+    "Restriction Data": {
+        "stage": "atum_2",
+        "dimensionList": [
+            "atum:atum"
+        ]
+    }
+}

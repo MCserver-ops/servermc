@@ -1,0 +1,11 @@
+{
+    "Restriction Data": {
+        "stage": "nether",
+        "itemList": [
+            "minecolonies:blockhutnetherworker"
+        ],
+        "dimensionList": [
+            "minecraft:the_nether"
+        ]
+    }
+}

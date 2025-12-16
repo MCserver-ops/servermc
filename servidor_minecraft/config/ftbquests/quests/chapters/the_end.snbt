@@ -1,0 +1,356 @@
+{
+	id: "295FCEF5DFB29B59"
+	group: "1390A8D800379122"
+	order_index: 4
+	filename: "the_end"
+	title: "The End"
+	icon: "minecraft:end_portal_frame"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "The Chaos Prism"
+			icon: "minecraft:ender_eye"
+			x: -1.0d
+			y: -6.5d
+			shape: "square"
+			subtitle: "Mastering all the other worlds, by defeating their main Boss, gave you the resources for accessing the final dimension, The End. Left Click for more info"
+			description: [
+				"To access the End, you'll need the 12 special eyes which can be obtained from the previous boss fights."
+				""
+				"Basically, finishing all the dependencies of this quest, will mean that you should have all the eyes."
+				""
+				"If you somehow managed to lose one of the eyes, you'll have to rely on the creative mode to get it back."
+			]
+			hide_dependency_lines: true
+			dependencies: [
+				"1BD61910AB0290E3"
+				"3A5628BD9FC57446"
+				"37239ADFDD7A7A86"
+				"398B882BA973C054"
+				"314036235E4C13BA"
+			]
+			size: 2.0d
+			id: "53721C40B3F71393"
+			tasks: [{
+				id: "338ED34221FCE454"
+				type: "checkmark"
+				title: "Understood!"
+			}]
+			rewards: [{
+				id: "387864E56300C131"
+				type: "command"
+				title: "Ender Apprentice"
+				icon: {
+					id: "mutantbeasts:endersoul_hand"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				command: "/thitemstages add @p end"
+				player_command: false
+			}]
+		}
+		{
+			title: "The End"
+			icon: "minecraft:end_portal_frame"
+			x: 1.0d
+			y: -6.5d
+			shape: "square"
+			subtitle: "Where everything ends?"
+			dependencies: ["53721C40B3F71393"]
+			id: "3367D3C501792C05"
+			tasks: [{
+				id: "4A5E5B6DA75FB732"
+				type: "dimension"
+				title: "Visit The End"
+				icon: "minecraft:ender_eye"
+				dimension: "minecraft:the_end"
+			}]
+		}
+		{
+			title: "The Ender Dragon"
+			x: 2.5d
+			y: -6.5d
+			shape: "diamond"
+			subtitle: "Ending Jean's Suffering. Left Click for more info"
+			description: [
+				"First-off, unlie other packs, this Ender Dragon Boss Fight, won't be like a vanilla experiance, due to the Savage Ender Dragon Mod."
+				""
+				"In this pack, the Ender Dragon will be much harder to defeat due to its increased Health, high damage, ability to summon lightning and the ability to summon mobs such as:"
+				""
+				"- Mutant Enderman"
+				"- Mowzie's Mobs Naga"
+				"- Bazaltz"
+				"- Blizz"
+				"- Blitz"
+				"- Wildfire"
+				"- Minotaur"
+				""
+				"Additionally, the End Crystals which provide regeneration to the Ender Dragon, may respawn at random."
+				""
+				"Here are some items you should prepare for this fight:"
+				""
+				"- Prepare lots of RF and Mana"
+				"- Flugel Tiara"
+				"- An Enchanted Flux-Infused Armor set (it has 4 shields which will block up to 500 incomming damage)"
+				"- An Echanted Flux-Infused Bow (it will have very accurate shots)"
+				"- A Flux-Infused Quiver (will provide infinite ammo, as long as it has power - the arrows will be extremely fast and accurate)"
+				"- A Blood Pandant infused with Regeneration"
+				"- A Ring of Musphelheim"
+				"- Astral Sorcery Skills"
+				"- A strong Melee Weapon"
+				""
+				"Also, a strategy which you can use would be:"
+				""
+				"- Break all the End Crystals as they reappear"
+				"- Do not enter in contact with the Mutant Endermans"
+				"- Try do deal as much damage as possible to the Ender Dragon, using ranged attacks"
+				""
+				"Finally, you should know that NO REGULAR ENDERMANS will spawn on the End's Main Island - ever. Explore the End's other Islands for them."
+			]
+			dependencies: ["3367D3C501792C05"]
+			size: 1.5d
+			id: "2EEF99F90F1D8B37"
+			tasks: [{
+				id: "05667D5B96122BBA"
+				type: "kill"
+				title: "Defeat The Ender Dragon"
+				icon: "quark:dragon_scale"
+				entity: "minecraft:ender_dragon"
+				value: 1L
+			}]
+			rewards: [{
+				id: "68C413FFBA18C4BD"
+				type: "loot"
+				table_id: 7176426831663151036L
+			}]
+		}
+		{
+			x: 4.0d
+			y: -5.0d
+			subtitle: "Defeat an Enderiophage to get a Capsid. Capsids will be an important part of the Void Worm summoning process"
+			dependencies: ["420B786D7ECD0706"]
+			id: "0387679474D3A296"
+			tasks: [{
+				id: "3B782E3909434F50"
+				type: "item"
+				item: "alexsmobs:capsid"
+			}]
+		}
+		{
+			title: "Traveling"
+			icon: "endrem:ancient_portal_frame"
+			x: 4.0d
+			y: -6.5d
+			shape: "square"
+			subtitle: "Leave the main island through a Vanilla Gateway"
+			dependencies: ["2EEF99F90F1D8B37"]
+			id: "420B786D7ECD0706"
+			tasks: [{
+				id: "79170325AE921422"
+				type: "advancement"
+				advancement: "minecraft:end/enter_end_gateway"
+				criterion: ""
+			}]
+		}
+		{
+			title: "Find an End City"
+			x: 4.0d
+			y: -8.0d
+			subtitle: "City? More like a tower: Find an End City and obtain some unique items from it"
+			dependencies: ["420B786D7ECD0706"]
+			id: "5DCDA7EDF2C6272B"
+			tasks: [{
+				id: "20D42F230D814B5A"
+				type: "advancement"
+				title: "Find an End City"
+				advancement: "minecraft:end/find_end_city"
+				criterion: ""
+			}]
+		}
+		{
+			title: "The Chaos Island"
+			icon: "structurize:black_clay_shingle_slab"
+			x: 5.5d
+			y: -6.5d
+			shape: "square"
+			subtitle: "No risk, no reward. Left Click for more info"
+			description: [
+				"Even tho you can physically finish this quest while you're in the 3rd Age, you should wait until the 4th one, and you obtain a Chest Piece from Draconic Evolution."
+				""
+				"Finding a Chaos Island withtout propper protection, will 100% result into your instant Death."
+				""
+				"Now, the Chaos Islands can be found in The End, at every interval of 10000 blocks from the Main Island. It is the home of the Chaos Guardian. The Strongest Boss Modded Minecraft has ever Seen."
+				""
+				"While you can go to every combination of 10000 coordonates, for now, go towards X:10000 Y:0."
+			]
+			dependencies: [
+				"420B786D7ECD0706"
+				"78ECF24A2D1EB21A"
+			]
+			id: "3767C798A2FF9D46"
+			tasks: [{
+				id: "41908E07E47E322B"
+				type: "location"
+				title: "Reach X: 10000 Y: 100 Z: 0"
+				dimension: "minecraft:the_end"
+				ignore_dimension: false
+				position: [I;
+					10000
+					100
+					0
+				]
+				size: [I;
+					1
+					1
+					1
+				]
+			}]
+		}
+		{
+			title: "The Chaos Conduit"
+			x: 7.5d
+			y: -6.5d
+			shape: "diamond"
+			subtitle: "Master The End. Left Click for more info"
+			description: [
+				"The Chaos Guardian might be the Stongest Boss Modded Minecraft has ever Seen."
+				""
+				"The Chaos Guradian is a large Red Dragon, similar to the Ender Dragon, but much more powerful. So powerful, that it will kill a player which has A Meka-Suit with just one hit."
+				""
+				"The attacks dealt by the Chaos Guardian will, in fact, cut through most armors, except for the Chast Pieces provided by Draconic Evolution and the Dark Matter, Red Matter and the Gem Armors from ProjectE. Since you probably don't have access to the ProjectE sets, you'll have to obtain a Chest Piece from Draconic. We recommend the Draconic one."
+				""
+				"However, know that the Guardian has the ability to rapidly drain any RF powered Armor of its charge so it will quickly render your Chast piece useleff if you don't keep it charged."
+				""
+				"Like the Ender Dragon, the Chaos Guardian has several Healing Crystals spread around the Island. However, unlike the regular Ender Crystals, these will keep the Guardian from receive damage entirely. They'll also be very hard to destroy. They each have several hit points. When damaged, they'll protect themselves with a shield for several seconds. You must disable all of them before you can start damaging the Guardian. A highly upgraded Draconium Chest Piece, Draconic Sword and Draconic Bow are adviced for this battle."
+				""
+				"After defeating the Guardian, you can claim you reward. Inside of the Chaos Island, there will be an Obsidian Chamber which will be the home of a Chaos Crystal. It can be harvested only after the Guardian was defeated. Breaking the Crystal will drop several Chaos Shards. These Shards will be required to progress further."
+			]
+			dependencies: [
+				"3767C798A2FF9D46"
+				"78ECF24A2D1EB21A"
+			]
+			size: 2.0d
+			id: "3BF80C7FE1F5EF78"
+			tasks: [{
+				id: "72778C394C1BDB14"
+				type: "kill"
+				title: "Defeat The Chaos Guardian"
+				icon: "quark:red_rune"
+				entity: "draconicevolution:draconic_guardian"
+				value: 1L
+			}]
+			rewards: [{
+				id: "5D6D2E1BDFFFD347"
+				type: "loot"
+				table_id: 3966812906621148304L
+			}]
+		}
+		{
+			x: 4.0d
+			y: -9.5d
+			shape: "gear"
+			subtitle: "Arkham Gliding: The Elytra will allow you to glide just like Batman would. Rockets can be fired in mid air for a nice boost. It can be upgraded in certain ways"
+			dependencies: ["5DCDA7EDF2C6272B"]
+			id: "420F4418F0553A1B"
+			tasks: [{
+				id: "0EC4CF55CFD281AA"
+				type: "item"
+				item: {
+					id: "minecraft:elytra"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Thallasium"
+			icon: "betterendforge:thallasium_ingot"
+			x: 2.5d
+			y: -8.0d
+			shape: "square"
+			subtitle: "Thallasium is a pretty regular Metal in the End. Obtain it to progress further into your Adventure"
+			dependencies: ["2EEF99F90F1D8B37"]
+			id: "4808E688ABD2122B"
+			tasks: [{
+				id: "4FFAB70081281536"
+				type: "item"
+				item: "betterendforge:thallasium_ore"
+			}]
+		}
+		{
+			x: 4.0d
+			y: -4.0d
+			subtitle: "A little disgusting.. Place a Crimson Mosquito Larva in a Capsid and watch how it turns into a Mysterious Worm"
+			dependencies: [
+				"0387679474D3A296"
+				"39BF9C9C54C4E41A"
+			]
+			id: "2C7E56FD4021CA97"
+			tasks: [{
+				id: "4B6C62164F53DFDF"
+				type: "item"
+				item: "alexsmobs:mysterious_worm"
+			}]
+		}
+		{
+			title: "Summoning the Void Worm"
+			x: 4.0d
+			y: -3.0d
+			shape: "circle"
+			subtitle: "If you toss that worm in the void..then.. good luck. This action will result into a Boss Fight which you might wanna be prepared for"
+			dependencies: ["2C7E56FD4021CA97"]
+			id: "1C126E1A9EF052DC"
+			tasks: [{
+				id: "5345ACF4C35E1B98"
+				type: "advancement"
+				title: "Just toss the mysterious worm in the void"
+				advancement: "alexsmobs:alexsmobs/void_worm_summon"
+				criterion: ""
+			}]
+		}
+		{
+			title: "Proving worthy of the Void"
+			icon: "alexsmobs:void_worm_eye"
+			x: 4.0d
+			y: -2.0d
+			shape: "heart"
+			subtitle: "Defeat the Void Worm and obtain its drops. With them, craft a Dimensional Carver which is a Pickaxe so powerful that, when it's used by holding Right-Click, will mine a portal through the space-time continuum. Passing through the Portal, will get you to your spawn point"
+			dependencies: ["1C126E1A9EF052DC"]
+			id: "7452BA0DDACCC740"
+			tasks: [{
+				id: "41404B539E857677"
+				type: "item"
+				item: {
+					id: "alexsmobs:dimensional_carver"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "6F1E6E0D386EC181"
+				type: "loot"
+				table_id: 7176426831663151036L
+			}]
+		}
+		{
+			x: 2.5d
+			y: -5.0d
+			shape: "heart"
+			subtitle: "The Dragon Heart is one of the drops given by the Ender Dragon when it's defeated. It can be used to awaken the potential of the Draconium Ingot and advance further into Draconic Evolution"
+			dependencies: ["2EEF99F90F1D8B37"]
+			id: "6ECFDBF59B0215B0"
+			tasks: [{
+				id: "648AF5FDACBDA2A8"
+				type: "item"
+				item: "draconicevolution:dragon_heart"
+			}]
+		}
+	]
+}

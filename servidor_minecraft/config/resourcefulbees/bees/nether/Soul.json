@@ -1,0 +1,50 @@
+{
+  "flower": "minecraft:soul_soil",
+  "creator": "Me_Ryan",
+  "lore": "Lonely Bee",
+  "hasHoneycomb": true,
+  "customCombDrop": "minecraft:honeycomb",
+  "customCombBlockDrop": "minecraft:honeycomb_block",
+  "traits": [
+    "nether"
+  ],
+  "MutationData": {
+    "hasMutation": true,
+    "mutations": [
+      {
+        "type": "BLOCK",
+        "inputID": "minecraft:sand",
+        "chance": 0.8,
+        "outputs": [
+          {
+            "outputID": "minecraft:soul_sand",
+            "weight": 10
+          }
+        ]
+      }
+    ]
+  },
+  "maxTimeInHive": 1800,
+  "baseLayerTexture": "soul/soul",
+  "ColorData": {
+    "primaryColor": "#c2c2c2",
+    "secondaryColor": "#efefef"
+  },
+  "SpawnData": {
+    "canSpawnInWorld": true,
+    "biomeWhitelist": "tag:nether",
+    "spawnWeight": 8,
+    "lightLevel": "NIGHT"
+  },
+  "BreedData": {
+    "isBreedable": true,
+    "feedItem": "minecraft:soul_sand",
+    "feedAmount": 64
+  },
+  "CombatData": {
+    "isPassive": true
+  },
+  "TraitData": {
+    "hasTraits": true
+  }
+}

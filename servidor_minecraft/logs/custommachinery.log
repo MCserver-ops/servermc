@@ -1,0 +1,40 @@
+[04:40:50.180][CLIENT][INFO]: Reading Custom Machinery Machines...
+[04:40:50.181][CLIENT][INFO]: Parsing machine json: custommachinery:crystal_growth_unit in datapack: KubeJS Resource Pack [data]
+[04:40:50.209][CLIENT][INFO]: Successfully parsed machine json: custommachinery:crystal_growth_unit
+[04:40:50.209][CLIENT][INFO]: Parsing machine json: custommachinery:trader_summoning_altar in datapack: KubeJS Resource Pack [data]
+[04:40:50.211][CLIENT][INFO]: Successfully parsed machine json: custommachinery:trader_summoning_altar
+[04:40:50.211][CLIENT][INFO]: Parsing machine json: custommachinery:cryo_electrolyzer in datapack: KubeJS Resource Pack [data]
+[04:40:50.213][CLIENT][INFO]: Successfully parsed machine json: custommachinery:cryo_electrolyzer
+[04:40:50.213][CLIENT][INFO]: Parsing machine json: custommachinery:certus_quartz_charger in datapack: KubeJS Resource Pack [data]
+[04:40:50.214][CLIENT][INFO]: Successfully parsed machine json: custommachinery:certus_quartz_charger
+[04:40:50.214][CLIENT][INFO]: Parsing machine json: custommachinery:fuel_mixing_unit in datapack: KubeJS Resource Pack [data]
+[04:40:50.215][CLIENT][INFO]: Successfully parsed machine json: custommachinery:fuel_mixing_unit
+[04:40:50.215][CLIENT][INFO]: Parsing machine json: custommachinery:metal_compressor in datapack: KubeJS Resource Pack [data]
+[04:40:50.216][CLIENT][INFO]: Successfully parsed machine json: custommachinery:metal_compressor
+[04:40:50.216][CLIENT][INFO]: Finished creating custom machines.
+[04:40:50.216][CLIENT][INFO]: Reading Custom Machinery Upgrades...
+[04:40:50.217][CLIENT][INFO]: Parsing upgrade json: custommachinery:basic_upgrade in datapack: main
+[04:40:50.224][CLIENT][INFO]: Successfully parsed upgrade json: custommachinery:basic_upgrade
+[04:40:50.224][CLIENT][INFO]: Finished creating custom machine upgrades.
+[04:43:26.437][SERVER][INFO]: Sending recipe: custommachinery:kjs_b5r0hjjvkt9wbwjxysb1rc7bk to clients
+[04:43:26.438][SERVER][INFO]: Sucessfully send recipe: custommachinery:kjs_b5r0hjjvkt9wbwjxysb1rc7bk to clients.
+[04:43:26.480][SERVER][INFO]: Sending recipe: custommachinery:kjs_4n435qb332acio3auugr9pivg to clients
+[04:43:26.480][SERVER][INFO]: Sucessfully send recipe: custommachinery:kjs_4n435qb332acio3auugr9pivg to clients.
+[04:43:26.483][SERVER][INFO]: Sending recipe: custommachinery:kjs_exar670tyrh8t2ecjfm37bj1r to clients
+[04:43:26.483][SERVER][INFO]: Sucessfully send recipe: custommachinery:kjs_exar670tyrh8t2ecjfm37bj1r to clients.
+[04:43:26.554][SERVER][INFO]: Sending recipe: custommachinery:kjs_jvt9lzysishwptjgten8rvza to clients
+[04:43:26.554][SERVER][INFO]: Sucessfully send recipe: custommachinery:kjs_jvt9lzysishwptjgten8rvza to clients.
+[04:43:26.558][SERVER][INFO]: Sending recipe: custommachinery:kjs_7hpxkr7hvlvtlu23u67ighifo to clients
+[04:43:26.559][SERVER][INFO]: Sucessfully send recipe: custommachinery:kjs_7hpxkr7hvlvtlu23u67ighifo to clients.
+[04:43:26.569][SERVER][INFO]: Sending recipe: custommachinery:kjs_cdtojncl3ggeyf6ia3bnyicsb to clients
+[04:43:26.569][SERVER][INFO]: Sucessfully send recipe: custommachinery:kjs_cdtojncl3ggeyf6ia3bnyicsb to clients.
+[04:43:26.582][SERVER][INFO]: Sending recipe: custommachinery:kjs_8a55u8flzd91co7vdrl0h896w to clients
+[04:43:26.582][SERVER][INFO]: Sucessfully send recipe: custommachinery:kjs_8a55u8flzd91co7vdrl0h896w to clients.
+[04:43:26.589][SERVER][INFO]: Sending recipe: custommachinery:kjs_4ftsz8cq28rbch8mb4yapz0ge to clients
+[04:43:26.589][SERVER][INFO]: Sucessfully send recipe: custommachinery:kjs_4ftsz8cq28rbch8mb4yapz0ge to clients.
+[04:43:26.595][SERVER][INFO]: Sending recipe: custommachinery:kjs_p9ukl2ri1bm54uuuxk9j9toy to clients
+[04:43:26.596][SERVER][INFO]: Sucessfully send recipe: custommachinery:kjs_p9ukl2ri1bm54uuuxk9j9toy to clients.
+[04:43:26.677][SERVER][INFO]: Sending recipe: custommachinery:kjs_2qlpeh2mbjufajnij89mduj8e to clients
+[04:43:26.677][SERVER][INFO]: Sucessfully send recipe: custommachinery:kjs_2qlpeh2mbjufajnij89mduj8e to clients.
+[04:43:26.743][SERVER][INFO]: Sending recipe: custommachinery:kjs_943j4say40833rvgfj757f9hg to clients
+[04:43:26.743][SERVER][INFO]: Sucessfully send recipe: custommachinery:kjs_943j4say40833rvgfj757f9hg to clients.

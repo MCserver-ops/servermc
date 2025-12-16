@@ -1,0 +1,46 @@
+{
+  "flower": "minecraft:bone_block",
+  "lore": "Hive Bee",
+  "maxTimeInHive": 600,
+  "hasHoneycomb": true,
+  "baseLayerTexture": "skeleton/skeleton_bee",
+  "ColorData": {
+    "isBeeColored": false,
+    "honeycombColor": "#F6F2E6"
+  },
+  "MutationData": {
+    "hasMutation": true,
+    "mutations" : [
+      {
+        "type": "BLOCK",
+        "inputID": "minecraft:stone",
+        "outputs": [
+          {"outputID": "minecraft:gravel", "weight": 10}
+        ]
+      }
+    ]
+  },
+  "CentrifugeData": {
+    "hasCentrifugeOutput": true,
+    "mainOutput": "minecraft:bone",
+    "mainOutputCount": 4,
+    "mainOutputWeight": 0.20
+  },
+  "SpawnData": {
+    "canSpawnInWorld": false
+  },
+  "CombatData": {  
+    "isPassive": false,  
+    "removeStingerOnAttack": true,
+    "inflictsPoison": false,
+    "attackDamage": 4
+},
+  "BreedData": {
+    "isBreedable": true,
+    "parent1": "Soul",
+    "parent2": "White_Carpenter",
+    "feedItem": "minecraft:bone_meal",
+    "feedAmount": 64
+  },
+  "TraitData": {}
+}

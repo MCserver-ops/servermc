@@ -1,0 +1,13 @@
+{
+  "ingredients": [
+    "minecraft:gunpowder",
+    "relics:rune_of_air",
+    "relics:rune_of_earth",
+    "relics:rune_of_explosion"
+  ],
+  "loot": {
+    "table": [
+    ],
+    "chance": 0
+  }
+}

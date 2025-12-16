@@ -1,0 +1,16 @@
+
+[enchantments]
+
+	[enchantments.perpetual]
+		#List of the mods you want to blacklist
+		#Example: 'perpetual'
+		#default: []
+		modBlacklist = ["projecte"]
+		#List of the item IDs you want to blacklist
+		#Example: 'minecraft:shield'
+		#default: []
+		itemBlacklist = []
+		#ID of the item being used for getting the Perpetual Enchant
+		#default: 'minecraft:nether_star'
+		enchantItem = "decursiomod:uru_ingot"
+

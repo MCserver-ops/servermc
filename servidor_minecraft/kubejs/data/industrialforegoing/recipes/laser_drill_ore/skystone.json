@@ -1,0 +1,32 @@
+{
+    "type": "forge:conditional",
+    "recipes": [
+      {
+        "conditions": [],
+        "recipe": {
+          "output": {
+            "item": "appliedenergistics2:sky_stone_block"
+          },
+          "rarity": [
+            {
+              "whitelist": {
+                "type": "minecraft:worldgen/biome",
+                "values": [
+                  "boss_tools:moon"
+                ]
+              },
+              "blacklist": {},
+              "depth_min": 5,
+              "depth_max": 20,
+              "weight": 2
+            }
+          ],
+          "pointer": 0,
+          "catalyst": {
+            "item": "industrialforegoing:laser_lens15"
+          },
+          "type": "industrialforegoing:laser_drill_ore"
+        }
+      }
+    ]
+  }

@@ -1,0 +1,42 @@
+{
+    "flower": "all",
+    "creator": "Me_Ryan",
+    "lore": "Hive Bee",
+    "hasHoneycomb": true,
+    "traits": [],
+    "maxTimeInHive": 1800,
+    "baseLayerTexture": "phantom/phantom",
+    "modelType": "ARMORED",
+    "ColorData": {
+      "honeycombColor": "#1d2087",
+      "primaryColor": "#1d2087",
+      "secondaryColor": "#2ec42c"
+    },
+    "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+        "mainOutput": "minecraft:phantom_membrane",
+        "bottleOutput" : "minecraft:honey_bottle",
+        "mainOutputWeight": 0.20,
+        "mainOutputCount": 4
+      },
+    "SpawnData": {
+        "canSpawnInWorld": false
+      },
+    "BreedData": {
+        "isBreedable": true,
+        "parent1": "Blitz",
+        "parent2": "Soul",
+        "feedItem": "minecraft:phantom_membrane",
+        "feedAmount": 64
+      },
+      "CombatData": {  
+        "isPassive": false,  
+        "removeStingerOnAttack": true,
+        "inflictsPoison": false,
+        "attackDamage": 4
+    },
+    "TraitData": {
+        "hasTraits": true
+      }
+  }
+  

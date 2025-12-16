@@ -1,0 +1,33 @@
+{
+  "flower": "quark:sugar_cane_block",
+  "maxTimeInHive": 1200,
+  "creator": "NoControl, Dawn Felstar",
+  "lore": "§fHive Bee\nNot because I want to be different, but because I want to be myself.",
+  "loreColor": "#F7A8B8",
+  "hasHoneycomb": true,
+  "baseLayerTexture": "cotton_candy/cotton_candy_bee",
+  "ColorData": {
+    "isBeeColored": false,
+    "modelType": "CROP",
+    "honeycombColor": "#55CDFC"
+  },
+  "CentrifugeData": {
+    "hasCentrifugeOutput": true,
+    "mainOutput": "pamhc2foodcore:cottoncandyitem",
+    "mainOutputWeight": 0.30,
+    "mainOutputCount": 4
+  },
+  "CombatData": {
+    "isPassive": true
+  },
+  "SpawnData": {
+    "canSpawnInWorld": false
+  },
+  "BreedData": {
+    "isBreedable": true,
+    "parent1": "Sugarbag",
+    "parent2": "Reed",
+    "feedItem": "minecraft:barrier",
+    "breedWeight": 0.50
+  }
+}

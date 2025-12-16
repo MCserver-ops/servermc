@@ -1,0 +1,12 @@
+{
+	chapter_groups: [
+		{ id: "38E0BE3B64EF67A2", title: "First Steps" }
+		{ id: "1390A8D800379122", title: "Dimensional Explorer" }
+		{ id: "70E732380FC79639", title: "General" }
+		{ id: "52BC1523CD35BD71", title: "1st Age" }
+		{ id: "532DAB84AB301350", title: "2nd Age" }
+		{ id: "11592D5C828EEDBF", title: "3rd Age" }
+		{ id: "08EB5BB8DBF33B74", title: "4th Age" }
+		{ id: "227FB27389135A7A", title: "EndGame" }
+	]
+}

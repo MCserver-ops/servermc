@@ -1,0 +1,225 @@
+{
+  "sophisticatedbackpacks:recipes/sophisticatedbackpacks/blasting_upgrade": {
+    "criteria": {
+      "has_upgrade_base": "2025-12-16 04:43:26 +0000"
+    },
+    "done": true
+  },
+  "farmersdelight:main/root": {
+    "criteria": {
+      "seeds": "2025-12-16 04:43:26 +0000"
+    },
+    "done": true
+  },
+  "betterdungeons:root": {
+    "criteria": {
+      "always": "2025-12-16 04:43:27 +0000"
+    },
+    "done": true
+  },
+  "xercamusic:achievements/root": {
+    "criteria": {
+      "crafting_table": "2025-12-16 04:43:26 +0000"
+    },
+    "done": true
+  },
+  "sophisticatedbackpacks:recipes/sophisticatedbackpacks/auto_smoking_upgrade": {
+    "criteria": {
+      "has_smoking_upgrade": "2025-12-16 04:43:26 +0000"
+    },
+    "done": true
+  },
+  "xercamusic:recipes/tubular_bell": {
+    "criteria": {
+      "has_item": "2025-12-16 04:43:26 +0000"
+    },
+    "done": true
+  },
+  "xercamusic:recipes/cello": {
+    "criteria": {
+      "has_item": "2025-12-16 04:43:26 +0000"
+    },
+    "done": true
+  },
+  "lootr:root": {
+    "criteria": {
+      "always_true": "2025-12-16 04:43:27 +0000"
+    },
+    "done": true
+  },
+  "sophisticatedbackpacks:recipes/sophisticatedbackpacks/auto_smoking_upgrade_from_auto_smelting_upgrade": {
+    "criteria": {
+      "has_auto_smelting_upgrade": "2025-12-16 04:43:26 +0000"
+    },
+    "done": true
+  },
+  "dungeons_arise:wda_root": {
+    "criteria": {
+      "WDA": "2025-12-16 04:43:27 +0000"
+    },
+    "done": true
+  },
+  "xercamusic:recipes/drum_kit": {
+    "criteria": {
+      "has_item": "2025-12-16 04:43:26 +0000"
+    },
+    "done": true
+  },
+  "astralsorcery:root": {
+    "criteria": {
+      "astralsorcery_present": "2025-12-16 04:43:27 +0000"
+    },
+    "done": true
+  },
+  "xercamusic:recipes/french_horn": {
+    "criteria": {
+      "has_item": "2025-12-16 04:43:26 +0000"
+    },
+    "done": true
+  },
+  "sophisticatedbackpacks:recipes/sophisticatedbackpacks/auto_blasting_upgrade": {
+    "criteria": {
+      "has_blasting_upgrade": "2025-12-16 04:43:26 +0000"
+    },
+    "done": true
+  },
+  "sophisticatedbackpacks:recipes/sophisticatedbackpacks/blasting_upgrade_from_smelting_upgrade": {
+    "criteria": {
+      "has_smelting_upgrade": "2025-12-16 04:43:26 +0000"
+    },
+    "done": true
+  },
+  "xercamusic:recipes/bass_guitar": {
+    "criteria": {
+      "has_item": "2025-12-16 04:43:26 +0000"
+    },
+    "done": true
+  },
+  "xercamusic:recipes/oboe": {
+    "criteria": {
+      "has_item": "2025-12-16 04:43:26 +0000"
+    },
+    "done": true
+  },
+  "xercamusic:recipes/saxophone": {
+    "criteria": {
+      "has_item": "2025-12-16 04:43:26 +0000"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:forest": "2025-12-16 04:43:27 +0000"
+    },
+    "done": false
+  },
+  "xercamusic:recipes/metronome": {
+    "criteria": {
+      "has_item": "2025-12-16 04:43:26 +0000"
+    },
+    "done": true
+  },
+  "xercamusic:recipes/flute": {
+    "criteria": {
+      "has_item": "2025-12-16 04:43:26 +0000"
+    },
+    "done": true
+  },
+  "xercamusic:recipes/redstone_guitar": {
+    "criteria": {
+      "has_item": "2025-12-16 04:43:26 +0000"
+    },
+    "done": true
+  },
+  "xercamusic:recipes/lyre": {
+    "criteria": {
+      "has_item": "2025-12-16 04:43:26 +0000"
+    },
+    "done": true
+  },
+  "sophisticatedbackpacks:recipes/sophisticatedbackpacks/smoking_upgrade_from_smelting_upgrade": {
+    "criteria": {
+      "has_smelting_upgrade": "2025-12-16 04:43:26 +0000"
+    },
+    "done": true
+  },
+  "xercamusic:recipes/violin": {
+    "criteria": {
+      "has_item": "2025-12-16 04:43:26 +0000"
+    },
+    "done": true
+  },
+  "create:root": {
+    "criteria": {
+      "0": "2025-12-16 04:43:26 +0000"
+    },
+    "done": true
+  },
+  "resourcefulbees:resourcefulbees/root": {
+    "criteria": {
+      "inventory_changed": "2025-12-16 04:43:26 +0000"
+    },
+    "done": true
+  },
+  "xercamusic:recipes/music_sheet": {
+    "criteria": {
+      "has_item": "2025-12-16 04:43:26 +0000"
+    },
+    "done": true
+  },
+  "rats:rats/root": {
+    "criteria": {
+      "tick": "2025-12-16 04:43:27 +0000"
+    },
+    "done": true
+  },
+  "xercamusic:recipes/banjo": {
+    "criteria": {
+      "has_item": "2025-12-16 04:43:26 +0000"
+    },
+    "done": true
+  },
+  "xercamusic:recipes/cymbal": {
+    "criteria": {
+      "has_item": "2025-12-16 04:43:26 +0000"
+    },
+    "done": true
+  },
+  "xercamusic:recipes/guitar": {
+    "criteria": {
+      "has_item": "2025-12-16 04:43:26 +0000"
+    },
+    "done": true
+  },
+  "sophisticatedbackpacks:recipes/sophisticatedbackpacks/smoking_upgrade": {
+    "criteria": {
+      "has_upgrade_base": "2025-12-16 04:43:26 +0000"
+    },
+    "done": true
+  },
+  "sophisticatedbackpacks:recipes/sophisticatedbackpacks/auto_blasting_upgrade_from_auto_smelting_upgrade": {
+    "criteria": {
+      "has_auto_smelting_upgrade": "2025-12-16 04:43:26 +0000"
+    },
+    "done": true
+  },
+  "mowziesmobs:root": {
+    "criteria": {
+      "custom_test_name": "2025-12-16 04:43:27 +0000"
+    },
+    "done": true
+  },
+  "xercamusic:recipes/sansula": {
+    "criteria": {
+      "has_item": "2025-12-16 04:43:26 +0000"
+    },
+    "done": true
+  },
+  "repurposed_structures:root": {
+    "criteria": {
+      "always": "2025-12-16 04:43:27 +0000"
+    },
+    "done": true
+  },
+  "DataVersion": 2586
+}

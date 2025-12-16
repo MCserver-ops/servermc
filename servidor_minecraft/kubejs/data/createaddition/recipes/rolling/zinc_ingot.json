@@ -1,0 +1,10 @@
+{
+	"type":"createaddition:rolling",
+	"input": {
+      	"tag": "forge:ingots/zinc"
+	},
+	"result": {
+		"item": "emendatusenigmatica:zinc_rod",
+		"count": 2
+	}
+}

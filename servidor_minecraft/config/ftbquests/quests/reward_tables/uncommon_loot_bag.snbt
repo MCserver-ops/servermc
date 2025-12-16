@@ -1,0 +1,64 @@
+{
+	id: "772CEE30776D5913"
+	order_index: 3
+	title: "Uncommon Loot Bag"
+	icon: "immersiveengineering:shader_bag_uncommon"
+	loot_size: 1
+	rewards: [
+		{ item: "minecraft:golden_apple", count: 16, weight: 10 }
+		{ item: "farmersdelight:hamburger", count: 16, weight: 10 }
+		{ item: "farmersdelight:dog_food", count: 16, weight: 10 }
+		{ item: "farmersdelight:horse_feed", count: 8, weight: 10 }
+		{
+			item: {
+				id: "tconstruct:small_blade"
+				Count: 1b
+				tag: {
+					Material: "tconstruct:hepatizon"
+				}
+			}
+			weight: 5
+		}
+		{
+			item: {
+				id: "tconstruct:pickaxe_head"
+				Count: 1b
+				tag: {
+					Material: "tconstruct:rose_gold"
+				}
+			}
+			weight: 10
+		}
+		{
+			item: {
+				id: "tconstruct:pickaxe_head"
+				Count: 1b
+				tag: {
+					Material: "tconstruct:constantan"
+				}
+			}
+			weight: 7
+		}
+		{
+			item: {
+				id: "tconstruct:broad_axe_head"
+				Count: 1b
+				tag: {
+					Material: "tconstruct:steel"
+				}
+			}
+			weight: 10
+		}
+		{ item: "minecraft:bricks", count: 64, weight: 10 }
+		{ item: "immersiveengineering:treated_wood_horizontal", count: 64, weight: 10 }
+		{ item: "minecraft:stone_bricks", count: 64, weight: 10 }
+		{ item: "cookingforblockheads:cow_jar", weight: 10 }
+		{ item: "sophisticatedbackpacks:diamond_backpack" }
+		{ item: "create:andesite_alloy", count: 16, weight: 45 }
+		{ item: "create:builders_tea", count: 16, weight: 10 }
+		{ item: "minecraft:grass_block", count: 64 }
+		{ item: "minecraft:cobblestone", count: 64 }
+		{ item: "minecraft:coarse_dirt", count: 64 }
+		{ item: "framedblocks:framed_cube", count: 64, weight: 10 }
+	]
+}
