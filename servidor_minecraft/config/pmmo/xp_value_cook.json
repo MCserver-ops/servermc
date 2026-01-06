@@ -1,0 +1,21 @@
+{
+	"foodexpansion:cooked_bat_wing":
+	{
+		"cooking": 7.5
+	},
+	"#forge:dyes":
+	{
+		"cooking": 12.5,
+		"crafting": 4
+	},
+	"minecraft:popped_chorus_fruit":
+	{
+		"cooking": 25,
+		"crafting": 22.5
+	},
+	"minecraft:sponge":
+	{
+		"cooking": 15,
+		"crafting": 15
+	}
+}
